@@ -1,0 +1,87 @@
+{
+    "id": "detail_new_china",
+    "type": "china",
+    "title": "新中国成立:人民站起来了",
+    "year": "1949年",
+    "desc": "中华人民共和国的成立，开辟了中国历史的新纪元。中国人民经过一百多年的英勇斗争，终于推翻了帝国主义、封建主义和官僚资本主义的统治。",
+    "content": [
+        {
+            "title": "开国大典",
+            "text": "<p>1949年10月1日，毛泽东主席在天安门城楼庄严宣告：'中华人民共和国中央人民政府今天成立了！'中国结束了一百多年来被侵略被奴役的屈辱历史，真正成为独立自主的国家。</p>"
+        },
+        {
+            "title": "巩固与建设",
+            "text": "<p>建国初期，通过抗美援朝、土地改革等措施巩固了政权。一五计划的完成，为社会主义工业化奠定了初步基础。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "开国大典",
+            "url": "topic_founding_ceremony.html"
+        },
+        {
+            "text": "抗美援朝",
+            "url": "topic_korean_war.html"
+        },
+        {
+            "text": "土地改革",
+            "url": "topic_land_reform.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "newchina",
+                "label": "新中国",
+                "val": 30,
+                "group": "core",
+                "url": "detail_new_china.html"
+            },
+            {
+                "id": "mao",
+                "label": "毛泽东",
+                "val": 25,
+                "group": "person",
+                "url": "topic_maozedong.html"
+            },
+            {
+                "id": "zhou",
+                "label": "周恩来",
+                "val": 20,
+                "group": "person",
+                "url": "topic_zhouenlai.html"
+            },
+            {
+                "id": "founding",
+                "label": "开国大典",
+                "val": 20,
+                "group": "event",
+                "url": "topic_founding_ceremony.html"
+            },
+            {
+                "id": "plan",
+                "label": "一五计划",
+                "val": 20,
+                "group": "plan",
+                "url": "topic_five_year_plan_1.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "mao",
+                "target": "newchina",
+                "label": "建立"
+            },
+            {
+                "source": "founding",
+                "target": "newchina",
+                "label": "标志"
+            },
+            {
+                "source": "newchina",
+                "target": "plan",
+                "label": "建设"
+            }
+        ]
+    }
+}

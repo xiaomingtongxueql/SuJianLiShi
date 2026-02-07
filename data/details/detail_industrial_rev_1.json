@@ -1,0 +1,76 @@
+{
+    "id": "detail_industrial_rev_1",
+    "type": "world",
+    "title": "第一次工业革命:蒸汽时代",
+    "year": "18世纪60年代",
+    "desc": "以蒸汽机的改良和广泛应用为标志，人类社会由手工工场进入大机器生产时代。",
+    "content": [
+        {
+            "title": "珍妮机与蒸汽机",
+            "text": "<p>1765年哈格里夫斯发明'珍妮纺纱机'，标志着工业革命的开始。1785年，<strong>瓦特</strong>改良的蒸汽机投入使用，提供了高效、便捷的动力，人类从此进入'蒸汽时代'。</p>"
+        },
+        {
+            "title": "工厂制度的确立",
+            "text": "<p>随着机器生产取代手工劳动，现代工厂制度逐步确立。生产力的巨大飞跃改变了社会结构，产生了工业资产阶级和工业无产阶级两大对立阶级。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "蒸汽机",
+            "url": "topic_steam_engine.html"
+        },
+        {
+            "text": "瓦特",
+            "url": "topic_watt.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "ir1",
+                "label": "工业革命",
+                "val": 30,
+                "group": "core",
+                "url": "detail_industrial_rev_1.html"
+            },
+            {
+                "id": "steam",
+                "label": "蒸汽机",
+                "val": 25,
+                "group": "tech",
+                "url": "topic_steam_engine.html"
+            },
+            {
+                "id": "watt",
+                "label": "瓦特",
+                "val": 20,
+                "group": "person",
+                "url": "topic_watt.html"
+            },
+            {
+                "id": "factory",
+                "label": "工厂制",
+                "val": 20,
+                "group": "system",
+                "url": "topic_factory.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "watt",
+                "target": "steam",
+                "label": "改良"
+            },
+            {
+                "source": "steam",
+                "target": "ir1",
+                "label": "标志"
+            },
+            {
+                "source": "ir1",
+                "target": "factory",
+                "label": "确立"
+            }
+        ]
+    }
+}

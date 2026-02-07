@@ -1,0 +1,87 @@
+{
+    "id": "detail_mesopotamia",
+    "type": "world",
+    "title": "两河流域:文明的曙光",
+    "year": "BC 3500",
+    "desc": "底格里斯河与幼发拉底河孕育了苏美尔文明，创造了世界上最早的城市、文字（楔形文字）和法典（汉谟拉比法典）。",
+    "content": [
+        {
+            "title": "苏美尔城邦",
+            "text": "<p>约公元前3500年，苏美尔人在两河流域南部建立了乌鲁克、乌尔等城邦。他们发明了<strong>楔形文字</strong>（Cuneiform），用芦苇杆在泥板上书写，这是世界上最古老的文字系统之一。</p>"
+        },
+        {
+            "title": "汉谟拉比法典",
+            "text": "<p>古巴比伦王国时期，汉谟拉比颁布了著名的<strong>《汉谟拉比法典》</strong>。法典刻在黑色玄武岩石柱上，宣扬'君权神授'，规定了以眼还眼、以牙还牙的同态复仇原则，并严格维护奴隶主阶级的利益。这是世界上现存第一部比较完备的成文法典。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "苏美尔人",
+            "url": "topic_sumerian.html"
+        },
+        {
+            "text": "楔形文字",
+            "url": "topic_cuneiform.html"
+        },
+        {
+            "text": "汉谟拉比法典",
+            "url": "topic_hammurabi.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "meso",
+                "label": "两河流域",
+                "val": 30,
+                "group": "core",
+                "url": "detail_mesopotamia.html"
+            },
+            {
+                "id": "sumer",
+                "label": "苏美尔",
+                "val": 25,
+                "group": "people",
+                "url": "topic_sumerian.html"
+            },
+            {
+                "id": "cuneiform",
+                "label": "楔形文字",
+                "val": 20,
+                "group": "culture",
+                "url": "topic_cuneiform.html"
+            },
+            {
+                "id": "hammurabi",
+                "label": "汉谟拉比",
+                "val": 25,
+                "group": "person",
+                "url": "topic_hammurabi.html"
+            },
+            {
+                "id": "code",
+                "label": "法典",
+                "val": 20,
+                "group": "law",
+                "url": "topic_hammurabi.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "meso",
+                "target": "sumer",
+                "label": "孕育"
+            },
+            {
+                "source": "sumer",
+                "target": "cuneiform",
+                "label": "发明"
+            },
+            {
+                "source": "hammurabi",
+                "target": "code",
+                "label": "颁布"
+            }
+        ]
+    }
+}

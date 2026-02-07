@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六五罢工:工人阶级登场 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        1919.6.5</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">六五罢工:工人阶级登场
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1919年6月，五四运动的风暴从北方的政治中心北京，转移到了南方的经济中心上海。6月5日起，上海工人自动举行声援学生的罢工，随后商人罢市，形成了学生、工人、商人联合的"三罢"斗争。如果不理解这一转折，就无法理解从旧民主主义向新民主主义的跨越——这是中国工人阶级第一次作为独立的政治力量，登上历史舞台。
+                    </p>
+                    
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="hammer" class="w-8 h-8 text-gold mr-3"></i>
+                        力量的转移：从学生到工人
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">1.</span>上海六三事件：导火索的蔓延
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    6月3日，北洋政府在北京继续大肆逮捕上街宣传的学生，甚至动用军队将北京大学等校园变为临时监狱，"六三逮捕"的消息迅速传遍全国。上海作为中国的工业和商业中心，各界对此反应极为激烈。
+                                </p>
+                                <p>
+                                    学生们的英勇和政府的暴行，深深触动了上海的产业工人和市民。他们意识到，单靠学生的呐喊是不足以撼动卖国政府的，必须有更强大的力量加入。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">2.</span>六五大罢工：城市瘫痪
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    6月5日上午，上海的日商纱厂工人率先罢工。随后，机器、印刷、电车、码头等行业的工人纷纷响应，罢工规模迅速扩大到六七万人。工人罢工直接打击了帝国主义在华的经济利益，也使城市的运转陷入瘫痪。
+                                </p>
+                                <p>
+                                    紧接着，上海商人举行罢市，并不顾租界当局的阻挠，在此后几天坚持关门停业。一时间，上海滩"商界关门，工界停工，学界罢课"，著名的"三罢"局面形成。斗争的中心由北京转移到上海，斗争的主力由学生转变为工人。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">3.</span>政府的妥协与运动的胜利
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    工人阶级的巨大力量让北洋政府和列强感到了前所未有的恐惧。电车不走，工厂不转，码头停摆，这是他们无法承受的代价。
+                                </p>
+                                <p>
+                                    6月10日，在巨大的社会压力下，北洋政府被迫释放被捕学生，并宣布免去曹汝霖、章宗祥、陆宗舆三人的职务。六五罢工成为了压垮骆驼的最后一根稻草，确保了五四运动取得初步胜利。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-earth shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-earth mr-2"></span>
+                                主力军作用
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                五四运动后期（6月3日以后），工人阶级成为运动的主力。这标志着中国工人阶级开始摆脱资产阶级和小资产阶级的追随者地位，以独立的政治姿态登上历史舞台。这是新民主主义革命开端的阶级基础。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-earth shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-earth mr-2"></span>
+                                马克思主义传播
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                既然工人阶级显示了如此巨大的力量，知识分子（如李大钊、陈独秀）开始更加关注工人运动，并开始尝试将马克思主义理论与工人运动相结合。这为中国共产党的成立准备了干部和思想条件。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="wrench"
+                                    class="w-6 mr-2 text-gold"></i> 工运的起点</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                这里的"起点"不是说之前没有罢工，而是说从经济斗争（涨工资）转向了政治斗争（反帝爱国）。这是质的飞跃。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="users"
+                                    class="w-6 mr-2 text-gold"></i> 群众运动</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                五四运动证明了"民众的大联合"的力量。毛泽东后来在《湘江评论》中盛赞这种联合，这对他后来的革命思想产生了深远影响。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"五四运动","url":"detail_may_fourth.html"},{"text":"新民主主义","url":"topic_new_democracy.html"},{"text":"北京学运","url":"topic_student_movement.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "strike", "label": "六五罢工", "val": 30, "group": "core", "url": "topic_workers_strike.html"},
+            {"id": "may4", "label": "五四运动", "val": 25, "group": "event", "url": "detail_may_fourth.html"},
+            {"id": "shanghai", "label": "上海", "val": 20, "group": "place", "url": "#"},
+            {"id": "worker", "label": "工人阶级", "val": 25, "group": "class", "url": "#"},
+            {"id": "three_strikes", "label": "三罢", "val": 20, "group": "event", "url": "#"}
+        ],
+        "edges": [
+            {"source": "strike", "target": "may4", "label": "高潮"},
+            {"source": "strike", "target": "shanghai", "label": "爆发地"},
+            {"source": "strike", "target": "worker", "label": "主力"},
+            {"source": "strike", "target": "three_strikes", "label": "组成部分"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

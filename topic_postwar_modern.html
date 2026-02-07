@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>战后世界与现代文明 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0f172a',
+                        blue: '#0969DA', earth: '#78350f', stone: '#64748b', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.02)',
+                        'hover': '0 15px 35px rgba(0,0,0,0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .global-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: #fff;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .tech-pill {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            background: #f1f5f9;
+            font-size: 0.75rem;
+            color: #475569;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-slate-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-slate-900">溯鉴历史 · 现代文明的底色</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-slate-900 rounded-sm">
+                        1945 年 - 至今</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6 leading-tight">
+                        战后世界：在断裂中缝合的地球共同体</h1>
+                    <p
+                        class="text-lg leading-relaxed text-slate-600 mb-8 border-l-4 border-slate-900 pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1945年以来的历史，是一场在核武器阴影下与技术狂飙中的艰难缝合。人类第一次拥有了可以毁灭自身文明的力量，也第一次拥有了通过数字化连接全球每一个神经末梢的技术。从亚非殖民地的独立雷鸣，到第三次科技革命催生的信息化巨浪，再到今日面对气候、贫富差距与算法霸权等全球性挑战的焦灼博弈，当代史告诉我们：文明的尺度不再仅仅是钢铁的产量，而是我们能在多大程度上作为一个单一的生物种群，去分担风险并共享繁荣。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：觉醒的巨浪——非殖民化与多极化的萌芽 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="flag" class="w-8 h-8 text-blue mr-3"></i> 第一维度：殖民体系的终结——从“被他者”到“自救者”</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">1945年后的三十年，是世界地图被疯狂重绘的三十年。大航海时代建立的旧殖民体系在中东、非洲、东南亚的独立运动中灰飞烟灭。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>1955
+                                    万隆会议</strong>：这是周恩来总理“求同存异”智慧的闪光时刻，也是亚非国家第一次在没有西方宗主国参加的情况下讨论自己的命运。它标志着“第三世界”作为一种独立的政治力量登上了国际舞台。
+                            </li>
+                            <li><strong>非洲年（1960）</strong>：17个国家在这一年内独立。非洲大陆的觉醒不仅是领土的回归，更是文化自尊的重建。</li>
+                            <li><strong>意义：多极化的底图</strong>：这些新兴国家的崛起，终结了大国主宰一切的“雅尔塔式”单一逻辑，为后来多极化世界的形成奠定了人口与地域基础。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：硅片的跳动——第三次科技革命的逻辑 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="cpu" class="w-8 h-8 text-blue mr-3"></i> 第二维度：信息文明——硅片与算法重组的社会结构</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">20世纪中叶开启的<strong>第三次科技革命</strong>，其核心不同于以往的“动力提升”，而是“信息处理”的革命。</p>
+
+                        <div class="global-box">
+                            <h4 class="font-bold text-blue mb-4 flex items-center"><i data-lucide="network"
+                                    class="w-5 mr-2"></i> 技术谱系的迭代</h4>
+                            <div class="flex flex-wrap mb-4">
+                                <span class="tech-pill">原子能</span><span class="tech-pill">电子计算机 (ENIAC)</span><span
+                                    class="tech-pill">航天技术 (人造卫星)</span>
+                                <span class="tech-pill">生物工程 (DNA)</span><span class="tech-pill">互联网
+                                    (ARPANET)</span><span class="tech-pill">半导体</span>
+                            </div>
+                            <p class="text-sm">
+                                <strong>革命实质：大脑的延伸</strong>。计算机不再是单纯的算盘，它成为了存储人类所有知识的“全球共同脑”。互联网打破了物理时空，使全球贸易、文化对流实现了毫秒级的响应。人类社会从工业时代的“流水线模式”开始向信息时代的“网络化模式”转型。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 第三章：共同的悬崖——全球性挑战的到来 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="earth" class="w-8 h-8 text-green-600 mr-3"></i> 第三维度：人类公约数——后冷战时代的危机与合作</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">1991年后，冷战的尘埃落定并未带来“历史的终结”。相反，我们进入了一个<strong>高风险、高联动</strong>的现代社会。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>全球化的悖论</strong>：贸易的高度整合虽然创造了财富，但也拉大了全球范围内的贫富鸿沟。金融危机的传染性、跨国病毒的爆发力，都证明了我们身处同一条“泰坦尼克号”上。
+                            </li>
+                            <li><strong>生态的红线</strong>：气候变暖与生物多样性丧失，已不再是边缘课题，而是关乎种群存亡的最高政治。人类第一次需要面对：如何在一个“有限”的地球上，管理“无限”的扩张欲望。
+                            </li>
+                            <li><strong>网络社会的隐忧</strong>：数据霸权、虚假信息与算法对人类决策的侵蚀，构成了21世纪新的“软极权”风险。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 如何评价“万隆精神”的现实意义？</h4>
+                            <p class="text-slate-600 italic">
+                                “万隆精神”即：和平共处、求同存异。在多极化震荡、文明冲突加剧的今日，这种强调国家间无论大小、主权平等、放弃武力解决争端并尊重多样性的原则，依然是维持全球秩序不至于彻底崩解的最高理性公约数。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 第三次科技革命对全球格局重构的影响？</h4>
+                            <p class="text-slate-600 italic">
+                                它改变了强国的评判标准。过去是看谁拥有更多的煤炭和土地（一工、二工），现在是看谁拥有<strong>算法主权、芯片制造能力与数据算力</strong>。这种“软实力”的竞争加剧了不平衡发展，使得掌握核心技术的国家能通过科技租赁获得全球性的超额利润（知识经济阶段）。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-slate-900 mb-6 border-b border-slate-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="shield-check"
+                                    class="w-6 mr-2 text-blue"></i> 规则的守护者</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                战后世界告诉我们：和平不是自然的赐予，而是基于制度（如联合国）与理性共识（如核不扩散）的脆弱平衡。守护这些规则，就是守护人类文明的最后底线。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="compass"
+                                    class="w-6 mr-2 text-blue"></i> 共同的航程</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                每一个时代的结束都是下一个时代的开启。我们今日所经历的数字化与低碳革命，本质上是人类在意识到作为“行星共同体”命运后的自我救赎。这声回响，来自历史的最深处。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-slate-50 rounded-lg overflow-hidden border border-slate-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_bandung.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">万隆会议</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_it_rev.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">信息技术革命</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_globalization.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">全球化挑战</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_multi_polar.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">世界多极化</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"万隆会议","url":"topic_bandung.html"},{"text":"信息技术","url":"topic_it_rev.html"},{"text":"全球化","url":"topic_globalization.html"},{"text":"多极化","url":"topic_multi_polar.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"modern","label":"现代文明","x":50,"y":50,"type":"core","url":"detail_postwar_modern.html"},{"id":"indep","label":"非殖民化","x":20,"y":30,"type":"normal","url":"topic_bandung.html"},{"id":"it","label":"IT 革命","x":80,"y":30,"type":"normal","url":"topic_it_rev.html"},{"id":"glob","label":"全球性问题","x":50,"y":80,"type":"sub","url":"topic_globalization.html"},{"id":"multi","label":"多极化趋势","x":85,"y":70,"type":"sub","url":"topic_multi_polar.html"}],"edges":[{"source":"modern","target":"indep"},{"source":"modern","target":"it"},{"source":"modern","target":"glob"},{"source":"indep","target":"multi"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

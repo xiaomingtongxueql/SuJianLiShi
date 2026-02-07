@@ -1,0 +1,86 @@
+{
+    "id": "detail_ww1",
+    "type": "world",
+    "title": "第一次世界大战:帝国的碰撞",
+    "year": "1914年 — 1918年",
+    "desc": "一场由欧洲列强为争夺世界霸权而引发的全球性战争。同盟国与协约国展开厮杀，造成了空前的灾难，也重塑了国际格局（凡尔赛-华盛顿体系）。",
+    "content": [
+        {
+            "title": "萨拉热窝的枪声",
+            "text": "<p>1914年6月28日，奥匈帝国皇储斐迪南大公在<strong>萨拉热窝</strong>被塞尔维亚民族主义者普林西普刺杀。这一事件成为一战的导火索。随后，欧洲各大国依据盟约纷纷卷入战争。</p>"
+        },
+        {
+            "title": "凡尔登绞肉机",
+            "text": "<p>战争主要在欧洲战场进行，分为东、西、南三条战线。1916年的<strong>凡尔登战役</strong>异常惨烈，德法双方伤亡超过70万，被称为'绞肉机'。随后的索姆河战役中，坦克首次投入使用。</p>"
+        },
+        {
+            "title": "战争的结束与反思",
+            "text": "<p>1917年美国参战，俄国爆发十月革命退出战争。1918年11月，德国投降，一战以同盟国的失败告终。战争削弱了欧洲的力量，促进了民族解放运动的发展。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "萨拉热窝事件",
+            "url": "topic_sarajevo.html"
+        },
+        {
+            "text": "凡尔赛体系",
+            "url": "topic_versailles.html"
+        },
+        {
+            "text": "国联",
+            "url": "topic_league_nations.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "ww1",
+                "label": "一战",
+                "val": 30,
+                "group": "core",
+                "url": "detail_ww1.html"
+            },
+            {
+                "id": "entente",
+                "label": "协约国",
+                "val": 20,
+                "group": "camp",
+                "url": "topic_entente.html"
+            },
+            {
+                "id": "alliance",
+                "label": "同盟国",
+                "val": 20,
+                "group": "camp",
+                "url": "topic_alliance_powers.html"
+            },
+            {
+                "id": "sarajevo",
+                "label": "萨拉热窝",
+                "val": 20,
+                "group": "event",
+                "url": "topic_sarajevo.html"
+            },
+            {
+                "id": "versailles",
+                "label": "凡尔赛体系",
+                "val": 20,
+                "group": "result",
+                "url": "topic_versailles.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "sarajevo",
+                "target": "ww1",
+                "label": "导火索"
+            },
+            {
+                "source": "ww1",
+                "target": "versailles",
+                "label": "战后秩序"
+            }
+        ]
+    }
+}

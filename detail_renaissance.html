@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文艺复兴:人的发现 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-renaissance"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        14世纪 — 17世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">文艺复兴:人的发现</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        文艺复兴（Renaissance）是发生在欧洲的一场资产阶级思想文化运动。它打着'复兴古希腊罗马文化'的旗号，实质上是为了摆脱中世纪神学的束缚，宣扬以人为中心的人文主义。这场运动从意大利的佛罗伦萨开始，蔓延至全欧洲，为近代科学、艺术和政治奠定了基础。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=115094973453487&bvid=BV16cvNzDEez&cid=25849303344&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-6 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>序幕：从中世纪的黄昏到现在的黎明 (From Twilight to
+                                Dawn)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-6 text-justify text-lg">
+                                <p>
+                                    14世纪的欧洲正处于一场深刻的危机之中：黑死病夺去了三分之一人口的生命，英法百年战争让土地荒芜，教会的"巴比伦之囚"和"大分裂"动摇了信仰的根基。然而，正是在这片废墟之上，现代文明的曙光首先在意大利半岛升起。为什么是意大利？雅各布·布克哈特在《意大利文艺复兴时期的文化》中一针见血地指出：<strong>"在这个国家，人作为精神个体的意识，第一次觉醒了。"</strong>
+                                </p>
+                                <p>
+                                    意大利独特的政治环境——独立的城市共和国（Communes）林立，为思想自由提供了土壤。佛罗伦萨、威尼斯、米兰等城市凭借地中海贸易枢纽的地位，垄断了香料与丝绸贸易，催生了最早的<strong>资本主义萌芽</strong>。美第奇（Medici）、斯特罗齐（Strozzi）等银行家家族崛起，他们拥有富可敌国的财富，却缺乏与之匹配的政治合法性（非贵族出身）。为了树立权威，他们转而资助艺术家、学者，通过赞助宏伟的建筑和艺术品来彰显荣耀。这种"赞助人制度"（Patronage）直接取代了教会对艺术的垄断，使得艺术不再仅仅是《圣经》的图解，而开始关注现世的荣光。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-6 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>精神内核：人的尊严与发现 (The Discovery of Man)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-6 text-justify text-lg">
+                                <p>
+                                    文艺复兴的核心不是复古，而是<strong>人文主义（Humanism）</strong>。中世纪神学强调"人的原罪"和"来世的拯救"，认为现世是苦海，人应当禁欲。而人文主义者针锋相对地提出了"Ad
+                                    Fontes"（回到源头）的口号，他们挖掘古希腊罗马的典籍，不是为了模仿，而是为了寻找一种肯定人性的哲学依据。
+                                </p>
+                                <p>
+                                    彼特拉克（Petrarch）在攀登旺图山时感叹，壮丽的风景无法与人类灵魂的深邃相比；皮科·德拉·米兰多拉（Pico della
+                                    Mirandola）在《论人的尊严》中发表了振聋发聩的宣言：<strong>"人是自由的工匠，可以把自己塑造成任何他想成为的样子。"</strong>
+                                    这种"人的可塑性"和"自由意志"的观念，彻底打破了中世纪等级森严的宿命论。人们开始相信，通过教育（"Studia
+                                    Humanitatis"，即人文学科）和个人奋斗，人可以成为全知全能的"大写的人"（Universal Man）。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-6 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>视觉革命：透视法作为哲学工具 (Perspective as
+                                Philosophy)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-6 text-justify text-lg">
+                                <p>
+                                    在艺术领域，文艺复兴不仅仅是解剖学准确性的提高，更是一场视觉认知的革命。布鲁内莱斯基发明的<strong>线性透视法（Linear
+                                        Perspective）</strong>，不仅是一种绘画技法，更是一种哲学宣言：它确立了"单点视角"，意味着世界是可以被理性测量、被数学通过几何构建的，而"观察者"（人）处于这个视觉世界的中心位置。这与中世纪艺术中"上帝视角"（大小代表神圣程度而非距离）形成了鲜明对比。
+                                </p>
+                                <p>
+                                    达·芬奇将科学观察引入艺术，用解剖刀探索人体的奥秘，认为"绘画是最高级的科学"；米开朗基罗在《大卫》中通过夸张的肌肉线条，赞美了人类对抗命运的英雄气概；拉斐尔则在《雅典学院》中，将柏拉图与亚里士多德置于宏伟的古典建筑中，象征着基督教神学与希腊理性的完美和解。艺术不再是神学的婢女，而成为了探索真理的独立途径。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-6 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">4.</span>北方的回响与现代性的临近 (Northern Echoes)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-6 text-justify text-lg">
+                                <p>
+                                    当意大利的春风吹过阿尔卑斯山，文艺复兴在北方（德意志、尼德兰、英国）呈现出不同的面貌。不同于意大利的世俗享乐主义，<strong>北方文艺复兴</strong>更侧重于宗教道德的沉思和社会批判。伊拉斯谟（Erasmus）用《愚人颂》讽刺教会的腐败，托马斯·莫尔在《乌托邦》中构想了理想的社会制度。
+                                </p>
+                                <p>
+                                    最关键的催化剂是<strong>古腾堡印刷术</strong>的发明。它打破了教会对知识的垄断，使得《圣经》和希腊罗马典籍能够以低廉的价格进入普通家庭。知识的普及为后来的"宗教改革"埋下了火药堆，马丁·路德的"因信称义"思想，实际上是人文主义"个人主义"精神在神学领域的必然延伸。至此，中世纪的统一精神世界彻底崩塌，人类迈入了充满喧哗与骚动、理性与冲突的现代世界。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                核心概念：人文主义 (Humanism)
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                这是一场世界观的革命。它从关注"神性"（Divinity）转向关注"人性"（Humanity）。不仅肯定人的欲望（现世幸福），更肯定人的能力（理性与创造力）。它通过复兴古典文化，打破了教会对知识的垄断，建立了以人为本的新道德体系。
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                经济基础：资本主义萌芽
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                文艺复兴不是偶然的文化现象，而是经济发展的必然结果。意大利的商业繁荣创造了富裕的市民阶级，他们需要一种不同于禁欲主义的新文化来为自己的财富和生活方式辩护。美第奇家族的银行账本与艺术赞助，是理解这一时代的一体两面。
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                科学革命的铺垫
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                人文主义鼓励用"理性"的眼光观察世界，反对盲从亚里士多德或教会的权威。这种怀疑精神和观察方法（如达·芬奇的解剖、透视法中的几何学）直接催生了近代自然科学。哥白尼的日心说，本质上是把上帝从宇宙中心移开，让人类理性占据中心。
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                政治遗产：现代国家的雏形
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                马基雅维利在《君主论》中剥离了政治与道德，提出了现实主义政治学（Realpolitik）。同时，民族语言（如但丁用托斯卡纳语写作）的使用，促进了民族意识的觉醒，为后来民族国家（Nation-State）的形成奠定了文化基础。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                文艺复兴是现代世界的开端。它确立了'个人主义'及'世俗化'的价值观，这也是现代西方社会的基石。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                留下了无数艺术珍品（卢浮宫三宝之一的《蒙娜丽莎》）。它把人从神权的束缚中解放出来，为后来的启蒙运动和工业革命铺平了道路。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"人文主义","url":"topic_humanism.html"},{"text":"但丁","url":"topic_dante.html"},{"text":"达·芬奇","url":"topic_da_vinci.html"},{"text":"米开朗基罗","url":"topic_michelangelo.html"},{"text":"拉斐尔","url":"topic_raphael.html"},{"text":"莎士比亚","url":"topic_shakespeare.html"},{"text":"科学革命","url":"topic_scientific_revolution.html"},{"text":"宗教改革","url":"topic_reformation.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"renaissance","label":"文艺复兴","val":30,"group":"core","url":"detail_renaissance.html"},{"id":"italy","label":"意大利","val":20,"group":"location","url":"topic_italian_renaissance.html"},{"id":"humanism","label":"人文主义","val":25,"group":"concept","url":"topic_humanism.html"},{"id":"dante","label":"但丁","val":15,"group":"person","url":"topic_dante.html"},{"id":"da_vinci","label":"达·芬奇","val":15,"group":"person","url":"topic_da_vinci.html"},{"id":"michelangelo","label":"米开朗基罗","val":15,"group":"person","url":"topic_michelangelo.html"},{"id":"raphael","label":"拉斐尔","val":15,"group":"person","url":"topic_raphael.html"},{"id":"shakespeare","label":"莎士比亚","val":15,"group":"person","url":"topic_shakespeare.html"},{"id":"science","label":"科学革命","val":20,"group":"impact","url":"topic_scientific_revolution.html"},{"id":"reformation","label":"宗教改革","val":15,"group":"impact","url":"topic_reformation.html"}],"edges":[{"source":"italy","target":"renaissance","label":"发源地"},{"source":"renaissance","target":"humanism","label":"核心思想"},{"source":"dante","target":"renaissance","label":"先驱"},{"source":"renaissance","target":"da_vinci","label":"美术三杰"},{"source":"renaissance","target":"michelangelo","label":"美术三杰"},{"source":"renaissance","target":"raphael","label":"美术三杰"},{"source":"renaissance","target":"shakespeare","label":"文学高峰"},{"source":"renaissance","target":"science","label":"推动"},{"source":"renaissance","target":"reformation","label":"铺垫"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

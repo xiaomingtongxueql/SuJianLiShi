@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蒙古帝国 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        secondary: '#1e40af', stone: '#57534e', line: '#E2E8F0',
+                        accent: '#0969DA',
+                        earth: '#1e40af',
+                        gold: '#0969DA',
+                        blue: '#0969DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body { background-color: #F5F7FA; color: #334155; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 3px; }
+        .insight-card {
+            border-left: 4px solid #0969DA;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin: 1.5rem 0;
+        }
+        .quote-block {
+            background: #F5F7FA;
+            border-left: 4px solid #0E101A;
+            padding: 1.5rem;
+            font-family: serif;
+            font-style: italic;
+            color: #475569;
+            margin: 2rem 0;
+        }
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()" class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <section>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">1206年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        蒙古帝国
+                    </h1>
+                    <p class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        蒙古帝国（1206-1368），历史上版图最大的连续陆地帝国。从成吉思汗统一草原部落开始，这支旋风般的骑兵部队横扫了从太平洋到多瑙河的广袤地域，终结了伊斯兰黄金时代，重塑了中国、俄罗斯和中东的历史进程。
+                    </p>
+                    
+                </section>
+                
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="columns" class="w-8 h-8 text-accent mr-3"></i>
+                        草原风暴
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">成吉思汗（铁木真）通过打破部落血缘界限、建立千户制和极其严酷的军纪（《大扎撒》），将松散的游牧民族锻造成了一支高效的战争机器。蒙古骑兵以其机动性、曼古歹战术（佯退）和对恐怖心理战的熟练运用而战无不胜。</p>
+                        <p class="mb-4">他们不仅擅长野战，还善于学习攻城技术（利用工匠和投石机），使得中原和中亚的坚固城池在他们面前纷纷陷落。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        蒙古治世 (Pax Mongolica)
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">尽管征服过程伴随着屠杀和破坏，但统一后的帝国创造了前所未有的"蒙古治世"。丝绸之路在蒙古人的保护下第一次实现了全线畅通且安全，被称为"头上顶着金盘子也能安全走到另一端"。</p>
+                        <p class="mb-4">这种连通性促进了东西方物质与文明的大交换：中国的火药、印刷术和纸币传到了欧洲，伊斯兰的天文、医学和波斯的艺术传到了东亚。马可·波罗的旅行正是这一时期的产物。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        帝国的瓦解
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">庞大的帝国由于继承权问题和文化差异，最终分裂为四大汗国：元朝（宗主国）、金帐汗国、察合台汗国和伊利汗国。随着定居化的蒙古统治者逐渐被当地文化同化（如接受伊斯兰教或佛教），以及黑死病的打击，帝国逐渐走向衰落。</p>
+                        <p class="mb-4">虽然作为一个政治实体消失了，但蒙古征服打破了欧亚大陆各区域的孤立状态，使得"世界历史"真正具有了全球性。</p>
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu" class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">蒙古帝国是一个关于破坏与建设的宏大悖论。它证明了暴力可以在短时间内统一世界，但只有文明和制度的整合才能维持长久。它无意中充当了全球化的助推器，将世界强行拉入了一个相互连接的时代。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope" class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">历史上最大陆地帝国。丝绸之路复兴。元朝。金帐汗国对俄罗斯的影响。东西方技术交流。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100" id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+            <!-- Injected Deep Dive Card -->
+            <div id="deep-dive-card" class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                    <i data-lucide="layers" class="w-4"></i> 历史深读
+                </div>
+                
+            <a href="detail_yuan.html" class="block mt-3 group/link">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-gold/50 transition-all shadow-sm hover:shadow-md">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center mr-3 group-hover/link:bg-gold group-hover/link:text-white transition-colors">
+                            <i data-lucide="book-open-check" class="w-4 h-4"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700 group-hover/link:text-primary">元朝:大漠帝国的世界秩序</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300 group-hover/link:text-gold"></i>
+                </div>
+            </a>
+        
+            </div>
+        
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords" type="application/json">[{"text":"成吉思汗","url":"topic_genghis_khan.html"},{"text":"忽必烈","url":"topic_kublai_khan.html"},{"text":"黑死病","url":"topic_black_death.html"}]</script>
+    <script id="data-graph" type="application/json">{"nodes":[{"id":"main","label":"蒙古帝国","type":"core"},{"id":"genghis","label":"成吉思汗","type":"sub"},{"id":"kublai","label":"忽必烈","type":"sub"},{"id":"silk_road","label":"丝绸之路","type":"sub"},{"id":"khanates","label":"四大汗国","type":"sub"}],"edges":[{"source":"main","target":"genghis"},{"source":"main","target":"kublai"},{"source":"main","target":"silk_road"},{"source":"main","target":"khanates"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), null);
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        }
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-accent', hoverColor: 'hover:text-accent' }
+            );
+        }
+    </script>
+</body>
+</html>
+
+

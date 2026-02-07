@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启蒙运动 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        secondary: '#1e40af', stone: '#57534e', line: '#E2E8F0',
+                        accent: '#0969DA',
+                        earth: '#1e40af',
+                        gold: '#0969DA',
+                        blue: '#0969DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body { background-color: #F5F7FA; color: #334155; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 3px; }
+        .insight-card {
+            border-left: 4px solid #0969DA;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin: 1.5rem 0;
+        }
+        .quote-block {
+            background: #F5F7FA;
+            border-left: 4px solid #0E101A;
+            padding: 1.5rem;
+            font-family: serif;
+            font-style: italic;
+            color: #475569;
+            margin: 2rem 0;
+        }
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()" class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <section>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">1715年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        启蒙运动
+                    </h1>
+                    <p class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        启蒙运动（17-18世纪），一场以"理性"为核心的思想解放运动。它高举科学与民主的大旗，猛烈抨击封建专制和宗教愚昧。这也是一场为现代社会设计蓝图的运动——自由、平等、三权分立等概念，在此期间从书本走进了现实，引爆了美国独立战争和法国大革命。
+                    </p>
+                    
+                </section>
+                
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="columns" class="w-8 h-8 text-accent mr-3"></i>
+                        理性的光芒
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">康德说："启蒙就是人类脱离自己所加之于自己的不成熟状态。"不成熟状态就是不经别人的引导，就对运用自己的理智无能为力。启蒙运动的核心口号是"敢于求知"（Sapere aude）。</p>
+                        <p class="mb-4">牛顿的物理学证明了宇宙是受自然规律支配的，这启发了思想家们：人类社会是否也有客观规律？洛克提出了"天赋人权"（生命、自由、财产），认为政府的权力来源于人民的契约，如果政府违约，人民有权推翻它。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        伏尔泰：思想界的泰斗
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">伏尔泰是启蒙运动的领袖，他用辛辣的笔触讽刺教会的虚伪和专制的腐败。他名言无数，最著名的是对宽容的捍卫："我不同意你的观点，但我誓死捍卫你说话的权利。"</p>
+                        <p class="mb-4">他推崇英国的君主立宪制，主张法律面前人人平等，反对酷刑和宗教迫害。他的思想如同一把利剑，刺破了旧制度的黑暗天幕。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        卢梭与社会契约
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">卢梭比伏尔泰激进得多。在《社会契约论》中，他开篇就说："人是生而自由的，但却无往不在枷锁之中。"他主张"主权在民"，认为合法的国家只能建立在人民的公意之上。</p>
+                        <p class="mb-4">他不信任代议制，向往古希腊式的小国寡民的直接民主。他的思想充满了浪漫主义激情，虽然有时显得极端，却成为了法国大革命中最具煽动性的精神火药。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="landmark" class="w-8 h-8 text-accent mr-3"></i>
+                        孟德斯鸠与百科全书
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">孟德斯鸠在《论法的精神》中系统阐述了"三权分立"学说，认为只有权力制约权力，才能防止暴政。这一理论后来直接成为了美国宪法的框架。</p>
+                        <p class="mb-4">狄德罗主编的《百科全书》则汇集了当时最先进的科学和工艺知识，旨在"改变人们的思维方式"。启蒙思想家们相信，知识的普及会通过教育改良人性，推动社会进步。</p>
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu" class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">启蒙运动奠定了现代文明的基石。我们今天习以为常的权利观念、法治精神、科学思维，都是启蒙运动的遗产。但它对理性的过度推崇也引发了反思：理性是否万能？如何避免理性导致的另一种冷酷？</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope" class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">三权分立。天赋人权。社会契约论。百科全书。美国宪法。法国大革命。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100" id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+            <!-- Injected Deep Dive Card -->
+            <div id="deep-dive-card" class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                    <i data-lucide="layers" class="w-4"></i> 历史深读
+                </div>
+                
+            <a href="detail_french_rev.html" class="block mt-3 group/link">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-gold/50 transition-all shadow-sm hover:shadow-md">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center mr-3 group-hover/link:bg-gold group-hover/link:text-white transition-colors">
+                            <i data-lucide="book-open-check" class="w-4 h-4"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700 group-hover/link:text-primary">法国大革命</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300 group-hover/link:text-gold"></i>
+                </div>
+            </a>
+        
+            </div>
+        
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords" type="application/json">[{"text":"卢梭","url":"topic_rousseau.html"},{"text":"伏尔泰","url":"topic_voltaire.html"},{"text":"美国独立","url":"topic_washington.html"}]</script>
+    <script id="data-graph" type="application/json">{"nodes":[{"id":"main","label":"启蒙运动","type":"core"},{"id":"reason","label":"理性主义","type":"sub"},{"id":"voltaire","label":"伏尔泰","type":"sub"},{"id":"rousseau","label":"卢梭","type":"sub"},{"id":"revolution","label":"大革命","type":"normal"}],"edges":[{"source":"main","target":"reason"},{"source":"main","target":"voltaire"},{"source":"main","target":"rousseau"},{"source":"main","target":"revolution"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), null);
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        }
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-accent', hoverColor: 'hover:text-accent' }
+            );
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中古亚洲国家 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid #eef2f6;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #0969DA;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(9, 105, 218, 0.05);
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 封建时代的亚洲</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元 7 世纪 - 公元 13 世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        中古亚洲国家：文明的移植与信仰的扩张</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        中古时期的亚洲，展现了人类文明演进中两种具代表性的动力：学习与整合。在东亚，日本通过“大化改新”深度移植隋唐体制，实现了从原始部落向集权国家的惊人跨越；在西亚，阿拉伯帝国在先知穆罕默德的旗帜下，构建了一个横跨亚欧非的庞大商业与文化网络。它们向世界证明：文明的色彩不仅取决于本土的积淀，更取决于面向世界的胸怀。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：东瀛的觉醒——大化改新的制度重构 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="sun" class="w-8 h-8 text-blue mr-3"></i> 第一维度：大化改新——东亚体制的成功移植</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">646年，孝德天皇效法隋唐制度进行改革。这不仅仅是一场官制和税务的变革，更是日本民族第一次系统性的<strong>现代化（封建化）尝试</strong>。
+                        </p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>中央集权的确立</strong>：废除世袭贵族对土地与人民的私人拥有，建立以天皇为中心的中央集权国家。这种模式直接对标唐朝的三省六部。</li>
+                            <li><strong>经济基础：班田收授法</strong>：将土地收归国有，按人口分配给公民，并推行均田制体系下的“租庸调”税务模式。这极大释放了生产力，使日本进入封建社会。
+                            </li>
+                            <li><strong>武士阶层的伏笔</strong>：随着大化改新后公法秩序的崩解，地方庄园逐渐兴起，武装护卫（武士）开始走上历史舞台。这种独特的“忠君”与“尚武”的结合，构成了后来日本民族性格的底色。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：沙漠的雷鸣——伊斯兰教与阿拉伯帝国的崛起 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="moon" class="w-8 h-8 text-blue mr-3"></i> 第二维度：阿拉伯帝国——信仰铸就的超级强权</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">在阿拉伯半岛的黄沙中，穆罕默德不仅创立了伊斯兰教，更统一了散落的游牧部落。8世纪中叶，阿拉伯帝国已成为人类历史上极少数横跨亚欧非庞大疆域的强权。</p>
+                        <p class="mb-6"><strong>文明的独占性优势</strong>：阿拉伯人不仅是战士，更是天生的全球贸易商。他们利用地理位置，垄断了连接东西方贸易的致命咽喉。</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="feature-card">
+                                <h5 class="font-bold text-blue mb-2">商业驱动</h5>
+                                <p class="text-xs">建立连接地中海与印度洋的贸易网，黄金与丝绸在此汇流。</p>
+                            </div>
+                            <div class="feature-card">
+                                <h5 class="font-bold text-blue mb-2">信仰凝聚</h5>
+                                <p class="text-xs">通过古兰经和哈里发制度，实现了内部文化心理的高度统一。</p>
+                            </div>
+                            <div class="feature-card">
+                                <h5 class="font-bold text-blue mb-2">学术胃口</h5>
+                                <p class="text-xs">建立巴格达“智慧宫”，几乎翻译了所有古希腊与印度的经典。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 第三章：文明的黄金桥梁——阿拉伯学的深度影响 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="book" class="w-8 h-8 text-blue mr-3"></i> 第三维度：中专站的奇迹——阿拉伯人的学术贡献</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">阿拉伯人被誉为“东西方文明交流的使者”。如果没有他们，世界历史的某些链条可能会永远断裂。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>阿拉伯数字与科学</strong>：他们改造并推广了印度人发明的数字系统。同时，其在医学（《医典》）、光学、炼金术（近代化学前身）领域的深入研究，直接启发了后来的欧洲科学革命。
+                            </li>
+                            <li><strong>中国技术的西传</strong>：通过阿拉伯人的商队，中国的造纸术、指南针、火药得以传往欧洲。这种技术的溢出效应最终终结了欧洲的中世纪。</li>
+                            <li><strong>“智慧宫”的记忆功能</strong>：在欧洲人正处于“黑暗时代”遗忘古希腊经典时，巴格达的翻译家们将其完好保存，并在几百年后回传欧洲，引爆了文艺复兴。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 为什么说阿拉伯帝国是一个“商业帝国”？</h4>
+                            <p class="text-gray-600 italic">
+                                因为它不以单一的农业为支柱，而是以跨区域的长途商贸为血脉。哈里发政府通过保护商人、统一货币（金币第纳尔）以及建立庞大的驿站体系，使商人的社会地位空前拔高。这种“商贸立国”的特质使其文化具备了极强的流动性与包容性。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 大化改新对日本民族灵魂的塑造作用？</h4>
+                            <p class="text-gray-600 italic">
+                                它确立了日本“善于学习并内化强力文明”的文化基因。它向日本证明：在外部巨大压力的倒逼下，通过自上而下的制度彻底革命，可以实现跨越式的社会升级。这种记忆在1200年后的“明治维新”中再次被精准唤醒。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="navigation"
+                                    class="w-6 mr-2 text-blue"></i> 枢纽的价值</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                阿拉伯帝国告诉世人：一个强大的文明，其力量不仅在于其武力的疆界，更在于其通过连接（Connection）来汇集全球知识的能力。这种作为“全球枢纽”的战略眼光，是帝国在千年前留给今日世界的生存课。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="refresh-ccw"
+                                    class="w-6 mr-2 text-blue"></i> 循环与进化</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                中古亚洲的历史是一场在制度模仿与宗教创制间的伟大赛跑。日本证明了模仿可以带来新生，阿拉伯证明了信仰可以汇聚全球。当这股力量与大唐盛世交相辉映时，中古亚洲无疑处于当时世界文明的最高点。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_taika.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">大化改新</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_muhammad.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">穆罕默德</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_arab_empire.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">阿拉伯帝国</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_bushido.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">武士道时代</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"大化改新","url":"topic_taika.html"},{"text":"穆罕默德","url":"topic_muhammad.html"},{"text":"阿拉伯帝国","url":"topic_arab_empire.html"},{"text":"武士道","url":"topic_bushido.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"asia","label":"中古亚洲","x":50,"y":50,"type":"core","url":"detail_medieval_asia.html"},{"id":"japan","label":"大化改新","x":20,"y":30,"type":"normal","url":"detail_medieval_asia.html"},{"id":"arab","label":"阿拉伯帝国","x":80,"y":30,"type":"normal","url":"detail_medieval_asia.html"},{"id":"bridge","label":"文明桥梁","x":50,"y":80,"type":"sub","url":"detail_medieval_asia.html"},{"id":"wisdom","label":"巴格达智慧宫","x":85,"y":70,"type":"sub"}],"edges":[{"source":"asia","target":"japan"},{"source":"asia","target":"arab"},{"source":"asia","target":"bridge"},{"source":"arab","target":"wisdom"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

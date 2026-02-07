@@ -1,0 +1,141 @@
+{
+    "id": "topic_baijia",
+    "title": "百家争鸣:中国思想的轴心时代",
+    "category": "思想文化",
+    "year": "春秋战国",
+    "word_count": 3500,
+    "summary": "百家争鸣（Contention of a Hundred Schools of Thought）是春秋战国时期知识分子中不同学派涌现及各流派争芳斗艳的局面。这是中国历史上思想最自由、文化最繁荣的时代。儒、道、墨、法、兵、名、阴阳等学派针对社会变革提出不同主张，奠定了中华传统文化的基因。这一时期与古希腊哲学、印度佛教、以色列先知思想并称为人类文明的“轴心时代”。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "baijia",
+                "label": "百家争鸣",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "rujia",
+                "label": "儒家",
+                "val": 20,
+                "group": "school"
+            },
+            {
+                "id": "daojia",
+                "label": "道家",
+                "val": 20,
+                "group": "school"
+            },
+            {
+                "id": "mojia",
+                "label": "墨家",
+                "val": 15,
+                "group": "school"
+            },
+            {
+                "id": "fajia",
+                "label": "法家",
+                "val": 15,
+                "group": "school"
+            },
+            {
+                "id": "kongzi",
+                "label": "孔子(仁)",
+                "val": 12,
+                "group": "person"
+            },
+            {
+                "id": "laozi",
+                "label": "老子(道)",
+                "val": 12,
+                "group": "person"
+            },
+            {
+                "id": "mozi",
+                "label": "墨子(兼爱)",
+                "val": 10,
+                "group": "person"
+            },
+            {
+                "id": "hanfeizi",
+                "label": "韩非(法治)",
+                "val": 10,
+                "group": "person"
+            },
+            {
+                "id": "jixia",
+                "label": "稷下学宫",
+                "val": 12,
+                "group": "location"
+            }
+        ],
+        "edges": [
+            {
+                "source": "rujia",
+                "target": "baijia",
+                "label": "主要流派"
+            },
+            {
+                "source": "daojia",
+                "target": "baijia",
+                "label": "主要流派"
+            },
+            {
+                "source": "kongzi",
+                "target": "rujia",
+                "label": "创始人"
+            },
+            {
+                "source": "laozi",
+                "target": "daojia",
+                "label": "创始人"
+            },
+            {
+                "source": "mozi",
+                "target": "mojia",
+                "label": "创始人"
+            },
+            {
+                "source": "hanfeizi",
+                "target": "fajia",
+                "label": "集大成者"
+            },
+            {
+                "source": "jixia",
+                "target": "baijia",
+                "label": "学术中心"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "时代温床:乱世出思想",
+            "content": "<p><strong>社会大变革：</strong>春秋战国时期，井田制瓦解，封建土地私有制确立。旧的礼乐制度崩溃（礼崩乐坏），新的社会秩序尚未建立。这种动荡为思想自由提供了土壤。</p><p><strong>士阶层崛起：</strong>原本依附于贵族的“士”阶层开始独立，他们掌握文化知识，周游列国，向诸侯兜售自己的治国方略。此时“学在官府”的垄断被打破，私学兴起（孔子首创），平民也有了受教育的机会。</p>"
+        },
+        {
+            "title": "主要流派:思想的万花筒",
+            "content": "<h4>1. 儒家：仁者爱人</h4><p>孔子主张“仁”和“礼”，提倡“德治”。孟子发展为“仁政”，提出“民贵君轻”。荀子主张“隆礼重法”。儒家思想关注社会伦理和政治秩序，后来成为中国封建社会的正统思想。</p><h4>2. 道家：道法自然</h4><p>老子认为“道”是宇宙本原，主张“无为而治”，反对人为干涉。庄子追求精神自由，向往逍遥境界。道家思想构成了中国传统文化的另一极——超越世俗的精神家园。</p><h4>3. 墨家：兼爱非攻</h4><p>墨子代表小生产者利益，主张“兼爱”（无差别的爱）、“非攻”（反对战争）、“尚贤”（任人唯贤）。墨家还具有科学精神，在光学、力学等方面有重要发现（《墨经》）。</p><h4>4. 法家：以法治国</h4><p>韩非子集法家之大成，主张“法、术、势”结合，建立君主专制的中央集权国家。法家思想被秦国采用，直接推动了统一大业。</p>"
+        },
+        {
+            "title": "稷下学宫:古代的智库",
+            "content": "<p>齐国在都城临淄设立的<strong>稷下学宫</strong>，是当时世界上规模最大的官方高等学府和智库。各派学者在此“不治而议论”，享受高薪待遇，自由辩论。孟子、荀子都曾在此讲学。稷下学宫是百家争鸣的缩影和高潮。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "孔子",
+            "url": "topic_kongzi.html"
+        },
+        {
+            "text": "老子",
+            "url": "topic_laozi.html"
+        },
+        {
+            "text": "春秋战国",
+            "url": "detail_warring.html"
+        },
+        {
+            "text": "商鞅变法",
+            "url": "topic_shangyang.html"
+        }
+    ]
+}

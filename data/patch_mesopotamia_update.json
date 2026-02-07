@@ -1,0 +1,387 @@
+{
+    "details": [
+        {
+            "id": "detail_mesopotamia",
+            "type": "world",
+            "title": "两河流域:文明的曙光",
+            "year": "BC 3500",
+            "desc": "底格里斯河与幼发拉底河孕育了苏美尔文明，创造了世界上最早的城市、文字（楔形文字）和法典（汉谟拉比法典）。",
+            "content": [
+                {
+                    "title": "苏美尔城邦",
+                    "text": "<p>约公元前3500年，苏美尔人在两河流域南部建立了乌鲁克、乌尔等城邦。他们发明了<strong>楔形文字</strong>（Cuneiform），用芦苇杆在泥板上书写，这是世界上最古老的文字系统之一。</p>"
+                },
+                {
+                    "title": "汉谟拉比法典",
+                    "text": "<p>古巴比伦王国时期，汉谟拉比颁布了著名的<strong>《汉谟拉比法典》</strong>。法典刻在黑色玄武岩石柱上，宣扬'君权神授'，规定了以眼还眼、以牙还牙的同态复仇原则，并严格维护奴隶主阶级的利益。这是世界上现存第一部比较完备的成文法典。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "苏美尔人",
+                    "url": "topic_sumerian.html"
+                },
+                {
+                    "text": "楔形文字",
+                    "url": "topic_cuneiform.html"
+                },
+                {
+                    "text": "汉谟拉比法典",
+                    "url": "topic_hammurabi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "meso",
+                        "label": "两河流域",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_mesopotamia.html"
+                    },
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔",
+                        "val": 25,
+                        "group": "people",
+                        "url": "topic_sumerian.html"
+                    },
+                    {
+                        "id": "cuneiform",
+                        "label": "楔形文字",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_cuneiform.html"
+                    },
+                    {
+                        "id": "hammurabi",
+                        "label": "汉谟拉比",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_hammurabi.html"
+                    },
+                    {
+                        "id": "code",
+                        "label": "法典",
+                        "val": 20,
+                        "group": "law",
+                        "url": "topic_hammurabi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "meso",
+                        "target": "sumer",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "cuneiform",
+                        "label": "发明"
+                    },
+                    {
+                        "source": "hammurabi",
+                        "target": "code",
+                        "label": "颁布"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_sumerian",
+            "title": "苏美尔文明 (Sumerian Civilization)",
+            "type": "world",
+            "year": "约公元前4500-1900年",
+            "summary": "苏美尔是人类历史上已知的最早文明，诞生于底格里斯河与幼发拉底河下游的冲积平原。他们创造了最早的城市、文字、学校和法律，被称为'文明的摇篮'。",
+            "content": [
+                {
+                    "title": "城邦的崛起：从乌鲁克到乌尔",
+                    "text": "<p>约公元前4000年，苏美尔经历了'城市革命'。<strong>乌鲁克（Uruk）</strong>成为当时世界上最大的城市，拥有庞大的城墙和高达12米的塔庙。苏美尔的政治形态是<strong>城邦（City-State）</strong>，每个城市都有自己的守护神和独立的统治者（Ensi或Lugal）。城邦之间为了争夺水源和土地经常爆发战争，这种内耗最终导致了苏美尔的衰落和被阿卡德人征服。</p>"
+                },
+                {
+                    "title": "神权与塔庙",
+                    "text": "<p>苏美尔社会是典型的<strong>神权政治（Theocracy）</strong>。城市的核心是宏伟的<strong>塔庙（Ziggurat）</strong>，不仅是祭祀中心，也是经济中心（负责粮食再分配）。苏美尔人认为人类生来就是为了服侍诸神，因此他们对神灵充满敬畏。每当洪水泛滥（两河洪水无常），他们便认为是神灵的惩罚，这造就了苏美尔文学中浓厚的悲观主义色彩（如《吉尔伽美什史诗》中对永生的绝望）。</p>"
+                },
+                {
+                    "title": "科技与发明",
+                    "text": "<p>苏美尔人的发明清单令人咋舌：他们发明了<strong>车轮</strong>（最早用于制陶，后用于战车）、<strong>帆船</strong>、<strong>犁</strong>以及<strong>60进制</strong>数学（至今影响着我们的时间和角度计算）。特别是60进制，他们能精确计算出平方根和立方根，甚至预测天文现象。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "最早的文明",
+                    "desc": "苏美尔被公认为世界最早的文明，符合'城市、文字、金属、礼仪建筑'四大标准。"
+                },
+                {
+                    "title": "环境影响",
+                    "desc": "两河洪水泛滥无常（不同于尼罗河的定期泛滥），导致了苏美尔人悲观的宗教观和对秩序的极度渴望。"
+                }
+            ],
+            "impact": {
+                "reality": "苏美尔文明奠定了两河流域接下来3000年的文化基调。阿卡德人、巴比伦人、亚述人虽然征服了苏美尔，但在文化上都全盘继承了苏美尔的遗产。",
+                "legacy": "60进制（1小时60分）、一周七天制、大洪水传说（诺亚方舟的原型），都是苏美尔人留给现代世界的直接遗产。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "楔形文字",
+                    "url": "topic_cuneiform.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔文明",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_sumerian.html"
+                    },
+                    {
+                        "id": "uruk",
+                        "label": "乌鲁克",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_uruk.html"
+                    },
+                    {
+                        "id": "ziggurat",
+                        "label": "塔庙",
+                        "val": 20,
+                        "group": "building",
+                        "url": "topic_ziggurat.html"
+                    },
+                    {
+                        "id": "gilgamesh",
+                        "label": "吉尔伽美什",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_gilgamesh.html"
+                    },
+                    {
+                        "id": "wheel",
+                        "label": "车轮",
+                        "val": 15,
+                        "group": "tech",
+                        "url": "topic_wheel.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sumer",
+                        "target": "uruk",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "ziggurat",
+                        "label": "建造"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "gilgamesh",
+                        "label": "史诗英雄"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "wheel",
+                        "label": "发明"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_cuneiform",
+            "title": "楔形文字 (Cuneiform)",
+            "type": "world",
+            "year": "约公元前3200年",
+            "summary": "楔形文字是世界上已知最古老的文字系统，由苏美尔人发明。最初是为了商业记账，后来发展为能够记录史诗、法律和科学的成熟书写体系，沿用了三千多年。",
+            "content": [
+                {
+                    "title": "从陶筹到泥板",
+                    "text": "<p>楔形文字起源于新石器时代的<strong>陶筹（Tokens）</strong>系统。最初，人们用形状各异的小泥块代表羊、麦子等物品。后来，为了防伪，将陶筹封入泥球（Bulla），并在泥球表面印上陶筹的形状。最终，人们发现直接在泥板上刻画符号更简便，于是文字诞生了。这种从三维实物到二维符号的抽象过程，是人类认知飞跃的里程碑。</p>"
+                },
+                {
+                    "title": "芦苇笔的艺术",
+                    "text": "<p>苏美尔人利用两河平原丰富的粘土制作泥板，用削尖的芦苇杆作为书写工具。芦苇杆在软泥上压出的笔触呈三角形（楔形），因此得名'楔形文字'。泥板写好后，经晾干或烘烤变得坚硬如石，这使得两河流域的文献能保存数千年（虽然重且易碎，但不怕火烧，反而越烧越硬）。</p>"
+                },
+                {
+                    "title": "埃杜巴：最早的学校",
+                    "text": "<p>随着文字的复杂化，专门学习读写的学校——<strong>'埃杜巴'（Edubba，意为'泥板房'）</strong>出现了。只有富裕家庭的男孩（偶尔有女孩）才能入学，学习制作泥板、练习书写、背诵单词表（Lexical Lists）和抄写文学经典。毕业后的'书吏'（Scribe）成为社会的特权阶层，掌握着行政、法律和宗教的解释权。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "表意到表音",
+                    "desc": "楔形文字经历了从象形符号（Pictograph）到表意符号（Ideograph）再到音节符号（Syllabary）的演变，能够表达复杂的抽象概念。"
+                },
+                {
+                    "title": "破译",
+                    "desc": "19世纪通过'贝希斯敦铭文'（Behistun Inscription，类似于罗塞塔石碑的三语对照），罗林森等人成功破译了楔形文字，开启了'亚述学'。"
+                }
+            ],
+            "impact": {
+                "reality": "楔形文字是古代近东的通用文字（Lingua Franca），被阿卡德人、巴比伦人、赫梯人、波斯人借用，记录了数千年的历史。",
+                "legacy": "虽然在公元后失传，但它记录的《汉谟拉比法典》和《吉尔伽美什史诗》是人类文明最早的理性与感性的结晶。"
+            },
+            "relations": [
+                {
+                    "text": "苏美尔文明",
+                    "url": "topic_sumerian.html"
+                },
+                {
+                    "text": "汉谟拉比法典",
+                    "url": "topic_hammurabi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "cuneiform",
+                        "label": "楔形文字",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_cuneiform.html"
+                    },
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔人",
+                        "val": 25,
+                        "group": "creator",
+                        "url": "topic_sumerian.html"
+                    },
+                    {
+                        "id": "scribe",
+                        "label": "书吏",
+                        "val": 20,
+                        "group": "job",
+                        "url": "topic_scribe.html"
+                    },
+                    {
+                        "id": "behistun",
+                        "label": "贝希斯敦铭文",
+                        "val": 20,
+                        "group": "key",
+                        "url": "topic_behistun.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sumer",
+                        "target": "cuneiform",
+                        "label": "发明"
+                    },
+                    {
+                        "source": "scribe",
+                        "target": "cuneiform",
+                        "label": "掌握"
+                    },
+                    {
+                        "source": "behistun",
+                        "target": "cuneiform",
+                        "label": "破译钥匙"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_hammurabi",
+            "title": "汉谟拉比法典 (Code of Hammurabi)",
+            "type": "world",
+            "year": "约公元前1750年",
+            "summary": "古巴比伦国王汉谟拉比颁布的法律汇编，刻在黑色玄武岩石柱上。它是世界上现存第一部比较完备的成文法典，全面反映了古巴比伦社会的阶级结构和法律观念。",
+            "content": [
+                {
+                    "title": "君权神授的宣言",
+                    "text": "<p>石柱上部刻有精美的浮雕：汉谟拉比恭敬地站在太阳神兼正义之神<strong>沙马什（Shamash）</strong>面前，接受权杖和法典。这一图像旨在宣示权力的神圣性：法律并非国王随意制定，而是神赐予的，因此不可违抗。这巧妙地将'法治'（Rule by Law）与神权政治结合，极大增强了统治的合法性。</p>"
+                },
+                {
+                    "title": "同态复仇与阶级压迫",
+                    "text": "<p>法典最著名的原则是<strong>'以眼还眼，以牙还牙'（Lex Talionis）</strong>。如果一个自由民弄瞎了另一个自由民的眼睛，他的眼睛也要被打瞎。然而，这种公平仅限于同阶级之间。法典严格维护<strong>阶级等级</strong>：如果贵族弄瞎了平民的眼睛，只需赔偿银子；如果伤害的是奴隶，赔偿更少。正如马克思所言，法律本质上是统治阶级意志的体现。</p>"
+                },
+                {
+                    "title": "包罗万象的社会百科",
+                    "text": "<p>法典的282条条文极其具体，涵盖了商业契约、婚姻家庭、遗产继承、奴隶买卖、租赁借贷等生活的方方面面。特别值得注意的是其对<strong>商业精神</strong>的强调：规定了商品价格、工资标准和违约责任。这反映了古巴比伦繁荣的商业贸易背景。同时，法典也保护妇女和儿童的某些有限权利（如拥有嫁妆），显示了法律在维护社会稳定方面的调节作用。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "历史地位",
+                    "desc": "世界上现存第一部比较完备的成文法典（早期的《乌尔纳姆法典》残缺不全）。"
+                },
+                {
+                    "title": "特征",
+                    "desc": "同态复仇（原始性）、阶级歧视（阶级性）、君权神授（神权性）。"
+                }
+            ],
+            "impact": {
+                "reality": "它建立了'法律至上'的早期形式，使得判决有法可依，不再完全依赖法官的个人好恶，是人类法治文明的重要开端。",
+                "legacy": "石柱现存于卢浮宫，是人类法律史的图腾。其'以眼还眼'的原则深深影响了后世的犹太律法（Mosaic Law）和伊斯兰法。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "楔形文字",
+                    "url": "topic_cuneiform.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "code_core",
+                        "label": "汉谟拉比法典",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_hammurabi.html"
+                    },
+                    {
+                        "id": "hammurabi",
+                        "label": "汉谟拉比",
+                        "val": 25,
+                        "group": "creator",
+                        "url": "topic_hammurabi.html"
+                    },
+                    {
+                        "id": "shamash",
+                        "label": "沙马什(神)",
+                        "val": 20,
+                        "group": "god",
+                        "url": "topic_shamash.html"
+                    },
+                    {
+                        "id": "babylon",
+                        "label": "古巴比伦",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_babylon.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "hammurabi",
+                        "target": "code_core",
+                        "label": "颁布"
+                    },
+                    {
+                        "source": "shamash",
+                        "target": "hammurabi",
+                        "label": "授予权力"
+                    },
+                    {
+                        "source": "code_core",
+                        "target": "babylon",
+                        "label": "治理基础"
+                    }
+                ]
+            }
+        }
+    ]
+}

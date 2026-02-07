@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清朝:帝国的落日余晖 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-qing"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        1644年 — 1912年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">清朝:帝国的落日余晖
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        清朝是中国历史上最后一个封建王朝，也是由少数民族（满族）建立的大一统王朝。它奠定了现代中国的版图，创造了康乾盛世的辉煌，但在全球工业化的大潮中，因闭关锁国而落后，最终在屈辱中走向终结。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=113508888942618&bvid=BV1NGSFYzEbN&cid=26839879402&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll" class="w-8 h-8 text-gold mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>入关与统一:版图的奠定
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>1644年，清军入关，定都北京。经过数十年的征战，平定三藩、收复台湾（1683年，<strong>施琅</strong>）、平定准噶尔叛乱、平定大小和卓叛乱，并加强了对西藏（驻藏大臣、金瓶掣签）和新疆的管辖。清朝确立了对南海诸岛的主权。这一系列军事和政治行动，奠定了今天中国疆域版图的基础。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>君主专制顶峰:军机处与文字狱
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>康熙、雍正、乾隆三朝，皇权不断强化。雍正帝设立<strong>军机处</strong>，使议政王大臣会议名存实亡，军国大事完全由皇帝一人裁决，标志着我国封建君主专制达到顶峰。同时，为了严密钳制思想，清朝大兴<strong>文字狱</strong>，造成了'万马齐喑'的局面，严重阻碍了学术进步和思想启蒙。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>康乾盛世与人口爆炸
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>康熙、雍正、乾隆在位期间，政局稳定，经济繁荣，史称<strong>'康乾盛世'</strong>。通过'摊丁入亩'（取消人头税）等赋税改革，以及高产作物（玉米、甘薯）的推广，中国人口出现爆炸式增长，乾隆末年已突破3亿。然而，这只是传统农业文明的最后余晖。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">4.</span>闭关锁国与危机
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>面对西方殖民者的扩张，清政府采取<strong>'闭关锁国'</strong>政策，只开广州一处作为通商口岸（十三行），严格限制对外贸易。这一政策虽然在一定程度上自卫，但更严重地切断了中外交流，使中国看不到世界大势，导致科技和军事不仅没有进步，反而停滞倒退。当西方完成工业革命时，中国还在沉睡。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">5.</span>文学艺术:红楼梦与京剧
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>曹雪芹的<strong>《红楼梦》</strong>是中国古典小说的巅峰之作，通过贾史王薛四大家族的兴衰，深刻揭示了封建社会走向崩溃的历史趋势。道光年间，以徽汉合流为基础，形成了<strong>京剧</strong>，被称为'国粹'。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                军机处
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">雍正设立，标志着中国古代君主专制制度发展到了顶峰。</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                版图巩固
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">通过平定叛乱、设驻藏大臣、伊犁将军等措施，对边疆进行了有效管辖，奠定了现代中国版图。
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                闭关锁国
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">限制对外贸易的政策，导致中国错失了向近代工业文明转型的机遇，逐渐落后于世界。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="hourglass"
+                                    class="w-6 mr-2 text-gold"></i> 现实意义</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">现代中国的版图继承自清朝。旗袍、京剧等文化符号深入人心。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="landmark"
+                                    class="w-6 mr-2 text-gold"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">版图贡献巨大，但闭关锁国导致的近代落后教训深刻（落后就要挨打）。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"军机处","url":"topic_junjichu.html"},{"text":"林则徐","url":"topic_linzexu.html"},{"text":"红楼梦","url":"topic_hongloumeng.html"},{"text":"康熙","url":"topic_kangxi.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"qing","label":"清朝","val":35,"group":"core","url":"detail_qing.html"},{"id":"kangxi","label":"康熙","val":25,"group":"emperor","url":"topic_kangxi.html"},{"id":"yongzheng","label":"雍正","val":25,"group":"emperor","url":"topic_yongzheng.html"},{"id":"qianlong","label":"乾隆","val":25,"group":"emperor","url":"topic_qianlong.html"},{"id":"junjichu","label":"军机处","val":20,"group":"system","url":"topic_junjichu.html"},{"id":"bantu","label":"版图奠定","val":20,"group":"event","url":"topic_qing_territory.html"},{"id":"closed","label":"闭关锁国","val":15,"group":"policy","url":"topic_closed_door.html"},{"id":"honglou","label":"红楼梦","val":20,"group":"culture","url":"topic_hongloumeng.html"},{"id":"taiwan","label":"台湾","val":15,"group":"place","url":"topic_qing_territory.html"},{"id":"tibet","label":"西藏","val":15,"group":"place","url":"topic_qing_territory.html"}],"edges":[{"source":"kangxi","target":"qing","label":"开启盛世"},{"source":"yongzheng","target":"qing","label":"承上启下"},{"source":"qianlong","target":"qing","label":"极盛转衰"},{"source":"yongzheng","target":"junjichu","label":"设立"},{"source":"qing","target":"bantu","label":"巩固"},{"source":"bantu","target":"taiwan","label":"收复"},{"source":"bantu","target":"tibet","label":"辖制"},{"source":"qing","target":"closed","label":"实行"},{"source":"qing","target":"honglou","label":"文学高峰"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

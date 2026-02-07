@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笈多王朝：印度的文艺复兴 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#D97706', secondary: '#B45309', stone: '#475569', line: '#E2E8F0', // Gold/Amber theme
+                        royal: '#4338ca'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        笈多王朝：印度的文艺复兴
+                    </h1>
+                </section>
+
+
+
+                <!-- 1. 印度教的复兴 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="om" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：诸神的归来
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            在经历了数百年佛教和耆那教的主导后，古老的婆罗门教在笈多时期完成了自我革新，转变为<strong>印度教（Hinduism）</strong>。
+                        </p>
+                        <p>
+                            为了适应大众需求，深奥的吠陀祭祀被更具亲和力的<strong>“巴克蒂”</strong>（Bhakti，虔信）运动取代。人们开始通过建造神庙、供奉神像来表达信仰。三大主神——创造之神梵天、维护之神毗湿奴（笈多王室的保护神）、毁灭之神湿婆——的三位一体（Trimurti）观念确立。《摩诃婆罗多》和《罗摩衍那》两大史诗也在这一时期定型，成为印度文化的百科全书。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. 文学与艺术 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="palette" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：梵文的辉煌
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            笈多诸王大力赞助学术，梵文作为宫廷语言复兴。被誉为“印度的莎士比亚”的<strong>迦梨陀娑</strong>（Kalidasa）就活跃在超日王的宫廷中。他的剧作《沙恭达罗》（Shakuntala）以其优美的诗句和对自然的深情描绘，不仅征服了印度，后来还令歌德惊叹不已。
+                        </p>
+                        <p>
+                            在视觉艺术方面，笈多风格标志着印度古典主义的成熟。<strong>阿旃陀石窟（Ajanta
+                                Caves）</strong>的壁画展现了优雅的线条、丰富的色彩和对人物神态的细腻刻画，这里的佛像具有“湿衣贴体”的特征，体现了肉体美与精神宁静的完美统一，深刻影响了中国唐代的造型艺术。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 3. 帝国的黄昏 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="shield-alert" class="w-8 h-8 text-royal mr-3"></i>
+                        第三章：白匈奴的浩劫
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            公元5世纪中叶，来自中亚的游牧民族<strong>嚈哒人</strong>（Hephthalites，又称白匈奴）越过西北边境，对笈多帝国发动了猛烈冲击。虽然Skandagupta曾一度击退入侵，但长期的战争耗尽了国库。到了6世纪中叶，曾经辉煌的帝国分崩离析，印度再次陷入了长达数百年的分裂状态，直到德里苏丹国的建立。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="detail_india.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">古印度概览</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_math_india.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">数学成就</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "gupta", "label": "笈多王朝", "val": 40, "group": "core", "url": "#"},
+                {"id": "hinduism", "label": "印度教复兴", "val": 30, "group": "religion", "url": "#"},
+                {"id": "kalidasa", "label": "迦梨陀娑", "val": 25, "group": "person", "url": "#"},
+                {"id": "ajanta", "label": "阿旃陀石窟", "val": 25, "group": "art", "url": "#"},
+                {"id": "zero", "label": "数字0", "val": 20, "group": "tech", "url": "topic_math_india.html"}
+            ],
+            "edges": [
+                {"source": "gupta", "target": "hinduism", "label": "支持"},
+                {"source": "gupta", "target": "kalidasa", "label": "宫廷诗人"},
+                {"source": "gupta", "target": "ajanta", "label": "赞助"},
+                {"source": "gupta", "target": "zero", "label": "发明"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"古印度","url":"detail_india.html"},
+             {"text":"数字0","url":"topic_math_india.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#D97706', nodeColor: '#D97706' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-accent', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

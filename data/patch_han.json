@@ -1,0 +1,782 @@
+{
+    "topics": [
+        {
+            "id": "topic_liubang",
+            "title": "布衣天子：汉高祖刘邦 (Emperor Gaozu)",
+            "type": "china",
+            "year": "公元前256年-前195年",
+            "summary": "汉高祖刘邦，沛县人，起于微末，提三尺剑斩白蛇起义，最终击败西楚霸王项羽，建立西汉王朝。他是中国历史上第一位平民出身的皇帝，其知人善任、豁达大度的政治风格，为汉王朝四百年的基业奠定了坚实基础。",
+            "content": [
+                {
+                    "title": "起义与灭秦",
+                    "text": "<p>刘邦早年任沛县泗水亭长，性格豪爽，交游广阔。陈胜吴广起义后，他在沛县响应，称'沛公'。他采纳张良建议，先入关中，在灞上召集各县父老，'约法三章'（杀人者死，伤人及盗抵罪），废除秦朝苛法，赢得了秦地民心。公元前207年，子婴投降，秦朝灭亡。</p>"
+                },
+                {
+                    "title": "楚汉战争与建国",
+                    "text": "<p>秦亡后，项羽自立为西楚霸王，分封诸侯，刘邦被封为汉王。随后展开了长达四年的楚汉战争。项羽虽然勇猛无双，但刚愎自用；刘邦虽然屡战屡败，但善于用人（'夫运筹策帷帐之中，决胜于千里之外，吾不如子房；镇国家，抚百姓，给馈饷，不绝粮道，吾不如萧何；连百万之军，战必胜，攻必取，吾不如韩信。'）。最终，刘邦在垓下之战击败项羽，于公元前202年称帝，定都长安，史称西汉。</p>"
+                },
+                {
+                    "title": "休养生息",
+                    "text": "<p>建国之初，民生凋敝，'天子不能具醇驷，将相或乘牛车'。刘邦采取<strong>休养生息</strong>政策，下令士兵还乡务农（兵皆罢归家），释放奴婢为平民，轻徭薄赋（十五税一）。这些措施稳定了社会秩序，恢复了农业生产，为后来的'文景之治'创造了条件。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "成就",
+                    "desc": "建立西汉，第一位平民皇帝。"
+                },
+                {
+                    "title": "用人",
+                    "desc": "汉初三杰（张良、萧何、韩信）。"
+                },
+                {
+                    "title": "政策",
+                    "desc": "休养生息、约法三章。"
+                }
+            ],
+            "impact": {
+                "reality": "确立了汉朝的政治体制，从根本上结束了贵族政治，开启了布衣将相的时代。",
+                "legacy": "其豁达的性格和用人之道成为后世君主的楷模。'汉'名源于其封号，最终成为民族的名称。"
+            },
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                },
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "gaozu",
+                        "label": "刘邦",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_liubang.html"
+                    },
+                    {
+                        "id": "xiangyu",
+                        "label": "项羽",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_liubang.html"
+                    },
+                    {
+                        "id": "rest_policy",
+                        "label": "休养生息",
+                        "val": 20,
+                        "group": "policy",
+                        "url": "detail_han.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "gaozu",
+                        "target": "xiangyu",
+                        "label": "战胜"
+                    },
+                    {
+                        "source": "gaozu",
+                        "target": "rest_policy",
+                        "label": "实行"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_hanwudi",
+            "title": "雄才大略：汉武帝刘彻 (Emperor Wu)",
+            "type": "china",
+            "year": "公元前156年-前87年",
+            "summary": "汉武帝刘彻，西汉第七位皇帝。他在位期间（前141-前87年），在政治、思想、军事、外交等领域采取了一系列开创性的大一统措施，使西汉王朝进入鼎盛时期，是中国历史上最杰出的封建帝王之一。",
+            "content": [
+                {
+                    "title": "政治大一统：推恩令与刺史",
+                    "text": "<p>为了解决汉初以来诸侯王势力过大、威胁中央的问题，汉武帝采纳主父偃的建议，颁布<strong>'推恩令'</strong>，允许诸侯王将封地分封给子弟，建立较小的侯国。这使得诸侯国越分越小，实力大减，无力对抗中央。同时，他设立<strong>刺史</strong>制度，将全国分为13个州部，每州派一名刺史监察地方高官和豪强，加强了中央对地方的控制。</p>"
+                },
+                {
+                    "title": "思想大一统：独尊儒术",
+                    "text": "<p>汉武帝接受董仲舒'罢黜百家，独尊儒术'的建议，将儒家思想确立为正统思想。在长安兴办<strong>太学</strong>，教授儒家经典，培养儒生官僚。从此，儒家思想成为中国封建社会的正统意识形态，长达两千多年。</p>"
+                },
+                {
+                    "title": "军事与外交：凿空西域",
+                    "text": "<p>汉武帝放弃了'和亲'政策，派大将卫青、霍去病大规模反击匈奴，收复河套和河西走廊，'匈奴远遁，而漠南无王庭'。为了联络大月氏夹击匈奴，他派<strong>张骞</strong>两次出使西域，开辟了闻名中外的<strong>丝绸之路</strong>，极大促进了中外交流。他还在西域设立校尉，开始对西域进行有效管辖。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "政治",
+                    "desc": "推恩令（削弱诸侯）、刺史（监察）。"
+                },
+                {
+                    "title": "思想",
+                    "desc": "罢黜百家，独尊儒术（董仲舒）。"
+                },
+                {
+                    "title": "军事外交",
+                    "desc": "北击匈奴（卫青霍去病）、通西域（张骞）、丝绸之路。"
+                }
+            ],
+            "impact": {
+                "reality": "极大拓展了中国版图，确立了中央集权制度的成熟模式，提升了汉朝的国际影响力。",
+                "legacy": "塑造了'强汉'的历史形象，'汉人'、'汉族'之名由此稳固。其大一统措施成为后世王朝的范本。"
+            },
+            "relations": [
+                {
+                    "text": "推恩令",
+                    "url": "topic_tuien.html"
+                },
+                {
+                    "text": "独尊儒术",
+                    "url": "topic_duzunrushu.html"
+                },
+                {
+                    "text": "张骞",
+                    "url": "topic_zhangqian.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "wudi",
+                        "label": "汉武帝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_hanwudi.html"
+                    },
+                    {
+                        "id": "dongzhongshu",
+                        "label": "董仲舒",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_duzunrushu.html"
+                    },
+                    {
+                        "id": "wei_huo",
+                        "label": "卫青霍去病",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_hanwudi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "wudi",
+                        "target": "dongzhongshu",
+                        "label": "采纳"
+                    },
+                    {
+                        "source": "wudi",
+                        "target": "wei_huo",
+                        "label": "重用"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_liuxiu",
+            "title": "光武中兴：汉光武帝刘秀 (Emperor Guangwu)",
+            "type": "china",
+            "year": "公元前5年-公元57年",
+            "summary": "刘秀，汉高祖九世孙，东汉王朝的开国皇帝。他在西汉末年王莽篡政后的乱世中起兵，统一全国，建立东汉。他以'柔道'治国，使得社会经济得到恢复和发展，史称'光武中兴'。",
+            "content": [
+                {
+                    "title": "昆阳大战与统一全国",
+                    "text": "<p>王莽建立的新朝推行改制失败，导致天下大乱，绿林、赤眉起义爆发。刘秀加入绿林军。在著名的<strong>昆阳之战</strong>中，刘秀率一万三千人冲击王莽四十二万大军的中坚，以少胜多，彻底击溃新莽主力。公元25年，刘秀在洛阳称帝，建立东汉。经过十多年的征战，消灭了各地的割据势力，重新统一了中国。</p>"
+                },
+                {
+                    "title": "柔道治国与光武中兴",
+                    "text": "<p>鉴于西汉后期及战乱带来的破坏，刘秀采取<strong>'柔道'</strong>治理天下。他多次下令释放奴婢，禁止残害奴婢；减轻赋税（恢复三十税一）；精兵简政，裁并郡县，裁减官员；允许北方少数民族内迁，缓和民族矛盾。这些措施极大地缓和了社会矛盾，恢复了农业生产，人口迅速增长，出现了'风化最美、儒学最盛'的治世局面。</p>"
+                },
+                {
+                    "title": "严谨治家",
+                    "text": "<p>刘秀治家甚严，尤其是对功臣和外戚的限制。他'退功臣而进文吏'，给予功臣高爵厚赏但不给实权，防止权臣干政；严格限制外戚势力，后妃之家不得封侯与参政。这在一定程度上延长了东汉的稳定期。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "建立东汉",
+                    "desc": "公元25年，定都洛阳。"
+                },
+                {
+                    "title": "措施",
+                    "desc": "释放奴婢、减轻徭赋、简政安民（柔道）。"
+                },
+                {
+                    "title": "评价",
+                    "desc": "光武中兴（历史上著名的治世）。"
+                }
+            ],
+            "impact": {
+                "reality": "延续了汉朝的统治近两百年，使汉文化得到进一步发展。",
+                "legacy": "其'柔道治国'的思想被认为是儒家政治理想的典范。毛泽东评价他为'最有学问、最会打仗、最会用人'的皇帝之一。"
+            },
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                },
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "guangwu",
+                        "label": "刘秀",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_liuxiu.html"
+                    },
+                    {
+                        "id": "restoration_era",
+                        "label": "光武中兴",
+                        "val": 25,
+                        "group": "event",
+                        "url": "topic_liuxiu.html"
+                    },
+                    {
+                        "id": "kunyang",
+                        "label": "昆阳之战",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_liuxiu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "guangwu",
+                        "target": "restoration_era",
+                        "label": "开创"
+                    },
+                    {
+                        "source": "guangwu",
+                        "target": "kunyang",
+                        "label": "扬名"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_tuien",
+            "title": "巧妙的削藩：推恩令 (Tui En Ling)",
+            "type": "china",
+            "year": "汉武帝时期",
+            "summary": "推恩令是汉武帝为了解决诸侯王势力过大问题而实施的一项天才政策。它通过'推恩'的名义，将诸侯国的土地进行分割，兵不血刃地解决了困扰汉初几代皇帝的藩国问题。",
+            "content": [
+                {
+                    "title": "背景：七国之乱",
+                    "text": "<p>汉初实行'郡国并行制'，分封了大量同姓诸侯王。这些诸侯王在封地内拥有行政、财政和军事大权，势力日益膨胀，甚至'不听天子诏'。汉景帝时，晁错建议'削藩'，引发了吴楚七国之乱。虽然乱事被平定，但诸侯王的威胁依然存在。</p>"
+                },
+                {
+                    "title": "主父偃的计策",
+                    "text": "<p>汉武帝采纳大臣<strong>主父偃</strong>的建议，颁布'推恩令'。规定：诸侯王死后，除嫡长子继承王位外，其原本的封地必须分封给其他的子弟作为侯国，受郡的管辖。这样一来，大王国被分割成无数个小侯国，实力大大削弱，再也无力对抗中央。</p>"
+                },
+                {
+                    "title": "效果与评价",
+                    "text": "<p>推恩令的高明之处在于，它披着'推广恩德'的外衣（让更多子弟享受到先祖的恩泽），使得诸侯王子弟对皇帝感恩戴德，而诸侯王本人也无法拒绝。汉武帝不费一兵一卒，就彻底解决了王国问题，大大加强了中央集权。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "目的",
+                    "desc": "削弱诸侯王势力，加强中央集权。"
+                },
+                {
+                    "title": "内容",
+                    "desc": "允许将封地分封给子弟（化整为零）。"
+                },
+                {
+                    "title": "建议者",
+                    "desc": "主父偃。"
+                }
+            ],
+            "impact": {
+                "reality": "彻底消除了诸侯王对中央的军事威胁。",
+                "legacy": "成为中国古代政治斗争中'以柔克刚'、'分而治之'的经典案例。"
+            },
+            "relations": [
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                },
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "tuien",
+                        "label": "推恩令",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_tuien.html"
+                    },
+                    {
+                        "id": "zhufuyan",
+                        "label": "主父偃",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_tuien.html"
+                    },
+                    {
+                        "id": "central_power",
+                        "label": "中央集权",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_junxian.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "zhufuyan",
+                        "target": "tuien",
+                        "label": "建议"
+                    },
+                    {
+                        "source": "tuien",
+                        "target": "central_power",
+                        "label": "加强"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_duzunrushu",
+            "title": "思想的统一：罢黜百家，独尊儒术 (Supremacy of Confucianism)",
+            "type": "china",
+            "year": "汉武帝时期",
+            "summary": "罢黜百家，独尊儒术是汉武帝在思想文化领域实行的重大政策。它结束了春秋战国以来'百家争鸣'的局面，确立了儒家思想的独尊地位，奠定了中国封建社会两千年的正统意识形态。",
+            "content": [
+                {
+                    "title": "背景：黄老之学的局限",
+                    "text": "<p>汉初为了恢复经济，推行道家'无为而治'的黄老之学。经过六十多年的休养生息，汉朝国力强盛，但也面临诸侯割据、匈奴威胁、土地兼并等社会危机。无为而治的消极思想已经不能适应汉武帝加强集权、积极有为的政治需要。</p>"
+                },
+                {
+                    "title": "董仲舒的新儒学",
+                    "text": "<p>大儒<strong>董仲舒</strong>把道家、法家和阴阳五行家的思想融入儒家，形成了'新儒学'。他提出：<br>1. <strong>'春秋大一统'</strong>：主张思想必须统一于儒家，以维护政治的大一统。<br>2. <strong>'君权神授'</strong>与<strong>'天人感应'</strong>：宣扬皇帝是天子，代表天意统治人间，反对皇帝就是逆天；同时天子也要受上天的约束（天降灾异示警）。<br>3. <strong>'三纲五常'</strong>：确立了严格的封建伦理秩序（君为臣纲，父为子纲，夫为妻纲）。</p>"
+                },
+                {
+                    "title": "实施与影响",
+                    "text": "<p>汉武帝极力赏识这一理论，采纳'罢黜百家，独尊儒术'的建议。排斥其他学说，只起用儒生做官；设立<strong>太学</strong>，教授五经。从此，儒学成为官学，成为进入仕途的必修课，深深植入了中国人的骨髓。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "倡导者",
+                    "desc": "董仲舒（新儒学）。"
+                },
+                {
+                    "title": "核心",
+                    "desc": "大一统、天人感应、三纲五常。"
+                },
+                {
+                    "title": "影响",
+                    "desc": "儒家确立正统地位，成为主流意识形态。"
+                }
+            ],
+            "impact": {
+                "reality": "极大地加强了思想控制和中央集权。",
+                "legacy": "儒家思想从此长期垄断中国文化，虽然后世有所僵化，但其强调的仁义礼智信、家国情怀等，成为了中华民族传统美德的核心。"
+            },
+            "relations": [
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                },
+                {
+                    "text": "孔子",
+                    "url": "topic_confucius.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "confucian_orthodoxy",
+                        "label": "独尊儒术",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_duzunrushu.html"
+                    },
+                    {
+                        "id": "dong_scholar",
+                        "label": "董仲舒",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_duzunrushu.html"
+                    },
+                    {
+                        "id": "taixue",
+                        "label": "太学",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_duzunrushu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "dong_scholar",
+                        "target": "confucian_orthodoxy",
+                        "label": "提出"
+                    },
+                    {
+                        "source": "confucian_orthodoxy",
+                        "target": "taixue",
+                        "label": "设立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_zhangqian",
+            "title": "凿空西域：张骞 (Zhang Qian)",
+            "type": "china",
+            "year": "汉武帝时期",
+            "summary": "张骞，西汉杰出的外交家、探险家。他两次出使西域（今新疆及中亚一带），虽然未能完成联合大月氏夹击匈奴的初衷，但却打通了汉朝通往西域的道路，被司马迁誉为'凿空'（开通大道）之旅。",
+            "content": [
+                {
+                    "title": "第一次出使：艰难险阻",
+                    "text": "<p>公元前138年，为了联络大月氏夹击匈奴，汉武帝派张骞出使西域。张骞率一百多人出发，途中被匈奴扣留长达十余年。他不忘使命，始终持汉节不失。后来逃脱，历尽艰辛到达大宛、大月氏。虽然大月氏无意复仇，但张骞了解了西域各国的风土人情，于前126年回到长安。</p>"
+                },
+                {
+                    "title": "第二次出使与西域经营",
+                    "text": "<p>公元前119年，汉武帝再次派张骞出使西域，联络乌孙等国。随行带有大量的丝绸、金币等礼物。西域各国纷纷派使者随张骞回访长安。此后，汉朝与西域的交往日益频繁。公元前60年，西汉设立<strong>西域都护</strong>，标志着今新疆地区正式归属中央政权管辖。</p>"
+                },
+                {
+                    "title": "特产引进",
+                    "text": "<p>张骞通西域后，西域的葡萄、石榴、核桃、苜蓿、胡萝卜、汗血马等物种传入中原；中原的丝绸、漆器、冶铁技术、凿井技术传到西域。丰富了汉朝人民的物质生活，促进了生产发展。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "目的",
+                    "desc": "联络大月氏夹击匈奴。"
+                },
+                {
+                    "title": "意义",
+                    "desc": "凿空之旅，开辟丝绸之路，促进中西交流。"
+                },
+                {
+                    "title": "管辖",
+                    "desc": "西域都护（新疆正式归属）。"
+                }
+            ],
+            "impact": {
+                "reality": "不仅在政治上将西域纳入版图，更在经济文化上打通了东西方的血脉。",
+                "legacy": "张骞坚韧不拔的开拓精神，成为了中华民族探索未知、开放包容的象征。"
+            },
+            "relations": [
+                {
+                    "text": "丝绸之路",
+                    "url": "topic_silkroad.html"
+                },
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "zhangqian_envoy",
+                        "label": "张骞",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_zhangqian.html"
+                    },
+                    {
+                        "id": "xiyu",
+                        "label": "西域",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_zhangqian.html"
+                    },
+                    {
+                        "id": "zaokong",
+                        "label": "凿空",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_zhangqian.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "zhangqian_envoy",
+                        "target": "xiyu",
+                        "label": "出使"
+                    },
+                    {
+                        "source": "zhangqian_envoy",
+                        "target": "zaokong",
+                        "label": "誉为"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_silkroad",
+            "title": "文明的纽带：丝绸之路 (Silk Road)",
+            "type": "china",
+            "year": "西汉开始",
+            "summary": "丝绸之路是古代东西方往来的大动脉。它以长安为起点，经河西走廊、今新疆地区，通往中亚、西亚，直到欧洲（大秦）。这条道路不仅是丝绸贸易的商路，更是东西方文明交流融合的桥梁。",
+            "content": [
+                {
+                    "title": "路线走向",
+                    "text": "<p>陆上丝绸之路的主干线是：<strong>长安</strong>（起点）—河西走廊—阳关、玉门关—葱岭（帕米尔高原）—西亚（安息）—欧洲（大秦/罗马）。此外，汉武帝时期还开辟了'海上丝绸之路'，从广东沿海出发，最远到达印度半岛南端和斯里兰卡。</p>"
+                },
+                {
+                    "title": "贸易与交流",
+                    "text": "<p>在这条道路上，中国的<strong>丝绸</strong>、瓷器、漆器、铁器源源不断地输往西方；西方的良马、香料、玻璃、宝石以及葡萄、胡桃等农作物传入中国。佛教、伊斯兰教、基督教等宗教也随之传入。</p>"
+                },
+                {
+                    "title": "管理与维护",
+                    "text": "<p>汉朝在沿线设置驿站，驻军屯田（如在轮台）。西域都护的设立保障了商路的畅通。这条道路在唐朝达到极盛，直到宋元时期海上丝绸之路兴起后，陆上丝路才逐渐衰落。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "起点",
+                    "desc": "长安。"
+                },
+                {
+                    "title": "路线",
+                    "desc": "长安-河西走廊-西域-中亚-欧洲。"
+                },
+                {
+                    "title": "作用",
+                    "desc": "东西方经济文化交流的桥梁。"
+                }
+            ],
+            "impact": {
+                "reality": "极大地繁荣了汉朝的经济，开阔了中国人的视野，使中国走向世界。",
+                "legacy": "丝绸之路是人类历史上第一条全球性的交流网络。今天的'一带一路'倡议，正是对这一历史遗产的传承与弘扬。"
+            },
+            "relations": [
+                {
+                    "text": "张骞",
+                    "url": "topic_zhangqian.html"
+                },
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "silkroad_route",
+                        "label": "丝绸之路",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_silkroad.html"
+                    },
+                    {
+                        "id": "changan",
+                        "label": "长安",
+                        "val": 20,
+                        "group": "place",
+                        "url": "detail_han.html"
+                    },
+                    {
+                        "id": "trade",
+                        "label": "东西贸易",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_silkroad.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "silkroad_route",
+                        "target": "changan",
+                        "label": "起点"
+                    },
+                    {
+                        "source": "silkroad_route",
+                        "target": "trade",
+                        "label": "促进"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_simaqian",
+            "title": "史家之绝唱：司马迁与《史记》 (Sima Qian)",
+            "type": "china",
+            "year": "西汉",
+            "summary": "司马迁，字子长，西汉伟大的史学家、文学家。他忍辱负重，历时十余年，撰写了中国第一部纪传体通史——《史记》，被鲁迅誉为'史家之绝唱，无韵之离骚'。",
+            "content": [
+                {
+                    "title": "忍辱负重著信史",
+                    "text": "<p>司马迁继承父亲司马谈的遗志，立志编写一部史书。他曾游历名山大川，考察风俗，采集传说。但在李陵兵败投降匈奴一案中，他为李陵辩护而触怒汉武帝，遭受惨无人道的<strong>宫刑</strong>。面对奇耻大辱，他选择隐忍苟活，将满腔悲愤倾注于笔端，终于完成了这部52万字的巨著。</p>"
+                },
+                {
+                    "title": "体例首创：纪传体",
+                    "text": "<p>《史记》记述了从传说中的黄帝到汉武帝时期约3000年的历史。全书分为<strong>本纪</strong>（记帝王）、<strong>世家</strong>（记诸侯）、<strong>列传</strong>（记重要人物）、<strong>表</strong>（大事年表）、<strong>书</strong>（典章制度）五部分。这种以人物传记为中心来反映历史的体例，被称为<strong>纪传体</strong>，成为后世历代正史（二十四史）的标准体例。</p>"
+                },
+                {
+                    "title": "秉笔直书与文学价值",
+                    "text": "<p>司马迁不虚美，不隐恶，公正地记述历史。他敢于揭露统治者的残暴（如对酷吏的描写），也热情歌颂平民英雄（如陈胜、荆轲）。其文笔雄奇，人物形象栩栩如生，具有极高的文学价值。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "我国第一部纪传体通史。"
+                },
+                {
+                    "title": "评价",
+                    "desc": "史家之绝唱，无韵之离骚（鲁迅）。"
+                },
+                {
+                    "title": "精神",
+                    "desc": "公正直书，忍辱负重。"
+                }
+            ],
+            "impact": {
+                "reality": "确立了中国史学的编写规范。",
+                "legacy": "《史记》是中国文化史上的一座丰碑，其塑造的众多历史人物形象（如项羽、廉颇）深入人心，成为中华民族历史记忆的重要组成部分。"
+            },
+            "relations": [
+                {
+                    "text": "汉武帝",
+                    "url": "topic_hanwudi.html"
+                },
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "simaqian_historian",
+                        "label": "司马迁",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_simaqian.html"
+                    },
+                    {
+                        "id": "shiji",
+                        "label": "史记",
+                        "val": 25,
+                        "group": "book",
+                        "url": "topic_simaqian.html"
+                    },
+                    {
+                        "id": "jizhuan",
+                        "label": "纪传体",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_simaqian.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "simaqian_historian",
+                        "target": "shiji",
+                        "label": "撰写"
+                    },
+                    {
+                        "source": "shiji",
+                        "target": "jizhuan",
+                        "label": "首创"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_papermaking",
+            "title": "文明的载体：造纸术的改进 (Papermaking)",
+            "type": "china",
+            "year": "东汉",
+            "summary": "造纸术是中国古代四大发明之一。东汉蔡伦改进造纸术，使纸成为普遍的书写材料，极大地促进了人类文化的传播和发展。",
+            "content": [
+                {
+                    "title": "书写材料的演变",
+                    "text": "<p>在纸发明之前，中国人主要把文字刻在甲骨、青铜器上，或写在竹简、木牍和丝帛上。竹木简笨重（'学富五车'形容书多，其实没多少字），丝帛昂贵，都不便于推广。其实西汉早期已经出现了麻纸，但质地粗糙，不适于书写。</p>"
+                },
+                {
+                    "title": "蔡伦改进造纸术",
+                    "text": "<p>东汉和帝时期（公元105年），宦官<strong>蔡伦</strong>总结前人经验，改进了造纸工艺。他用树皮、麻头、破布、旧渔网等廉价原料，经过切断、蒸煮、沤烂、打浆、抄纸、晒干等复杂工序，制造出了植物纤维纸。这种纸质地细腻、色泽洁白、原料易得、造价低廉，被称为'蔡侯纸'。</p>"
+                },
+                {
+                    "title": "传播与贡献",
+                    "text": "<p>造纸术的改进是书写材料的一次伟大革命。原本笨重的竹简逐渐被纸取代，书籍的成本大幅降低，有利于知识的普及。造纸术后来经阿拉伯人传到欧洲，结束了西方羊皮纸和莎草纸的历史，对世界文明的进程产生了巨大的推动作用。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "改进者",
+                    "desc": "东汉蔡伦（不是发明，是改进）。"
+                },
+                {
+                    "title": "原料",
+                    "desc": "树皮、麻头、破布（廉价易得）。"
+                },
+                {
+                    "title": "意义",
+                    "desc": "利于文化传播，四大发明之一。"
+                }
+            ],
+            "impact": {
+                "reality": "使纸逐渐取代竹帛成为主要书写材料。",
+                "legacy": "作为四大发明之首，极大地促进了人类文明的记录与传承。"
+            },
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                },
+                {
+                    "text": "张骞",
+                    "url": "topic_zhangqian.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "paper_invention",
+                        "label": "造纸术",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_papermaking.html"
+                    },
+                    {
+                        "id": "cailun",
+                        "label": "蔡伦",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_papermaking.html"
+                    },
+                    {
+                        "id": "culture_spread",
+                        "label": "文化传播",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_papermaking.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "cailun",
+                        "target": "paper_invention",
+                        "label": "改进"
+                    },
+                    {
+                        "source": "paper_invention",
+                        "target": "culture_spread",
+                        "label": "促进"
+                    }
+                ]
+            }
+        }
+    ]
+}

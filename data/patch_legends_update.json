@@ -1,0 +1,339 @@
+{
+    "topics": [
+        {
+            "id": "topic_ancestor",
+            "title": "人文初祖 (Yan & Yellow Emperors)",
+            "type": "world",
+            "year": "约公元前2700年",
+            "summary": "炎帝与黄帝不仅是部落首领，更是中华文明的精神图腾。他们被尊为'人文初祖'，标志着华夏民族从蒙昧走向文明，奠定了多元一体的民族格局。",
+            "content": [
+                {
+                    "title": "从部落到联盟",
+                    "text": "<p>距今约5000年前，黄河流域气候温暖湿润，但也洪水频发。随着农业的发展，人口增长，资源争夺加剧。<strong>炎帝（神农氏）</strong>部落最先在中原地区发展农业，尝试百草，发明农具。随后，来自西北的<strong>黄帝（轩辕氏）</strong>部落崛起，凭借强大的军事力量（'修德振兵'）和技术创新（指南车），逐渐成为新的盟主。</p>"
+                },
+                {
+                    "title": "文明的肇始",
+                    "text": "<p>传说将几乎所有古代发明都归功于黄帝及其臣子：仓颉造字、由大挠作干支、伶伦制乐、嫘祖养蚕。这虽然是神话化的历史叙事，但反映了仰韶文化晚期至龙山文化早期，中国社会发生了剧烈的技术爆炸和社会分化。'人文初祖'的概念，实质上是对这一文明跃迁时期的集体记忆人格化。</p>"
+                },
+                {
+                    "title": "炎黄子孙的认同",
+                    "text": "<p>经过阪泉之战与涿鹿之战，炎黄部落与东夷部落融合，形成了华夏族的主干。这种'化干戈为玉帛'的融合模式，成为了中华文明处理族群关系的原型。无论朝代如何更替，'炎黄子孙'始终是凝聚中华民族的最高精神纽带，超越了血缘，上升为一种文化认同。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "人文初祖",
+                    "desc": "炎帝黄帝被尊为中华民族的人文初祖。"
+                },
+                {
+                    "title": "考古印证",
+                    "desc": "这一时期对应考古学上的龙山文化时期，出现了城邦、礼器和贫富分化。"
+                }
+            ],
+            "impact": {
+                "reality": "奠定了华夏文明早期'农业+军事'的二元结构。",
+                "legacy": "每年的清明公祭轩辕黄帝典礼，至今仍是全球华人寻根问祖的最高仪式。"
+            },
+            "relations": [
+                {
+                    "text": "炎黄传说",
+                    "url": "detail_legends.html"
+                },
+                {
+                    "text": "涿鹿之战",
+                    "url": "topic_banquan.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "huangdi",
+                        "label": "黄帝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_ancestor.html"
+                    },
+                    {
+                        "id": "yandi",
+                        "label": "炎帝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_ancestor.html"
+                    },
+                    {
+                        "id": "huaxia",
+                        "label": "华夏族",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "detail_legends.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "huangdi",
+                        "target": "yandi",
+                        "label": "结盟"
+                    },
+                    {
+                        "source": "huangdi",
+                        "target": "huaxia",
+                        "label": "始祖"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_chanrang",
+            "title": "公天下的理想：禅让制 (Abdication System)",
+            "type": "world",
+            "year": "部落联盟时期",
+            "summary": "禅让制是中国上古时期一种'选贤举能'的最高权力交接制度，反映了原始民主制的遗风，也被后世儒家视为政治道德的最高理想。",
+            "content": [
+                {
+                    "title": "权力交接的黄金时代",
+                    "text": "<p>在国家机器尚未完全成熟的部落联盟时代，领袖的主要职责是协调各部落利益和组织公共事务（如治水、防御）。因此，权力的合法性来源于能力与德行，而非血统。<strong>尧</strong>年老时，通过征求四岳（部落首领会议）意见，推举了出身贫寒但德行出众的<strong>舜</strong>。舜经过长期摄政考察，才正式继位。同样，舜后来将权力传给了治水有功的<strong>禹</strong>。</p>"
+                },
+                {
+                    "title": "原始民主的遗存",
+                    "text": "<p>历史唯物主义认为，禅让制实际上是<strong>军事民主制</strong>（Military Democracy）的体现。在那个生产力低下的时代，剩余产品不足以维持一个脱离生产的世袭统治阶级。首领更像是'公仆'而非皇帝。一旦首领失去能力或德行（如鲧治水失败被杀），部落议会便有权将其罢免。</p>"
+                },
+                {
+                    "title": "从公天下到家天下",
+                    "text": "<p>禹死后，其子启击败了原本指定的继承人伯益，夺取了首领位置，建立了中国历史上第一个王朝——夏。从此，'禅让'被'世袭'取代，'公天下'变成了'家天下'。这是私有制和阶级社会成熟的标志，虽然在道德上似乎是一种退步，但在历史发展上却是生产力进步的必然结果。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "定义",
+                    "desc": "原始社会末期通过推举产生部落联盟首领的制度。"
+                },
+                {
+                    "title": "演变",
+                    "desc": "禹传子启，标志着世袭制取代禅让制。"
+                }
+            ],
+            "impact": {
+                "reality": "确保了早期社会在恶劣环境下的领导力连续性。",
+                "legacy": "成为后世（特别是儒家）批判君主专制、寄托政治理想的乌托邦原型。"
+            },
+            "relations": [
+                {
+                    "text": "炎黄传说",
+                    "url": "detail_legends.html"
+                },
+                {
+                    "text": "大禹治水",
+                    "url": "topic_yu.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "chanrang_sys",
+                        "label": "禅让制",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_chanrang.html"
+                    },
+                    {
+                        "id": "yao",
+                        "label": "尧",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_yao.html"
+                    },
+                    {
+                        "id": "shun",
+                        "label": "舜",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_shun.html"
+                    },
+                    {
+                        "id": "yu",
+                        "label": "禹",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_yu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "yao",
+                        "target": "shun",
+                        "label": "禅让"
+                    },
+                    {
+                        "source": "shun",
+                        "target": "yu",
+                        "label": "禅让"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_yu",
+            "title": "定九州：大禹治水 (Great Yu Controls the Waters)",
+            "type": "world",
+            "year": "约公元前2070年",
+            "summary": "大禹治水不仅是一项水利工程，更是一场社会整合运动。它确立了早期国家的疆域（九州）和贡赋制度，标志着中国国家形态的雏形。",
+            "content": [
+                {
+                    "title": "疏导与堵截的博弈",
+                    "text": "<p>面对滔天洪水，禹的父亲鲧采用修筑堤坝的'堵'法，历时九年而无功，最终被诛。禹吸取教训，改用'疏导'之法，利用水向低处流的自然规律，疏通河道，引洪入海。这反映了早期先民对自然规律认知的飞跃——不再强行对抗自然，而是顺应自然。</p>"
+                },
+                {
+                    "title": "最早的社会动员",
+                    "text": "<p>治水工程浩大，绝非单一的一两百人的部落所能完成。它需要跨区域的劳动力调配、物资补给和统一指挥。禹在治水过程中，实际上掌握了凌驾于各部落之上的行政权力。传说他'三过家门而不入'，体现了公权力对私人生活的压倒性优先权。</p>"
+                },
+                {
+                    "title": "划分九州",
+                    "text": "<p>《尚书·禹贡》记载，禹在治水成功后，将天下划分为冀、兖、青、徐、扬、荆、豫、梁、雍<strong>九州</strong>，并规定了各地的土质等级和贡赋品种。这意味着松散的部落联盟开始向拥有明确疆域和税收制度的早期国家（State）过渡。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "方法",
+                    "desc": "由鲧的'堵'改为禹的'疏'。"
+                },
+                {
+                    "title": "意义",
+                    "desc": "治水成功提高了禹的威望，为夏朝建立奠基。"
+                }
+            ],
+            "impact": {
+                "reality": "使得黄河中下游地区重新变得适宜农耕。",
+                "legacy": "塑造了中国文化中'民本'和'大一统'的政治基因——谁能治理江河，谁就拥有天命。"
+            },
+            "relations": [
+                {
+                    "text": "炎黄传说",
+                    "url": "detail_legends.html"
+                },
+                {
+                    "text": "禅让制",
+                    "url": "topic_chanrang.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "yu_core",
+                        "label": "大禹",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_yu.html"
+                    },
+                    {
+                        "id": "xia",
+                        "label": "夏朝",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "topic_xia.html"
+                    },
+                    {
+                        "id": "water",
+                        "label": "治水",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_yu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "yu_core",
+                        "target": "xia",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "yu_core",
+                        "target": "water",
+                        "label": "领导"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_banquan",
+            "title": "血与火的融合：涿鹿与阪泉之战 (Battle of Banquan)",
+            "type": "world",
+            "year": "传说时代",
+            "summary": "阪泉之战与涿鹿之战是华夏文明诞生前夜的两次决定性战争，它们确立了黄帝的核心地位，并未华夏族的形成奠定了政治基础。",
+            "content": [
+                {
+                    "title": "阪泉之战：内部整合",
+                    "text": "<p><strong>阪泉之战</strong>发生于炎帝与黄帝这两个亲缘部落之间。随着炎帝部落的衰落，诸侯不听号令。黄帝修德振兵，与炎帝在阪泉之野展开激战。经过三场大战，炎帝战败并归顺黄帝。这场战争实现了黄河流域核心部落集团内部的政治整合。</p>"
+                },
+                {
+                    "title": "涿鹿之战：对抗东夷",
+                    "text": "<p>炎黄结盟后，面临着来自东方九黎部落（蚩尤）的巨大威胁。<strong>涿鹿之战</strong>异常惨烈，传说蚩尤能呼风唤雨，制造大雾。黄帝发明指南车辨别方向，最终擒杀蚩尤。这场战争不仅解除了外部威胁，更加速了各部落对黄帝'天子'地位的认可。</p>"
+                },
+                {
+                    "title": "战争与文明",
+                    "text": "<p>这两场战争反映了'国之大事，在祀与戎'的早期逻辑。战争不再仅仅为了抢夺食物，更是为了争夺生存空间和统治权。战后，各部落在釜山'合符'（验证信物），这是中国早期国家政治契约的最早雏形。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "阪泉之战",
+                    "desc": "炎黄两大部落结盟的关键战役。"
+                },
+                {
+                    "title": "涿鹿之战",
+                    "desc": "炎黄联盟击败蚩尤部落，巩固了黄河流域的统治地位。"
+                }
+            ],
+            "impact": {
+                "reality": "确立了黄帝的共主地位，开启了五帝时代。",
+                "legacy": "蚩尤虽败，但仍被尊为'战神'（兵主），体现了中国文化对待失败英雄的宽容与敬畏。"
+            },
+            "relations": [
+                {
+                    "text": "炎黄传说",
+                    "url": "detail_legends.html"
+                },
+                {
+                    "text": "人文初祖",
+                    "url": "topic_ancestor.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "war_core",
+                        "label": "部落战争",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_banquan.html"
+                    },
+                    {
+                        "id": "chiyou",
+                        "label": "蚩尤",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_chiyou.html"
+                    },
+                    {
+                        "id": "huangdi_war",
+                        "label": "黄帝",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_ancestor.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "huangdi_war",
+                        "target": "chiyou",
+                        "label": "战胜"
+                    },
+                    {
+                        "source": "chiyou",
+                        "target": "war_core",
+                        "label": "参战"
+                    }
+                ]
+            }
+        }
+    ]
+}

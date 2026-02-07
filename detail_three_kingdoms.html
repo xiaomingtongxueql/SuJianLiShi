@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三国:英雄与权谋的史诗 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+
+    <script>
+        tailwind.config.theme.extend.colors.primary = '#7f1d1d';
+        tailwind.config.theme.extend.colors.world = '#1e3a8a'; // Use 'world' as secondary
+        tailwind.config.theme.extend.colors.china = '#7f1d1d';
+        tailwind.config.theme.extend.colors.accent = '#15803d';
+        // Override utility classes
+        tailwind.config.theme.extend.colors.gold = '#B5A642';
+    </script>
+    <style>
+        body {
+            background-color: #f5f5f4 !important;
+        }
+
+        .text-primary {
+            color: #7f1d1d !important;
+        }
+
+        .bg-accent {
+            background-color: #15803d !important;
+        }
+
+        .text-accent {
+            color: #15803d !important;
+        }
+
+        .border-accent {
+            border-color: #15803d !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-three-kingdoms"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        220年 — 280年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">三国:英雄与权谋的史诗
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        东汉末年分三国，魏蜀吴三足鼎立。这是一个群雄逐鹿、英雄辈出的时代，也是中国历史上最富戏剧色彩的时期。从赤壁战火到三分归晋，六十年的分合兴亡，留下了无数脍炙人口的传奇，更孕育了建安风骨与魏晋玄学的文化高峰。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=114515505058472&bvid=BV1yVEWziErU&cid=29983246947&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll" class="w-8 h-8 text-gold mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>汉末大乱与群雄逐鹿
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>东汉末年，外戚宦官交替专权，导致政治腐败。184年<strong>黄巾起义</strong>爆发，虽然被镇压，但中央政权名存实亡，地方州牧势大，形成军阀割据局面。<strong>只有长江水，无语东流。</strong>董卓乱京后，曹操挟天子以令诸侯，在官渡之战中以少胜多击败袁绍，统一北方。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>赤壁之战与三国鼎立
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>208年，曹操率大军南下，意图统一全国。刘备与孙权组成孙刘联军，在<strong>赤壁之战</strong>中用火攻大败曹军。此战奠定了三国鼎立的基础。220年，曹丕代汉称帝，国号<strong>魏</strong>，定都洛阳；221年，刘备在成都称帝，国号<strong>汉</strong>（史称蜀汉）；229年，孙权在建业称帝，国号<strong>吴</strong>。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>制度与经济:分裂中的发展
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>魏国推行<strong>九品中正制</strong>，以家世门第选拔官员，标志着士族门阀政治的形成；实行<strong>屯田制</strong>，恢复了北方农业生产。蜀国诸葛亮治蜀，'鞠躬尽瘁，死而后已'，开发西南夷，改善民族关系。吴国开发江东，造船业发达，卫温曾率船队到达夷洲（今台湾）。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">4.</span>文化高峰:建安风骨
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>乱世之中，文学却异常繁荣。以'三曹'（曹操、曹丕、曹植）和'七子'（孔融、王粲等）为代表的建安文学，风格苍凉悲壮，史称<strong>'建安风骨'</strong>。曹操的'主要对酒当歌，人生几何'，曹植的'本是同根生，相煎何太急'，皆成千古绝唱。同时，书法（钟繇、王羲之）和绘画也开始了自觉的发展。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">5.</span>三分归晋
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>三国后期，魏国实力最强。263年，魏灭蜀。司马懿及其子孙逐渐掌握魏国实权（高平陵之变）。266年，司马炎废魏帝自立，建立<strong>西晋</strong>。280年，西晋灭吴，结束了分裂局面，中国再次实现统一。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                赤壁之战
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">以少胜多的典型战例，奠定了三国鼎立的基础。</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                九品中正制
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">曹丕创立，依据门第选官，导致世家大族垄断政权。</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                台湾关系
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">吴国卫温率船队达夷洲（台湾），加强了内地与台湾的联系。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="hourglass"
+                                    class="w-6 mr-2 text-gold"></i> 现实意义</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">罗贯中的《三国演义》使其成为中国知名度最高的历史时期。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="landmark"
+                                    class="w-6 mr-2 text-gold"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">英雄主义与忠义精神（关羽）深入人心。'天下大势，分久必合'的历史规律。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"赤壁之战","url":"topic_chibi.html"},{"text":"诸葛亮","url":"topic_zhuge.html"},{"text":"曹操","url":"topic_caocao.html"},{"text":"九品中正制","url":"topic_jiupin.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "threekingdoms", "label": "三国", "val": 30, "group": "core", "url": "detail_three_kingdoms.html"},
+            {"id": "wei", "label": "魏(曹)", "val": 25, "group": "faction_wei", "url": "topic_caocao.html"},
+            {"id": "shu", "label": "蜀(刘)", "val": 25, "group": "faction_shu", "url": "topic_liubei.html"},
+            {"id": "wu", "label": "吴(孙)", "val": 25, "group": "faction_wu", "url": "topic_sunquan.html"},
+            {"id": "caocao", "label": "曹操", "val": 20, "group": "person", "url": "topic_caocao.html"},
+            {"id": "liubei", "label": "刘备", "val": 20, "group": "person", "url": "topic_liubei.html"},
+            {"id": "sunquan", "label": "孙权", "val": 20, "group": "person", "url": "topic_sunquan.html"},
+            {"id": "zhugeliang", "label": "诸葛亮", "val": 20, "group": "person", "url": "topic_zhuge.html"},
+            {"id": "sima", "label": "司马懿", "val": 20, "group": "person", "url": "topic_sima.html"},
+            {"id": "chibi", "label": "赤壁之战", "val": 20, "group": "event", "url": "topic_chibi.html"},
+            {"id": "jiupin", "label": "九品中正制", "val": 15, "group": "system", "url": "topic_jiupin.html"},
+            {"id": "jin", "label": "西晋", "val": 20, "group": "nation", "url": "topic_jin.html"}
+        ],
+        "edges": [
+            {"source": "caocao", "target": "wei", "label": "奠基"},
+            {"source": "liubei", "target": "shu", "label": "建立"},
+            {"source": "sunquan", "target": "wu", "label": "建立"},
+            {"source": "liubei", "target": "zhugeliang", "label": "三顾茅庐"},
+            {"source": "liubei", "target": "sunquan", "label": "联盟"},
+            {"source": "chibi", "target": "threekingdoms", "label": "奠定鼎立"},
+            {"source": "wei", "target": "jiupin", "label": "实行"},
+            {"source": "sima", "target": "wei", "label": "篡权"},
+            {"source": "jin", "target": "threekingdoms", "label": "统一"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

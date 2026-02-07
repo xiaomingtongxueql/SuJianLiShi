@@ -1,0 +1,87 @@
+{
+    "id": "detail_india",
+    "type": "world",
+    "title": "古印度:种姓与佛陀",
+    "year": "BC 2500",
+    "desc": "古代印度文明发源于印度河和恒河流域。雅利安人入侵后建立了种姓制度，影响至今；乔达摩·悉达多创立佛教，倡导'众生平等'。",
+    "content": [
+        {
+            "title": "种姓制度",
+            "text": "<p>雅利安人进入印度后，为了巩固统治，逐渐建立了等级森严的<strong>种姓制度</strong>。分为四个等级：婆罗门（祭司）、刹帝利（武士/国王）、吠舍（平民）、首陀罗（隶农）。此外还有被排除在外的'不可接触者'（贱民）。种姓世代相袭，互不通婚，严重阻碍了社会流动。</p>"
+        },
+        {
+            "title": "佛教的创立",
+            "text": "<p>公元前6世纪，乔达摩·悉达多（<strong>释迦牟尼</strong>）创立佛教，反对婆罗门的特权，提出<strong>'众生平等'</strong>。佛教宣扬忍耐顺从，宣称通过修行可达到'涅槃'的境界，因此得到下层民众的支持，也被统治者利用。阿育王时期，佛教向外传播，成为世界性宗教。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "种姓制度",
+            "url": "topic_caste.html"
+        },
+        {
+            "text": "佛教",
+            "url": "topic_buddhism.html"
+        },
+        {
+            "text": "释迦牟尼",
+            "url": "topic_buddha.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "india",
+                "label": "古印度",
+                "val": 30,
+                "group": "core",
+                "url": "detail_india.html"
+            },
+            {
+                "id": "caste",
+                "label": "种姓制度",
+                "val": 25,
+                "group": "system",
+                "url": "topic_caste.html"
+            },
+            {
+                "id": "buddhism",
+                "label": "佛教",
+                "val": 25,
+                "group": "religion",
+                "url": "topic_buddhism.html"
+            },
+            {
+                "id": "buddha",
+                "label": "释迦牟尼",
+                "val": 20,
+                "group": "person",
+                "url": "topic_buddha.html"
+            },
+            {
+                "id": "ashoka",
+                "label": "阿育王",
+                "val": 15,
+                "group": "person",
+                "url": "topic_ashoka.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "india",
+                "target": "caste",
+                "label": "实行"
+            },
+            {
+                "source": "buddha",
+                "target": "buddhism",
+                "label": "创立"
+            },
+            {
+                "source": "buddhism",
+                "target": "caste",
+                "label": "反对"
+            }
+        ]
+    }
+}

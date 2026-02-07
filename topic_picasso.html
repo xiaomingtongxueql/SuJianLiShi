@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕加索 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        secondary: '#1e40af', stone: '#57534e', line: '#E2E8F0',
+                        accent: '#0969DA',
+                        earth: '#1e40af',
+                        gold: '#0969DA',
+                        blue: '#0969DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body { background-color: #F5F7FA; color: #334155; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 3px; }
+        .insight-card {
+            border-left: 4px solid #0969DA;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin: 1.5rem 0;
+        }
+        .quote-block {
+            background: #F5F7FA;
+            border-left: 4px solid #0E101A;
+            padding: 1.5rem;
+            font-family: serif;
+            font-style: italic;
+            color: #475569;
+            margin: 2rem 0;
+        }
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()" class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <section>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">1907年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        毕加索
+                    </h1>
+                    <p class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        巴勃罗·毕加索（1881-1973），20世纪最伟大的艺术家，现代艺术的代名词。他的一生就是一部现代美术史。他像一个不知疲倦的破坏者，不断打破自己建立的风格，从蓝色时期到立体主义，从超现实主义到晚期涂鸦。他说："我花了一辈子学习像孩子一样画画。"
+                    </p>
+                    
+                </section>
+                
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="columns" class="w-8 h-8 text-accent mr-3"></i>
+                        蓝色与玫瑰色
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">早年的毕加索在巴黎穷困潦倒。好友自杀的阴影让他的画作充满了忧郁的蓝色调（"蓝色时期"），描绘乞丐、盲人和妓女。这展现了他即使在最落魄时，也拥有对底层人性的深刻悲悯。</p>
+                        <p class="mb-4">随着恋爱的开始，他的画面转为温暖的粉红（"玫瑰时期"），马戏团演员和小丑成为了主角。但这只是暴风雨前的宁静。1907年，受非洲雕塑的影响，他创作了《亚威农少女》，那扭曲的面孔和破碎的空间，宣告了传统透视法的死刑。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        立体主义革命
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">毕加索与布拉克共同创立了"立体主义"（Cubism）。他们不再模仿自然，而是将物体拆解、重组，在同一平面上展示多个角度。这是一个哲学式的飞跃：绘画不再是"那个物体的像"，而成为了"物体本身"的独立存在。</p>
+                        <p class="mb-4">这种思维方式不仅改变了绘画，更影响了建筑、设计甚至音乐。它打破了单一视角的霸权，反映了20世纪相对论式的世界观。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        格尔尼卡
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">1937年，为了抗议法西斯对西班牙小镇格尔尼卡的轰炸，毕加索创作了巨大的黑白壁画《格尔尼卡》。画中嘶鸣的马、哭泣的母亲、破碎的肢体，用立体主义的语言发出了人类历史上最强烈的反战呐喊。</p>
+                        <p class="mb-4">这幅画证明了现代艺术不仅仅是形式的游戏，它同样可以拥有史诗般的力量，介入现实，审判罪恶。</p>
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu" class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">毕加索告诉我们，创造力往往始于破坏。他打破了"画得像"的标准，确立了"表达真实感受"的自由。在这个AI绘图日益逼真的时代，毕加索那充满瑕疵、情感激荡的笔触，反而显得更加珍贵和不可替代。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope" class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">立体主义。《格尔尼卡》。现代艺术之父。《亚威农少女》。和平鸽。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100" id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords" type="application/json">[{"text":"达芬奇","url":"topic_da_vinci.html"},{"text":"米开朗基罗","url":"topic_michelangelo.html"},{"text":"文艺复兴","url":"topic_italian_renaissance.html"}]</script>
+    <script id="data-graph" type="application/json">{"nodes":[{"id":"main","label":"毕加索","type":"core"},{"id":"cubism","label":"立体主义","type":"sub"},{"id":"guernica","label":"格尔尼卡","type":"sub"},{"id":"blue","label":"蓝色时期","type":"sub"},{"id":"rose","label":"玫瑰时期","type":"sub"}],"edges":[{"source":"main","target":"cubism"},{"source":"main","target":"guernica"},{"source":"main","target":"blue"},{"source":"main","target":"rose"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), null);
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        }
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-accent', hoverColor: 'hover:text-accent' }
+            );
+        }
+    </script>
+</body>
+</html>
+
+

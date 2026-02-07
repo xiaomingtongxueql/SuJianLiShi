@@ -1,0 +1,87 @@
+{
+    "id": "detail_cold_war",
+    "type": "world",
+    "title": "冷战:铁幕下的对峙",
+    "year": "1947年 — 1991年",
+    "desc": "美苏两国之间除直接军事冲突以外的一切敌对行动。世界被分裂为资本主义和社会主义两大阵营，核恐怖平衡维持了脆弱的和平。",
+    "content": [
+        {
+            "title": "冷战的爆发",
+            "text": "<p>1947年<strong>杜鲁门主义</strong>出台，标志着冷战开始。美国实施<strong>马歇尔计划</strong>援助西欧，并建立北约；苏联则成立华约应对。<strong>柏林墙</strong>的修建成为欧洲分裂的象征。</p>"
+        },
+        {
+            "title": "两极格局的演变",
+            "text": "<p>冷战期间发生了古巴导弹危机、越南战争等热战。20世纪70年代后，随着欧共体日本的崛起和不结盟运动的发展，多极化趋势出现。1991年苏联解体，冷战结束。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "马歇尔计划",
+            "url": "topic_marshall.html"
+        },
+        {
+            "text": "柏林墙",
+            "url": "topic_berlin_wall.html"
+        },
+        {
+            "text": "古巴导弹危机",
+            "url": "topic_cuban_missile.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "coldwar",
+                "label": "冷战",
+                "val": 30,
+                "group": "core",
+                "url": "detail_cold_war.html"
+            },
+            {
+                "id": "usa",
+                "label": "美国",
+                "val": 25,
+                "group": "country",
+                "url": "topic_usa_superpower.html"
+            },
+            {
+                "id": "ussr",
+                "label": "苏联",
+                "val": 25,
+                "group": "country",
+                "url": "topic_ussr.html"
+            },
+            {
+                "id": "marshall",
+                "label": "马歇尔计划",
+                "val": 20,
+                "group": "plan",
+                "url": "topic_marshall.html"
+            },
+            {
+                "id": "wall",
+                "label": "柏林墙",
+                "val": 20,
+                "group": "place",
+                "url": "topic_berlin_wall.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "usa",
+                "target": "ussr",
+                "label": "对峙"
+            },
+            {
+                "source": "usa",
+                "target": "marshall",
+                "label": "实施"
+            },
+            {
+                "source": "wall",
+                "target": "coldwar",
+                "label": "象征"
+            }
+        ]
+    }
+}

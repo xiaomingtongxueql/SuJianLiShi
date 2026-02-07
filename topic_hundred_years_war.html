@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百年战争 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        secondary: '#1e40af', stone: '#57534e', line: '#E2E8F0',
+                        accent: '#0969DA',
+                        earth: '#1e40af',
+                        gold: '#0969DA',
+                        blue: '#0969DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body { background-color: #F5F7FA; color: #334155; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 3px; }
+        .insight-card {
+            border-left: 4px solid #0969DA;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin: 1.5rem 0;
+        }
+        .quote-block {
+            background: #F5F7FA;
+            border-left: 4px solid #0E101A;
+            padding: 1.5rem;
+            font-family: serif;
+            font-style: italic;
+            color: #475569;
+            margin: 2rem 0;
+        }
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()" class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <section>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">1337年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        百年战争
+                    </h1>
+                    <p class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        百年战争并非一场连续的战争，而是英法两国之间断断续续长达116年的冲突。起因是领土争端（英国国王在法国的领地）和王位继承权。这场战争从根本上改变了战争的形态，促进了英法民族国家意识的觉醒，并标志着中世纪骑士制度的终结。
+                    </p>
+                    
+                </section>
+                
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="columns" class="w-8 h-8 text-accent mr-3"></i>
+                        长弓与骑士
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">战争初期，英国凭皆长弓手在克雷西、阿金库尔等战役中大败法国重装骑士，动摇了贵族在战场上的统治地位。</p>
+                        <p class="mb-4">战争后期，法国通过税收制度建立了由炮兵和火枪手构成的常备军，最终将英国人逐出大陆（仅保留加来）。火炮在攻城战中发挥了决定性作用。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        奥尔良的少女
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">在法国最绝望的时刻，农家少女圣女贞德挺身而出，以宗教感召力唤醒了法军的士气，解了奥尔良之围，扭转了战局。虽然她最终被英军烧死，但她成为了法国民族精神的象征。</p>
+                        <p class="mb-4">战争结束后，英国不再试图通过联姻统治欧洲大陆，转而向海上发展；法国则完成了统一，王权大大加强。</p>
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu" class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">百年战争是英法两个民族国家的"成人礼"。它切断了中世纪跨国封建领主之间错综复杂的联系，使得"英国人"和"法国人"的身份认同清晰起来。冲突往往是民族共同体形成的最强催化剂。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope" class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">圣女贞德。民族国家的兴起。常备军制度。英语在英国法院取代法语。英法宿敌关系的开端。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100" id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords" type="application/json">[{"text":"封建制度","url":"topic_feudalism.html"},{"text":"火药革命","url":"topic_gunpowder.html"},{"text":"黑死病","url":"topic_black_death.html"}]</script>
+    <script id="data-graph" type="application/json">{"nodes":[{"id":"main","label":"百年战争","type":"core"},{"id":"uk","label":"英国长弓","type":"sub"},{"id":"france","label":"法国骑士","type":"sub"},{"id":"joan","label":"圣女贞德","type":"sub"},{"id":"state","label":"民族觉醒","type":"sub"}],"edges":[{"source":"main","target":"uk"},{"source":"main","target":"france"},{"source":"main","target":"joan"},{"source":"main","target":"state"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), null);
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        }
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-accent', hoverColor: 'hover:text-accent' }
+            );
+        }
+    </script>
+</body>
+</html>
+
+

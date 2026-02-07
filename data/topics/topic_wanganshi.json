@@ -1,0 +1,151 @@
+{
+    "id": "topic_wanganshi",
+    "title": "王安石变法:天变不足畏",
+    "category": "政治改革",
+    "year": "1069年—1085年",
+    "word_count": 3600,
+    "summary": "王安石变法（Wang Anshi Reform），又称熙宁变法，是北宋神宗时期由王安石主持的一场旨在“富国强兵”的全面社会改革。变法涉及财政、军事、教育、农田水利等多个领域，推出了青苗法、募役法、保甲法等新法。尽管变法初期增加了政府财政收入，增强了军事力量，但因触动了大地主和大官僚的利益，加上用人不当和自然灾害等原因，最终在激烈的党争中宣告失败。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "reform",
+                "label": "王安石变法",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "wanganshi",
+                "label": "王安石",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "shenzong",
+                "label": "宋神宗",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "simaguang",
+                "label": "司马光",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "qingmiao",
+                "label": "青苗法",
+                "val": 12,
+                "group": "measure"
+            },
+            {
+                "id": "muyi",
+                "label": "募役法",
+                "val": 12,
+                "group": "measure"
+            },
+            {
+                "id": "baojia",
+                "label": "保甲法",
+                "val": 12,
+                "group": "measure"
+            },
+            {
+                "id": "fangtian",
+                "label": "方田均税法",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "finance",
+                "label": "财政增收",
+                "val": 12,
+                "group": "impact"
+            },
+            {
+                "id": "party",
+                "label": "新旧党争",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "wanganshi",
+                "target": "reform",
+                "label": "主持"
+            },
+            {
+                "source": "shenzong",
+                "target": "reform",
+                "label": "支持"
+            },
+            {
+                "source": "simaguang",
+                "target": "reform",
+                "label": "强烈反对"
+            },
+            {
+                "source": "reform",
+                "target": "qingmiao",
+                "label": "理财措施"
+            },
+            {
+                "source": "reform",
+                "target": "muyi",
+                "label": "理财措施"
+            },
+            {
+                "source": "reform",
+                "target": "baojia",
+                "label": "军事措施"
+            },
+            {
+                "source": "reform",
+                "target": "fangtian",
+                "label": "土地核查"
+            },
+            {
+                "source": "reform",
+                "target": "finance",
+                "label": "短期成效"
+            },
+            {
+                "source": "reform",
+                "target": "party",
+                "label": "政治后果"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "变法前夜:积贫积弱",
+            "content": "<p><strong>北宋中期的危机：</strong>北宋虽然经济文化繁荣，但政治上面临“三冗”（冗官、冗兵、冗费）危机，财政常年赤字。对外，辽和西夏不断侵扰边界，宋军屡战屡败，每年需向对方缴纳大量“岁币”。土地兼并严重，农民起义频发。这种“积贫积弱”的局面急需改变。</p><p><strong>天变不足畏：</strong>王安石提出了著名的“三不足”论断：“天变不足畏，祖宗不足法，人言不足恤。”这种大无畏的改革精神打动了渴望有所作为的年轻皇帝——宋神宗。</p>"
+        },
+        {
+            "title": "雷厉风行:新法详解",
+            "content": "<h4>理财措施（富国）</h4><ul><li><strong>青苗法</strong>：每年青黄不接时，政府贷款或粮食给农民，收获后偿还，以此抑制高利贷，增加政府收入。</li><li><strong>募役法</strong>：废除按户等轮流服差役的制度，改为由官府出钱雇人服役，不想服役的户主（包括官僚）缴纳免役钱。</li><li><strong>方田均税法</strong>：重新丈量土地，核实土地数量和肥瘠，作为征税依据，打击豪强隐田漏税。</li></ul><h4>军事措施（强兵）</h4><ul><li><strong>保甲法</strong>：将农户编为保，农闲时训练武艺，维持治安，战时编入军队。</li><li><strong>将兵法</strong>：精简军队，选拔将领，加强训练。</li></ul>"
+        },
+        {
+            "title": "成败得失:千古评说",
+            "content": "<p><strong>成效：</strong>变法推行十余年，国家财政收入大幅增加，积存的钱粮可供朝廷使用二十年。农田水利得到兴修，边防力量有所增强（熙河开边）。</p><p><strong>失败原因：</strong><br>1. <strong>用人不当</strong>：推行新法的官员多为投机分子，执行过程中层层加码，青苗法变成了强制摊派。<br>2. <strong>利益集团阻挠</strong>：募役法和方田均税法触动了大地主、大官僚的根本利益，遭到司马光等保守派的激烈反对。<br>3. <strong>皇帝动摇</strong>：宋神宗去世后，高太后听政，起用司马光，新法被全盘废除。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "北宋",
+            "url": "detail_song.html"
+        },
+        {
+            "text": "宋神宗",
+            "url": "topic_shenzong.html"
+        },
+        {
+            "text": "司马光",
+            "url": "topic_simaguang.html"
+        },
+        {
+            "text": "青苗法",
+            "url": "topic_qingmiao.html"
+        }
+    ]
+}

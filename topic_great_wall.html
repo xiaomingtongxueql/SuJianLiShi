@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长城：中华民族的脊梁 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="arrow-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 核心词条</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-12">
+                <!-- 头部定义 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        文化地标
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-6 leading-tight">
+                        长城：农耕与游牧文明的分界线
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        长城（The Great
+                        Wall），是中国古代的军事防御工程，是一道高大、坚固而连绵不断的长垣，用以限隔敌骑的行动。长城不是一道单纯孤立的城墙，而是以城墙为主体，同大量的城、障、亭、标相结合的防御体系。长城修筑的历史可上溯到西周时期，著名的典故“烽火戏诸侯”就源于此。春秋战国时期列国争霸，互相防守，长城修筑进入第一个高潮，但此时修筑的长度都比较短。秦灭六国统一天下后，秦始皇连接和修缮战国长城，始有万里长城之称。明朝是最后一个大修长城的朝代，今天人们所看到的长城多是此时修筑。
+                    </p>
+                </section>
+
+                <!-- 深度解析 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-gold mr-3"></i>
+                        深度解析
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-xl font-bold text-primary mb-4">I. 战略防御体系的构建</h3>
+                            <p>长城的修建初衷是抵御北方游牧民族的南下侵扰。在冷兵器时代，长城利用地形险要，形成了一道难以逾越的物理屏障。</p>
+                            <p><strong>秦长城：</strong>
+                                秦始皇统一六国后，派大将蒙恬北击匈奴，收复河套，并将原赵、燕、秦三国长城连接起来，“筑长城，因地形，用制险塞”，西起临洮，东至辽东，长万余里。秦长城多为夯土结构。</p>
+                            <p><strong>汉长城：</strong> 汉武帝时期，为了打通西域和保护丝绸之路，大规模修筑长城，并建立了完善的烽燧系统（烽火台），不仅起到了防御作用，还是重要的信息传递网络。
+                            </p>
+                            <p><strong>明长城：</strong>
+                                为防御蒙古（鞑靼、瓦剌）和女真，明朝前后修筑长城达18次。明长城东起鸭绿江，西至嘉峪关，结构更加坚固，大量使用砖石砌筑，并在险要处设立关隘，如山海关、居庸关等。</p>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-xl font-bold text-primary mb-4">II. 农耕与游牧的互动与融合</h3>
+                            <p>长城长期被视为农耕文明（中原）与游牧文明（北方草原）的分界线。然而，它并非绝对的隔离墙，而是两种文明交流碰撞的前沿。</p>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li><strong>贸易通道：</strong> 长城沿线的关口往往设有互市，汉蒙双方在此进行茶马贸易，促进了经济互补。</li>
+                                <li><strong>民族融合：</strong> 在长城地带，农耕民族和游牧民族杂居、通婚，文化习俗相互影响。魏晋南北朝时期的民族大融合多发生在这一区域。</li>
+                                <li><strong>战争与和平：</strong> 战争时期长城是战场，和平时期则是交流的纽带。昭君出塞的故事就发生在长城内外，成为民族团结的佳话。</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-xl font-bold text-primary mb-4">III. 精神象征与文化意义</h3>
+                            <p>随着时代的变迁，长城的军事防御功能逐渐褪去，但其作为中华民族的精神象征意义却日益凸显。</p>
+                            <p>它象征着中华民族坚韧不拔、自强不息的民族精神和众志成城的爱国情怀。在抗日战争时期，《义勇军进行曲》中“把我们的血肉，筑成我们新的长城”，赋予了长城新的时代内涵——民族团结与抗争。
+                            </p>
+                            <p>今天，长城是世界文化遗产，是人类文明史上最伟大的建筑工程之一，见证了中华文明的连续性与包容性。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识联结
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords" type="application/json">
+    [
+        {"text":"秦始皇","url":"topic_qinshihuang.html"},
+        {"text":"蒙恬","url":"topic_mengtian.html"},
+        {"text":"汉武帝","url":"topic_hanwudi.html"},
+        {"text":"丝绸之路","url":"topic_silkroad.html"},
+        {"text":"明成祖","url":"topic_yongle.html"}
+    ]
+    </script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "greatwall", "label": "长城", "val": 50, "group": "core", "url": "topic_great_wall.html"},
+            {"id": "qin", "label": "秦始皇", "val": 40, "group": "person", "url": "topic_qinshihuang.html"},
+            {"id": "mengtian", "label": "蒙恬", "val": 30, "group": "person", "url": "topic_mengtian.html"},
+            {"id": "ming", "label": "明长城", "val": 35, "group": "event"},
+            {"id": "xiongnu", "label": "匈奴", "val": 30, "group": "org"},
+            {"id": "symbol", "label": "民族精神", "val": 45, "group": "theme"}
+        ],
+        "edges": [
+            {"source": "qin", "target": "greatwall", "label": "修缮连接"},
+            {"source": "mengtian", "target": "greatwall", "label": "北击匈奴"},
+            {"source": "ming", "target": "greatwall", "label": "加固"},
+            {"source": "greatwall", "target": "xiongnu", "label": "防御"},
+            {"source": "greatwall", "target": "symbol", "label": "象征"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-gold">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-gold', hoverColor: 'hover:text-earth' }
+            );
+        }
+    </script>
+</body>
+
+</html>
+
+

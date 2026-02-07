@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>耶稣 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        secondary: '#1e40af', stone: '#57534e', line: '#E2E8F0',
+                        accent: '#0969DA',
+                        earth: '#1e40af',
+                        gold: '#0969DA',
+                        blue: '#0969DA'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body { background-color: #F5F7FA; color: #334155; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 3px; }
+        .insight-card {
+            border-left: 4px solid #0969DA;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 0 0.75rem 0.75rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin: 1.5rem 0;
+        }
+        .quote-block {
+            background: #F5F7FA;
+            border-left: 4px solid #0E101A;
+            padding: 1.5rem;
+            font-family: serif;
+            font-style: italic;
+            color: #475569;
+            margin: 2rem 0;
+        }
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()" class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <section>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">1世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        耶稣
+                    </h1>
+                    <p class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        作为基督教的中心人物，拿撒勒人耶稣不仅是数十亿信徒心中的救世主（弥赛亚），也是历史上最具影响力的人物之一。他宣扬的爱、宽恕和对弱者的关怀，彻底改变了西方的道德观念和文明进程。
+                    </p>
+                    
+                </section>
+                
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="columns" class="w-8 h-8 text-accent mr-3"></i>
+                        拿撒勒的木匠
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">历史上的耶稣生活在罗马统治下的犹太行省。他挑战了当时犹太祭司的权威和罗马的统治秩序，宣扬"上帝的国"近了。他的登山宝训（"爱你的仇敌"）提出了极其崇高的伦理标准。</p>
+                        <p class="mb-4">约公元30-33年，他被罗马总督彼拉多以"犹太人的王"的罪名钉死在十字架上。</p>
+                        
+                    </div>
+                </section>
+
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        复活与传播
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">他的门徒坚信他死后三天复活，这成为了基督教信仰的基石。在保罗（Paul）的努力下，基督教突破了犹太民族的界限，向外邦人传播。</p>
+                        <p class="mb-4">虽然早期遭到罗马帝国的残酷迫害，但基督教凭借其对来世的盼望和对底层的关怀迅速壮大，最终在米兰敕令（313年）后合法化，并成为罗马国教。</p>
+                        
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu" class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">无论是否信仰宗教，耶稣的教导——爱人如己、宽恕罪人、照顾弱势群体——都已内化为现代文明基石的一部分（如人权观念的宗教起源）。他证明了柔弱的力量可以战胜帝国的刀剑。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope" class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">基督教。公元纪年法。西方伦理道德体系。无数的艺术与音乐作品。教会组织。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100" id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords" type="application/json">[{"text":"基督教","url":"topic_christianity.html"},{"text":"罗马帝国","url":"topic_roman_empire.html"},{"text":"君士坦丁大帝","url":"topic_constantine.html"}]</script>
+    <script id="data-graph" type="application/json">{"nodes":[{"id":"main","label":"耶稣","type":"core"},{"id":"bible","label":"圣经","type":"sub"},{"id":"paul","label":"圣保罗","type":"sub"},{"id":"rome","label":"罗马帝国","type":"normal","url":"topic_roman_empire.html"},{"id":"christianity","label":"基督教","type":"normal","url":"topic_christianity.html"}],"edges":[{"source":"main","target":"bible"},{"source":"main","target":"paul"},{"source":"main","target":"rome"},{"source":"main","target":"christianity"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), null);
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        }
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-accent', hoverColor: 'hover:text-accent' }
+            );
+        }
+    </script>
+</body>
+</html>
+
+

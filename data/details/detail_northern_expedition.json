@@ -1,0 +1,116 @@
+{
+    "id": "detail_northern_expedition",
+    "type": "china",
+    "title": "北伐战争:打倒列强除军阀",
+    "year": "1926年 — 1927年",
+    "desc": "北伐战争是国共合作进行的革命战争，目标是推翻北洋军阀的统治，统一全国。北伐军在叶挺独立团等部队的英勇作战下，从珠江流域打到长江流域，基本上推翻了北洋军阀的统治。",
+    "content": [
+        {
+            "title": "国共合作与北伐开始",
+            "text": "<p>1924年，国共两党实现第一次合作，共同改组国民党。1926年7月，国民政府在广州誓师<strong>北伐</strong>。北伐的对象是吴佩孚、孙传芳、张作霖三大军阀势力。北伐军约10万人，蒋介石任总司令。</p>"
+        },
+        {
+            "title": "叶挺独立团:铁军雄风",
+            "text": "<p>共产党员<strong>叶挺</strong>率领的第四军独立团作为北伐的先锋，屡建奇功。汀泗桥、贺胜桥战役中，独立团英勇作战，为攻占武汉做出重要贡献。第四军被誉为'铁军'。</p>"
+        },
+        {
+            "title": "基本推翻北洋军阀",
+            "text": "<p>北伐军势如破竹，在不到一年的时间里，从珠江流域打到长江流域，占领了长江以南的广大地区。吴佩孚、孙传芳的主力基础被消灭，北洋军阀的统治基本被推翻。</p>"
+        },
+        {
+            "title": "四一二反革命政变",
+            "text": "<p>1927年4月12日，蒋介石在上海发动'四一二'反革命政变，屠杀共产党员和革命群众。国共合作破裂，北伐中途夭折。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "北伐对象",
+            "desc": "吴佩孚、孙传芳、张作霖三大军阀。"
+        },
+        {
+            "title": "胜利进军原因",
+            "desc": "国共合作，工农群众支持，作战方针正确。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "叶挺",
+            "url": "topic_yeting.html"
+        },
+        {
+            "text": "铁军",
+            "url": "topic_iron_army.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "northern",
+                "label": "北伐战争",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "kmt_cpc",
+                "label": "国共合作",
+                "val": 25,
+                "group": "alliance"
+            },
+            {
+                "id": "yeting",
+                "label": "叶挺独立团",
+                "val": 20,
+                "group": "force"
+            },
+            {
+                "id": "warlords",
+                "label": "三大军阀",
+                "val": 20,
+                "group": "enemy"
+            },
+            {
+                "id": "victory",
+                "label": "基本推翻",
+                "val": 20,
+                "group": "achievement"
+            },
+            {
+                "id": "coup",
+                "label": "四一二政变",
+                "val": 25,
+                "group": "event"
+            }
+        ],
+        "edges": [
+            {
+                "source": "kmt_cpc",
+                "target": "northern",
+                "label": "发动"
+            },
+            {
+                "source": "yeting",
+                "target": "northern",
+                "label": "先锋"
+            },
+            {
+                "source": "northern",
+                "target": "warlords",
+                "label": "打击"
+            },
+            {
+                "source": "northern",
+                "target": "victory",
+                "label": "成果"
+            },
+            {
+                "source": "coup",
+                "target": "northern",
+                "label": "破坏"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "基本推翻了北洋军阀统治，但国共合作破裂，革命转入低潮。",
+        "legacy": "叶挺独立团的战斗精神传承至今。北伐促进了民族觉醒。"
+    }
+}

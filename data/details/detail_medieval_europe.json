@@ -1,0 +1,138 @@
+{
+    "id": "detail_medieval_europe",
+    "type": "world",
+    "title": "中世纪欧洲:信仰的时代",
+    "year": "476年 — 1453年",
+    "desc": "中世纪（Middle Ages）是指西罗马帝国灭亡到东罗马帝国灭亡之间的约千年时期。封建制度与基督教会统治着欧洲，这是一个充满信仰、骑士与城堡的时代，也是一个相对停滞的黑暗时期。",
+    "content": [
+        {
+            "title": "封建等级制度",
+            "text": "<p>中世纪欧洲实行严格的<strong>封建等级制度</strong>。国王将土地分封给贵族，贵族效忠国王并提供军事服务。农奴被束缚在土地上，世代为贵族劳作。形成了'我的附庸的附庸不是我的附庸'的复杂关系网。</p>"
+        },
+        {
+            "title": "教会的统治",
+            "text": "<p><strong>基督教会</strong>是中世纪最强大的精神和世俗力量。教皇的权力一度超过国王（如卡诺莎之辱）。教会垄断了文化教育，宣扬禁欲主义，压制科学。但修道院也保存了古典文献，为后来的文艺复兴提供了种子。</p>"
+        },
+        {
+            "title": "骑士与城堡",
+            "text": "<p>骑士代表了中世纪的武力与荣誉。城堡是贵族的堡垒，也是权力的象征。十字军东征延续了两百年，虽然未能夺回圣地，却促进了东西方文化交流。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "封建等级",
+            "desc": "国王-贵族-骑士-农奴的等级金字塔，通过土地和忠诚关系维系。"
+        },
+        {
+            "title": "教会统治",
+            "desc": "精神垄断与世俗权力的结合，既阻碍了科学发展，也保存了古典文化。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "封建制度",
+            "url": "topic_feudalism.html"
+        },
+        {
+            "text": "教皇",
+            "url": "topic_pope.html"
+        },
+        {
+            "text": "十字军东征",
+            "url": "topic_crusades.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "medieval",
+                "label": "中世纪欧洲",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "feudalism",
+                "label": "封建制度",
+                "val": 25,
+                "group": "system"
+            },
+            {
+                "id": "church",
+                "label": "基督教会",
+                "val": 25,
+                "group": "institution"
+            },
+            {
+                "id": "pope",
+                "label": "教皇",
+                "val": 20,
+                "group": "person"
+            },
+            {
+                "id": "knight",
+                "label": "骑士",
+                "val": 15,
+                "group": "class"
+            },
+            {
+                "id": "serf",
+                "label": "农奴",
+                "val": 15,
+                "group": "class"
+            },
+            {
+                "id": "crusade",
+                "label": "十字军东征",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "manor",
+                "label": "庄园",
+                "val": 15,
+                "group": "economy"
+            }
+        ],
+        "edges": [
+            {
+                "source": "feudalism",
+                "target": "medieval",
+                "label": "特征"
+            },
+            {
+                "source": "church",
+                "target": "medieval",
+                "label": "统治"
+            },
+            {
+                "source": "pope",
+                "target": "church",
+                "label": "领袖"
+            },
+            {
+                "source": "knight",
+                "target": "feudalism",
+                "label": "阶层"
+            },
+            {
+                "source": "serf",
+                "target": "feudalism",
+                "label": "阶层"
+            },
+            {
+                "source": "church",
+                "target": "crusade",
+                "label": "发动"
+            },
+            {
+                "source": "manor",
+                "target": "feudalism",
+                "label": "经济单位"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "中世纪的骑士精神演变为现代的绅士文化。哥特式建筑（如巴黎圣母院）成为欧洲文化遗产。",
+        "legacy": "大学制度起源于中世纪（如牛津、巴黎大学）。修道院保存的古典文献为文艺复兴提供了土壤。"
+    }
+}

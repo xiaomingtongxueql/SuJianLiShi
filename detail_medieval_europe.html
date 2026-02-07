@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中世纪欧洲:信仰的时代 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-medieval-europe"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        476年 — 1453年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">中世纪欧洲:信仰的时代
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        中世纪（Middle Ages）是指西罗马帝国灭亡到东罗马帝国灭亡之间的约千年时期。封建制度与基督教会统治着欧洲，这是一个充满信仰、骑士与城堡的时代，也是一个相对停滞的黑暗时期。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=520970005&bvid=BV1UM411B7Pw&cid=915019587&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>封建等级制度
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>中世纪欧洲实行严格的<strong>封建等级制度</strong>。国王将土地分封给贵族，贵族效忠国王并提供军事服务。农奴被束缚在土地上，世代为贵族劳作。形成了'我的附庸的附庸不是我的附庸'的复杂关系网。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>教会的统治
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p><strong>基督教会</strong>是中世纪最强大的精神和世俗力量。教皇的权力一度超过国王（如卡诺莎之辱）。教会垄断了文化教育，宣扬禁欲主义，压制科学。但修道院也保存了古典文献，为后来的文艺复兴提供了种子。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>骑士与城堡
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>骑士代表了中世纪的武力与荣誉。城堡是贵族的堡垒，也是权力的象征。十字军东征延续了两百年，虽然未能夺回圣地，却促进了东西方文化交流。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                封建等级
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">国王-贵族-骑士-农奴的等级金字塔，通过土地和忠诚关系维系。</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                教会统治
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">精神垄断与世俗权力的结合，既阻碍了科学发展，也保存了古典文化。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">中世纪的骑士精神演变为现代的绅士文化。哥特式建筑（如巴黎圣母院）成为欧洲文化遗产。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">大学制度起源于中世纪（如牛津、巴黎大学）。修道院保存的古典文献为文艺复兴提供了土壤。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"封建制度","url":"topic_feudalism.html"},{"text":"教皇","url":"topic_pope.html"},{"text":"十字军东征","url":"topic_crusades.html"}]</script>
+    <script id="data-graph" type="application/json">{
+        "nodes":[
+            {"id":"medieval","label":"中世纪欧洲","val":30,"group":"core", "url":"detail_medieval_europe.html"},
+            {"id":"feudalism","label":"封建制度","val":25,"group":"system", "url":"topic_feudalism.html"},
+            {"id":"church","label":"基督教会","val":25,"group":"institution", "url":"topic_church.html"},
+            {"id":"pope","label":"教皇","val":20,"group":"person", "url":"topic_pope.html"},
+            {"id":"knight","label":"骑士","val":15,"group":"class", "url":"topic_knight.html"},
+            {"id":"serf","label":"农奴","val":15,"group":"class", "url":"topic_manor.html"},
+            {"id":"crusade","label":"十字军东征","val":20,"group":"event", "url":"topic_crusades.html"},
+            {"id":"manor","label":"庄园","val":15,"group":"economy", "url":"topic_manor.html"},
+            {"id":"university","label":"大学","val":18,"group":"culture", "url":"topic_university.html"},
+            {"id":"black_death","label":"黑死病","val":20,"group":"event", "url":"topic_black_death.html"}
+        ],
+        "edges":[
+            {"source":"feudalism","target":"medieval","label":"特征"},
+            {"source":"church","target":"medieval","label":"统治"},
+            {"source":"pope","target":"church","label":"领袖"},
+            {"source":"knight","target":"feudalism","label":"阶层"},
+            {"source":"serf","target":"feudalism","label":"阶层"},
+            {"source":"church","target":"crusade","label":"发动"},
+            {"source":"manor","target":"feudalism","label":"经济单位"},
+            {"source":"serf","target":"manor","label":"依附"},
+            {"source":"medieval","target":"university","label":"孕育"},
+            {"source":"black_death","target":"medieval","label":"终结"}
+        ]
+    }</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

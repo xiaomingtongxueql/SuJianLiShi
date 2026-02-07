@@ -1,0 +1,1113 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos | 溯鉴历史</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Light Mode
+                        'bg-light': '#F5F5F7', // Apple Gray
+                        'card-light': '#FFFFFF',
+                        'text-primary-light': '#1D1D1F',
+                        'text-secondary-light': '#86868B',
+
+                        // Dark Mode
+                        'bg-dark': '#000000',
+                        'card-dark': '#1C1C1E',
+                        'text-primary-dark': '#F5F5F7',
+                        'text-secondary-dark': '#86868B',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            /* Light Mode Variables (Default) */
+            --bg-base: #F5F5F7;
+            --card-bg: #FFFFFF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #86868B;
+            --axis-color: #E5E5EA;
+            --control-bg: rgba(255, 255, 255, 0.8);
+            --control-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --card-border: rgba(0, 0, 0, 0.04);
+            --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            --card-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.08);
+            --btn-hover: #F2F2F7;
+        }
+
+        /* Dark Mode Variables */
+        body.dark {
+            --bg-base: #000000;
+            --card-bg: #1C1C1E;
+            --text-primary: #F5F5F7;
+            --text-secondary: #86868B;
+            --axis-color: #333333;
+            --control-bg: rgba(28, 28, 30, 0.8);
+            --control-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+            --card-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.4);
+            --btn-hover: #2C2C2E;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: 'Inter', system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--text-secondary);
+            opacity: 0.2;
+            border-radius: 4px;
+            border: 2px solid var(--bg-base);
+        }
+
+        /* Top Bar Controls */
+        .top-controls {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 200;
+            display: flex;
+            gap: 12px;
+        }
+
+        .icon-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid var(--card-border);
+            background: var(--card-bg);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--control-shadow);
+            transition: all 0.2s ease;
+        }
+
+        .icon-btn:hover {
+            transform: scale(1.05);
+            background-color: var(--btn-hover);
+        }
+
+        .icon-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2;
+        }
+
+        .icon-btn.hidden {
+            display: none;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .icon-btn.visible {
+            display: flex;
+            opacity: 1;
+            pointer-events: auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header */
+        .header {
+            padding-top: 100px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 16px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .highlight-gold {
+            color: #C5A059;
+            /* Elegant Gold */
+        }
+
+        .header p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Segmented Control */
+        .control-center {
+            position: sticky;
+            top: 24px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+            pointer-events: none;
+            /* Allow clicks to pass through to timeline if not on button */
+        }
+
+        /* Segmented Control - Reverted to Standard Capsule */
+        .segment-container {
+            pointer-events: auto;
+            display: flex;
+            background: var(--control-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 6px;
+            border-radius: 999px;
+            box-shadow: var(--control-shadow);
+            border: 1px solid var(--card-border);
+            margin-top: 0;
+            /* Reset margin */
+        }
+
+        .segment-btn {
+            padding: 10px 24px;
+            /* Reverted padding */
+            min-width: auto;
+            /* Reset width */
+            border: none;
+            background: transparent;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            /* Reverted font size */
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            letter-spacing: normal;
+        }
+
+        .segment-btn.active {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transform: none;
+            /* remove scale */
+        }
+
+        .segment-btn:hover:not(.active) {
+            color: var(--text-primary);
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        /* Search Box */
+        .search-container {
+            pointer-events: auto;
+            margin-bottom: 24px;
+            /* Increased space */
+            position: relative;
+            /* For icon positioning */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: top center;
+        }
+
+        .search-container.collapsed {
+            opacity: 0;
+            transform: translateY(-20px) scale(0.95);
+            pointer-events: none;
+            margin-bottom: -60px;
+            /* Collapse space */
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 460px;
+            /* Larger base width */
+            max-width: 90%;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            color: var(--text-secondary);
+            pointer-events: none;
+            transition: color 0.3s ease;
+            z-index: 10;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            border-radius: 999px;
+            padding: 18px 24px 18px 56px;
+            /* Left padding for icon */
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            outline: none;
+            font-family: inherit;
+        }
+
+        /* Dark mode adjustment for search input */
+        body.dark .search-input {
+            background: rgba(28, 28, 30, 0.65);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-input:focus {
+            transform: scale(1.02);
+            background: var(--card-bg);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .search-input:focus {
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .search-input:focus+.search-icon {
+            color: var(--text-primary);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-secondary);
+            font-weight: 400;
+            opacity: 0.8;
+        }
+
+        /* Timeline Container */
+        .timeline-container {
+            position: relative;
+            max-width: 1200px;
+            /* Increased container width */
+            margin: 0 auto;
+            padding: 0 24px 120px;
+            min-height: 60vh;
+        }
+
+        /* Central Axis */
+        .central-axis {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--axis-color);
+            transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+            border-radius: 1px;
+        }
+
+        .central-axis.mode-compare {
+            left: 50%;
+            opacity: 1;
+        }
+
+        .central-axis.mode-china {
+            left: 80%;
+            opacity: 0;
+        }
+
+        .central-axis.mode-world {
+            left: 20%;
+            opacity: 0;
+        }
+
+        /* Event Row */
+        .event-row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 64px;
+            /* Increased vertical gap */
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Alignment logic */
+        .event-row.align-left {
+            justify-content: flex-end;
+            padding-right: calc(50% + 40px);
+        }
+
+        .event-row.align-right {
+            justify-content: flex-start;
+            padding-left: calc(50% + 40px);
+        }
+
+        .event-row.align-center {
+            justify-content: center;
+        }
+
+        /* Pebble Card - Elongated Capsule */
+        .pebble-card {
+            background: var(--card-bg);
+            border-radius: 999px;
+            /* Force full capsule/ellipse */
+            padding: 18px 24px;
+            /* Balanced height */
+            max-width: 480px;
+            /* Standardized width */
+            width: 100%;
+            /* High Contrast Shadow & Border */
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--card-border);
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .pebble-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--card-shadow-hover);
+            border-color: rgba(0, 0, 0, 0.1);
+            /* Darker border on hover for contrast */
+        }
+
+        body.dark .pebble-card:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Remove focus outline on card links */
+        a.event-row:focus {
+            outline: none;
+        }
+
+        a.event-row:focus .pebble-card {
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .card-year {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            /* Smaller year */
+            font-weight: 500;
+            color: var(--text-primary);
+            opacity: 0.5;
+            /* More visible but still subtle */
+            margin-bottom: 8px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 4px;
+            line-height: 1;
+            width: 100%;
+            letter-spacing: 0.05em;
+        }
+
+        .card-year .era {
+            font-size: 0.875rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            opacity: 0.6;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+            width: 100%;
+            position: relative;
+        }
+
+        .card-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.75rem;
+            /* Smaller title */
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .card-tag {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-left: 10px;
+            /* Move directly to side of title */
+            flex-shrink: 0;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .card-tag.china {
+            background: #E02F2F;
+            box-shadow: 0 0 8px rgba(224, 47, 47, 0.4);
+        }
+
+        .card-tag.world {
+            background: #007AFF;
+            box-shadow: 0 0 8px rgba(0, 122, 255, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 48px;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-secondary);
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+
+            /* Mobile Contrast View: Single Column */
+            .event-row.align-left,
+            .event-row.align-right,
+            .event-row.align-center {
+                justify-content: center;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                /* Ensure full width */
+            }
+
+            .timeline-container {
+                padding: 0 12px 120px;
+                /* Squeeze padding slightly to give more room for cards */
+            }
+
+            .pebble-card {
+                padding: 16px 16px;
+                max-width: 100%;
+                width: 100%;
+                /* Force width */
+            }
+
+            .card-title {
+                font-size: 1.35rem;
+                /* Better fit for small screens */
+            }
+
+            /* Compact Segment Control for Mobile */
+            .segment-btn {
+                padding: 8px 16px;
+                /* Reduced from 10px 24px */
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Floating Action Button (FAB) - Mobile Only */
+        .fab-container {
+            display: none;
+            /* Hidden by default, shown via JS on mobile scroll */
+            position: fixed;
+            bottom: 32px;
+            right: 24px;
+            z-index: 300;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .fab-main-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--text-primary);
+            color: var(--card-bg);
+            /* Inverted contrast */
+            border: none;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 2;
+        }
+
+        .fab-main-btn:active {
+            transform: scale(0.95);
+        }
+
+        .fab-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: absolute;
+            bottom: 70px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px) scale(0.9);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .fab-container.active .fab-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+
+        .fab-item {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .fab-item:hover {
+            transform: scale(1.05);
+            background-color: var(--btn-hover);
+        }
+
+        .fab-container.active .fab-main-btn {
+            transform: rotate(90deg);
+            background: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--card-border);
+        }
+    </style>
+</head>
+
+<body class="light"> <!-- Default to light -->
+
+    <!-- Top Controls -->
+    <div class="top-controls">
+        <button class="icon-btn" id="theme-btn" title="Toggle Theme">
+            <!-- Moon Icon -->
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <!-- Sun Icon (Hidden by default) -->
+            <svg id="icon-sun" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                style="display:none">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+        </button>
+        <button class="icon-btn hidden" id="top-search-trigger" title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </button>
+        <button class="icon-btn" id="graph-btn" title="View Knowledge Graph"
+            onclick="window.location.href='graph_full.html'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1><span class="highlight-gold">溯鉴</span>历史</h1>
+        <p>Tracing the coordinates of civilization</p>
+    </header>
+
+    <!-- Control Center -->
+    <div class="control-center">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" class="search-input" placeholder="搜索历史事件 / Search..."
+                    autocomplete="off">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="segment-container">
+            <button class="segment-btn" data-mode="china">中国史</button>
+            <button class="segment-btn active" data-mode="compare">对照</button>
+            <button class="segment-btn" data-mode="world">世界史</button>
+        </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-container" id="timeline">
+        <div class="central-axis mode-compare" id="axis"></div>
+        <div id="cards"></div>
+    </div>
+
+    <!-- Mobile FAB Menu -->
+    <div class="fab-container" id="fab-container">
+        <div class="fab-menu">
+            <!-- Graph -->
+            <button class="fab-item" id="fab-graph" title="Knowledge Graph">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
+                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
+                </svg>
+            </button>
+            <!-- Search -->
+            <button class="fab-item" id="fab-search" title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+            <!-- Theme -->
+            <button class="fab-item" id="fab-theme" title="Toggle Theme">
+                <svg class="fab-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+                <svg class="fab-sun hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" style="display:none">
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+            </button>
+        </div>
+        <button class="fab-main-btn" id="fab-trigger">
+            <!-- Hamburger -->
+            <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <!-- Close (X) -->
+            <svg class="icon-close hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="display:none">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>Designed with White Porcelain Aesthetics</footer>
+
+    <!-- Data Store -->
+    <!-- Data Store -->
+    <script src="js/data-store.js"></script>
+
+    <!-- App Logic -->
+    <script>
+            (function () {
+                // Theme Logic
+                const body = document.body;
+                const topControls = document.querySelector('.top-controls');
+                const fabContainer = document.getElementById('fab-container');
+                const fabTrigger = document.getElementById('fab-trigger');
+                const fabTheme = document.getElementById('fab-theme');
+                const fabSearch = document.getElementById('fab-search');
+                const fabGraph = document.getElementById('fab-graph');
+
+                const fabMoon = fabTheme.querySelector('.fab-moon');
+                const fabSun = fabTheme.querySelector('.fab-sun');
+
+                const iconHamburger = fabTrigger.querySelector('.icon-hamburger');
+                const iconClose = fabTrigger.querySelector('.icon-close');
+
+                // Top Controls (Main Theme Button)
+                const themeBtn = document.getElementById('theme-btn');
+                const iconMoon = document.getElementById('icon-moon');
+                const iconSun = document.getElementById('icon-sun');
+
+                function toggleTheme() {
+                    const isDark = body.classList.toggle('dark');
+                    const displayMoon = isDark ? 'none' : 'block';
+                    const displaySun = isDark ? 'block' : 'none';
+
+                    // Main Toggle
+                    iconMoon.style.display = displayMoon;
+                    iconSun.style.display = displaySun;
+
+                    // FAB Toggle
+                    fabMoon.style.display = displayMoon;
+                    fabSun.style.display = displaySun;
+                }
+
+                themeBtn.addEventListener('click', toggleTheme);
+                fabTheme.addEventListener('click', toggleTheme);
+
+                // FAB Interactions
+                fabTrigger.addEventListener('click', () => {
+                    const isActive = fabContainer.classList.toggle('active');
+                    if (isActive) {
+                        iconHamburger.style.display = 'none';
+                        iconClose.style.display = 'block';
+                    } else {
+                        iconHamburger.style.display = 'block';
+                        iconClose.style.display = 'none';
+                    }
+                });
+
+                fabGraph.addEventListener('click', () => {
+                    window.location.href = 'graph_full.html';
+                });
+
+                fabSearch.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    setTimeout(() => searchInput.focus(), 500);
+                    // Close menu after action
+                    fabTrigger.click();
+                });
+
+
+                // Get data
+                function getData() {
+                    if (window.RAW_DATA && window.RAW_DATA.events && window.RAW_DATA.events.length > 0) {
+                        return window.RAW_DATA.events;
+                    }
+                    return [];
+                }
+
+                let currentMode = 'compare';
+                const cardsContainer = document.getElementById('cards');
+                const axis = document.getElementById('axis');
+                const buttons = document.querySelectorAll('.segment-btn');
+                const searchInput = document.getElementById('search-input');
+                const searchContainer = document.querySelector('.search-container');
+                const topSearchTrigger = document.getElementById('top-search-trigger');
+
+                let searchTerm = '';
+
+                // Scroll Listener
+                window.addEventListener('scroll', () => {
+                    const scrollY = window.scrollY;
+                    const isMobile = window.innerWidth <= 768;
+
+                    // 1. Dynamic Search Bar logic (Desktop/General)
+                    if (scrollY > 150) {
+                        searchContainer.classList.add('collapsed');
+                        topSearchTrigger.classList.remove('hidden');
+                        topSearchTrigger.classList.add('visible');
+                    } else {
+                        searchContainer.classList.remove('collapsed');
+                        topSearchTrigger.classList.remove('visible');
+                        topSearchTrigger.classList.add('hidden');
+                    }
+
+                    // 2. Mobile FAB Logic
+                    if (isMobile) {
+                        // When scrolling down past threshold, hide top controls and show FAB
+                        if (scrollY > 100) {
+                            topControls.style.display = 'none';
+                            fabContainer.style.display = 'flex';
+                        } else {
+                            topControls.style.display = 'flex';
+                            fabContainer.style.display = 'none';
+                            // Also close FAB if open
+                            if (fabContainer.classList.contains('active')) {
+                                fabTrigger.click();
+                            }
+                        }
+                    } else {
+                        // Reset on desktop
+                        topControls.style.display = 'flex';
+                        fabContainer.style.display = 'none';
+                    }
+                });
+
+                // Top Search Button Click
+                topSearchTrigger.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    // Wait for scroll/transition slightly then focus
+                    setTimeout(() => {
+                        searchInput.focus();
+                    }, 500);
+                });
+
+                // Search Listener
+                searchInput.addEventListener('input', (e) => {
+                    searchTerm = e.target.value.toLowerCase().trim();
+                    render();
+                });
+
+                // Render cards
+                function render() {
+                    const data = getData();
+                    if (data.length === 0) {
+                        // Don't render "No records" during initial load if we are strictly waiting for data
+                        // But getData returns [] if no data.
+                        // We rely on tryInit to handle the "Error" state if timeout occurs.
+                        // But if render is called manually (e.g. search), [] is valid "no results".
+                        // However, during init, we won't call render() until we have data or timeout.
+                    }
+
+                    const sorted = [...data].sort((a, b) => a.year - b.year);
+
+                    let filtered = sorted;
+                    if (currentMode === 'china') {
+                        filtered = sorted.filter(e => e.cat === 'china');
+                    } else if (currentMode === 'world') {
+                        filtered = sorted.filter(e => e.cat === 'world');
+                    }
+
+                    // Filter by search
+                    if (searchTerm) {
+                        filtered = filtered.filter(e =>
+                            e.title.toLowerCase().includes(searchTerm) ||
+                            e.desc.toLowerCase().includes(searchTerm) ||
+                            (e.year.toString().includes(searchTerm)) ||
+                            (e.keywords && e.keywords.some(k => k.text.toLowerCase().includes(searchTerm)))
+                        );
+                    }
+
+                    // Update axis class
+                    axis.className = 'central-axis mode-' + currentMode;
+                    if (searchTerm) {
+                        axis.style.opacity = '0';
+                    } else {
+                        axis.style.opacity = '';
+                    }
+
+                    // Build HTML
+                    if (filtered.length === 0) {
+                        cardsContainer.innerHTML = '<div class="empty-state">此处暂无记录</div>';
+                        return;
+                    }
+
+                    let html = '';
+                    filtered.forEach((event, index) => {
+                        let alignClass = 'align-center';
+                        if (currentMode === 'compare' && !searchTerm) {
+                            alignClass = event.cat === 'china' ? 'align-left' : 'align-right';
+                        }
+
+                        const year = Math.abs(event.year);
+                        const era = event.year < 0 ? 'BC' : 'AD';
+                        const displayYear = event.display || (era + ' ' + year);
+                        const link = event.link || '#';
+                        const isClickable = link !== '#';
+
+                        // 使用 a 标签替代 div，提升移动端兼容性和语义化
+                        // 添加 block w-full no-underline 确保样式正确
+                        // 添加 id 以支持锚点跳转 (e.g. index.html#event-qin)
+                        html += `
+                        <a href="${link}" 
+                           id="event-${event.id}"
+                           class="event-row ${alignClass} block w-full no-underline text-inherit group" 
+                           style="animation-delay: ${index * 0.05}s; cursor: ${isClickable ? 'pointer' : 'default'}"
+                           onclick="${isClickable ? `saveScrollAndNavigate(event, '${link}')` : 'return false;'}">
+                            <div class="pebble-card group-active:scale-95 transition-transform duration-200">
+                                <div class="card-year">
+                                    ${year}<span class="era">${era}</span>
+                                </div>
+                                <div class="card-header">
+                                    <div class="card-title">${event.title}</div>
+                                    <span class="card-tag ${event.cat}"></span>
+                                </div>
+                                <div class="card-desc">${event.desc}</div>
+                            </div>
+                        </a>
+                    `;
+                    });
+
+                    cardsContainer.innerHTML = html;
+                }
+
+                // Button click handlers
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        currentMode = btn.dataset.mode;
+                        render();
+                    });
+                });
+
+                // Initial render with Retry Mechanism (Original Robust Version)
+                function tryInit(retries = 0) {
+                    if (window.RAW_DATA && window.RAW_DATA.events) {
+                        render();
+                    } else if (retries < 20) {
+                        // Retry up to 20 times (10 seconds total)
+                        setTimeout(() => tryInit(retries + 1), 500);
+                    } else {
+                        // Failed to load
+                        console.error('Failed to load real data after 10 seconds.');
+                        cardsContainer.innerHTML = `
+                            <div class="empty-state" style="color: #ef4444;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 16px; opacity: 0.8;">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                                <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 8px;">数据加载失败</p>
+                                <p>可能是网络原因导致数据文件未能下载，<br>请检查网络连接或刷新页面重试。</p>
+                                <div style="margin-top: 24px;">
+                                    <button onclick="location.reload()" style="padding: 10px 24px; border-radius: 999px; background: var(--text-primary); color: var(--bg); border: none; font-weight:500; cursor: pointer; transition: opacity 0.2s;">
+                                        刷新页面
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+
+                tryInit();
+
+
+
+                // 保存滚动位置并导航
+                window.saveScrollAndNavigate = function (event, link) {
+                    if (link && link !== '#') {
+                        sessionStorage.setItem('chronos_scroll_position', window.scrollY);
+                        // 不再强制 window.location.href，让 a 标签自然跳转
+                        // 这样可以保留长按打开新标签页等原生功能
+                        // 如果需要强制，可以使用:
+                        // event.preventDefault();
+                        // window.location.href = link;
+                    } else {
+                        event.preventDefault(); // 阻止 # 的跳转
+                    }
+                };
+
+                // 页面加载时恢复滚动位置
+                window.addEventListener('load', function () {
+                    const savedPosition = sessionStorage.getItem('chronos_scroll_position');
+                    if (savedPosition) {
+                        // 使用 setTimeout 确保页面完全渲染后再滚动
+                        setTimeout(() => {
+                            window.scrollTo({
+                                top: parseInt(savedPosition),
+                                behavior: 'instant'
+                            });
+                            // 清除保存的位置
+                            sessionStorage.removeItem('chronos_scroll_position');
+                        }, 100);
+                    }
+                });
+            })();
+    </script>
+</body>
+
+</html>

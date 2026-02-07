@@ -1,0 +1,91 @@
+{
+    "id": "detail_ming",
+    "type": "china",
+    "title": "明朝:君主专制的强化",
+    "year": "1368年 — 1644年",
+    "desc": "明朝是最后一个由汉族建立的大一统王朝。君主专制空前强化（废丞相、设厂卫）；对外交流由开放（郑和下西洋）逐渐走向封闭（海禁）。",
+    "content": [
+        {
+            "title": "皇权的顶峰",
+            "text": "<p>明太祖朱元璋废除丞相，权分六部；设立锦衣卫特务机构。明成祖这一趋势，设东厂，使君主专制高度强化。八股取士禁锢了思想，阻碍了科技进步。</p>"
+        },
+        {
+            "title": "外交的双重奏",
+            "text": "<p>明成祖派遣<strong>郑和七下西洋</strong>，最远到达红海沿岸和非洲东海岸，展示了国力，促进了友好往来。但后来为防范倭寇，实行'海禁'政策，使中国逐渐落后于世界潮流。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "郑和下西洋",
+            "url": "topic_zheng_he.html"
+        },
+        {
+            "text": "戚继光",
+            "url": "topic_qijiguang.html"
+        },
+        {
+            "text": "本草纲目",
+            "url": "topic_bencao.html"
+        },
+        {
+            "text": "八股文",
+            "url": "topic_bagu.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "ming",
+                "label": "明朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_ming.html"
+            },
+            {
+                "id": "taizu",
+                "label": "朱元璋",
+                "val": 25,
+                "group": "person",
+                "url": "topic_hongwu.html"
+            },
+            {
+                "id": "chengzu",
+                "label": "朱棣",
+                "val": 20,
+                "group": "person",
+                "url": "topic_yongle.html"
+            },
+            {
+                "id": "zhenghe",
+                "label": "郑和",
+                "val": 20,
+                "group": "person",
+                "url": "topic_zheng_he.html"
+            },
+            {
+                "id": "bagu",
+                "label": "八股取士",
+                "val": 15,
+                "group": "system",
+                "url": "topic_bagu.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "taizu",
+                "target": "ming",
+                "label": "建立"
+            },
+            {
+                "source": "ming",
+                "target": "zhenghe",
+                "label": "下西洋"
+            },
+            {
+                "source": "ming",
+                "target": "bagu",
+                "label": "思想控制"
+            }
+        ]
+    }
+}

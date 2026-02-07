@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抗日战争:血肉筑长城 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js?v=2"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-anti-japanese"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        1931年 — 1945年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">抗日战争:血肉筑成的钢铁长城
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        抗日战争是中国近代史上中国人民第一次取得完全胜利的反侵略武装斗争。从1931年"九一八事变"的局部抗战，到1937年"七七事变"后的全民族抗战，中华儿女在长达14年的艰苦卓绝斗争中，付出了3500万军民伤亡的惨重代价，最终彻底打败了日本军国主义侵略者。这场战争不仅捍卫了国家主权和领土完整，更是世界反法西斯战争的重要组成部分，中国战场作为东方主战场，为斩断法西斯魔爪做出了不可磨灭的历史贡献。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=115676773620344&bvid=BV1z8mFBUEp6&cid=34583020706&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll" class="w-8 h-8 text-gold mr-3"></i>
+                        历史进程: 从危亡到复兴
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">1.</span>战略防御阶段 (1937.7 - 1938.10)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>1937年7月7日，卢沟桥的枪声划破了北平的夜空，日本帝国主义发动了全面侵华战争。在民族存亡的危急关头，国共两党摒弃前嫌，第二次握手，正式建立了<strong>抗日民族统一战线</strong>。工农红军改编为八路军、新四军，奔赴抗日前线。
+                                </p>
+                                <p>这一阶段，国民党正面战场组织了四大会战：
+                                    <br><strong>淞沪会战</strong>：死守上海三月，粉碎了日军"三个月灭亡中国"的狂言，为沿海工业内迁争取了时间。
+                                    <br><strong>太原会战</strong>：国共合作的典范，八路军在<strong>平型关大捷</strong>中打破了日军"不可战胜"的神话。
+                                    <br><strong>徐州会战</strong>：李宗仁指挥不仅有血战，更有谋略，<strong>台儿庄大捷</strong>歼敌万余，是正面战场取得的最大胜利。
+                                    <br><strong>武汉会战</strong>：历时4个多月，虽然最终武汉失守，但日军兵力消耗巨大，再无力发动大规模战略进攻。
+                                </p>
+                                <p>1938年10月，广州、武汉失守，抗日战争进入战略相持阶段。</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">2.</span>战略相持阶段 (1938.10 - 1944.4)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>进入相持阶段后，日军改变策略：对国民党政府实行"政治诱降为主，军事打击为辅"，针对共产党领导的敌后抗日根据地则进行残酷的"囚笼政策"和"三光政策"（烧光、杀光、抢光）。
+                                </p>
+                                <p>面对严峻形势，中国战场呈现出复杂的局面：
+                                    <br><strong>汪伪政权建立</strong>：1940年，汪精卫在南京成立伪国民政府，沦为可耻的汉奸。
+                                    <br><strong>敌后战场的崛起</strong>：中国共产党领导的八路军、新四军深入敌后，广泛开展游击战争，建立起一个个坚固的抗日根据地。1940年下半年，彭德怀指挥发动的<strong>百团大战</strong>，主要破坏日军交通线，有力打击了日军的嚣张气焰，振奋了全国军民的信心。敌后战场逐渐上升为抗战的主战场。
+                                    <br><strong>正面战场的坚守</strong>：国民党军队在正面战场继续抵抗，如在第三次长沙会战中取得胜利，但在1944年的豫湘桂战役中遭遇大溃败，丢失大片国土，暴露了其腐败无能。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">3.</span>战略反攻与伟大胜利 (1944.4 - 1945.8)
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>1945年，世界反法西斯战争进入最后阶段。德国法西斯投降后，盟军在太平洋战场展开猛烈攻势。中国共产党领导的抗日军民在敌后战场展开局部反攻。</p>
+                                <p>关键时刻：
+                                    <br><strong>中共七大</strong>：1945年4月在延安召开，确立<strong>毛泽东思想</strong>为党的指导思想，为争取抗战胜利和实现中国光明前途指明了方向。
+                                    <br><strong>最后通牒</strong>：1945年8月，美国向日本广岛、长崎投下原子弹；苏联红军出兵中国东北，对日本关东军发起毁灭性打击；毛泽东发表《对日寇的最后一战》，号召举行全国规模的反攻。
+                                </p>
+                                <p>1945年8月15日，日本天皇裕仁广播《终战诏书》，宣布无条件投降。9月2日，日本代表在密苏里号战列舰上签署投降书。至此，从九一八事变开始长达14年的抗日战争，以中国人民的完全胜利而告终！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        深度解析: 研究生级考点
+                    </h2>
+                    <div class="space-y-6">
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-earth shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-earth mr-2"></span>
+                                抗日民族统一战线的特点
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                1. <strong>广泛性</strong>：包含工人、农民、小资产阶级、民族资产阶级，甚至包括亲英美派大地主大资产阶级。
+                                <br>2. <strong>长期性</strong>：贯穿于整个抗战时期。
+                                <br>3. <strong>复杂性</strong>：国共两党既合作又斗争（"以斗争求团结"）。
+                                <br>4. <strong>无固定组织形式</strong>：没有类似共同纲领或常设机构，呈现"遇事协商"的特点。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-earth shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-earth mr-2"></span>
+                                正面战场与敌后战场的关系
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                两个战场是<strong>相互依存、相互配合</strong>的关系。
+                                <br>- 在战略防御阶段，正面战场是抗击日军进攻的主力，敌后战场起配合作用。
+                                <br>- 在战略相持阶段，敌后战场逐渐上升为主战场，抗击了约60%的侵华日军，减轻了正面战场的压力。
+                                <br>- 只有两个战场协同作战，才能把日军陷入人民战争的汪洋大海。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-earth shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-earth mr-2"></span>
+                                《论持久战》的战略指导
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                毛泽东在1938年发表《论持久战》，驳斥了"亡国论"和"速胜论"，科学预见了抗战将经过<strong>战略防御、战略相持、战略反攻</strong>三个阶段。这篇著作成为指导全国抗战的纲领性文献，极大地坚定了中国人民争取胜利的信心。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="globe"
+                                    class="w-6 mr-2 text-gold"></i> 东方主战场的地位</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                中国抗战开始时间最早，持续时间最长。中国战场协助和配合了盟军在欧洲战场和太平洋战场的作战，是世界反法西斯战争的重要组成部分。中国为此付出了巨大的民族牺牲。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="landmark"
+                                    class="w-6 mr-2 text-gold"></i> 大国地位的奠基</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                抗战胜利彻底废除了列强强加给中国的不平等条约，收复了台湾等失地。中国成为联合国的创始会员国和安理会常任理事国，国际地位得到空前提高。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"七七事变","url":"topic_lugouqiao.html"},{"text":"南京大屠杀","url":"topic_nanjing_massacre.html"},{"text":"百团大战","url":"topic_hundred_regiments.html"},{"text":"台儿庄战役","url":"topic_taierzhuang.html"},{"text":"中共七大","url":"topic_cpc_seventh.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "anti", "label": "抗日战争", "val": 40, "group": "core", "url": "detail_anti_japanese.html"},
+            {"id": "lugou", "label": "七七事变", "val": 30, "group": "event", "url": "topic_lugouqiao.html"},
+            {"id": "nanjing", "label": "南京大屠杀", "val": 25, "group": "event", "url": "topic_nanjing_massacre.html"},
+            {"id": "pingxing", "label": "平型关大捷", "val": 25, "group": "event", "url": "topic_pingxingguan.html"},
+            {"id": "taier", "label": "台儿庄战役", "val": 25, "group": "event", "url": "topic_taierzhuang.html"},
+            {"id": "hundred", "label": "百团大战", "val": 25, "group": "event", "url": "topic_hundred_regiments.html"},
+            {"id": "seventh", "label": "中共七大", "val": 25, "group": "event", "url": "topic_cpc_seventh.html"}
+        ],
+        "edges": [
+            {"source": "lugou", "target": "anti", "label": "爆发"},
+            {"source": "anti", "target": "nanjing", "label": "暴行"},
+            {"source": "anti", "target": "pingxing", "label": "首胜"},
+            {"source": "anti", "target": "taier", "label": "最大胜仗"},
+            {"source": "anti", "target": "hundred", "label": "破袭战"},
+            {"source": "anti", "target": "seventh", "label": "指引胜利"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

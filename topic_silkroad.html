@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丝绸之路：文明的第一次拥抱 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E2E8F0',
+                        sand: '#D69E2E', camel: '#B7791F'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #FEFCE8;
+            border-left: 4px solid #B5A642;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        丝绸之路：文明的第一次拥抱
+                    </h1>
+                </section>
+
+
+
+                <!-- 1. 凿空之旅 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="footprints" class="w-8 h-8 text-camel mr-3"></i>
+                        第一章：张骞凿空
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            公元前138年，为了夹击匈奴，汉武帝派遣<strong>张骞</strong>出使西域，寻找被匈奴赶走的大月氏人。这原本是一次军事外交行动，却意外开启了商业文明的大门。
+                        </p>
+                        <p>
+                            张骞的旅途充满了传奇与苦难。他刚出陇西就被匈奴俘获，被扣留长达十余年，娶妻生子，但始终未忘使命。逃脱后，他继续西行，翻越帕米尔高原，到达大宛、康居、大月氏等地。虽然大月氏早已在富饶的阿姆河流域定居，无意复仇，但张骞带回了关于西域各国的详细情报。
+                        </p>
+                        <p>
+                            公元前119年，张骞第二次出使西域，随行三百人，携带大量丝绸、金币。这次出使正式建立了汉朝与乌孙等西域诸国的友好关系。司马迁将张骞的探险称为“<strong>凿空</strong>”，意为打通了前人未知的道路。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. 下西洋的物产流转 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="package-search" class="w-8 h-8 text-gold mr-3"></i>
+                        第二章：物产与技术的交换
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            丝绸之路不仅是贸易通道，更是“物种交换之路”。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                            <div class="bg-stone-50 p-6 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2 flex items-center"><i
+                                        data-lucide="arrow-right-circle" class="mr-2 text-primary"></i> 向西传播 (From East)
+                                </h4>
+                                <ul class="list-disc pl-5 space-y-2 text-sm">
+                                    <li><strong>丝绸：</strong> 罗马人视如珍宝，一度以为丝绸是树上长出来的羊毛。</li>
+                                    <li><strong>造纸术：</strong> 后来经阿拉伯人传入欧洲，推动了文艺复兴。</li>
+                                    <li><strong>冶铁技术：</strong> 汉朝先进的生铁冶炼技术。</li>
+                                    <li><strong>凿井技术：</strong> 坎儿井的修筑方法。</li>
+                                </ul>
+                            </div>
+                            <div class="bg-stone-50 p-6 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2 flex items-center"><i
+                                        data-lucide="arrow-left-circle" class="mr-2 text-sand"></i> 向东传入 (From West)
+                                </h4>
+                                <ul class="list-disc pl-5 space-y-2 text-sm">
+                                    <li><strong>植物：</strong> 葡萄、石榴、核桃（胡桃）、黄瓜（胡瓜）、大蒜（胡蒜）、芝麻（胡麻）。</li>
+                                    <li><strong>动物：</strong> 汗血宝马、狮子、孔雀。</li>
+                                    <li><strong>艺术：</strong> 佛教造像艺术（希腊化风格）、西域乐舞（琵琶、胡琴）。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. 佛教东传 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="flower-2" class="w-8 h-8 text-reddish mr-3"></i>
+                        第三章：精神的交融——佛教东传
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            丝绸之路上最珍贵的“货物”不是丝绸，而是思想。西汉末年，<strong>佛教</strong>沿着丝绸之路传入中国。相传汉明帝夜梦金人，派使者西行求法，白马驮经回到洛阳，建立了中国第一座官办寺院——<strong>白马寺</strong>。
+                        </p>
+                        <p>
+                            佛教的传入，给中国文化注入了全新的血液。它带来的因果轮回、极乐世界等观念，弥补了儒家关注现世、道家关注自然的空白，深刻影响了中国人的生死观和哲学思辨，最终与儒、道融合，形成了“三教合一”的中华文化格局。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 4. 经营与管理 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-stone-600 mr-3"></i>
+                        第四章：帝国的经营
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            为了保障丝绸之路的畅通，汉朝设立了完善的管理机构。公元前60年，西汉在乌垒城（今新疆轮台）设立<strong>西域都护府</strong>，任命郑吉为首任都护，统辖西域三十六国。这是新疆地区正式纳入中国版图的开始。
+                        </p>
+                        <p>
+                            东汉时期，班超“投笔从戎”，出使西域三十一年，依靠智慧和勇气，在几乎没有汉朝援兵的情况下，平定了西域的叛乱，重开一度中断的丝路，留下了“不入虎穴，焉得虎子”的千古名言。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="topic_zhangqian.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">张骞</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_hanwudi.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">汉武帝</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_buddhism_china.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">佛教传入</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "silkroad", "label": "丝绸之路", "val": 40, "group": "core", "url": "#"},
+                {"id": "zhangqian", "label": "张骞", "val": 30, "group": "person", "url": "topic_zhangqian.html"},
+                {"id": "hanwudi", "label": "汉武帝", "val": 25, "group": "person", "url": "topic_hanwudi.html"},
+                {"id": "xiyu", "label": "西域都护", "val": 20, "group": "institution", "url": "#"},
+                {"id": "buddhism", "label": "佛教", "val": 20, "group": "culture", "url": "topic_buddhism_china.html"},
+                {"id": "banchao", "label": "班超", "val": 25, "group": "person", "url": "#"},
+                 {"id": "grape", "label": "葡萄", "val": 15, "group": "item", "url": "#"}
+            ],
+            "edges": [
+                {"source": "hanwudi", "target": "zhangqian", "label": "派遣"},
+                {"source": "zhangqian", "target": "silkroad", "label": "凿空"},
+                {"source": "xiyu", "target": "silkroad", "label": "管辖"},
+                {"source": "buddhism", "target": "silkroad", "label": "传入"},
+                 {"source": "banchao", "target": "silkroad", "label": "重开"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"张骞","url":"topic_zhangqian.html"},
+            {"text":"汉武帝","url":"topic_hanwudi.html"},
+            {"text":"白马寺","url":"#"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-gold', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

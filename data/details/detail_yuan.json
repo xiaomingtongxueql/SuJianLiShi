@@ -1,0 +1,87 @@
+{
+    "id": "detail_yuan",
+    "type": "china",
+    "title": "元朝:版图最大的帝国",
+    "year": "1271年 — 1368年",
+    "desc": "由蒙古族建立的大一统王朝。它是中国历史上版图最大的朝代，确立了行省制度，促进了东西方交流和民族融合。",
+    "content": [
+        {
+            "title": "行省制度与边疆管理",
+            "text": "<p>为了有效统治辽阔的疆域，元朝在中央设中书省，地方设<strong>行中书省</strong>（简称行省或省）。这一制度被后世沿用，是中国省制的开端。此外，设<strong>宣政院</strong>直接管辖西藏，设澎湖巡检司管辖台湾（琉球），标志着这些地区正式纳入中央政府行政管辖。</p>"
+        },
+        {
+            "title": "民族融合与四等人制",
+            "text": "<p>元朝时期，边疆各族大量迁入中原，与汉族杂居相处；波斯人、阿拉伯人迁入中国，同汉、蒙畏兀儿等族融合，形成一个新的民族——<strong>回族</strong>。但统治者实行的'四等人制'（蒙古人、色目人、汉人、南人）也制造了深重的民族矛盾。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "行省制度",
+            "url": "topic_xingsheng.html"
+        },
+        {
+            "text": "宣政院",
+            "url": "topic_xuanzhengyuan.html"
+        },
+        {
+            "text": "回族",
+            "url": "topic_huizu.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "yuan",
+                "label": "元朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_yuan.html"
+            },
+            {
+                "id": "xingsheng",
+                "label": "行省制",
+                "val": 25,
+                "group": "system",
+                "url": "topic_xingsheng.html"
+            },
+            {
+                "id": "tibet",
+                "label": "宣政院",
+                "val": 20,
+                "group": "place",
+                "url": "topic_xuanzhengyuan.html"
+            },
+            {
+                "id": "hui",
+                "label": "回族",
+                "val": 20,
+                "group": "people",
+                "url": "topic_huizu.html"
+            },
+            {
+                "id": "kublai",
+                "label": "忽必烈",
+                "val": 20,
+                "group": "person",
+                "url": "topic_kublai.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "yuan",
+                "target": "xingsheng",
+                "label": "创立"
+            },
+            {
+                "source": "yuan",
+                "target": "tibet",
+                "label": "管辖西藏"
+            },
+            {
+                "source": "kublai",
+                "target": "yuan",
+                "label": "建立"
+            }
+        ]
+    }
+}

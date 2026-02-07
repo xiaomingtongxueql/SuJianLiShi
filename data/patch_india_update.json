@@ -1,0 +1,417 @@
+{
+    "topics": [
+        {
+            "id": "topic_harappa",
+            "title": "失落的文明：哈拉帕文化 (Harappan Civilization)",
+            "type": "world",
+            "year": "约公元前2500年",
+            "summary": "哈拉帕文明（印度河文明）是南亚次大陆最早的城市文明，以其高度发达的城市规划、排水系统和至今未被破译的印章文字而闻名，也是世界四大古文明之一。",
+            "content": [
+                {
+                    "title": "高度发达的城市规划",
+                    "text": "<p>哈拉帕和摩亨佐·达罗是该文明的两大中心城市。考古显示，这些城市呈现出惊人的<strong>标准化规划</strong>：街道呈棋盘状分布，房屋用统一规格的烧制砖建造。最令人惊叹的是其<strong>排水系统</strong>，几乎家家户户都有浴室和厕所，污水通过陶管排入街道地下的公共下水道。这种卫生设施水平在当时的世界是独一无二的，直到几千年后的罗马和现代欧洲才再次达到。</p>"
+                },
+                {
+                    "title": "谜一样的文字与信仰",
+                    "text": "<p>出土的大量<strong>滑石印章</strong>上刻有动物图案（如独角兽、瘤牛）和一种未知的象形文字。尽管语言学家进行了无数尝试，但这些文字至今未能被破译，使得我们对该文明的政治结构和宗教信仰知之甚少。印章上的瑜伽坐姿人像（'原湿婆'）暗示了后来印度教某些元素的起源。</p>"
+                },
+                {
+                    "title": "文明的衰亡",
+                    "text": "<p>约公元前1900年左右，哈拉帕文明开始衰落，城市被废弃。关于其原因，学界有多种假说：雅利安人入侵（'大屠杀'假说）、印度河改道、气候变化导致干旱或洪水，以及过度开发导致的生态崩溃。目前主流观点倾向于<strong>环境与气候因素</strong>导致的内部崩溃，而非单一的外部入侵。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "城市文明",
+                    "desc": "早期印度河文明的代表，特点是城市规划和排水系统。"
+                },
+                {
+                    "title": "衰落",
+                    "desc": "约公元前1500年左右由于雅利安人入侵等原因衰落。"
+                }
+            ],
+            "impact": {
+                "reality": "证明了印度次大陆拥有独立且高度发达的原生文明。",
+                "legacy": "其城市规划、浴池文化和某些宗教符号（如瑜伽坐姿）可能被后来的雅利安文明吸收，成为印度教文化的一部分。"
+            },
+            "relations": [
+                {
+                    "text": "古印度",
+                    "url": "detail_india.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "harappa_civ",
+                        "label": "哈拉帕文明",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_harappa.html"
+                    },
+                    {
+                        "id": "indus_river",
+                        "label": "印度河",
+                        "val": 20,
+                        "group": "geography",
+                        "url": "detail_india.html"
+                    },
+                    {
+                        "id": "aryan_invasion",
+                        "label": "雅利安人",
+                        "val": 20,
+                        "group": "people",
+                        "url": "topic_caste.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "indus_river",
+                        "target": "harappa_civ",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "aryan_invasion",
+                        "target": "harappa_civ",
+                        "label": "取代"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_caste",
+            "title": "神造的等级：种姓制度 (Caste System)",
+            "type": "world",
+            "year": "吠陀时代",
+            "summary": "种姓制度（Varna System）是雅利安人进入印度后建立的严格社会等级体系，通过宗教神话将社会分层合法化，深刻影响了印度的社会结构长达三千年。",
+            "content": [
+                {
+                    "title": "瓦尔那体系的建立",
+                    "text": "<p>雅利安人征服当地土著（达罗毗荼人）后，为了保持血统纯洁和维护统治地位，建立了<strong>瓦尔那</strong>（颜色）制度。《梨俱吠陀》中的'原人歌'赋予了该制度神圣性：原人普鲁沙的口变成了<strong>婆罗门</strong>（祭司，掌握神权），双臂变成了<strong>刹帝利</strong>（武士与国王，掌握世俗权力），双腿变成了<strong>吠舍</strong>（平民，从事农商），双脚变成了<strong>首陀罗</strong>（被征服者，从事低贱劳动）。此外，还有被排除在体系之外的'不可接触者'（达利特/贱民）。</p>"
+                },
+                {
+                    "title": "迦提与社会流动",
+                    "text": "<p>随着社会分工的复杂化，瓦尔那之下又演化出数以千计的<strong>迦提</strong>（Jati，职业种姓）。种姓制度的核心特征是：<strong>职业世袭、内部通婚、等级隔离</strong>。你的出生决定了你的职业、社会地位乃至朋友圈，几乎没有垂直流动的可能。宗教教义宣称，只有严格遵守种姓规范，来世才能转生为高种姓，这极大地维护了社会稳定，但也扼杀了社会活力。</p>"
+                },
+                {
+                    "title": "反种姓运动",
+                    "text": "<p>历史上，佛教和耆那教的兴起正是对种姓制度压迫的反叛。到了近代，圣雄甘地和安贝德卡尔致力于废除'不可接触'制度。尽管1947年印度独立后宪法已废除种姓歧视，但在农村地区和婚姻市场上，种姓意识至今依然根深蒂固。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "四个等级",
+                    "desc": "婆罗门、刹帝利、吠舍、首陀罗。"
+                },
+                {
+                    "title": "特征",
+                    "desc": "世袭、内婚、等级森严，严重阻碍社会进步。"
+                }
+            ],
+            "impact": {
+                "reality": "这种极其稳定的社会结构帮助印度文明度过了无数次外族入侵而未曾中断，但也导致了社会的长期停滞.",
+                "legacy": "至今（21世纪）仍是印度政治选举和婚姻匹配中的关键变量。"
+            },
+            "relations": [
+                {
+                    "text": "古印度",
+                    "url": "detail_india.html"
+                },
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "caste_system",
+                        "label": "种姓制度",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_caste.html"
+                    },
+                    {
+                        "id": "brahmin",
+                        "label": "婆罗门",
+                        "val": 20,
+                        "group": "class",
+                        "url": "topic_caste.html"
+                    },
+                    {
+                        "id": "kshatriya",
+                        "label": "刹帝利",
+                        "val": 20,
+                        "group": "class",
+                        "url": "topic_caste.html"
+                    },
+                    {
+                        "id": "untouchable",
+                        "label": "贱民",
+                        "val": 15,
+                        "group": "class",
+                        "url": "topic_caste.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "brahmin",
+                        "target": "caste_system",
+                        "label": "最高等级"
+                    },
+                    {
+                        "source": "kshatriya",
+                        "target": "brahmin",
+                        "label": "供养"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_buddhism",
+            "title": "觉悟之道：佛教 (Buddhism)",
+            "type": "world",
+            "year": "公元前6世纪",
+            "summary": "佛教是对婆罗门教等级制度和繁琐仪式的革命性反叛。它宣扬'众生平等'，通过哲学的思辨和修行的实践，为苦难中的众生提供了解脱之道。",
+            "content": [
+                {
+                    "title": "四圣谛与八正道",
+                    "text": "<p>佛教的核心教义概括为<strong>四圣谛</strong>：<strong>苦谛</strong>（人生皆苦）、<strong>集谛</strong>（苦源于贪嗔痴等欲望）、<strong>灭谛</strong>（消除欲望可得解脱）、<strong>道谛</strong>（修行的八种正确方法，即八正道）。佛教否认婆罗门教的梵我一如和神创论，提出了'缘起性空'的辩证法思想，认为万物皆由因缘聚合而成，没有永恒不变的实体。</p>"
+                },
+                {
+                    "title": "从刹帝利的反抗到世界宗教",
+                    "text": "<p>早期佛教主要在恒河流域的商业城市中传播，得到了刹帝利（国王）和吠舍（富商）的支持，因为他们对婆罗门的特权感到不满。佛教的'众生平等'思想打破了种姓藩篱，具有极大的社会进步意义。孔雀王朝时期，<strong>阿育王</strong>将其确立为国教，并派遣使团向希腊、斯里兰卡等地传教，使佛教开始具有世界性影响力。</p>"
+                },
+                {
+                    "title": "大乘与小乘的分流",
+                    "text": "<p>部派佛教时期，佛教分裂为上座部（大众通常称为小乘）和大众部（后来演化为大乘）。上座部侧重个人解脱（阿罗汉果），主要向南传播（斯里兰卡、东南亚）；大乘主张普度众生（菩萨道），主要向北传播（中亚、中国、日韩）。这种分流使得佛教能够适应不同文明的土壤。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "创立",
+                    "desc": "公元前6世纪，乔达摩·悉达多创立。"
+                },
+                {
+                    "title": "核心教义",
+                    "desc": "众生平等，反对种姓制度，宣扬忍耐顺从。"
+                }
+            ],
+            "impact": {
+                "reality": "在古印度一度成为国教，促进了孔雀王朝的统一与文化繁荣。",
+                "legacy": "虽然在印度本土衰落，但成为东亚、东南亚文明的核心支柱，深刻重塑了这些地区哲学、艺术与社会伦理。"
+            },
+            "relations": [
+                {
+                    "text": "古印度",
+                    "url": "detail_india.html"
+                },
+                {
+                    "text": "释迦牟尼",
+                    "url": "topic_buddha.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "buddhism_rel",
+                        "label": "佛教",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_buddhism.html"
+                    },
+                    {
+                        "id": "ashoka_king",
+                        "label": "阿育王",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_ashoka.html"
+                    },
+                    {
+                        "id": "china_trans",
+                        "label": "中国",
+                        "val": 20,
+                        "group": "place",
+                        "url": "detail_primitive_china.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "ashoka_king",
+                        "target": "buddhism_rel",
+                        "label": "弘扬"
+                    },
+                    {
+                        "source": "buddhism_rel",
+                        "target": "china_trans",
+                        "label": "传入"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_buddha",
+            "title": "觉者佛陀：释迦牟尼 (The Buddha)",
+            "type": "world",
+            "year": "约公元前563-前483年",
+            "summary": "乔达摩·悉达多，迦毗罗卫国王子，放弃了王位与荣华富贵，在菩提树下证悟真理，被尊称为'佛陀'（觉悟者）。",
+            "content": [
+                {
+                    "title": "太子的出离",
+                    "text": "<p>悉达多本是释迦族的王子，生活极尽奢华。然而，他在出游四门时目睹了生、老、病、死之苦，深感世间无常。为了寻求解决痛苦的终极真理，他在29岁那年毅然抛妻别子，逾城出家。这一举动体现了人类对精神自由的终极追求，超越了物质与权力的束缚。</p>"
+                },
+                {
+                    "title": "菩提树下的觉悟",
+                    "text": "<p>在经历了六年的苦行之后，悉达多意识到极端苦行并非正道。他在尼连禅河畔接受牧女乳糜供养，恢复体力后，在菩提树下静坐冥想，最终在明星升起之时彻底觉悟，洞悉了宇宙人生的因果法则，成为了'佛陀'。此后45年，他游历恒河流域，不分贵贱地教化众生，建立了最早的僧团（Sangha）。</p>"
+                },
+                {
+                    "title": "伟大的人格",
+                    "text": "<p>佛陀并非神灵，但他的人格魅力超越了神话。他拒绝使用梵文传教，只用民间俗语；他接纳贱民优波离和连环杀手以此为弟子。临终前，他教导弟子'依法不依人'，'自依止，法依止'，展现了高度的人文理性与独立精神。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "身份",
+                    "desc": "迦毗罗卫国王子，刹帝利种姓。"
+                },
+                {
+                    "title": "贡献",
+                    "desc": "创立佛教，提出系统的无神论哲学体系。"
+                }
+            ],
+            "impact": {
+                "reality": "打破了婆罗门教对真理解释权的垄断。",
+                "legacy": "被西方学者誉为'亚洲之光'，其和平与慈悲的思想至今仍是解决人类冲突的重要精神资源。"
+            },
+            "relations": [
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                },
+                {
+                    "text": "阿育王",
+                    "url": "topic_ashoka.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "gotama",
+                        "label": "释迦牟尼",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_buddha.html"
+                    },
+                    {
+                        "id": "bodhi",
+                        "label": "菩提树",
+                        "val": 15,
+                        "group": "object",
+                        "url": "topic_buddha.html"
+                    },
+                    {
+                        "id": "sangha",
+                        "label": "僧团",
+                        "val": 20,
+                        "group": "org",
+                        "url": "topic_buddhism.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "gotama",
+                        "target": "bodhi",
+                        "label": "觉悟"
+                    },
+                    {
+                        "source": "gotama",
+                        "target": "sangha",
+                        "label": "建立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_ashoka",
+            "title": "从暴君到护法：阿育王 (Ashoka the Great)",
+            "type": "world",
+            "year": "公元前3世纪",
+            "summary": "阿育王是孔雀王朝的第三代君主，他基本统一了印度次大陆。在经历了血腥的羯陵伽战争后，他幡然悔悟，皈依佛教，以'正法'（Dharma）治国。",
+            "content": [
+                {
+                    "title": "羯陵伽的转折",
+                    "text": "<p>早年的阿育王以残暴著称，被称为'黑阿育王'。在征服羯陵伽（Kalinga）的战役中，数十万人伤亡。战场的惨状极大地触动了阿育王，使他从一个铁血征服者转变为和平主义者。他宣布不再进行军事征服，而致力于'正法征服'。</p>"
+                },
+                {
+                    "title": "石柱法敕",
+                    "text": "<p>为了弘扬佛法和道德，阿育王在全国各地竖立了大量<strong>石柱</strong>，上面刻有告诫臣民行善、仁爱、非暴力的敕令。这些阿育王石柱（及其顶端的狮子柱头）不仅是珍贵的历史文献，也成为了印度国家（如今日印度国徽）的象征。</p>"
+                },
+                {
+                    "title": "佛教的保护者",
+                    "text": "<p>阿育王举行了佛教历史上的第三次结集，整理经典，剔除附佛外道。更重要的是，他派出大规模的传教使团前往周边国家（如派其子摩欣陀去斯里兰卡）。正是这一举措，将佛教从一个恒河流域的区域性教派，推向了全亚洲，改变了世界宗教的版图。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "王朝",
+                    "desc": "孔雀王朝鼎盛时期的君主。"
+                },
+                {
+                    "title": "贡献",
+                    "desc": "基本统一印度，定佛教为国教，推广佛教向外传播。"
+                }
+            ],
+            "impact": {
+                "reality": "创造了古印度历史上疆域最大的帝国。",
+                "legacy": "其'以德治国'的理念成为后世印度统治者的典范；阿育王柱头成为现代印度的国家象征。"
+            },
+            "relations": [
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                },
+                {
+                    "text": "释迦牟尼",
+                    "url": "topic_buddha.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "ashoka_emp",
+                        "label": "阿育王",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_ashoka.html"
+                    },
+                    {
+                        "id": "mauryan",
+                        "label": "孔雀王朝",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "topic_ashoka.html"
+                    },
+                    {
+                        "id": "pillar",
+                        "label": "阿育王石柱",
+                        "val": 20,
+                        "group": "object",
+                        "url": "topic_ashoka.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "ashoka_emp",
+                        "target": "mauryan",
+                        "label": "统治"
+                    },
+                    {
+                        "source": "ashoka_emp",
+                        "target": "pillar",
+                        "label": "竖立"
+                    }
+                ]
+            }
+        }
+    ]
+}

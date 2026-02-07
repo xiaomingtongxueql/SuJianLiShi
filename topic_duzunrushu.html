@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独尊儒术：帝国的官方意识形态 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E2E8F0',
+                        ink: '#374151', paper: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #FEFCE8;
+            border-left: 4px solid #B5A642;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        独尊儒术：帝国的官方意识形态
+                    </h1>
+                </section>
+
+
+
+                <!-- 1. 无为到有为 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scale" class="w-8 h-8 text-gold mr-3"></i>
+                        第一章：从“无为”到“有为”
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            汉初为了恢复经济，实行“黄老之学”（道家），主张清静无为。这对休养生息极为有利。然而，到汉武帝时期，诸侯势力膨胀、匈奴威胁边境、土地兼并加剧，社会面临严重危机。
+                        </p>
+                        <p>
+                            道家的“无为”已无法适应加强中央集权、开展大规模政治军事活动的需要。汉武帝迫切需要一种新的理论，来论证皇权的绝对权威和大一统的合法性。在策问贤良时，大儒<strong>董仲舒</strong>献上《天人三策》，正中下怀。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. 新儒学的改造 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open-check" class="w-8 h-8 text-ink mr-3"></i>
+                        第二章：董仲舒的新儒学
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            董仲舒并没有照搬孔孟之道，而是对儒家思想进行了改造，糅合了<strong>道家</strong>（阴阳五行）、<strong>法家</strong>（君主集权）的思想，形成了一套以“天人感应”为核心的新儒学体系。其主要观点包括：
+                        </p>
+                        <ul class="list-disc pl-6 space-y-4 my-6">
+                            <li>
+                                <strong>大一统理论：</strong> “《春秋》大一统者，天地之常经，古今之通谊也。”这为汉武帝打击诸侯、加强中央集权提供了理论依据。
+                            </li>
+                            <li>
+                                <strong>君权神授与天人感应：</strong>
+                                皇帝受命于天，代表上天统治人间，臣民必须绝对服从。但同时，如果皇帝暴政，上天会降下灾异示警。这在神化皇权的同时，也给皇权套上了一层道德枷锁。
+                            </li>
+                            <li>
+                                <strong>三纲五常：</strong> 明确提出“君为臣纲，父为子纲，夫为妻纲”和“仁义礼智信”。构建了严格的社会等级伦理秩序。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 3. 独尊的措施 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="school" class="w-8 h-8 text-reddish mr-3"></i>
+                        第三章：独尊的措施
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            汉武帝采纳建议后，采取了一系列具体措施确立儒学地位：
+                        </p>
+                        <div class="highlight-box">
+                            <ul class="list-disc pl-5 space-y-2 text-sm">
+                                <li><strong>罢黜百家：</strong> 禁止其他各家学说（特别是黄老、法家）立为官学，虽未完全禁绝，但失去了政治晋升通道。</li>
+                                <li><strong>设立太学：</strong> 在长安设立最高学府“太学”，教授五经（诗、书、礼、易、春秋）。</li>
+                                <li><strong>儒学官僚化：</strong> 规定太学生考核合格可以做官，地方推举孝廉也以儒家道德为标准。从此，天下读书人为了做官，不得不研习儒家经典。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. 深远影响 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="history" class="w-8 h-8 text-stone-600 mr-3"></i>
+                        第四章：深远的历史回响
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            “罢黜百家，独尊儒术”结束了先秦以来“百家争鸣”的局面。儒家思想成为历代王朝的统治工具，所谓“<strong>外儒内法</strong>”——表面上宣扬儒家的仁政德治，实际上运用法家的集权权术。
+                        </p>
+                        <p>
+                            这对中国传统文化产生了双重影响：一方面，它维护了国家的统一和社会的稳定，塑造了注重道德、秩序的民族性格；另一方面，它在一定程度上禁锢了思想，遏制了科技和商业的发展。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="topic_hanwudi.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">汉武帝</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_confucianism.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">儒家学派</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "ruzhu", "label": "独尊儒术", "val": 40, "group": "core", "url": "#"},
+                {"id": "hanwudi", "label": "汉武帝", "val": 30, "group": "person", "url": "topic_hanwudi.html"},
+                {"id": "dongzhongshu", "label": "董仲舒", "val": 30, "group": "person", "url": "#"},
+                {"id": "tianren", "label": "天人感应", "val": 20, "group": "idea", "url": "#"},
+                {"id": "dayitong", "label": "大一统", "val": 25, "group": "idea", "url": "#"},
+                {"id": "taixue", "label": "太学", "val": 20, "group": "institution", "url": "#"}
+            ],
+            "edges": [
+                {"source": "dongzhongshu", "target": "ruzhu", "label": "提出"},
+                {"source": "hanwudi", "target": "ruzhu", "label": "采纳"},
+                {"source": "ruzhu", "target": "dayitong", "label": "核心"},
+                {"source": "ruzhu", "target": "tianren", "label": "理论基础"},
+                {"source": "ruzhu", "target": "taixue", "label": "推广"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"汉武帝","url":"topic_hanwudi.html"},
+            {"text":"董仲舒","url":"#"},
+            {"text":"太学","url":"#"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-gold', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

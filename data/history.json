@@ -1,0 +1,718 @@
+{
+  "events": [
+    {
+      "id": "primitive-world",
+      "year": -3000000,
+      "display": "300万年前",
+      "title": "人类起源",
+      "enTitle": "Human Origins",
+      "cat": "world",
+      "desc": "从南方古猿到智人，人类在漫长的进化中学会了直立行走与使用工具。",
+      "link": "detail_primitive_world.html",
+      "keywords": [
+        {
+          "text": "进化论",
+          "url": "topic_evolution.html"
+        },
+        {
+          "text": "石器",
+          "url": "topic_stone_tools.html"
+        },
+        {
+          "text": "火的使用",
+          "url": "topic_fire.html"
+        },
+        {
+          "text": "群居",
+          "url": "topic_group_living.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "primitive-china",
+      "year": -700000,
+      "display": "70万年前",
+      "title": "北京人",
+      "enTitle": "Peking Man",
+      "cat": "china",
+      "desc": "生活在周口店的直立人，标志着中国境内远古人类的存在。",
+      "link": "detail_primitive.html",
+      "keywords": [
+        {
+          "text": "打制石器",
+          "url": "topic_stone_tools.html"
+        },
+        {
+          "text": "用火",
+          "url": "topic_fire.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "agrarian-rev",
+      "year": -10000,
+      "display": "1万年前",
+      "title": "农业革命",
+      "enTitle": "Agrarian Revolution",
+      "cat": "world",
+      "desc": "人类从采集狩猎转向定居农业，文明诞生的物质基础。",
+      "link": "detail_agrarian.html",
+      "keywords": [
+        {
+          "text": "定居生活",
+          "url": "topic_settlement.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "mesopotamia",
+      "year": -3500,
+      "display": "BC 3500",
+      "title": "两河流域",
+      "enTitle": "Mesopotamia",
+      "cat": "world",
+      "desc": "苏美尔人在底格里斯河与幼发拉底河之间建立了最早的城市文明。",
+      "link": "detail_mesopotamia.html",
+      "keywords": [
+        {
+          "text": "苏美尔人",
+          "url": "topic_sumerian.html"
+        },
+        {
+          "text": "楔形文字",
+          "url": "topic_cuneiform.html"
+        },
+        {
+          "text": "汉谟拉比法典",
+          "url": "topic_hammurabi.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "egypt",
+      "year": -3100,
+      "display": "BC 3100",
+      "title": "古埃及",
+      "enTitle": "Ancient Egypt",
+      "cat": "world",
+      "desc": "尼罗河畔的法老文明，以金字塔与象形文字著称。",
+      "link": "detail_egypt.html",
+      "keywords": [
+        {
+          "text": "法老",
+          "url": "topic_pharaoh.html"
+        },
+        {
+          "text": "金字塔",
+          "url": "topic_pyramid.html"
+        },
+        {
+          "text": "象形文字",
+          "url": "topic_hieroglyph.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "india",
+      "year": -2500,
+      "display": "BC 2500",
+      "title": "古印度",
+      "enTitle": "Ancient India",
+      "cat": "world",
+      "desc": "从哈拉帕文明到吠陀时代，种姓制度与佛教发源地。",
+      "link": "detail_india.html",
+      "keywords": [
+        {
+          "text": "吠陀",
+          "url": "topic_veda.html"
+        },
+        {
+          "text": "种姓制度",
+          "url": "topic_caste.html"
+        },
+        {
+          "text": "佛教",
+          "url": "topic_buddhism.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "legends",
+      "year": -3000,
+      "display": "传说时代",
+      "title": "炎黄传说",
+      "enTitle": "Age of Legends",
+      "cat": "china",
+      "desc": "华夏文明的曙光，禅让制与大禹治水的英雄史诗。",
+      "link": "detail_legends.html",
+      "keywords": [
+        {
+          "text": "人文初祖",
+          "url": "topic_ancestor.html"
+        },
+        {
+          "text": "禅让制",
+          "url": "topic_chanrang.html"
+        },
+        {
+          "text": "大禹治水",
+          "url": "topic_yu.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "xia",
+      "year": -2070,
+      "display": "BC 2070",
+      "title": "夏朝",
+      "enTitle": "Xia Dynasty",
+      "cat": "china",
+      "desc": "中国历史上第一个王朝，国家形态的初现。",
+      "link": "detail_xia.html",
+      "keywords": [
+        {
+          "text": "二里头",
+          "url": "topic_erlitou.html"
+        },
+        {
+          "text": "夏历",
+          "url": "topic_calendar.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "shang",
+      "year": -1600,
+      "display": "BC 1600",
+      "title": "商朝",
+      "enTitle": "Shang Dynasty",
+      "cat": "china",
+      "desc": "青铜与甲骨文的时代，神秘而在场。",
+      "link": "detail_shang.html",
+      "keywords": [
+        {
+          "text": "甲骨文",
+          "url": "topic_oracle.html"
+        },
+        {
+          "text": "青铜器",
+          "url": "topic_bronze.html"
+        },
+        {
+          "text": "盘庚迁殷",
+          "url": "topic_pangeng.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "zhou",
+      "year": -1046,
+      "display": "BC 1046",
+      "title": "西周",
+      "enTitle": "Western Zhou",
+      "cat": "china",
+      "desc": "分封制与宗法制确立了华夏文明的社会结构。",
+      "link": "detail_zhou.html",
+      "keywords": [
+        {
+          "text": "分封制",
+          "url": "topic_fenfeng.html"
+        },
+        {
+          "text": "宗法制",
+          "url": "topic_zongfa.html"
+        },
+        {
+          "text": "礼乐制度",
+          "url": "topic_liyue.html"
+        },
+        {
+          "text": "周公",
+          "url": "topic_zhougong.html"
+        },
+        {
+          "text": "周武王",
+          "url": "topic_wuwang.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "greece",
+      "year": -800,
+      "display": "BC 800",
+      "title": "古希腊",
+      "enTitle": "Ancient Greece",
+      "cat": "world",
+      "desc": "民主政治与人文精神的摇篮。",
+      "link": "detail_greece.html",
+      "keywords": [
+        {
+          "text": "苏格拉底",
+          "url": "topic_socrates.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "warring",
+      "year": -770,
+      "display": "BC 770",
+      "title": "春秋战国",
+      "enTitle": "Spring and Autumn & Warring States",
+      "cat": "china",
+      "desc": "大动荡与大变革，百家争鸣的思想黄金时代。",
+      "link": "detail_warring.html",
+      "keywords": [
+        {
+          "text": "战国七雄",
+          "url": "topic_seven_states.html"
+        },
+        {
+          "text": "百家争鸣",
+          "url": "topic_baijia.html"
+        },
+        {
+          "text": "儒家",
+          "url": "topic_confucianism.html"
+        },
+        {
+          "text": "商鞅变法",
+          "url": "topic_shangyang.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "qin",
+      "year": -221,
+      "display": "BC 221",
+      "title": "秦朝",
+      "enTitle": "Qin Dynasty",
+      "cat": "china",
+      "desc": "中国历史上第一个统一的多民族封建国家。",
+      "link": "detail_qin.html",
+      "keywords": [
+        {
+          "text": "皇帝制度",
+          "url": "topic_emperor.html"
+        },
+        {
+          "text": "郡县制",
+          "url": "topic_junxian.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "han",
+      "year": -202,
+      "display": "BC 202",
+      "title": "大汉帝国",
+      "enTitle": "Han Dynasty",
+      "cat": "china",
+      "desc": "丝绸之路开通，儒家思想确立正统地位。",
+      "link": "detail_han.html",
+      "keywords": [
+        {
+          "text": "丝绸之路",
+          "url": "topic_silkroad.html"
+        },
+        {
+          "text": "推恩令",
+          "url": "topic_tuien.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "rome",
+      "year": -27,
+      "display": "BC 27",
+      "title": "古罗马",
+      "enTitle": "Ancient Rome",
+      "cat": "world",
+      "desc": "从共和国到帝国，法律与军事的典范。",
+      "link": "detail_rome.html",
+      "keywords": [
+        {
+          "text": "罗马法",
+          "url": "topic_roman_law.html"
+        },
+        {
+          "text": "十二铜表法",
+          "url": "topic_twelve_tables.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "sui",
+      "year": 581,
+      "display": "AD 581",
+      "title": "隋朝",
+      "enTitle": "Sui Dynasty",
+      "cat": "china",
+      "desc": "结束分裂，开创科举与大运河。",
+      "link": "detail_sui.html",
+      "keywords": [
+        {
+          "text": "科举制",
+          "url": "topic_keju.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "tang",
+      "year": 618,
+      "display": "AD 618",
+      "title": "盛唐",
+      "enTitle": "Tang Dynasty",
+      "cat": "china",
+      "desc": "中国封建社会的巅峰，开放包容的万国来朝。",
+      "link": "detail_tang.html",
+      "keywords": [
+        {
+          "text": "三省六部",
+          "url": "topic_sanshengliubu.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "song",
+      "year": 960,
+      "display": "AD 960",
+      "title": "宋朝",
+      "enTitle": "Song Dynasty",
+      "cat": "china",
+      "desc": "经济重心南移，商业与科技的高度繁荣。",
+      "link": "detail_song.html",
+      "keywords": [
+        {
+          "text": "交子",
+          "url": "topic_jiaozi.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "yuan",
+      "year": 1271,
+      "display": "AD 1271",
+      "title": "元朝",
+      "enTitle": "Yuan Dynasty",
+      "cat": "china",
+      "desc": "蒙古帝国的版图，行省制度的开端。",
+      "link": "detail_yuan.html",
+      "keywords": [
+        {
+          "text": "行省制",
+          "url": "topic_xingsheng.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "ming",
+      "year": 1368,
+      "display": "AD 1368",
+      "title": "明朝",
+      "enTitle": "Ming Dynasty",
+      "cat": "china",
+      "desc": "君主专制加强，郑和下西洋的海权绝响。",
+      "link": "detail_ming.html",
+      "keywords": [
+        {
+          "text": "郑和下西洋",
+          "url": "topic_zhenghe.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "qing",
+      "year": 1644,
+      "display": "AD 1644",
+      "title": "清朝",
+      "enTitle": "Qing Dynasty",
+      "cat": "china",
+      "desc": "封建王朝的黄昏，统一多民族国家的巩固。",
+      "link": "detail_qing.html",
+      "keywords": [
+        {
+          "text": "军机处",
+          "url": "topic_junjichu.html"
+        },
+        {
+          "text": "林则徐",
+          "url": "topic_linzexu.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "industrial-rev-1",
+      "year": 1765,
+      "display": "AD 1765",
+      "title": "第一次工业革命",
+      "enTitle": "1st Industrial Rev",
+      "cat": "world",
+      "desc": "蒸汽机开启的机械化时代。",
+      "link": "detail_industrial_rev_1.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "opium-war",
+      "year": 1840,
+      "display": "AD 1840",
+      "title": "鸦片战争",
+      "enTitle": "Opium War",
+      "cat": "china",
+      "desc": "中国近代史的开端，半殖民地半封建社会的开始。",
+      "link": "detail_opium.html",
+      "keywords": [
+        {
+          "text": "林则徐",
+          "url": "topic_linzexu.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "taiping",
+      "year": 1851,
+      "display": "AD 1851",
+      "title": "太平天国",
+      "enTitle": "Taiping Rebellion",
+      "cat": "china",
+      "desc": "农民战争的最高峰。",
+      "link": "detail_taiping.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "xinhai",
+      "year": 1911,
+      "display": "AD 1911",
+      "title": "辛亥革命",
+      "enTitle": "Xinhai Revolution",
+      "cat": "china",
+      "desc": "推翻帝制，建立共和。",
+      "link": "detail_xinhai.html",
+      "keywords": [
+        {
+          "text": "孙中山",
+          "url": "topic_sunzhongshan.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "ww1",
+      "year": 1914,
+      "display": "AD 1914",
+      "title": "第一次世界大战",
+      "enTitle": "World War I",
+      "cat": "world",
+      "desc": "帝国主义列强的全球混战。",
+      "link": "detail_ww1.html",
+      "keywords": [
+        {
+          "text": "萨拉热窝",
+          "url": "topic_sarajevo.html"
+        },
+        {
+          "text": "凡尔赛体系",
+          "url": "topic_versailles.html"
+        },
+        {
+          "text": "国联",
+          "url": "topic_league_nations.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "new-culture",
+      "year": 1915,
+      "display": "AD 1915",
+      "title": "新文化运动",
+      "enTitle": "New Culture Mov",
+      "cat": "china",
+      "desc": "民主与科学的启蒙。",
+      "link": "detail_new_culture.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "may-fourth",
+      "year": 1919,
+      "display": "AD 1919",
+      "title": "五四运动",
+      "enTitle": "May 4th Movement",
+      "cat": "china",
+      "desc": "新民主主义革命的开端。",
+      "link": "detail_may_fourth.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "northern-expedition",
+      "year": 1926,
+      "display": "AD 1926",
+      "title": "北伐战争",
+      "enTitle": "Northern Expedition",
+      "cat": "china",
+      "desc": "国共合作，推翻北洋军阀。",
+      "link": "detail_northern_expedition.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "anti-japanese",
+      "year": 1937,
+      "display": "AD 1937",
+      "title": "抗日战争",
+      "enTitle": "Anti-Japanese War",
+      "cat": "china",
+      "desc": "全民族抗战，世界反法西斯战争的东方主战场。",
+      "link": "detail_anti_japanese.html",
+      "keywords": [],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "ww2",
+      "year": 1939,
+      "display": "AD 1939",
+      "title": "第二次世界大战",
+      "enTitle": "World War II",
+      "cat": "world",
+      "desc": "人类历史上规模最大的全球战争。",
+      "link": "detail_ww2.html",
+      "keywords": [
+        {
+          "text": "斯大林格勒",
+          "url": "topic_stalingrad.html"
+        },
+        {
+          "text": "同盟国",
+          "url": "topic_allies.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "cold-war",
+      "year": 1947,
+      "display": "AD 1947",
+      "title": "冷战",
+      "enTitle": "Cold War",
+      "cat": "world",
+      "desc": "美苏两极对峙。",
+      "link": "detail_cold_war.html",
+      "keywords": [
+        {
+          "text": "马歇尔计划",
+          "url": "topic_marshall.html"
+        },
+        {
+          "text": "柏林墙",
+          "url": "topic_berlin_wall.html"
+        },
+        {
+          "text": "古巴导弹",
+          "url": "topic_cuba_missile.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "prc-founding",
+      "year": 1949,
+      "display": "AD 1949",
+      "title": "新中国成立",
+      "enTitle": "Founding of PRC",
+      "cat": "china",
+      "desc": "中国人民站起来了。",
+      "link": "detail_prc.html",
+      "keywords": [
+        {
+          "text": "开国大典",
+          "url": "topic_kaiguo.html"
+        },
+        {
+          "text": "五星红旗",
+          "url": "topic_flag.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    },
+    {
+      "id": "ussr-fall",
+      "year": 1991,
+      "display": "AD 1991",
+      "title": "苏联解体",
+      "enTitle": "Fall of USSR",
+      "cat": "world",
+      "desc": "两极格局瓦解，多极化趋势加强。",
+      "link": "topic_ussr_fall.html",
+      "keywords": [
+        {
+          "text": "欧盟",
+          "url": "topic_eu.html"
+        },
+        {
+          "text": "互联网",
+          "url": "topic_internet.html"
+        }
+      ],
+      "graph": [],
+      "rel": []
+    }
+  ]
+}

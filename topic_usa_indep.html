@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国独立战争 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .constitution-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .const-item {
+            border: 1px solid #eef2f6;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .const-item:hover {
+            border-color: #0969DA;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 资本主义制度的确立</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元 1775 年 - 公元 1783 年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        美国独立战争：荒原上的民主实验</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1776年，费城的钟声敲响了。这不仅是一场殖民地反抗宗主国的独立战争，更是一场人类历史上前所未有的思想博弈。英国的北美殖民地，在启蒙思想的浸润下，试图跳出数千年的“皇权回路”，构建一个基于权力的制衡与民众同意的国家。从《独立宣言》的呐喊到1787年宪法的精密设计，美国人证明了：民主不仅是一个口号，更是一套可以用数学般严谨逻辑构建的“政治机制”。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：波士顿的烟雾——压迫与反抗的逻辑 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="flame" class="w-8 h-8 text-blue mr-3"></i> 第一维度：从税收之争到天赋人权</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">独立战争的导火索是极其务实的：<strong>印花税与茶税</strong>。但其背后隐藏着一个极其深刻的政治伦题：“无代表，不纳税”。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>殖民地与宗主国的死结</strong>：英国试图以此弥补七年战争的亏空；而北美精英则认为这侵犯了英国法律赋予他们的基本人身权利。</li>
+                            <li><strong>1776
+                                    《独立宣言》</strong>：这是人类历史上“第一次人权宣言”。杰斐逊在此庄严宣告：生命、自由与追求幸福是人不可剥夺的权利。如果政府破坏这些权利，民众有权将其推翻。这标志着主权来源由“君权神授”彻底转向了“人民主权”。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：烈火中的淬炼——弱者的反击 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="shield" class="w-8 h-8 text-blue mr-3"></i> 第二维度：独立战争进程——意志与格局的博弈</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">这并不是一场力量对等的较量。当时的英国是世界第一强权，而北美大陆军只是一支缺乏训练的民兵。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>华盛顿的领导</strong>：他的伟大不仅在于战术，更在于其极致的自制。他将军权置于议会之下，确保了革命不会滑向新一轮的独裁。</li>
+                            <li><strong>萨拉托加大捷（1777）</strong>：战争的转折点。它不仅重创了英军，更引诱了渴望复仇的法国入局支持北美。从此，一场局部叛乱演变为全球地缘政治的博弈。
+                            </li>
+                            <li><strong>约克镇战役（1781）</strong>：最后的乐章。在法、美联合围攻下，英军主力投降，北美独立由梦想变为现实。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第三章：精密的设计——1787 宪法与制衡 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="git-branch" class="w-8 h-8 text-blue mr-3"></i> 第三维度：1787 宪法——权力的算法均衡</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">
+                            战争结束后，美国并未陷入内乱，因为他们开启了第二场革命：<strong>制宪会议</strong>。这被认为是人类历史上最精密的政治算法。其核心是<strong>分权制衡（Checks
+                                and Balances）</strong>。</p>
+
+                        <div class="constitution-grid">
+                            <div class="const-item">
+                                <i data-lucide="landmark" class="mx-auto mb-2 text-blue"></i>
+                                <h5 class="font-bold">立法权</h5>
+                                <p class="text-[10px]">国会</p>
+                            </div>
+                            <div class="const-item">
+                                <i data-lucide="user-check" class="mx-auto mb-2 text-blue"></i>
+                                <h5 class="font-bold">行政权</h5>
+                                <p class="text-[10px]">总统</p>
+                            </div>
+                            <div class="const-item">
+                                <i data-lucide="gavel" class="mx-auto mb-2 text-blue"></i>
+                                <h5 class="font-bold">司法权</h5>
+                                <p class="text-[10px]">最高法院</p>
+                            </div>
+                        </div>
+
+                        <ul class="list-disc pl-6 space-y-2 mb-4">
+                            <li><strong>联邦制</strong>：在中央政府的效能与地方州的自治权之间寻找到了黄金分割点。</li>
+                            <li><strong>权力的闭环</strong>：总统可以否决法律，国会可以弹劾总统，法院可以解法宪法。这种互相撕扯，反而实现了动态的稳定。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 如何评价美国独立战争的性质？</h4>
+                            <p class="text-gray-600 italic">
+                                它具有双重性质。一方面是<strong>民族解放战争</strong>，它推翻了英国的殖民统治，实现了民族独立；另一方面是<strong>资产阶级革命</strong>，它废除了封建残余，确立了民主共和制度。这为美国后来的工业崛起清理了所有的制度阻碍。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 1787 宪法的深远影响与局限性？</h4>
+                            <p class="text-gray-600 italic">
+                                它是世界上第一部资产阶级成文宪法，奠定了美国此后两百年的政体稳定（深远影响）。但其局限性也极其明显：它保留了奴隶制，且未赋予妇女和印第安人选举权。这证明了在当时的生产力水平下，民主仍带有极其显著的阶级筛选性。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="sun"
+                                    class="w-6 mr-2 text-blue"></i> 星火的燎原</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                美国独立战争的成功，给了被压迫者一种前所未有的心理暗示：普通人可以建立一个不用跪拜的国家。这种暗示随后跨越大西洋，引爆了法国大革命，也点燃了拉丁美洲的解放之火。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="code"
+                                    class="w-6 mr-2 text-blue"></i> 规则的力量</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                华盛顿在连任两届后主动离去，其意义不亚于他的任何一场胜仗。他用行动证明：制度的契约高于个人的意志。这种对“程序正义”的回扣，才是美国能够长期保持活力且不陷入内爆的关键。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_declaration.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">独立宣言</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_washington.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">华盛顿</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_federalism.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">1787 宪法</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_saratoga.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">萨拉托加大捷</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"独立宣言","url":"topic_declaration.html"},{"text":"华盛顿","url":"topic_washington.html"},{"text":"1787 宪法","url":"topic_federalism.html"},{"text":"萨拉托加","url":"topic_saratoga.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"usa","label":"独立战争","x":50,"y":50,"type":"core","url":"detail_usa_indep.html"},{"id":"dec","label":"独立宣言","x":20,"y":30,"type":"normal","url":"topic_declaration.html"},{"id":"wash","label":"华盛顿","x":80,"y":30,"type":"normal","url":"topic_washington.html"},{"id":"const","label":"1787 宪法","x":50,"y":80,"type":"sub","url":"topic_federalism.html"},{"id":"sara","label":"萨拉托加","x":85,"y":70,"type":"sub","url":"topic_saratoga.html"}],"edges":[{"source":"usa","target":"dec"},{"source":"usa","target":"wash"},{"source":"usa","target":"const"},{"source":"usa","target":"sara"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

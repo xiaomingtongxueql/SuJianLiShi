@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马克思主义诞生 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .theory-card {
+            border: 1px solid #eef2f6;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: #fff;
+            margin: 1.5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .theory-card::after {
+            content: "★";
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 3rem;
+            color: rgba(9, 105, 218, 0.03);
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 国际共产主义运动</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元 1848 年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        马克思主义诞生：为无产阶级盗取火种</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        “一个幽灵，共产主义的幽灵，在欧洲游荡。”1848年2月，随着伦敦那本薄薄小册子的问世，人类文明史上最具震撼力的思想雷鸣爆发了。这不是一份简单的政治宣传画，而是一套基于严密唯物史观的科学预言。马克思主义的诞生，第一次为被压迫的无产阶级提供了如何解释世界、并最终如何改变世界的逻辑利刃。它宣告了“全世界无产者，联合起来！”的战斗口号，从此改变了人类社会的运行轨道。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：时代的阵痛——为什么是 1848 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="factory" class="w-8 h-8 text-blue mr-3"></i> 第一维度：时代的产儿——工业文明下的社会撕裂</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">马克思主义并非凭空产生，它是工业革命将社会矛盾推向极致后的必然产物。随着大机器工业的普及，欧洲社会呈现出极端的不平等：</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>阶级极化</strong>：一方面是积累了惊人财富的资产阶级，另一方面是陷入极端贫困、童工盛行、居住在贫民窟里的无产阶级。</li>
+                            <li><strong>早期的反抗</strong>：19世纪三四十年代，法国里昂工人起义、英国宪章运动、德意志西里西亚织工起义。这些运动证明：无产阶级已作为独立的政治力量登上历史舞台，但他们急需一套科学的、系统的<strong>战斗理论</strong>。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：科学的理论——《共产党宣言》的灵魂 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i> 第二维度：真理的力量——《共产党宣言》的核心命题</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">1848年，《共产党宣言》的发表标志着马克思主义的正式诞生。它包含了三个极其核心的逻辑体系：</p>
+                        <div class="space-y-4 my-8">
+                            <div class="theory-card">
+                                <h4 class="font-bold text-blue mb-2">1. 唯物史观 (Historical Materialism)</h4>
+                                <p class="text-sm">
+                                    人类社会的进步不是神定的，而是由于生产力与生产关系的矛盾推动的。资产阶级在历史上曾有极其革命的作用，但其生产关系的局限注定其必将被无产阶级取代。</p>
+                            </div>
+                            <div class="theory-card">
+                                <h4 class="font-bold text-blue mb-2">2. 阶级斗争 (Class Struggle)</h4>
+                                <p class="text-sm">“到目前为止的一切社会历史都是阶级斗争的历史。”这种斗争是社会演进的唯一引擎，它是推动政治变革的最直接动力。</p>
+                            </div>
+                            <div class="theory-card">
+                                <h4 class="font-bold text-blue mb-2">3. 暴力革命与人的全面发展</h4>
+                                <p class="text-sm">无产阶级只有通过暴力推翻旧制度，废除私有制，才能建立自由人的联合体，实现全人类的解放。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 第三章：从理论到实践——第一国际与巴黎公社 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="users" class="w-8 h-8 text-blue mr-3"></i> 第三维度：实践的检验——从第一国际到巴黎公社的英雄史诗</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">马克思不仅是思想家，更是行动者。他推动了<strong>第一国际</strong>的成立，试图将零散的工运整合为全球性的革命浪潮。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>1871
+                                    巴黎公社</strong>：人类历史上第一个无产阶级政权的雏形。虽然由于时机未成熟而失败，但公社采取的一系列措施（如公职人员普选、限薪制、废除旧军队）为后来的社会主义建设提供了极其深刻的<strong>制度预演</strong>。
+                            </li>
+                            <li><strong>血色教训</strong>：巴黎公社的失败证明了马克思的一个论断——无产阶级革命必须拥有强大的组织（政党）和对旧国家机器的彻底改造。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="help-circle" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 为什么称马克思主义是“科学”的？</h4>
+                            <p class="text-gray-600 italic">
+                                因为它不同于空想社会主义。空想社会主义寄希望于统治者的善意；而马克思主义基于对生产力发展规律的科学分析，指明了无产阶级革命的必然路径（资本主义内在矛盾不可调和）以及革命的力量源泉（工人阶级）。这种具备严密因果逻辑的理论，才是“科学”。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 《共产党宣言》在当时的世界意义？</h4>
+                            <p class="text-gray-600 italic">
+                                它标志着科学社会主义的诞生。它让工人运动从此告别了“盲目破坏机器”的自发阶段，进入了“有纲领、有组织、有目标”的自觉阶段。它是此后全球所有社会主义革命（包括中俄俄革命）的基因组图谱。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="flame"
+                                    class="w-6 mr-2 text-blue"></i> 燧石的火花</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                马克思主义的诞生告诉世界：历史是有规律可循的，秩序不是强权者的私产。只要有压迫，这里的文字就会被重新拿起。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="zap"
+                                    class="w-6 mr-2 text-blue"></i> 持续的生命力</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                从1848到21世纪，尽管世界发生了翻天覆地的变化，但马克思主义关于剩余价值、剥削以及人的异化的批判，依然是我们审视现代资本逻辑、追求社会正义最精准的显微镜。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_manifesto.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">共产党宣言</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_marx_engels.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">马克思/恩格斯</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_commune.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">巴黎公社</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_first_inter.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">第一国际</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+
+            <!-- Injected Deep Dive Card -->
+            <div id="deep-dive-card" class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                    <i data-lucide="layers" class="w-4"></i> 历史深读
+                </div>
+                
+            <a href="detail_marxism.html" class="block mt-3 group/link">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-gold/50 transition-all shadow-sm hover:shadow-md">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center mr-3 group-hover/link:bg-gold group-hover/link:text-white transition-colors">
+                            <i data-lucide="book-open-check" class="w-4 h-4"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700 group-hover/link:text-primary">详情: marxism</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300 group-hover/link:text-gold"></i>
+                </div>
+            </a>
+        
+            </div>
+        
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"共产党宣言","url":"topic_manifesto.html"},{"text":"马克思","url":"topic_marx_engels.html"},{"text":"巴黎公社","url":"topic_commune.html"},{"text":"第一国际","url":"topic_first_inter.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"marx","label":"马克思主义","x":50,"y":50,"type":"core","url":"detail_marxism.html"},{"id":"mani","label":"共产党宣言","x":20,"y":30,"type":"normal","url":"topic_manifesto.html"},{"id":"eng","label":"恩格斯","x":80,"y":30,"type":"normal","url":"topic_marx_engels.html"},{"id":"com","label":"巴黎公社","x":50,"y":80,"type":"sub","url":"topic_commune.html"},{"id":"inter","label":"第一国际","x":85,"y":70,"type":"sub","url":"topic_first_inter.html"}],"edges":[{"source":"marx","target":"mani"},{"source":"marx","target":"eng"},{"source":"marx","target":"com"},{"source":"mani","target":"inter"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

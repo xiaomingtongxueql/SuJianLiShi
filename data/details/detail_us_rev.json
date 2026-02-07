@@ -1,0 +1,156 @@
+{
+    "id": "detail_us_rev",
+    "type": "world",
+    "title": "美国独立:共和制的实验",
+    "year": "1775年 — 1783年",
+    "desc": "美国独立战争（American Revolutionary War）不仅仅是一场北美殖民地脱离英国统治的战争，更因为其创造了一个基于启蒙思想的全新国家——美利坚合众国，而具有了世界史意义。它将孟德斯鸠的三权分立、洛克的天赋人权从理论变成了现实。",
+    "content": [
+        {
+            "title": "无代表，不纳税 (No Taxation Without Representation)",
+            "text": "<p>18世纪中叶，英国为了弥补七年战争的财政亏空，加大了对北美13个殖民地的盘剥（如印花税法）。殖民地人民虽然视自己为享有权利的英国人，但在英国议会中没有代表。'无代表，不纳税'成为反抗的口号。1773年的<strong>波士顿倾茶事件</strong>将冲突推向高潮，英国颁布不可容忍法案，双方剑拔弩张。</p>"
+        },
+        {
+            "title": "自由的呐喊 (Declaration of Independence)",
+            "text": "<p>1775年4月，莱克星顿的枪声拉开了战争序幕。第二届大陆会议组建大陆军，任命华盛顿为总司令。1776年7月4日，托马斯·杰斐逊起草的<strong>《独立宣言》</strong>正式发表。它痛斥了英王的暴政，庄严宣告：'我们认为这些真理是不言而喻的：人人生而平等，造物者赋予他们若干不可剥夺的权利，其中包括生命权、自由权和追求幸福的权利。'</p>"
+        },
+        {
+            "title": "战争与胜利 (The War)",
+            "text": "<p>战争初期，美军装备简陋，屡战屡败。但华盛顿采取了灵活的游击战术。1777年的萨拉托加大捷是转折点，随后法国公开参战及援助美国。1781年，英军在约克镇投降。1783年，英国承认美国独立。</p>"
+        },
+        {
+            "title": "制宪与联邦 (The Constitution)",
+            "text": "<p>独立后的美国是一个松散的邦联，中央政府无权征税和调兵，面临分崩离析的危险（谢斯起义）。1787年，制宪会议在费城召开。在麦迪逊等人的推动下，制定了<strong>1787年宪法</strong>。宪法确立了<strong>联邦制</strong>（中央与地方分权）和<strong>三权分立</strong>（立法、行政、司法相互制衡）原则，确立了共和政体。这是世界上第一部资产阶级成文宪法。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "独立宣言的核心思想",
+            "desc": "天赋人权、主权在民。它是启蒙思想在北美的实践，被马克思称为'第一个人权宣言'。"
+        },
+        {
+            "title": "1787年宪法的评价",
+            "desc": "积极：建立了强有力的中央政府，创立了民主共和的新体制，保证了长期稳定。局限：保留了奴隶制，不承认印第安人和妇女的权利。"
+        },
+        {
+            "title": "双重性质",
+            "desc": "既是一场民族解放战争（脱离英国），又是一场资产阶级革命（扫除资本主义发展的障碍）。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "华盛顿",
+            "url": "topic_washington.html"
+        },
+        {
+            "text": "独立宣言",
+            "url": "topic_declaration.html"
+        },
+        {
+            "text": "三权分立",
+            "url": "topic_separation_powers.html"
+        },
+        {
+            "text": "杰斐逊",
+            "url": "topic_jefferson.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "us_rev",
+                "label": "美国独立战争",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "uk",
+                "label": "英国",
+                "val": 20,
+                "group": "location"
+            },
+            {
+                "id": "usa",
+                "label": "美国",
+                "val": 20,
+                "group": "location"
+            },
+            {
+                "id": "washington",
+                "label": "华盛顿",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "jefferson",
+                "label": "杰斐逊",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "declaration",
+                "label": "独立宣言",
+                "val": 25,
+                "group": "document"
+            },
+            {
+                "id": "constitution",
+                "label": "1787宪法",
+                "val": 25,
+                "group": "document"
+            },
+            {
+                "id": "check_balance",
+                "label": "三权分立",
+                "val": 20,
+                "group": "concept"
+            },
+            {
+                "id": "republic",
+                "label": "共和制",
+                "val": 20,
+                "group": "system"
+            }
+        ],
+        "edges": [
+            {
+                "source": "usa",
+                "target": "uk",
+                "label": "反抗殖民"
+            },
+            {
+                "source": "washington",
+                "target": "us_rev",
+                "label": "领导"
+            },
+            {
+                "source": "jefferson",
+                "target": "declaration",
+                "label": "起草"
+            },
+            {
+                "source": "us_rev",
+                "target": "declaration",
+                "label": "纲领"
+            },
+            {
+                "source": "us_rev",
+                "target": "constitution",
+                "label": "成果"
+            },
+            {
+                "source": "constitution",
+                "target": "check_balance",
+                "label": "原则"
+            },
+            {
+                "source": "constitution",
+                "target": "republic",
+                "label": "确立"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "美国宪法的稳定性是其成为超级大国的重要基石。三权分立模式被许多国家效仿。",
+        "legacy": "开启了美洲的独立浪潮（如拉美独立运动）。它向世界证明了没有君主，国家依然可以有效运转。"
+    }
+}

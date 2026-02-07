@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次工业革命 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .electric-card {
+            background: linear-gradient(135deg, #0969DA, #1e40af);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            color: white;
+            margin: 2rem 0;
+            box-shadow: 0 15px 35px rgba(9, 105, 218, 0.2);
+        }
+
+        .oil-stat {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 电气时代与争霸</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        19 世纪 70 年代 - 20 世纪初</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        第二次工业革命：光、速与垄断的合奏</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        19世纪末，人类文明按下了加速键。如果说第一次工业革命是用蒸汽引擎打破了肌肉的局限，那么第二次工业革命则是用电力与内燃机重新定义了物质世界的连接速度。当爱迪生的第一枚灯泡在实验室亮起，当内燃机带着轰鸣冲向天空与深海，科学与技术第一次实现了完美的“联姻”。这不只是一场产能的井喷，更是一场资本的重组——庞大的垄断组织（如辛迪加、托拉斯）开始左右国家的命运。是一场光辉的技术狂欢，也是帝国主义时代残酷竞争的序曲。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：电力的降临——黑暗时代的终结 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="zap" class="w-8 h-8 text-blue mr-3"></i> 第一维度：电气时代——控制电子的艺术</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">法拉第发现了电磁感应，而爱迪生（Edison）将其变现为千家万户的日常。电不再只是实验台上的火花，而是工业文明的血液。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>能源密度的飞跃</strong>：电力的远程输送解决了能源被捆绑在工厂旁的难题。大工业生产实现了跨越式的弹性扩张，电动机取代了笨重的蒸汽机。</li>
+                            <li><strong>生活方式的重构</strong>：灯泡终结了极长的黑夜，电话（贝尔发明）缩短了语义的距离。这是人类历史上第一次实现了全球规模的信息与光明的同步化。</li>
+                        </ul>
+                        <div class="electric-card">
+                            <h4 class="font-bold mb-4 flex items-center"><i data-lucide="flask-conical"
+                                    class="w-6 mr-3"></i> 科学与技术的“深度融合”</h4>
+                            <p class="text-xs leading-relaxed">
+                                不同于一工革命时期“技术先行、科学滞后”的情况。二工革命标志着<strong>科学理论直接产出工业应用</strong>。实验室成为了工厂的心脏，诺贝尔的炸药、海厄特的塑料、夏尔多内的人造纤维，无一不是现代实验室的结晶。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 第二章：内燃机的咆哮——空间的崩塌 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="gauge" class="w-8 h-8 text-blue mr-3"></i> 第二维度：内燃机与石油——通往立体文明的引擎</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">奥托、戴姆勒与本茨的接力尝试，将动力装进了更小、更强的容器。这是人类克服重力的第一步。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>石油时代的开启</strong>：石油取代煤炭成为了战略核心。这重塑了此后一百年间的地缘政治逻辑——谁有石油，谁就掌握了全球的血脉。石油化工业也随之腾飞。
+                            </li>
+                            <li><strong>速度的爆发</strong>：19世纪末本茨发明的汽车，20世纪初莱特兄弟的飞天，使人类在地面与天空的移动效率提升了数十倍。世界变得越来越像一个“地球村”。
+                            </li>
+                        </ul>
+                        <div class="oil-stat my-6">
+                            <i data-lucide="droplet" class="text-blue w-10"></i>
+                            <div>
+                                <h6 class="font-bold text-xs">重工业的崛起：钢铁产量的狂飙</h6>
+                                <p class="text-[10px] text-gray-400">贝塞麦转炉炼钢法使钢材成本从黄金价变为大众消耗品，高楼大厦与跨海大桥因此而立。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 第三章：资本的怪兽——垄断组织的诞生 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="trending-up" class="w-8 h-8 text-blue mr-3"></i> 第三维度：托拉斯与帝国主义——资本逻辑的终极形态</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">随着生产规模的无限扩大，小作坊已无法承受重工业的风险。资本开始由于集中而产生异变——<strong>垄断组织</strong>出现了。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>垄断的本质</strong>：大企业通过收购、联合控制市场份额。这种超大规模组织（如美国美孚石油托拉斯）不仅左右了价格，更开始深度干预国家的外交政策，形成“政企合一”。
+                            </li>
+                            <li><strong>帝国主义的到来</strong>：为了获取更广大的市场与投资地，老牌工业国（英法）与新兴强权（美德日）展开了全球范围内的重新瓜分。这标志着人类正式进入全球资本扩张阶段，也种下了两次世界大战的祸根。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 一、二次工业革命的最本质区别？</h4>
+                            <p class="text-gray-600 italic">
+                                不仅仅是能源。其本质在于<strong>科学与技术的关系</strong>实现了逆转：第一次是技术发明领先理论（手工工匠的改进）；第二次是科学理论（如麦克斯韦电磁理论）指导技术研发（专家的研究）。同时，二工革命实现了多国同步爆发，而美德日崛起势头最猛。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 如何评价垄断组织的出现？</h4>
+                            <p class="text-gray-600 italic">
+                                它是生产力高度发展的产物。在客观上，只有大规模垄断集团能动员起建设铁路网、石油管带所需的巨量资本。但它在社会层面削弱了竞争，导致资本输出，加剧了国际局势的紧张。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="zap"
+                                    class="w-6 mr-2 text-blue"></i> 电路的控制</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                二工革命教会了人类如何精确控制能量的流动。我们今日依靠半导体构建的信息社会，本质上依然运行在电气时代留下的“底层能源协议”之上。我们的每一次手机充电，都是在向爱迪生的时代致敬。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="alert-triangle"
+                                    class="w-6 mr-2 text-blue"></i> 规则的代价</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                当速度快到超越人类神经系统的适应性时，悲剧也就随之酝酿。二战的高效率屠杀、当代的环境风险，其源头都可以追溯到那个对技术充满了近乎盲目乐观崇拜的19世纪末。我们学会了改变世界，但尚未完全学会控制这种改变带来的副作用。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_edison.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">爱迪生与电力</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_trust.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">垄断组织</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_internal_combust.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">内燃机革命</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+
+            <!-- Injected Deep Dive Card -->
+            <div id="deep-dive-card" class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                    <i data-lucide="layers" class="w-4"></i> 历史深读
+                </div>
+                
+            <a href="detail_industrial_rev_1.html" class="block mt-3 group/link">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-gold/50 transition-all shadow-sm hover:shadow-md">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center mr-3 group-hover/link:bg-gold group-hover/link:text-white transition-colors">
+                            <i data-lucide="book-open-check" class="w-4 h-4"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700 group-hover/link:text-primary">工业革命</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300 group-hover/link:text-gold"></i>
+                </div>
+            </a>
+        
+            </div>
+        
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"爱迪生","url":"topic_edison.html"},{"text":"垄断","url":"topic_trust.html"},{"text":"内燃机","url":"topic_internal_combust.html"},{"text":"飞机","url":"topic_automobile.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"ind2","label":"二工革命","x":50,"y":50,"type":"core","url":"detail_industrial_rev_2.html"},{"id":"elec","label":"电力时代","x":20,"y":30,"type":"normal","url":"topic_edison.html"},{"id":"mon","label":"垄断组织","x":80,"y":30,"type":"normal","url":"topic_trust.html"},{"id":"petro","label":"石油/内燃机","x":50,"y":80,"type":"sub","url":"topic_internal_combust.html"},{"id":"trans","label":"汽车飞机","x":85,"y":70,"type":"sub","url":"topic_automobile.html"}],"edges":[{"source":"ind2","target":"elec"},{"source":"ind2","target":"mon"},{"source":"ind2","target":"petro"},{"source":"petro","target":"trans"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

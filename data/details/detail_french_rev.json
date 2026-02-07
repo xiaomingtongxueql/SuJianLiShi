@@ -1,0 +1,161 @@
+{
+    "id": "detail_french_rev",
+    "type": "world",
+    "title": "法国大革命:自由平等博爱",
+    "year": "1789年 — 1815年",
+    "desc": "法国大革命（French Revolution）是世界近代史上规模最大、最彻底的资产阶级革命。它不仅推翻了波旁王朝的封建专制统治，通过了《人权宣言》，还通过拿破仑战争将革命思想传播到全欧洲，动摇了旧大陆的封建秩序。'自由、平等、博爱'从此成为人类追求的普世价值。",
+    "content": [
+        {
+            "title": "旧制度的崩溃 (Old Regime Crisis)",
+            "text": "<p>18世纪末，法国封建等级森严：教士（第一等级）和贵族（第二等级）占有大量土地却不纳税，包括资产阶级在内的第三等级承担着全部赋税。启蒙思想家（伏尔泰、卢梭）猛烈抨击专制和教会，为革命作了思想动员。路易十六时期的财政危机是导火索。1789年5月，三级会议召开，第三等级要求制定宪法，限制王权。</p>"
+        },
+        {
+            "title": "风暴来临 (Storming of the Bastille)",
+            "text": "<p>1789年<strong>7月14日</strong>，巴黎人民<strong>攻占巴士底狱</strong>，标志着革命爆发。8月，制宪议会颁布了<strong>《人权宣言》</strong>，宣示'人们生来自由，权利平等'，私有财产神圣不可侵犯。这是反封建的檄文。随后，法国走上了君主立宪道路。</p>"
+        },
+        {
+            "title": "激进与恐怖 (Radical Phase)",
+            "text": "<p>随着反法联军的干涉和国王叛逃未遂，革命日益激进。1792年废除君主制，建立<strong>法兰西第一共和国</strong>，路易十六被送上断头台。在内忧外患中，<strong>罗伯斯庇尔</strong>领导的雅各宾派掌权，实行'恐怖统治'，严厉镇压反革命，但也伤及无辜。1794年热月政变，雅各宾派倒台，革命回归温和。</p>"
+        },
+        {
+            "title": "拿破仑时代 (Era of Napoleon)",
+            "text": "<p>1799年，<strong>拿破仑·波拿巴</strong>发动雾月政变，建立执政府，后称帝建立<strong>法兰西第一帝国</strong>。他对内颁布<strong>《拿破仑法典》</strong>，巩固了资产阶级革命成果（'我真正的光荣并非打了40次胜仗，而是我的法典'）；对外多次击败反法同盟，将革命思想传播到欧洲各地。1815年滑铁卢战败后，波旁王朝复辟，但封建制度已一去不返。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "人权宣言",
+            "desc": "核心内容是人权、法治和私有财产。它全面否定了封建等级制度，确立了资本主义社会的立国原则。"
+        },
+        {
+            "title": "拿破仑法典",
+            "desc": "即《民法典》。确立了民事权利平等、财产所有权无限制和契约自由等原则。是资本主义社会的法律规范。"
+        },
+        {
+            "title": "革命的彻底性",
+            "desc": "广泛发动群众（如无套裤汉），经受了国内外反动势力的联合绞杀，最终确立了共和原则。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "拿破仑",
+            "url": "topic_napoleon.html"
+        },
+        {
+            "text": "人权宣言",
+            "url": "topic_rights_of_man.html"
+        },
+        {
+            "text": "罗伯斯庇尔",
+            "url": "topic_robespierre.html"
+        },
+        {
+            "text": "路易十六",
+            "url": "topic_louis_xvi.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "french_rev",
+                "label": "法国大革命",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "bastille",
+                "label": "攻占巴士底狱",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "rights",
+                "label": "人权宣言",
+                "val": 25,
+                "group": "document"
+            },
+            {
+                "id": "republic",
+                "label": "第一共和国",
+                "val": 20,
+                "group": "period"
+            },
+            {
+                "id": "napoleon",
+                "label": "拿破仑",
+                "val": 25,
+                "group": "person"
+            },
+            {
+                "id": "empire",
+                "label": "第一帝国",
+                "val": 20,
+                "group": "period"
+            },
+            {
+                "id": "code",
+                "label": "拿破仑法典",
+                "val": 25,
+                "group": "law"
+            },
+            {
+                "id": "rober",
+                "label": "罗伯斯庇尔",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "enlightenment",
+                "label": "启蒙思想",
+                "val": 20,
+                "group": "concept"
+            }
+        ],
+        "edges": [
+            {
+                "source": "enlightenment",
+                "target": "french_rev",
+                "label": "思想基础"
+            },
+            {
+                "source": "bastille",
+                "target": "french_rev",
+                "label": "开端"
+            },
+            {
+                "source": "french_rev",
+                "target": "rights",
+                "label": "纲领"
+            },
+            {
+                "source": "french_rev",
+                "target": "republic",
+                "label": "建立"
+            },
+            {
+                "source": "republic",
+                "target": "rober",
+                "label": "激进领袖"
+            },
+            {
+                "source": "napoleon",
+                "target": "empire",
+                "label": "建立"
+            },
+            {
+                "source": "napoleon",
+                "target": "code",
+                "label": "颁布"
+            },
+            {
+                "source": "empire",
+                "target": "french_rev",
+                "label": "延续与传播"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "现代国家的政治光谱（左派/右派）源于法国国民公会的座位分布。三色旗成为民族国家的象征。",
+        "legacy": "《拿破仑法典》成为后世民法的蓝本。'自由平等博爱'成为全球追求的理想。"
+    }
+}

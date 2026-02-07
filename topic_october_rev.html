@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十月革命 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1e293b;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .red-line {
+            border-left: 5px solid #ef4444;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            margin: 2rem 0;
+        }
+
+        .quote-dark {
+            background: #1e293b;
+            color: #f8fafc;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-dark::after {
+            content: "☭";
+            position: absolute;
+            right: 10px;
+            bottom: -10px;
+            font-size: 5rem;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-slate-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-slate-900">溯鉴历史 · 俄国的变革</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-red-600 rounded-sm">
+                        1917 年 11 月 7 日</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6 leading-tight">
+                        十月革命：震惊世界的冬宫雷鸣</h1>
+                    <p
+                        class="text-lg leading-relaxed text-slate-600 mb-8 border-l-4 border-red-600 pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1917年11月，在彼得格勒那场冰冷的雨后，阿芙乐尔号巡洋舰的一声炮响，不仅震碎了冬宫的玻璃，更震碎了延续数千年的私有制锁链。这是人类历史上第一次获得胜利的社会主义革命，它将马克思主义从纸面上的科学预言，变成了在大地上隆隆运行的政权机器。列宁与其战友们建立的苏维埃政权，不仅改变了俄国的命运，更是在资本主义阵营的全球拼图上，强行崩开了一个不可愈合的红色缺口，开启了一个关于公有制、无产阶级专政与全球革命的全新世纪。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：二月到十月——革命的逻辑跨越 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-red-600 mr-3"></i> 第一维度：从旧时代的瓦解到资产阶级的无力</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">1917年的俄国，是一座已经彻底透支的仓库。一战的泥沼耗尽了沙皇俄国的最后一丝精血，工厂停产、农田荒废、饥饿如同瘟疫般蔓延。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>二月革命的“未竟”</strong>：1917年3月（俄历二月），愤怒的工人和士兵推翻了专制沙皇。然而，接替权力的<strong>资产阶级临时政府</strong>陷入了一个致命的悖论：他们既无法满足平民“面包与土地”的要求，又固执地坚持留在帝国主义战争中继续流血。
+                            </li>
+                            <li><strong>双重政权的对峙</strong>：彼得格勒出现了两个政权：临时政府与代表基层意志的<strong>苏维埃</strong>。这种脆弱的平衡决定了另一场风暴不可避免。
+                            </li>
+                            <li><strong>《四月提纲》——战略的转向</strong>：列宁回国后，在乱局中抛出了惊人的论断：革命必须从第一阶段（资产阶级民主革命）立即转向第二阶段（无产阶级社会主义革命）。口号简洁得令人战栗：“全部政权归苏维埃！”
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：冬宫的最后一幕——起义的钢铁算法 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-red-600 mr-3"></i> 第二维度：11 月 7 日——用精准暴力重写宪法
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">不同于此前许多自发的骚乱，十月革命是一场在布尔什维克严密组织下的军事级政治替代工程。其核心逻辑不是杀戮，而是对核心节点的彻底接管。</p>
+
+                        <div class="red-line">
+                            <h4 class="font-bold text-slate-900 mb-3">起义的时钟脉冲</h4>
+                            <p class="text-sm italic mb-4">“今天起义太早，后天太迟，明天（11月7日）正好。” —— 列宁</p>
+                            <ul class="space-y-4 text-sm">
+                                <li><span class="font-bold">21:40</span>：阿芙乐尔号信号弹升起，预示着旧世界的落幕。</li>
+                                <li><strong>重点接管</strong>：火车站、电话局、发电厂、银行。通过对基础设施的掌控，临时政府瞬间失去了对城市的数字化定义权限。</li>
+                                <li><strong>冬宫陷落</strong>：经过象征性的抵抗，临时政府主要成员在大理石殿堂中被捕。一个时代在午夜的沉寂中，通过一次手术般的军事行动而终结。</li>
+                            </ul>
+                        </div>
+                        <p class="mb-4">随后，全俄工兵代表苏维埃第二次代表大会召开。会议通过了《土地法令》：宣布废除地主土地所有制，将土地无偿分配给农民。这一纸公文，瞬间锁定了俄国绝大多数人口的忠诚。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 第三章：红色的余波——全球历史的转折点 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-red-600 mr-3"></i> 第三维度：蝴蝶效应——世界格局的红色革命化</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">十月革命的意义远超俄国国界。它是人类历史上第一次，贫苦阶层通过有组织的暴力，建立了一个自洽的、非资本主义的文明闭环。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>退出战争的破局</strong>：新政权发表《和平法令》，随后退出一战。这标志着帝国主义战争的道义破产，加速了战争的结束。</li>
+                            <li><strong>对殖民地半殖民地的灯塔效应</strong>：十月革命证明了，一个落后的家也能通过社会主义制度实现绝地反击。这种示范效应直接引燃了亚洲、非洲、拉美波澜壮阔的民族解放运动。
+                            </li>
+                            <li><strong>文明竞争的开启</strong>：从此，世界不再只有一种发展色调（自由资本主义）。一种强调计划、平等与公共保障的新型制度，迫使西方国家也开始进行痛苦而必要的福利改革。
+                            </li>
+                        </ul>
+                        <div class="quote-dark">
+                            “我们已经开始了这一事业。至于哪一个国家的无产者在什么时候、在多长期间内把这一事业进行到底，这个问题并不重要。重要的问题是：冰已经打破了，航路已经开通了。” —— 列宁
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 俄国“十月革命”与“二月革命”的本质区别？</h4>
+                            <p class="text-slate-600 italic">
+                                二月革命是<strong>资产阶级民主革命</strong>，其目标是推翻沙皇专制，确立自由政权；而十月革命是<strong>社会主义革命</strong>，目标是废除私有制，确立无产阶级专政。二月革命是破坏旧的，十月革命是建立完全不同的新型社会结构。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 如何理解十月革命是马克思主义的“伟大胜利”？</h4>
+                            <p class="text-gray-600 italic">
+                                在此之前，主流马克思主义认为革命应先在发达资本主义国家（如德、英）爆发。列宁通过对帝国主义链条“最薄弱环节”的攻击，突破了教条，证明了在相对落后的俄国同样可以实现制度的终极跨越，这极大地丰富并发展了科学社会主义理论。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-slate-900 mb-6 border-b border-slate-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="flag"
+                                    class="w-6 mr-2 text-red-600"></i> 红色的引力</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                十月革命留给人类最重要的遗产是：社会公平不是权贵的赐予，而是可以通过被压迫者的自我组织去争取。这种关于“主体性”的觉醒，至今依然是所有进步政治运动的底层驱动力。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="zap"
+                                    class="w-6 mr-2 text-red-600"></i> 实验的重量</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                虽然苏俄的实验在后续几十年中经历了无数曲折，但它作为一种“他者”的存在，迫使全人类开始思考：财富的分配是否可以有更人道的逻辑？这枚投入历史湖心的巨石，至今依然波纹未息。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-slate-50 rounded-lg overflow-hidden border border-slate-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_lenin.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-red-600 rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">列宁</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_bolshevik.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-red-600 rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">布尔什维克</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_soviet.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-red-600 rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">苏维埃政权</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_aurora.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-red-600 rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">阿芙乐尔号</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"列宁","url":"topic_lenin.html"},{"text":"布尔什维克","url":"topic_bolshevik.html"},{"text":"苏维埃","url":"topic_soviet.html"},{"text":"阿芙乐尔","url":"topic_aurora.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"oct","label":"十月革命","x":50,"y":50,"type":"core","url":"detail_october_rev.html"},{"id":"lenin","label":"列宁指导","x":20,"y":30,"type":"normal","url":"topic_lenin.html"},{"id":"sov","label":"苏维埃政权","x":80,"y":30,"type":"normal","url":"topic_soviet.html"},{"id":"winter","label":"攻占冬宫","x":50,"y":80,"type":"sub"},{"id":"bol","label":"布尔什维克","x":85,"y":70,"type":"sub","url":"topic_bolshevik.html"}],"edges":[{"source":"oct","target":"lenin"},{"source":"oct","target":"sov"},{"source":"oct","target":"winter"},{"source":"lenin","target":"bol"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#ef4444', nodeColor: '#ef4444' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-red-600', hoverColor: 'hover:text-red-600' });
+        }
+    </script>
+</body>
+
+</html>
+
+

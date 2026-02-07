@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏晋南北朝 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-weijin"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        AD 220 - 589</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">魏晋南北朝:乱世中的文化自觉
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        魏晋南北朝(220年—589年)是中国历史上的大分裂时期,但也是思想解放、文化繁荣的重要阶段。士族门阀掌控政权,九品中正制固化阶层;玄学清谈盛行,佛教道教兴盛;民族大融合加速,为隋唐的统一与繁荣奠定了基础。这一时期虽政治动荡,却在文学、艺术、哲学等领域取得了辉煌成就。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=1654854460&bvid=BV17E421F78D&cid=1554049013&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll" class="w-8 h-8 text-gold mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <h3 class="text-xl font-bold text-primary mb-4">1. 三国鼎立与西晋短暂统一</h3>
+                        <p class="mb-4">
+                            220年,曹丕篡汉建魏,随后刘备在蜀地称帝,孙权在江东建吴,形成三国鼎立局面。诸葛亮六出祁山北伐,但最终未能恢复汉室。280年,司马炎建立的西晋灭吴,实现了短暂统一。然而西晋统治腐朽,八王之乱耗尽国力,为五胡乱华埋下伏笔。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-primary mb-4">2. 五胡乱华与东晋偏安</h3>
+                        <p class="mb-4">
+                            西晋末年,匈奴、鲜卑、羯、氐、羌等少数民族内迁,趁中原混乱建立政权,史称"五胡十六国"。316年,西晋灭亡。司马睿在建康(今南京)建立东晋,偏安江南。北方陷入长期战乱,人口大量南迁,促进了江南经济的开发。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-primary mb-4">3. 南北对峙与民族融合</h3>
+                        <p class="mb-4">
+                            439年,鲜卑族拓跋氏建立的北魏统一北方,与南朝形成对峙。北魏孝文帝进行汉化改革,迁都洛阳,改穿汉服,说汉语,促进了民族融合。南朝经历宋齐梁陈四个朝代,虽然政权更迭频繁,但经济文化持续发展,建康成为当时世界级大都市。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-primary mb-4">4. 文化繁荣与思想解放</h3>
+                        <p class="mb-4">
+                            魏晋时期,儒学独尊地位动摇,玄学兴起,"竹林七贤"代表了士人的精神追求。佛教在这一时期广泛传播,出现了鸠摩罗什、法显等高僧。道教也形成完整体系。文学艺术方面,陶渊明的田园诗、王羲之的书法、顾恺之的绘画,都达到了极高水平。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">选官制度:九品中正制</h4>
+                            <p class="text-sm text-gray-600">
+                                曹魏时期创立,由中正官评定人才,分为九品。初期有利于选拔人才,但很快被士族垄断,形成"上品无寒门,下品无士族"的局面,加剧了阶层固化。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">民族融合:孝文帝改革</h4>
+                            <p class="text-sm text-gray-600">
+                                北魏孝文帝推行全面汉化政策:迁都洛阳、改说汉语、改穿汉服、改汉姓、与汉族通婚。这一改革加速了民族融合,为隋唐统一多民族国家的形成奠定了基础。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">思想解放:玄学与佛道</h4>
+                            <p class="text-sm text-gray-600">
+                                玄学以老庄思想为基础,探讨"有无"、"本末"等哲学问题,代表了士人对儒家礼教的反思。佛教的因果轮回、道教的长生不老,都为乱世中的人们提供了精神寄托。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="users"
+                                    class="w-6 mr-2 text-gold"></i> 民族融合</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                五胡内迁与孝文帝改革,促进了各民族的交流融合,形成了"你中有我,我中有你"的格局,为中华民族多元一体格局的形成奠定了基础。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="pen-tool"
+                                    class="w-6 mr-2 text-gold"></i> 文化高峰</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                魏晋风度、竹林七贤的精神追求,王羲之的《兰亭序》、陶渊明的田园诗,都成为中国文化史上的不朽经典,影响深远。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords" type="application/json">
+    [
+        {"text": "九品中正制", "url": "topic_jiupin.html"},
+        {"text": "竹林七贤", "url": "topic_zhulin.html"},
+        {"text": "孝文帝改革", "url": "topic_xiaowendi.html"},
+        {"text": "王羲之", "url": "topic_wangxizhi.html"},
+        {"text": "陶渊明", "url": "topic_taoyuanming.html"},
+        {"text": "佛教传入", "url": "topic_buddhism_china.html"}
+    ]
+    </script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "weijin", "label": "魏晋南北朝", "val": 10, "url": "detail_weijin.html"},
+            {"id": "sanguo", "label": "三国", "val": 8, "url": "detail_three_kingdoms.html"},
+            {"id": "beiwei", "label": "北魏", "val": 8, "url": "topic_xiaowendi.html"},
+            {"id": "xiaowendi", "label": "孝文帝", "val": 7, "url": "topic_xiaowendi.html"},
+            {"id": "jiupin", "label": "九品中正制", "val": 7, "url": "topic_jiupin.html"},
+            {"id": "xuanxue", "label": "玄学", "val": 6, "url": "topic_zhulin.html"},
+            {"id": "wangxizhi", "label": "王羲之", "val": 6, "url": "topic_wangxizhi.html"},
+            {"id": "taoyuanming", "label": "陶渊明", "val": 6, "url": "topic_taoyuanming.html"},
+            {"id": "buddhism", "label": "佛教", "val": 7, "url": "topic_buddhism_china.html"},
+            {"id": "zuchongzhi", "label": "祖冲之", "val": 6, "url": "topic_zuchongzhi.html"}
+        ],
+        "edges": [
+            {"source": "weijin", "target": "sanguo", "name": "开端"},
+            {"source": "weijin", "target": "beiwei", "name": "统一北方"},
+            {"source": "beiwei", "target": "xiaowendi", "name": "改革"},
+            {"source": "weijin", "target": "jiupin", "name": "选官"},
+            {"source": "weijin", "target": "xuanxue", "name": "思想"},
+            {"source": "weijin", "target": "wangxizhi", "name": "书法"},
+            {"source": "weijin", "target": "taoyuanming", "name": "文学"},
+            {"source": "weijin", "target": "buddhism", "name": "宗教"},
+            {"source": "weijin", "target": "zuchongzhi", "name": "科技"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-gold', hoverColor: 'hover:text-earth' }
+            );
+        }
+    </script>
+</body>
+
+</html>
+
+
+

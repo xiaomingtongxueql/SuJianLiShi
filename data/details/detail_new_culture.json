@@ -1,0 +1,92 @@
+{
+    "id": "detail_new_culture",
+    "type": "china",
+    "title": "新文化运动:思想的启蒙",
+    "year": "1915年开始",
+    "desc": "由陈独秀、李大钊、鲁迅等人发起的思想解放运动。高举'民主'与'科学'两面大旗，动摇了封建礼教的统治地位。",
+    "content": [
+        {
+            "title": "德先生与赛先生",
+            "text": "<p>1915年陈独秀创办《青年杂志》（后改名《新青年》），标志运动开始。提倡民主（Democracy）和科学（Science），反对专制愚昧；提倡新文学，反对旧文学。</p>"
+        },
+        {
+            "title": "五四运动",
+            "text": "<p>1919年<strong>五四运动</strong>爆发，新文化运动进入新阶段，开始传播马克思主义，为中国共产党的成立做了思想准备。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "陈独秀",
+            "url": "topic_chenduxiu.html"
+        },
+        {
+            "text": "鲁迅",
+            "url": "topic_luxun.html"
+        },
+        {
+            "text": "五四运动",
+            "url": "topic_may_fourth.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "newculture",
+                "label": "新文化运动",
+                "val": 30,
+                "group": "core",
+                "url": "detail_new_culture.html"
+            },
+            {
+                "id": "chen",
+                "label": "陈独秀",
+                "val": 20,
+                "group": "person",
+                "url": "topic_chenduxiu.html"
+            },
+            {
+                "id": "lu",
+                "label": "鲁迅",
+                "val": 20,
+                "group": "person",
+                "url": "topic_luxun.html"
+            },
+            {
+                "id": "ds",
+                "label": "民主科学",
+                "val": 20,
+                "group": "idea",
+                "url": "topic_democracy_science.html"
+            },
+            {
+                "id": "may4",
+                "label": "五四运动",
+                "val": 20,
+                "group": "event",
+                "url": "topic_may_fourth.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "chen",
+                "target": "newculture",
+                "label": "发起"
+            },
+            {
+                "source": "lu",
+                "target": "newculture",
+                "label": "主将"
+            },
+            {
+                "source": "newculture",
+                "target": "ds",
+                "label": "旗帜"
+            },
+            {
+                "source": "newculture",
+                "target": "may4",
+                "label": "发展"
+            }
+        ]
+    }
+}

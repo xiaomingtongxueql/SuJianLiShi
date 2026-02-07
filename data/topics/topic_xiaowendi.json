@@ -1,0 +1,129 @@
+{
+    "id": "topic_xiaowendi",
+    "title": "孝文帝改革:鲜卑族的汉化绝响",
+    "category": "政治改革",
+    "year": "471年—499年",
+    "word_count": 3100,
+    "summary": "孝文帝改革（Reforms of Emperor Xiaowen）是北魏孝文帝拓跋宏主持的一场旨在促进鲜卑族汉化、消除民族隔阂的改革运动。通过迁都洛阳、改汉姓、说汉话、穿汉服、通汉婚等激进措施，北魏迅速融入汉文化体系。改革极大地促进了民族大融合，为隋唐多民族统一国家的形成注入了活力，但也间接导致了鲜卑军事贵族的反叛（六镇起义）。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "reform",
+                "label": "孝文帝改革",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "xiaowendi",
+                "label": "孝文帝",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "fengtaihou",
+                "label": "冯太后",
+                "val": 12,
+                "group": "person"
+            },
+            {
+                "id": "luoyang",
+                "label": "迁都洛阳",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "han",
+                "label": "汉化政策",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "juntian",
+                "label": "均田制",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "fusion",
+                "label": "民族融合",
+                "val": 15,
+                "group": "impact"
+            },
+            {
+                "id": "suitang",
+                "label": "隋唐统一",
+                "val": 12,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "fengtaihou",
+                "target": "reform",
+                "label": "早期主持"
+            },
+            {
+                "source": "xiaowendi",
+                "target": "reform",
+                "label": "全面推行"
+            },
+            {
+                "source": "reform",
+                "target": "luoyang",
+                "label": "关键举措"
+            },
+            {
+                "source": "reform",
+                "target": "han",
+                "label": "核心内容"
+            },
+            {
+                "source": "reform",
+                "target": "juntian",
+                "label": "经济支撑"
+            },
+            {
+                "source": "reform",
+                "target": "fusion",
+                "label": "主要影响"
+            },
+            {
+                "source": "fusion",
+                "target": "suitang",
+                "label": "奠基"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "改革背景:胡汉矛盾的激化",
+            "content": "<p>北魏统一北方后，鲜卑游牧习俗与汉地农业耕作格格不入，民族矛盾尖锐，起义不断。冯太后临朝称制期间，推行了<strong>均田制</strong>和<strong>三长制</strong>，初步缓解了社会矛盾，增加了国家财政收入，为孝文帝的深度汉化改革提供了经济基础。</p>"
+        },
+        {
+            "title": "激进汉化:断臂求生",
+            "content": "<h4>1. 迁都洛阳（494年）</h4><p>为了摆脱平城（今大同）保守势力的阻挠，并更好地控制中原，孝文帝以“南伐”为名，率军南下，最后定都洛阳。许多鲜卑贵族反对，但不仅无效，反而被孝文帝强行留在洛阳。</p><h4>2. 移风易俗</h4><ul><li><strong>易服饰</strong>：禁止穿鲜卑族服装，一律改穿汉服。</li><li><strong>讲汉话</strong>：朝廷上禁止讲鲜卑语，30岁以下官员必须讲正音（汉语）。</li><li><strong>改汉姓</strong>：将鲜卑复姓改为单字汉姓。皇族拓跋氏改为<strong>元</strong>氏，独孤氏改为刘氏等。</li><li><strong>通汉婚</strong>：鼓励鲜卑贵族与汉族高门士族通婚，孝文帝带头娶汉女为妃。</li></ul>"
+        },
+        {
+            "title": "历史影响:野蛮的终结",
+            "content": "<p><strong>积极面：</strong>改革缓和了阶级矛盾和民族矛盾，加速了北方少数民族的封建化进程。它促进了以汉族为主体的中华民族的大融合，为隋唐时期“兼收并蓄”的盛世文化奠定了基础。李唐皇室本身就带有浓厚的鲜卑血统。</p><p><strong>消极面：</strong>改革过于激进和彻底，忽视了北方边镇（六镇）鲜卑军人的利益。这些依然保留鲜卑习俗的军人感到被边缘化，最终爆发了<strong>六镇起义</strong>，导致北魏分裂为东魏和西魏。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "北魏",
+            "url": "topic_beiwei.html"
+        },
+        {
+            "text": "魏晋南北朝",
+            "url": "detail_weijin.html"
+        },
+        {
+            "text": "均田制",
+            "url": "topic_juntian.html"
+        },
+        {
+            "text": "六镇起义",
+            "url": "topic_liuzhen.html"
+        }
+    ]
+}

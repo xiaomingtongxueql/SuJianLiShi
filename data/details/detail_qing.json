@@ -1,0 +1,176 @@
+{
+    "id": "detail_qing",
+    "type": "china",
+    "title": "清朝:帝国的落日余晖",
+    "year": "1644年 — 1912年",
+    "desc": "清朝是中国历史上最后一个封建王朝，也是由少数民族（满族）建立的大一统王朝。它奠定了现代中国的版图，创造了康乾盛世的辉煌，但在全球工业化的大潮中，因闭关锁国而落后，最终在屈辱中走向终结。",
+    "content": [
+        {
+            "title": "入关与统一:版图的奠定",
+            "text": "<p>1644年，清军入关，定都北京。经过数十年的征战，平定三藩、收复台湾（1683年，<strong>施琅</strong>）、平定准噶尔叛乱、平定大小和卓叛乱，并加强了对西藏（驻藏大臣、金瓶掣签）和新疆的管辖。清朝确立了对南海诸岛的主权。这一系列军事和政治行动，奠定了今天中国疆域版图的基础。</p>"
+        },
+        {
+            "title": "君主专制顶峰:军机处与文字狱",
+            "text": "<p>康熙、雍正、乾隆三朝，皇权不断强化。雍正帝设立<strong>军机处</strong>，使议政王大臣会议名存实亡，军国大事完全由皇帝一人裁决，标志着我国封建君主专制达到顶峰。同时，为了严密钳制思想，清朝大兴<strong>文字狱</strong>，造成了'万马齐喑'的局面，严重阻碍了学术进步和思想启蒙。</p>"
+        },
+        {
+            "title": "康乾盛世与人口爆炸",
+            "text": "<p>康熙、雍正、乾隆在位期间，政局稳定，经济繁荣，史称<strong>'康乾盛世'</strong>。通过'摊丁入亩'（取消人头税）等赋税改革，以及高产作物（玉米、甘薯）的推广，中国人口出现爆炸式增长，乾隆末年已突破3亿。然而，这只是传统农业文明的最后余晖。</p>"
+        },
+        {
+            "title": "闭关锁国与危机",
+            "text": "<p>面对西方殖民者的扩张，清政府采取<strong>'闭关锁国'</strong>政策，只开广州一处作为通商口岸（十三行），严格限制对外贸易。这一政策虽然在一定程度上自卫，但更严重地切断了中外交流，使中国看不到世界大势，导致科技和军事不仅没有进步，反而停滞倒退。当西方完成工业革命时，中国还在沉睡。</p>"
+        },
+        {
+            "title": "文学艺术:红楼梦与京剧",
+            "text": "<p>曹雪芹的<strong>《红楼梦》</strong>是中国古典小说的巅峰之作，通过贾史王薛四大家族的兴衰，深刻揭示了封建社会走向崩溃的历史趋势。道光年间，以徽汉合流为基础，形成了<strong>京剧</strong>，被称为'国粹'。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "军机处",
+            "desc": "雍正设立，标志着中国古代君主专制制度发展到了顶峰。"
+        },
+        {
+            "title": "版图巩固",
+            "desc": "通过平定叛乱、设驻藏大臣、伊犁将军等措施，对边疆进行了有效管辖，奠定了现代中国版图。"
+        },
+        {
+            "title": "闭关锁国",
+            "desc": "限制对外贸易的政策，导致中国错失了向近代工业文明转型的机遇，逐渐落后于世界。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "军机处",
+            "url": "topic_junjichu.html"
+        },
+        {
+            "text": "林则徐",
+            "url": "topic_linzexu.html"
+        },
+        {
+            "text": "红楼梦",
+            "url": "topic_hongloumeng.html"
+        },
+        {
+            "text": "康熙",
+            "url": "topic_kangxi.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "qing",
+                "label": "清朝",
+                "val": 35,
+                "group": "core"
+            },
+            {
+                "id": "kangxi",
+                "label": "康熙",
+                "val": 25,
+                "group": "emperor"
+            },
+            {
+                "id": "yongzheng",
+                "label": "雍正",
+                "val": 25,
+                "group": "emperor"
+            },
+            {
+                "id": "qianlong",
+                "label": "乾隆",
+                "val": 25,
+                "group": "emperor"
+            },
+            {
+                "id": "junjichu",
+                "label": "军机处",
+                "val": 20,
+                "group": "system"
+            },
+            {
+                "id": "bantu",
+                "label": "版图奠定",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "closed",
+                "label": "闭关锁国",
+                "val": 15,
+                "group": "policy"
+            },
+            {
+                "id": "honglou",
+                "label": "红楼梦",
+                "val": 20,
+                "group": "culture"
+            },
+            {
+                "id": "taiwan",
+                "label": "台湾",
+                "val": 15,
+                "group": "place"
+            },
+            {
+                "id": "tibet",
+                "label": "西藏",
+                "val": 15,
+                "group": "place"
+            }
+        ],
+        "edges": [
+            {
+                "source": "kangxi",
+                "target": "qing",
+                "label": "开启盛世"
+            },
+            {
+                "source": "yongzheng",
+                "target": "qing",
+                "label": "承上启下"
+            },
+            {
+                "source": "qianlong",
+                "target": "qing",
+                "label": "极盛转衰"
+            },
+            {
+                "source": "yongzheng",
+                "target": "junjichu",
+                "label": "设立"
+            },
+            {
+                "source": "qing",
+                "target": "bantu",
+                "label": "巩固"
+            },
+            {
+                "source": "bantu",
+                "target": "taiwan",
+                "label": "收复"
+            },
+            {
+                "source": "bantu",
+                "target": "tibet",
+                "label": "辖制"
+            },
+            {
+                "source": "qing",
+                "target": "closed",
+                "label": "实行"
+            },
+            {
+                "source": "qing",
+                "target": "honglou",
+                "label": "文学高峰"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "现代中国的版图继承自清朝。旗袍、京剧等文化符号深入人心。",
+        "legacy": "版图贡献巨大，但闭关锁国导致的近代落后教训深刻（落后就要挨打）。"
+    }
+}

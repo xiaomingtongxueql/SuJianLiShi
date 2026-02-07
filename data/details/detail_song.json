@@ -1,0 +1,108 @@
+{
+    "id": "detail_song",
+    "type": "china",
+    "title": "宋朝:经济重心的南移",
+    "year": "960年 — 1279年",
+    "desc": "分北宋和南宋。虽然军事力量相对较弱，但商品经济极度发达，科技（四大发明中的三项）和文化成就辉煌。",
+    "content": [
+        {
+            "title": "重文轻武",
+            "text": "<p>宋太祖赵匡胤通过'杯酒释兵权'确立了重文轻武的国策，有效防止了武将专权，但也导致了军队战斗力下降。王安石变法试图富国强兵，但成效有限。</p>"
+        },
+        {
+            "title": "商业革命",
+            "text": "<p>宋代商业突破了时空限制（出现早市、夜市），出现了世界上最早的纸币——<strong>交子</strong>。经济重心南移最终完成（'苏湖熟，天下足'）。市民阶层壮大，宋词、瓦子勾栏兴起。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "交子",
+            "url": "topic_jiaozi.html"
+        },
+        {
+            "text": "活字印刷",
+            "url": "topic_movable_type.html"
+        },
+        {
+            "text": "王安石变法",
+            "url": "topic_wanganshi.html"
+        },
+        {
+            "text": "经济重心南移",
+            "url": "topic_southward_economy.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "song",
+                "label": "宋朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_song.html"
+            },
+            {
+                "id": "taizu",
+                "label": "赵匡胤",
+                "val": 20,
+                "group": "person",
+                "url": "topic_zhaokuangyin.html"
+            },
+            {
+                "id": "wang",
+                "label": "王安石",
+                "val": 20,
+                "group": "person",
+                "url": "topic_wanganshi.html"
+            },
+            {
+                "id": "ci",
+                "label": "宋词",
+                "val": 20,
+                "group": "culture",
+                "url": "topic_songci.html"
+            },
+            {
+                "id": "compass",
+                "label": "指南针",
+                "val": 15,
+                "group": "tech",
+                "url": "topic_compass.html"
+            },
+            {
+                "id": "print",
+                "label": "活字印刷",
+                "val": 15,
+                "group": "tech",
+                "url": "topic_movable_type.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "taizu",
+                "target": "song",
+                "label": "建立"
+            },
+            {
+                "source": "wang",
+                "target": "song",
+                "label": "变法"
+            },
+            {
+                "source": "song",
+                "target": "ci",
+                "label": "成就"
+            },
+            {
+                "source": "song",
+                "target": "compass",
+                "label": "应用"
+            },
+            {
+                "source": "song",
+                "target": "print",
+                "label": "发明"
+            }
+        ]
+    }
+}

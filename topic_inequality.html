@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阶级分化: 金字塔的构建 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#15803d', secondary: '#14532d', stone: '#64748b', line: '#E2E8F0',
+                        earth: '#a16207'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        阶级分化: 金字塔的构建
+                    </h1>
+                </section>
+
+
+
+                <!-- 深度叙事：权力的异化 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="crown" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：从“大人物”到国王
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">功能的必要性</h3>
+                            <p>
+                                阶级的产生最初可能有其合理性。要维护大型灌溉系统、协调数千人的收割工作、解决邻里冲突，必须有专职的管理者。早期的<strong>“大人物”（Big
+                                    Men）</strong>依靠个人威望和重新分配物资的能力获得领导权。他们通过举办宴会（Potlatch）分发财富来赢得支持。
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">权力的固化</h3>
+                            <p>
+                                但随着时间推移，这种功能性的管理权力演变成了世袭的特权。管理者占据了最好的土地，控制了武装力量，并宣称自己是神的后裔。于是，<strong>酋邦（Chiefdom）</strong>向<strong>国家（State）</strong>转化。社会分裂为两个截然不同的阶层：纳税的农民和食税的贵族。这种不平等通过法律（如《汉谟拉比法典》）被永久地固定下来。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 深度叙事：被压迫者 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="users" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：金字塔的底层
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">奴隶制的诞生</h4>
+                                <p class="text-sm">
+                                    作为农业战争的副产品，战俘不再被杀死，而是作为<strong>活的工具</strong>被保留下来从事重体力劳动。在所有早期农业文明中，奴隶都是经济的基础能源。人变成了一种可以被拥有、买卖和继承的财产。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">女性地位的跌落</h4>
+                                <p class="text-sm">
+                                    犁耕农业需要极大的体力，男性逐渐垄断了生产劳动，从而掌控了经济大权。女性被局限在家庭内从事繁重的育儿和家务。土地和财富的父系继承制（Patrilineal）确立，女性在法律上沦为父亲或丈夫的附属品。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="scale"
+                                    class="w-6 mr-2 text-accent"></i> 卢梭的叹息</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                “第一个圈出一块地并说‘这是我的’的人，是文明社会的真正奠基者。”卢梭认为文明史就是一部不平等加剧的历史。这一观点至今仍是批评现代资本主义的重要理论源头。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="shield"
+                                    class="w-6 mr-2 text-accent"></i> 秩序的代价</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                虽然不平等带来了痛苦，但它也是大规模人类协作的粘合剂。没有等级制和强制力，超过150人的群体很难维持长期稳定的合作。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"农业革命","url":"detail_agrarian.html"},{"text":"国家起源","url":"topic_state_origin.html"},{"text":"剩余产品","url":"topic_surplus.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"ineq_core","label":"阶级分化","val":35,"group":"core","url":"topic_inequality.html"},{"id":"surplus","label":"剩余产品","val":25,"group":"cause","url":"topic_surplus.html"},{"id":"state","label":"国家","val":30,"group":"result","url":"topic_state_origin.html"},{"id":"slave","label":"奴隶制","val":20,"group":"type","url":"topic_slavery.html"},{"id":"gender","label":"父权制","val":20,"group":"type","url":"topic_patriarchy.html"}],"edges":[{"source":"surplus","target":"ineq_core","label":"基础"},{"source":"ineq_core","target":"state","label":"制度化"},{"source":"ineq_core","target":"slave","label":"极端形式"},{"source":"ineq_core","target":"gender","label":"表现"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#15803d', nodeColor: '#15803d' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-earth', hoverColor: 'hover:text-accent' }); }
+    </script>
+</body>
+
+</html>
+
+

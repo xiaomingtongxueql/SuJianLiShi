@@ -1,0 +1,129 @@
+{
+    "id": "topic_printing",
+    "title": "活字印刷:文明传播的加速器",
+    "category": "科技发明",
+    "year": "11世纪(北宋)",
+    "word_count": 3000,
+    "summary": "活字印刷术（Movable Type）是北宋平民毕昇发明的一种印刷技术，是中国古代四大发明之一。它将每个字制成独立的印模，可以随意排列组合进行印刷，印完后拆散重排。相比传统的雕版印刷，活字印刷大大提高了效率，降低了成本，推动了知识的普及和文明的传播。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "printing",
+                "label": "活字印刷术",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "bisheng",
+                "label": "毕昇",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "diaoban",
+                "label": "雕版印刷",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "clay",
+                "label": "胶泥活字",
+                "val": 12,
+                "group": "tech"
+            },
+            {
+                "id": "wood",
+                "label": "木活字(王祯)",
+                "val": 10,
+                "group": "tech"
+            },
+            {
+                "id": "metal",
+                "label": "金属活字(古腾堡)",
+                "val": 10,
+                "group": "tech"
+            },
+            {
+                "id": "knowledge",
+                "label": "知识普及",
+                "val": 15,
+                "group": "impact"
+            },
+            {
+                "id": "renaissance",
+                "label": "文艺复兴",
+                "val": 12,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "bisheng",
+                "target": "printing",
+                "label": "发明"
+            },
+            {
+                "source": "printing",
+                "target": "diaoban",
+                "label": "取代/改进"
+            },
+            {
+                "source": "printing",
+                "target": "clay",
+                "label": "最初材质"
+            },
+            {
+                "source": "printing",
+                "target": "wood",
+                "label": "元代改进"
+            },
+            {
+                "source": "printing",
+                "target": "metal",
+                "label": "欧洲改进"
+            },
+            {
+                "source": "printing",
+                "target": "knowledge",
+                "label": "推动"
+            },
+            {
+                "source": "metal",
+                "target": "renaissance",
+                "label": "加速"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "发明背景:雕版的局限",
+            "content": "<p>隋唐时期，中国发明了雕版印刷术。雕版印刷需要将整页文字刻在一块木板上，一本书需要雕刻数千块甚至上万块木板。一旦书中有一个错字，整块版都要报废。不仅费工费料，而且存放这些版片需要巨大的库房。对于印量少、更新快的书籍，雕版印刷显得非常不经济。</p>"
+        },
+        {
+            "title": "技术革命:活字的诞生",
+            "content": "<p><strong>毕昇的发明：</strong>北宋庆历年间（1041-1048），布衣毕昇发明了胶泥活字。沈括在《梦溪笔谈》中详细记载了其工艺：<br>1. <strong>制字</strong>：用胶泥刻字，薄如钱唇，每字一印，用火烧硬。<br>2. <strong>排版</strong>：在铁板上敷松脂、蜡等混合物，置铁框，密布字印。<br>3. <strong>印刷</strong>：火烤铁板，混合物熔化后压平字面，冷却固定后即可刷墨印刷。<br>4. <strong>拆版</strong>：印完后火烤，混合物熔化，取下字印，以备下次再用。</p><p>这种“若止印三二本，未为简易；若印数十百千本，则极为神速”的技术，是印刷史上的里程碑。</p>"
+        },
+        {
+            "title": "演变与传播:改变世界",
+            "content": "<p><strong>技术演进：</strong>毕昇之后，元代王祯发明了<strong>木活字</strong>，并发明了转轮排字盘，进一步提高了排字效率。明清时期，铜活字、铅活字逐渐出现。</p><p><strong>西传欧洲：</strong>活字印刷术经丝绸之路传入欧洲。1450年前后，德国人<strong>古腾堡</strong>受此启发，发明了铅活字印刷机。这使欧洲书籍印刷成本骤降，知识不再是教会和贵族的专利，直接推动了文艺复兴和宗教改革，加速了欧洲走出中世纪黑暗。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "四大发明",
+            "url": "topic_4inventions.html"
+        },
+        {
+            "text": "毕昇",
+            "url": "topic_bisheng.html"
+        },
+        {
+            "text": "宋朝",
+            "url": "detail_song.html"
+        },
+        {
+            "text": "文艺复兴",
+            "url": "detail_renaissance.html"
+        }
+    ]
+}

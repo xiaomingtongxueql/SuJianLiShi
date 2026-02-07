@@ -1,0 +1,1059 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史全览图谱 | Galaxy View</title>
+    <script>
+        // Global Error Handler for Mobile Debugging
+        window.onerror = function (msg, url, line, col, error) {
+            var errorMsg = "JS Error: " + msg + "\nURL: " + url + "\nLine: " + line;
+            // Create a visible error box
+            var div = document.createElement("div");
+            div.style.cssText = "position:fixed; top:0; left:0; width:100%; height:auto; background:red; color:white; padding:10px; z-index:9999; font-size:12px; white-space:pre-wrap; word-break:break-all;";
+            div.innerText = "【程序崩溃】请截图发给开发人员:\n" + errorMsg;
+            document.body.appendChild(div);
+            return false;
+        };
+    </script>
+    <script src="libs/tailwind.min.js"></script>
+    <script src="libs/d3.min.js"></script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/data-store.js"></script> <!-- Data Source -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#FAFAF9',       // Stone-50
+                        primary: '#1C1917',  // Stone-900
+                        secondary: '#57534E',// Stone-600
+                        china: '#E11D48',    // Rose-600
+                        world: '#2563EB',    // Blue-600
+                        border: '#E7E5E4',   // Stone-200
+                        gold: '#B5A642',
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ===== APPLE DESIGN SYSTEM V2.0 ===== */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --bg: #F5F5F7;
+            /* Apple Gray */
+            --surface: rgba(255, 255, 255, 0.72);
+            --surface-hover: rgba(255, 255, 255, 0.9);
+            --text-primary: #1D1D1F;
+            /* Apple Black */
+            --text-secondary: #86868B;
+            /* Apple Gray Text */
+            --text-tertiary: #AEAEB2;
+            --border: rgba(0, 0, 0, 0.04);
+            --china: #FF375F;
+            /* Apple Red */
+            --world: #0A84FF;
+            /* Apple Blue */
+            --accent: #BF9B30;
+            /* Refined Gold */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            overflow: hidden;
+            user-select: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Tooltip - Refined */
+        .tooltip {
+            position: absolute;
+            pointer-events: none;
+            background: var(--surface);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            padding: 10px 14px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+            opacity: 0;
+            transition: opacity 0.15s;
+            border: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        /* Navigation - Minimal */
+        .back-btn {
+            position: fixed;
+            top: 28px;
+            left: 28px;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            color: var(--text-primary);
+            transform: translateX(-2px);
+        }
+
+        .back-btn i {
+            transition: var(--transition);
+        }
+
+        .back-btn:hover i {
+            transform: translateX(-2px);
+        }
+
+        /* Legend - Ultra Minimal */
+        .legend {
+            position: fixed;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 50;
+            background: var(--surface);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            padding: 10px 20px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .legend-text {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Control Panel - Apple Sidebar */
+        .control-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100vh;
+            background: var(--surface);
+            backdrop-filter: saturate(180%) blur(40px);
+            -webkit-backdrop-filter: saturate(180%) blur(40px);
+            border-left: 1px solid var(--border);
+            z-index: 60;
+            padding: 32px 24px;
+            overflow-y: auto;
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .control-panel.open {
+            transform: translateX(0);
+        }
+
+        .control-panel::-webkit-scrollbar {
+            width: 0;
+        }
+
+        /* Toggle Button - Refined Circle */
+        .control-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 70;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--surface);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .control-toggle:hover {
+            background: var(--surface-hover);
+            box-shadow: var(--shadow-md);
+            transform: scale(1.02);
+        }
+
+        .control-toggle:active {
+            transform: scale(0.98);
+        }
+
+        .control-toggle i {
+            color: var(--text-secondary);
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Panel Header */
+        .panel-header {
+            margin-bottom: 32px;
+        }
+
+        .panel-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        /* Panel Sections */
+        .panel-section {
+            margin-bottom: 28px;
+        }
+
+        .panel-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-tertiary);
+            margin-bottom: 14px;
+        }
+
+        /* Filter Buttons - Pill Style */
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 500;
+            border: none;
+            background: rgba(0, 0, 0, 0.04);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover:not(.active) {
+            background: rgba(0, 0, 0, 0.08);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--text-primary);
+            color: white;
+        }
+
+        /* Search Input - Refined */
+        .search-input {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: var(--radius-md);
+            border: none;
+            background: rgba(0, 0, 0, 0.04);
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-primary);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        .search-input:focus {
+            background: rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Switch - iOS Style */
+        .switch-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+            margin-bottom: 12px;
+        }
+
+        .switch-label {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .switch {
+            width: 44px;
+            height: 26px;
+            border-radius: 13px;
+            background: rgba(0, 0, 0, 0.1);
+            position: relative;
+            cursor: pointer;
+            transition: background 0.25s;
+        }
+
+        .switch.on {
+            background: #34C759;
+            /* Apple Green */
+        }
+
+        .switch::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: white;
+            top: 2px;
+            left: 2px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .switch.on::after {
+            left: 20px;
+        }
+
+        /* Sliders - Refined */
+        .slider-container {
+            margin-bottom: 20px;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .slider-label span:last-child {
+            color: var(--text-tertiary);
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .slider {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.08);
+            appearance: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: box-shadow 0.15s;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Reset Button - Secondary Style */
+        .reset-btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            background: rgba(0, 0, 0, 0.04);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .reset-btn:hover {
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        .reset-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <!-- Loading Mask -->
+    <div id="loading-mask"
+        style="position:fixed; top:0; left:0; width:100%; height:100%; background:#F5F5F7; z-index:999; display:flex; flex-direction:column; align-items:center; justify-content:center; transition: opacity 0.5s;">
+        <div
+            style="width: 40px; height: 40px; border: 4px solid #E5E5E5; border-top: 4px solid #BF9B30; border-radius: 50%; animation: spin 1s linear infinite;">
+        </div>
+        <p style="margin-top:20px; color:#86868B; font-size:14px; font-weight:500;">正在加载历史图谱...</p>
+    </div>
+    <style>
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <a href="index.html" class="back-btn">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回</span>
+    </a>
+
+    <!-- Legend -->
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-dot" style="background: var(--china);"></div>
+            <span class="legend-text">中国</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background: var(--world);"></div>
+            <span class="legend-text">世界</span>
+        </div>
+    </div>
+
+    <!-- Control Panel Toggle -->
+    <div class="control-toggle" id="panel-toggle">
+        <i data-lucide="settings-2" class="w-5 h-5"></i>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel" id="control-panel">
+        <div class="panel-header">
+            <h2 class="panel-title">控制面板</h2>
+        </div>
+
+        <!-- Search -->
+        <div class="panel-section">
+            <div class="panel-section-title">搜索</div>
+            <input type="text" id="search-input" class="search-input" placeholder="搜索节点...">
+        </div>
+
+        <!-- Category Filter -->
+        <div class="panel-section">
+            <div class="panel-section-title">类别</div>
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="cat" data-value="all">全部</button>
+                <button class="filter-btn" data-filter="cat" data-value="china">中国</button>
+                <button class="filter-btn" data-filter="cat" data-value="world">世界</button>
+            </div>
+        </div>
+
+        <!-- Node Type Filter -->
+        <div class="panel-section">
+            <div class="panel-section-title">节点类型</div>
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="type" data-value="all">全部</button>
+                <button class="filter-btn" data-filter="type" data-value="event">事件</button>
+                <button class="filter-btn" data-filter="type" data-value="topic">话题</button>
+            </div>
+        </div>
+
+        <!-- Display Options -->
+        <div class="panel-section">
+            <div class="panel-section-title">显示</div>
+            <div class="switch-row">
+                <span class="switch-label">标签</span>
+                <div class="switch on" id="toggle-labels"></div>
+            </div>
+            <div class="switch-row">
+                <span class="switch-label">连接线</span>
+                <div class="switch on" id="toggle-links"></div>
+            </div>
+        </div>
+
+        <!-- Physics Controls -->
+        <div class="panel-section">
+            <div class="panel-section-title">物理引擎</div>
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>斥力</span>
+                    <span id="charge-value">-630</span>
+                </div>
+                <input type="range" class="slider" id="charge-slider" min="-1000" max="-50" value="-630">
+            </div>
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>距离</span>
+                    <span id="distance-value">49</span>
+                </div>
+                <input type="range" class="slider" id="distance-slider" min="20" max="200" value="49">
+            </div>
+            <div class="slider-container">
+                <div class="slider-label">
+                    <span>引力</span>
+                    <span id="gravity-value">0.15</span>
+                </div>
+                <input type="range" class="slider" id="gravity-slider" min="0" max="50" value="15">
+            </div>
+        </div>
+
+        <!-- View Controls -->
+        <div class="panel-section">
+            <button class="reset-btn" id="reset-view">重置视图</button>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Graph Container -->
+    <div id="graph-container" class="w-full h-screen cursor-move"></div>
+
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+
+        // --- Logic ---
+        // Wrappped in named function to allow retry logic
+        function runGraphLogic() {
+            // Handle Back Button Logic
+            const urlParams = new URLSearchParams(window.location.search);
+            const fromPage = urlParams.get('from');
+            if (fromPage) {
+                const backBtn = document.querySelector('.back-btn');
+                if (backBtn) {
+                    backBtn.href = decodeURIComponent(fromPage);
+                    // Optional: Update text to indicate context, keeping it simple for now
+                    // backBtn.querySelector('span').textContent = '返回上一页'; 
+                }
+            }
+
+            const container = document.getElementById('graph-container');
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            // 1. Data Processing (The "Historian's Logic")
+            // Data presence is guaranteed by the bootloader below
+            const rawEvents = window.RAW_DATA.events;
+
+            let nodes = [];
+            let links = [];
+
+            // A. Process Core Events
+            rawEvents.forEach(e => {
+                // Add Event Node
+                nodes.push({
+                    id: e.id,
+                    type: 'event', // core
+                    cat: e.cat,
+                    title: e.title,
+                    year: e.year,
+                    display: e.display,
+                    link: e.link,
+                    r: (e.id === 'prc-founding' || e.id === 'ww2') ? 18 : 12 // Hierarchy size
+                });
+
+                // B. Process Topics (Sub-nodes)
+                if (e.keywords && e.keywords.length > 0) {
+                    e.keywords.forEach(k => {
+                        const topicId = `topic-${k.text}`; // unique ID based on text
+
+                        // Check if node exists (shared topic?)
+                        let topicNode = nodes.find(n => n.id === topicId);
+                        if (!topicNode) {
+                            topicNode = {
+                                id: topicId,
+                                type: 'topic', // leaf
+                                cat: e.cat, // inherit category
+                                title: k.text,
+                                link: k.url,
+                                r: 8 // Increased size (was 5)
+                            };
+                            nodes.push(topicNode);
+                        }
+
+                        // Link Event -> Topic
+                        links.push({ source: e.id, target: topicId, type: 'hierarchy' });
+                    });
+                }
+            });
+
+            // C. "Senior Designer's Logic": Curated Historical Connections
+            // Connecting events not just by time, but by CAUSALITY and THEME.
+            const curatedConnections = [
+                // 1. The Axis of Civilizations (East <-> West interactions)
+                { source: 'han', target: 'rome', label: '丝绸之路' }, // Silk Road
+                { source: 'tang', target: 'medieval-europe', label: '贸易往来' },
+                { source: 'mongol-empire', target: 'song', label: '征服' }, // usage if mongol exists, else skip
+                { source: 'ming', target: 'new-navigation', label: '郑和与哥伦布' },
+
+                // 2. The Chain of Revolution (Ideological transfer)
+                { source: 'us-independence', target: 'france-revolution', label: '启蒙思想' },
+                { source: 'france-revolution', target: 'xinhai', label: '共和理念' },
+                { source: 'october-rev', target: 'cpc-founding', label: '马克思主义' },
+                { source: 'marxism', target: 'october-rev', label: '理论指导' },
+
+                // 3. Causality chains
+                { source: 'industrial-rev-1', target: 'opium-war', label: '市场扩张' }, // Industrial Rev caused Colonial expansion
+                { source: 'new-navigation', target: 'colonial-plunder', label: '开启' },
+                { source: 'ww2', target: 'prc-founding', label: '战后秩序' },
+                { source: 'cold-war', target: 'ussr-fall', label: '长期对抗' },
+
+                // 4. Cultural Resonances
+                { source: 'greece', target: 'renaissance', label: '文化复兴' },
+                { source: 'warring', target: 'greece', label: '轴心时代' } // Jaspers' Axial Age
+            ];
+
+            curatedConnections.forEach(c => {
+                // Verify both nodes exist
+                const s = nodes.find(n => n.id === c.source);
+                const t = nodes.find(n => n.id === c.target);
+                if (s && t) {
+                    links.push({ source: c.source, target: c.target, type: 'logic' });
+                }
+            });
+
+            // D. Timeline Backbone (Sequential within Civilizations)
+            // Still useful to keep the "Flow"
+            const chinaEvents = nodes.filter(n => n.type === 'event' && n.cat === 'china').sort((a, b) => a.year - b.year);
+            const worldEvents = nodes.filter(n => n.type === 'event' && n.cat === 'world').sort((a, b) => a.year - b.year);
+
+            for (let i = 0; i < chinaEvents.length - 1; i++) links.push({ source: chinaEvents[i].id, target: chinaEvents[i + 1].id, type: 'time' });
+            for (let i = 0; i < worldEvents.length - 1; i++) links.push({ source: worldEvents[i].id, target: worldEvents[i + 1].id, type: 'time' });
+
+            // E. Explicit Shared Topics (Demo for User Request: "Sui/Tang -> Keju")
+            // This ensures specific cross-event topics exist and are linked even if data is missing them
+            const sharedTopics = [
+                { title: '科举制', parents: ['sui', 'tang', 'song'] },
+                { title: '儒家思想', parents: ['han', 'song', 'ming'] },
+                { title: '大一统', parents: ['qin', 'han', 'qing'] }
+            ];
+
+            sharedTopics.forEach(st => {
+                const topicId = `topic-${st.title}`;
+                // 1. Ensure node exists
+                let tNode = nodes.find(n => n.id === topicId);
+                if (!tNode) {
+                    tNode = {
+                        id: topicId,
+                        type: 'topic',
+                        cat: 'china', // default
+                        title: st.title,
+                        link: '#', // Placeholder
+                        r: 8
+                    };
+                    nodes.push(tNode);
+                }
+                // 2. Link to all parents
+                st.parents.forEach(pid => {
+                    if (nodes.find(n => n.id === pid)) { // check if parent exists
+                        // Check if link already inherits (avoid dupe)
+                        if (!links.find(l => l.source === pid && l.target === topicId)) {
+                            links.push({ source: pid, target: topicId, type: 'hierarchy' });
+                        }
+                    }
+                });
+            });
+
+
+            // --- F. Logic: Degree Calculation & Dynamic Sizing (Improved) ---
+            const nodeDegrees = {};
+            nodes.forEach(n => nodeDegrees[n.id] = 0);
+            links.forEach(l => {
+                if (nodeDegrees[l.source] !== undefined) nodeDegrees[l.source]++;
+                if (nodeDegrees[l.target] !== undefined) nodeDegrees[l.target]++;
+            });
+
+            nodes.forEach(n => {
+                const degree = nodeDegrees[n.id] || 0;
+
+                // Base Size
+                // Event: 7 (Unchanged)
+                // Topic: 4.5 -> 9 (Doubled)
+                let baseR = n.type === 'event' ? 7 : 9;
+
+                // Dynamic Add-on
+                // 1.0 px per link
+                let dynamicR = baseR + (degree * 1.0);
+
+                // Caps
+                if (n.type === 'event') {
+                    // Min: 9, Max: 28
+                    dynamicR = Math.max(dynamicR, 9);
+                    dynamicR = Math.min(dynamicR, 28);
+                } else {
+                    // Topic Max: 18 -> 36 (Doubled)
+                    dynamicR = Math.min(dynamicR, 36);
+                }
+
+                n.r = dynamicR;
+            });
+
+            // 2. D3 Setup
+            const svg = d3.select("#graph-container").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .call(d3.zoom().scaleExtent([0.2, 5]).on("zoom", (event) => {
+                    g.attr("transform", event.transform);
+                }));
+
+            // Filters (Glow/Shadow)
+            const defs = svg.append("defs");
+            const dropShadow = defs.append("filter")
+                .attr("id", "drop-shadow")
+                .attr("height", "130%");
+            dropShadow.append("feGaussianBlur")
+                .attr("in", "SourceAlpha")
+                .attr("stdDeviation", 3) // Soft shadow
+                .attr("result", "blur");
+            dropShadow.append("feOffset")
+                .attr("dx", 1)
+                .attr("dy", 2)
+                .attr("result", "offsetBlur");
+            dropShadow.append("feMerge")
+                .append("feMergeNode").attr("in", "offsetBlur")
+                .append("feMergeNode").attr("in", "SourceGraphic");
+
+            const g = svg.append("g");
+
+            // 3. Force Simulation
+            const simulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(links).id(d => d.id).distance(d => {
+                    if (d.type === 'hierarchy') return 49;
+                    if (d.type === 'time') return 69; // 49 + 20
+                    return 189; // 49 + 140
+                }).strength(d => d.type === 'hierarchy' ? 0.8 : 0.2)) // Slightly rigid for hierarchy
+                .force("charge", d3.forceManyBody().strength(d => d.type === 'event' ? -630 : -126)) // -630 / 5 = -126
+                .force("collide", d3.forceCollide().radius(d => d.r + 15).strength(1)) // More breathing room
+                .force("x", d3.forceX(d => d.cat === 'china' ? width * 0.35 : width * 0.65).strength(0.15))
+                .force("y", d3.forceY(height / 2).strength(0.12)); // 0.15 * 0.8 = 0.12
+
+            // Remove Loading Mask
+            setTimeout(() => {
+                const mask = document.getElementById('loading-mask');
+                if (mask) {
+                    mask.style.opacity = '0';
+                    setTimeout(() => mask.remove(), 500);
+                }
+            }, 800);
+
+
+            // 4. Drawing
+
+            // Logic Links (Curved/distinct)
+            const linkLogic = g.append("g").selectAll(".link-logic")
+                .data(links.filter(l => l.type === 'logic' || l.type === 'time')) // Draw logic and time links
+                .join("line")
+                .attr("stroke", d => d.type === 'logic' ? "#B5A642" : "#E5E5E5") // Gold for logic, Gray for time
+                .attr("stroke-width", d => d.type === 'logic' ? 1.5 : 2)
+                .attr("stroke-dasharray", d => d.type === 'logic' ? "4,4" : "none") // Dashed for logic
+                .attr("stroke-opacity", 0.6);
+
+            // Hierarchy Links (Subtle)
+            const linkHierarchy = g.append("g").selectAll(".link-hierarchy")
+                .data(links.filter(l => l.type === 'hierarchy'))
+                .join("line")
+                .attr("stroke", "#e7e5e4") // Stone-200
+                .attr("stroke-width", 1);
+
+
+            // Nodes
+            const node = g.append("g")
+                .selectAll("g")
+                .data(nodes)
+                .join("g")
+                .call(drag(simulation));
+
+            // Circles
+            node.append("circle")
+                .attr("r", d => d.r)
+                .attr("fill", d => {
+                    if (d.type === 'topic') return '#ffffff'; // White topics
+                    return d.cat === 'china' ? '#E11D48' : '#2563EB'; // Colored Events
+                })
+                .attr("stroke", d => {
+                    if (d.type === 'topic') return d.cat === 'china' ? '#E11D48' : '#2563EB'; // Colored border for topics
+                    return '#ffffff';
+                })
+                .attr("stroke-width", d => d.type === 'topic' ? 1.5 : 3)
+                .style("cursor", "pointer")
+                .on("click", (e, d) => window.location.href = d.link);
+
+            // Labels
+            // 1. Event Titles
+            node.append("text")
+                .filter(d => d.type === 'event') // Visual clutter reduction
+                .text(d => d.title)
+                .attr("x", d => d.r + 5)
+                .attr("y", 5)
+                .attr("font-size", d => (d.r > 12) ? "14px" : "12px")
+                .attr("font-weight", "bold")
+                .attr("fill", "#1c1917")
+                .style("pointer-events", "none")
+                .style("text-shadow", "0 2px 4px white");
+
+            // 2. Topic Titles (Tiny)
+            node.append("text")
+                .filter(d => d.type === 'topic')
+                .text(d => d.title)
+                .attr("x", 12) // Adjusted for larger radius (was 8)
+                .attr("y", 4)
+                .attr("font-size", "11px") // Increased font size (was 9px)
+                .attr("fill", "#78716c")
+                .style("opacity", 0.8)
+                .style("pointer-events", "none");
+
+
+            // Simulation Tick
+            simulation.on("tick", () => {
+                linkLogic
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                linkHierarchy
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node.attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+
+            // Drag
+            function drag(simulation) {
+                function dragstarted(event) {
+                    if (!event.active) simulation.alphaTarget(0.3).restart();
+                    event.subject.fx = event.subject.x;
+                    event.subject.fy = event.subject.y;
+                }
+                function dragged(event) {
+                    event.subject.fx = event.x;
+                    event.subject.fy = event.y;
+                }
+                function dragended(event) {
+                    if (!event.active) simulation.alphaTarget(0);
+                    event.subject.fx = null;
+                    event.subject.fy = null;
+                }
+                return d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended);
+            }
+
+            // ===== CONTROL PANEL LOGIC =====
+
+            // State
+            let currentFilters = { cat: 'all', type: 'all' };
+            let showLabels = true;
+            let showLinks = true;
+
+            // Panel Toggle
+            const panelToggle = document.getElementById('panel-toggle');
+            const controlPanel = document.getElementById('control-panel');
+            panelToggle.addEventListener('click', () => {
+                controlPanel.classList.toggle('open');
+            });
+
+            // Filter Buttons
+            document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterType = btn.dataset.filter;
+                    const filterValue = btn.dataset.value;
+
+                    // Update active state
+                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Update state
+                    currentFilters[filterType] = filterValue;
+                    applyFilters();
+                });
+            });
+
+            function applyFilters() {
+                node.style('opacity', d => {
+                    let catMatch = currentFilters.cat === 'all' || d.cat === currentFilters.cat;
+                    let typeMatch = currentFilters.type === 'all' || d.type === currentFilters.type;
+                    return (catMatch && typeMatch) ? 1 : 0.1;
+                });
+
+                // Hide links for filtered nodes
+                linkLogic.style('opacity', d => {
+                    let sourceMatch = (currentFilters.cat === 'all' || d.source.cat === currentFilters.cat) &&
+                        (currentFilters.type === 'all' || d.source.type === currentFilters.type);
+                    let targetMatch = (currentFilters.cat === 'all' || d.target.cat === currentFilters.cat) &&
+                        (currentFilters.type === 'all' || d.target.type === currentFilters.type);
+                    return (showLinks && sourceMatch && targetMatch) ? 0.6 : 0.05;
+                });
+
+                linkHierarchy.style('opacity', d => {
+                    let sourceMatch = (currentFilters.cat === 'all' || d.source.cat === currentFilters.cat) &&
+                        (currentFilters.type === 'all' || d.source.type === currentFilters.type);
+                    let targetMatch = (currentFilters.cat === 'all' || d.target.cat === currentFilters.cat) &&
+                        (currentFilters.type === 'all' || d.target.type === currentFilters.type);
+                    return (showLinks && sourceMatch && targetMatch) ? 1 : 0.05;
+                });
+            }
+
+            // Search
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                if (!query) {
+                    node.select('circle').attr('stroke-width', d => d.type === 'topic' ? 1.5 : 3);
+                    return;
+                }
+                node.select('circle').attr('stroke-width', d => {
+                    const match = d.title.toLowerCase().includes(query);
+                    return match ? 5 : (d.type === 'topic' ? 1.5 : 3);
+                });
+            });
+
+            // Display Switches
+            document.getElementById('toggle-labels').addEventListener('click', function () {
+                this.classList.toggle('on');
+                showLabels = this.classList.contains('on');
+                node.selectAll('text').style('opacity', showLabels ? (d => d.type === 'topic' ? 0.8 : 1) : 0);
+            });
+
+            document.getElementById('toggle-links').addEventListener('click', function () {
+                this.classList.toggle('on');
+                showLinks = this.classList.contains('on');
+                applyFilters();
+            });
+
+            // Physics Sliders
+            const chargeSlider = document.getElementById('charge-slider');
+            const distanceSlider = document.getElementById('distance-slider');
+            const gravitySlider = document.getElementById('gravity-slider');
+
+            chargeSlider.addEventListener('input', (e) => {
+                const val = parseInt(e.target.value);
+                document.getElementById('charge-value').textContent = val;
+                simulation.force('charge', d3.forceManyBody().strength(d => d.type === 'event' ? val : val / 5));
+                simulation.alpha(0.5).restart();
+            });
+
+            distanceSlider.addEventListener('input', (e) => {
+                const val = parseInt(e.target.value);
+                document.getElementById('distance-value').textContent = val;
+                simulation.force('link').distance(d => {
+                    if (d.type === 'hierarchy') return val;
+                    if (d.type === 'time') return val + 20;
+                    return val + 140;
+                });
+                simulation.alpha(0.5).restart();
+            });
+
+            gravitySlider.addEventListener('input', (e) => {
+                const val = parseInt(e.target.value) / 100;
+                document.getElementById('gravity-value').textContent = val.toFixed(2);
+                simulation.force('x', d3.forceX(d => d.cat === 'china' ? width * 0.35 : width * 0.65).strength(val));
+                simulation.force('y', d3.forceY(height / 2).strength(val * 0.8));
+                simulation.alpha(0.5).restart();
+            });
+
+            // Reset View
+            const zoom = d3.zoom().scaleExtent([0.2, 5]).on("zoom", (event) => {
+                g.attr("transform", event.transform);
+            });
+
+            document.getElementById('reset-view').addEventListener('click', () => {
+                svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+            });
+
+        }
+
+        // Bootloader with Dynamic Script Injection
+        document.addEventListener('DOMContentLoaded', () => {
+
+            function initGraph() {
+                const script = document.createElement('script');
+                script.src = 'js/data-store.js?v=' + Date.now();
+                script.async = true;
+
+                script.onload = () => {
+                    if (typeof window.RAW_DATA !== 'undefined' && window.RAW_DATA.events) {
+                        runGraphLogic();
+                    } else {
+                        handleError(new Error('Data script loaded but RAW_DATA missing'));
+                    }
+                };
+
+                script.onerror = (e) => {
+                    handleError(new Error('Script load failed'));
+                };
+
+                document.body.appendChild(script);
+            }
+
+            function handleError(e) {
+                console.error('Graph init failed:', e);
+                // Timeout - Show Error UI
+                const container = document.getElementById('graph-container');
+                if (container) {
+                    container.innerHTML = `
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #ef4444; text-align: center; padding: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px; opacity: 0.8;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            <p style="font-size: 18px; margin-bottom: 10px; font-weight:600;">图谱数据加载失败</p>
+                            <p style="font-size: 14px; color: #57534E;">无法获取最新数据 (${e.message})。<br>请检查网络连接或刷新页面重试。</p>
+                            <button onclick="location.reload()" style="margin-top: 24px; padding: 10px 24px; border-radius: 999px; background: #1C1917; color: white; border: none; font-weight:500; cursor: pointer; transition: opacity 0.2s;">刷新页面</button>
+                        </div>
+                    `;
+                }
+                // Also hide loading mask if it's still there
+                const mask = document.getElementById('loading-mask');
+                if (mask) mask.style.display = 'none';
+            }
+
+            initGraph();
+        });
+    </script>
+</body>
+
+</html>

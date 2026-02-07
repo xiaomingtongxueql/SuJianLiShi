@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戊戌变法：百日维新的悲壮尝试 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB',
+                        danger: '#991b1b'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1e293b;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+
+            <div class="lg:col-span-9 space-y-12">
+
+                <!-- 头部定义 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        AD 1898</div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">戊戌变法</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        戊戌变法（Hundred Days'
+                        Reform），又称百日维新，是晚清时期一次由光绪帝支持、资产阶级维新派领导的政治改革运动。面对甲午战败后的瓜分危机，以康有为、梁启超为首的维新人士试图通过自上而下的方式，在政治、经济、军事、文化教育等方面进行全方位的资本主义改良，企图建立君主立宪制。这场运动仅仅持续了103天，便因触动了以慈禧太后为首的守旧派的根本利益而遭到血腥镇压。虽然变法失败了，但它作为中国近代史上第一次思想启蒙运动，极大地冲击了封建思想，为随后的辛亥革命播下了火种。
+                    </p>
+
+                    <!-- 视频容器 -->
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=965497620&bvid=BV1Dp4y1976R&cid=1385302200&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-gold mr-3"></i>
+                        历史进程：从激昂到悲歌
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">救亡图存：公车上书与维新思潮的兴起</h3>
+                        <p>
+                            1895年春，《马关条约》签订的消息传回北京，举国哗然。正在京城参加会试的举人康有为、梁启超联合一千三百多名举人，联名上书光绪帝，反对割地和局，请求变法图强，史称“公车上书”。虽然奏章未达御览，但它打破了清朝“士人不得干政”的禁令，标志着资产阶级维新思潮从理论宣传走向政治实践。随后，维新派创办《中外纪闻》、《时务报》，组织强学会、保国会，积极宣传变法思想，“变法”之声响彻神州。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">百日维新：激进的改革蓝图</h3>
+                        <p>
+                            1897年，德国强占胶州湾，瓜分危机迫在眉睫。光绪帝不愿做“亡国之君”，毅然决定变法。1898年6月11日，光绪帝颁布《定国是钊》，宣布开始变法。在随后的一百多天里，朝廷颁布了一系列新政诏令：政治上，裁撤冗官，允许官民上书言事；经济上，设立农工商总局，鼓励私人兴办工矿企业；军事上，裁撤绿营，精练新军；文教上，废八股，改试策论，设立京师大学堂（北京大学前身）。这些措施如果能够实施，无疑将推动中国向现代化迈进一大步。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">戊戌政变：新旧势力的殊死搏斗</h3>
+                        <p>
+                            变法触动了满洲亲贵和守旧官僚的既得利益，遭到了以慈禧太后为首的顽固派的疯狂反扑。光绪帝手中无实权，只能依靠新建陆军统帅袁世凯。维新派密谋围园杀后，谭嗣同夜访法华寺游说袁世凯起兵勤王。然而，袁世凯权衡利弊后选择了背叛，向荣禄告密。1898年9月21日，慈禧太后发动政变，囚禁光绪帝于瀛台，下令逮捕维新人士。康有为、梁启超逃往海外，新政除京师大学堂外全部被废除。变法宣告失败。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">六君子喋血：为了中国的明天</h3>
+                        <p>
+                            政变发生后，谭嗣同本来有机会逃走，但他以此明志（“各国变法，无不从流血而成，今中国未闻有因变法而流血者，此国之所以不昌。有之，请自嗣同始！”），甚至在被捕前从容等待。9月28日，谭嗣同、康广仁、林旭、杨深秀、杨锐、刘光第六人在北京菜市口被杀害，史称“戊戌六君子”。他们的鲜血，没有白流，它惊醒了沉睡的国人，宣告了改良主义道路在中国走不通。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="lightbulb" class="w-6 h-6 text-gold mr-3"></i>
+                        深度辨析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold">
+                            <h3 class="font-bold text-lg text-primary mb-3">失败原因分析</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                <strong>根本原因：</strong>资产阶级维新派力量过于弱小，而封建顽固势力过于强大。维新派既无实权，又无兵权，更不敢发动群众（脱离人民大众）。<br>
+                                <strong>主观原因：</strong>策略急躁冒进，在短时间内颁布大量诏令，却缺乏执行力；对帝国主义和封建官僚不仅抱有幻想，甚至还试图利用袁世凯这样的投机分子。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold">
+                            <h3 class="font-bold text-lg text-primary mb-3">与洋务运动的区别</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                洋务运动主张“中体西用”，只学习西方的器物（技术），不改变封建制度；而戊戌变法主张学习西方的制度（君主立宪），触及了封建统治的根基。这是中国近代化由“器物层面”向“制度层面”迈进的关键一步。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史影响 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="activity" class="w-6 h-6 text-gold mr-3"></i>
+                        历史遗产
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            戊戌变法虽然失败了，但其历史意义不可磨灭。首先，它是一场思想启蒙运动，广泛传播了西方的民权、平等、进化论思想，促进了中华民族的觉醒。其次，它在社会上形成了一股特别是对封建思想文化的冲击波。最后，它的失败证明了在半殖民地半封建的中国，改良主义道路是走不通的，从而促使先进的中国人开始探索暴力革命的道路（如孙中山的民主革命）。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 右侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+
+                    <!-- 知识图谱 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识联结
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 相关词条 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- 数据注入区域 -->
+    <script id="data-keywords" type="application/json">[{"text":"康有为","url":"topic_kang_youwei.html"},{"text":"梁启超","url":"topic_liang_qichao.html"},{"text":"谭嗣同","url":"topic_tan_sitong.html"},{"text":"公车上书","url":"topic_gongche_shangshu.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+    "nodes": [
+        {
+            "id": "wuxu",
+            "label": "戊戌变法",
+            "val": 40,
+            "group": "core",
+            "url": "detail_wuxu.html"
+        },
+        {
+            "id": "kangyouwei",
+            "label": "康有为",
+            "val": 35,
+            "group": "person",
+            "url": "topic_kang_youwei.html"
+        },
+        {
+            "id": "liangqichao",
+            "label": "梁启超",
+            "val": 35,
+            "group": "person",
+            "url": "topic_liang_qichao.html"
+        },
+        {
+            "id": "tansitong",
+            "label": "谭嗣同",
+            "val": 35,
+            "group": "person",
+            "url": "topic_tan_sitong.html"
+        },
+        {
+            "id": "gongche",
+            "label": "公车上书",
+            "val": 30,
+            "group": "event",
+            "url": "topic_gongche_shangshu.html"
+        },
+        {
+            "id": "yuanshikai",
+            "label": "袁世凯",
+            "val": 25,
+            "group": "person",
+            "url": "topic_yuanshikai.html"
+        }
+    ],
+    "edges": [
+        {
+            "source": "kangyouwei",
+            "target": "wuxu",
+            "label": "领导"
+        },
+        {
+            "source": "liangqichao",
+            "target": "wuxu",
+            "label": "宣传"
+        },
+        {
+            "source": "tansitong",
+            "target": "wuxu",
+            "label": "殉难"
+        },
+        {
+            "source": "gongche",
+            "target": "wuxu",
+            "label": "序幕"
+        },
+        {
+            "source": "yuanshikai",
+            "target": "wuxu",
+            "label": "背叛"
+        }
+    ]
+}
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+        // 渲染关联词条
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-gold">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        // 渲染图谱
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', {
+                lineColor: '#B5A642',
+                nodeColor: '#B5A642'
+            });
+            engine.render(graphData);
+        }
+    </script>
+</body>
+
+</html>
+
+
+

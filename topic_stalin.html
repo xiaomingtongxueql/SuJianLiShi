@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斯大林:钢铁巨人 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="arrow-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        STEEL</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">斯大林:钢铁巨人
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        约瑟夫·维萨里奥诺维奇·斯大林（1878-1953），这个名字在俄语中意为“钢铁的人”。他从一名格鲁吉亚的鞋匠之子，成长为苏联无可争议的最高领袖。他继承了列宁的事业，将一个落后的农业国强行锻造成了拥有核武器的工业超级大国。他的名字与辉煌的卫国战争紧密相连，也与残酷的大清洗密不可分。他是20世纪最复杂、最受争议的政治人物之一。
+                    </p>
+                    
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-accent mr-3"></i>
+                        权力的巩固与工业化
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>继任者之争与一国社会主义
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    列宁逝世后，布尔什维克高层爆发了激烈的权力斗争。托洛茨基坚持“不断革命论”，认为苏联的社会主义建设必须依赖世界革命的胜利；而斯大林则提出了“<strong>一国社会主义</strong>”理论，认为苏联可以在资本主义包围中单独建成社会主义。
+                                </p>
+                                <p>
+                                    凭借对党务机器（总书记职位）的精准掌控，斯大林联合季诺维也夫、加米涅夫击败了托洛茨基，随后又清洗了“右倾”的布哈林，最终确立了绝对的领导地位。这一理论转向，标志着苏联从对外的革命输出转向对内的国家建设。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>两个五年计划与农业集体化
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1928年，斯大林结束了新经济政策，开启了计划经济时代。他深知战争不可避免，名言是：“我们比先进国家落后了五十年至一百年。我们应当在十年内跑完这一段距离。或者我们做到这一点，或者我们被人打倒。”
+                                </p>
+                                <p>
+                                    通过两个五年计划（1928-1937），苏联以惊人的速度建立起完整的重工业体系，从农业国变成了欧洲第一、世界第二工业强国。然而，这一成就的代价是巨大的：<strong>农业集体化</strong>运动强制农民加入集体农庄，导致了严重的饥荒（如乌克兰大饥荒）和农民生产积极性的长期低落。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>卫国战争与战后格局
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    斯大林模式的工业化为苏联打赢二战奠定了物质基础。面对纳粹德国的闪电战，斯大林展现了钢铁般的意志，号召苏联人民进行神圣的“卫国战争”。莫斯科保卫战、斯大林格勒战役的胜利，扭转了二战局势。
+                                </p>
+                                <p>
+                                    战后，斯大林在雅尔塔体系中确立了苏联的超级大国地位，在东欧建立了一系列社会主义卫星国，形成了与美国对抗的冷战格局。他晚年进一步强化个人崇拜，直到1953年去世。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                斯大林模式
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                又称“高度集中的政治经济体制”。经济上：单一公有制、指令性计划、优先发展重工业。政治上：高度集权、个人崇拜、缺乏法治。它在初期快速实现了工业化，但后期僵化，阻碍了经济发展。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                大清洗
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                1930年代中期，斯大林为肃清异己、巩固权力而发动的大规模政治镇压运动。大量布尔什维克老近卫军、高级将领和知识分子被处决或流放古拉格。这对苏联的元气造成了难以估量的伤害。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 功过评说</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                邱吉尔曾评价：“他接过的是一个扶木犁的俄国，留下的是一个拥有原子弹的俄国。”这一评价生动地概括了他的历史功绩，但也无法掩盖由于缺乏民主和法治所带来的巨大体制性悲剧。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 工业化的遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                斯大林模式对后来许多发展中国家（包括中国在建国初期）的工业化道路产生了深远影响。如何平衡国家发展与个人自由、重工业与轻工业农业，至今仍是各国探索的课题。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"十月革命","url":"detail_october_rev.html"},{"text":"列宁","url":"topic_lenin.html"},{"text":"新经济政策","url":"topic_nep.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "stalin", "label": "斯大林", "val": 30, "group": "core", "url": "topic_stalin.html"},
+            {"id": "lenin", "label": "列宁", "val": 25, "group": "person", "url": "topic_lenin.html"},
+            {"id": "plan", "label": "五年计划", "val": 20, "group": "event", "url": "#"},
+            {"id": "ww2", "label": "卫国战争", "val": 25, "group": "event", "url": "#"},
+            {"id": "model", "label": "斯大林模式", "val": 20, "group": "concept", "url": "#"}
+        ],
+        "edges": [
+            {"source": "lenin", "target": "stalin", "label": "继任"},
+            {"source": "stalin", "target": "plan", "label": "推行"},
+            {"source": "stalin", "target": "ww2", "label": "领导"},
+            {"source": "stalin", "target": "model", "label": "创立"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

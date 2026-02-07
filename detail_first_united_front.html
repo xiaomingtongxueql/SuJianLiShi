@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次国共合作：革命的蜜月与血色的终结 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB',
+                        danger: '#991b1b', red: '#dc2626'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1e293b;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-red/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-red-700 transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+
+            <div class="lg:col-span-9 space-y-12">
+
+                <!-- 头部定义 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-red-700 rounded-sm">
+                        AD 1924-1927</div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">第一次国共合作</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-red-700 pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        第一次国共合作（1924-1927）不仅是近代中国历史上一次由阶级利益不同、政治主张各异的党派为共同的反帝反封建目标而进行的战略结盟，更是一场深刻改变中国命运的政治实验。这场合作在苏联和共产国际的强力撮合下达成，以国民党一大为起点，以北伐战争的辉煌胜利达到高潮，最终因国民党右派的背叛和血腥屠杀而悲剧收场。它虽然未能彻底完成反帝反封建的任务，但却极大地唤醒了中国民众的革命意识，为中国共产党从幼稚走向成熟、从依附走向独立奠定了血的教训与基础。
+                    </p>
+
+                    <!-- 视频容器 -->
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=1002660449&bvid=BV1px4y1v72S&cid=1495179733&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-red-700 mr-3"></i>
+                        历史脉络：从殊途同归到分道扬镳
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">困境中的握手：为什么是国共？</h3>
+                        <p>
+                            20世纪20年代初的中国，军阀混战，国将不国。孙中山领导的旧民主主义革命屡战屡败，陷入了“依靠军阀打军阀”的怪圈，处于绝望的边缘。而新生的中国共产党虽然拥有马克思主义真理和工人阶级的热情，但在“二七惨案”后深刻意识到：在反动势力依然强大的中国，单枪匹马是不可能成功的。
+                        </p>
+                        <p>
+                            此时，共产国际的代表马林提出了“党内合作”的创造性构想：共产党员以个人身份加入国民党，助其改组。这既照顾了国民党“大党”的面子，又保留了共产党在政治和组织上的独立性。孙中山以伟大的政治胸怀，排除了党内右派的阻力，接受了这一方案。1924年1月，国民党一大的召开，标志着这艘革命的巨轮正式起航。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">黄埔与北伐：革命的高光时刻</h3>
+                        <p>
+                            合作的效应是惊人的。苏联的援助源源不断，黄埔军校作为“党军”的孵化器，迅速培养了一批既懂军事又懂政治的精英。周恩来、恽代英等共产党人在军校中的政治工作，赋予了这支军队前所未有的灵魂。
+                        </p>
+                        <p>
+                            1926年7月，北伐誓师。这不仅仅是一场军事征伐，更是一场政治海啸。北伐军所到之处，工农运动如火如荼。叶挺独立团在湖南、湖北的所向披靡，证明了共产党人的战斗力；而上海工人的三次武装起义，则展示了城市无产阶级的巨大力量。短短半年，革命势力从珠江流域扩展到长江流域，旧军阀的统治土崩瓦解。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">同床异梦：裂痕的扩大与总爆发</h3>
+                        <p>
+                            然而，随着革命的深入，国共两党在阶级利益上的根本冲突日益暴露。北伐军占领东南富庶地区后，以蒋介石为代表的国民党右派，迅速与江浙财阀和帝国主义势力勾结。工农运动的激进（如收回租界、打土豪），让地主资产阶级感到了切肤之痛。
+                        </p>
+                        <p>
+                            蒋介石敏锐地意识到，必须在共产党力量彻底壮大之前动手。1927年4月12日，他在上海悍然发动政变，血腥屠杀昨日的盟友。紧接着，武汉的汪精卫也撕下面具，发动“七一五”分共。大革命在血泊中戛然而止，国共合作彻底破裂。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="lightbulb" class="w-6 h-6 text-red-700 mr-3"></i>
+                        深度辨析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-700">
+                            <h3 class="font-bold text-lg text-primary mb-3">为什么说“党内合作”是把双刃剑？</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                <strong>优势：</strong>利用了国民党既有的招牌和影响力，迅速壮大了革命声势；同时也为共产党提供了一个公开活动的平台，使其从几十人的小团体迅速发展为几万人的大党。<br>
+                                <strong>隐患：</strong>这种形式极易导致共产党丧失组织上的独立性，尤其是当陈独秀等领导人犯右倾机会主义错误，过分迁就国民党时，一旦对方翻脸，共产党由于没有掌握军队的领导权，只能任人宰割。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-700">
+                            <h3 class="font-bold text-lg text-primary mb-3">新三民主义的本质是什么？</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                新三民主义绝不是旧三民主义的简单重复。它的核心在于<strong>“联俄、联共、扶助农工”</strong>的三大政策。
+                                简单来说，旧三民主义是向西方资产阶级学习的产物，而新三民主义则是在十月革命影响下，向苏俄学习、并结合中国革命实际的产物。它是中国资产阶级民主革命纲领的最高峰。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史影响 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="activity" class="w-6 h-6 text-red-700 mr-3"></i>
+                        历史的遗产与教训
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            第一次国共合作的失败，留下了惨痛的教训，但也成为了中国革命的转折点。它用几十万人的鲜血教育了共产党人：<strong>“枪杆子里出政权”</strong>。没有这次失败，就没有后来的南昌起义、秋收起义，更不会有井冈山道路的开辟。可以说，第一次国共合作是为中国共产党随后独立领导革命进行的一次盛大的“预演”和“成年礼”。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 右侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+
+                    <!-- 知识图谱 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识联结
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 相关词条 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- 数据注入区域 -->
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"蒋介石","url":"topic_chiang_kai_shek.html"},
+            {"text":"黄埔军校","url":"topic_whampoa.html"},
+            {"text":"北伐战争","url":"topic_northern_expedition_war.html"},
+            {"text":"新三民主义","url":"topic_sun_policies.html"},
+            {"text":"四一二政变","url":"topic_april_12.html"}
+        ]
+    </script>
+    <script id="data-graph" type="application/json">
+        {"nodes":[{"id":"unitedfront","label":"第一次国共合作","val":40,"group":"core","url":"detail_first_united_front.html"},{"id":"sunyatsen","label":"孙中山","val":35,"group":"person","url":"topic_sun_yat_sen.html"},{"id":"chiangkaishek","label":"蒋介石","val":35,"group":"person","url":"topic_chiang_kai_shek.html"},{"id":"zhouenlai","label":"周恩来","val":30,"group":"person","url":"topic_zhou_enlai.html"},{"id":"chenduxiu","label":"陈独秀","val":30,"group":"person","url":"topic_chen_duxiu.html"},{"id":"borodin","label":"鲍罗廷","val":25,"group":"person","url":"topic_borodin.html"}],"edges":[{"source":"sunyatsen","target":"unitedfront","label":"缔造"},{"source":"chenduxiu","target":"unitedfront","label":"推动"},{"source":"borodin","target":"unitedfront","label":"顾问"},{"source":"chiangkaishek","target":"unitedfront","label":"背叛"},{"source":"zhouenlai","target":"unitedfront","label":"参与"}]}
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+        // 渲染关联词条
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-red-700">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-red-700 transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        // 渲染图谱
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', {
+                lineColor: '#dc2626',
+                nodeColor: '#dc2626'
+            });
+            engine.render(graphData);
+        }
+    </script>
+</body>
+
+</html>
+
+
+

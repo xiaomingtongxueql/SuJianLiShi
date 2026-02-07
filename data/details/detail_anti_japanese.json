@@ -1,0 +1,75 @@
+{
+    "id": "detail_anti_japanese",
+    "type": "china",
+    "title": "抗日战争:血肉筑长城",
+    "year": "1931年 — 1945年",
+    "desc": "中国近代以来反抗外敌入侵第一次取得完全胜利的民族解放战争。中国战场是世界反法西斯战争的东方主战场。",
+    "content": [
+        {
+            "title": "全民族抗战",
+            "text": "<p>1937年七七事变爆发，国共实现第二次合作，建立抗日民族统一战线。正面战场（如淞沪会战、台儿庄战役）和敌后战场（百团大战）相互配合，粉碎了日军'三个月灭亡中国'的狂言。</p>"
+        },
+        {
+            "title": "伟大的胜利",
+            "text": "<p>经过14年艰苦卓绝的斗争，中国军民付出了巨大牺牲，最终迎来了1945年8月15日日本无条件投降。这一胜利洗雪了百年国耻，确立了中国的大国地位。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "七七事变",
+            "url": "topic_marco_polo_bridge.html"
+        },
+        {
+            "text": "南京大屠杀",
+            "url": "topic_nanjing_massacre.html"
+        },
+        {
+            "text": "百团大战",
+            "url": "topic_hundred_regiments.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "anti",
+                "label": "抗日战争",
+                "val": 30,
+                "group": "core",
+                "url": "detail_anti_japanese.html"
+            },
+            {
+                "id": "united",
+                "label": "统一战线",
+                "val": 25,
+                "group": "system",
+                "url": "topic_united_front.html"
+            },
+            {
+                "id": "nanjing",
+                "label": "南京大屠杀",
+                "val": 20,
+                "group": "event",
+                "url": "topic_nanjing_massacre.html"
+            },
+            {
+                "id": "victory",
+                "label": "胜利",
+                "val": 20,
+                "group": "result",
+                "url": "topic_victory_day.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "anti",
+                "target": "united",
+                "label": "基础"
+            },
+            {
+                "source": "anti",
+                "target": "victory",
+                "label": "结局"
+            }
+        ]
+    }
+}

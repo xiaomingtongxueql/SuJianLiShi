@@ -1,0 +1,131 @@
+{
+    "id": "detail_taiping",
+    "type": "china",
+    "title": "太平天国:农民战争的巅峰",
+    "year": "1851年 — 1864年",
+    "desc": "太平天国运动是中国历史上规模最大的农民起义，也是世界历史上规模最大的农民战争。洪秀全领导的太平军与清朝激战14年，席卷半个中国，最终失败，但沉重打击了清朝统治。",
+    "content": [
+        {
+            "title": "金田起义",
+            "text": "<p>1851年，洪秀全在广西金田村发动起义，建号'太平天国'。太平军势如破竹，1853年攻占南京，改称天京，建立了与清朝对峙的政权。</p>"
+        },
+        {
+            "title": "《天朝田亩制度》",
+            "text": "<p>太平天国颁布<strong>《天朝田亩制度》</strong>，主张废除封建土地所有制，平均分配土地，'凡天下田，天下人同耕'。这是农民阶级反封建的革命纲领，但因战争环境无法实施。</p>"
+        },
+        {
+            "title": "天京事变",
+            "text": "<p>1856年，太平天国领导层内讧（天京事变），杨秀清、韦昌辉被杀，石达开出走，元气大伤。此后，太平天国由盛转衰。</p>"
+        },
+        {
+            "title": "失败与教训",
+            "text": "<p>1864年，天京陷落，洪秀全病死，太平天国失败。失败原因：农民阶级的局限性（封建迷信色彩浓厚）、缺乏先进阶级领导、中外反动势力联合绞杀。但它沉重打击了清朝和外国侵略者。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "《天朝田亩制度》",
+            "desc": "体现了农民阶级要求废除封建土地所有制的强烈愿望，但无法实现，是空想。"
+        },
+        {
+            "title": "历史意义",
+            "desc": "是旧式农民战争的最高峰，沉重打击了清朝统治和外国侵略势力。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "洪秀全",
+            "url": "topic_hong_xiuquan.html"
+        },
+        {
+            "text": "天朝田亩制度",
+            "url": "topic_land_system.html"
+        },
+        {
+            "text": "天京事变",
+            "url": "topic_tianjing_incident.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "taiping",
+                "label": "太平天国",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "hong",
+                "label": "洪秀全",
+                "val": 25,
+                "group": "person"
+            },
+            {
+                "id": "jintian",
+                "label": "金田起义",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "nanjing",
+                "label": "定都天京",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "land",
+                "label": "天朝田亩制度",
+                "val": 25,
+                "group": "policy"
+            },
+            {
+                "id": "incident",
+                "label": "天京事变",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "fall",
+                "label": "天京陷落",
+                "val": 15,
+                "group": "event"
+            }
+        ],
+        "edges": [
+            {
+                "source": "hong",
+                "target": "jintian",
+                "label": "发动"
+            },
+            {
+                "source": "jintian",
+                "target": "taiping",
+                "label": "建立"
+            },
+            {
+                "source": "taiping",
+                "target": "nanjing",
+                "label": "定都"
+            },
+            {
+                "source": "taiping",
+                "target": "land",
+                "label": "颁布"
+            },
+            {
+                "source": "incident",
+                "target": "taiping",
+                "label": "重创"
+            },
+            {
+                "source": "fall",
+                "target": "taiping",
+                "label": "灭亡"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "太平天国运动加速了清朝的衰落，为后来的革命运动提供了经验教训。",
+        "legacy": "是农民阶级反封建斗争的最高峰，但也证明了农民阶级无法领导中国革命走向胜利。"
+    }
+}

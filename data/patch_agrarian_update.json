@@ -1,0 +1,422 @@
+{
+    "details": [
+        {
+            "id": "detail_agrarian",
+            "type": "world",
+            "title": "农业革命: 文明的基石",
+            "year": "约1万-2000年前",
+            "desc": "新石器时代，人类从相对平等的采集狩猎群体转变为定居的农业社会，这一被称为'农业革命'（Agrarian Revolution）的进程不仅会导致人口爆炸，更催生了私有制、阶级分化、国家机器以及文字记录，为后来所有文明形态奠定了不可逆转的物质与制度基础。",
+            "content": [
+                {
+                    "title": "驯化的地理格局",
+                    "text": "<p>农业革命并非单一起源，而是在全球多个中心独立发生的。在<strong>新月沃地</strong>（Fertile Crescent），人类驯化了小麦、大麦、山羊和绵羊；在<strong>东亚</strong>（黄河与长江流域），粟（小米）和水稻成为核心作物，猪和狗最早被驯养；在<strong>中美洲</strong>，玉米、豆类和南瓜（'三姐妹'）构成了农业基础。这些核心区域（Hearth Areas）向外辐射，构成了后世文明分布的雏形。</p>"
+                },
+                {
+                    "title": "定居与社会复杂化",
+                    "text": "<p>农业生产要求人类<strong>定居</strong>（Sedentism）以照顾作物。定居生活导致了人口密度的指数级增长，并引发了'拥挤病'。同时，粮食的<strong>剩余</strong>（Surplus）使部分人得以脱离直接生产，转而从事陶器制作、金属冶炼或宗教管理。为了管理剩余产品的分配和调节日益复杂的社会冲突，早期的酋邦（Chiefdoms）和国家（States）应运而生，随之而来的则是制度化的社会不平等和性别压迫。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "多中心起源",
+                    "desc": "农业并非从一个中心传播至全球，而是在西亚（麦）、东亚（稻）、美洲（玉米）等至少7-8个地区独立起源。"
+                },
+                {
+                    "title": "文明三要素",
+                    "desc": "农业革命直接催生了文明的三大特征：城市（定居）、金属工具（分工）和文字（管理剩余）。"
+                },
+                {
+                    "title": "生态悖论",
+                    "desc": "农业虽然养活了更多人口，但也导致了早期农民营养单一、身高下降、疾病频发和劳动时间增加（相比采集者）。"
+                }
+            ],
+            "impact": {
+                "reality": "农业革命彻底改变了地貌。森林被砍伐为农田，河流被改道灌溉。人类成为第一种能够大规模改变地球生态的地质力量。",
+                "legacy": "我们今天的主食（米面）、社会结构（家庭、国家）、价值观念（勤劳致富）均源于农业革命。它是'历史史上最大的骗局'（赫拉利语）还是'进步的阶梯'，至今仍是学术界争论的焦点。"
+            },
+            "keywords": [
+                {
+                    "text": "动植物驯化",
+                    "url": "topic_domestication.html"
+                },
+                {
+                    "text": "定居与城市",
+                    "url": "topic_settlement.html"
+                },
+                {
+                    "text": "国家起源",
+                    "url": "topic_state_origin.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "agri_core",
+                        "label": "农业革命",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_agrarian.html"
+                    },
+                    {
+                        "id": "domest",
+                        "label": "驯化",
+                        "val": 25,
+                        "group": "process",
+                        "url": "topic_domestication.html"
+                    },
+                    {
+                        "id": "seden",
+                        "label": "定居",
+                        "val": 25,
+                        "group": "process",
+                        "url": "topic_settlement.html"
+                    },
+                    {
+                        "id": "state",
+                        "label": "国家",
+                        "val": 20,
+                        "group": "impact",
+                        "url": "topic_state_origin.html"
+                    },
+                    {
+                        "id": "inequality",
+                        "label": "阶级",
+                        "val": 20,
+                        "group": "impact",
+                        "url": "topic_inequality.html"
+                    },
+                    {
+                        "id": "jared",
+                        "label": "贾雷德·戴蒙德",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_jared_diamond.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "agri_core",
+                        "target": "domest",
+                        "label": "核心机制"
+                    },
+                    {
+                        "source": "domest",
+                        "target": "seden",
+                        "label": "使得...可能"
+                    },
+                    {
+                        "source": "seden",
+                        "target": "state",
+                        "label": "演化出"
+                    },
+                    {
+                        "source": "seden",
+                        "target": "inequality",
+                        "label": "导致"
+                    },
+                    {
+                        "source": "jared",
+                        "target": "agri_core",
+                        "label": "评价"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_domestication",
+            "title": "动植物驯化 (Domestication)",
+            "type": "world",
+            "year": "新石器时代",
+            "summary": "驯化不仅是人类对物种的改造，更是物种对人类的'反向驯化'。通过人工选择，野生动植物变成了依附于人类生存的农作物与家畜，而人类也被束缚再土地上，成为小麦和稻米的伺候者。",
+            "content": [
+                {
+                    "title": "自然选择与人工选择的决裂",
+                    "text": "<p>在漫长的旧石器时代，物种演化遵循自然选择原则。然而，驯化的本质是<strong>人工选择（Artificial Selection）</strong>的介入。早期农民有意识地选择那些具有特定性状的个体进行繁衍：保留麦穗不易脱落的突变小麦（便于收割），选择性格温顺、体型较小的野山羊（便于圈养）。这种选择压力导致驯化后的物种在几千年内发生了显著的形态变化，例如家猪的獠牙退化、家羊的毛皮变厚。这些物种虽然在自然界中失去了独立生存能力，但依靠人类的保护，其种群数量却获得了指数级增长。</p>"
+                },
+                {
+                    "title": "共生关系的建立",
+                    "text": "<p>从生态学角度看，驯化是一种<strong>互利共生（Mutualism）</strong>。人类为农作物提供清除杂草、灌溉水源和驱逐害虫的服务，换取稳定的热量来源；人类为家畜提供庇护所和饲料，换取肉、奶、皮毛以及畜力。这种共生关系极其紧密，以至于人类自身的基因也发生了改变。最典型的例子是<strong>乳糖耐受性（Lactase Persistence）</strong>：为了消化家畜的乳汁，欧亚大陆部分人群在成年后保留了分泌乳糖酶的能力，这是文化（畜牧）反向改变生物学（基因）的经典案例。</p>"
+                },
+                {
+                    "title": "驯化的地理不平衡",
+                    "text": "<p>贾雷德·戴蒙德（Jared Diamond）在《枪炮、病菌与钢铁》中指出，驯化的成功与否很大程度上取决于地理运气。欧亚大陆拥有最多的可驯化大种籽草本植物（小麦、大麦）和大型哺乳动物（牛、马、羊、猪），且东西向的轴线利于物种在同一纬度的传播。相比之下，美洲缺乏大型畜力（只有羊驼），非洲受制于南北向的气候阻隔，这导致了不同地区文明起步时间的巨大差异。</p>"
+                },
+                {
+                    "title": "不仅是食物：次级产品革命",
+                    "text": "<p>公元前4000年左右，人类不仅吃肉，开始利用家畜的<strong>次级产品（Secondary Products）</strong>——羊毛、牛奶和牵引力。牛被用来拉犁，不仅开垦了更硬的土壤，也是人类历史上第一次利用肌肉以外的能源。马的驯化和轮子的发明（利用畜力驱动）更是革命性地缩短了空间距离，改变了战争的形态，使游牧民族成为乃至推动历史车轮的重要力量。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "驯化的定义",
+                    "desc": "人类通过干预动植物的繁殖过程，使其产生有利于人类的遗传变异（如不落粒、温顺），从而建立相互依赖关系的演化过程。"
+                },
+                {
+                    "title": "核心作物",
+                    "desc": "西亚的小麦/大麦，东亚的水稻/粟，美洲的玉米，构成了世界三大农业起源中心的基础。"
+                }
+            ],
+            "impact": {
+                "reality": "地球上99%的陆地生物量现在由人类及其家畜构成，野生动物仅占极少数。驯化彻底重塑了地球的生物圈。",
+                "legacy": "我们在超市买到的每一粒米、每一块肉，都是万年前驯化革命的遗产。基因编辑技术则是驯化逻辑在分子层面的现代延续。"
+            },
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                },
+                {
+                    "text": "定居生活",
+                    "url": "topic_settlement.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "domest_topic",
+                        "label": "驯化",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_domestication.html"
+                    },
+                    {
+                        "id": "wheat",
+                        "label": "小麦",
+                        "val": 20,
+                        "group": "crop",
+                        "url": "topic_wheat.html"
+                    },
+                    {
+                        "id": "cow",
+                        "label": "家畜",
+                        "val": 20,
+                        "group": "animal",
+                        "url": "topic_livestock.html"
+                    },
+                    {
+                        "id": "diamond",
+                        "label": "贾雷德·戴蒙德",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_jared_diamond.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "domest_topic",
+                        "target": "wheat",
+                        "label": "改造物种"
+                    },
+                    {
+                        "source": "domest_topic",
+                        "target": "cow",
+                        "label": "互利共生"
+                    },
+                    {
+                        "source": "diamond",
+                        "target": "domest_topic",
+                        "label": "提出地理决定论"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_settlement",
+            "title": "定居与原城市化 (Sedentism & Proto-Urbanism)",
+            "type": "world",
+            "year": "公元前10000年",
+            "summary": "定居是人类社会形态的第一次巨变。从流动的帐篷到固定的土石房屋，人类将自己束缚在土地之上。这种高密度的共居模式催生了最早的村落和城市，也带来了瘟疫、战争与复杂的社会管理需求。",
+            "content": [
+                {
+                    "title": "从游荡到扎根",
+                    "text": "<p>采集狩猎者的生活本质是流动的，他们追随猎物和季节变化迁徙。农业的出现打破了这一百万年的传统——庄稼跑不了，人也不能跑。为了守卫田地和储存粮食，人类在水源附近建立了永久性的居所。在约旦河谷的<strong>耶利哥（Jericho）</strong>，早在公元前9000年就出现了石筑的围墙和塔楼；在安纳托利亚的<strong>加泰土丘（Çatalhöyük）</strong>，数千人居住在蜂巢般的泥砖房屋中，屋顶成为了街道。这些早期的定居点（Proto-cities）标志着人类空间观念的彻底转变：'家'有了固定的物理坐标。</p>"
+                },
+                {
+                    "title": "拥挤的代价：疾病与卫生",
+                    "text": "<p>定居生活带来了意想不到的副作用。高密度的人口聚集，加上与家畜的零距离接触，使定居点成为了病菌的温床。天花、麻疹、流感等传染病大多源于家畜，并在定居人群中爆发。考古证据显示，早期农民的骨骼显示出比采集者更严重的营养不良、贫血和牙齿病变。这种'定居病'是文明初期人类为秩序支付的沉重生物学代价。</p>"
+                },
+                {
+                    "title": "各种技术的爆发",
+                    "text": "<p>虽然付出了健康的代价，定居也为技术积累提供了条件。流动的采集者无法携带笨重的工具，而定居者可以。于是，<strong>陶器（Pottery）</strong>被发明出来储存粮食和水；<strong>纺织机</strong>被架设起来织造麻布和羊毛；<strong>磨石</strong>变得更大更重以加工谷物。定居环境如同一个巨大的实验室，容纳了各种不能移动的固定资产，促进了手工业技术的飞速迭代。</p>"
+                },
+                {
+                    "title": "社会结构的重组：从血缘到地缘",
+                    "text": "<p>在采集部落中，人际关系主要基于血缘。但在数千人的定居村落，必须要处理与陌生人的关系。为了调解土地纠纷、水源分配，传统的长老议事逐渐失效，需要更复杂的规则和权威。公共建筑（如神庙、粮仓）的出现，暗示了集体信仰管理机构的诞生。定居不仅仅是住在一起，更是社会组织形式从'群'（Band）向'部落'（Tribe）和'酋邦'（Chiefdom）演化的容器。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "定居的前提",
+                    "desc": "只有当地区资源足够丰富（如野生谷物采集）或农业生产能够提供稳定剩余时，人类才会选择定居。"
+                },
+                {
+                    "title": "耶利哥与加泰土丘",
+                    "desc": "这两个遗址是新石器时代早期定居村落和原城市的典型代表，展示了最早的城防体系和家庭宗教活动。"
+                }
+            ],
+            "impact": {
+                "reality": "定居生活奠定了现代文明的空间格局。我们今天的城市化进程，本质上是新石器时代定居革命的延续和放大。",
+                "legacy": "所谓'安土重迁'的观念，正是定居农业文明深层的文化心理积淀。"
+            },
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                },
+                {
+                    "text": "国家起源",
+                    "url": "topic_state_origin.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "seden_topic",
+                        "label": "定居生活",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_settlement.html"
+                    },
+                    {
+                        "id": "jericho",
+                        "label": "耶利哥",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_jericho.html"
+                    },
+                    {
+                        "id": "catal",
+                        "label": "加泰土丘",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_catalhoyuk.html"
+                    },
+                    {
+                        "id": "disease",
+                        "label": "传染病",
+                        "val": 15,
+                        "group": "impact",
+                        "url": "topic_disease.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "seden_topic",
+                        "target": "jericho",
+                        "label": "早期代表"
+                    },
+                    {
+                        "source": "seden_topic",
+                        "target": "disease",
+                        "label": "滋生"
+                    },
+                    {
+                        "source": "seden_topic",
+                        "target": "catal",
+                        "label": "早期代表"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_state_origin",
+            "title": "国家起源 (Origins of State)",
+            "type": "world",
+            "year": "约公元前3500年",
+            "summary": "国家的诞生是人类政治演化的终极形态。为了管理农业剩余、组织大型水利工程和防御外敌，社会权力逐渐集中于少数精英手中。暴力的垄断、税收的建立和官僚体系的形成，标志着人类从此进入了'利维坦'时代。",
+            "content": [
+                {
+                    "title": "水利假说与战争假说",
+                    "text": "<p>关于国家如何起源，学术界众说纷纭。魏特夫（Wittfogel）的<strong>'水利假说'</strong>认为，在大河流域（如埃及、两河、黄河），为了修建和维护大型灌溉系统，需要一个强有力的中央集权机构来动员劳动力，这直接催生了专制国家。而<strong>'战争假说'</strong>（如卡内罗）则认为，在人口压力下，定居村落间的土地争夺战导致了兼并，胜利者为了统治被征服者，建立了强制性的暴力机器——国家。</p>"
+                },
+                {
+                    "title": "剩余与剥削的制度化",
+                    "text": "<p>农业生产的季节性和波动性，使得<strong>'剩余粮食'（Surplus）</strong>的储存成为生死攸关的大事。谁控制了粮仓，谁就控制了部落的命脉。最早的统治者（往往是祭司或战神首领）通过声称拥有与神沟通的能力，获得了征收剩余产品的合法性。这部分剩余被用于供养不从事生产的脱产阶级（士兵、官僚、工匠）。这种制度化的剥削（Taxation）是早期国家存在的经济基础，也是阶级社会形成的标志。</p>"
+                },
+                {
+                    "title": "文字：统治的工具",
+                    "text": "<p>最早的<strong>文字</strong>（如苏美尔的楔形文字）并非为了写诗或记录历史，而是为了<strong>记账</strong>。国家管理者需要记录谁交了多少麦子、欠了多少税、仓库里又多少只羊。文字是伴随着官僚体系而生的统治技术。通过文字，国家实现了跨越时空的信息传递和命令下达，使统治疆域超越了村落的视线范围，形成了广土众民的早期文明（Civilization）。</p>"
+                },
+                {
+                    "title": "城邦与帝国",
+                    "text": "<p>最早的国家形态通常是<strong>城邦（City-State）</strong>，如苏美尔的乌鲁克（Uruk），由一个主神庙和周围的农田组成。随着竞争加剧，强权者开始征服邻近城邦，建立统治更广阔区域的<strong>帝国（Empire）</strong>。从阿卡德帝国到秦汉帝国，行政集权程度不断加深，暴力垄断更加彻底，人类正式进入了由国家机器主宰的历史阶段。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "国家的定义",
+                    "desc": "按恩格斯的定义，国家是阶级矛盾不可调和的产物，拥有按地区划分的国民和公共权力（军队、监狱、官僚机构）。"
+                },
+                {
+                    "title": "文明的标志",
+                    "desc": "一般认为，城市、文字、金属工具和礼仪中心（Monumental Architecture）是文明（即国家级社会）诞生的四大考古学标志。"
+                }
+            ],
+            "impact": {
+                "reality": "无论民主还是专制，现代人类无一例外地生活在'国家'这一政治构建中。无政府状态（Anarchy）在现代已被视为灾难。",
+                "legacy": "早期国家的发明——税收、边境、法律代码（如汉谟拉比法典），至今仍是现代政治治理的核心组件。"
+            },
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                },
+                {
+                    "text": "文字起源",
+                    "url": "topic_writing.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "state_topic",
+                        "label": "国家起源",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_state_origin.html"
+                    },
+                    {
+                        "id": "surplus",
+                        "label": "剩余产品",
+                        "val": 25,
+                        "group": "econ",
+                        "url": "topic_surplus.html"
+                    },
+                    {
+                        "id": "writing",
+                        "label": "文字",
+                        "val": 20,
+                        "group": "tech",
+                        "url": "topic_writing.html"
+                    },
+                    {
+                        "id": "wittfogel",
+                        "label": "魏特夫",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_wittfogel.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "surplus",
+                        "target": "state_topic",
+                        "label": "物质基础"
+                    },
+                    {
+                        "source": "state_topic",
+                        "target": "writing",
+                        "label": "统治工具"
+                    },
+                    {
+                        "source": "wittfogel",
+                        "target": "state_topic",
+                        "label": "水利假说"
+                    }
+                ]
+            }
+        }
+    ]
+}

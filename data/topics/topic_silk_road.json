@@ -1,0 +1,133 @@
+{
+    "id": "topic_silk_road",
+    "title": "丝绸之路:连接古代世界的文明动脉",
+    "category": "经济贸易",
+    "year": "前2世纪—15世纪",
+    "word_count": 3300,
+    "summary": "丝绸之路（The Silk Road）是古代连接中国、中亚、西亚及欧洲的陆上贸易通道。它始于西汉张骞“凿空”西域，以丝绸贸易为主，兼有文化交流功能。丝绸之路不仅是商品的流通线，更是宗教、艺术、科技传播的桥梁，对东西方文明的演进产生了不可估量的影响。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "silkroad",
+                "label": "丝绸之路",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "zhangqian",
+                "label": "张骞",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "hanwudi",
+                "label": "汉武帝",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "changan",
+                "label": "长安",
+                "val": 12,
+                "group": "location"
+            },
+            {
+                "id": "rome",
+                "label": "古罗马",
+                "val": 12,
+                "group": "location"
+            },
+            {
+                "id": "buddhism",
+                "label": "佛教东传",
+                "val": 10,
+                "group": "culture"
+            },
+            {
+                "id": "papermaking",
+                "label": "造纸术西传",
+                "val": 10,
+                "group": "tech"
+            },
+            {
+                "id": "xiyu",
+                "label": "西域都护府",
+                "val": 10,
+                "group": "org"
+            }
+        ],
+        "edges": [
+            {
+                "source": "hanwudi",
+                "target": "zhangqian",
+                "label": "派遣"
+            },
+            {
+                "source": "zhangqian",
+                "target": "silkroad",
+                "label": "开辟(凿空)"
+            },
+            {
+                "source": "changan",
+                "target": "silkroad",
+                "label": "起点"
+            },
+            {
+                "source": "silkroad",
+                "target": "rome",
+                "label": "终点大秦"
+            },
+            {
+                "source": "silkroad",
+                "target": "buddhism",
+                "label": "传播路线"
+            },
+            {
+                "source": "silkroad",
+                "target": "papermaking",
+                "label": "传播路线"
+            },
+            {
+                "source": "hanwudi",
+                "target": "xiyu",
+                "label": "设立管辖"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "凿空之旅:张骞出使",
+            "content": "<p><strong>联络盟友的初衷：</strong>汉武帝初期，匈奴控制河西走廊，严重威胁西汉安全。为了联合被匈奴驱逐的大月氏共击匈奴，汉武帝于前138年派遣张骞出使西域。张骞途中被匈奴扣留十余年，持节不失，最终逃脱抵达大月氏，虽然未能达成军事联盟，但了解了西域各国风情。</p><p><strong>第二次出使：</strong>前119年，汉军击败匈奴，张骞再次出使，不仅打通了与乌孙等国的联系，还将西域的汗血马、葡萄、苜蓿、石榴等物种引入中原。司马迁称此次出使为“<strong>凿空</strong>”，意为开通了从无到有的道路。</p>"
+        },
+        {
+            "title": "路线图:穿越荒漠与高原",
+            "content": "<h4>陆上丝绸之路（主线）</h4><p>起点为<strong>长安</strong>（今西安），经河西走廊，到达敦煌。出玉门关（北道）或阳关（南道），穿越塔克拉玛干沙漠边缘，翻越帕米尔高原（葱岭），进入中亚、伊朗高原，最终到达地中海东岸及欧洲。</p><h4>海上丝绸之路</h4><p>汉代已初具规模，从广东徐闻、合浦出发。唐宋时期达到鼎盛，以广州、泉州为中心，连接东南亚、印度洋、波斯湾和东非海岸。瓷器成为主要海上贸易品，故又称“陶瓷之路”。</p>"
+        },
+        {
+            "title": "文明的对话:双向流动",
+            "content": "<p><strong>东传：</strong>西域的乐舞、绘画对中国艺术产生深远影响。更重要的是，<strong>佛教</strong>沿丝路传入中国，彻底改变了中国人的精神信仰和哲学体系。印度的天文历法、医药学也随之传入。</p><p><strong>西传：</strong>中国的<strong>丝绸</strong>成为罗马上层社会的奢侈品，甚至导致罗马黄金大量外流。中国的<strong>造纸术</strong>（唐战俘在大食传入）、印刷术、火药、指南针后来经阿拉伯人之手传入欧洲，推动了世界历史的进程。</p>"
+        },
+        {
+            "title": "历史遗产:全球化的雏形",
+            "content": "<p>丝绸之路是早期全球化的重要载体。它证明了不同文明可以通过贸易与对话实现共同繁荣。尽管随着奥斯曼帝国的崛起和新航路的开辟，陆上丝路逐渐衰落，但其探索精神永存。</p><p>2014年，“丝绸之路：长安-天山廊道的路网”被列入<strong>世界文化遗产</strong>。2013年，中国提出“一带一路”倡议，赋予了古丝路新的时代内涵。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "张骞",
+            "url": "topic_zhangqian.html"
+        },
+        {
+            "text": "汉武帝",
+            "url": "topic_hanwudi.html"
+        },
+        {
+            "text": "汉朝",
+            "url": "detail_han.html"
+        },
+        {
+            "text": "佛教",
+            "url": "topic_buddhism_china.html"
+        }
+    ]
+}

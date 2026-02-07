@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>种姓制度：神圣的枷锁 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#7C3AED', secondary: '#5B21B6', stone: '#475569', line: '#E2E8F0', // Purple theme for religion/mystery
+                        gold: '#B45309'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #F3E8FF;
+            border-left: 4px solid #7C3AED;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="detail_india.html"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回古印度</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 社会结构</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        社会阶层</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">种姓制度：神圣的枷锁
+                        <span class="block text-2xl text-stone-400 font-normal mt-2 italic">The Caste System</span>
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft text-justify">
+                        种姓制度是人类历史上最复杂、最严苛且持续时间最长的社会等级体系。它起源于雅利安人对印度土著的征服，最初基于肤色（Varna），后演化为基于职业和血统的精细分层（Jati）。这一制度不仅规定了一个人的社会地位、职业和婚姻对象，更通过“洁净”与“污秽”的宗教观念，渗透到印度人日常生活的每一个角落。
+                    </p>
+                </section>
+
+                <!-- 1. 瓦尔那体系 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="layers" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：原人的身体
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            在婆罗门教的核心经典《梨俱吠陀》的《原人歌》（Purusha Sukta）中，种姓的起源被神圣化了：宇宙巨人“原人”（Purusha）牺牲自己创造了世界：
+                        </p>
+                        <ul class="list-none space-y-4 my-6 bg-slate-50 p-6 rounded-xl">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">👄</span>
+                                <div>
+                                    <strong class="text-purple-700">婆罗门 (Brahmin)</strong>
+                                    <p class="text-sm">从原人的<strong>口</strong>中生出。代表语言和知识，因此他们是祭司和学者，是人与神之间的沟通者。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">💪</span>
+                                <div>
+                                    <strong class="text-red-700">刹帝利 (Kshatriya)</strong>
+                                    <p class="text-sm">从原人的<strong>双臂</strong>中生出。代表力量和权力，因此他们是国王和武士，负责保护国家。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">🦵</span>
+                                <div>
+                                    <strong class="text-yellow-700">吠舍 (Vaishya)</strong>
+                                    <p class="text-sm">从原人的<strong>双腿</strong>中生出。代表支撑和行走，因此他们是农、工、商，负责生产财富。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4">👣</span>
+                                <div>
+                                    <strong class="text-stone-700">首陀罗 (Shudra)</strong>
+                                    <p class="text-sm">从原人的<strong>双脚</strong>中生出。代表低下的位置，因此他们是奴仆，唯一职责是侍奉前三个种姓。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>
+                            这四个等级统称为“瓦尔那”（Varna，意为“颜色”）。前三个种姓被认为是“再生族”（Twice-born），有权通过成年礼（佩戴圣线）获得宗教上的第二次生命；而首陀罗是“一生族”，被排除在宗教生活之外。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. 种姓的现实运作：迦提 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="git-branch" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：从瓦尔那到迦提
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            虽然教科书常讲四大瓦尔那，但在现实生活中，真正起作用的是成千上万个亚种姓，称为<strong>“迦提”（Jati，意为“出身”）</strong>。
+                        </p>
+                        <div class="highlight-box">
+                            <h4 class="font-bold text-accent mb-2">🔒 封闭的内婚制集团</h4>
+                            <p class="text-sm m-0">
+                                每一个迦提通常对应特定的职业（如理发师种姓、金匠种姓、皮革匠种姓）。种姓制度的核心特征是<strong>内婚制（Endogamy）</strong>——你只能在自己的迦提内结婚。跨种姓的婚姻受到严厉惩罚，尤其是高种姓女子嫁给低种姓男子的“逆婚”，其后代会被视为最卑贱的杂种（昌达拉）。
+                            </p>
+                        </div>
+                        <p>
+                            通过职业世袭和内婚制，印度社会被切割成无数个互不流通的某种“细胞”。这种结构虽然极度压抑个人自由，但客观上形成了一种超稳定的社会结构，使得印度文明在屡次外族入侵下仍能保持文化基因不灭。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 3. 不可接触者 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="bell-off" class="w-8 h-8 text-stone-500 mr-3"></i>
+                        第三章：影子的污染
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            在四大种姓之外，还有一群生活在社会最边缘的人——<strong>“贱民”</strong>（Untouchables，今称达利特/Dalit）。
+                        </p>
+                        <p>
+                            婆罗门教认为，接触尸体、污物或杀生的职业是“不洁”的。从事这些职业的人（如扫厕所、处理尸体、制革）因此被视为彻底的污染源。在古代，他们必须住在村外，进村时要敲击木梆示警，因为连他们的影子投射到高种姓身上，都被视为一种严重的宗教玷污。
+                        </p>
+                        <p>
+                            这种极端的歧视激发了后世无数的改革运动，包括佛教的诞生，以及近现代甘地和安贝德卡尔的反种姓斗争。然而，种姓的幽灵至今仍徘徊在印度大地的上空。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="detail_india.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">古印度概览</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_buddhism.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">佛教及其反抗</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "caste", "label": "种姓制度", "val": 40, "group": "core", "url": "#"},
+                {"id": "brahmin", "label": "婆罗门(祭司)", "val": 30, "group": "class", "url": "#"},
+                {"id": "kshatriya", "label": "刹帝利(武士)", "val": 30, "group": "class", "url": "#"},
+                {"id": "vaishya", "label": "吠舍(平民)", "val": 25, "group": "class", "url": "#"},
+                {"id": "shudra", "label": "首陀罗(奴仆)", "val": 20, "group": "class", "url": "#"},
+                {"id": "dalit", "label": "贱民/达利特", "val": 20, "group": "outcast", "url": "#"},
+                {"id": "religion", "label": "婆罗门教", "val": 35, "group": "source", "url": "#"}
+            ],
+            "edges": [
+                {"source": "religion", "target": "caste", "label": "确立"},
+                {"source": "caste", "target": "brahmin", "label": "包含"},
+                {"source": "caste", "target": "kshatriya", "label": "包含"},
+                {"source": "caste", "target": "vaishya", "label": "包含"},
+                {"source": "caste", "target": "shudra", "label": "包含"},
+                {"source": "caste", "target": "dalit", "label": "排斥"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"古印度","url":"detail_india.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#7C3AED', nodeColor: '#7C3AED' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-accent', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

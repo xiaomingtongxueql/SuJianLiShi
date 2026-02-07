@@ -1,0 +1,216 @@
+{
+    "topics": [
+        {
+            "id": "topic_babylon",
+            "title": "古巴比伦 (Babylon)",
+            "type": "world",
+            "year": "约公元前1894年建国",
+            "summary": "巴比伦不仅是一个帝国，更是两河流域文明的代名词。从汉谟拉比的法典到尼布甲尼撒的空中花园，它代表了古代近东文化的最高峰。",
+            "content": [
+                {
+                    "title": "上帝之门",
+                    "text": "<p>巴比伦（Babylon）一词源于阿卡德语'Babilim'，意为<strong>'上帝之门'</strong>。这座位于幼发拉底河畔的城市，最初只是一个不起眼的小镇。公元前19世纪，阿摩利人在此建国。到了<strong>汉谟拉比</strong>时期（约前1792-前1750在位），巴比伦一跃成为整个两河流域的政治、经济和宗教中心。马尔杜克（Marduk）也从地方神晋升为众神之王。</p>"
+                },
+                {
+                    "title": "繁华与罪恶之都",
+                    "text": "<p>在西方文化传统（尤其是《圣经》）中，巴比伦常被描绘为奢华、淫乱和傲慢的象征（如'巴比伦大淫妇'、'巴别塔'）。但这恰恰反映了其在当时的无与伦比的繁荣。考古发现证实，巴比伦城拥有宏伟的游行大道（Ishtar Gate）、高达90米的埃特梅南基塔庙（Etemenanki，被认为是通天塔的原型）以及精密的水利灌溉系统。它是当时世界上最大的城市，也是各地商人和学者汇聚的国际大都会。</p>"
+                },
+                {
+                    "title": "天文学与数学成就",
+                    "text": "<p>巴比伦人在继承苏美尔文化的基础上，将科学推向了新高度。<strong>巴比伦天文学</strong>极其发达，他们详细记录了金星、木星的运行轨迹，能够准确预测日食和月食。为了计算天体运行，他们发展了高深的代数知识，熟练掌握二次方程的解法，并发现了'勾股定理'的一个特例（普林顿322号泥板）。古希腊的天文学和数学直接受益于巴比伦的遗产。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "文化地位",
+                    "desc": "古代两河流域文明的集大成者，'巴比伦'一词常被用来指代整个两河文明。"
+                },
+                {
+                    "title": "空中花园",
+                    "desc": "古代世界七大奇迹之一（虽未被考古直接证实），象征着巴比伦高超的建筑和水利技术。"
+                }
+            ],
+            "impact": {
+                "reality": "巴比伦陷落（公元前539年被波斯征服）标志着两河流域本土政权的终结，但其文化基因（历法、占星术）深深融入了波斯、希腊和罗马文明。",
+                "legacy": "在现代英语中，'Babylon'仍是繁华大都会或腐败体制的隐喻。鲍勃·马利的歌曲《Babylon System》即借此讽刺现代压迫制度。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "汉谟拉比法典",
+                    "url": "topic_hammurabi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "babylon_core",
+                        "label": "巴比伦",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_babylon.html"
+                    },
+                    {
+                        "id": "hammurabi",
+                        "label": "汉谟拉比",
+                        "val": 25,
+                        "group": "king",
+                        "url": "topic_hammurabi.html"
+                    },
+                    {
+                        "id": "nebu",
+                        "label": "尼布甲尼撒二世",
+                        "val": 25,
+                        "group": "king",
+                        "url": "topic_nebuchadnezzar.html"
+                    },
+                    {
+                        "id": "marduk",
+                        "label": "马尔杜克",
+                        "val": 20,
+                        "group": "god",
+                        "url": "topic_marduk.html"
+                    },
+                    {
+                        "id": "garden",
+                        "label": "空中花园",
+                        "val": 20,
+                        "group": "wonder",
+                        "url": "topic_hanging_gardens.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "hammurabi",
+                        "target": "babylon_core",
+                        "label": "建都"
+                    },
+                    {
+                        "source": "nebu",
+                        "target": "babylon_core",
+                        "label": "重建"
+                    },
+                    {
+                        "source": "nebu",
+                        "target": "garden",
+                        "label": "建造"
+                    },
+                    {
+                        "source": "babylon_core",
+                        "target": "marduk",
+                        "label": "崇拜"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_sumerians",
+            "title": "苏美尔文明 (Sumerian Civilization)",
+            "type": "world",
+            "year": "约公元前4500-1900年",
+            "summary": "苏美尔是人类历史上已知的最早文明，诞生于底格里斯河与幼发拉底河下游的冲积平原。他们创造了最早的城市、文字、学校和法律，被称为'文明的摇篮'。",
+            "content": [
+                {
+                    "title": "城邦的崛起：从乌鲁克到乌尔",
+                    "text": "<p>约公元前4000年，苏美尔经历了'城市革命'。<strong>乌鲁克（Uruk）</strong>成为当时世界上最大的城市，拥有庞大的城墙和高达12米的塔庙。苏美尔的政治形态是<strong>城邦（City-State）</strong>，每个城市都有自己的守护神和独立的统治者（Ensi或Lugal）。城邦之间为了争夺水源和土地经常爆发战争，这种内耗最终导致了苏美尔的衰落和被阿卡德人征服。</p>"
+                },
+                {
+                    "title": "神权与塔庙",
+                    "text": "<p>苏美尔社会是典型的<strong>神权政治（Theocracy）</strong>。城市的核心是宏伟的<strong>塔庙（Ziggurat）</strong>，不仅是祭祀中心，也是经济中心（负责粮食再分配）。苏美尔人认为人类生来就是为了服侍诸神，因此他们对神灵充满敬畏。每当洪水泛滥（两河洪水无常），他们便认为是神灵的惩罚，这造就了苏美尔文学中浓厚的悲观主义色彩（如《吉尔伽美什史诗》中对永生的绝望）。</p>"
+                },
+                {
+                    "title": "科技与发明",
+                    "text": "<p>苏美尔人的发明清单令人咋舌：他们发明了<strong>车轮</strong>（最早用于制陶，后用于战车）、<strong>帆船</strong>、<strong>犁</strong>以及<strong>60进制</strong>数学（至今影响着我们的时间和角度计算）。特别是60进制，他们能精确计算出平方根和立方根，甚至预测天文现象。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "最早的文明",
+                    "desc": "苏美尔被公认为世界最早的文明，符合'城市、文字、金属、礼仪建筑'四大标准。"
+                },
+                {
+                    "title": "环境影响",
+                    "desc": "两河洪水泛滥无常（不同于尼罗河的定期泛滥），导致了苏美尔人悲观的宗教观和对秩序的极度渴望。"
+                }
+            ],
+            "impact": {
+                "reality": "苏美尔文明奠定了两河流域接下来3000年的文化基调。阿卡德人、巴比伦人、亚述人虽然征服了苏美尔，但在文化上都全盘继承了苏美尔的遗产。",
+                "legacy": "60进制（1小时60分）、一周七天制、大洪水传说（诺亚方舟的原型），都是苏美尔人留给现代世界的直接遗产。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "楔形文字",
+                    "url": "topic_cuneiform.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔文明",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_sumerians.html"
+                    },
+                    {
+                        "id": "uruk",
+                        "label": "乌鲁克",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_uruk.html"
+                    },
+                    {
+                        "id": "ziggurat",
+                        "label": "塔庙",
+                        "val": 20,
+                        "group": "building",
+                        "url": "topic_ziggurat.html"
+                    },
+                    {
+                        "id": "gilgamesh",
+                        "label": "吉尔伽美什",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_gilgamesh.html"
+                    },
+                    {
+                        "id": "wheel",
+                        "label": "车轮",
+                        "val": 15,
+                        "group": "tech",
+                        "url": "topic_wheel.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sumer",
+                        "target": "uruk",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "ziggurat",
+                        "label": "建造"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "gilgamesh",
+                        "label": "史诗英雄"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "wheel",
+                        "label": "发明"
+                    }
+                ]
+            }
+        }
+    ]
+}

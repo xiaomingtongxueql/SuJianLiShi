@@ -1,0 +1,144 @@
+{
+    "id": "topic_shangyang",
+    "title": "商鞅变法:秦帝国的奠基石",
+    "category": "政治改革",
+    "year": "前356年—前338年",
+    "word_count": 3200,
+    "summary": "商鞅变法（Shang Yang Reform）是战国时期秦国进行的一场彻底的封建化改革。在秦孝公的支持下，商鞅分别于前356年和前350年两次实行变法。通过废井田、开阡陌、重农抑商、奖励耕战、推行县制等一系列措施，秦国迅速确立了封建制度，实现了富国强兵，为后来秦始皇统一六国奠定了坚实的政治、经济和军事基础。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "reform",
+                "label": "商鞅变法",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "xiaogong",
+                "label": "秦孝公",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "shangyang",
+                "label": "商鞅",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "fajia",
+                "label": "法家思想",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "land",
+                "label": "废井田",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "military",
+                "label": "奖励耕战",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "county",
+                "label": "推行县制",
+                "val": 10,
+                "group": "measure"
+            },
+            {
+                "id": "qin",
+                "label": "秦国崛起",
+                "val": 12,
+                "group": "impact"
+            },
+            {
+                "id": "unification",
+                "label": "统一六国",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "shangyang",
+                "target": "reform",
+                "label": "主持"
+            },
+            {
+                "source": "xiaogong",
+                "target": "reform",
+                "label": "支持"
+            },
+            {
+                "source": "reform",
+                "target": "fajia",
+                "label": "实践"
+            },
+            {
+                "source": "reform",
+                "target": "land",
+                "label": "经济措施"
+            },
+            {
+                "source": "reform",
+                "target": "military",
+                "label": "军事措施"
+            },
+            {
+                "source": "reform",
+                "target": "county",
+                "label": "政治措施"
+            },
+            {
+                "source": "reform",
+                "target": "qin",
+                "label": "导致"
+            },
+            {
+                "source": "qin",
+                "target": "unification",
+                "label": "奠基"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "时代背景:求变图存",
+            "content": "<p><strong>战国初期的困境：</strong>战国初期，魏国李悝变法、楚国吴起变法相继成功，国力大增。而地处西陲的秦国，因守旧落后，常被中原诸侯鄙视，甚至被拒于盟会之外。土地制度落后，贵族势力庞大，国库空虚，军队战斗力低下，秦国面临被东方六国瓜分的危险。</p><p><strong>秦孝公的决心：</strong>前361年，秦孝公即位。他深感国耻，发布了著名的《求贤令》：“宾客群臣有能出奇计强秦者，吾且尊官，与之分土。”这一求贤若渴的姿态，吸引了卫国人公孙鞅（即商鞅）入秦。经过“舌战群臣”，商鞅提出了“治世不一道，便国不法古”的改革理论，坚定了秦孝公变法的决心。</p>"
+        },
+        {
+            "title": "变法内容:雷霆万钧",
+            "content": "<h4>第一阶段（前356年）</h4><p>主要打击旧贵族特权，树立新法权威：</p><ul><li><strong>实行连坐法</strong>：十家为一伍，互相监督，一家犯法，九家检举，否则连坐。</li><li><strong>奖励耕战</strong>：生产粮食布帛多者免除徭役；废除世卿世禄，按军功授爵，宗室无军功者不得列入公族籍。</li><li><strong>焚烧诗书</strong>：强调法治，排斥儒家以古非今的言论。</li></ul><h4>第二阶段（前350年）</h4><p>全面确立封建制度：</p><ul><li><strong>废井田，开阡陌</strong>：废除井田制，承认土地私有，允许自由买卖。这是最根本的经济变革。</li><li><strong>推行县制</strong>：将乡邑合并为县，全国设31县，由国君直接委派县令管理。</li><li><strong>统一度量衡</strong>：颁布标准度量衡器，便利赋税征收和商品交换。</li><li><strong>迁都咸阳</strong>：摆脱旧贵族势力盘根错节的各种干扰。</li></ul>"
+        },
+        {
+            "title": "成效与代价:鲜血铸就的强国",
+            "content": "<p><strong>富国强兵：</strong>“行之十年，秦民大悦，道不拾遗，山无盗贼，家给人足。”秦国迅速成为战国七雄中实力最强的国家。军队战斗力极强，被称为“虎狼之师”。</p><p><strong>个人悲剧：</strong>前338年，秦孝公去世，太子即位（秦惠文王）。旧贵族诬告商鞅谋反。商鞅战败被杀，尸体被车裂（五马分尸）。虽然商鞅身死，但“秦法未败”，秦国依然坚持了变法路线。</p>"
+        },
+        {
+            "title": "历史评价:法家思想的巅峰",
+            "content": "<p>商鞅变法是中国历史上最彻底的一次改革。它不仅改变了秦国的命运，也决定了中国历史的走向。</p><p><strong>积极意义：</strong>它打破了贵族分封体制，建立了中央集权官僚制雏形；废除了奴隶制土地国有，确立了封建土地私有制。这种体制展现出极高的战争动员能力。</p><p><strong>消极影响：</strong>重农抑商政策阻碍了商品经济发展；严刑峻法造成了暴政传统；轻视教化导致秦朝文化底蕴不足，最终“二世而亡”。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "法家思想",
+            "url": "topic_fajia.html"
+        },
+        {
+            "text": "秦孝公",
+            "url": "topic_xiaogong.html"
+        },
+        {
+            "text": "春秋战国",
+            "url": "detail_warring.html"
+        },
+        {
+            "text": "郡县制",
+            "url": "topic_junxian.html"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "id": "detail_greece",
+    "type": "world",
+    "title": "古希腊:西方文明的摇篮",
+    "year": "BC 800 — BC 146",
+    "desc": "古希腊文明不是一个统一的帝国，而是一个由数百个城邦组成的文化共同体。它孕育了民主政治、哲学思辨、奥林匹克精神和古典艺术，奠定了西方文明的精神内核。",
+    "content": [
+        {
+            "title": "城邦时代:雅典与斯巴达",
+            "text": "<p>公元前8世纪，希腊城邦（Polis）兴起。<strong>雅典</strong>（Athens）以商业和海军著称，经过梭伦、克里斯提尼改革，在伯里克利时代达到<strong>直接民主</strong>的巅峰。<strong>斯巴达</strong>（Sparta）则是一个尚武的寡头制国家，实行严酷的军事化教育。这两个城邦的竞争与合作主导了希腊历史。</p>"
+        },
+        {
+            "title": "哲学的突破",
+            "text": "<p>古希腊最伟大的成就是在思想领域。<strong>苏格拉底</strong>探究伦理与真理，<strong>柏拉图</strong>构建理念论，<strong>亚里士多德</strong>集科学与逻辑之大成。这'希腊三贤'奠定了西方哲学的理性传统。</p>"
+        },
+        {
+            "title": "希腊化时代",
+            "text": "<p>亚历山大大帝东征将希腊文化传播到东方，开启了'希腊化时代'。希腊科学（阿基米德、欧几里得）与东方文化融合，产生了辉煌的成果。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "雅典民主",
+            "url": "topic_athens_democracy.html"
+        },
+        {
+            "text": "苏格拉底",
+            "url": "topic_socrates.html"
+        },
+        {
+            "text": "亚历山大大帝",
+            "url": "topic_alexander.html"
+        },
+        {
+            "text": "帕特农神庙",
+            "url": "topic_parthenon.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "greece",
+                "label": "古希腊",
+                "val": 30,
+                "group": "core",
+                "url": "detail_greece.html"
+            },
+            {
+                "id": "athens",
+                "label": "雅典",
+                "val": 25,
+                "group": "city",
+                "url": "topic_athens_democracy.html"
+            },
+            {
+                "id": "sparta",
+                "label": "斯巴达",
+                "val": 25,
+                "group": "city",
+                "url": "topic_sparta.html"
+            },
+            {
+                "id": "democracy",
+                "label": "民主政治",
+                "val": 20,
+                "group": "system",
+                "url": "topic_athens_democracy.html"
+            },
+            {
+                "id": "socrates",
+                "label": "苏格拉底",
+                "val": 20,
+                "group": "person",
+                "url": "topic_socrates.html"
+            },
+            {
+                "id": "alexander",
+                "label": "亚历山大",
+                "val": 20,
+                "group": "person",
+                "url": "topic_alexander.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "greece",
+                "target": "athens",
+                "label": "包含"
+            },
+            {
+                "source": "athens",
+                "target": "democracy",
+                "label": "创立"
+            },
+            {
+                "source": "greece",
+                "target": "socrates",
+                "label": "孕育"
+            },
+            {
+                "source": "alexander",
+                "target": "greece",
+                "label": "传播文化"
+            }
+        ]
+    }
+}

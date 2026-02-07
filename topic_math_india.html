@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印度的数学奇迹：从0到无限 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#2563EB', secondary: '#1D4ED8', stone: '#475569', line: '#E2E8F0', // Blue theme for science
+                        gold: '#CA8A04'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #EFF6FF;
+            border-left: 4px solid #3B82F6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="topic_gupta.html"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回笈多王朝</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 科学史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        笈多时代 · 科学革命</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">印度的数学奇迹：从0到无限
+                        <span class="block text-2xl text-stone-400 font-normal mt-2 italic">Indian Mathematics</span>
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft text-justify">
+                        爱因斯坦曾说：“我们欠印度人很多，因为他们教会了我们如何计数，没有这一点，大部分现代科学发现都是不可能的。”在笈多王朝的辉煌时代，印度数学家们做出了一系列改变世界的发明，其中最伟大的莫过于<strong>“0”的概念</strong>和<strong>十进位值制</strong>。
+                    </p>
+                </section>
+
+                <!-- 1. 无即是有：0的发明 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="circle" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：无即是有
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            在其他古文明中，“0”通常只表示空格或缺乏，但在印度哲学中，“空”（Shunya）具有深刻的形而上学意义。数学家<strong>婆罗摩笈多</strong>（Brahmagupta）首先将“0”定义为一个可以参与运算的数字（A
+                            - A = 0）。
+                        </p>
+                        <div class="highlight-box">
+                            <h4 class="font-bold text-accent mb-2">🔢 位值制 (Place Value System)</h4>
+                            <p class="text-sm m-0">
+                                更重要的是，印度人发明了<strong>十进位值制</strong>。在这个系统中，同一个数字根据其位置不同代表不同的数值（如11中的两个1分别代表10和1）。这比罗马数字（如
+                                MCMLXXXVIII）要简洁高效无数倍，为复杂的代数运算扫清了障碍。公元8世纪，通过阿拔斯王朝的哈里发，这套数字传入阿拉伯，后经西班牙传入欧洲，最终成为通用的“阿拉伯数字”。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 阿耶波多的智慧 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="calculator" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：阿耶波多的智慧
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            笈多时代最伟大的天文学家和数学家是<strong>阿耶波多</strong>（Aryabhata，476-550年）。在他的著作《阿耶波多历算书》中：
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>圆周率：</strong> 他计算出π ≈ 3.1416，精确到小数点后四位。</li>
+                            <li><strong>三角学：</strong> 他发明了正弦（sine）表，这是现代三角函数的雏形。</li>
+                            <li><strong>地动说：</strong> 他提出地球是球形的，并围绕地轴自转，从而解释了昼夜交替和恒星视运动。这比哥白尼早了整整一千年。</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="topic_gupta.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">笈多王朝</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="detail_india.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">古印度概览</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "math", "label": "印度数学", "val": 40, "group": "core", "url": "#"},
+                {"id": "zero", "label": "数字0", "val": 35, "group": "concept", "url": "#"},
+                {"id": "decimal", "label": "十进位制", "val": 30, "group": "concept", "url": "#"},
+                {"id": "aryabhata", "label": "阿耶波多", "val": 25, "group": "person", "url": "#"},
+                {"id": "pi", "label": "圆周率", "val": 20, "group": "concept", "url": "#"}
+            ],
+            "edges": [
+                {"source": "math", "target": "zero", "label": "发明"},
+                {"source": "math", "target": "decimal", "label": "发明"},
+                {"source": "aryabhata", "target": "math", "label": "贡献"},
+                {"source": "aryabhata", "target": "pi", "label": "计算"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"笈多王朝","url":"topic_gupta.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#2563EB', nodeColor: '#2563EB' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-accent', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

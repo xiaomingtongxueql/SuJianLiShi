@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平津战役: 北平和平解放的智慧 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js?v=2"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        1948年11月29日 — 1949年1月31日</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">平津战役:
+                        兵临城下的和平智慧</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        平津战役是三大战役的最后一战。东北野战军挥师入关，与华北军区部队联手，将傅作义集团分割包围在北平、天津、张家口等孤立据点。中共中央采取“先打两头，后取中间”的策略，以武力攻克天津为震慑，通过耐心细致的谈判，最终促成北平（今北京）和平解放。这座三千年古都得以完整保存，成为战争史上的文明佳话。
+                    </p>
+                    
+                </section>
+
+                <!-- 深度叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-gold mr-3"></i>
+                        战役全景深度解析
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">I.</span> 瓮中捉鳖：战略包围
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    为了防止傅作义集团南撤或西逃，毛泽东制定了“隔而不围”、“围而不打”的精妙战术。东北野战军秘密入关，突然出现在华北战场，切断了傅作义军西逃绥远和南撤海上的道路，完成了对平津地区的战略包围。傅作义成了“瓮中之鳖”。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">II.</span> 天津方式：以打促谈
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    为了打破傅作义的幻想，解放军首先集中兵力，仅用29小时就攻克了坚固设防的天津，全歼守敌13万人，俘虏天津警备司令陈长捷。天津的迅速失守，彻底打消了傅作义讨价还价的筹码，使他认识到顽抗只有死路一条。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">III.</span> 北平方式：古都新生
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    在中共地下党的努力争取和开明人士的斡旋下，面对大势已去的局面，傅作义顺应民意，接受了解放军提出的和平改编条件。
+                                </p>
+                                <p>
+                                    1949年1月31日，人民解放军浩浩荡荡开进北平城，受到市民热烈欢迎。北平和平解放，不仅保全了故宫、颐和园等珍贵古迹，保护了200万人民的生命财产，也为后来新中国定都北京创造了条件。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 专家视点 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="microscope" class="w-8 h-8 text-gold mr-3"></i>
+                        历史学视角：政治与军事的完美结合
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-gold shadow-sm">
+                            <h4 class="font-bold text-lg mb-2 text-primary">和平解放的典范</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                平津战役是军事打击与政治争取相结合的光辉典范。“北平方式”后来成为解决绥远、湖南、新疆等地国民党军队的重要参考，加速了全国解放的进程。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords" type="application/json">[{"text":"解放战争","url":"detail_liberation_war.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "pingjin", "label": "平津战役", "val": 40, "group": "core", "url": "topic_pingjin.html"},
+            {"id": "liberation", "label": "解放战争", "val": 30, "group": "event", "url": "detail_liberation_war.html"},
+            {"id": "fuzuoyi", "label": "傅作义", "val": 25, "group": "person", "url": "#"},
+            {"id": "beijing", "label": "北平和平解放", "val": 30, "group": "event", "url": "#"},
+             {"id": "tianjin", "label": "攻克天津", "val": 25, "group": "event", "url": "#"}
+        ],
+        "edges": [
+            {"source": "pingjin", "target": "liberation", "label": "三大战役"},
+            {"source": "fuzuoyi", "target": "pingjin", "label": "起义"},
+            {"source": "pingjin", "target": "beijing", "label": "结局"},
+            {"source": "pingjin", "target": "tianjin", "label": "震慑"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏朝：寻找最早的中国 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E2E8F0',
+                        bronze: '#895B1E', jade: '#577C66'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #FEFCE8;
+            border-left: 4px solid #B5A642;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-xia"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        约公元前2070年 — 前1600年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">夏朝：寻找最早的中国
+                        <span class="block text-2xl text-stone-400 font-normal mt-2 italic">The Xia Dynasty</span>
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft text-justify">
+                        夏朝是中国史书中记载的第一个世袭制朝代，它的建立标志着中国文明正式跨入了国家的门槛，“公天下”的原始民主被“家天下”的王权政治所取代。长期以来，西方学界曾因缺乏直接的文字（甲骨文之前）而对夏朝的存在持怀疑态度。然而，随着<strong>二里头遗址</strong>考古发掘的深入，一个拥有宏大宫殿、精美青铜礼器和复杂社会分工的广域王权国家实体，正逐渐从传说的迷雾中显露真容。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe src="https://player.bilibili.com/player.html?bvid=BV1tFbhzREat&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 1. 从禅让到世袭 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="crown" class="w-8 h-8 text-gold mr-3"></i>
+                        第一章：权力的私有化
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            根据《史记·夏本纪》记载，治水英雄<strong>大禹</strong>在晚年有意将首领之位传给辅助治水的益，但禹的儿子<strong>启</strong>凭借强大的政治资本和部族实力，在禹死后击败了益以及不满的各种氏族（如有扈氏），强行夺取了王位。
+                        </p>
+                        <div class="highlight-box">
+                            <h4 class="font-bold text-earth mb-2">🏛️ “家天下”的确立</h4>
+                            <p class="text-sm m-0">
+                                启的即位是中国政治制度史上的分水岭。它终结了尧舜时期“选贤与能”的部族联盟禅让制，确立了<strong>“父死子继，兄终弟及”</strong>的世袭王权。为此，启在钧台举行盛大宴会（钧台之享），以此确立天下共主的地位。尽管早期王权不稳（发生了“太康失国”和“少康中兴”），但以夏后氏为核心的王权统治结构最终被确立下来。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 二里头的证据 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="pickaxe" class="w-8 h-8 text-bronze mr-3"></i>
+                        第二章：考古视野下的夏
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            位于河南偃师的<strong>二里头遗址</strong>（约前1750-前1530年）被学术界广泛认为是夏朝中晚期的都城。这里的发现为夏朝的存在提供了坚实的物质证据：
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>最早的紫禁城：</strong> 发现了一号、二号大型夯土宫殿基址，其多进院落、中轴对称的布局成为后世中国宫廷建筑的范本。</li>
+                            <li><strong>最早的青铜礼器群：</strong> 出土了爵、斝等成套青铜酒器。青铜器的出现不只是技术的进步，更是礼制等级的象征（“藏礼于器”）。</li>
+                            <li><strong>最早的官营手工业：</strong> 遗址内有专门的绿松石作坊和铸铜作坊，显示王权对高端稀缺资源的绝对垄断。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 3. 国家机器的运转 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll-text" class="w-8 h-8 text-earth mr-3"></i>
+                        第三章：早期国家的治理
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            夏朝建立了一套初步的国家机器来管理社会。在法律方面，制定了旨在维护王权和私有制的刑法——<strong>“禹刑”</strong>。在历法方面，相传制定了中国最早的历法<strong>《夏小正》</strong>，它按十二个月的顺序记载了天象、物候和农事活动，反映了夏代农业文明的真实水平。
+                        </p>
+                        <p>
+                            夏朝的统治模式被描述为“内外服”制度的雏形：内服是夏后氏直接统治的王畿，外服则是臣服于夏的各方国部落。这种松散的联盟关系，也为后来商汤灭夏埋下了伏笔。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="topic_erlitou.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">二里头遗址</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_hereditary.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">世袭制确立</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_dayu.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">大禹治水</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "xia", "label": "夏朝", "val": 40, "group": "core", "url": "#"},
+                {"id": "erlitou", "label": "二里头文化", "val": 35, "group": "archaeology", "url": "topic_erlitou.html"},
+                {"id": "yu", "label": "大禹", "val": 25, "group": "person", "url": "topic_dayu.html"},
+                {"id": "qi", "label": "夏启", "val": 25, "group": "person", "url": "#"},
+                {"id": "hereditary", "label": "世袭制", "val": 30, "group": "system", "url": "topic_hereditary.html"},
+                {"id": "calendar", "label": "夏小正", "val": 20, "group": "culture", "url": "topic_xiaxiaozheng.html"},
+                {"id": "jie", "label": "商汤灭夏", "val": 20, "group": "event", "url": "topic_jie.html"}
+            ],
+            "edges": [
+                {"source": "xia", "target": "erlitou", "label": "考古实证"},
+                {"source": "yu", "target": "xia", "label": "奠基"},
+                {"source": "qi", "target": "hereditary", "label": "确立"},
+                {"source": "xia", "target": "calendar", "label": "历法"},
+                {"source": "jie", "target": "xia", "label": "终结"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"二里头","url":"topic_erlitou.html"},
+            {"text":"大禹","url":"topic_dayu.html"},
+            {"text":"世袭制","url":"topic_hereditary.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' });
+        }
+    </script>
+</body>
+
+</html>
+
+

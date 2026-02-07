@@ -1,0 +1,87 @@
+{
+    "id": "detail_egypt",
+    "type": "world",
+    "title": "古埃及:尼罗河的馈赠",
+    "year": "BC 3100",
+    "desc": "古希腊历史学家希罗多德说：'埃及是尼罗河的赠礼。' 法老建立起强大的中央集权国家，金字塔和木乃伊折射出他们对来世的渴望。",
+    "content": [
+        {
+            "title": "神权下的法老",
+            "text": "<p>法老（Pharaoh）被视为神在人间的代表（太阳神之子），掌握军政、宗教大权。<strong>金字塔</strong>（Pyramids）作为法老的陵墓，不仅展示了高超的建筑技术（如胡夫金字塔），更体现了国王无限的权力。狮身人面像则守护着这些永恒的居所。</p>"
+        },
+        {
+            "title": "象形文字与纸草",
+            "text": "<p>古埃及人发明了<strong>象形文字</strong>（Hieroglyphs），书写在纸草（Papyrus）上。这种文字长期无人能识，直到1799年罗塞塔石碑的发现，商博良才破译了其奥秘。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "法老",
+            "url": "topic_pharaoh.html"
+        },
+        {
+            "text": "金字塔",
+            "url": "topic_pyramid.html"
+        },
+        {
+            "text": "象形文字",
+            "url": "topic_hieroglyph.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "egypt",
+                "label": "古埃及",
+                "val": 30,
+                "group": "core",
+                "url": "detail_egypt.html"
+            },
+            {
+                "id": "nile",
+                "label": "尼罗河",
+                "val": 25,
+                "group": "geo",
+                "url": "topic_nile.html"
+            },
+            {
+                "id": "pharaoh",
+                "label": "法老",
+                "val": 25,
+                "group": "person",
+                "url": "topic_pharaoh.html"
+            },
+            {
+                "id": "pyramid",
+                "label": "金字塔",
+                "val": 20,
+                "group": "culture",
+                "url": "topic_pyramid.html"
+            },
+            {
+                "id": "hiero",
+                "label": "象形文字",
+                "val": 20,
+                "group": "culture",
+                "url": "topic_hieroglyph.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "nile",
+                "target": "egypt",
+                "label": "孕育"
+            },
+            {
+                "source": "pharaoh",
+                "target": "pyramid",
+                "label": "修建"
+            },
+            {
+                "source": "egypt",
+                "target": "hiero",
+                "label": "发明"
+            }
+        ]
+    }
+}

@@ -1,0 +1,380 @@
+{
+    "topics": [
+        {
+            "id": "topic_nile",
+            "title": "尼罗河 (The Nile River)",
+            "type": "world",
+            "year": "地理",
+            "summary": "尼罗河是埃及文明的真正缔造者。其定期的、可预测的泛滥不仅带来了肥沃的黑土（Kemet），更塑造了埃及人'循环与再生'的时间观和乐观的宗教性格。",
+            "content": [
+                {
+                    "title": "慷慨的泛滥",
+                    "text": "<p>与两河流域那喜怒无常的洪水不同，尼罗河的泛滥（Inundation）遵循着精确的年度周期。每年7月，来自埃塞俄比亚高原的洪水如约而至，9月达到高峰，11月退去，留下一层富含矿物质的淤泥。古埃及人将这一季节称为'阿赫特'（Akhet，泛滥季）。这种像钟表一样精准的自然节奏，让埃及人坚信宇宙秩序由于神意维持，而非处于混乱之中。</p>"
+                },
+                {
+                    "title": "红土地与黑土地",
+                    "text": "<p>埃及人将该国分为两部分：<strong>'黑土地'（Kemet）</strong>是尼罗河两岸肥沃的冲积平原，代表生命与秩序；而两边广袤的沙漠则是<strong>'红土地'（Deshret）</strong>，代表死亡与混乱（由赛特神统治）。尼罗河不仅是农业命脉，也是唯一的高速公路。由于河流向北流，而信风向南吹，埃及人只需扬帆即可逆流而上又顺流而下，极大地促进了上下埃及的统一。</p>"
+                },
+                {
+                    "title": "几何学的起源",
+                    "text": "<p>希罗多德指出，埃及的几何学（Geometry，意为'测地术'）起源于尼罗河泛滥。每年的洪水会冲毁田界，洪水退去后，法老的官员需要重新测量土地以便征税。这种实际需求催生了高超的测量技术和数学知识，后来这些知识被用于建造金字塔。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "环境决定论",
+                    "desc": "尼罗河的定期泛滥塑造了埃及文明乐观、追求永恒的宗教底色。"
+                },
+                {
+                    "title": "统一基础",
+                    "desc": "河流作为天然交通要道，大大降低了国家行政管理的成本，利于维持大一统。"
+                }
+            ],
+            "impact": {
+                "reality": "阿斯旺大坝的修建结束了数千年的自然泛滥周期，虽带来了电能，但也切断了沃土的来源。",
+                "legacy": "埃及历法（365天）直接基于尼罗河泛滥周期，是现代公历的源头。"
+            },
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                },
+                {
+                    "text": "法老",
+                    "url": "topic_pharaoh.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "nile_core",
+                        "label": "尼罗河",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_nile.html"
+                    },
+                    {
+                        "id": "egypt",
+                        "label": "埃及",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "detail_egypt.html"
+                    },
+                    {
+                        "id": "osiris",
+                        "label": "奥西里斯",
+                        "val": 20,
+                        "group": "god",
+                        "url": "topic_osiris.html"
+                    },
+                    {
+                        "id": "geometry",
+                        "label": "几何学",
+                        "val": 15,
+                        "group": "science",
+                        "url": "topic_geometry.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "nile_core",
+                        "target": "egypt",
+                        "label": "赠礼"
+                    },
+                    {
+                        "source": "nile_core",
+                        "target": "osiris",
+                        "label": "神化象征"
+                    },
+                    {
+                        "source": "nile_core",
+                        "target": "geometry",
+                        "label": "催生"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_pharaoh",
+            "title": "权力的化身：法老 (Pharaoh)",
+            "type": "world",
+            "year": "政治制度",
+            "summary": "法老不仅是埃及的国王，更是神在人间的肉身。他是沟通神界与人界的唯一中介，其首要职责是维护宇宙的真理与秩序（Ma'at）。",
+            "content": [
+                {
+                    "title": "神王合一",
+                    "text": "<p>'法老'（Pharaoh）一词原意为'大房子'（皇宫），后来演变为对国王的尊称。与美索不达米亚国王作为'神的代理人'不同，法老本人就是<strong>现世神</strong>（God-King）。他通常被视为太阳神拉（Ra）的儿子，死后则成为冥神奥西里斯。因为他是神，所以他的话就是法律（埃及没有留下像《汉谟拉比法典》那样的世俗法典，因为法老的口谕即最高法律）。</p>"
+                },
+                {
+                    "title": "维护玛阿特（Ma'at）",
+                    "text": "<p>法老权力的合法性来源于维护<strong>'玛阿特'（Ma'at）</strong>。玛阿特是一个复杂的概念，包含真理、正义、秩序和宇宙平衡。埃及人认为宇宙时刻面临回归混沌（Isfet）的威胁，只有法老通过正确的仪式和统治，才能确保太阳每天升起、尼罗河准时泛滥。因此，任何对法老的反叛不仅是政治罪，更是亵渎宇的宗教罪。</p>"
+                },
+                {
+                    "title": "复杂的王权象征",
+                    "text": "<p>法老的形象被严格规范化：他头戴<strong>双冠</strong>（Pschent，红冠代表下埃及，白冠代表上埃及），象征国家的统一；手持权杖（Heka，象征引导）和连枷（Nekhakha，象征惩罚）；额头上的眼镜蛇神（Uraeus）时刻准备向敌人喷火。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "神权政治极权",
+                    "desc": "法老集神权、军权、政权于一身，没有任何世俗力量能对其进行制约。"
+                },
+                {
+                    "title": "双冠",
+                    "desc": "上下埃及统一的最重要象征。"
+                }
+            ],
+            "impact": {
+                "reality": "这种高度集权的体制使得埃及能够调动全国资源修建金字塔神庙，但也容易导致王朝末期的僵化与腐败。",
+                "legacy": "法老形象成为古代专制王权的永恒符号，拉美西斯二世（Ozymandias）更是成为西方文学中权力虚无的象征。"
+            },
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                },
+                {
+                    "text": "金字塔",
+                    "url": "topic_pyramid.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "pharaoh_core",
+                        "label": "法老",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_pharaoh.html"
+                    },
+                    {
+                        "id": "maat",
+                        "label": "玛阿特",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_maat.html"
+                    },
+                    {
+                        "id": "ramses",
+                        "label": "拉美西斯二世",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_ramses.html"
+                    },
+                    {
+                        "id": "khufu",
+                        "label": "胡夫",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_khufu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "pharaoh_core",
+                        "target": "maat",
+                        "label": "维护"
+                    },
+                    {
+                        "source": "ramses",
+                        "target": "pharaoh_core",
+                        "label": "著名代表"
+                    },
+                    {
+                        "source": "khufu",
+                        "target": "pharaoh_core",
+                        "label": "著名代表"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_pyramid",
+            "title": "通天阶梯：金字塔 (The Pyramids)",
+            "type": "world",
+            "year": "古王国时期",
+            "summary": "金字塔不仅是法老的陵墓，更是一台'复活机器'。它象征着创世之初的原始土丘（Benben），旨在协助法老的灵魂升入天际，与众神汇合。",
+            "content": [
+                {
+                    "title": "从马斯塔巴到金字塔",
+                    "text": "<p>金字塔的演变清晰可见：最初法老葬在平顶的<strong>马斯塔巴</strong>（Mastaba）中。第三王朝时，宰相伊姆霍特普（Imhotep）通过层叠马斯塔巴，创造了<strong>阶梯金字塔</strong>（Step Pyramid），象征通往天空的阶梯。到了第四王朝，斯尼夫鲁通过多次试错（弯曲金字塔），终于建成了表面平滑的'真金字塔'，完美象征着太阳的光芒。</p>"
+                },
+                {
+                    "title": "吉萨建筑奇迹",
+                    "text": "<p>吉萨高地上的三大金字塔（胡夫、哈夫拉、孟卡拉）代表了这一技术的巅峰。<strong>胡夫金字塔</strong>由230万块巨石堆砌而成，重达600万吨，在埃菲尔铁塔建成前的4000年里一直是世界最高建筑。其内部通道对齐北极星，外部原本包裹着闪耀的白色石灰石。这绝非奴隶在皮鞭下完成的，而是由全国征召的自由农民在泛滥季（无法耕作时）出于宗教虔诚建造的公共工程。</p>"
+                },
+                {
+                    "title": "金字塔铭文",
+                    "text": "<p>第五王朝后的金字塔规模变小，但内部刻满了<strong>《金字塔经》</strong>（Pyramid Texts）。这是人类最早的宗教文献，包含咒语和祷词，旨在保护死去的法老在冥界（Duat）通过审判，最终变成星星（Indestructible Stars）。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "宗教功能",
+                    "desc": "既是陵墓，也是协助法老升天、维持宇宙秩序的宗教机器。"
+                },
+                {
+                    "title": "社会动员",
+                    "desc": "金字塔的建造反映了古埃及极高的社会组织能力和国家汲取能力。"
+                }
+            ],
+            "impact": {
+                "reality": "巨大的资源消耗最终拖垮了古王国，导致了第一中间期的混乱。",
+                "legacy": "金字塔成为永恒的代名词（'人类惧怕时间，时间惧怕金字塔'），也是神秘主义和外星人理论的重灾区。"
+            },
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                },
+                {
+                    "text": "法老",
+                    "url": "topic_pharaoh.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "pyramid_core",
+                        "label": "金字塔",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_pyramid.html"
+                    },
+                    {
+                        "id": "giza",
+                        "label": "吉萨高地",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_giza.html"
+                    },
+                    {
+                        "id": "imhotep",
+                        "label": "伊姆霍特普",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_imhotep.html"
+                    },
+                    {
+                        "id": "sphinx",
+                        "label": "狮身人面像",
+                        "val": 20,
+                        "group": "object",
+                        "url": "topic_sphinx.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "pyramid_core",
+                        "target": "giza",
+                        "label": "所在地"
+                    },
+                    {
+                        "source": "imhotep",
+                        "target": "pyramid_core",
+                        "label": "设计"
+                    },
+                    {
+                        "source": "sphinx",
+                        "target": "pyramid_core",
+                        "label": "守护"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_hieroglyph",
+            "title": "圣书字：象形文字 (Hieroglyphs)",
+            "type": "world",
+            "year": "约公元前3200年",
+            "summary": "古埃及象形文字被称为'圣书字'（Medu Neter，神的话语）。它集表意、表音和部首于一体，主要用于神庙和纪念碑，兼具艺术美感与记录功能。",
+            "content": [
+                {
+                    "title": "神的话语",
+                    "text": "<p>象形文字诞生于前王朝时期（如那尔迈调色板）。与楔形文字的抽象化不同，埃及象形文字始终保持着图画特征：鹰就是鹰，蛇就是蛇。但这不代表它只是简单的图画。它拥有复杂的语法系统，包括单辅音（类似字母）、双辅音和三辅音符号。埃及人认为文字具有魔力，书写某个人的名字就能让他永生，抹去名字则是最极刑。</p>"
+                },
+                {
+                    "title": "罗塞塔石碑",
+                    "text": "<p>随着基督教的传播，象形文字在公元4世纪失传。直到1799年拿破仑远征埃及发现<strong>罗塞塔石碑</strong>（Rosetta Stone），上面刻有同一段诏书的三种文字：象形文字、世俗体（Demotic）和古希腊文。1822年，法国天才<strong>商博良</strong>（Champollion）利用这把'钥匙'，通过解读托勒密等国王的名字圈（Cartouche），成功破译了象形文字，重新开启了古埃及的大门。</p>"
+                },
+                {
+                    "title": "书写载体",
+                    "text": "<p>虽然神庙墙壁上刻满了圣书体，但在日常行政中，埃及人使用更草率的'僧侣体'（Hieratic）和'世俗体'书写在<strong>纸草</strong>（Papyrus）上。纸草出口到地中海各地，成为古代世界最主要的纸张来源（英语Paper一词即源于Papyrus）。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "罗塞塔石碑",
+                    "desc": "破译古埃及文字的关键文物，现藏大英博物馆。"
+                },
+                {
+                    "title": "特征",
+                    "desc": "长期保持图画形式，主要用于宗教和皇家铭文；日常使用僧侣体/世俗体。"
+                }
+            ],
+            "impact": {
+                "reality": "象形文字中的单辅音符号启发了腓尼基字母，后者是所有现代字母文字（包括英语字母）的共同祖先。",
+                "legacy": "其神秘的视觉形象深刻影响了现代流行文化（如《木乃伊》电影），成为异域神秘力量的代名词。"
+            },
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                },
+                {
+                    "text": "罗塞塔石碑",
+                    "url": "topic_rosetta.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "hiero_core",
+                        "label": "象形文字",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_hieroglyph.html"
+                    },
+                    {
+                        "id": "rosetta",
+                        "label": "罗塞塔石碑",
+                        "val": 25,
+                        "group": "object",
+                        "url": "topic_rosetta.html"
+                    },
+                    {
+                        "id": "champollion",
+                        "label": "商博良",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_champollion.html"
+                    },
+                    {
+                        "id": "papyrus",
+                        "label": "纸草",
+                        "val": 15,
+                        "group": "object",
+                        "url": "topic_papyrus.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "rosetta",
+                        "target": "hiero_core",
+                        "label": "破译钥匙"
+                    },
+                    {
+                        "source": "champollion",
+                        "target": "hiero_core",
+                        "label": "破译"
+                    },
+                    {
+                        "source": "hiero_core",
+                        "target": "papyrus",
+                        "label": "书写载体"
+                    }
+                ]
+            }
+        }
+    ]
+}

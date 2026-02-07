@@ -1,0 +1,96 @@
+{
+    "id": "detail_reform_open",
+    "type": "china",
+    "title": "改革开放:富起来到强起来",
+    "year": "1978年至今",
+    "desc": "以十一届三中全会为标志，中国进入社会主义现代化建设新时期。通过对内改革、对外开放，中国综合国力显著增强。",
+    "content": [
+        {
+            "title": "伟大的转折",
+            "text": "<p>1978年召开的<strong>十一届三中全会</strong>，作出了把党和国家的工作中心转移到经济建设上来，实行改革开放的历史性决策。农村实行家庭联产承包责任制，城市进行国有企业改革。</p>"
+        },
+        {
+            "title": "走向世界",
+            "text": "<p>建立了经济特区（如深圳），形成了全方位、多层次、宽领域的对外开放格局。2001年加入世界贸易组织（WTO），标志着中国对外开放进入新阶段。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "十一届三中全会",
+            "url": "topic_third_plenary.html"
+        },
+        {
+            "text": "邓小平",
+            "url": "topic_dengxiaoping.html"
+        },
+        {
+            "text": "深圳特区",
+            "url": "topic_shenzhen.html"
+        },
+        {
+            "text": "WTO",
+            "url": "topic_wto.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "reform",
+                "label": "改革开放",
+                "val": 30,
+                "group": "core",
+                "url": "detail_reform_open.html"
+            },
+            {
+                "id": "deng",
+                "label": "邓小平",
+                "val": 25,
+                "group": "person",
+                "url": "topic_dengxiaoping.html"
+            },
+            {
+                "id": "shenzhen",
+                "label": "深圳特区",
+                "val": 20,
+                "group": "place",
+                "url": "topic_shenzhen.html"
+            },
+            {
+                "id": "plenary",
+                "label": "三中全会",
+                "val": 20,
+                "group": "event",
+                "url": "topic_third_plenary.html"
+            },
+            {
+                "id": "wto",
+                "label": "入世",
+                "val": 20,
+                "group": "event",
+                "url": "topic_wto.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "deng",
+                "target": "reform",
+                "label": "总设计师"
+            },
+            {
+                "source": "plenary",
+                "target": "reform",
+                "label": "序幕"
+            },
+            {
+                "source": "reform",
+                "target": "shenzhen",
+                "label": "窗口"
+            },
+            {
+                "source": "reform",
+                "target": "wto",
+                "label": "深化"
+            }
+        ]
+    }
+}

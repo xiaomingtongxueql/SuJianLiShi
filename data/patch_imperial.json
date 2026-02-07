@@ -1,0 +1,903 @@
+{
+    "details": [
+        {
+            "id": "detail_qin",
+            "type": "china",
+            "title": "秦朝:大一统的开创",
+            "year": "BC 221 — BC 207",
+            "desc": "中国历史上第一个统一的多民族封建国家。秦始皇建立了皇帝制度，推行郡县制，统一度量衡和文字，奠定了中国两千多年政治制度的基本格局。",
+            "content": [
+                {
+                    "title": "千古一帝",
+                    "text": "<p>公元前221年，秦王嬴政灭六国，建立秦朝，定都咸阳。他自称'始皇帝'，确立了皇权至高无上的地位。在中央实行三公九卿制，在地方推行<strong>郡县制</strong>，加强中央集权。</p>"
+                },
+                {
+                    "title": "统一与暴政",
+                    "text": "<p>秦始皇统一了文字（小篆）、货币（圆形方孔钱）和度量衡，修筑了长城和灵渠。但繁重的赋税、兵役和严酷的刑法激起了民愤，最终爆发了中国历史上第一次农民大起义——陈胜吴广起义。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "郡县制",
+                    "url": "topic_junxian.html"
+                },
+                {
+                    "text": "小篆",
+                    "url": "topic_xiaozhuan.html"
+                },
+                {
+                    "text": "焚书坑儒",
+                    "url": "topic_fenshu.html"
+                },
+                {
+                    "text": "长城",
+                    "url": "topic_changcheng.html"
+                },
+                {
+                    "text": "商鞅变法",
+                    "url": "topic_shangyang.html"
+                },
+                {
+                    "text": "陈胜吴广起义",
+                    "url": "topic_chenshengguang.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "qin",
+                        "label": "秦朝",
+                        "val": 10,
+                        "group": "core",
+                        "url": "detail_qin.html"
+                    },
+                    {
+                        "id": "yingzheng",
+                        "label": "秦始皇",
+                        "val": 9,
+                        "group": "person",
+                        "url": "topic_qinshihuang.html"
+                    },
+                    {
+                        "id": "lisi",
+                        "label": "李斯",
+                        "val": 7,
+                        "group": "person",
+                        "url": "topic_lisi.html"
+                    },
+                    {
+                        "id": "junxian",
+                        "label": "郡县制",
+                        "val": 8,
+                        "group": "system",
+                        "url": "topic_junxian.html"
+                    },
+                    {
+                        "id": "shangyang",
+                        "label": "商鞅",
+                        "val": 6,
+                        "group": "person",
+                        "url": "topic_shangyang.html"
+                    },
+                    {
+                        "id": "huhuai",
+                        "label": "秦二世",
+                        "val": 5,
+                        "group": "person",
+                        "url": "topic_qinershi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "qin",
+                        "target": "yingzheng",
+                        "name": "建立"
+                    },
+                    {
+                        "source": "yingzheng",
+                        "target": "lisi",
+                        "name": "任用"
+                    },
+                    {
+                        "source": "qin",
+                        "target": "junxian",
+                        "name": "制度"
+                    },
+                    {
+                        "source": "shangyang",
+                        "target": "qin",
+                        "name": "奠基"
+                    },
+                    {
+                        "source": "qin",
+                        "target": "huhuai",
+                        "name": "灭亡"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_han",
+            "type": "china",
+            "title": "汉朝:强盛与自信",
+            "year": "BC 202 — AD 220",
+            "desc": "分西汉和东汉。汉朝是中国历史上最强盛的朝代之一，开辟了丝绸之路，确立了儒学正统地位，使得'汉'成为中华民族的代称。",
+            "content": [
+                {
+                    "title": "大一统的巩固",
+                    "text": "<p>汉武帝雄才大略，政治上颁布'推恩令'削弱诸侯；思想上'罢黜百家，独尊儒术'；军事上北击匈奴。西汉国力达到鼎盛。</p>"
+                },
+                {
+                    "title": "史学双璧",
+                    "text": "<p>司马迁的《史记》（纪传体通史）与班固的《汉书》（纪传体断代史），不仅是史学巨著，也是文学经典，开创了中国史学的优良传统。</p>"
+                },
+                {
+                    "title": "汉文化圈",
+                    "text": "<p>汉朝的强盛使得'汉'成为中华民族的代称。汉字、汉学、汉衣冠，构成了中华文明最鲜明的文化符号。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "推恩令",
+                    "url": "topic_tuien.html"
+                },
+                {
+                    "text": "独尊儒术",
+                    "url": "topic_duzunrushu.html"
+                },
+                {
+                    "text": "丝绸之路",
+                    "url": "topic_silkroad.html"
+                },
+                {
+                    "text": "司马迁",
+                    "url": "topic_simaqian.html"
+                },
+                {
+                    "text": "造纸术",
+                    "url": "topic_papermaking.html"
+                },
+                {
+                    "text": "张骞",
+                    "url": "topic_zhangqian.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "han",
+                        "label": "汉朝",
+                        "val": 10,
+                        "group": "core",
+                        "url": "detail_han.html"
+                    },
+                    {
+                        "id": "liubang",
+                        "label": "刘邦",
+                        "val": 8,
+                        "group": "person",
+                        "url": "topic_liubang.html"
+                    },
+                    {
+                        "id": "hanwudi",
+                        "label": "汉武帝",
+                        "val": 9,
+                        "group": "person",
+                        "url": "topic_hanwudi.html"
+                    },
+                    {
+                        "id": "liuxiu",
+                        "label": "刘秀",
+                        "val": 8,
+                        "group": "person",
+                        "url": "topic_guangwudi.html"
+                    },
+                    {
+                        "id": "simaqian",
+                        "label": "司马迁",
+                        "val": 7,
+                        "group": "person",
+                        "url": "topic_simaqian.html"
+                    },
+                    {
+                        "id": "zhangqian",
+                        "label": "张骞",
+                        "val": 7,
+                        "group": "person",
+                        "url": "topic_zhangqian.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "han",
+                        "target": "liubang",
+                        "name": "建立"
+                    },
+                    {
+                        "source": "han",
+                        "target": "hanwudi",
+                        "name": "鼎盛"
+                    },
+                    {
+                        "source": "han",
+                        "target": "liuxiu",
+                        "name": "中兴"
+                    },
+                    {
+                        "source": "han",
+                        "target": "simaqian",
+                        "name": "修史"
+                    },
+                    {
+                        "source": "han",
+                        "target": "zhangqian",
+                        "name": "出使"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_three_kingdoms",
+            "type": "china",
+            "title": "三国鼎立:英雄的时代",
+            "year": "220年 — 280年",
+            "desc": "东汉末年军阀混战，最终形成魏、蜀、吴三国鼎立的局面。虽然是分裂时期，但也是英雄辈出、局部经济得以发展的时期。",
+            "content": [
+                {
+                    "title": "三分天下",
+                    "text": "<p>208年<strong>赤壁之战</strong>后，曹操退守北方，孙权据有江东，刘备占据荆益。220年曹丕称帝（魏），221年刘备称帝（蜀），229年孙权称帝（吴），三国鼎立局面正式形成。</p>"
+                },
+                {
+                    "title": "区域开发",
+                    "text": "<p>魏国重视农业水利（屯田），蜀国开发西南（诸葛亮治蜀），吴国开发江南并造船出海（卫温到达台湾），促进了各地的经济发展和民族融合。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "赤壁之战",
+                    "url": "topic_chibi.html"
+                },
+                {
+                    "text": "诸葛亮",
+                    "url": "topic_zhuge.html"
+                },
+                {
+                    "text": "曹操",
+                    "url": "topic_caocao.html"
+                },
+                {
+                    "text": "九品中正制",
+                    "url": "topic_jiupin.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "threekingdoms",
+                        "label": "三国",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_three_kingdoms.html"
+                    },
+                    {
+                        "id": "wei",
+                        "label": "魏(曹)",
+                        "val": 25,
+                        "group": "faction_wei",
+                        "url": "topic_caocao.html"
+                    },
+                    {
+                        "id": "shu",
+                        "label": "蜀(刘)",
+                        "val": 25,
+                        "group": "faction_shu",
+                        "url": "topic_liubei.html"
+                    },
+                    {
+                        "id": "wu",
+                        "label": "吴(孙)",
+                        "val": 25,
+                        "group": "faction_wu",
+                        "url": "topic_sunquan.html"
+                    },
+                    {
+                        "id": "caocao",
+                        "label": "曹操",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_caocao.html"
+                    },
+                    {
+                        "id": "liubei",
+                        "label": "刘备",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_liubei.html"
+                    },
+                    {
+                        "id": "sunquan",
+                        "label": "孙权",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_sunquan.html"
+                    },
+                    {
+                        "id": "zhugeliang",
+                        "label": "诸葛亮",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_zhuge.html"
+                    },
+                    {
+                        "id": "sima",
+                        "label": "司马懿",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_simayi.html"
+                    },
+                    {
+                        "id": "chibi",
+                        "label": "赤壁之战",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_chibi.html"
+                    },
+                    {
+                        "id": "jiupin",
+                        "label": "九品中正制",
+                        "val": 15,
+                        "group": "system",
+                        "url": "topic_jiupin.html"
+                    },
+                    {
+                        "id": "jin",
+                        "label": "西晋",
+                        "val": 20,
+                        "group": "nation",
+                        "url": "topic_western_jin.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "caocao",
+                        "target": "wei",
+                        "label": "奠基"
+                    },
+                    {
+                        "source": "liubei",
+                        "target": "shu",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "sunquan",
+                        "target": "wu",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "liubei",
+                        "target": "zhugeliang",
+                        "label": "三顾茅庐"
+                    },
+                    {
+                        "source": "liubei",
+                        "target": "sunquan",
+                        "label": "联盟"
+                    },
+                    {
+                        "source": "chibi",
+                        "target": "threekingdoms",
+                        "label": "奠定鼎立"
+                    },
+                    {
+                        "source": "wei",
+                        "target": "jiupin",
+                        "label": "实行"
+                    },
+                    {
+                        "source": "sima",
+                        "target": "wei",
+                        "label": "篡权"
+                    },
+                    {
+                        "source": "jin",
+                        "target": "threekingdoms",
+                        "label": "统一"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_weijin",
+            "type": "china",
+            "title": "魏晋南北朝:乱世中的融合",
+            "year": "220年 — 589年",
+            "desc": "这是一个政权更迭频繁的乱世，也是民族大融合与文化精神大解放的时代。九品中正制的确立、江南的开发、佛教的兴盛以及士族文化的繁荣是这一时期的显著特征。",
+            "content": [
+                {
+                    "title": "政治:从九品中正到门阀政治",
+                    "text": "<p>曹魏创立<strong>九品中正制</strong>，初衷是选拔人才，后来逐渐演变成'上品无寒门，下品无势族'的工具，形成了特殊的<strong>门阀士族</strong>政治。王与马共天下是这一政治格局的典型写照。</p>"
+                },
+                {
+                    "title": "经济:江南的开发",
+                    "text": "<p>由于北方战乱，大量人口南迁（衣冠南渡），带去了先进的生产技术和劳动力。江南地区得到大规模开发，为后来经济重心的南移奠定了基础。</p>"
+                },
+                {
+                    "title": "民族:胡汉融合",
+                    "text": "<p>五胡入华虽然带来了战乱，但也促进了深度的民族融合。<strong>北魏孝文帝改革</strong>（迁都洛阳、汉化政策）是这一融合进程的高峰，为隋唐大一统奠定了基础。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "九品中正制",
+                    "url": "topic_jiupin.html"
+                },
+                {
+                    "text": "孝文帝改革",
+                    "url": "topic_xiaowendi.html"
+                },
+                {
+                    "text": "兰亭序",
+                    "url": "topic_lanting.html"
+                },
+                {
+                    "text": "祖冲之",
+                    "url": "topic_zuchongzhi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "weijin",
+                        "label": "魏晋南北朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_weijin.html"
+                    },
+                    {
+                        "id": "jiupin",
+                        "label": "九品中正制",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_jiupin.html"
+                    },
+                    {
+                        "id": "xiaowen",
+                        "label": "孝文帝",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_xiaowendi.html"
+                    },
+                    {
+                        "id": "buddhism",
+                        "label": "佛教兴盛",
+                        "val": 20,
+                        "group": "religion",
+                        "url": "topic_buddhism_china.html"
+                    },
+                    {
+                        "id": "art",
+                        "label": "魏晋风度",
+                        "val": 15,
+                        "group": "culture",
+                        "url": "topic_weijinfengdu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "weijin",
+                        "target": "jiupin",
+                        "label": "实行"
+                    },
+                    {
+                        "source": "xiaowen",
+                        "target": "weijin",
+                        "label": "改革"
+                    },
+                    {
+                        "source": "weijin",
+                        "target": "art",
+                        "label": "孕育"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_qinshihuang",
+            "title": "秦始皇 (Qin Shi Huang)",
+            "type": "china",
+            "summary": "嬴政，中国历史上第一位皇帝。他灭六国，建立中央集权制度，对中国历史产生了深远影响。",
+            "sections": [
+                {
+                    "title": "功过千秋",
+                    "content": "<p>他创建的皇帝制和郡县制影响了中国随后的两千多年。他虽然推行暴政，但在统一中国、统一文化方面的贡献不可磨灭。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "秦朝",
+                    "url": "detail_qin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_lisi",
+            "title": "李斯 (Li Si)",
+            "type": "china",
+            "summary": "秦代著名的政治家、文学家和书法家。协助秦始皇统一天下，主持制定了由于郡县制、小篆等。",
+            "sections": [
+                {
+                    "title": "法家名相",
+                    "content": "<p>李斯主张以法治国，坚决废除分封。他的《谏逐客书》是千古名篇。他也是小篆（秦篆）的创始人之一。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "秦朝",
+                    "url": "detail_qin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_qinershi",
+            "title": "秦二世 (Qin Er Shi)",
+            "type": "china",
+            "summary": "胡亥，秦始皇少子。他在赵高指使下篡位，实行暴政，导致秦朝迅速灭亡。",
+            "sections": [
+                {
+                    "title": "指鹿为马",
+                    "content": "<p>他在位期间，赵高专权。由于刑法更加严酷，最终引发了大规模的农民起义。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "秦朝",
+                    "url": "detail_qin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_liubang",
+            "title": "刘邦 (Liu Bang)",
+            "type": "china",
+            "summary": "汉高祖，西汉开国皇帝。出身平民，在楚汉战争中击败项羽，统一天下。",
+            "sections": [
+                {
+                    "title": "布衣天子",
+                    "content": "<p>刘邦知人善任，重用张良、萧何、韩信等人才（'汉初三杰'）。他废除秦朝苛法，约法三章，深得民心。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_hanwudi",
+            "title": "汉武帝 (Emperor Wu of Han)",
+            "type": "china",
+            "summary": "刘彻，西汉第七位皇帝。他在位期间，西汉国力达到极盛，开创了'汉武盛世'。",
+            "sections": [
+                {
+                    "title": "雄才大略",
+                    "content": "<p>汉武帝在政治、经济、军事、文化等方面进行了一系列大刀阔斧的改革。通过'推恩令'解决了诸侯王问题，通过'罢黜百家，独尊儒术'确立了儒家思想的正统地位。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_guangwudi",
+            "title": "光武帝 (Emperor Guangwu)",
+            "type": "china",
+            "summary": "刘秀，东汉开国皇帝。在西汉末年战乱中起兵，建立东汉，史称'光武中兴'。",
+            "sections": [
+                {
+                    "title": "柔道治国",
+                    "content": "<p>刘秀以柔道治天下，释放奴婢，减轻赋税，裁并机构，使社会经济得到恢复和发展。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_caocao",
+            "title": "曹操 (Cao Cao)",
+            "type": "china",
+            "summary": "东汉末年杰出的政治家、军事家、文学家，曹魏政权的奠基人。",
+            "sections": [
+                {
+                    "title": "治世之能臣",
+                    "content": "<p>曹操挟天子以令诸侯，统一了北方。他推行屯田，恢复经济。其诗作《短歌行》、《龟森寿》气魄雄伟。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_liubei",
+            "title": "刘备 (Liu Bei)",
+            "type": "china",
+            "summary": "蜀汉开国皇帝，以弘毅宽厚知人待士著称。",
+            "sections": [
+                {
+                    "title": "仁义之君",
+                    "content": "<p>刘备坚持以仁义号召天下，三顾茅庐请出诸葛亮，联合孙权在赤壁大败曹操，最终在成都称帝，延续汉室血脉。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sunquan",
+            "title": "孙权 (Sun Quan)",
+            "type": "china",
+            "summary": "吴国建立者，据有江东六郡八十一州。",
+            "sections": [
+                {
+                    "title": "少年英主",
+                    "content": "<p>孙权善于用人，任用周瑜、鲁肃、陆逊等良将。他开发江南，发展造船业，派卫温到达台湾（夷洲）。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_simayi",
+            "title": "司马懿 (Sima Yi)",
+            "type": "china",
+            "summary": "曹魏重臣，西晋王朝的奠基人。善谋奇策，多次抵御诸葛亮北伐。",
+            "sections": [
+                {
+                    "title": "高平陵之变",
+                    "content": "<p>司马懿发动高平陵政变，掌握了曹魏大权。其孙司马炎最终建立了西晋，统一了三国。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_western_jin",
+            "title": "西晋 (Western Jin)",
+            "type": "china",
+            "summary": "司马炎建立的朝代，短暂统一了中国。因八王之乱迅速衰落。",
+            "sections": [
+                {
+                    "title": "昙花一现",
+                    "content": "<p>西晋结束了汉末以来的分裂局面，但统治阶级奢侈腐败。八王之乱耗尽了国力，导致五胡乱华，西晋灭亡。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_buddhism_china",
+            "title": "佛教兴盛 (Buddhism in China)",
+            "type": "china",
+            "summary": "魏晋南北朝时期，佛教在中国广泛传播，并逐渐本土化。",
+            "sections": [
+                {
+                    "title": "南朝四百八十寺",
+                    "content": "<p>统治者的大力提倡（如梁武帝），使佛教寺院经济极度膨胀。云冈石窟、龙门石窟是这一时期佛教艺术的杰出代表。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_weijinfengdu",
+            "title": "魏晋风度 (Wei-Jin Style)",
+            "type": "china",
+            "summary": "魏晋时期名士们所追求的一种个性解放、率真自然的处世风格。",
+            "sections": [
+                {
+                    "title": "名士风流",
+                    "content": "<p>受玄学影响，文人雅士（如竹林七贤）崇尚清谈，不拘礼法。王羲之的《兰亭序》和顾恺之的《洛神赋图》体现了这一时期的艺术成就。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_terracotta",
+            "title": "兵马俑 (Terracotta Warriors)",
+            "type": "china",
+            "summary": "秦始皇陵的陪葬坑，被誉为'世界第八大奇迹'。生动展现了秦军的严整军容和高超的雕塑艺术。",
+            "sections": [
+                {
+                    "title": "地下军团",
+                    "content": "<p>成千上万的陶俑神态各异，车兵、骑兵、步兵排列成阵。它们不仅是艺术珍品，更是研究秦代军事、服饰、工艺的实物资料。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "秦朝",
+                    "url": "detail_qin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_silkroad",
+            "title": "丝绸之路 (The Silk Road)",
+            "type": "china",
+            "summary": "西汉张骞通西域后开辟的东西方交通大动脉。以长安为起点，经河西走廊、新疆，通往中亚、西亚和欧洲。",
+            "sections": [
+                {
+                    "title": "凿空之旅",
+                    "content": "<p>张骞两次出使西域，虽然未达成联合大月氏夹击匈奴的初衷，却意外打开了中西交流的大门。丝绸、瓷器西传，葡萄、胡萝卜、佛教东渐。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "汉朝",
+                    "url": "detail_han.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_red_cliff",
+            "title": "赤壁之战 (Battle of Red Cliffs)",
+            "type": "china",
+            "summary": "东汉末年，孙刘联军在长江赤壁一带大破曹操大军的战役。这是中国历史上以少胜多的著名战役，奠定了三国鼎立的基础。",
+            "sections": [
+                {
+                    "title": "火烧连营",
+                    "content": "<p>曹操率大军南下，刘备与孙权结盟。周瑜采纳黄盖诈降之计，火烧曹军战船。曹操败退北方，无力南下。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_jiupin",
+            "title": "九品中正制 (Nine-Rank System)",
+            "type": "china",
+            "summary": "魏晋时期的选官制度。由各地'中正'官依据家世、道德、才能评定士人等级（九品），作为朝廷授官依据。",
+            "sections": [
+                {
+                    "title": "门阀的护身符",
+                    "content": "<p>该制度初期起到了选拔人才的作用，但后期完全被门阀士族垄断，看重门第而轻视才能，导致'寒门无上品'。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_xiaowendi",
+            "title": "孝文帝改革 (Reform of Xiaowen)",
+            "type": "china",
+            "summary": "北魏孝文帝拓跋宏实施的汉化改革。通过迁都洛阳、改汉姓、说汉话、穿汉服等措施，促进了鲜卑族与汉族的融合。",
+            "sections": [
+                {
+                    "title": "主动的融合",
+                    "content": "<p>这是中国历史上少数民族统治者主动学习先进中原文化的典型。它加速了北方的民族交融，缓解了民族矛盾，为隋唐大一统创造了条件。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_lanting",
+            "title": "兰亭序 (Preface to the Poems)",
+            "type": "china",
+            "summary": "东晋书法家王羲之的代表作，被誉为'天下第一行书'。记录了兰亭集会的情景，体现了魏晋名士的飘逸风度。",
+            "sections": [
+                {
+                    "title": "书圣之作",
+                    "content": "<p>王羲之酒酣挥毫，字字珠玑。其书法变化多端，气韵流畅，体现了'尚韵'的时代审美。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_zhuge",
+            "title": "诸葛亮 (Zhuge Liang)",
+            "type": "china",
+            "summary": "三国时期蜀汉丞相，杰出的政治家、军事家。被誉为'千古良相'的典范。",
+            "sections": [
+                {
+                    "title": "鞠躬尽瘁",
+                    "content": "<p>诸葛亮辅佐刘备建立蜀汉，治理蜀地，平定南中。后六出祁山北伐中原，最终病逝五丈原。其'鞠躬尽瘁，死而后已'的精神为后世景仰。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_chibi",
+            "title": "赤壁之战 (Battle of Red Cliffs)",
+            "type": "china",
+            "summary": "东汉末年，孙刘联军在长江赤壁一带大破曹操大军的战役。这是中国历史上以少胜多的著名战役，奠定了三国鼎立的基础。",
+            "sections": [
+                {
+                    "title": "火烧连营",
+                    "content": "<p>曹操率大军南下，刘备与孙权结盟。周瑜采纳黄盖诈降之计，火烧曹军战船。曹操败退北方，无力南下。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "三国",
+                    "url": "detail_three_kingdoms.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_zuchongzhi",
+            "title": "祖冲之 (Zu Chongzhi)",
+            "type": "china",
+            "summary": "南朝宋、齐时期著名的数学家、天文学家。他在世界上第一次将圆周率计算到小数点后第七位。",
+            "sections": [
+                {
+                    "title": "科学巨星",
+                    "content": "<p>祖冲之的圆周率数值领先世界近一千年。他还制定了《大明历》，并制造了指南车、千里船等机械，展现了古代中国科学的辉煌成就。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "魏晋南北朝",
+                    "url": "detail_weijin.html"
+                }
+            ]
+        }
+    ]
+}

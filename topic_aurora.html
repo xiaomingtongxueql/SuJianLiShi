@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿芙乐尔号:革命的图腾 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="arrow-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        CRUISER</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">阿芙乐尔号:革命的图腾
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        阿芙乐尔号（Aurora），这艘以罗马神话中“曙光女神”命名的巡洋舰，本是沙皇海军的一员，却命运般地成为了终结沙皇制度的象征。1917年11月7日晚，它的两发空包弹，如同划破旧时代黑夜的闪电，宣告了人类历史上一个新纪元的开启。它不仅是一艘战舰，更是一个巨大的历史隐喻。
+                    </p>
+                    
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="anchor" class="w-8 h-8 text-accent mr-3"></i>
+                        从日俄战争到十月风暴
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>悲剧的幸存者
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    阿芙乐尔号于1900年下水，隶属于波罗的海舰队。它参加的第一场大仗竟然是日俄战争中的对马海战。在那场俄国海军的“葬礼”中，阿芙乐尔号虽身中数弹，却奇迹般地逃脱了被击沉或俘获的命运，最终逃亡至马尼拉，直到战后才归国。这似乎预示了它命不该绝，还有更大的历史使命在等待。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>一声炮响
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1917年，阿芙乐尔号正在彼得格勒的船厂大修。船上的水兵深受布尔什维克的影响，成立了革命委员会，控制了军舰。10月25日（公历11月7日），它奉命开进涅瓦河，将炮口对准了临时政府的最后据点——冬宫。
+                                </p>
+                                <p>
+                                    晚上9点40分，按照约定信号，阿芙乐尔号发射了一发空包弹。巨大的轰鸣声震慑了冬宫内的守军，同时也向赤卫队发出了总攻的信号。毛泽东后来有一句名言：“十月革命一声炮响，给我们送来了马克思列宁主义。”这“一声炮响”，正是来自阿芙乐尔号。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>永恒的纪念碑
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    二战期间，阿芙乐尔号的舰炮被拆卸下来，组成了“波罗的海舰队独立炮兵连”，参与了惨烈的列宁格勒保卫战，再次为保卫这座城市立下战功。
+                                </p>
+                                <p>
+                                    1948年，它被作为革命纪念舰，永久停泊在涅瓦河畔。如今，它已成为圣彼得堡最著名的旅游景点之一。虽然苏联已经解体，但阿芙乐尔号依然静静地停在那里，作为那段改变世界历史的激荡岁月的无声见证者。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                冬宫 (Winter Palace)
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                原为沙皇皇宫，二月革命后成为资产阶级临时政府所在地。十月革命中被布尔什维克领导的武装力量攻占，标志着临时政府的倒台。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                彼得格勒 (Petrograd)
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                即圣彼得堡。1914年因对德作战改名彼得格勒（去德语化）。十月革命爆发地。1924年为纪念列宁改名列宁格勒。1991年恢复原名圣彼得堡。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 符号学意义</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                在苏联的政治宣传中，阿芙乐尔号被神圣化为革命的纯洁象征。它代表了军队倒戈站在人民一边的关键时刻，是武装夺取政权合法性的物理图腾。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 文化的印记</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                无数的文学作品、电影、歌曲都歌颂过这艘军舰。它已经超越了历史事实本身，成为一种文化记忆，深深烙印在俄罗斯乃至世界左翼文化的基因中。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"十月革命","url":"detail_october_rev.html"},{"text":"列宁","url":"topic_lenin.html"},{"text":"布尔什维克","url":"topic_bolshevik.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "aurora", "label": "阿芙乐尔号", "val": 30, "group": "core", "url": "topic_aurora.html"},
+            {"id": "october", "label": "十月革命", "val": 25, "group": "event", "url": "detail_october_rev.html"},
+            {"id": "winter_palace", "label": "冬宫", "val": 20, "group": "location", "url": "#"},
+            {"id": "petrograd", "label": "彼得格勒", "val": 15, "group": "location", "url": "#"},
+            {"id": "navy", "label": "波罗的海舰队", "val": 15, "group": "org", "url": "#"}
+        ],
+        "edges": [
+            {"source": "aurora", "target": "october", "label": "标志"},
+            {"source": "aurora", "target": "winter_palace", "label": "炮击"},
+            {"source": "aurora", "target": "navy", "label": "隶属"},
+            {"source": "october", "target": "petrograd", "label": "爆发地"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

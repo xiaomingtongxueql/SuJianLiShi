@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詹姆斯·瓦特:蒸汽时代的普罗米修斯 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 核心词条</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        工业先驱</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        詹姆斯·瓦特:蒸汽时代的普罗米修斯</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        詹姆斯·瓦特（James
+                        Watt，1736—1819），苏格兰发明家、机械工程师。他并非蒸汽机的最早发明者，但却是蒸汽机决定性改进者。他发明的"分离式冷凝器"和"行星齿轮联动装置"，将笨重、低效、只能用于矿山抽水的纽科门蒸汽机，变成了效率高、运行稳、可驱动各种机器的"万能原动机"。瓦特的改良，解决了工业革命最核心的动力问题，使人类摆脱了对水力、风力等自然力的依赖，正式步入"蒸汽时代"。
+                    </p>
+                    
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        创新历程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>从修理工到发明家
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    瓦特出生于格里诺克的一个造船工家庭，从小体弱多病，但动手能力极强。他在格拉斯哥大学担任仪器修理工期间，偶然接触到了一台需要维修的纽科门蒸汽机模型。
+                                </p>
+                                <p>
+                                    他发现这台机器极其浪费燃料：每次活塞运动，都需要先喷水冷却汽缸，再加热产生蒸汽。这种"忽冷忽热"的设计，使得80%的热量都白白流失了。瓦特敏锐地意识到，必须让汽缸始终保持高温，而将冷却过程转移到外部。经过无数次思考，他在一次散步中灵光乍现，想出了<strong>"分离式冷凝器"</strong>的绝妙主意。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>博尔顿-瓦特公司：资本与技术的联姻
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    发明是昂贵的。瓦特的冷凝器设计精妙，但当时的制造工艺（尤其是汽缸镗孔技术）难以达到密封要求，导致实验屡屡失败，瓦特甚至一度负债累累。
+                                </p>
+                                <p>
+                                    幸运的是，他遇到了独具慧眼的伯明翰工业家<strong>马修·博尔顿</strong>（Matthew
+                                    Boulton）。博尔顿不仅替他还清债务，还提供了雄厚的资金、精湛的工匠（如威尔金森）和商业运作。1775年，两人成立"博尔顿-瓦特公司"。在博尔顿的鼓励下，瓦特继续改进技术，发明了双向气缸、离心调速器和行星齿轮系统，终于在1785年推出了成熟的商用蒸汽机。博尔顿自豪地向国王宣称："陛下，我在这里出售全世界都渴望的东西——<strong>动力</strong>（Power）。"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>解放生产力
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    瓦特蒸汽机的应用迅速从矿山扩展到纺织、冶金、造纸等各个领域。以前工厂必须建在湍急的河流旁以利用水力，现在则可以建在煤矿附近或交通便利的城市中。
+                                </p>
+                                <p>
+                                    1785年，第一家蒸汽动力棉纺厂在诺丁汉郡建立。随后，蒸汽机被装上了轮子和船体，富尔顿发明了汽船（1807），史蒂芬孙发明了火车（1814）。人类的空间距离被急剧压缩，全球物质交流的速度呈几何级数增长。瓦特不仅改变了生产方式，也改变了人类的生活方式和时空观念。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">4.</span>"瓦特"的遗产
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    瓦特晚年名利双收，成为皇家学会会员。为了纪念他的贡献，国际单位制中功率的单位被命名为<strong>"瓦特"</strong>（Watt, W）。
+                                </p>
+                                <p>
+                                    他的成功不仅在于技术天才，更在于他是"工业启蒙"的代表——将科学理论（热力学雏形）、工匠技艺（精密加工）和商业资本完美结合。他开启了技术发明的专利保护时代，证明了知识产权可以转化为巨大的商业财富，激励了无数后来的发明家投身于技术革新的浪潮。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 影响力区块 -->
+                <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                        <h4 class="font-bold text-xl mb-4 text-primary flex items-center">
+                            <i data-lucide="zap" class="w-6 h-6 mr-2 text-accent"></i>
+                            动力革命
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">彻底解决了工业发展的动力瓶颈，使工厂摆脱了地理限制（不再依赖水流），推动了工业城市的兴起。
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                        <h4 class="font-bold text-xl mb-4 text-primary flex items-center">
+                            <i data-lucide="award" class="w-6 h-6 mr-2 text-accent"></i>
+                            专利制度
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">瓦特极力维护自己的专利权，虽然一度在一定程度上阻碍了技术扩散，但也确立了知识产权保护的典范。
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"史蒂芬孙","url":"topic_stephenson.html"},{"text":"工厂制","url":"topic_factory_system.html"},{"text":"城市化","url":"topic_urbanization.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"watt","label":"瓦特","val":35,"group":"core","url":"topic_watt.html"},{"id":"steam","label":"蒸汽机","val":30,"group":"tech","url":"topic_watt.html"},{"id":"boulton","label":"博尔顿","val":20,"group":"person","url":"topic_watt.html"},{"id":"factory","label":"工厂","val":25,"group":"place","url":"topic_factory_system.html"},{"id":"train","label":"火车","val":20,"group":"tech","url":"topic_stephenson.html"}],"edges":[{"source":"watt","target":"steam","label":"改良"},{"source":"boulton","target":"watt","label":"资助"},{"source":"steam","target":"factory","label":"驱动"},{"source":"steam","target":"train","label":"核心动力"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

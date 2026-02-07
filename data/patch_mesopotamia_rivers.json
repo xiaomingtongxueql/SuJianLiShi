@@ -1,0 +1,192 @@
+{
+    "topics": [
+        {
+            "id": "topic_tigris",
+            "title": "底格里斯河 (Tigris River)",
+            "type": "world",
+            "year": "地理",
+            "summary": "底格里斯河是两河流域（美索不达米亚）的两大母亲河之一，流速湍急，洪水频发。它孕育了亚述文明（如尼尼微），但也因其不可预测的泛滥给古代居民带来深重的灾难记忆。",
+            "content": [
+                {
+                    "title": "暴躁的母亲河",
+                    "text": "<p>底格里斯河全长约1900公里，发源于安纳托利亚高原。与幼发拉底河相比，它流程较短，落差较大，因此流速极快，难以通航。更致命的是，它的<strong>洪水泛滥（Inundation）</strong>往往发生在春季（4-6月），正值谷物收获季节，且流量暴涨迅猛，极具破坏力。这种地理特性直接影响了苏美尔人的宗教观——他们认为神灵是喜怒无常、难以取悦的。</p>"
+                },
+                {
+                    "title": "孕育亚述",
+                    "text": "<p>如果说南部的苏美尔和巴比伦更多依赖幼发拉底河，那么北部的<strong>亚述文明（Assyria）</strong>则是底格里斯河的赠礼。亚述帝国的核心城市——阿淑尔（Assur）和尼尼微（Nineveh）都分布在底格里斯河沿岸。依靠河水的滋养和更为凉爽的气候，亚述人建立了强大的军事帝国，横扫近东。</p>"
+                },
+                {
+                    "title": "水利与战争",
+                    "text": "<p>为了驯服这条暴躁的河流，古代两河居民修建了复杂的运河及堤坝系统。这种大规模水利工程需要高度集权的社会组织，从而催生了早期的国家机器。同时，争夺水源控制权也是城邦战争的主要诱因。在《汉谟拉比法典》中，有多条法律专门规定了维护堤坝的责任，疏忽导致决堤者将被罚为奴。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地理特征",
+                    "desc": "流速快、洪水不可预测，与苏美尔悲观主义宗教观的形成有直接关系。"
+                },
+                {
+                    "title": "文明摇篮",
+                    "desc": "主要孕育了北部的亚述文明。"
+                }
+            ],
+            "impact": {
+                "reality": "底格里斯河至今仍是伊拉克的生命线，但也因上游（土耳其）的大坝截流引发了现代的水资源地缘政治冲突。",
+                "legacy": "它的希腊语名字Tigris源自古波斯语，意为'像箭一样快'，深刻描绘了其狂野的性格。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "幼发拉底河",
+                    "url": "topic_euphrates.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "tigris",
+                        "label": "底格里斯河",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_tigris.html"
+                    },
+                    {
+                        "id": "euphrates",
+                        "label": "幼发拉底河",
+                        "val": 30,
+                        "group": "geo",
+                        "url": "topic_euphrates.html"
+                    },
+                    {
+                        "id": "assyria",
+                        "label": "亚述帝国",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "topic_assyria.html"
+                    },
+                    {
+                        "id": "nineveh",
+                        "label": "尼尼微",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_nineveh.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "tigris",
+                        "target": "euphrates",
+                        "label": "姊妹河"
+                    },
+                    {
+                        "source": "tigris",
+                        "target": "assyria",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "nineveh",
+                        "target": "tigris",
+                        "label": "沿岸城市"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_euphrates",
+            "title": "幼发拉底河 (Euphrates River)",
+            "type": "world",
+            "year": "地理",
+            "summary": "幼发拉底河是两河流域最长、流域面积最广的河流。它流速相对平缓，适宜灌溉和航运，是苏美尔和巴比伦文明的主要奶源。",
+            "content": [
+                {
+                    "title": "生命的动脉",
+                    "text": "<p>幼发拉底河全长约2800公里，是西亚最长的河流。与底格里斯河不同，它流经下游平原时河床较高（甚至是地上河），容易引水灌溉，但也导致了严重的盐碱化问题。苏美尔文明的核心城邦（乌鲁克、乌尔、埃利都）几乎全部串珠般分布在幼发拉底河两岸。某种意义上，苏美尔文明就是'幼发拉底河的赠礼'。</p>"
+                },
+                {
+                    "title": "大都会的摇篮",
+                    "text": "<p>古巴比伦城便横跨幼发拉底河而建。希罗多德记载，巴比伦不仅有横贯全城的宽阔河道，还有巨大的蓄水池来调节水位。河流不仅提供了水源，更提供了交通大动脉，木材、石料和金属通过河流运抵缺乏资源的下游平原，支撑了宏伟的塔庙建设。</p>"
+                },
+                {
+                    "title": "盐碱化与文明中心北移",
+                    "text": "<p>长期的漫灌导致了土壤盐碱化（Salinization）。约公元前2000年后，南部苏美尔地区的土地逐渐因为盐碱化而绝收，小麦种植完全被耐盐的大麦取代，最终导致人口和文明中心被迫向北部的巴比伦转移。这是人类历史上最早的生态灾难教训之一。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地理特征",
+                    "desc": "流速缓、高河床，利于灌溉但易导致盐碱化。"
+                },
+                {
+                    "title": "生态教训",
+                    "desc": "过度的灌溉导致土壤盐碱化，是苏美尔文明衰落的重要生态原因。"
+                }
+            ],
+            "impact": {
+                "reality": "幼发拉底河不仅是地理分界线，在《圣经》中也被视为应许之地（Promised Land）的边界之一。",
+                "legacy": "其名字Euphrates源自古波斯语，意为'适合渡过的'，突显了其作为温和母亲河的形象。"
+            },
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                },
+                {
+                    "text": "底格里斯河",
+                    "url": "topic_tigris.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "euphrates",
+                        "label": "幼发拉底河",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_euphrates.html"
+                    },
+                    {
+                        "id": "tigris",
+                        "label": "底格里斯河",
+                        "val": 30,
+                        "group": "geo",
+                        "url": "topic_tigris.html"
+                    },
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔文明",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "topic_sumerians.html"
+                    },
+                    {
+                        "id": "babylon",
+                        "label": "巴比伦",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_babylon.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "euphrates",
+                        "target": "tigris",
+                        "label": "姊妹河"
+                    },
+                    {
+                        "source": "euphrates",
+                        "target": "sumer",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "babylon",
+                        "target": "euphrates",
+                        "label": "沿岸建设"
+                    }
+                ]
+            }
+        }
+    ]
+}

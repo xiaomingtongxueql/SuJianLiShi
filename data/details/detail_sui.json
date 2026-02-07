@@ -1,0 +1,87 @@
+{
+    "id": "detail_sui",
+    "type": "china",
+    "title": "隋朝:大一统的重建",
+    "year": "581年 — 618年",
+    "desc": "隋朝结束了魏晋南北朝三百年的分裂局面，开创了科举制，开凿了大运河，为唐朝的盛世奠定了基础。虽二世而亡，但其制度遗产泽被后世。",
+    "content": [
+        {
+            "title": "开皇之治与制度创新",
+            "text": "<p>隋文帝杨坚统一全国后，实行厉行节约、轻徭薄赋的政策，出现了'开皇之治'。在制度上，确立了<strong>三省六部制</strong>，分割相权加强皇权；废除九品中正制，创立<strong>科举制</strong>，通过考试选拔官员，打破了门阀世族对仕途的垄断。</p>"
+        },
+        {
+            "title": "大运河的开凿",
+            "text": "<p>隋炀帝为了加强南北交通和巩固统治，开凿了以洛阳为中心，北达涿郡（今北京），南至余杭（今杭州）的<strong>大运河</strong>。全长2700多公里，沟通了五大水系，成为古代世界上最长的运河。它对中国南北经济文化的交流起了巨大作用。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "科举制",
+            "url": "topic_keju.html"
+        },
+        {
+            "text": "大运河",
+            "url": "topic_grand_canal.html"
+        },
+        {
+            "text": "三省六部",
+            "url": "topic_sansheng.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "sui",
+                "label": "隋朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_sui.html"
+            },
+            {
+                "id": "keju",
+                "label": "科举制",
+                "val": 25,
+                "group": "system",
+                "url": "topic_keju.html"
+            },
+            {
+                "id": "canal",
+                "label": "大运河",
+                "val": 25,
+                "group": "place",
+                "url": "topic_grand_canal.html"
+            },
+            {
+                "id": "sansheng",
+                "label": "三省六部",
+                "val": 20,
+                "group": "system",
+                "url": "topic_sansheng.html"
+            },
+            {
+                "id": "yang",
+                "label": "隋文帝",
+                "val": 20,
+                "group": "person",
+                "url": "topic_suiwendi.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "sui",
+                "target": "keju",
+                "label": "创立"
+            },
+            {
+                "source": "sui",
+                "target": "canal",
+                "label": "开凿"
+            },
+            {
+                "source": "yang",
+                "target": "sui",
+                "label": "建立"
+            }
+        ]
+    }
+}

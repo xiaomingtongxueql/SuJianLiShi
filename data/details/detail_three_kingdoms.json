@@ -1,0 +1,170 @@
+{
+    "id": "detail_three_kingdoms",
+    "type": "china",
+    "title": "三国鼎立:英雄的时代",
+    "year": "220年 — 280年",
+    "desc": "东汉末年军阀混战，最终形成魏、蜀、吴三国鼎立的局面。虽然是分裂时期，但也是英雄辈出、局部经济得以发展的时期。",
+    "content": [
+        {
+            "title": "三分天下",
+            "text": "<p>208年<strong>赤壁之战</strong>后，曹操退守北方，孙权据有江东，刘备占据荆益。220年曹丕称帝（魏），221年刘备称帝（蜀），229年孙权称帝（吴），三国鼎立局面正式形成。</p>"
+        },
+        {
+            "title": "区域开发",
+            "text": "<p>魏国重视农业水利（屯田），蜀国开发西南（诸葛亮治蜀），吴国开发江南并造船出海（卫温到达台湾），促进了各地的经济发展和民族融合。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "赤壁之战",
+            "url": "topic_chibi.html"
+        },
+        {
+            "text": "诸葛亮",
+            "url": "topic_zhuge.html"
+        },
+        {
+            "text": "曹操",
+            "url": "topic_caocao.html"
+        },
+        {
+            "text": "九品中正制",
+            "url": "topic_jiupin.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "threekingdoms",
+                "label": "三国",
+                "val": 30,
+                "group": "core",
+                "url": "detail_three_kingdoms.html"
+            },
+            {
+                "id": "wei",
+                "label": "魏(曹)",
+                "val": 25,
+                "group": "faction_wei",
+                "url": "topic_caocao.html"
+            },
+            {
+                "id": "shu",
+                "label": "蜀(刘)",
+                "val": 25,
+                "group": "faction_shu",
+                "url": "topic_liubei.html"
+            },
+            {
+                "id": "wu",
+                "label": "吴(孙)",
+                "val": 25,
+                "group": "faction_wu",
+                "url": "topic_sunquan.html"
+            },
+            {
+                "id": "caocao",
+                "label": "曹操",
+                "val": 20,
+                "group": "person",
+                "url": "topic_caocao.html"
+            },
+            {
+                "id": "liubei",
+                "label": "刘备",
+                "val": 20,
+                "group": "person",
+                "url": "topic_liubei.html"
+            },
+            {
+                "id": "sunquan",
+                "label": "孙权",
+                "val": 20,
+                "group": "person",
+                "url": "topic_sunquan.html"
+            },
+            {
+                "id": "zhugeliang",
+                "label": "诸葛亮",
+                "val": 20,
+                "group": "person",
+                "url": "topic_zhuge.html"
+            },
+            {
+                "id": "sima",
+                "label": "司马懿",
+                "val": 20,
+                "group": "person",
+                "url": "topic_simayi.html"
+            },
+            {
+                "id": "chibi",
+                "label": "赤壁之战",
+                "val": 20,
+                "group": "event",
+                "url": "topic_chibi.html"
+            },
+            {
+                "id": "jiupin",
+                "label": "九品中正制",
+                "val": 15,
+                "group": "system",
+                "url": "topic_jiupin.html"
+            },
+            {
+                "id": "jin",
+                "label": "西晋",
+                "val": 20,
+                "group": "nation",
+                "url": "topic_western_jin.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "caocao",
+                "target": "wei",
+                "label": "奠基"
+            },
+            {
+                "source": "liubei",
+                "target": "shu",
+                "label": "建立"
+            },
+            {
+                "source": "sunquan",
+                "target": "wu",
+                "label": "建立"
+            },
+            {
+                "source": "liubei",
+                "target": "zhugeliang",
+                "label": "三顾茅庐"
+            },
+            {
+                "source": "liubei",
+                "target": "sunquan",
+                "label": "联盟"
+            },
+            {
+                "source": "chibi",
+                "target": "threekingdoms",
+                "label": "奠定鼎立"
+            },
+            {
+                "source": "wei",
+                "target": "jiupin",
+                "label": "实行"
+            },
+            {
+                "source": "sima",
+                "target": "wei",
+                "label": "篡权"
+            },
+            {
+                "source": "jin",
+                "target": "threekingdoms",
+                "label": "统一"
+            }
+        ]
+    }
+}

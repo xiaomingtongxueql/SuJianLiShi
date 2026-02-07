@@ -1,0 +1,110 @@
+{
+    "id": "detail_primitive",
+    "type": "china",
+    "title": "北京人:远古的火种",
+    "year": "约70万-20万年前",
+    "desc": "北京人（Peking Man）生活在距今约70万至20万年前的周口店龙骨山。他们保留了猿的某些特征，但已能直立行走，制造打制石器，并学会了使用天然火。这是中国境内乃至世界上最重要的直立人遗址之一。",
+    "content": [
+        {
+            "title": "发现与研究",
+            "text": "<p>1929年，裴文中发现了第一个北京人头盖骨化石，震惊了世界。这一发现确立了直立人在人类演化史上的地位。尽管化石在二战中神秘失踪，但周口店遗址出土的大量石器、用火遗迹和动物化石，为研究早期人类提供了珍贵资料。</p>"
+        },
+        {
+            "title": "生活图景",
+            "text": "<p>北京人过着群居生活，共同狩猎和采集。他们使用<strong>打制石器</strong>（旧石器），如砍砸器、刮削器和尖状器。更重要的是，他们已经学会<strong>使用天然火</strong>来取暖、照明、烧烤食物和驱赶野兽，这是人类适应自然环境的重大进步。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "直立人特征",
+            "desc": "保留了猿的某些特征（如眉骨突出、吻部前伸），但手脚分工明显，能够直立行走。"
+        },
+        {
+            "title": "用火意义",
+            "desc": "学会使用和保存天然火是人类进化史上的里程碑，改善了生存条件，促进了体质（大脑）发展。"
+        },
+        {
+            "title": "社会组织",
+            "desc": "过着群居生活，处于原始社会早期阶段。"
+        }
+    ],
+    "impact": {
+        "reality": "周口店遗址是世界上内涵最丰富、材料最齐全的直立人遗址之一，为人类起源的研究提供了确凿证据。",
+        "legacy": "北京人的发现极大地提振了中国现代考古学的信心，其文化遗存（如用火）深深烙印在中华文明的早期记忆中。"
+    },
+    "keywords": [
+        {
+            "text": "裴文中",
+            "url": "topic_pei_wenzhong.html"
+        },
+        {
+            "text": "周口店遗址",
+            "url": "topic_zhoukoudian.html"
+        },
+        {
+            "text": "天然火",
+            "url": "topic_fire_china.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "peking_core",
+                "label": "北京人",
+                "val": 30,
+                "group": "core",
+                "url": "detail_primitive.html"
+            },
+            {
+                "id": "zhou",
+                "label": "周口店",
+                "val": 20,
+                "group": "place",
+                "url": "topic_zhoukoudian.html"
+            },
+            {
+                "id": "fire",
+                "label": "天然火",
+                "val": 20,
+                "group": "skill",
+                "url": "topic_fire_china.html"
+            },
+            {
+                "id": "stone",
+                "label": "打制石器",
+                "val": 20,
+                "group": "skill",
+                "url": "topic_stone_tools_china.html"
+            },
+            {
+                "id": "pei",
+                "label": "裴文中",
+                "val": 15,
+                "group": "person",
+                "url": "topic_pei_wenzhong.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "peking_core",
+                "target": "zhou",
+                "label": "生活于"
+            },
+            {
+                "source": "peking_core",
+                "target": "fire",
+                "label": "使用"
+            },
+            {
+                "source": "peking_core",
+                "target": "stone",
+                "label": "制造"
+            },
+            {
+                "source": "pei",
+                "target": "peking_core",
+                "label": "发现 (1929)"
+            }
+        ]
+    }
+}

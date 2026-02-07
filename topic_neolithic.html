@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新石器革命：文明的种子 | 溯鉴历史</title>
+  <script src="libs/tailwind.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+            gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+          },
+          fontFamily: {
+            serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+            sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 2px 10px rgba(0,0,0,0.03)',
+            'hover': '0 10px 25px rgba(0,0,0,0.06)',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="libs/lucide.min.js"></script>
+  <script src="js/content-enhancer.js"></script>
+  <script src="js/knowledge-graph-engine.js"></script>
+  <style>
+    body {
+      background-color: #F5F7FA;
+      color: #374151;
+    }
+
+    .prose p {
+      margin-bottom: 1.5em;
+      text-align: justify;
+    }
+
+    .highlight-box {
+      background-color: #ECFDF5;
+      /* emerald-50 */
+      border-left: 4px solid #059669;
+      /* emerald-600 */
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F5F7FA;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #D1D5DB;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        新石器革命：文明的种子
+                    </h1>
+                </section>
+
+
+
+        <!-- 1. 农业起源 -->
+        <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+          <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+            <i data-lucide="sprout" class="w-8 h-8 text-gold mr-3"></i>
+            第一章：驯化自然
+          </h2>
+          <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+            <p>
+              农业并非在某地一次发明后传播全球，而是在世界不同地区独立起源的。这被认为是应对全新世气候变暖和人口压力的一种生存策略。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div class="p-4 border border-gray-100 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">🌾 西亚（新月沃地）</h4>
+                <p class="text-sm">最早的农业中心（约公元前9000年）。驯化了<strong>大麦</strong>、<strong>小麦</strong>，以及山羊和绵羊。</p>
+              </div>
+              <div class="p-4 border border-gray-100 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">🌾 东亚（长江/黄河）</h4>
+                <p class="text-sm">
+                  长江流域驯化了<strong>水稻</strong>（如河姆渡遗址），黄河流域驯化了<strong>粟</strong>和<strong>黍</strong>（如半坡遗址）。家畜主要是猪和狗。</p>
+              </div>
+              <div class="p-4 border border-gray-100 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">🌽 中美洲</h4>
+                <p class="text-sm">驯化了<strong>玉米</strong>、豆类和南瓜（“三姐妹”）。这里缺乏大型可驯化动物，农业发展路径独特。</p>
+              </div>
+              <div class="p-4 border border-gray-100 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">🥔 南美洲（安第斯）</h4>
+                <p class="text-sm">驯化了<strong>马铃薯</strong>、藜麦以及羊驼。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. 技术变革 -->
+        <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+          <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+            <i data-lucide="hammer" class="w-8 h-8 text-gold mr-3"></i>
+            第二章：工具的进化
+          </h2>
+          <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+            <h3 class="text-xl font-bold text-primary mb-4">从“打制”到“磨制”</h3>
+            <p>
+              “新石器”之名来源于<strong>磨制石器（Polished Stone
+                Tools）</strong>的广泛使用。与旧石器时代的打制石器相比，磨制石器（如石斧、石铲、石磨盘）表面光滑、刃口锋利且耐用。这不仅是为了狩猎，更是为了适应砍伐森林（开垦农田）和加工谷物（脱壳粉碎）的农业需求。
+            </p>
+
+            <h3 class="text-xl font-bold text-primary mb-4 mt-8">陶器的发明</h3>
+            <p>
+              <strong>陶器（Pottery）</strong>是新石器时代的另一大发明。通过高温烧制黏土，人类第一次改变了物质的化学性质。陶器解决了定居生活中的两大难题：储藏（防潮防鼠保存余粮）和烹饪（将坚硬的谷物煮成粥饭）。
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. 社会巨变 -->
+        <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+          <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+            <i data-lucide="users" class="w-8 h-8 text-gold mr-3"></i>
+            第三章：定居与分化
+          </h2>
+          <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+            <div class="highlight-box">
+              <h4 class="font-bold text-primary mb-2">🏘️ 定居生活 (Sedentism)</h4>
+              <p class="text-sm m-0">
+                农业要求人类长期守候在农田旁，这导致了流动的游猎生活结束，人类开始建造永久性房屋，形成村落。定居使得人口密度急剧增加，女性生育间隔缩短，人类人口迎来了第一次大爆炸。但同时也带来了拥挤、卫生恶化和人畜共患病（如天花、流感）的传播。
+              </p>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-4 mt-6">剩余产品与阶级诞生</h3>
+            <p>
+              农业生产的季节性特征使得各个社群必须储备粮食。当粮食出现<strong>剩余（Surplus）</strong>时，社会结构开始改变：
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 ml-4">
+              <li><strong>社会分工：</strong> 并非所有人都需要去种地，部分人从中脱离出来成为专职的陶工、祭司或战士。</li>
+              <li><strong>私有制：</strong> 对土地、存粮和牲畜的占有导致了贫富差距。</li>
+              <li><strong>暴力升级：</strong> 为了争夺有限的耕地和掠夺存粮，部落间的冲突演变为有组织的战争。防御性工事（如壕沟、围墙）开始在聚落周围出现。</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧边栏 -->
+      <aside class="lg:col-span-3 space-y-8">
+        <!-- 知识图谱 -->
+        <div class="sticky top-24">
+          <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+            <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+              <i data-lucide="network" class="w-4"></i> 知识图谱
+            </div>
+            <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+              id="knowledge-graph"></div>
+          </div>
+
+          <!-- 核心人物与概念 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+            <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+              <i data-lucide="link" class="w-4"></i> 相关条目
+            </div>
+            <div class="space-y-2">
+              <a href="topic_stone_tools_china.html"
+                class="block p-3 rounded-lg hover:bg-gray-50 transition text-sm text-gray-700">磨制石器</a>
+              <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition text-sm text-gray-700">陶器的发明</a>
+              <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition text-sm text-gray-700">河姆渡遗址</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- 数据脚本 -->
+  <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "neolithic", "label": "新石器革命", "val": 40, "group": "core", "url": "#"},
+                {"id": "agriculture", "label": "农业驯化", "val": 30, "group": "cause", "url": "#"},
+                {"id": "sedentism", "label": "定居生活", "val": 25, "group": "effect", "url": "#"},
+                {"id": "pottery", "label": "陶器", "val": 20, "group": "tech", "url": "#"},
+                {"id": "polished", "label": "磨制石器", "val": 20, "group": "tech", "url": "topic_polished_stone.html"},
+                {"id": "surplus", "label": "剩余产品", "val": 15, "group": "social", "url": "#"}
+            ],
+            "edges": [
+                {"source": "neolithic", "target": "agriculture", "label": "核心"},
+                {"source": "neolithic", "target": "sedentism", "label": "导致"},
+                {"source": "neolithic", "target": "pottery", "label": "发明"},
+                {"source": "neolithic", "target": "polished", "label": "使用"},
+                {"source": "agriculture", "target": "surplus", "label": "产生"}
+            ]
+        }
+    </script>
+  <script id="data-keywords" type="application/json">
+        [
+            {"text":"新石器","url":"topic_neolithic.html"},
+            {"text":"磨制石器","url":"topic_stone_tools_china.html"}
+        ]
+    </script>
+
+  <script>
+    if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+    const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+    // Graph Engine
+    const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+    if (typeof KnowledgeGraphEngine !== 'undefined') {
+      const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#059669', nodeColor: '#059669' });
+      engine.render(graphData);
+    }
+
+    // Keyword Highlighting
+    if (typeof ContentEnhancer !== 'undefined') {
+      ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-green-600', hoverColor: 'hover:text-green-800' });
+    }
+  </script>
+</body>
+
+</html>
+
+

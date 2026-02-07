@@ -1,0 +1,328 @@
+{
+    "topics": [
+        {
+            "id": "topic_dayu",
+            "title": "家天下的奠基者：大禹 (Da Yu)",
+            "type": "china",
+            "year": "约公元前2070年",
+            "summary": "禹是传说中夏后氏部落的首领，中国历史上著名的治水英雄。他结束了部落联盟的松散状态，划分九州，制定贡赋，为这一王权国家的诞生奠定了基础。",
+            "content": [
+                {
+                    "title": "治水与集权",
+                    "text": "<p>禹治水的成功不仅在于技术上的'疏导'，更在于社会组织的动员。为了治理洪水，禹拥有了跨部落调配人力和物资的权力，这种权力超越了传统的氏族民主制，为王权的产生提供了合法的暴力与行政基础。史载'禹会诸侯于涂山，执玉帛者万国'，标志着天下共主的地位确立。</p>"
+                },
+                {
+                    "title": "铸九鼎与划九州",
+                    "text": "<p>传说禹收九牧之金（青铜）铸造<strong>九鼎</strong>，象征九州，即冀、兖、青、徐、扬、荆、豫、梁、雍。这标志着中国早期国家疆域概念的形成。九鼎从此成为国家权力的最高象征（神器）。九州的划分打破了血缘氏族的界限，开启了地缘政治的先河。</p>"
+                },
+                {
+                    "title": "从禅让到世袭的过渡",
+                    "text": "<p>禹虽然在形式上遵循禅让制，推举伯益为继承人，但实际上却着力培养儿子启的势力。这反映了权力私有化观念的萌芽。禹的作为，完成了从'公天下'向'家天下'过渡的最后准备。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "治水",
+                    "desc": "改堵为疏，平定水患。"
+                },
+                {
+                    "title": "九州",
+                    "desc": "划分九州，铸九鼎，确立早期国家疆域。"
+                }
+            ],
+            "impact": {
+                "reality": "确立了早期王权，为夏朝建立奠基。",
+                "legacy": "'大禹治水'成为中华民族勤劳勇敢、公而忘私的精神象征。"
+            },
+            "relations": [
+                {
+                    "text": "夏朝",
+                    "url": "detail_xia.html"
+                },
+                {
+                    "text": "二里头",
+                    "url": "topic_erlitou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "yu_xia",
+                        "label": "大禹",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_dayu.html"
+                    },
+                    {
+                        "id": "xia_dynasty",
+                        "label": "夏朝",
+                        "val": 25,
+                        "group": "civ",
+                        "url": "detail_xia.html"
+                    },
+                    {
+                        "id": "nine_ding",
+                        "label": "九鼎",
+                        "val": 15,
+                        "group": "object",
+                        "url": "topic_dayu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "yu_xia",
+                        "target": "xia_dynasty",
+                        "label": "奠基"
+                    },
+                    {
+                        "source": "yu_xia",
+                        "target": "nine_ding",
+                        "label": "铸造"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_erlitou",
+            "title": "最早的中国：二里头遗址 (Erlitou Culture)",
+            "type": "china",
+            "year": "约公元前1750年",
+            "summary": "二里头遗址位于河南偃师，被认为是夏朝中晚期的都城遗址。它展现了中国最早的广域王权国家气象，是中华文明探源工程的关键支点。",
+            "content": [
+                {
+                    "title": "宏大的都城规划",
+                    "text": "<p>二里头遗址发现了中国最早的城市主干道网，呈现'井'字形结构，明确划分了宫殿区、作坊区和祭祀区。<strong>一号、二号宫殿基址</strong>坐北朝南，中轴对称，这种宫室制度成为了后世中国古代宫殿建筑的规制范本。</p>"
+                },
+                {
+                    "title": "青铜礼器的出现",
+                    "text": "<p>遗址出土了中国最早的青铜礼器群，包括爵、斝、鼎等。其中<strong>乳钉纹铜爵</strong>被誉为'中华第一爵'。青铜礼器的出现，标志着'礼乐制度'的萌芽——青铜器不仅仅是实用器皿，更是身份等级和权力的象征（'藏礼于器'）。</p>"
+                },
+                {
+                    "title": "夏商分界的标尺",
+                    "text": "<p>考古学界普遍认为，二里头文化一至四期主体属于夏文化，而第四期晚段可能进入了商代早期。它连接了龙山文化与商代二里岗文化，实证了中国文明从邦国时代向王国时代的跨越。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "被广泛认为是夏朝中晚期都城。"
+                },
+                {
+                    "title": "发现",
+                    "desc": "最早的宫殿群、最早的青铜礼器群。"
+                }
+            ],
+            "impact": {
+                "reality": "实证了夏朝的存在，将中国信史向前推进了数百年。",
+                "legacy": "确立了'中轴对称'的都城规划和'藏礼于器'的政治传统，影响了中国三千年的政治文化。"
+            },
+            "relations": [
+                {
+                    "text": "夏朝",
+                    "url": "detail_xia.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "erlitou_site",
+                        "label": "二里头遗址",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_erlitou.html"
+                    },
+                    {
+                        "id": "palace",
+                        "label": "宫殿基址",
+                        "val": 20,
+                        "group": "object",
+                        "url": "topic_erlitou.html"
+                    },
+                    {
+                        "id": "bronze",
+                        "label": "青铜礼器",
+                        "val": 20,
+                        "group": "object",
+                        "url": "topic_erlitou.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "erlitou_site",
+                        "target": "palace",
+                        "label": "包含"
+                    },
+                    {
+                        "source": "erlitou_site",
+                        "target": "bronze",
+                        "label": "出土"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_hereditary",
+            "title": "家天下：世袭制 (Hereditary System)",
+            "type": "china",
+            "year": "夏朝建立",
+            "summary": "世袭制是指王位或爵位在一家一姓中世代传承的制度。夏启继位，标志着世袭制取代禅让制，中国历史正式进入了'家天下'时代。",
+            "content": [
+                {
+                    "title": "父传子的权力革命",
+                    "text": "<p>禹死后，其子启击败了原本的继承人伯益，并在甘之战中消灭了反对者有扈氏，强行夺取了王位。随后，启在钧台大宴各地首领（钧台之享），迫使他们承认既成事实。这一事件彻底终结了原始民主的禅让传统，确立了<strong>'父死子继'</strong>（或兄终弟及）的王位继承原则。</p>"
+                },
+                {
+                    "title": "历史的必然",
+                    "text": "<p>虽然儒家将禅让视为道德理想，但世袭制的出现实际上是生产力发展的必然结果。随着私有制的出现和阶级分化，控制剩余产品的强势家族必然倾向于垄断政治权力。世袭制虽然缩小了统治基础，但在早期文明中，它有利于权力的稳定交接，减少了因继承人更替而引发的社会动荡。</p>"
+                },
+                {
+                    "title": "宗法制的滥觞",
+                    "text": "<p>世袭制的建立，使得血缘关系成为政治分配的唯一依据。这直接催生了后来的<strong>宗法制</strong>和分封制。'国'成为了'家'的扩大，政治忠诚被转化为孝道伦理，这一'家国同构'的政治模式主导了中国古代社会数千年。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "标志",
+                    "desc": "启继禹位，世袭制确立。"
+                },
+                {
+                    "title": "意义",
+                    "desc": "'公天下'变为'家天下'，是私有制发展的产物。"
+                }
+            ],
+            "impact": {
+                "reality": "维护了早期国家的统治稳定，巩固了私有制。",
+                "legacy": "不仅是皇位继承，也是中国古代爵位、职业甚至身份传承的核心法则，直至辛亥革命才在政治上被终结。"
+            },
+            "relations": [
+                {
+                    "text": "夏启",
+                    "url": "topic_qi.html"
+                },
+                {
+                    "text": "夏朝",
+                    "url": "detail_xia.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "hereditary_sys",
+                        "label": "世袭制",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_hereditary.html"
+                    },
+                    {
+                        "id": "qi_king",
+                        "label": "夏启",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_qi.html"
+                    },
+                    {
+                        "id": "chanrang_old",
+                        "label": "禅让制",
+                        "val": 20,
+                        "group": "system",
+                        "url": "topic_chanrang.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "qi_king",
+                        "target": "hereditary_sys",
+                        "label": "确立"
+                    },
+                    {
+                        "source": "hereditary_sys",
+                        "target": "chanrang_old",
+                        "label": "取代"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_qi",
+            "title": "夏朝建立者：夏启 (Qi of Xia)",
+            "type": "china",
+            "year": "约公元前21世纪",
+            "summary": "夏启，大禹之子，夏朝的第二位君主（一说为建立者）。他通过武力打破了禅让传统，建立了中国历史上第一个奴隶制国家。",
+            "content": [
+                {
+                    "title": "武力夺权",
+                    "text": "<p>禹死后，启并没有像传统那样让位于伯益，而是凭借父亲留下的强大势力发动政变。他率军击败伯益，并在随后的<strong>甘之战</strong>中彻底消灭了坚持禅让传统的有扈氏部落。这次战争是一场激烈的政治路线斗争，启的胜利宣告了旧时代的结束。</p>"
+                },
+                {
+                    "title": "钧台之享",
+                    "text": "<p>为了巩固统治，启在钧台（今河南禹州）举行盛大的盟会，宴请天下诸侯。这实际上是一场'就职典礼'，标志着各部落首领正式臣服于夏王，确立了夏王朝的君臣关系。通过这一系列政治军事手段，启完成了从部落联盟首领到国家君主的华丽转身。</p>"
+                },
+                {
+                    "title": "制度建设",
+                    "text": "<p>启在位期间，开始建立正规的国家机器。他设立了专门的官员辅佐统治，组建了常备军，并用'五音'（音乐舞蹈）来歌颂自己的功德（《九辩》、《九歌》），展现了早期王权的威仪与文化软实力。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "事迹",
+                    "desc": "破坏禅让制，确立世袭制，建立夏朝。"
+                },
+                {
+                    "title": "战役",
+                    "desc": "甘之战击败有扈氏。"
+                }
+            ],
+            "impact": {
+                "reality": "完成了中国历史上第一次政权性质的根本转变。",
+                "legacy": "开启了中国长达四千年的世袭王权时代。"
+            },
+            "relations": [
+                {
+                    "text": "世袭制",
+                    "url": "topic_hereditary.html"
+                },
+                {
+                    "text": "夏朝",
+                    "url": "detail_xia.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "qi_person",
+                        "label": "夏启",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_qi.html"
+                    },
+                    {
+                        "id": "youhu",
+                        "label": "有扈氏",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_qi.html"
+                    },
+                    {
+                        "id": "juntai",
+                        "label": "钧台",
+                        "val": 15,
+                        "group": "place",
+                        "url": "topic_qi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "qi_person",
+                        "target": "youhu",
+                        "label": "讨伐"
+                    },
+                    {
+                        "source": "qi_person",
+                        "target": "juntai",
+                        "label": "会盟"
+                    }
+                ]
+            }
+        }
+    ]
+}

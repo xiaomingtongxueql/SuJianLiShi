@@ -1,0 +1,112 @@
+{
+    "id": "detail_tang",
+    "type": "china",
+    "title": "唐朝:诗歌与盛世",
+    "year": "618年 — 907年",
+    "desc": "中国封建社会的繁荣顶峰。政治清明，经济发达，文化昌盛，对外交流频繁。长安成为当时国际性大都会。",
+    "content": [
+        {
+            "title": "贞观之治到开元盛世",
+            "text": "<p>唐太宗吸取隋亡教训，纳谏如流，开创'贞观之治'。武则天是中国唯一女皇，政启开元，治宏贞观。唐玄宗前期，国力达到鼎盛，史称'开元盛世'。后期爆发安史之乱，唐朝由盛转衰。</p>"
+        },
+        {
+            "title": "开放的社会风气",
+            "text": "<p>唐朝社会风气开放，女性地位较高。诗歌创作达到高峰，李白（诗仙）、杜甫（诗圣）是其代表。高僧玄奘西行、鉴真东渡，促进了中外文化交流。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "贞观之治",
+            "url": "topic_zhenguan.html"
+        },
+        {
+            "text": "武则天",
+            "url": "topic_wuzetian.html"
+        },
+        {
+            "text": "开元盛世",
+            "url": "topic_kaiyuan.html"
+        },
+        {
+            "text": "安史之乱",
+            "url": "topic_anshi.html"
+        },
+        {
+            "text": "李白",
+            "url": "topic_libai.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "tang",
+                "label": "唐朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_tang.html"
+            },
+            {
+                "id": "taizong",
+                "label": "唐太宗",
+                "val": 25,
+                "group": "person",
+                "url": "topic_zhenguan.html"
+            },
+            {
+                "id": "wu",
+                "label": "武则天",
+                "val": 25,
+                "group": "person",
+                "url": "topic_wuzetian.html"
+            },
+            {
+                "id": "xuanzong",
+                "label": "唐玄宗",
+                "val": 20,
+                "group": "person",
+                "url": "topic_kaiyuan.html"
+            },
+            {
+                "id": "poetry",
+                "label": "唐诗",
+                "val": 20,
+                "group": "culture",
+                "url": "topic_tang_poetry.html"
+            },
+            {
+                "id": "anshi",
+                "label": "安史之乱",
+                "val": 20,
+                "group": "event",
+                "url": "topic_anshi.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "tang",
+                "target": "taizong",
+                "label": "贞观之治"
+            },
+            {
+                "source": "tang",
+                "target": "wu",
+                "label": "唯一女皇"
+            },
+            {
+                "source": "tang",
+                "target": "xuanzong",
+                "label": "开元盛世"
+            },
+            {
+                "source": "tang",
+                "target": "poetry",
+                "label": "繁荣"
+            },
+            {
+                "source": "xuanzong",
+                "target": "anshi",
+                "label": "转衰"
+            }
+        ]
+    }
+}

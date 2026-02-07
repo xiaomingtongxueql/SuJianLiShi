@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋务运动：晚清帝国的自强悲歌 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1e293b;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+
+            <div class="lg:col-span-9 space-y-12">
+
+                <!-- 头部定义 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        AD 1861 - 1895</div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">洋务运动</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        洋务运动（Self-Strengthening
+                        Movement），又称“同光中兴”，是晚清帝国在内忧外患的生死存亡之际，由封建统治集团内部的开明派发起的一场长达三十余年的自救运动。这场运动以“师夷长技”为号角，试图在不触动封建制度根基的前提下，通过移植西方的军事和工业技术来强国富民。它不仅是中国近代工业化的开端，更是一场关于传统与现代、保守与变革的深刻思想激荡。虽然最终以甲午战争的惨败而告终，但它在古老的中华大地上播下了现代文明的种子，为后来的戊戌变法和辛亥革命奠定了不可或缺的物质和思想基础。
+                    </p>
+
+                    <!-- 视频容器 -->
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=806465176&bvid=BV1d34y1o7Si&cid=434420492&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-gold mr-3"></i>
+                        历史长卷：从“自强”梦想到“求富”歧途
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">帝国惊梦：坚船利炮下的觉醒</h3>
+                        <p>
+                            19世纪60年代，大清帝国正处于风雨飘摇之中。第二次鸦片战争的硝烟刚刚散去，英法联军火烧圆明园的耻辱刻骨铭心；南方太平天国运动如火如荼，几乎动摇了清王朝的半壁江山。面对“数千年未有之大变局”，以恭亲王奕訢为首的朝廷重臣和以曾国藩、李鸿章、左宗棠为代表的地方疆吏，痛定思痛，开始反思：为什么天朝上国的骑射在洋人的火器面前不堪一击？他们意识到，要生存，就必须改变。于是，“师夷长技以制夷”成为了时代的强音，一场旨在“自强”的洋务运动应运而生。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">自强新政：军事工业的艰难起步</h3>
+                        <p>
+                            洋务运动的第一阶段（19世纪60-70年代）以“自强”为口号，重点发展近代军事工业。曾国藩在安庆创办了内军械所，虽然设备简陋，甚至还要依靠手工制造，但它标志着中国近代工业的诞生。随后，李鸿章在上海创办了江南制造总局，这是当时远东规模最大的兵工厂，不仅能制造枪炮，还能建造轮船。左宗棠在福州创办的船政局，则引进了法国技术，建立了中国最早的新式造船厂和海军学校。然而，这些官办企业弊端丛生，管理腐败，生产效率低下，加上封建官僚体系的掣肘，使得“自强”之路步履维艰。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">求富迷途：民用企业的官商博弈</h3>
+                        <p>
+                            随着军事工业的发展，资金短缺、燃料不足、运输困难等问题日益凸显。洋务派认识到，“必先富而后能强”，于是从19世纪70年代起，打出“求富”旗号，开始兴办民用工业。李鸿章创办的轮船招商局，打破了外商对中国航运业的垄断；开平矿务局不仅为海军提供了优质燃煤，还修建了中国第一条实用铁路——唐胥铁路。张之洞创办的汉阳铁厂和湖北织布局，更是成为了近代重工业和轻工业的典范。这些企业多采用“官督商办”的形式，虽然引入了部分市场机制，但官僚的勒索和干预始终是挥之不去的阴影，限制了民族资本主义的自由发展。
+                        </p>
+
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">海防筹划：北洋水师的兴衰荣辱</h3>
+                        <p>
+                            建立一支强大的海军是洋务运动的重要目标。经过二十多年的经营，清政府初步建成了北洋、南洋、福建三支海军。其中，李鸿章苦心经营的北洋水师实力最强，拥有“定远”、“镇远”两艘7000吨级的铁甲巨舰，总吨位一度位居亚洲第一、世界第九。然而，这支貌似强大的舰队，在训练、战术、后勤、指挥等方面都存在严重问题。慈禧太后挪用海军军费修建颐和园，导致舰队多年未添新舰、未购新炮，技术逐渐落后于急速崛起的日本海军。最终，在1894年的甲午海战中，北洋水师全军覆没，洋务运动的成果毁于一旦。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 深度辨析 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="lightbulb" class="w-6 h-6 text-gold mr-3"></i>
+                        历史的拷问：为什么洋务运动救不了中国？
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold">
+                            <h3 class="font-bold text-lg text-primary mb-3">体制的桎梏：只改皮毛，不换骨血</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                洋务运动的根本缺陷在于其指导思想——“中体西用”。洋务派试图在不触动腐朽的封建专制制度（体）的前提下，仅仅引进西方的先进技术（用）。然而，工业化是一个系统工程，现代化的经济基础需要现代化的政治制度和法律体系来保障。当新的生产力与旧的生产关系发生冲突时，清政府总是选择牺牲前者来维护后者。这种“嫁接”式的改革，注定无法长出参天大树。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gold">
+                            <h3 class="font-bold text-lg text-primary mb-3">官僚的腐败：蛀空大厦的白蚁</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                洋务企业虽然引进了机器生产，但管理体制依然是封建衙门式的。官员们将企业视为私产，任人唯亲，贪污受贿，挥霍浪费。北洋水师的覆灭，很大程度上是因为内部腐败导致的军纪涣散和物资匮乏。这种制度性的腐败，使得洋务运动无法像日本明治维新那样，将国家资源高效地转化为综合国力。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="activity" class="w-6 h-6 text-gold mr-3"></i>
+                        历史的回响与遗产
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            尽管洋务运动失败了，但我们不能否认它的历史功绩。它打破了中国两千多年的封闭状态，引进了西方先进的科学技术和生产方式，培养了中国第一批近代科技人才、翻译人才和新式军人。它客观上刺激了中国民族资本主义的产生，对外国经济侵略起到了一定的抵制作用。更重要的是，它促使中国人开始重新审视自己和世界，从“器物”层面的觉醒逐渐走向“制度”和“文化”层面的反思，为后来的戊戌变法、辛亥革命乃至新文化运动开辟了道路。它是中国现代化进程中悲壮而不可逾越的第一步。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 右侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+
+                    <!-- 知识图谱 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识联结
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 相关词条 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- 数据注入区域 -->
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"李鸿章","url":"topic_li_hongzhang.html"},
+            {"text":"曾国藩","url":"topic_zeng_guofan.html"},
+            {"text":"北洋水师","url":"topic_beiyang_fleet.html"},
+            {"text":"中体西用","url":"topic_ti_yong.html"},
+            {"text":"甲午中日战争","url":"topic_jiawu_war.html"}
+        ]
+    </script>
+    <script id="data-graph" type="application/json">
+        {"nodes":[{"id":"yangwu","label":"洋务运动","val":40,"group":"core","url":"detail_yangwu.html"},{"id":"lihongzhang","label":"李鸿章","val":30,"group":"person","url":"topic_li_hongzhang.html"},{"id":"zengguofan","label":"曾国藩","val":30,"group":"person","url":"topic_zeng_guofan.html"},{"id":"tiyong","label":"中体西用","val":25,"group":"concept","url":"topic_ti_yong.html"},{"id":"beiyang","label":"北洋水师","val":25,"group":"org","url":"topic_beiyang_fleet.html"},{"id":"jiawu","label":"甲午战争","val":35,"group":"event","url":"topic_jiawu_war.html"},{"id":"meiji","label":"明治维新","val":20,"group":"event","url":"topic_meiji.html"}],"edges":[{"source":"yangwu","target":"lihongzhang","label":"主要领导"},{"source":"yangwu","target":"zengguofan","label":"发起人"},{"source":"yangwu","target":"tiyong","label":"指导思想"},{"source":"lihongzhang","target":"beiyang","label":"创建"},{"source":"beiyang","target":"jiawu","label":"覆灭"},{"source":"jiawu","target":"yangwu","label":"标志失败"},{"source":"yangwu","target":"meiji","label":"同期变革"}]}
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+        // 渲染关联词条
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-gold">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        // 渲染图谱
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', {
+                lineColor: '#B5A642',
+                nodeColor: '#B5A642'
+            });
+            engine.render(graphData);
+        }
+    </script>
+</body>
+
+</html>
+
+
+

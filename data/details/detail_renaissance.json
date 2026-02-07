@@ -1,0 +1,172 @@
+{
+    "id": "detail_renaissance",
+    "type": "world",
+    "title": "文艺复兴:人的发现",
+    "year": "14世纪 — 17世纪",
+    "desc": "文艺复兴（Renaissance）是发生在欧洲的一场资产阶级思想文化运动。它打着'复兴古希腊罗马文化'的旗号，实质上是为了摆脱中世纪神学的束缚，宣扬以人为中心的人文主义。这场运动从意大利的佛罗伦萨开始，蔓延至全欧洲，为近代科学、艺术和政治奠定了基础。",
+    "content": [
+        {
+            "title": "起源:意大利的春雷 (Origins)",
+            "text": "<p>14世纪，意大利的佛罗伦萨、威尼斯等城市出现了资本主义萌芽。富有的商人阶层（如美第奇家族）不满教会的禁欲主义，希望追求现世的幸福。他们资助艺术家和学者，挖掘古希腊罗马的典籍和艺术，试图从中寻找人性的光辉。</p><p>诗人<strong>但丁</strong>（Dante）是'中世纪的最后一位诗人，同时又是新时代的最初一位诗人'。他的《神曲》虽然描写的是地狱、炼狱和天堂，但抨击了教会的腐败，表达了对人性的赞美。</p>"
+        },
+        {
+            "title": "人文主义:精神内核 (Humanism)",
+            "text": "<p>文艺复兴的核心是<strong>人文主义</strong>（Humanism）。它主张以'人'为中心，反对以'神'为中心；提倡发扬人的个性，追求享受现世生活；反对中世纪的蒙昧主义和等级观念。正如彼特拉克所说：'我自己是凡人，我只要求凡人的幸福。'</p>"
+        },
+        {
+            "title": "艺术的巅峰 (Artistic Peak)",
+            "text": "<p>文艺复兴时期涌现了无数艺术巨匠，其中最著名的是<strong>'美术三杰'</strong>：</p><ul><li><strong>达·芬奇</strong>：全能天才，代表作《蒙娜丽莎》展现了女性的微笑之美，《最后的晚餐》刻画了人物的心理活动。</li><li><strong>米开朗基罗</strong>：雕塑家和画家，代表作大卫像展现了人体的力量与美，《创世纪》气势磅礴。</li><li><strong>拉斐尔</strong>：擅长画圣母，代表作《西斯廷圣母》，将圣母描绘成温柔的人间母亲。</li></ul>"
+        },
+        {
+            "title": "科学与政治的突破 (Science & Politics)",
+            "text": "<p>人文主义解放了思想，推动了科学革命。<strong>哥白尼</strong>提出'日心说'，冲击了教会的地心说。伽利略通过望远镜证实了日心说。<strong>马基雅维利</strong>在《君主论》中提出'为达目的不择手段'，将政治学与伦理学分离，标志着近代政治学的诞生。莎士比亚在英国将文艺复兴文学推向高峰（《哈姆雷特》）。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "核心思想",
+            "desc": "人文主义。肯定人的价值和尊严，要求以人为中心而非以神为中心，提倡探索自然和追求现世幸福。"
+        },
+        {
+            "title": "实质",
+            "desc": "不仅仅是复古，而且是资产阶级反封建、反神学的思想解放运动。"
+        },
+        {
+            "title": "天文学革命",
+            "desc": "哥白尼'日心说'动摇了中世纪神学的基础，不仅是科学的进步，更是思想的解放。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "但丁",
+            "url": "topic_dante.html"
+        },
+        {
+            "text": "达·芬奇",
+            "url": "topic_da_vinci.html"
+        },
+        {
+            "text": "莎士比亚",
+            "url": "topic_shakespeare.html"
+        },
+        {
+            "text": "哥白尼",
+            "url": "topic_copernicus.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "renaissance",
+                "label": "文艺复兴",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "italy",
+                "label": "意大利",
+                "val": 20,
+                "group": "location"
+            },
+            {
+                "id": "humanism",
+                "label": "人文主义",
+                "val": 25,
+                "group": "concept"
+            },
+            {
+                "id": "dante",
+                "label": "但丁",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "da_vinci",
+                "label": "达·芬奇",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "michelangelo",
+                "label": "米开朗基罗",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "raphael",
+                "label": "拉斐尔",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "shakespeare",
+                "label": "莎士比亚",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "science",
+                "label": "科学革命",
+                "val": 20,
+                "group": "impact"
+            },
+            {
+                "id": "reformation",
+                "label": "宗教改革",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "italy",
+                "target": "renaissance",
+                "label": "发源地"
+            },
+            {
+                "source": "renaissance",
+                "target": "humanism",
+                "label": "核心思想"
+            },
+            {
+                "source": "dante",
+                "target": "renaissance",
+                "label": "先驱"
+            },
+            {
+                "source": "renaissance",
+                "target": "da_vinci",
+                "label": "美术三杰"
+            },
+            {
+                "source": "renaissance",
+                "target": "michelangelo",
+                "label": "美术三杰"
+            },
+            {
+                "source": "renaissance",
+                "target": "raphael",
+                "label": "美术三杰"
+            },
+            {
+                "source": "renaissance",
+                "target": "shakespeare",
+                "label": "文学高峰"
+            },
+            {
+                "source": "renaissance",
+                "target": "science",
+                "label": "推动"
+            },
+            {
+                "source": "renaissance",
+                "target": "reformation",
+                "label": "铺垫"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "文艺复兴是现代世界的开端。它确立了'个人主义'及'世俗化'的价值观，这也是现代西方社会的基石。",
+        "legacy": "留下了无数艺术珍品（卢浮宫三宝之一的《蒙娜丽莎》）。它把人从神权的束缚中解放出来，为后来的启蒙运动和工业革命铺平了道路。"
+    }
+}

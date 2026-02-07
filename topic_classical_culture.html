@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>希腊罗马古典文化 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(14, 16, 26, 0.8), rgba(14, 16, 26, 0.8)), url('https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 古代欧洲文明</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元前 8 世纪 - 公元 4 世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        希腊罗马古典文化：理性的光辉与永恒的典范</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        “我们都是希腊人。”当英国诗人雪莱写下这句话时，他是在致敬那个塑造了西方灵魂的伟大时代。希腊罗马古典文化并非单一的遗迹堆砌，而是人类理性的第一次集体觉醒。从苏格拉底对正义的叩问，到罗马法律对契约的守护；从帕特农神庙的几何平衡，到儒略历对混沌时间的锚定，这抹光辉定义了何为“文明的基准”。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：文学与艺术——人性与比例的觉醒 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="palette" class="w-8 h-8 text-blue mr-3"></i> 第一维度：荷马、戏剧与大理石中的灵魂</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">
+                            <strong>希腊文学</strong>是西方叙事的底片。<strong>《荷马史诗》</strong>不仅是英雄的赞歌，更是了解早期希腊社会的百科全书。而在雅典广场上上演的悲剧与喜剧，第一次教导人类如何通过反思自身的痛苦来获得洗礼。
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2 mb-4">
+                            <li><strong>艺术的进化</strong>：希腊雕塑（如《掷铁饼者》）追求极致的解剖学准确与生命动态。这不仅是技巧，更是一种<strong>人文主义</strong>的宣言——将人推向与神等同的完美程度。
+                            </li>
+                            <li><strong>帕特农神庙</strong>：作为“古典建筑的冠冕”，它通过精密的视觉矫正和黄金分割比例，实现了重力的诗意化。这种“和谐即正义”的审美逻辑，影响了其后两千年的西方建筑史。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：哲学——理性的疆域划定 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="library" class="w-8 h-8 text-blue mr-3"></i> 第二维度：哲学三贤——思辨的铁三角</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">当其他文明仍沉浸于神话解释自然时，古希腊人开启了<strong>理性探索</strong>之门：</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>苏格拉底（认识你自己）</strong>：他通过不断追问揭示人们的无知。他不仅是哲学家，更是理性的殉道者，其“辩证法”奠定了西方反思传统的基石。</li>
+                            <li><strong>柏拉图（理想模型）</strong>：创立了雅典学院（Academy），提出了“理念论”。他在《理想国》中探讨的政治伦理，至今仍是现代政治哲学的出发点。
+                            </li>
+                            <li><strong>亚里士多德（百科全书）</strong>：他是逻辑学的奠基人，其对动植物、物理学、修辞学的系统分类，成为了后来中世纪大学乃至现代学术体系的元数据。</li>
+                        </ul>
+                        <p>这种勇于质疑、崇尚逻辑证据的精神，构成了后来欧洲启蒙运动与科学革命的最深层基因。</p>
+                    </div>
+                </section>
+
+                <!-- 第三章：罗马法则与时间的锚定 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="scale" class="w-8 h-8 text-blue mr-3"></i> 第三维度：罗马法与儒略历——帝国的刚性软件</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">罗马人不仅是伟大的工程家，更是天才的制度设计师。如果说希腊提供了思想，罗马则提供了<strong>运行系统的底层算法</strong>：</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>《十二铜表法》</strong>：虽然条文带有原始色彩，但它作为第一部成文法，标志着法律不再由贵族随意口述。</li>
+                            <li><strong>查士丁尼《民法大全》</strong>：对罗马法进行了史无前例的总结。法典中关于私有财产不可侵犯、契约精神、司法公正的原则，直接孕育了今日欧洲大陆的法律体系。
+                            </li>
+                            <li><strong>儒略历的遗产</strong>：凯撒主持制定的儒略历，通过精确的数学计算解决了时间的混乱，成为了今日公历的直系祖本。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        深度考点解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 如何辩证理解“希腊提供了灵魂，罗马提供了骨架”？</h4>
+                            <p class="text-gray-600 italic">
+                                希腊文化的精髓在于多样性、自由竞争和对终极真理的渴求（灵魂）；而罗马的伟大在于其极其高效的行政管理、工程技术（如石拱、混凝土）以及精密严苛的法律规范（骨架）。这二者的结合，使得古典文化既具备了精神的高速度，又具备了实体扩张的抗压性。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 希腊雕塑中为何强调“数学比例”？</h4>
+                            <p class="text-gray-600 italic">
+                                这反映了希腊人“客观美”的哲学观。他们认为宇宙是由和谐的数学规律构成的。因此，表现完美的人体，并非单纯为了炫技，而是为了体现那种超越个体的、神圣的自然规律。这种“结构性思维”正是西方美术与设计学的源头。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="scroll"
+                                    class="w-6 mr-2 text-blue"></i> 契约的幽灵</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                当一个现代人走进法庭，或者签署一份合法的商业合同，他其实正在调用两千年前罗马法官们深思熟虑过的逻辑。古典文化从不曾离去，它只是化作了现代社会的“默认设置”。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="sun"
+                                    class="w-6 mr-2 text-blue"></i> 永不熄灭的盛夏</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                文艺复兴的主力军，本质上是一群在废墟中拼凑希腊罗马残页的朝圣者。古典文化所代表的那种对人性的尊严与理性的狂热，始终是西方文明在陷入黑暗时唯一的指南针。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_philosophers.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">希腊三贤</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_roman_law.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">罗马法</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_julian.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">儒略历</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_homer.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">荷马史诗</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"哲学三贤","url":"topic_philosophers.html"},{"text":"罗马法","url":"topic_roman_law.html"},{"text":"儒略历","url":"topic_julian.html"},{"text":"荷马史诗","url":"topic_homer.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"classic","label":"古典文化","x":50,"y":50,"type":"core"},{"id":"phi","label":"希腊哲学","x":20,"y":30,"type":"normal"},{"id":"law","label":"罗马法律","x":80,"y":30,"type":"normal"},{"id":"arch","label":"建筑美学","x":50,"y":80,"type":"sub"},{"id":"lit","label":"英雄史诗","x":85,"y":70,"type":"sub"}],"edges":[{"source":"classic","target":"phi"},{"source":"classic","target":"law"},{"source":"classic","target":"arch"},{"source":"classic","target":"lit"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

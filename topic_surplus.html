@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剩余产品: 文明的能量块 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#15803d', secondary: '#14532d', stone: '#475569', line: '#E2E8F0',
+                        earth: '#a16207'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        剩余产品: 文明的能量块
+                    </h1>
+                </section>
+
+
+
+                <!-- 深度叙事：存储技术 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="package" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：把时间存进罐子里
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">陶器：移动的仓库</h3>
+                            <p>
+                                为了保存多余的谷物，人类发明了<strong>陶器</strong>。这些用火烧制的粘土容器，不仅防潮防鼠，更重要的是它们创造了一个干燥的人造环境。每一罐存粮，都是为了应对未来的荒年。这是人类第一次试图用技术手段对抗时间的波动。
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">粮仓：权力的中心</h3>
+                            <p>
+                                当剩余产品越来越多，家庭的陶罐已无法容纳，公共<strong>粮仓（Granary）</strong>随之出现。谁控制了粮仓的钥匙，谁就控制了部落的命脉。考古发现，最早的公共建筑往往就是加固的粮仓，其周围通常会有防御设施。政治权力的萌芽，就生长在这些堆满谷物的仓库之上。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 深度叙事：社会分工 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="hammer" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：全职工匠与祭司的诞生
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <p class="mb-6">
+                            在采集社会，每个人都是全才：既要会狩猎，也要会制衣。但也没有人能成为专才。农业提供的剩余粮食，使得<strong>专业化分工（Specialization）</strong>成为可能。
+                        </p>
+                        <ul class="list-none space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-earth font-bold mr-2 text-lg">01.</span>
+                                <div><strong>手工业者：</strong> 陶工、冶金匠、织工可以整天专注于打磨技术，因为他们可以用产品换取农民的粮食。这导致了技术的飞速迭代。</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-earth font-bold mr-2 text-lg">02.</span>
+                                <div><strong>知识阶层：</strong>
+                                    祭司和抄写员不从事体力劳动，他们负责观测天象（指导农时）和记录账目（管理分配）。正是这群“吃闲饭”的人，创造了文字、历法和数学。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代链接</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                现代经济体系依然建立“剩余”的逻辑之上。资本积累本质上就是剩余劳动的货币化表现。我们今天的繁荣，源于农业效率提升释放出的巨大人口红利。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 警示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                虽然我们生产了前所未有的剩余产品，但饥饿并未从地球上消失。分配问题，这个在一万年前随着第一个粮仓建立而出现的问题，至今仍未解决。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"农业革命","url":"detail_agrarian.html"},{"text":"定居与城市","url":"topic_settlement.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"surplus_core","label":"剩余产品","val":35,"group":"core","url":"topic_surplus.html"},{"id":"pottery","label":"陶器","val":25,"group":"tech","url":"topic_pottery.html"},{"id":"granary","label":"粮仓","val":25,"group":"tech","url":"topic_granary.html"},{"id":"special","label":"社会分工","val":30,"group":"impact","url":"topic_job_specialization.html"},{"id":"priest","label":"祭司阶层","val":20,"group":"class","url":"topic_priest.html"}],"edges":[{"source":"surplus_core","target":"pottery","label":"需要"},{"source":"surplus_core","target":"granary","label":"储存"},{"source":"surplus_core","target":"special","label":"供养"},{"source":"special","target":"priest","label":"产生"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#15803d', nodeColor: '#15803d' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-earth', hoverColor: 'hover:text-accent' }); }
+    </script>
+</body>
+
+</html>
+
+

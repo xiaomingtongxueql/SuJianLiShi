@@ -1,0 +1,142 @@
+{
+    "id": "detail_october_rev",
+    "type": "world",
+    "title": "十月革命:红色的曙光",
+    "year": "1917年11月",
+    "desc": "1917年，在一战的泥潭中，俄国爆发了两次革命。二月革命推翻了沙皇专制，十月革命则在列宁布尔什维克党的领导下，建立了人类历史上第一个无产阶级专政的社会主义国家——苏维埃俄国。它打破了资本主义一统天下的局面，开创了人类历史的新纪元。",
+    "content": [
+        {
+            "title": "二月革命与两个政权 (February Revolution)",
+            "text": "<p>一战使俄国经济崩溃，民怨沸腾。1917年3月（俄历二月），彼得格勒爆发起义，沙皇尼古拉二世退位，罗曼诺夫王朝灭亡。革命后出现了<strong>资产阶级临时政府</strong>和<strong>工兵代表苏维埃</strong>两个政权并存的局面。临时政府坚持继续参加一战，并未解决和平与面包问题。</p>"
+        },
+        {
+            "title": "阿芙乐尔号的炮声 (The Shot)",
+            "text": "<p>1917年4月，流亡的<strong>列宁</strong>回到彼得格勒，发表<strong>《四月提纲》</strong>，提出从资产阶级民主革命向社会主义革命转变。11月7日（俄历十月），在列宁的指挥下，起义工人和士兵包围冬宫。<strong>阿芙乐尔号巡洋舰</strong>发出一声炮响，发起了总攻。临时政府被推翻，彼得格勒武装起义胜利。</p>"
+        },
+        {
+            "title": "苏维埃政权的建立 (Soviet Power)",
+            "text": "<p>全俄工兵代表苏维埃第二次代表大会召开，通过了《和平法令》和《土地法令》，成立了人民委员会。苏俄退出了第一次世界大战，并粉碎了外国武装干涉和国内反动叛乱。为了恢复经济，1921年列宁开始实施<strong>新经济政策</strong>，利用市场手段发展经济，巩固了工农联盟。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "历史意义",
+            "desc": "人类历史上第一次取得胜利的社会主义革命。它将社会主义理论变为现实，沉重打击了帝国主义统治，推动了国际无产阶级革命和殖民地半殖民地的解放运动。"
+        },
+        {
+            "title": "道路选择",
+            "desc": "俄国走的是城市包围农村的道路（由国情决定），这与后来中国革命的道路不同。"
+        },
+        {
+            "title": "对中国的影响",
+            "desc": "毛泽东说：'十月革命一声炮响，给我们送来了马克思列宁主义。'促进了中国共产党的诞生。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "列宁",
+            "url": "topic_lenin.html"
+        },
+        {
+            "text": "斯大林",
+            "url": "topic_stalin.html"
+        },
+        {
+            "text": "新经济政策",
+            "url": "topic_nep.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "october_rev",
+                "label": "十月革命",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "lenin",
+                "label": "列宁",
+                "val": 25,
+                "group": "person"
+            },
+            {
+                "id": "winter_palace",
+                "label": "攻占冬宫",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "aurora",
+                "label": "阿芙乐尔号",
+                "val": 15,
+                "group": "symbol"
+            },
+            {
+                "id": "feb_rev",
+                "label": "二月革命",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "ussr",
+                "label": "苏联建立",
+                "val": 25,
+                "group": "impact"
+            },
+            {
+                "id": "socialism",
+                "label": "社会主义制度",
+                "val": 20,
+                "group": "system"
+            },
+            {
+                "id": "cpc",
+                "label": "影响中共",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "lenin",
+                "target": "october_rev",
+                "label": "领导"
+            },
+            {
+                "source": "feb_rev",
+                "target": "october_rev",
+                "label": "铺垫"
+            },
+            {
+                "source": "aurora",
+                "target": "winter_palace",
+                "label": "信号"
+            },
+            {
+                "source": "winter_palace",
+                "target": "october_rev",
+                "label": "高潮"
+            },
+            {
+                "source": "october_rev",
+                "target": "ussr",
+                "label": "结果"
+            },
+            {
+                "source": "october_rev",
+                "target": "socialism",
+                "label": "确立"
+            },
+            {
+                "source": "october_rev",
+                "target": "cpc",
+                "label": "启蒙"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "虽然苏联已解体，但十月革命开创的现代化路径（计划经济、国家工业化）对许多发展中国家仍有借鉴意义。",
+        "legacy": "建立了世界上第一个社会主义国家，改变了20世纪的世界格局（两极对峙）。"
+    }
+}

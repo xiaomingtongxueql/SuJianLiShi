@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解放战争 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-liberation-war"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        AD 1946 - 1949</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">解放战争：两种命运的决战
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        解放战争（1946年—1949年），又称第三次国内革命战争，是中国共产党领导中国人民解放军和全国各族人民，为推翻国民党反动统治、解放全中国而进行的伟大战争。这不仅是一场军事上的较量，更是中国两种命运、两个前途的生死决战。在这场波澜壮阔的历史大剧中，中国共产党凭借卓越的战略指挥、广泛的民主动员和深入的土地改革，最终赢得了民心与战争，结束了中国半殖民地半封建社会的屈辱历史，为新中国的辉煌诞生奠定了坚实基石，彻底改变了20世纪世界的政治版图。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=115042963950618&bvid=BV1zGYyzZEfa&cid=31753701140&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="scroll" class="w-8 h-8 text-gold mr-3"></i>
+                        历史进程深度解析
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">I.</span> 争取和平与内战爆发（1945.8 - 1946.6）
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    抗日战争胜利后，中国面临着“和平建国”与“独裁内战”两种命运的抉择。蒋介石在美帝国主义支持下，一面调兵遣将准内战，一面三次电邀毛泽东赴重庆谈判，企图通过政治欺骗来争取备战时间或将内战责任推给共产党。
+                                </p>
+                                <p>
+                                    为了尽一切可能争取和平，1945年8月28日，毛泽东不顾个人安危，偕周恩来、王若飞飞赴重庆，进行了长达43天的艰难谈判。10月10日，国共双方签署了《政府与中共代表会谈纪要》（即<strong>“双十协定”</strong>），确认了和平建国的基本方针。然而，国民党始终拒绝承认解放区民主政权和人民军队的合法地位。1946年1月，政治协商会议在重庆召开，通过了有利于人民的决议。但好景不长，1946年6月，国民党军队悍然撕毁协定，对中原解放区发动大规模进攻，全面内战由此爆发。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">II.</span> 战略防御与粉碎重点进攻（1946.7 - 1947.6）
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    战争初期，国民党在军队数量（430万对127万）、武器装备和外援方面均占绝对优势。面对敌强我弱的严峻形势，毛泽东提出了“一切反动派都是纸老虎”的著名论断，制定了以运动战为主、不计较一城一地得失、集中优势兵力各个歼灭敌人的战略方针。
+                                </p>
+                                <p>
+                                    经过8个月作战，解放军歼敌70余万，迫使国民党不得不放弃全面进攻，转而对<strong>陕北解放区</strong>和<strong>山东解放区</strong>实施重点进攻。在陕北，毛泽东率领中共中央主动撤离延安，转战陕北，以“蘑菇战术”牵制胡宗南大军；彭德怀指挥西北野战军取得了青化砭、羊马河、蟠龙镇三战三捷。在山东，陈毅、粟裕指挥华东野战军在孟良崮战役中全歼国民党精锐“王牌”整编第74师，击毙师长张灵甫，沉重打击了敌人的嚣张气焰。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">III.</span> 伟大的战略转折：挺进大别山（1947.6 - 1948.8）
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1947年6月30日，刘伯承、邓小平率领晋冀鲁豫野战军主力，强渡黄河，千里跃进大别山，直接将战争引向国民党统治区域，像一把尖刀插入敌人心脏，威胁南京和武汉。这一壮举标志着人民解放战争由战略防御转入战略反攻。
+                                </p>
+                                <p>
+                                    与此同时，解放区开展了轰轰烈烈的<strong>土地改革运动</strong>。1947年，中共中央颁布《中国土地法大纲》，实行“耕者有其田”的土地制度。亿万农民翻身做主，爆发了极大的革命热情，正如当时歌谣所唱：“最后一碗米送去做军粮，最后一尺布送去做军装，最后的老棉袄盖在担架上，最后的亲骨肉送去上战场。”土地改革成为了解放战争胜利最可靠的后勤和人力保障。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">IV.</span> 战略决战：三大战役（1948.9 - 1949.1）
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1948年秋，敌我力量对比发生根本变化。中共中央果断决定与国民党主力进行战略决战。
+                                </p>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li><strong>辽沈战役</strong>（1948.9-11）：林彪、罗荣桓指挥东北野战军，采用“关门打狗”战术，攻克锦州，封闭卫立煌集团，最终解放东北全境。
+                                    </li>
+                                    <li><strong>淮海战役</strong>（1948.11-1949.1）：刘伯承、陈毅、邓小平、粟裕、谭震林组成的总前委，指挥中原、华东野战军，在以徐州为中心的广大地区，创造了“60万战胜80万”的军事奇迹，解放了长江中下游以北广大地区。
+                                    </li>
+                                    <li><strong>平津战役</strong>（1948.11-1949.1）：东北野战军挥师入关，与华北军区部队分割包围傅作义集团。最终以“天津方式”攻克天津，以“北平方式”和平解放北平，基本解放华北全境。
+                                    </li>
+                                </ul>
+                                <p>三大战役共歼灭和改编国民党军队154万余人，国民党赖以维持统治的主力部队基本被消灭。</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-12">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">V.</span> 胜利的进军（1949.4 - 1949.10）
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1949年4月，国共和平谈判破裂。毛泽东、朱德发布《向全国进军的命令》。百万雄师在西起湖口、东至江阴的千里战线上强渡长江，彻底摧毁了国民党苦心经营的长江防线。4月23日，解放军占领南京，宣告了延续22年的国民党反动统治覆灭。
+                                </p>
+                                <p>
+                                    随后，解放军以秋风扫落叶之势向全国进军。1949年10月1日，中华人民共和国成立，中国历史开启了新纪元。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 专家视点 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="microscope" class="w-8 h-8 text-gold mr-3"></i>
+                        历史学视角：为什么共产党能赢？
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">政治层面：人心向背</h4>
+                            <p class="text-sm text-gray-600">
+                                国民党坚持独裁内战，政治腐败，经济崩溃（金圆券风波导致恶性通胀），完全丧失了民心。而共产党通过土地改革解决了农民根本问题，赢得了占中国人口绝大多数的农民的支持。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">军事层面：战略高超</h4>
+                            <p class="text-sm text-gray-600">
+                                毛泽东及中央军委展现了极高超的军事指挥艺术，从运动战到阵地战，从战略防御到战略决战，始终掌握着战争主动权。解放军指战员英勇善战，纪律严明。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-5 rounded-lg border-l-4 border-gold">
+                            <h4 class="font-bold text-lg mb-2 text-primary">社会层面：统一战线</h4>
+                            <p class="text-sm text-gray-600">
+                                共产党建立了最广泛的革命统一战线，团结了包括民族资产阶级、民主党派在内的一切可以团结的力量，使国民党处于空前孤立的境地。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords" type="application/json">
+    [
+        {"text": "重庆谈判", "url": "topic_chongqing.html"},
+        {"text": "土地改革", "url": "topic_land_reform.html"},
+        {"text": "挺进大别山", "url": "topic_dabieshan.html"},
+        {"text": "辽沈战役", "url": "topic_liaoshen.html"},
+        {"text": "淮海战役", "url": "topic_huaihai.html"},
+        {"text": "平津战役", "url": "topic_pingjin.html"},
+        {"text": "渡江战役", "url": "topic_dujiang.html"}
+    ]
+    </script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "liberation", "label": "解放战争", "val": 40, "group": "core", "url": "detail_liberation_war.html"},
+            {"id": "maozedong", "label": "毛泽东", "val": 30, "group": "person", "url": "#"},
+            {"id": "chiang", "label": "蒋介石", "val": 25, "group": "person", "url": "#"},
+            {"id": "chongqing", "label": "重庆谈判", "val": 25, "group": "event", "url": "topic_chongqing.html"},
+            {"id": "land", "label": "土地改革", "val": 25, "group": "event", "url": "topic_land_reform.html"},
+            {"id": "dabie", "label": "挺进大别山", "val": 25, "group": "event", "url": "topic_dabieshan.html"},
+            {"id": "liaoshen", "label": "辽沈战役", "val": 20, "group": "event", "url": "topic_liaoshen.html"},
+            {"id": "huaihai", "label": "淮海战役", "val": 20, "group": "event", "url": "topic_huaihai.html"},
+            {"id": "pingjin", "label": "平津战役", "val": 20, "group": "event", "url": "topic_pingjin.html"},
+            {"id": "dujiang", "label": "渡江战役", "val": 25, "group": "event", "url": "topic_dujiang.html"}
+        ],
+        "edges": [
+            {"source": "liberation", "target": "maozedong", "label": "领导"},
+            {"source": "liberation", "target": "chiang", "label": "推翻"},
+            {"source": "chongqing", "target": "liberation", "label": "序幕"},
+            {"source": "land", "target": "liberation", "label": "保障"},
+            {"source": "dabie", "target": "liberation", "label": "转折"},
+            {"source": "liaoshen", "target": "liberation", "label": "决战"},
+            {"source": "huaihai", "target": "liberation", "label": "决战"},
+            {"source": "pingjin", "target": "liberation", "label": "决战"},
+            {"source": "dujiang", "target": "liberation", "label": "胜利"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-gold rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

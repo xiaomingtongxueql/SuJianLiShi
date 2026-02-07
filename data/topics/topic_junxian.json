@@ -1,0 +1,118 @@
+{
+    "id": "topic_junxian",
+    "title": "郡县制:中央集权的制度基石",
+    "category": "政治制度",
+    "year": "秦朝—清朝",
+    "word_count": 3400,
+    "summary": "郡县制（Prefecture and County System）是中国古代一种地方行政制度，起源于春秋战国，秦始皇统一六国后在全国推行。它废除了分封制下的世袭特权，由中央直接任免地方官员（郡守、县令），实现了中央对地方的垂直管理。郡县制的确立标志着官僚政治取代贵族政治，是中国古代中央集权制度的核心。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "junxian",
+                "label": "郡县制",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "qinshihuang",
+                "label": "秦始皇",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "lisi",
+                "label": "李斯",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "fenfeng",
+                "label": "分封制",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "central",
+                "label": "中央集权",
+                "val": 15,
+                "group": "impact"
+            },
+            {
+                "id": "bureaucracy",
+                "label": "官僚政治",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "province",
+                "label": "行省制",
+                "val": 10,
+                "group": "evolution"
+            }
+        ],
+        "edges": [
+            {
+                "source": "qinshihuang",
+                "target": "junxian",
+                "label": "推广至全国"
+            },
+            {
+                "source": "lisi",
+                "target": "junxian",
+                "label": "力辩推行"
+            },
+            {
+                "source": "junxian",
+                "target": "fenfeng",
+                "label": "取代"
+            },
+            {
+                "source": "junxian",
+                "target": "central",
+                "label": "强化"
+            },
+            {
+                "source": "junxian",
+                "target": "bureaucracy",
+                "label": "标志"
+            },
+            {
+                "source": "province",
+                "target": "junxian",
+                "label": "继承发展"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "廷辩:分封还是郡县?",
+            "content": "<p>秦始皇统一六国后，面临着如何治理庞大帝国的难题。丞相王绾建议仿照周制，分封诸皇子为王，镇守边远地区。而廷尉<strong>李斯</strong>坚决反对，他指出周朝分封导致诸侯混战，“仇雠”相杀，不如设立郡县，由皇帝直接任免守令，这样天下才能安宁。</p><p>秦始皇采纳了李斯的建议，说：“天下共苦战斗不休，以有侯王。”于是，秦始皇将全国划分为36郡（后增至40余郡），郡下设县，彻底废除了分封制。</p>"
+        },
+        {
+            "title": "制度核心:官僚政治的开端",
+            "content": "<p>郡县制与分封制有着本质区别：</p><ul><li><strong>权力来源</strong>：分封诸侯是世袭的，拥有独立的兵权、财权；郡县长官是由皇帝任免的，有任期限制，薪俸由国家支付，且随时可能被调动或罢免。</li><li><strong>管理结构</strong>：形成“皇帝—郡守—县令”的垂直管理体系。中央政令可以直达基层，“海内为郡县，法令由一统”。</li><li><strong>社会影响</strong>：打破了“血缘政治”，开启了“地缘政治”和官僚政治。平民通过军功或才能（后来的科举）可以担任地方长官，促进了社会流动。</li></ul>"
+        },
+        {
+            "title": "千年回响:从秦汉到现代",
+            "content": "<p>郡县制确立后，历代王朝虽然在行政层级上有所调整（如汉代的州、唐代的道、宋代的路、元代的行省），但“中央任免地方官员”的核心逻辑从未改变。</p><p><strong>现代传承：</strong>今天的中国行政区划体系（省—市—县）依然是郡县制的延续。特别是县级行政单位，两千多年来一直是中国最稳定的基层行政组织，许多县名（如邯郸、巨鹿）自战国秦汉沿用至今，体现了中华文明惊人的连续性。</p>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "分封制",
+            "url": "topic_fenfeng.html"
+        },
+        {
+            "text": "秦始皇",
+            "url": "topic_qinshihuang.html"
+        },
+        {
+            "text": "秦朝",
+            "url": "detail_qin.html"
+        },
+        {
+            "text": "行省制",
+            "url": "topic_xingsheng.html"
+        }
+    ]
+}

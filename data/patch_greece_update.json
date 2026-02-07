@@ -1,0 +1,660 @@
+{
+    "topics": [
+        {
+            "id": "topic_alexander",
+            "title": "征服世界的君主：亚历山大大帝 (Alexander the Great)",
+            "type": "world",
+            "year": "公元前356-前323年",
+            "summary": "亚历山大三世，马其顿国王。他以惊人的军事天才建立了一个横跨欧亚非的庞大帝国，开启了希腊化时代，促进了东西方文明的深度融合。",
+            "content": [
+                {
+                    "title": "早年与东征",
+                    "text": "<p>亚历山大师从亚里士多德，深受希腊文化熏陶，也自认为是阿喀琉斯的后裔。20岁即位后，他平定希腊内乱，随即在这个年轻的君主带领下，开启了长达十年的东征。他在格拉尼库斯河战役、伊苏斯战役和<strong>高加米拉战役</strong>中连续击败强大的波斯帝国，最终占领了波斯波利斯，灭亡了波斯。</p>"
+                },
+                {
+                    "title": "希腊化政策",
+                    "text": "<p>亚历山大不满足于军事征服，更致力于文化融合。他鼓励马其顿士兵与波斯女子通婚（苏萨集体婚礼），在各地建立'亚历山大里亚'城作为希腊文化传播的据点。他尊重当地宗教信仰（如在埃及被尊为阿蒙之子），试图建立一个'四海一家'的世界帝国。</p>"
+                },
+                {
+                    "title": "英年早逝与帝国分裂",
+                    "text": "<p>公元前323年，亚历山大在巴比伦突然病逝，年仅32岁。他死后，帝国迅速分裂为托勒密埃及、塞琉古王国和马其顿王国等希腊化国家。虽然政治统一不再，但他开启的<strong>希腊化时代</strong>（Hellenistic Age）持续了近三百年，对罗马乃至世界历史产生了深远影响。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "功绩",
+                    "desc": "灭亡波斯，建立地跨欧亚非的大帝国。"
+                },
+                {
+                    "title": "影响",
+                    "desc": "开启希腊化时代，促进东西方文化交流。"
+                }
+            ],
+            "impact": {
+                "reality": "打破了东西方隔绝的状态，使希腊文化扩展到印度河流域。",
+                "legacy": "成为了西方历史上'征服者'的最高典范，其战略战术至今仍被军事院校研究。"
+            },
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                },
+                {
+                    "text": "亚里士多德",
+                    "url": "topic_aristotle.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "alexander_king",
+                        "label": "亚历山大",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_alexander.html"
+                    },
+                    {
+                        "id": "aristotle_teacher",
+                        "label": "亚里士多德",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_aristotle.html"
+                    },
+                    {
+                        "id": "hellenistic_period",
+                        "label": "希腊化时代",
+                        "val": 25,
+                        "group": "period",
+                        "url": "topic_alexander.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "aristotle_teacher",
+                        "target": "alexander_king",
+                        "label": "教育"
+                    },
+                    {
+                        "source": "alexander_king",
+                        "target": "hellenistic_period",
+                        "label": "开启"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_socrates",
+            "title": "哲学的殉道者：苏格拉底 (Socrates)",
+            "type": "world",
+            "year": "公元前469-前399年",
+            "summary": "苏格拉底，雅典哲学家，西方哲学的奠基人之一。他将哲学从对自然的探索转向对人的关注，最终因'腐蚀青年'的罪名被民主法庭判处死刑。",
+            "content": [
+                {
+                    "title": "产婆术与精神助产",
+                    "text": "<p>苏格拉底自述其母亲是产婆，而他自己是精神的产婆。他并不著书立说，而是通过与人对话（<strong>苏格拉底反诘法</strong>）来揭示对方思想中的矛盾，引导人们寻求真理。他认为'未经审视的人生是不值得过的'，强调'认识你自己'。他的哲学核心是伦理学，认为'美德即知识'，无知是罪恶的根源。</p>"
+                },
+                {
+                    "title": "苏格拉底之死",
+                    "text": "<p>在雅典民主政治衰落时期，苏格拉底对抽签选举等极端民主制度提出批评，被指控'慢神'和'腐蚀青年'。在五百人陪审团面前，他拒绝乞求宽恕，而是发表了维护真理的申辩。最终他平静地饮下毒鸠而死。他的死成为了雅典民主政治的污点，也成就了他哲学殉道者的形象。</p>"
+                },
+                {
+                    "title": "哲学转向",
+                    "text": "<p>在苏格拉底之前，希腊自然哲学主要关注宇宙本原（水、火、原子）。苏格拉底将目光转向人类社会、伦理道德和政治生活，实现了西方哲学的第一次重大转向，即<strong>人文主义转向</strong>。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "思想",
+                    "desc": "'认识你自己'，'美德即知识'。"
+                },
+                {
+                    "title": "方法",
+                    "desc": "精神助产术（反诘法）。"
+                }
+            ],
+            "impact": {
+                "reality": "培养了柏拉图等一大批弟子，影响了整个西方哲学的发展方向。",
+                "legacy": "他的理性精神和对真理的执着，是西方精神文明的基石。他的审判引发了对民主制度的反思。"
+            },
+            "relations": [
+                {
+                    "text": "柏拉图",
+                    "url": "topic_plato.html"
+                },
+                {
+                    "text": "雅典民主",
+                    "url": "topic_athens_democracy.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "socrates_phil",
+                        "label": "苏格拉底",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_socrates.html"
+                    },
+                    {
+                        "id": "plato_student",
+                        "label": "柏拉图",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_plato.html"
+                    },
+                    {
+                        "id": "hemlock",
+                        "label": "毒鸠之死",
+                        "val": 15,
+                        "group": "event",
+                        "url": "topic_socrates.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "socrates_phil",
+                        "target": "plato_student",
+                        "label": "师徒"
+                    },
+                    {
+                        "source": "socrates_phil",
+                        "target": "hemlock",
+                        "label": "殉道"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_athens_democracy",
+            "title": "人民的主权：雅典民主政治 (Athenian Democracy)",
+            "type": "world",
+            "year": "公元前5世纪",
+            "summary": "雅典民主政治是古代希腊城邦文明的最高成就。虽然它具有时代的局限性，但在人类历史上第一次实现了'主权在民'的政治理想。",
+            "content": [
+                {
+                    "title": "发展历程",
+                    "text": "<p>雅典民主经历了漫长的演变：<strong>梭伦改革</strong>（前594年）废除债务奴隶制，按财产划分等级，奠定了基础；<strong>克里斯提尼改革</strong>（前508年）设立五百人议事会，创立'陶片放逐法'，确立了民主制；<strong>伯里克利时代</strong>（前443-前429）民主政治达到顶峰，除了十将军外，各级官职向所有公民开放，并发放津贴。</p>"
+                },
+                {
+                    "title": "运作机制",
+                    "text": "<p>雅典民主的核心机构是<strong>公民大会</strong>（最高权力机构）、<strong>五百人议事会</strong>（常设机构）和<strong>陪审法庭</strong>（最高司法机关）。其特点是'人民主权'和'轮番而治'（通过抽签产生公职人员）。这种直接民主保证了公民的广泛参与。</p>"
+                },
+                {
+                    "title": "历史局限",
+                    "text": "<p>雅典民主本质上是<strong>奴隶主民主</strong>。享有民主权利的仅限于成年男性公民（只占人口的少数），妇女、外邦人和奴隶被排除在外。此外，抽签选举和陶片放逐法也容易导致权力的滥用和'多数人的暴政'（如处死苏格拉底、流放太米斯托克利）。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "高峰",
+                    "desc": "伯里克利时代。"
+                },
+                {
+                    "title": "特点",
+                    "desc": "直接民主，法律至上，轮番而治。"
+                }
+            ],
+            "impact": {
+                "reality": "使雅典成为希腊世界的经济、文化中心和'全希腊的学校'。",
+                "legacy": "开创了西方民主政治的先河，其'主权在民'、'法治'等理念是现代政治文明的源头。"
+            },
+            "relations": [
+                {
+                    "text": "苏格拉底",
+                    "url": "topic_socrates.html"
+                },
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "democracy_sys",
+                        "label": "民主政治",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_athens_democracy.html"
+                    },
+                    {
+                        "id": "pericles",
+                        "label": "伯里克利",
+                        "val": 20,
+                        "group": "person",
+                        "url": "detail_greece.html"
+                    },
+                    {
+                        "id": "ostracism",
+                        "label": "陶片放逐法",
+                        "val": 15,
+                        "group": "item",
+                        "url": "topic_athens_democracy.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "pericles",
+                        "target": "democracy_sys",
+                        "label": "推向顶峰"
+                    },
+                    {
+                        "source": "democracy_sys",
+                        "target": "ostracism",
+                        "label": "制度"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_sparta",
+            "title": "战士的国度：斯巴达 (Sparta)",
+            "type": "world",
+            "year": "公元前8-4世纪",
+            "summary": "斯巴达是希腊城邦中的另一个霸主，以严酷的军事化教育和寡头政治著称。它与雅典构成了希腊文明的'双子星'，分别代表了陆权与海权、保守与开放。",
+            "content": [
+                {
+                    "title": "独特的社会结构",
+                    "text": "<p>斯巴达人作为征服者（多利安人），统治着数量庞大的希洛人（国家奴隶）。为了维持统治，斯巴达全体公民实行军事化生活。男童7岁离家接受严酷训练，20岁从军，60岁退役。一切生活服从于军事需要，轻视文化艺术和个人享受。</p>"
+                },
+                {
+                    "title": "政治制度",
+                    "text": "<p>与雅典的民主制不同，斯巴达实行混合政体：两名国王（世袭，负责军事和宗教）、长老会议（实权机构）和监察官（拥有极大监察权）。公民大会权力较小。这种体制不仅保证了军事指挥的效率，也维持了贵族寡头的统治。</p>"
+                },
+                {
+                    "title": "斯巴达精神",
+                    "text": "<p>斯巴达人崇尚纪律、服从、忍耐和集体主义。'带着盾牌回来，或者躺在盾牌上'（战死沙场）是斯巴达母亲对儿子的教诲。温泉关战役中，斯巴达300勇士面对波斯十万大军不仅未退缩，反而战死到最后一人的壮举，完美诠释了斯巴达精神。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "特点",
+                    "desc": "崇尚武力，军事化国家，寡头政治。"
+                },
+                {
+                    "title": "对比",
+                    "desc": "与雅典的民主、开放形成鲜明对比。"
+                }
+            ],
+            "impact": {
+                "reality": "在希波战争中是陆战主力；在伯罗奔尼撒战争中击败雅典，确立希腊霸权。",
+                "legacy": "'斯巴达式'（Spartan）成为简朴、刚毅和纪律的代名词。"
+            },
+            "relations": [
+                {
+                    "text": "雅典民主",
+                    "url": "topic_athens_democracy.html"
+                },
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "sparta_city",
+                        "label": "斯巴达",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_sparta.html"
+                    },
+                    {
+                        "id": "soldier",
+                        "label": "斯巴达勇士",
+                        "val": 20,
+                        "group": "class",
+                        "url": "topic_sparta.html"
+                    },
+                    {
+                        "id": "helots",
+                        "label": "希洛人",
+                        "val": 15,
+                        "group": "class",
+                        "url": "topic_sparta.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sparta_city",
+                        "target": "soldier",
+                        "label": "培养"
+                    },
+                    {
+                        "source": "sparta_city",
+                        "target": "helots",
+                        "label": "镇压"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_plato",
+            "title": "理想国的构建者：柏拉图 (Plato)",
+            "type": "world",
+            "year": "公元前427-前347年",
+            "summary": "柏拉图，苏格拉底的学生，亚里士多德的老师。他创立了'阿卡德米'学园，其著作《理想国》和核心思想'理念论'对西方哲学产生了不可估量的影响。",
+            "content": [
+                {
+                    "title": "理念论 (Theory of Forms)",
+                    "text": "<p>柏拉图认为，现实世界只是感官的幻影，是不完美、易变的；在现实世界之外，存在着一个永恒、完美、真实的<strong>'理念世界'</strong>。例如，现实中的圆都不完美，但存在一个完美的'圆的理念'。知识就是对理念的回忆（洞穴比喻）。这一思想奠定了西方唯心主义哲学的基础。</p>"
+                },
+                {
+                    "title": "理想国 (The Republic)",
+                    "text": "<p>在代表作《理想国》中，柏拉图设计了一个由<strong>'哲学王'</strong>统治的完美城邦。社会分为三个等级：统治者（依靠智慧）、保卫者（依靠勇气）和生产者（依靠节制）。他认为只有当哲学家成为国王，或者国王成为哲学家，人类的苦难才能结束。</p>"
+                },
+                {
+                    "title": "阿卡德米学园",
+                    "text": "<p>他在雅典创办的阿卡德米学园（Academy）是西方最早的高等学府。学园门口挂着'不懂几何者不得入内'的牌子，强调数学和逻辑作为探究真理的阶梯。这里培养了包括亚里士多德在内的一大批学者。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "哲学",
+                    "desc": "理念论（唯心主义）。"
+                },
+                {
+                    "title": "政治",
+                    "desc": "《理想国》、哲学王。"
+                }
+            ],
+            "impact": {
+                "reality": "使哲学从苏格拉底的伦理探讨上升为系统的形而上学体系。",
+                "legacy": "'整个西方哲学史不过是为柏拉图做的注脚'（怀特海语）。"
+            },
+            "relations": [
+                {
+                    "text": "苏格拉底",
+                    "url": "topic_socrates.html"
+                },
+                {
+                    "text": "亚里士多德",
+                    "url": "topic_aristotle.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "plato_phil",
+                        "label": "柏拉图",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_plato.html"
+                    },
+                    {
+                        "id": "academy",
+                        "label": "学园",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_plato.html"
+                    },
+                    {
+                        "id": "forms",
+                        "label": "理念论",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_plato.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "plato_phil",
+                        "target": "academy",
+                        "label": "创办"
+                    },
+                    {
+                        "source": "plato_phil",
+                        "target": "forms",
+                        "label": "提出"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_aristotle",
+            "title": "百科全书式的学者：亚里士多德 (Aristotle)",
+            "type": "world",
+            "year": "公元前384-前322年",
+            "summary": "亚里士多德是古希腊哲学的集大成者。他'吾爱吾师，吾更爱真理'，批判性地继承了柏拉图的思想，在逻辑学、生物学、政治学、伦理学等广泛领域做出了开创性贡献。",
+            "content": [
+                {
+                    "title": "对理念论的批判",
+                    "text": "<p>亚里士多德虽然是柏拉图的学生，但他反对理念论将现实与理念割裂。他认为'理在事中'，理念（形式）不能脱离事物（质料）而独立存在。他更重视对现实世界的观察和经验研究，这开启了西方重视经验和科学的传统。</p>"
+                },
+                {
+                    "title": "三段论与逻辑学",
+                    "text": "<p>他建立了形式逻辑体系，提出了著名的<strong>三段论</strong>（大前提、小前提、结论），为西方科学思维提供了严密的工具。他在吕克昂建立学园，习惯在散步时教学，被称为'逍遥学派'。</p>"
+                },
+                {
+                    "title": "中庸之道",
+                    "text": "<p>在伦理学上，他主张<strong>'中庸'</strong>（Golden Mean），认为美德在于两个极端（过度与不及）之间的适度。在政治学上，他比较了158个城邦的宪法，认为混合政体（结合了君主、贵族和民主因素）最为稳固。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "古代最博学的学者，逻辑学之父。"
+                },
+                {
+                    "title": "名言",
+                    "desc": "'吾爱吾师，吾更爱真理'。"
+                }
+            ],
+            "impact": {
+                "reality": "总结了古希腊的学术成就，教育了亚历山大大帝。",
+                "legacy": "他的著作构建了中世纪伊斯兰和基督教经院哲学的框架，统治西方学术界长达两千年。"
+            },
+            "relations": [
+                {
+                    "text": "柏拉图",
+                    "url": "topic_plato.html"
+                },
+                {
+                    "text": "亚历山大",
+                    "url": "topic_alexander.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "aristotle_phil",
+                        "label": "亚里士多德",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_aristotle.html"
+                    },
+                    {
+                        "id": "logic",
+                        "label": "逻辑学",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_aristotle.html"
+                    },
+                    {
+                        "id": "lyceum",
+                        "label": "吕克昂",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_aristotle.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "aristotle_phil",
+                        "target": "logic",
+                        "label": "创立"
+                    },
+                    {
+                        "source": "aristotle_phil",
+                        "target": "lyceum",
+                        "label": "建立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_parthenon",
+            "title": "建筑的奇迹：帕特农神庙 (The Parthenon)",
+            "type": "world",
+            "year": "公元前447-前432年",
+            "summary": "帕特农神庙是雅典卫城的主体建筑，供奉雅典娜女神。它是古希腊多立克柱式的最高成就，象征着雅典民主政治的辉煌和黄金时代。",
+            "content": [
+                {
+                    "title": "建筑艺术的巅峰",
+                    "text": "<p>帕特农神庙由伯里克利主持修建，建筑师伊克提诺斯设计，菲迪亚斯负责雕塑。它采用典型的多立克柱式，但融合了爱奥尼元素。为了视觉上的完美，建筑师运用了'视差矫正'技术（如柱子微向内倾、地基微凸），使建筑在视觉上显得绝对垂直和水平。这种对和谐比例的极致追求体现了希腊理性精神。</p>"
+                },
+                {
+                    "title": "命运多舛的历史",
+                    "text": "<p>虽然建成时宏伟壮丽，但神庙在后世历经磨难。它曾被改为基督教堂、清真寺，甚至在1687年威尼斯与奥斯曼战争中被作为火药库而炸毁。19世纪，埃尔金勋爵将大量浮雕（埃尔金大理石）运往英国，通过大英博物馆展示，至今引发归还争议。</p>"
+                },
+                {
+                    "title": "文化象征",
+                    "text": "<p>帕特农神庙不仅是宗教场所，更是雅典帝国的金库和纪念碑。它浮雕上的'泛雅典娜节游行'场景，首次将普通公民而非仅是神话人物搬上神庙，彰显了雅典的人文主义和民主自信。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "古希腊建筑艺术的代表作。"
+                },
+                {
+                    "title": "柱式",
+                    "desc": "多立克柱式（雄伟有力）。"
+                }
+            ],
+            "impact": {
+                "reality": "展示了雅典黄金时代的财富与审美水准。",
+                "legacy": "其建筑形式（柱廊、山墙）被后世西方（如美国国会大厦、最高法院）广泛模仿，成为民主与理性的建筑符号。"
+            },
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                },
+                {
+                    "text": "雅典民主",
+                    "url": "topic_athens_democracy.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "parthenon_temple",
+                        "label": "帕特农神庙",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_parthenon.html"
+                    },
+                    {
+                        "id": "athena",
+                        "label": "雅典娜",
+                        "val": 20,
+                        "group": "god",
+                        "url": "topic_parthenon.html"
+                    },
+                    {
+                        "id": "architecture",
+                        "label": "建筑",
+                        "val": 20,
+                        "group": "art",
+                        "url": "detail_greece.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "parthenon_temple",
+                        "target": "athena",
+                        "label": "供奉"
+                    },
+                    {
+                        "source": "architecture",
+                        "target": "parthenon_temple",
+                        "label": "典范"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_homer",
+            "title": "史诗的时代：荷马史诗 (Homeric Epics)",
+            "type": "world",
+            "year": "约公元前8世纪",
+            "summary": "《荷马史诗》包括《伊利亚特》和《奥德赛》，是古希腊最早的文学作品。它不仅是文学巨著，更是了解'黑暗时代'希腊社会风貌的百科全书。",
+            "content": [
+                {
+                    "title": "伊利亚特与奥德赛",
+                    "text": "<p>《伊利亚特》讲述了特洛伊战争最后一年中，阿喀琉斯的愤怒以及希腊联军攻陷特洛伊的故事，歌颂了英雄的荣誉与战争的残酷。《奥德赛》则讲述了希腊英雄奥德修斯在战后历经十年漂泊，运用智慧战胜妖魔鬼怪，最终返乡复仇的故事，体现了人的智慧与坚韧。</p>"
+                },
+                {
+                    "title": "神人同形同性",
+                    "text": "<p>荷马史诗展现了希腊神话<strong>'神人同形同性'</strong>（Anthropomorphism）的特点。神不仅外貌像人，性格也像人，有喜怒哀乐，甚至会嫉妒和争斗。这种人本主义的宗教观，大大减少了神对人的精神压迫，为后来希腊哲学和人文主义的兴起提供了土壤。</p>"
+                },
+                {
+                    "title": "荷马时代",
+                    "text": "<p>史诗所反映的公元前11世纪到前9世纪的历史时期被称为'荷马时代'。这一时期希腊处于氏族公社解体、国家产生的过渡阶段。史诗中关于部落首领（巴赛勒斯）、议事会和人民大会的描写，是研究早期希腊社会制度的珍贵史料。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "内容",
+                    "desc": "《伊利亚特》（特洛伊战争）、《奥德赛》（返乡）。"
+                },
+                {
+                    "title": "价值",
+                    "desc": "西方文学的基石，史料价值（荷马时代）。"
+                }
+            ],
+            "impact": {
+                "reality": "塑造了希腊人的民族认同感和英雄价值观（'阿雷特'，Arete）。",
+                "legacy": "西方文学的源头，'希腊人的圣经'，对后世的史诗、戏剧创作产生了决定性影响。"
+            },
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                },
+                {
+                    "text": "亚历山大",
+                    "url": "topic_alexander.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "homer_poet",
+                        "label": "荷马",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_homer.html"
+                    },
+                    {
+                        "id": "iliad",
+                        "label": "伊利亚特",
+                        "val": 20,
+                        "group": "book",
+                        "url": "topic_homer.html"
+                    },
+                    {
+                        "id": "odyssey",
+                        "label": "奥德赛",
+                        "val": 20,
+                        "group": "book",
+                        "url": "topic_homer.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "homer_poet",
+                        "target": "iliad",
+                        "label": "创作"
+                    },
+                    {
+                        "source": "homer_poet",
+                        "target": "odyssey",
+                        "label": "创作"
+                    }
+                ]
+            }
+        }
+    ]
+}

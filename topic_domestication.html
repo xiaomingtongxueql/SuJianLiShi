@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动植物驯化: 改变基因的盟约 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#15803d', secondary: '#14532d', stone: '#475569', line: '#E2E8F0',
+                        earth: '#a16207'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        动植物驯化: 改变基因的盟约
+                    </h1>
+                </section>
+
+
+
+                <!-- 深度叙事：机制 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="dna" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：人工选择的力量
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">打破自然法则</h3>
+                            <p>
+                                在自然界中，野生小麦成熟后麦穗会自动破碎（落粒），以便种子散播；野绵羊性情警觉、生性好斗。这种适应自然的性状对早期农民来说是灾难。于是，人类开始进行<strong>无意识的选择</strong>：专门收集那些发生突变、麦穗不落粒的小麦；专门饲养那些性格温顺、体型较小的幼兽。
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-lg font-bold text-primary mb-2">生物工程成果</h3>
+                            <p>
+                                经过数千年的筛选，驯化后的物种发生了剧变：家猪的脑容量比野猪少了三分之一（不再需要时刻警惕危险）；奶牛的产奶量是其野生祖先的数十倍；玉米的果穗从指甲盖大小变成了手臂粗细。正如达尔文所言，这些物种已经变成了<strong>“人类意志的生物学产物”</strong>。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 深度叙事：地理运气 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="map" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：贾雷德·戴蒙德的“地理彩票”
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <p class="mb-6">
+                            为什么农业革命最早发生在欧亚大陆，而不是澳大利亚或北美？问题不在人，而在物种。
+                        </p>
+                        <ul class="list-none space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-earth font-bold mr-2 text-lg">01.</span>
+                                <div><strong>大型哺乳动物：</strong>
+                                    世界上仅有14种大型食草哺乳动物不仅被驯化（包括牛、马、羊、猪等）。其中13种原产于欧亚大陆。美洲只有羊驼，澳洲连一种都没有。</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-earth font-bold mr-2 text-lg">02.</span>
+                                <div><strong>禾本科植物：</strong> 欧亚大陆拥有最多的大种籽草本植物（小麦、大麦），它们富含蛋白质且易于储存。</div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-earth font-bold mr-2 text-lg">03.</span>
+                                <div><strong>纬度轴线：</strong>
+                                    欧亚大陆呈东西走向，气候带相同，利于驯化技术迅速传播（从新月沃地到中国）。而美洲和非洲呈南北走向，气候屏障阻碍了农业的扩散。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代链接</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                今天的基因编辑技术（CRISPR）本质上是新石器时代人工选择的加速版。我们依然在试图扮演上帝，决定番茄应该多红，猪肉应该多瘦。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 深刻代价</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                为了适应单一的碳水化合物饮食，现代人类饱受肥胖、糖尿病的困扰。这是我们那副为了采集狩猎而进化的身体，在面对农业环境时的错配。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"农业革命","url":"detail_agrarian.html"},{"text":"贾雷德·戴蒙德","url":"topic_jared_diamond.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"domest_core","label":"驯化","val":35,"group":"core","url":"topic_domestication.html"},{"id":"selection","label":"人工选择","val":25,"group":"mechanism","url":"topic_selection.html"},{"id":"geography","label":"地理决定论","val":30,"group":"theory","url":"topic_jared_diamond.html"},{"id":"wheat","label":"小麦","val":20,"group":"crop","url":"topic_wheat.html"},{"id":"dog","label":"狗(最早驯化)","val":20,"group":"animal","url":"topic_dog.html"}],"edges":[{"source":"domest_core","target":"selection","label":"机制"},{"source":"geography","target":"domest_core","label":"解释差异"},{"source":"domest_core","target":"wheat","label":"改造"},{"source":"domest_core","target":"dog","label":"首个伙伴"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#15803d', nodeColor: '#15803d' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-earth', hoverColor: 'hover:text-accent' }); }
+    </script>
+</body>
+
+</html>
+
+

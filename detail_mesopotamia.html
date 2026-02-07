@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两河流域:文明的曙光 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-mesopotamia"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        约公元前3500年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">两河流域:文明的曙光
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        美索不达米亚（Mesopotamia），希腊语意为'两河之间的地方'。在这片由幼发拉底河与底格里斯河冲积而成的月牙形地带，人类历史不仅长出了第一批成熟的城市，更刻下了第一行严谨的法律。这里没有埃及那种封闭的安全感，只有苏美尔城邦间永无止境的博弈与巴比伦人对秩序的终极渴望。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?bvid=BV1tFtszqEau&page=1&high_quality=1&danmaku=0"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>苏美尔与楔形文字
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>与温顺、准时的尼罗河不同，两河流域的泛滥规律极难捉摸。这种'不安全感'反而催生了人类历史上最高效的社会组织能力。为了疏导喜怒无常的洪水，散落的部落不得不凝聚成契约化的城邦。苏美尔人（Sumerians）在南部的淤泥地上建立了乌鲁克、拉格什等璀璨明珠。
+                                </p>
+                                <p>公元前3000年左右，苏美尔发明了<strong>楔形文字</strong>（Cuneiform）。这种用削尖的芦苇杆在湿泥板上按压出的楔状线条，是人类捕捉思维最成功的尝试之一。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>汉谟拉比法典
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>公元前18世纪，古巴比伦国王<strong>汉谟拉比</strong>完成了对两河流域的中部统一。他的最大遗产不是疆域，而是那一尊黑色的玄武岩石柱——<strong>《汉谟拉比法典》</strong>。这也是人类文明史上第一部较为完备的成文法典。
+                                </p>
+                                <p>汉谟拉比通过法律将分散的部落习惯法统一为国家意志。它让法律从统治者的口袋里走了出来，刻在石柱上，实现了政治管理的透明化与标准化。这正是文明从'人治'向'契约社会'迈出的第一步。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>科学的萌芽
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>美索不达米亚人的实际需求（纳税计算、农事预测）推动了极其发达的数学与天文学。我们今日生活在代码与规章构成的现代社会，其源头可追溯至汉谟拉比的石柱。两河流域告诉人类：文明的进化不仅是硬件的堆叠（金字塔），更是社会运行规则（软件）的不断迭代与标准化。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                楔形文字
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">人类最早的文字系统之一，记录在泥板上，为两河流域文化的延续提供了基础。</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                汉谟拉比法典
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                世界上现存最古老、最完整的成文法典，体现了'以眼还眼，以牙还牙'的原则，本质上维护奴隶主阶级利益。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                当你低头看表发现60秒为一分钟，当你抬头看月亮联想到星期与周期，你其实正站在苏美尔祭司五千年前站过的泥板之上。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                楔形文字虽然消失，但通过腓尼基人中转，间接影响了地中海沿岸字母文字的发展。汉谟拉比法典开创了成文法传统。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"苏美尔人","url":"topic_sumerians.html"},{"text":"楔形文字","url":"topic_cuneiform.html"},{"text":"汉谟拉比法典","url":"topic_hammurabi.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"mesopotamia","label":"两河流域","val":30,"group":"core","url":"detail_mesopotamia.html"},{"id":"sumer","label":"苏美尔","val":25,"group":"civilization","url":"topic_sumerians.html"},{"id":"babylon","label":"巴比伦","val":25,"group":"civilization","url":"topic_babylon.html"},{"id":"cuneiform","label":"楔形文字","val":20,"group":"achievement","url":"topic_cuneiform.html"},{"id":"hammurabi","label":"汉谟拉比","val":15,"group":"person","url":"topic_hammurabi.html"},{"id":"code","label":"汉谟拉比法典","val":25,"group":"achievement","url":"topic_hammurabi.html"},{"id":"tigris","label":"底格里斯河","val":15,"group":"geography","url":"topic_tigris.html"},{"id":"euphrates","label":"幼发拉底河","val":15,"group":"geography","url":"topic_euphrates.html"}],"edges":[{"source":"tigris","target":"mesopotamia","label":"孕育"},{"source":"euphrates","target":"mesopotamia","label":"孕育"},{"source":"sumer","target":"mesopotamia","label":"早期文明"},{"source":"sumer","target":"cuneiform","label":"发明"},{"source":"babylon","target":"mesopotamia","label":"后期文明"},{"source":"hammurabi","target":"babylon","label":"国王"},{"source":"hammurabi","target":"code","label":"颁布"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

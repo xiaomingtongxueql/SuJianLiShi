@@ -1,0 +1,95 @@
+{
+    "id": "detail_weijin",
+    "type": "china",
+    "title": "魏晋南北朝:乱世中的融合",
+    "year": "220年 — 589年",
+    "desc": "这是一个政权更迭频繁的乱世，也是民族大融合与文化精神大解放的时代。九品中正制的确立、江南的开发、佛教的兴盛以及士族文化的繁荣是这一时期的显著特征。",
+    "content": [
+        {
+            "title": "政治:从九品中正到门阀政治",
+            "text": "<p>曹魏创立<strong>九品中正制</strong>，初衷是选拔人才，后来逐渐演变成'上品无寒门，下品无势族'的工具，形成了特殊的<strong>门阀士族</strong>政治。王与马共天下是这一政治格局的典型写照。</p>"
+        },
+        {
+            "title": "经济:江南的开发",
+            "text": "<p>由于北方战乱，大量人口南迁（衣冠南渡），带去了先进的生产技术和劳动力。江南地区得到大规模开发，为后来经济重心的南移奠定了基础。</p>"
+        },
+        {
+            "title": "民族:胡汉融合",
+            "text": "<p>五胡入华虽然带来了战乱，但也促进了深度的民族融合。<strong>北魏孝文帝改革</strong>（迁都洛阳、汉化政策）是这一融合进程的高峰，为隋唐大一统奠定了基础。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "九品中正制",
+            "url": "topic_jiupin.html"
+        },
+        {
+            "text": "孝文帝改革",
+            "url": "topic_xiaowendi.html"
+        },
+        {
+            "text": "兰亭序",
+            "url": "topic_lanting.html"
+        },
+        {
+            "text": "祖冲之",
+            "url": "topic_zuchongzhi.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "weijin",
+                "label": "魏晋南北朝",
+                "val": 30,
+                "group": "core",
+                "url": "detail_weijin.html"
+            },
+            {
+                "id": "jiupin",
+                "label": "九品中正制",
+                "val": 25,
+                "group": "system",
+                "url": "topic_jiupin.html"
+            },
+            {
+                "id": "xiaowen",
+                "label": "孝文帝",
+                "val": 20,
+                "group": "person",
+                "url": "topic_xiaowendi.html"
+            },
+            {
+                "id": "buddhism",
+                "label": "佛教兴盛",
+                "val": 20,
+                "group": "religion",
+                "url": "topic_buddhism_china.html"
+            },
+            {
+                "id": "art",
+                "label": "魏晋风度",
+                "val": 15,
+                "group": "culture",
+                "url": "topic_weijinfengdu.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "weijin",
+                "target": "jiupin",
+                "label": "实行"
+            },
+            {
+                "source": "xiaowen",
+                "target": "weijin",
+                "label": "改革"
+            },
+            {
+                "source": "weijin",
+                "target": "art",
+                "label": "孕育"
+            }
+        ]
+    }
+}

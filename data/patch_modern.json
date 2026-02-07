@@ -1,0 +1,708 @@
+{
+    "details": [
+        {
+            "id": "detail_industrial_rev_1",
+            "type": "world",
+            "title": "第一次工业革命:蒸汽时代",
+            "year": "18世纪60年代",
+            "desc": "以蒸汽机的改良和广泛应用为标志，人类社会由手工工场进入大机器生产时代。",
+            "content": [
+                {
+                    "title": "珍妮机与蒸汽机",
+                    "text": "<p>1765年哈格里夫斯发明'珍妮纺纱机'，标志着工业革命的开始。1785年，<strong>瓦特</strong>改良的蒸汽机投入使用，提供了高效、便捷的动力，人类从此进入'蒸汽时代'。</p>"
+                },
+                {
+                    "title": "工厂制度的确立",
+                    "text": "<p>随着机器生产取代手工劳动，现代工厂制度逐步确立。生产力的巨大飞跃改变了社会结构，产生了工业资产阶级和工业无产阶级两大对立阶级。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "蒸汽机",
+                    "url": "topic_steam_engine.html"
+                },
+                {
+                    "text": "瓦特",
+                    "url": "topic_watt.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "ir1",
+                        "label": "工业革命",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_industrial_rev_1.html"
+                    },
+                    {
+                        "id": "steam",
+                        "label": "蒸汽机",
+                        "val": 25,
+                        "group": "tech",
+                        "url": "topic_steam_engine.html"
+                    },
+                    {
+                        "id": "watt",
+                        "label": "瓦特",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_watt.html"
+                    },
+                    {
+                        "id": "factory",
+                        "label": "工厂制",
+                        "val": 20,
+                        "group": "system",
+                        "url": "topic_factory.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "watt",
+                        "target": "steam",
+                        "label": "改良"
+                    },
+                    {
+                        "source": "steam",
+                        "target": "ir1",
+                        "label": "标志"
+                    },
+                    {
+                        "source": "ir1",
+                        "target": "factory",
+                        "label": "确立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_ww1",
+            "type": "world",
+            "title": "第一次世界大战:帝国的碰撞",
+            "year": "1914年 — 1918年",
+            "desc": "一场由欧洲列强为争夺世界霸权而引发的全球性战争。同盟国与协约国展开厮杀，造成了空前的灾难，也重塑了国际格局（凡尔赛-华盛顿体系）。",
+            "content": [
+                {
+                    "title": "萨拉热窝的枪声",
+                    "text": "<p>1914年6月28日，奥匈帝国皇储斐迪南大公在<strong>萨拉热窝</strong>被塞尔维亚民族主义者普林西普刺杀。这一事件成为一战的导火索。随后，欧洲各大国依据盟约纷纷卷入战争。</p>"
+                },
+                {
+                    "title": "凡尔登绞肉机",
+                    "text": "<p>战争主要在欧洲战场进行，分为东、西、南三条战线。1916年的<strong>凡尔登战役</strong>异常惨烈，德法双方伤亡超过70万，被称为'绞肉机'。随后的索姆河战役中，坦克首次投入使用。</p>"
+                },
+                {
+                    "title": "战争的结束与反思",
+                    "text": "<p>1917年美国参战，俄国爆发十月革命退出战争。1918年11月，德国投降，一战以同盟国的失败告终。战争削弱了欧洲的力量，促进了民族解放运动的发展。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "萨拉热窝事件",
+                    "url": "topic_sarajevo.html"
+                },
+                {
+                    "text": "凡尔赛体系",
+                    "url": "topic_versailles.html"
+                },
+                {
+                    "text": "国联",
+                    "url": "topic_league_nations.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "ww1",
+                        "label": "一战",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_ww1.html"
+                    },
+                    {
+                        "id": "entente",
+                        "label": "协约国",
+                        "val": 20,
+                        "group": "camp",
+                        "url": "topic_entente.html"
+                    },
+                    {
+                        "id": "alliance",
+                        "label": "同盟国",
+                        "val": 20,
+                        "group": "camp",
+                        "url": "topic_alliance_powers.html"
+                    },
+                    {
+                        "id": "sarajevo",
+                        "label": "萨拉热窝",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_sarajevo.html"
+                    },
+                    {
+                        "id": "versailles",
+                        "label": "凡尔赛体系",
+                        "val": 20,
+                        "group": "result",
+                        "url": "topic_versailles.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sarajevo",
+                        "target": "ww1",
+                        "label": "导火索"
+                    },
+                    {
+                        "source": "ww1",
+                        "target": "versailles",
+                        "label": "战后秩序"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_opium",
+            "type": "china",
+            "title": "鸦片战争:屈辱的开始",
+            "year": "1840年 — 1842年",
+            "desc": "英国为打开中国市场发动了侵略战争。中国战败，签署《南京条约》，中国开始沦为半殖民地半封建社会。",
+            "content": [
+                {
+                    "title": "虎门销烟",
+                    "text": "<p>1839年，林则徐在广东<strong>虎门销烟</strong>，显示了中华民族反对外来侵略的意志。借此，英国于1840年发动了鸦片战争。</p>"
+                },
+                {
+                    "title": "南京条约",
+                    "text": "<p>1842年，清政府被迫签署中国近代史上第一个不平等条约——<strong>《南京条约》</strong>。割让香港岛，赔款2100万银元，开放五口通商，协定关税。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "林则徐",
+                    "url": "topic_linzexu.html"
+                },
+                {
+                    "text": "南京条约",
+                    "url": "topic_nanjing_treaty.html"
+                },
+                {
+                    "text": "魏源",
+                    "url": "topic_weiyuan.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "opium",
+                        "label": "鸦片战争",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_opium.html"
+                    },
+                    {
+                        "id": "lin",
+                        "label": "林则徐",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_linzexu.html"
+                    },
+                    {
+                        "id": "treaty",
+                        "label": "南京条约",
+                        "val": 25,
+                        "group": "event",
+                        "url": "topic_nanjing_treaty.html"
+                    },
+                    {
+                        "id": "wei",
+                        "label": "魏源",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_weiyuan.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "lin",
+                        "target": "opium",
+                        "label": "导火索"
+                    },
+                    {
+                        "source": "opium",
+                        "target": "treaty",
+                        "label": "结果"
+                    },
+                    {
+                        "source": "wei",
+                        "target": "opium",
+                        "label": "反思"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_xinhai",
+            "type": "china",
+            "title": "辛亥革命:帝制的终结",
+            "year": "1911年",
+            "desc": "孙中山及其同盟会领导的资产阶级民主革命。推翻了清朝统治，结束了中国两千多年的君主专制制度，建立了中华民国。",
+            "content": [
+                {
+                    "title": "武昌起义",
+                    "text": "<p>1911年10月10日，武昌新军发动起义，各省纷纷响应。1912年1月1日，<strong>中华民国</strong>成立，孙中山就任临时大总统。</p>"
+                },
+                {
+                    "title": "历史意义",
+                    "text": "<p>辛亥革命传播了民主共和理念，推动了中华民族的思想解放，也促进了民族资本主义的发展。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "孙中山",
+                    "url": "topic_sunzhongshan.html"
+                },
+                {
+                    "text": "三民主义",
+                    "url": "topic_sanmin.html"
+                },
+                {
+                    "text": "同盟会",
+                    "url": "topic_tongmenghui.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "xinhai",
+                        "label": "辛亥革命",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_xinhai.html"
+                    },
+                    {
+                        "id": "sun",
+                        "label": "孙中山",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_sunzhongshan.html"
+                    },
+                    {
+                        "id": "principles",
+                        "label": "三民主义",
+                        "val": 20,
+                        "group": "idea",
+                        "url": "topic_sanmin.html"
+                    },
+                    {
+                        "id": "republic",
+                        "label": "中华民国",
+                        "val": 20,
+                        "group": "result",
+                        "url": "topic_republic_china.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sun",
+                        "target": "xinhai",
+                        "label": "领导"
+                    },
+                    {
+                        "source": "principles",
+                        "target": "xinhai",
+                        "label": "指导"
+                    },
+                    {
+                        "source": "xinhai",
+                        "target": "republic",
+                        "label": "建立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_new_culture",
+            "type": "china",
+            "title": "新文化运动:思想的启蒙",
+            "year": "1915年开始",
+            "desc": "由陈独秀、李大钊、鲁迅等人发起的思想解放运动。高举'民主'与'科学'两面大旗，动摇了封建礼教的统治地位。",
+            "content": [
+                {
+                    "title": "德先生与赛先生",
+                    "text": "<p>1915年陈独秀创办《青年杂志》（后改名《新青年》），标志运动开始。提倡民主（Democracy）和科学（Science），反对专制愚昧；提倡新文学，反对旧文学。</p>"
+                },
+                {
+                    "title": "五四运动",
+                    "text": "<p>1919年<strong>五四运动</strong>爆发，新文化运动进入新阶段，开始传播马克思主义，为中国共产党的成立做了思想准备。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "陈独秀",
+                    "url": "topic_chenduxiu.html"
+                },
+                {
+                    "text": "鲁迅",
+                    "url": "topic_luxun.html"
+                },
+                {
+                    "text": "五四运动",
+                    "url": "topic_may_fourth.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "newculture",
+                        "label": "新文化运动",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_new_culture.html"
+                    },
+                    {
+                        "id": "chen",
+                        "label": "陈独秀",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_chenduxiu.html"
+                    },
+                    {
+                        "id": "lu",
+                        "label": "鲁迅",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_luxun.html"
+                    },
+                    {
+                        "id": "ds",
+                        "label": "民主科学",
+                        "val": 20,
+                        "group": "idea",
+                        "url": "topic_democracy_science.html"
+                    },
+                    {
+                        "id": "may4",
+                        "label": "五四运动",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_may_fourth.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "chen",
+                        "target": "newculture",
+                        "label": "发起"
+                    },
+                    {
+                        "source": "lu",
+                        "target": "newculture",
+                        "label": "主将"
+                    },
+                    {
+                        "source": "newculture",
+                        "target": "ds",
+                        "label": "旗帜"
+                    },
+                    {
+                        "source": "newculture",
+                        "target": "may4",
+                        "label": "发展"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_steam_engine",
+            "title": "蒸汽机 (Steam Engine)",
+            "type": "world",
+            "summary": "工业革命的核心发明，将热能转化为机械能，解决了机器生产的动力问题。",
+            "sections": [
+                {
+                    "title": "动力之源",
+                    "content": "<p>瓦特改良的万能蒸汽机，使工厂摆脱了水力的限制，可以建设在交通便利的城市。它还推动了火车、轮船等交通工具的发明，极大缩小了世界的距离。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次工业革命",
+                    "url": "detail_industrial_rev_1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_linzexu",
+            "title": "林则徐 (Lin Zexu)",
+            "type": "china",
+            "summary": "晚清政治家、思想家，民族英雄。主持虎门销烟，被称为'近代中国开眼看世界的第一人'。",
+            "sections": [
+                {
+                    "title": "虎门销烟",
+                    "content": "<p>1839年6月，林则徐在广东虎门海滩当众销毁收缴的英美鸦片237万斤。这一壮举显示了中华民族反对外来侵略的坚强意志。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "鸦片战争",
+                    "url": "detail_opium.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sunzhongshan",
+            "title": "孙中山 (Sun Yat-sen)",
+            "type": "china",
+            "summary": "中国近代民主革命的先行者，中华民国和中国国民党的缔造者，三民主义的倡导者。",
+            "sections": [
+                {
+                    "title": "天下为公",
+                    "content": "<p>孙中山领导辛亥革命，推翻了清朝统治，结束了中国两千多年的君主专制制度。他一生致力于'振兴中华'，遗嘱'革命尚未成功，同志仍须努力'激励着后人。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "辛亥革命",
+                    "url": "detail_xinhai.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_democracy_science",
+            "title": "民主与科学 (Democracy & Science)",
+            "type": "china",
+            "summary": "新文化运动的两面旗帜，形象地被称为'德先生'（Democracy）和'赛先生'（Science）。",
+            "sections": [
+                {
+                    "title": "思想启蒙",
+                    "content": "<p>陈独秀、李大钊等人号召用民主反对专制，用科学反对迷信，在社会上掀起了一股思想解放的潮流，为马克思主义在中国的传播创造了条件。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "新文化运动",
+                    "url": "detail_new_culture.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sarajevo",
+            "title": "萨拉热窝事件 (Sarajevo Incident)",
+            "type": "world",
+            "summary": "1914年6月28日，奥匈帝国皇储斐迪南大公夫妇在萨拉热窝被塞尔维亚青年普林西普枪杀。",
+            "sections": [
+                {
+                    "title": "战争的导火索",
+                    "content": "<p>这一偶发事件被想发动战争的德奥集团利用，一个月后奥匈帝国向塞尔维亚宣战，第一次世界大战爆发。它警示我们：个人极端行为可能引发全球性灾难。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次世界大战",
+                    "url": "detail_ww1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_versailles",
+            "title": "凡尔赛体系 (Versailles System)",
+            "type": "world",
+            "summary": "一战后协约国通过巴黎和会建立的战后国际秩序。",
+            "sections": [
+                {
+                    "title": "脆弱的和平",
+                    "content": "<p>该体系确立了帝国主义在欧洲、西亚、非洲的统治新秩序。但它建立在对战败国（如德国）的掠夺之上，并没有消除列强之间的矛盾，反而埋下了二战的祸根。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次世界大战",
+                    "url": "detail_ww1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_league_nations",
+            "title": "国际联盟 (League of Nations)",
+            "type": "world",
+            "summary": "一战后建立的第一个国际性政治组织，宗旨是维护和平、制裁侵略。",
+            "sections": [
+                {
+                    "title": "理想的破灭",
+                    "content": "<p>国联虽然在恢复战后经济方面起过作用，但被英法操纵，缺乏强制力。美国因未达目的而未加入。面对德意日的法西斯侵略，国联实行绥靖政策，最终解散。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次世界大战",
+                    "url": "detail_ww1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_watt",
+            "title": "瓦特 (James Watt)",
+            "type": "world",
+            "summary": "英国发明家，改良了蒸汽机。",
+            "sections": [
+                {
+                    "title": "蒸汽之父",
+                    "content": "<p>他并非蒸汽机的发明者，而是改良者。他通过增加冷凝器等装置，提高了蒸汽机的热效率，使其成为实用的动力机器。功率单位'瓦特'即以他的名字命名。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次工业革命",
+                    "url": "detail_industrial_rev_1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_factory",
+            "title": "工厂制度 (Factory System)",
+            "type": "world",
+            "summary": "工业革命期间兴起的一种新的生产组织形式。",
+            "sections": [
+                {
+                    "title": "机器代替手工",
+                    "content": "<p>它取代了传统的手工工场，将工人集中在厂房内，使用机器进行大规模生产。严格的纪律和分工大大提高了劳动生产率，但也带来了工人受剥削等社会问题。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "第一次工业革命",
+                    "url": "detail_industrial_rev_1.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_nanjing_treaty",
+            "title": "南京条约 (Treaty of Nanking)",
+            "type": "china",
+            "summary": "1842年清政府与英国签订的中国近代史上第一个不平等条约。",
+            "sections": [
+                {
+                    "title": "丧权辱国",
+                    "content": "<p>条约规定割香港岛给英国，赔款2100万银元，开放广州、厦门、福州、宁波、上海五处为通商口岸，英商进出口货物缴纳的税款，中国须同英国商定。中国的主权完整受到严重破坏。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "鸦片战争",
+                    "url": "detail_opium.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_weiyuan",
+            "title": "魏源 (Wei Yuan)",
+            "type": "china",
+            "summary": "晚清思想家。主张'师夷长技以制夷'。",
+            "sections": [
+                {
+                    "title": "海国图志",
+                    "content": "<p>他编纂了《海国图志》，系统介绍了西方的历史、地理和科技。他提出的学习西方先进技术来抵御侵略的思想，对后世产生了深远影响。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "鸦片战争",
+                    "url": "detail_opium.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sanmin",
+            "title": "三民主义 (Three Principles of the People)",
+            "type": "china",
+            "summary": "孙中山提出的民族、民权、民生主义。是辛亥革命的指导思想。",
+            "sections": [
+                {
+                    "title": "革命纲领",
+                    "content": "<p>民族主义即'驱除鞑虏，恢复中华'，推翻清朝统治；民权主义即'创立民国'，建立资产阶级共和国；民生主义即'平均地权'。它是比较完整的资产阶级民主革命纲领。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "辛亥革命",
+                    "url": "detail_xinhai.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_tongmenghui",
+            "title": "同盟会 (Tongmenghui)",
+            "type": "china",
+            "summary": "1905年孙中山在日本东京建立的第一个全国性的资产阶级革命政党。",
+            "sections": [
+                {
+                    "title": "革命大本营",
+                    "content": "<p>它的成立大大推动了全国革命运动的发展。机关刊物是《民报》。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "辛亥革命",
+                    "url": "detail_xinhai.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_chenduxiu",
+            "title": "陈独秀 (Chen Duxiu)",
+            "type": "china",
+            "summary": "新文化运动的发起者，中国共产党的主要创始人之一。",
+            "sections": [
+                {
+                    "title": "思想前驱",
+                    "content": "<p>他在上海创办《青年杂志》，发表《敬告青年》一文，吹响了新文化运动的号角。他提倡民主与科学，猛烈抨击封建旧道德。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "新文化运动",
+                    "url": "detail_new_culture.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_luxun",
+            "title": "鲁迅 (Lu Xun)",
+            "type": "china",
+            "summary": "伟大的文学家、思想家、革命家。中国现代文学的奠基人。",
+            "sections": [
+                {
+                    "title": "狂人日记",
+                    "content": "<p>他发表了中国现代文学史上第一篇白话小说《狂人日记》，借'如狂人'之口，揭露了封建社会'吃人'的本质。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "新文化运动",
+                    "url": "detail_new_culture.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_may_fourth",
+            "title": "五四运动 (May Fourth Movement)",
+            "type": "china",
+            "summary": "1919年5月4日爆发的反帝反封建爱国运动。",
+            "sections": [
+                {
+                    "title": "新民主主义革命的开端",
+                    "content": "<p>导火索是巴黎和会上中国外交的失败。运动主力由学生转为工人。它是中国旧民主主义革命走向新民主主义革命的转折点。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "新文化运动",
+                    "url": "detail_new_culture.html"
+                }
+            ]
+        }
+    ]
+}

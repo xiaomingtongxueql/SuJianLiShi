@@ -1,0 +1,139 @@
+{
+    "id": "topic_xinhai",
+    "title": "辛亥革命:帝制的终结",
+    "category": "政治革命",
+    "year": "1911年",
+    "word_count": 3400,
+    "summary": "辛亥革命（Xinhai Revolution）是1911年（农历辛亥年）发生的推翻清朝统治、建立共和政体的全国性革命。革命的爆发点是武昌起义。它结束了中国长达两千多年的君主专制制度，建立了亚洲第一个资产阶级共和国——中华民国，使民主共和观念深入人心，是中国近代史上一次伟大的历史巨变。",
+    "graph": {
+        "nodes": [
+            {
+                "id": "revolution",
+                "label": "辛亥革命",
+                "val": 25,
+                "group": "core"
+            },
+            {
+                "id": "sunzhongshan",
+                "label": "孙中山",
+                "val": 20,
+                "group": "person"
+            },
+            {
+                "id": "huangxing",
+                "label": "黄兴",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "yuanshikai",
+                "label": "袁世凯",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "wuchang",
+                "label": "武昌起义",
+                "val": 12,
+                "group": "event"
+            },
+            {
+                "id": "tongmenghui",
+                "label": "同盟会",
+                "val": 12,
+                "group": "org"
+            },
+            {
+                "id": "sanmin",
+                "label": "三民主义",
+                "val": 12,
+                "group": "concept"
+            },
+            {
+                "id": "roc",
+                "label": "中华民国",
+                "val": 15,
+                "group": "impact"
+            },
+            {
+                "id": "monarchy",
+                "label": "帝制终结",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "sunzhongshan",
+                "target": "revolution",
+                "label": "领导"
+            },
+            {
+                "source": "tongmenghui",
+                "target": "revolution",
+                "label": "组织基础"
+            },
+            {
+                "source": "sanmin",
+                "target": "revolution",
+                "label": "指导思想"
+            },
+            {
+                "source": "wuchang",
+                "target": "revolution",
+                "label": "爆发标志"
+            },
+            {
+                "source": "revolution",
+                "target": "roc",
+                "label": "建立"
+            },
+            {
+                "source": "revolution",
+                "target": "monarchy",
+                "label": "导致"
+            },
+            {
+                "source": "yuanshikai",
+                "target": "revolution",
+                "label": "窃取果实"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "革命前夜:改良之路断绝",
+            "content": "<p>19世纪末20世纪初，中国危机深重。《辛丑条约》签订后，清政府完全成为“洋人的朝廷”。清末新政和预备立宪证明清政府无意进行真正的政治改革，皇族内阁的成立更是让立宪派绝望。革命成为挽救民族危亡的唯一出路。1905年，孙中山在东京成立<strong>中国同盟会</strong>，提出了“驱除鞑虏，恢复中华，创立民国，平均地权”的纲领，即<strong>三民主义</strong>。</p>"
+        },
+        {
+            "title": "武昌首义:第一枪",
+            "content": "<p>1911年5月，清政府将商办的川汉、粤汉铁路收归国有，并将路权出卖给外国，引发了轰轰烈烈的<strong>保路运动</strong>。清政府急调湖北新军入川镇压，造成武汉空虚。<br>10月10日晚，武昌新军工程营士兵打响了起义第一枪。经过一夜激战，起义军占领武昌，成立湖北军政府。随后，全国十几个省纷纷宣布独立，清朝统治土崩瓦解。</p>"
+        },
+        {
+            "title": "民国建立与妥协",
+            "content": "<p>1912年1月1日，孙中山在南京宣誓就职中华民国临时大总统，宣告<strong>中华民国</strong>成立。颁布了中国历史上第一部资产阶级民主宪法《中华民国临时约法》。<br>然而，为了尽快推翻清朝，革命党人与北洋军阀袁世凯达成妥协：只要袁世凯赞成共和并逼清帝退位，就推举他为大总统。1912年2月12日，宣统帝退位，清朝灭亡。3月，袁世凯在北京就任临时大总统，革命果实被窃取。</p>"
+        },
+        {
+            "title": "历史意义:思想的解放",
+            "content": "<p>辛亥革命虽然没有改变中国半殖民地半封建的社会性质，但其历史功绩不可磨灭：</p><ul><li><strong>政治上</strong>：推翻了清朝，结束了帝制，建立了共和。</li><li><strong>思想上</strong>：民主共和观念深入人心。从此，谁想复辟帝制（如袁世凯、张勋），都会遭到全国人民的唾弃。</li><li><strong>经济上</strong>：为民族资本主义的发展创造了有利条件。</li><li><strong>习俗上</strong>：剪辫、易服、废止缠足，推动了社会生活的近代化。</li></ul>"
+        }
+    ],
+    "relations": [
+        {
+            "text": "孙中山",
+            "url": "topic_sun_yat_sen.html"
+        },
+        {
+            "text": "武昌起义",
+            "url": "topic_wuchang.html"
+        },
+        {
+            "text": "袁世凯",
+            "url": "topic_yuanshikai.html"
+        },
+        {
+            "text": "辛亥革命详述",
+            "url": "detail_xinhai.html"
+        }
+    ]
+}

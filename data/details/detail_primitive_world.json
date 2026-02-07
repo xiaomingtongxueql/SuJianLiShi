@@ -1,0 +1,122 @@
+{
+    "id": "detail_primitive_world",
+    "type": "world",
+    "title": "人类起源: 直立行走与智慧的曙光",
+    "year": "约300万年前",
+    "desc": "人类的起源是一个漫长的进化过程。直立行走解放了双手，火的使用照亮了黑夜，语言的产生连接了心灵。人类从此告别了蒙昧，迈向了文明。",
+    "content": [
+        {
+            "title": "从猿到人:关键的飞跃",
+            "text": "<p>人类起源于非洲的古猿。约320万年前，<strong>南方古猿</strong>（Australopithecus，代表如<strong>'露西'</strong>）已能直立行走，这是人类进化史上具有决定意义的一步。直立行走导致了骨盆变窄，而脑容量的增加又造成了生育困境，这种演化压力迫使人类必须在'早产'状态下出生，并在漫长的童年期依赖社会抚育，从而催生了复杂的社会结构。</p>"
+        },
+        {
+            "title": "直立人与尼安德特人",
+            "text": "<p>约180万年前，直立人走出非洲。在欧洲和西亚，演化出了适应寒冷气候的<strong>尼安德特人</strong>。他们拥有强壮的体格和不亚于智人的脑容量，能制造复杂的莫斯特石器，并已有埋葬死者和照顾伤员的习俗。长期以来他们被视为愚笨的野蛮人，但现代研究表明他们具有高度的智慧和复杂的文化。</p>"
+        },
+        {
+            "title": "智人与认知革命",
+            "text": "<p>约7万年前，智人经历了一场<strong>'认知革命'</strong>（Cognitive Revolution）。这并非脑容量的剧增，而是神经连接方式的突变。智人获得了独一无二的'虚构语言'能力，能够谈论神灵、国家、传说等不存在的事物。这种能力使陌生人之间的大规模合作成为可能，最终智人凭借这种压倒性的组织优势，迅速扩张至全球，并导致了其他人类物种（如尼安德特人）的灭绝。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "进化里程碑",
+            "desc": "人类进化遵循'直立行走 -> 制造工具 -> 脑容量增加 -> 认知革命'的顺序，反驳了'大脑袋先行'的旧观点。"
+        },
+        {
+            "title": "走出非洲",
+            "desc": "现代智人均起源于非洲，约6-7万年前的一波大规模迁徙使其扩散至全球，取代了世界各地原有的直立人后裔（如尼安德特人、丹尼索瓦人）。"
+        }
+    ],
+    "impact": {
+        "reality": "人类成为了地球生物圈的绝对主宰，但也引发了第六次物种大灭绝。我们至今仍受制于'石器时代的大脑'，在现代社会中面临肥胖、焦虑等进化不匹配问题。",
+        "legacy": "语言、工具使用、社会合作、对火的控制，这些在旧石器时代奠定的基础，至今仍是人类文明大厦的基石。"
+    },
+    "keywords": [
+        {
+            "text": "露西 (Lucy)",
+            "url": "topic_lucy.html"
+        },
+        {
+            "text": "尼安德特人",
+            "url": "topic_neanderthal.html"
+        },
+        {
+            "text": "认知革命",
+            "url": "topic_cognitive_rev.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "human",
+                "label": "人类起源",
+                "val": 30,
+                "group": "core",
+                "url": "detail_primitive_world.html"
+            },
+            {
+                "id": "lucy",
+                "label": "露西",
+                "val": 25,
+                "group": "person",
+                "url": "topic_lucy.html"
+            },
+            {
+                "id": "neander",
+                "label": "尼安德特人",
+                "val": 25,
+                "group": "species",
+                "url": "topic_neanderthal.html"
+            },
+            {
+                "id": "cognitive",
+                "label": "认知革命",
+                "val": 25,
+                "group": "event",
+                "url": "topic_cognitive_rev.html"
+            },
+            {
+                "id": "tool",
+                "label": "石器工具",
+                "val": 20,
+                "group": "skill",
+                "url": "topic_stone_tools.html"
+            },
+            {
+                "id": "fire",
+                "label": "火的使用",
+                "val": 20,
+                "group": "skill",
+                "url": "topic_fire.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "lucy",
+                "target": "human",
+                "label": "早期代表"
+            },
+            {
+                "source": "neander",
+                "target": "human",
+                "label": "及灭绝亲属"
+            },
+            {
+                "source": "human",
+                "target": "cognitive",
+                "label": "关键转折"
+            },
+            {
+                "source": "human",
+                "target": "tool",
+                "label": "技术特征"
+            },
+            {
+                "source": "human",
+                "target": "fire",
+                "label": "生存手段"
+            }
+        ]
+    }
+}

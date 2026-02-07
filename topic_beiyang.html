@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北洋政府统治 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        公元1912年 - 1928年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">北洋政府统治</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        辛亥革命果实被袁世凯窃取后，中国进入了北洋军阀统治时期。袁世凯死后，北洋军阀分裂为直、皖、奉三系，军阀割据混战，民不聊生。这一时期，虽然政治黑暗，但民族工业出现了短暂的春天。
+                    </p>
+
+                    
+                </section>
+
+                <!-- 核心叙事1 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="skull" class="w-8 h-8 text-gold mr-3"></i>
+                        袁世凯复辟
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        袁世凯为实现皇帝梦，对外接受了日本旨在灭亡中国的“<strong>二十一条</strong>”的大部分内容，对内镇压革命党人。
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        1915年12月，袁世凯复辟帝制，激起了全国人民的愤怒。蔡锷、李烈钧、唐继尧在云南宣告独立，组织护国军北上讨袁，<strong>护国战争</strong>爆发。
+                    </p>
+                </section>
+
+                <!-- 核心叙事2 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="swords" class="w-8 h-8 text-gold mr-3"></i>
+                        军阀割据
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        袁世凯死后，北洋军阀分裂。以<strong>段祺瑞</strong>为首的皖系、以<strong>冯国璋</strong>和<strong>曹锟</strong>为首的直系、以<strong>张作霖</strong>为首的奉系，为了争夺地盘和巩固政权，出卖国家利益，依附帝国主义，连年混战。
+                    </p>
+                </section>
+
+                <!-- 核心叙事3 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="factory" class="w-8 h-8 text-gold mr-3"></i>
+                        短暂的春天
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        一战期间，列强忙于欧洲战事，暂时放松了对中国的经济侵略。中国民族工业获得了一个迅速发展的良机，出现了“<strong>短暂的春天</strong>”。其中，纺织业和面粉业发展最快。张謇是这一时期著名的实业家，主张“实业救国”。
+                    </p>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-gold mr-3"></i>
+                        考点解析
+                    </h2>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="text-gold font-bold mr-3 mt-1">01</span>
+                            <div>
+                                <strong class="text-primary block mb-1">二次革命</strong>
+                                1913年，宋教仁被刺案导致“二次革命”爆发，最终失败。
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold font-bold mr-3 mt-1">02</span>
+                            <div>
+                                <strong class="text-primary block mb-1">社会特点</strong>
+                                政治上军阀混战，社会动荡；经济上民族工业短暂发展。
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <!-- 右侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+
+                    <!-- 知识图谱 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-72 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph">
+
+                            <!-- 连线：对抗关系 -->
+                            <div
+                                class="absolute top-[50%] left-[20%] w-[60%] h-px bg-gray-300 border-t border-dashed border-gray-400">
+                            </div>
+
+                            <!-- 核心节点：北洋政府 -->
+                            <div
+                                class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10 group cursor-default">
+                                <div
+                                    class="w-6 h-6 bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-md">
+                                    <div class="w-3 h-3 bg-primary rounded-full"></div>
+                                </div>
+                                <span
+                                    class="text-xs font-bold text-primary mt-1 bg-white/90 px-2 rounded shadow-sm">北洋政府</span>
+                            </div>
+
+                            <!-- 节点：袁世凯 (左上) -->
+                            <a href="topic_yuanshikai.html"
+                                class="absolute top-[20%] left-[20%] -translate-x-1/2 flex flex-col items-center group cursor-pointer hover:scale-110 transition-transform">
+                                <div
+                                    class="w-10 h-10 rounded-full border-2 border-gray-300 overflow-hidden shadow-sm group-hover:border-gold transition-colors">
+                                    <img src="https://ui-avatars.com/api/?name=Yuan&background=0E101A&color=fff"
+                                        alt="袁世凯" class="w-full h-full object-cover">
+                                </div>
+                                <span
+                                    class="text-[10px] text-gray-500 mt-1 font-bold group-hover:text-primary">袁世凯</span>
+                            </a>
+
+                            <!-- 节点：护国战争/蔡锷 (右下) -->
+                            <a href="topic_huguo.html"
+                                class="absolute bottom-[20%] right-[20%] -translate-x-1/2 flex flex-col items-center group cursor-pointer hover:scale-110 transition-transform">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gold/10 border border-gold flex items-center justify-center shadow-sm group-hover:bg-gold/20">
+                                    <i data-lucide="swords" class="w-4 h-4 text-gold"></i>
+                                </div>
+                                <span class="text-[10px] text-gray-500 mt-1 font-bold group-hover:text-gold">护国战争</span>
+                            </a>
+
+                            <!-- 节点：军阀混战 (直/皖/奉) -->
+                            <a href="topic_junfa.html"
+                                class="absolute bottom-[20%] left-[20%] -translate-x-1/2 flex flex-col items-center group cursor-pointer hover:scale-110 transition-transform">
+                                <div class="flex -space-x-2">
+                                    <div class="w-6 h-6 rounded-full bg-gray-200 border border-white"></div>
+                                    <div class="w-6 h-6 rounded-full bg-gray-300 border border-white"></div>
+                                    <div class="w-6 h-6 rounded-full bg-gray-400 border border-white"></div>
+                                </div>
+                                <span
+                                    class="text-[10px] text-gray-500 mt-1 font-bold group-hover:text-primary">军阀割据</span>
+                            </a>
+
+                            <!-- 节点：短暂春天 (右上) -->
+                            <a href="topic_zhangjian.html"
+                                class="absolute top-[20%] right-[20%] -translate-x-1/2 flex flex-col items-center group cursor-pointer hover:scale-110 transition-transform">
+                                <div
+                                    class="w-3 h-3 bg-gold rounded-full group-hover:ring-4 ring-gold/20 transition-all">
+                                </div>
+                                <span class="text-[10px] text-gray-500 mt-1 font-bold group-hover:text-gold">短暂春天</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+
+            <!-- Injected Deep Dive Card -->
+            <div id="deep-dive-card" class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                <div class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                    <i data-lucide="layers" class="w-4"></i> 历史深读
+                </div>
+                
+            <a href="detail_xinhai.html" class="block mt-3 group/link">
+                <div class="flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-gold/50 transition-all shadow-sm hover:shadow-md">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center mr-3 group-hover/link:bg-gold group-hover/link:text-white transition-colors">
+                            <i data-lucide="book-open-check" class="w-4 h-4"></i>
+                        </span>
+                        <span class="text-sm font-bold text-gray-700 group-hover/link:text-primary">辛亥革命:共和肇始</span>
+                    </div>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-300 group-hover/link:text-gold"></i>
+                </div>
+            </a>
+        
+            </div>
+        
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+        const keywords = [
+            { "text": "袁世凯", "url": "topic_yuanshikai.html" },
+            { "text": "二十一条", "url": "topic_21demands.html" },
+            { "text": "二次革命", "url": "topic_second_revolution.html" },
+            { "text": "张謇", "url": "topic_zhangjian.html" }
+        ];
+
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-gold">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        const videoData = null;
+        if (typeof ContentEnhancer !== 'undefined' && document.getElementById('video-container')) {
+            ContentEnhancer.VideoEmbed.render(document.getElementById('video-container'), videoData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }
+            );
+        }
+    </script>
+</body>
+
+</html>
+
+

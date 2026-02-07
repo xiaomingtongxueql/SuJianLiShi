@@ -1,0 +1,127 @@
+{
+    "id": "detail_colonial_plunder",
+    "type": "world",
+    "title": "早期殖民掠夺:血腥的资本积累",
+    "year": "16世纪 — 18世纪",
+    "desc": "新航路开辟后，欧洲殖民者开始了长达数百年的殖民掠夺。这一过程充满了暴力与血腥，无数财富流入欧洲，加速了资本主义的原始积累，却给亚非拉地区带来了深重的灾难。正如马克思所说：'资本来到世间，从头到脚，每个毛孔都滴着血和肮脏的东西。'",
+    "content": [
+        {
+            "title": "葡西的先发优势 (Portuguese & Spanish)",
+            "text": "<p>最早进行殖民的是葡萄牙和西班牙。葡萄牙主要在亚非沿海建立商站，控制商路；西班牙则横扫美洲，建立了庞大的殖民帝国，开采金银矿并建立了大庄园。美洲的金银源源不断流向欧洲，引发了'价格革命'。</p>"
+        },
+        {
+            "title": "海上马车夫与日不落帝国 (Dutch & British)",
+            "text": "<p>17世纪，荷兰凭借强大的商船队成为'海上马车夫'，一度垄断世界航运。但到了18世纪，英国后来居上。英国先后击败西班牙（无敌舰队）、荷兰和法国，最终成为世界上最大的殖民帝国，自诩为<strong>'日不落帝国'</strong>。</p>"
+        },
+        {
+            "title": "罪恶的三角贸易 (Triangular Trade)",
+            "text": "<p>为了解决美洲劳动力的短缺，欧洲殖民者开启了罪恶的<strong>'三角贸易'</strong>：从欧洲出发，将廉价工业品运往非洲；在非洲掳掠<strong>黑人奴隶</strong>运往美洲（中程）；再将美洲的金银、烟草、蔗糖运回欧洲。这场贸易持续了三百多年，使非洲丧失了近亿精壮人口，却为欧洲带来了巨额利润。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "资本原始积累",
+            "desc": "殖民掠夺是资本原始积累的重要手段，它加速了欧洲资本主义的发展，为工业革命准备了资金和市场。"
+        },
+        {
+            "title": "双重影响",
+            "desc": "对欧洲：财富积累，市场拓展。对殖民地：灾难深重，但客观上也传播了先进的生产方式和思想观念。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "三角贸易",
+            "url": "topic_triangular_trade.html"
+        },
+        {
+            "text": "东印度公司",
+            "url": "topic_east_india.html"
+        },
+        {
+            "text": "日不落帝国",
+            "url": "topic_british_empire.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "plunder",
+                "label": "殖民掠夺",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "spain",
+                "label": "西班牙",
+                "val": 20,
+                "group": "country"
+            },
+            {
+                "id": "uk",
+                "label": "英国",
+                "val": 20,
+                "group": "country"
+            },
+            {
+                "id": "triangle",
+                "label": "三角贸易",
+                "val": 25,
+                "group": "event"
+            },
+            {
+                "id": "slave",
+                "label": "黑奴贸易",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "capital",
+                "label": "资本原始积累",
+                "val": 20,
+                "group": "impact"
+            },
+            {
+                "id": "disaster",
+                "label": "殖民地灾难",
+                "val": 15,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "spain",
+                "target": "plunder",
+                "label": "开启"
+            },
+            {
+                "source": "uk",
+                "target": "plunder",
+                "label": "巅峰"
+            },
+            {
+                "source": "plunder",
+                "target": "triangle",
+                "label": "形式"
+            },
+            {
+                "source": "triangle",
+                "target": "slave",
+                "label": "核心"
+            },
+            {
+                "source": "plunder",
+                "target": "capital",
+                "label": "对欧洲"
+            },
+            {
+                "source": "plunder",
+                "target": "disaster",
+                "label": "对殖民地"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "今天的非洲依然贫困，种族主义依然存在，这都能追溯到这段历史。全球南北差距的根源之一。",
+        "legacy": "英语在全球的普及。咖啡、糖、烟草成为世界性消费品。"
+    }
+}

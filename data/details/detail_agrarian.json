@@ -1,0 +1,122 @@
+{
+    "id": "detail_agrarian",
+    "type": "world",
+    "title": "农业革命: 文明的基石",
+    "year": "约1万-2000年前",
+    "desc": "新石器时代，人类从相对平等的采集狩猎群体转变为定居的农业社会，这一被称为'农业革命'（Agrarian Revolution）的进程不仅会导致人口爆炸，更催生了私有制、阶级分化、国家机器以及文字记录，为后来所有文明形态奠定了不可逆转的物质与制度基础。",
+    "content": [
+        {
+            "title": "驯化的地理格局",
+            "text": "<p>农业革命并非单一起源，而是在全球多个中心独立发生的。在<strong>新月沃地</strong>（Fertile Crescent），人类驯化了小麦、大麦、山羊和绵羊；在<strong>东亚</strong>（黄河与长江流域），粟（小米）和水稻成为核心作物，猪和狗最早被驯养；在<strong>中美洲</strong>，玉米、豆类和南瓜（'三姐妹'）构成了农业基础。这些核心区域（Hearth Areas）向外辐射，构成了后世文明分布的雏形。</p>"
+        },
+        {
+            "title": "定居与社会复杂化",
+            "text": "<p>农业生产要求人类<strong>定居</strong>（Sedentism）以照顾作物。定居生活导致了人口密度的指数级增长，并引发了'拥挤病'。同时，粮食的<strong>剩余</strong>（Surplus）使部分人得以脱离直接生产，转而从事陶器制作、金属冶炼或宗教管理。为了管理剩余产品的分配和调节日益复杂的社会冲突，早期的酋邦（Chiefdoms）和国家（States）应运而生，随之而来的则是制度化的社会不平等和性别压迫。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "多中心起源",
+            "desc": "农业并非从一个中心传播至全球，而是在西亚（麦）、东亚（稻）、美洲（玉米）等至少7-8个地区独立起源。"
+        },
+        {
+            "title": "文明三要素",
+            "desc": "农业革命直接催生了文明的三大特征：城市（定居）、金属工具（分工）和文字（管理剩余）。"
+        },
+        {
+            "title": "生态悖论",
+            "desc": "农业虽然养活了更多人口，但也导致了早期农民营养单一、身高下降、疾病频发和劳动时间增加（相比采集者）。"
+        }
+    ],
+    "impact": {
+        "reality": "农业革命彻底改变了地貌。森林被砍伐为农田，河流被改道灌溉。人类成为第一种能够大规模改变地球生态的地质力量。",
+        "legacy": "我们今天的主食（米面）、社会结构（家庭、国家）、价值观念（勤劳致富）均源于农业革命。它是'历史史上最大的骗局'（赫拉利语）还是'进步的阶梯'，至今仍是学术界争论的焦点。"
+    },
+    "keywords": [
+        {
+            "text": "动植物驯化",
+            "url": "topic_domestication.html"
+        },
+        {
+            "text": "定居与城市",
+            "url": "topic_settlement.html"
+        },
+        {
+            "text": "国家起源",
+            "url": "topic_state_origin.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "agri_core",
+                "label": "农业革命",
+                "val": 30,
+                "group": "core",
+                "url": "detail_agrarian.html"
+            },
+            {
+                "id": "domest",
+                "label": "驯化",
+                "val": 25,
+                "group": "process",
+                "url": "topic_domestication.html"
+            },
+            {
+                "id": "seden",
+                "label": "定居",
+                "val": 25,
+                "group": "process",
+                "url": "topic_settlement.html"
+            },
+            {
+                "id": "state",
+                "label": "国家",
+                "val": 20,
+                "group": "impact",
+                "url": "topic_state_origin.html"
+            },
+            {
+                "id": "inequality",
+                "label": "阶级",
+                "val": 20,
+                "group": "impact",
+                "url": "topic_inequality.html"
+            },
+            {
+                "id": "jared",
+                "label": "贾雷德·戴蒙德",
+                "val": 15,
+                "group": "person",
+                "url": "topic_jared_diamond.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "agri_core",
+                "target": "domest",
+                "label": "核心机制"
+            },
+            {
+                "source": "domest",
+                "target": "seden",
+                "label": "使得...可能"
+            },
+            {
+                "source": "seden",
+                "target": "state",
+                "label": "演化出"
+            },
+            {
+                "source": "seden",
+                "target": "inequality",
+                "label": "导致"
+            },
+            {
+                "source": "jared",
+                "target": "agri_core",
+                "label": "评价"
+            }
+        ]
+    }
+}

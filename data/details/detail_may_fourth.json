@@ -1,0 +1,112 @@
+{
+    "id": "detail_may_fourth",
+    "type": "china",
+    "title": "五四运动:新民主主义的开端",
+    "year": "1919年5月4日",
+    "desc": "五四运动是中国近代史上一次彻底的反帝反封建的爱国运动。它标志着中国新民主主义革命的开端，中国工人阶级开始登上政治舞台，为中国共产党的成立准备了条件。",
+    "content": [
+        {
+            "title": "巴黎和会的外交失败",
+            "text": "<p>第一次世界大战结束后，1919年在巴黎召开和会。中国作为战胜国参加会议，提出收回德国在山东的特权。但英美法等国操纵会议，无理拒绝中国的正当要求，反而将德国在山东的特权转交给日本（'二十一条'）。消息传回国内，激起全国人民的愤怒。</p>"
+        },
+        {
+            "title": "学生的呐喊",
+            "text": "<p>1919年5月4日，北京学生在天安门前集会示威，高呼'外争主权，内惩国贼''废除二十一条''拒绝在和约上签字'等口号。游行队伍火烧赵家楼（卖国贼曹汝霖住宅）。北洋政府逮捕学生，激起全国抗议。</p>"
+        },
+        {
+            "title": "工人登场:运动的转折",
+            "text": "<p>6月5日起，上海工人举行罢工，声援学生。随后，全国各地工人、商人纷纷罢工罢市。<strong>工人阶级</strong>以独立姿态登上政治舞台，成为运动的主力。最终，北洋政府被迫释放被捕学生，罢免卖国贼职务，拒绝在和约上签字。五四运动取得初步胜利。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "性质",
+            "desc": "彻底的反帝反封建的爱国运动。"
+        },
+        {
+            "title": "意义",
+            "desc": "标志着新民主主义革命的开端。工人阶级登上政治舞台。促进了马克思主义与工人运动的结合。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "巴黎和会",
+            "url": "topic_paris_peace.html"
+        },
+        {
+            "text": "新民主主义",
+            "url": "topic_new_democracy.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "may4",
+                "label": "五四运动",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "paris",
+                "label": "巴黎和会",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "student",
+                "label": "学生示威",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "worker",
+                "label": "工人罢工",
+                "val": 25,
+                "group": "event"
+            },
+            {
+                "id": "victory",
+                "label": "初步胜利",
+                "val": 15,
+                "group": "outcome"
+            },
+            {
+                "id": "new_demo",
+                "label": "新民主主义开端",
+                "val": 25,
+                "group": "significance"
+            }
+        ],
+        "edges": [
+            {
+                "source": "paris",
+                "target": "may4",
+                "label": "导火索"
+            },
+            {
+                "source": "may4",
+                "target": "student",
+                "label": "爆发"
+            },
+            {
+                "source": "student",
+                "target": "worker",
+                "label": "发展"
+            },
+            {
+                "source": "worker",
+                "target": "victory",
+                "label": "取得"
+            },
+            {
+                "source": "may4",
+                "target": "new_demo",
+                "label": "标志"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "五四运动促进了马克思主义在中国的传播，为中国共产党的成立准备了思想和干部条件。",
+        "legacy": "'五四精神'（爱国、进步、民主、科学）激励着一代代青年。"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "id": "detail_ww2",
+    "type": "world",
+    "title": "第二次世界大战:反法西斯的胜利",
+    "year": "1939年 — 1945年",
+    "desc": "人类历史上规模最大、伤亡最惨重的反法西斯战争。正义最终战胜了邪恶，战后形成了雅尔塔体系和联合国。",
+    "content": [
+        {
+            "title": "从闪电战到转折点",
+            "text": "<p>1939年德国闪击波兰，二战爆发。初期德军横扫欧洲，日军偷袭珍珠港。1942年<strong>斯大林格勒战役</strong>成为苏德战场的转折点，中途岛战役成为太平洋战场的转折点。世界反法西斯同盟的建立扭转了战局。</p>"
+        },
+        {
+            "title": "正义的审判",
+            "text": "<p>1945年，随着苏军攻克柏林和美国对日投掷原子弹，德日相继投降。战后通过纽伦堡审判和东京审判，清算了法西斯罪行。联合国的成立旨在维护世界和平与安全。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "斯大林格勒",
+            "url": "topic_stalingrad.html"
+        },
+        {
+            "text": "同盟国",
+            "url": "topic_allies.html"
+        },
+        {
+            "text": "联合国",
+            "url": "topic_un.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "ww2",
+                "label": "二战",
+                "val": 30,
+                "group": "core",
+                "url": "detail_ww2.html"
+            },
+            {
+                "id": "allies",
+                "label": "同盟国",
+                "val": 25,
+                "group": "camp",
+                "url": "topic_allies.html"
+            },
+            {
+                "id": "axis",
+                "label": "轴心国",
+                "val": 25,
+                "group": "camp",
+                "url": "topic_axis_powers.html"
+            },
+            {
+                "id": "stalingrad",
+                "label": "转折点",
+                "val": 20,
+                "group": "event",
+                "url": "topic_stalingrad.html"
+            },
+            {
+                "id": "un",
+                "label": "联合国",
+                "val": 20,
+                "group": "result",
+                "url": "topic_un.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "allies",
+                "target": "axis",
+                "label": "战胜"
+            },
+            {
+                "source": "stalingrad",
+                "target": "ww2",
+                "label": "转折"
+            },
+            {
+                "source": "ww2",
+                "target": "un",
+                "label": "产物"
+            }
+        ]
+    }
+}

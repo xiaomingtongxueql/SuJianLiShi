@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定居与原城市化: 围墙内的秩序 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#15803d', secondary: '#14532d', stone: '#475569', line: '#E2E8F0',
+                        earth: '#a16207'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        定居与原城市化: 围墙内的秩序
+                    </h1>
+                </section>
+
+
+
+                <!-- 深度叙事：两个原型 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="layout" class="w-8 h-8 text-accent mr-3"></i>
+                        第一章：原城市化（Proto-Urbanism）的两种实验
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="mb-8 p-6 bg-slate-50 rounded-xl border border-slate-100">
+                            <h3 class="text-lg font-bold text-primary mb-2">防御堡垒：耶利哥 (Jericho, 约9000 BC)</h3>
+                            <p class="text-sm">
+                                作为世界上最古老的持续有人居住的城市之一，耶利哥展示了定居最初的驱动力：<strong>恐惧</strong>。为了保护宝贵的余粮不被游牧民抢劫，居民建造了高达5米的石墙和巨大的瞭望塔。定居意味着财富的积累，但也意味着从此需要时刻守卫财富。
+                            </p>
+                        </div>
+                        <div class="mb-8 p-6 bg-slate-50 rounded-xl border border-slate-100">
+                            <h3 class="text-lg font-bold text-primary mb-2">平等迷宫：加泰土丘 (Çatalhöyük, 约7500 BC)</h3>
+                            <p class="text-sm">
+                                这里居住着多达8000人，却<strong>没有任何公共建筑或宫殿</strong>。所有房屋大小一致，人们通过屋顶出入。这种独特的结构暗示了一个极其平等并在某种程度上“社恐”的社会——每个家庭都是一个独立的堡垒，社会联系通过复杂的家庭宗教仪式而非公共政治来维持。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 深度叙事：社会意义 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="users" class="w-8 h-8 text-accent mr-3"></i>
+                        第二章：拥挤的代价与红利
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose text-justify">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">代价：拥挤病</h4>
+                                <p class="text-sm">
+                                    定居点是<strong>病菌的温床</strong>。高密度的人口加上与家畜粪便的混合，让天花、麻疹等“人畜共患病”肆虐。考古证据显示，早期城市居民的平均寿命和健康状况远低于同期的采集者。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">红利：创新的大锅</h4>
+                                <p class="text-sm">
+                                    但拥挤也意味着<strong>创新的加速</strong>。定居允许人类积累笨重的固定资产（如纺织机、窑炉）。思想和技术在密集的人群中快速碰撞，陶器、冶金、轮子都在定居后被迅速发明出来。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                从早期的泥砖村落到今天的巨型都市，我们一直在解决同样的问题：如何在保障供应的同时处理垃圾和瘟疫？如何在拥挤中维持秩序？</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 心理遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                定居生活导致了家庭观念的强化和对“私有空间”的执念。那堵将我们与邻居隔开的墙，最早就是在新石器时代砌起来的。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"农业革命","url":"detail_agrarian.html"},{"text":"动植物驯化","url":"topic_domestication.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"seden_core","label":"定居","val":35,"group":"core","url":"topic_settlement.html"},{"id":"jericho","label":"耶利哥","val":25,"group":"place","url":"topic_jericho.html"},{"id":"catal","label":"加泰土丘","val":25,"group":"place","url":"topic_catalhoyuk.html"},{"id":"disease","label":"拥挤病","val":20,"group":"impact","url":"topic_disease.html"},{"id":"innov","label":"技术积累","val":20,"group":"impact","url":"topic_innovation.html"}],"edges":[{"source":"seden_core","target":"jericho","label":"早期堡垒"},{"source":"seden_core","target":"catal","label":"早期聚落"},{"source":"seden_core","target":"disease","label":"负面影响"},{"source":"seden_core","target":"innov","label":"正面影响"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#15803d', nodeColor: '#15803d' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-earth', hoverColor: 'hover:text-accent' }); }
+    </script>
+</body>
+
+</html>
+
+

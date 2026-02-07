@@ -1,0 +1,496 @@
+{
+    "topics": [
+        {
+            "id": "topic_wuwang",
+            "title": "承前启后的开国者：周武王 (King Wu of Zhou)",
+            "type": "china",
+            "year": "约公元前1046年",
+            "summary": "周武王姬发，西周王朝的建立者。他继承父志，发动牧野之战灭商，开启了周朝八百年的基业，被儒家奉为'圣王'。",
+            "content": [
+                {
+                    "title": "孟津观兵与牧野誓师",
+                    "text": "<p>姬发继位后，继承文王遗志，重用姜尚、周公旦等贤臣。为了检验诸侯的忠诚度，他由于孟津举行阅兵（孟津观兵），八百诸侯不期而至，显示了周人的政治号召力。公元前1046年，武王见商纣王众叛亲离，时机成熟，便率军东征，在牧野发表《牧誓》，列举纣王暴政，鼓舞士气，一举灭商。</p>"
+                },
+                {
+                    "title": "克商后的政治安排",
+                    "text": "<p>灭商后，武王为了安抚商朝遗民，封纣王之子武庚于殷，通过'以殷治殷'的策略维持稳定。同时，他通过'分封建国'（封邦建国）的方式，将王室子弟和功臣分封到各地，建立了最初的屏障。这一举措奠定了西周分封制的雏形。</p>"
+                },
+                {
+                    "title": "天命观的构建",
+                    "text": "<p>为了论证推翻商朝的合法性，武王及周公提出了'天命靡常，惟德是辅'的新天命观。强调天命不会永远眷顾某一家一姓，只有有德者居之。这种'敬天保民'的思想，是中国古代政治哲学的重大进步。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "成就",
+                    "desc": "指挥牧野之战，建立周朝。"
+                },
+                {
+                    "title": "思想",
+                    "desc": "提出新的天命观，强调德治。"
+                }
+            ],
+            "impact": {
+                "reality": "终结了商朝的暴政，建立了以'德'为核心的周王朝。",
+                "legacy": "其'吊民伐罪'的革命行动和'敬天保民'的政治伦理，成为后世儒家政治理想的典范。"
+            },
+            "relations": [
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                },
+                {
+                    "text": "牧野之战",
+                    "url": "topic_zhou_king.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "wu_king",
+                        "label": "周武王",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_wuwang.html"
+                    },
+                    {
+                        "id": "jiang_ziya",
+                        "label": "姜子牙",
+                        "val": 20,
+                        "group": "person",
+                        "url": "detail_zhou.html"
+                    },
+                    {
+                        "id": "muye_bat",
+                        "label": "牧野之战",
+                        "val": 25,
+                        "group": "event",
+                        "url": "topic_zhou_king.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "wu_king",
+                        "target": "jiang_ziya",
+                        "label": "任用"
+                    },
+                    {
+                        "source": "wu_king",
+                        "target": "muye_bat",
+                        "label": "指挥"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_zhougong",
+            "title": "礼乐文明的缔造者：周公 (Duke of Zhou)",
+            "type": "china",
+            "year": "西周初期",
+            "summary": "周公旦，周武王之弟，中国历史上最伟大的政治家之一。他二次东征平定叛乱，制礼作乐，确立了西周的典章制度，被孔子视为精神偶像（'吾不复梦见周公'）。",
+            "content": [
+                {
+                    "title": "摄政与平叛",
+                    "text": "<p>武王英年早逝，成王年幼，周公辅政。管叔、蔡叔等旧贵族不满，联合商纣王之子武庚发动叛乱（三监之乱）。周公毅然率军东征，历时三年，彻底平定叛乱，诛杀武庚和管叔，流放蔡叔。这次东征将周朝的统治延伸到了黄河下游和淮河流域。</p>"
+                },
+                {
+                    "title": "制礼作乐",
+                    "text": "<p>周公最伟大的贡献在于'制礼作乐'。他吸取夏商亡国的教训，将原始的巫术习惯和零散的社会规范，整理成一套系统严密的<strong>礼乐制度</strong>。'礼'用来区分贵贱等级（别异），'乐'用来调和人际关系（和同）。这套制度不仅规范了政治秩序，也塑造了中华民族温文尔雅的国民性格。</p>"
+                },
+                {
+                    "title": "明德慎罚",
+                    "text": "<p>周公提出了'明德慎罚'的政治主张，告诫统治者要勤于政事，爱护百姓，谨慎使用刑罚。他的这些思想后来被儒家继承，成为中国古代政治文化的主流。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "功绩",
+                    "desc": "辅佐成王，平定三监之乱，制礼作乐。"
+                },
+                {
+                    "title": "地位",
+                    "desc": "儒家学说的奠基人，被尊为'元圣'。"
+                }
+            ],
+            "impact": {
+                "reality": "巩固了西周初期的政权，奠定了周朝八百年的制度基础。",
+                "legacy": "他所创立的礼乐文化成为中华文明的核心基因，对东亚文化圈产生了深远影响。"
+            },
+            "relations": [
+                {
+                    "text": "礼乐制度",
+                    "url": "topic_liyue.html"
+                },
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "duke_zhou",
+                        "label": "周公",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_zhougong.html"
+                    },
+                    {
+                        "id": "ritual_sys",
+                        "label": "礼乐制度",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_liyue.html"
+                    },
+                    {
+                        "id": "cheng_king",
+                        "label": "周成王",
+                        "val": 20,
+                        "group": "person",
+                        "url": "detail_zhou.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "duke_zhou",
+                        "target": "cheng_king",
+                        "label": "辅佐"
+                    },
+                    {
+                        "source": "duke_zhou",
+                        "target": "ritual_sys",
+                        "label": "制定"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_fenfeng",
+            "title": "封邦建国：分封制 (Feudal System)",
+            "type": "china",
+            "year": "西周时期",
+            "summary": "分封制（封建亲戚，以藩屏周）是西周最重要的政治制度。周天子将土地和臣民分赏给诸侯，建立起'天子-诸侯-卿大夫-士'的严密等级网络。",
+            "content": [
+                {
+                    "title": "分封的对象与义务",
+                    "text": "<p>周初大规模分封了同姓宗室（如鲁、晋）、功臣（如齐）和先代贵族（如宋）。受封的诸侯在封国内拥有世袭的统治权（设置官员、建立军队、征收赋税）。作为交换，诸侯对天子有极其严格的义务：镇守疆土、朝觐述职、缴纳贡赋和随从作战。</p>"
+                },
+                {
+                    "title": "层层分封的等级结构",
+                    "text": "<p>诸侯在自己的国内也模仿天子，将土地分封给卿大夫；卿大夫再分封给士。这种层层分封，形成了一个金字塔式的等级结构。它使得周天子的政治意志能够通过这套网络传达到基层，极大地扩展了统治区域，使周朝从一个关中部落变成了一个幅员辽阔的国家。</p>"
+                },
+                {
+                    "title": "制度的局限与瓦解",
+                    "text": "<p>分封制的基础是诸侯对天子的效忠，而这种效忠往往随着血缘关系的疏远而减弱。到了西周后期和春秋时期，随着诸侯实力的增强（'王室衰微，诸侯争霸'），分封制逐渐瓦解，最终被郡县制所由取代。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "目的",
+                    "desc": "巩固统治，'封建亲戚，以藩屏周'。"
+                },
+                {
+                    "title": "特点",
+                    "desc": "层层分封，等级森严；权利与义务结合。"
+                }
+            ],
+            "impact": {
+                "reality": "加强了周天子对地方的控制，促进了边远地区的开发与文化融合。",
+                "legacy": "塑造了中国早期的地缘政治格局（如齐鲁文化、燕赵文化）。"
+            },
+            "relations": [
+                {
+                    "text": "宗法制",
+                    "url": "topic_zongfa.html"
+                },
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "fenfeng_sys",
+                        "label": "分封制",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_fenfeng.html"
+                    },
+                    {
+                        "id": "zhuhou",
+                        "label": "诸侯",
+                        "val": 20,
+                        "group": "class",
+                        "url": "detail_zhou.html"
+                    },
+                    {
+                        "id": "tianzi",
+                        "label": "周天子",
+                        "val": 25,
+                        "group": "person",
+                        "url": "detail_zhou.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "tianzi",
+                        "target": "zhuhou",
+                        "label": "分封"
+                    },
+                    {
+                        "source": "zhuhou",
+                        "target": "tianzi",
+                        "label": "朝贡"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_zongfa",
+            "title": "血缘与政治：宗法制 (Patriarchal Clan System)",
+            "type": "china",
+            "year": "西周时期",
+            "summary": "宗法制是与分封制互为表里的制度，它利用血缘关系的亲疏来解决贵族之间在权力、财产和地位继承上的矛盾，核心是'嫡长子继承制'。",
+            "content": [
+                {
+                    "title": "嫡长子继承制",
+                    "text": "<p>宗法制的核心原则是<strong>'立嫡以长不以贤，立子以贵不以长'</strong>。周天子的正妻所生的长子为嫡长子，是法定的继承人，称为'大宗'；其他庶子分封为诸侯，称为'小宗'。小宗必须服从大宗。这种大宗与小宗的关系是相对的（如诸侯对天子是小宗，但在本国是大宗）。</p>"
+                },
+                {
+                    "title": "家国同构",
+                    "text": "<p>宗法制将'国'（政治关系）与'家'（血缘关系）紧密结合。周天子既是天下的君主，又是所有同姓贵族的大宗（族长）。这种<strong>'家国同构'</strong>的模式，使得政治忠诚转化为孝道伦理，'移孝作忠'，极大地稳固了统治秩序。</p>"
+                },
+                {
+                    "title": "礼仪规范",
+                    "text": "<p>宗法制度下，有着严格的祭祀礼仪。大宗拥有祭祀始祖的特权，小宗只能祭祀自己的分支祖先。尊祖敬宗、长幼有序的观念深入人心，形成了中国独特的宗族文化。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "核心",
+                    "desc": "嫡长子继承制。"
+                },
+                {
+                    "title": "作用",
+                    "desc": "保证了贵族不仅在政治上的垄断和特权，也有利于统治集团内部的稳定和团结。"
+                }
+            ],
+            "impact": {
+                "reality": "维系了西周政治的长期稳定，避免了频繁的王位争夺。",
+                "legacy": "形成了根深蒂固的宗族观念和孝道文化，影响中国社会数千年，至今在修家谱、祭祖等活动中仍有体现。"
+            },
+            "relations": [
+                {
+                    "text": "分封制",
+                    "url": "topic_fenfeng.html"
+                },
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "zongfa_sys",
+                        "label": "宗法制",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_zongfa.html"
+                    },
+                    {
+                        "id": "dazong",
+                        "label": "大宗",
+                        "val": 20,
+                        "group": "class",
+                        "url": "topic_zongfa.html"
+                    },
+                    {
+                        "id": "xiaozong",
+                        "label": "小宗",
+                        "val": 20,
+                        "group": "class",
+                        "url": "topic_zongfa.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "zongfa_sys",
+                        "target": "dazong",
+                        "label": "核心"
+                    },
+                    {
+                        "source": "dazong",
+                        "target": "xiaozong",
+                        "label": "统辖"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_liyue",
+            "title": "秩序的美学：礼乐制度 (Ritual and Music System)",
+            "type": "china",
+            "year": "西周初期",
+            "summary": "由周公制定的礼乐制度，是西周维护等级社会规范的工具。'礼'别贵贱，'乐'和同异，两者相辅相成，构成了中国早期文明独特的文化特质。",
+            "content": [
+                {
+                    "title": "礼：等级的规范",
+                    "text": "<p>'礼'涵盖了政治、军事、宗教以及日常生活的方方面面。最重要的是五礼（吉凶军宾嘉）。它严格规定了不同身份的人在衣食住行、祭祀丧葬中应遵守的规格（如'天子九鼎，诸侯七鼎'）。礼的本质是<strong>差异</strong>，通过外在的形式确认内在的等级秩序，防止僭越。</p>"
+                },
+                {
+                    "title": "乐：情感的调和",
+                    "text": "<p>'乐'不仅是音乐舞蹈，更是一种精神教化工具。周公认为，如果只讲礼（差异）会导致疏离，所以需要乐来沟通情感。不同的等级有不同的乐舞（如天子用八佾，诸侯用六佾），但在欣赏音乐的过程中，上下级之间能产生情感共鸣，达到'合和'的境界。礼乐配合，起到了'经国家，定社稷，序民人，利后嗣'的作用。</p>"
+                },
+                {
+                    "title": "礼崩乐坏",
+                    "text": "<p>春秋后期，随着诸侯势力的膨胀，礼乐制度遭到破坏。季氏'八佾舞于庭'，孔子愤而感叹'是可忍，孰不可忍'。虽然制度瓦解，但礼乐精神被儒家继承，升华为'仁'与'和'的哲学思想。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "内涵",
+                    "desc": "礼别贵贱（等级），乐和同异（和谐）。"
+                },
+                {
+                    "title": "制定",
+                    "desc": "周公制礼作乐。"
+                }
+            ],
+            "impact": {
+                "reality": "将野蛮的武力统治转化为文明的道德教化，维持了西周的社会秩序。",
+                "legacy": "使中国成为'礼仪之邦'，塑造了中国人重礼貌、讲秩序、求和谐的文化心理。"
+            },
+            "relations": [
+                {
+                    "text": "周公",
+                    "url": "topic_zhougong.html"
+                },
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "liyue_sys",
+                        "label": "礼乐制度",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_liyue.html"
+                    },
+                    {
+                        "id": "li",
+                        "label": "礼",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_liyue.html"
+                    },
+                    {
+                        "id": "yue",
+                        "label": "乐",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_liyue.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "liyue_sys",
+                        "target": "li",
+                        "label": "别异"
+                    },
+                    {
+                        "source": "liyue_sys",
+                        "target": "yue",
+                        "label": "和同"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_fenghuo",
+            "title": "西周的挽歌：烽火戏诸侯 (Beacon Fire & Fall of Western Zhou)",
+            "type": "china",
+            "year": "公元前771年",
+            "summary": "这是西周灭亡的标志性事件。周幽王为博美人一笑，点燃报警的烽火，戏弄诸侯，最终导致信用破产，国家覆亡。",
+            "content": [
+                {
+                    "title": "幽王无道",
+                    "text": "<p>西周晚期，王室衰微，社会矛盾尖锐。末代君主<strong>周幽王</strong>昏庸奢侈，不理政事。他宠爱美女褒姒，甚至废掉了申后和太子宜臼，改立褒姒为后，伯服为太子。这一破坏宗法制嫡庶传统的行为，激怒了申后的父亲申侯。</p>"
+                },
+                {
+                    "title": "烽火戏诸侯",
+                    "text": "<p>传说褒姒不爱笑，幽王为了博其一笑，竟下令点燃用来报警的烽火台。诸侯见到烽火，以为天子有难，纷纷率军赶来勤王，却发现并未遭敌寇，只是君王的一场游戏。褒姒见诸侯狼狈之相，果然大笑。幽王乐此不疲，多次戏弄诸侯，最终导致诸侯不再信任天子（'狼来了'的故事原型）。</p>"
+                },
+                {
+                    "title": "犬戎破镐京",
+                    "text": "<p>公元前771年，申侯联合西方的游牧民族<strong>犬戎</strong>进攻周朝都城镐京。幽王再次点燃烽火，但早已上当受骗的诸侯无一兵一卒赶来。镐京被攻破，幽王被杀于骊山脚下，西周灭亡。次年，周平王迁都洛邑，史称东周。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "原因",
+                    "desc": "周幽王昏庸，废长立幼（政治原因），烽火戏诸侯（直接导火索）。"
+                },
+                {
+                    "title": "结局",
+                    "desc": "前771年，犬戎破镐京，西周亡。"
+                }
+            ],
+            "impact": {
+                "reality": "标志着周天子'天下共主'威信的彻底丧失。",
+                "legacy": "成为'红颜祸水'的经典历史典故（虽带有性别偏见），警示统治者'无信不立'。"
+            },
+            "relations": [
+                {
+                    "text": "西周",
+                    "url": "detail_zhou.html"
+                },
+                {
+                    "text": "东周",
+                    "url": "detail_eastern_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "you_king",
+                        "label": "周幽王",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_fenghuo.html"
+                    },
+                    {
+                        "id": "baosi",
+                        "label": "褒姒",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_fenghuo.html"
+                    },
+                    {
+                        "id": "quanrong",
+                        "label": "犬戎",
+                        "val": 20,
+                        "group": "people",
+                        "url": "topic_fenghuo.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "you_king",
+                        "target": "baosi",
+                        "label": "宠信"
+                    },
+                    {
+                        "source": "quanrong",
+                        "target": "you_king",
+                        "label": "攻杀"
+                    }
+                ]
+            }
+        }
+    ]
+}

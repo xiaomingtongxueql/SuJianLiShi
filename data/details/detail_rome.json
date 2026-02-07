@@ -1,0 +1,102 @@
+{
+    "id": "detail_rome",
+    "type": "world",
+    "title": "古罗马:从共和到帝国",
+    "year": "BC 753 — AD 476",
+    "desc": "罗马从台伯河畔的一个小村庄，发展成为横跨欧亚非三洲的大帝国。其法律（罗马法）、建筑和行政体系对后世产生了不可估量的影响。",
+    "content": [
+        {
+            "title": "罗马共和国与法治",
+            "text": "<p>罗马共和国时期（BC 509-BC 27），国家权力由执政官、元老院和公民大会分享。为了平民与贵族的斗争，颁布了<strong>《十二铜表法》</strong>，标志着罗马成文法的诞生。罗马法强调私有财产神圣不可侵犯，是近代西方主要法律体系（大陆法系）的渊源。</p>"
+        },
+        {
+            "title": "走向帝国",
+            "text": "<p>随着版图扩张，共和体制难以维持。<strong>凯撒</strong>（Caesar）奠定了独裁基础，<strong>屋大维</strong>（Augustus）首创'元首制'，罗马进入帝国时代。在'罗马和平'（Pax Romana）时期，帝国经济繁荣，交通发达（'条条大路通罗马'）。</p>"
+        },
+        {
+            "title": "基督教的兴起",
+            "text": "<p>1世纪在巴勒斯坦地区产生的基督教，最初受到迫害，但后来成为罗马国教（君士坦丁大帝），并随着帝国的扩张传遍欧洲。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "罗马法",
+            "url": "topic_roman_law.html"
+        },
+        {
+            "text": "其撒",
+            "url": "topic_caesar.html"
+        },
+        {
+            "text": "屋大维",
+            "url": "topic_augustus.html"
+        },
+        {
+            "text": "基督教",
+            "url": "topic_christianity.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "rome",
+                "label": "古罗马",
+                "val": 30,
+                "group": "core",
+                "url": "detail_rome.html"
+            },
+            {
+                "id": "law",
+                "label": "罗马法",
+                "val": 25,
+                "group": "system",
+                "url": "topic_roman_law.html"
+            },
+            {
+                "id": "republic",
+                "label": "共和国",
+                "val": 20,
+                "group": "period",
+                "url": "topic_roman_republic.html"
+            },
+            {
+                "id": "empire",
+                "label": "帝国",
+                "val": 20,
+                "group": "period",
+                "url": "topic_roman_empire.html"
+            },
+            {
+                "id": "caesar",
+                "label": "凯撒",
+                "val": 20,
+                "group": "person",
+                "url": "topic_caesar.html"
+            },
+            {
+                "id": "christianity",
+                "label": "基督教",
+                "val": 20,
+                "group": "religion",
+                "url": "topic_christianity.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "rome",
+                "target": "law",
+                "label": "贡献"
+            },
+            {
+                "source": "republic",
+                "target": "empire",
+                "label": "演变"
+            },
+            {
+                "source": "empire",
+                "target": "christianity",
+                "label": "国教化"
+            }
+        ]
+    }
+}

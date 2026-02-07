@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大汉帝国：中华文明的定型 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E2E8F0',
+                        reddish: '#9B2C2C', clay: '#9A3412'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #FEFCE8;
+            border-left: 4px solid #B5A642;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-han"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中国史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-reddish rounded-sm">
+                        BC 202 - AD 220</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">大汉帝国：中华文明的定型
+                        <span class="block text-2xl text-stone-400 font-normal mt-2 italic">The Han Dynasty</span>
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft text-justify">
+                        汉朝（前202年—220年），分为<strong>西汉</strong>与<strong>东汉</strong>，是继秦朝之后中国历史上第二个大一统帝国，也是中国第一个长治久安的盛世王朝。它不仅奠定了中国两千多年皇权社会的政治制度（外儒内法），更塑造了中华民族的文化认同——直到今天，我们的民族被称为“<strong>汉族</strong>”，我们的文字被称为“<strong>汉字</strong>”，我们的语言被称为“<strong>汉语</strong>”。汉朝的强盛与文明，与同时期的罗马帝国遥相辉映，被并称为当时世界上最伟大的两个超级大国。
+                    </p>
+
+                    <!-- 视频容器 -->
+                    <p class="text-sm text-gray-500 mb-2 font-bold">📺 视频讲解</p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=115445801747981&bvid=BV1D5sUzeEKm&cid=33441188606&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 1. 汉并天下 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="sword" class="w-8 h-8 text-gold mr-3"></i>
+                        第一章：汉并天下与休养生息
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            秦朝灭亡后，中国经历了四年的楚汉战争。公元前202年，平民出身的<strong>刘邦</strong>（汉高祖）在垓下击败项羽，建立汉朝，定都长安。汉初，社会经济凋敝，“天子不能具醇驷，而将相或乘牛车”。面对残破的局面，刘邦及其继承者吸取秦亡教训，确立了“<strong>黄老无为</strong>”的治国策略。
+                        </p>
+                        <p>
+                            这种“无为”并非无所作为，而是减少政府对社会的干预，轻徭薄赋，与民休息。具体措施包括十五税一（甚至三十税一）、释放奴婢、鼓励耕织。经过惠帝、吕后、尤其是<strong>汉文帝</strong>和<strong>汉景帝</strong>的励精图治，社会生产力得到极大恢复，府库充盈，刑罚减轻，史称“<strong>文景之治</strong>”。这是中国历史上第一个被史学家公认的“治世”。
+                        </p>
+                        <div class="highlight-box">
+                            <h4 class="font-bold text-earth mb-2">📜 郡国并行制</h4>
+                            <p class="text-sm m-0">
+                                汉初在政治体制上采取了妥协方案：部分地区实行郡县制，部分地区实行分封制，史称“郡国并行”。这虽然稳定了初期的局势，但也埋下了诸侯王势力膨胀的隐患，最终酿成了景帝时期的“七国之乱”。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 汉武盛世 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="crown" class="w-8 h-8 text-reddish mr-3"></i>
+                        第二章：汉武雄风与大一统
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            公元前141年，年仅16岁的<strong>汉武帝刘彻</strong>即位。他一改祖上的“无为”政策，推行了一系列旨在加强中央集权和国家权威的激进改革，将汉朝推向了鼎盛。他在位54年，其施政方略可概括为四个维度：
+                        </p>
+                        <ul class="list-disc pl-6 space-y-2 mb-6">
+                            <li><strong>政治集权：</strong>
+                                采纳主父偃的“<strong>推恩令</strong>”，规定诸侯王死后，除嫡长子继承王位外，其余子弟也可以分割王国土地为侯。这一高明的政治手腕，在不使用武力的情况下，使王国越分越小，彻底解决了诸侯国威胁中央的问题。同时，设立刺史制度，加强对地方的监察。
+                            </li>
+                            <li><strong>思想统一：</strong>
+                                采纳董仲舒“<strong>罢黜百家，独尊儒术</strong>”的建议。设立太学，将儒家经典作为选官依据。这标志着儒家思想正式成为中国封建社会的正统意识形态，实现了“思想上的大一统”。
+                            </li>
+                            <li><strong>经济控制：</strong>
+                                将铸币权收归中央（五铢钱），实行盐铁官营（国家垄断盐铁生产销售），推行均输平准政策。这些措施极大地充实了国库，为对外战争提供了经济保障。</li>
+                            <li><strong>开疆拓土：</strong>
+                                放弃和亲政策，派卫青、霍去病大规模反击匈奴，收复河套及河西走廊；派<strong>张骞</strong>两次出使西域，凿空<strong>丝绸之路</strong>，使汉朝的势力范围延伸至中亚；并在西南夷和南越设置郡县。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 3. 光武中兴 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="sunrise" class="w-8 h-8 text-clay mr-3"></i>
+                        第三章：光武中兴与豪族政治
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            西汉后期，土地兼并严重，外戚王莽篡权建立“新”朝（9年—23年），推行一系列复古改制，结果导致社会大乱。起义军与军阀混战中，汉室宗亲<strong>刘秀</strong>脱颖而出。公元25年，刘秀在洛阳称帝，重建汉朝，史称<strong>东汉</strong>。
+                        </p>
+                        <p>
+                            刘秀（光武帝）统治时期，针对西汉末年的积弊，采取了不同于汉武帝“霸道”的“柔道”治国：释放奴婢，减轻赋税，裁并机构，精简官员，提倡节俭。经过治理，经济得到恢复，史称“<strong>光武中兴</strong>”。
+                        </p>
+                        <p>
+                            东汉政治的一个显著特点是<strong>豪强地主势力</strong>的膨胀。刘秀本身依靠豪强起家，因此无法彻底抑制豪强兼并土地。这一时期，庄园经济发达，儒学名教盛行，形成了一批累世公卿的门阀世族，深刻影响了后来的魏晋政治生态。在文化科技上，东汉成就斐然：蔡伦改进造纸术，张衡发明地动仪，班超如张骞般再次经营西域，通过“以夷制夷”维持了汉朝这种西域的控制。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 4. 帝国黄昏 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="sunset" class="w-8 h-8 text-stone-600 mr-3"></i>
+                        第四章：帝国黄昏与这一历史循环
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            东汉中后期，皇帝多幼年即位，太后临朝，导致<strong>外戚专权</strong>。皇帝成年后，往往依靠身边的<strong>宦官</strong>铲除奸佞，又导致宦官专权。外戚与宦官轮流把持朝政，形成恶性循环，史称“戚宦之争”。
+                        </p>
+                        <p>
+                            正直的士大夫官员和太学生对黑暗政治不满，进行抨击抗争，反被宦官以“党人”罪名禁锢，史称“<strong>党锢之祸</strong>”。这极大地削弱了统治阶级的凝聚力。
+                        </p>
+                        <p>
+                            公元184年，巨鹿人张角创立太平道，发动<strong>黄巾起义</strong>。虽然起义很快被镇压，但为了平乱，朝廷下放军权给地方州牧，导致地方军阀割据。此后，董卓乱京，群雄并起，大汉帝国名存实亡。公元220年，曹丕逼迫汉献帝禅让，建立魏国，东汉灭亡，中国进入三国时代。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 5. 学术视野 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-stone-600 mr-3"></i>
+                        第五章：学术视野与历史评价
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <h4 class="text-xl font-bold text-primary mb-4">1. 秦汉变革与历史连续性</h4>
+                        <p>
+                            现代史学界（如钱穆、内藤湖南等）通常将秦汉视为一个连续的整体。秦朝建立了大一统的制度骨架（郡县制、官僚制），而汉朝则填充了文化的血肉。汉初的“郡国并行”是对秦朝急进政策的修正，而汉武帝的“推恩令”和“独尊儒术”则在更高层面上完成了秦始皇未竟的统一事业——不仅是地缘政治上的统一，更是心理文化上的统一（Cultural
+                            Identification）。
+                        </p>
+                        <h4 class="text-xl font-bold text-primary mb-4">2. 编户齐民与二元结构</h4>
+                        <p>
+                            汉代社会结构的核心是“编户齐民”。国家直接掌握大量自耕农，通过什伍连坐和户籍制度进行极致管理。这奠定了中国传统社会“皇权—小农”的二元结构。然而，随着东汉豪强地主的兴起，大量人口依附于豪强庄园，成为“依附民”，导致国家税基流失，这种“强社会、弱国家”的局面是导致东汉衰亡的根本经济原因。
+                        </p>
+                        <h4 class="text-xl font-bold text-primary mb-4">3. 霸王道杂之：儒法合流</h4>
+                        <p>
+                            汉宣帝曾有名言：“汉家自有制度，本以霸王道杂之。”这句话深刻揭示了汉代政治的本质。董仲舒的新儒学吸收了法家的“尊君”思想和阴阳家的“天人感应”理论，将儒家伦理政治化、法家权术道德化。儒家负责提供统治合法性和道德教化（软实力），法家负责提供行政效率和控制手段（硬实力）。这种“外儒内法”或“阳儒阴法”的治理模式，被历代王朝沿用，成为中国传统政治的底色。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="topic_hanwudi.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">汉武帝刘彻</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_silkroad.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">丝绸之路</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_duzunrushu.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">罢黜百家</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_liuxiu.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">光武帝刘秀</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                            <a href="topic_simaqian.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">司马迁与史记</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "han", "label": "汉朝", "val": 40, "group": "core", "url": "#"},
+                {"id": "liubang", "label": "刘邦", "val": 20, "group": "person", "url": "topic_liubang.html"},
+                {"id": "hanwudi", "label": "汉武帝", "val": 30, "group": "person", "url": "topic_hanwudi.html"},
+                {"id": "liuxiu", "label": "刘秀", "val": 25, "group": "person", "url": "topic_liuxiu.html"},
+                {"id": "silkroad", "label": "丝绸之路", "val": 25, "group": "event", "url": "topic_silkroad.html"},
+                {"id": "confucianism", "label": "独尊儒术", "val": 25, "group": "idea", "url": "topic_duzunrushu.html"},
+                {"id": "tuien", "label": "推恩令", "val": 20, "group": "policy", "url": "topic_tuien.html"},
+                {"id": "simaqian", "label": "司马迁", "val": 15, "group": "person", "url": "topic_simaqian.html"}
+            ],
+            "edges": [
+                {"source": "liubang", "target": "han", "label": "建立"},
+                {"source": "hanwudi", "target": "han", "label": "鼎盛"},
+                {"source": "liuxiu", "target": "han", "label": "中兴"},
+                {"source": "hanwudi", "target": "confucianism", "label": "采纳"},
+                {"source": "hanwudi", "target": "tuien", "label": "颁布"},
+                {"source": "hanwudi", "target": "silkroad", "label": "开辟"},
+                {"source": "simaqian", "target": "han", "label": "修史"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"推恩令","url":"topic_tuien.html"},
+            {"text":"独尊儒术","url":"topic_duzunrushu.html"},
+            {"text":"丝绸之路","url":"topic_silkroad.html"},
+            {"text":"司马迁","url":"topic_simaqian.html"},
+            {"text":"光武中兴","url":"topic_liuxiu.html"},
+            {"text":"黄巾起义","url":"topic_three_kingdoms.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-gold', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

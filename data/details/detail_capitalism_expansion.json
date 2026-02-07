@@ -1,0 +1,156 @@
+{
+    "id": "detail_capitalism_expansion",
+    "type": "world",
+    "title": "资本主义的扩展:全球确立",
+    "year": "19世纪60年代",
+    "desc": "19世纪60年代，在工业革命的推动下，资本主义力量进一步增强。俄国、美国和日本通过改革或战争，扫除了资本主义发展的障碍，确立或巩固了资本主义制度。这标志着资本主义制度在世界范围内初步确立，世界市场的联系更加紧密。",
+    "content": [
+        {
+            "title": "俄国农奴制改革 (Russian Reform)",
+            "text": "<p>1856年在克里米亚战争中的惨败，暴露了农奴制俄国的落后（'沙皇的帆船对英法的汽船'）。1861年，沙皇<strong>亚历山大二世</strong>颁布法令，废除农奴制。农奴获得了人身自由，但必须高价赎买土地。这场自上而下的改革虽然保留了大量封建残余，但使俄国走上了资本主义发展道路。</p>"
+        },
+        {
+            "title": "美国南北战争 (American Civil War)",
+            "text": "<p>美国独立后，北方资本主义工商业和南方种植园奴隶制（'一国两制'）的矛盾日益尖锐，焦点在于奴隶制的存废。1861年，南方挑起内战。<strong>林肯</strong>总统颁布《解放黑人奴隶宣言》和《宅地法》，扭转了战局。1865年北方获胜。内战维护了国家统一，废除了奴隶制，为美国成为世界第一经济强国扫清了障碍。</p>"
+        },
+        {
+            "title": "日本明治维新 (Meiji Restoration)",
+            "text": "<p>1853年美国'黑船来航'打破了日本闭关锁国。面对民族危机，倒幕派推翻德川幕府，拥立明治天皇。1868年起，日本全面学习西方，实行<strong>'明治维新'</strong>：政治上废藩置县，军事上建立新式军队，经济上<strong>殖产兴业</strong>，社会上提倡<strong>文明开化</strong>。日本迅速崛起为亚洲强国，但也走上了对外侵略扩张的道路。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "共同点",
+            "desc": "都发生于19世纪60年代（1861, 1861, 1868）；解决土地或劳动力问题；促进了本国资本主义发展；是工业革命的产物。"
+        },
+        {
+            "title": "林肯的贡献",
+            "desc": "维护了国家统一，废除了奴隶制。正如他所说：'分裂之家不能持久。'"
+        },
+        {
+            "title": "明治维新的特点",
+            "desc": "自上而下的资产阶级性质改革。学习西方非常彻底（甚至吃牛肉、穿西服），但也保留了天皇崇拜等封建残余（武士道）。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "亚历山大二世",
+            "url": "topic_alexander2.html"
+        },
+        {
+            "text": "林肯",
+            "url": "topic_lincoln.html"
+        },
+        {
+            "text": "明治天皇",
+            "url": "topic_meiji.html"
+        },
+        {
+            "text": "解放黑人奴隶宣言",
+            "url": "topic_emancipation.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "expansion",
+                "label": "资本主义扩展",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "russia",
+                "label": "俄国改革",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "usa",
+                "label": "南北战争",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "japan",
+                "label": "明治维新",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "serfdom",
+                "label": "废除农奴制",
+                "val": 15,
+                "group": "policy"
+            },
+            {
+                "id": "slavery",
+                "label": "废除奴隶制",
+                "val": 15,
+                "group": "policy"
+            },
+            {
+                "id": "westernization",
+                "label": "全面西化",
+                "val": 15,
+                "group": "policy"
+            },
+            {
+                "id": "industrialization",
+                "label": "工业化",
+                "val": 25,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "expansion",
+                "target": "russia",
+                "label": "包含"
+            },
+            {
+                "source": "expansion",
+                "target": "usa",
+                "label": "包含"
+            },
+            {
+                "source": "expansion",
+                "target": "japan",
+                "label": "包含"
+            },
+            {
+                "source": "russia",
+                "target": "serfdom",
+                "label": "内容"
+            },
+            {
+                "source": "usa",
+                "target": "slavery",
+                "label": "成果"
+            },
+            {
+                "source": "japan",
+                "target": "westernization",
+                "label": "特点"
+            },
+            {
+                "source": "russia",
+                "target": "industrialization",
+                "label": "导致"
+            },
+            {
+                "source": "usa",
+                "target": "industrialization",
+                "label": "加速"
+            },
+            {
+                "source": "japan",
+                "target": "industrialization",
+                "label": "开启"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "美国依然存在种族问题。日本是亚洲唯一的G7国家。俄国的现代化道路依然曲折。",
+        "legacy": "确立了资本主义在北半球的统治地位，为之后的第二次工业革命和列强瓜分世界奠定了政治格局。"
+    }
+}

@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏源:师夷长技以制夷 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="arrow-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 核心词条</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-12">
+                <!-- 头部定义 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        思想先驱</div>
+                    <h1 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-6 leading-tight">魏源:师夷长技以制夷
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-gold pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        魏源（1794—1857），字默深，湖南隆回人。他是晚清著名的经代学家、思想家。面对鸦片战争的惨败，他没有像腐儒那样空谈心性，而是继承了林则徐的遗志，编撰了恢弘巨著《海国图志》。他提出的"师夷长技以制夷"思想，如同一道划破夜空的闪电，惊醒了沉睡的士大夫阶层，成为了中国近代向西方学习的宣言书。
+                    </p>
+                    
+                </section>
+
+                <!-- 深度解析 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-6 h-6 text-gold mr-3"></i>
+                        深度解析
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">1.</span>林则徐的嘱托
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1841年，林则徐被革职流放新疆。途径京口（今镇江）时，他与好友魏源相见。在一个风雨交加的夜晚，两位忧国忧民的志士彻夜长谈。
+                                </p>
+                                <p>
+                                    林则徐将自己主持编译的《四洲志》手稿和他收集的西方资料全部郑重托付给魏源，希望他能编撰一部介绍世界各国情况的著作，唤醒国人。魏源没有辜负老友的重托，他夜以继日地整理、补充资料，终于在1842年刻印了《海国图志》50卷（后增补至100卷）。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">2.</span>海国图志：睁眼看世界的百科全书
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    《海国图志》是当时中国第一部系统介绍世界历史、地理、政治、军事的百科全书。它打破了中国传统的"天下观"，详细介绍了五大洲的地理形势和各国风土人情，特别对英、美、法等国的政治制度（如美国的总统选举）做了客观描述。
+                                </p>
+                                <p>
+                                    令人遗憾的是，这部著作在中国当时并未引起统治者的足够重视，反而被守旧派攻击为"离经叛道"。但在日本，它却如获至宝，被大量翻印，成为了明治维新志士的案头必备书，对日本的近代化起到了重要的启蒙作用。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-gold opacity-60">3.</span>师夷长技以制夷
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    这是全书的灵魂思想。魏源在序言中写道：<strong>"是书何以作？曰：为以夷攻夷而作，为以夷款夷而作，为师夷长技以制夷而作。"</strong>
+                                </p>
+                                <p>
+                                    "师夷"就是向西方学习，"长技"指战舰、火器、养兵练兵之法。"制夷"则是抵御侵略。这一思想突破了"夷夏大防"的陈腐观念，承认了西方在军事技术上的先进性，主张通过学习西方的技术来强大自己。虽然这主要局限在器物层面，未触及制度，但在当时已是石破天惊的进步。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 历史影响 -->
+                <section class="bg-white p-8 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-2xl font-serif text-primary mb-6 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="activity" class="w-6 h-6 text-gold mr-3"></i>
+                        历史影响
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong>思想启蒙：</strong>直接启发了后来的洋务运动（"中体西用"思想的源头）。</li>
+                            <li><strong>世界影响：</strong>对日本明治维新产生了重要的催化作用，墙内开花墙外香。</li>
+                            <li><strong>爱国主义：</strong>将经世致用的学风与救亡图存的爱国主义结合，为近代知识分子树立了榜样。</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识联结
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 关联词条
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"林则徐","url":"topic_linzexu.html"},{"text":"鸦片战争","url":"detail_opium.html"},{"text":"洋务运动","url":"detail_yangwu.html"}]</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"wei","label":"魏源","val":35,"group":"core","url":"topic_weiyuan.html"},{"id":"lin","label":"林则徐","val":30,"group":"person","url":"topic_linzexu.html"},{"id":"book","label":"海国图志","val":30,"group":"book","url":"topic_weiyuan.html"},{"id":"idea","label":"师夷长技","val":25,"group":"concept","url":"topic_weiyuan.html"},{"id":"yangwu","label":"洋务运动","val":20,"group":"event","url":"detail_yangwu.html"}],"edges":[{"source":"lin","target":"wei","label":"嘱托"},{"source":"wei","target":"book","label":"编撰"},{"source":"book","target":"idea","label":"提出"},{"source":"idea","target":"yangwu","label":"启蒙"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "block p-3 rounded-lg hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group";
+            el.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-gray-700 group-hover:text-gold">${kw.text}</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300 group-hover:text-gold transition-colors"></i>
+                </div>
+            `;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#B5A642', nodeColor: '#B5A642' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') {
+
+
+
+            ContentEnhancer.KeywordHighlighter.processSelector(
+                '.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li',
+                keywords,
+                { color: 'text-gold', hoverColor: 'hover:text-earth' }
+            );
+        }
+    </script>
+</body>
+
+</html>
+
+

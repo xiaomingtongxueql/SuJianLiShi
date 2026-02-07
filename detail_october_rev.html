@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十月革命:红色的黎明 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html#event-october-rev"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        1917.11.7</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">十月革命:红色的黎明
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1917年11月7日（俄历10月25日），彼得格勒的枪声划破了欧洲的寒夜。这场由列宁和布尔什维克领导的武装起义，不仅推翻了俄国临时政府，更在人类历史上第一次建立了一个由无产阶级掌权的社会主义国家。它如同一道巨大的分水岭，将世界历史劈成了两半，开启了资本主义与社会主义两种制度长期并存、竞争与对抗的"短二十世纪"。
+                    </p>
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div id="video-container" style="position: relative; width: 100%; height: 100%;"><iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=115241455192389&bvid=BV12tWczxENS&cid=32531876716&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe></div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-accent mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>二月革命与两个政权并存
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    第一次世界大战将沙皇俄国拖入了绝境。前线战败，后方饥荒，沙皇专制统治摇摇欲坠。1917年3月（俄历2月），彼得格勒爆发了大规模罢工和士兵哗变，尼古拉二世被迫退位，统治俄国三百年的罗曼诺夫王朝轰然倒塌。这就是<strong>二月革命</strong>。
+                                </p>
+                                <p>
+                                    革命后出现了奇特的局面：一方面是资产阶级性质的<strong>临时政府</strong>，掌握着名义上的国家机关；另一方面是工人和士兵选举产生的<strong>工兵代表苏维埃</strong>，掌握着实际的枪杆子和交通命脉。这种"双重政权"并存的局面注定无法长久。临时政府坚持继续参加一战，导致民怨沸腾，为更加激进的革命埋下了伏笔。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>七月流血与列宁的决断
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    1917年4月，流亡海外的列宁回国，发表了著名的《四月提纲》，提出"全部政权归苏维埃"，主张将革命从资产阶级民主革命转变为社会主义革命。
+                                </p>
+                                <p>
+                                    7月，临时政府血腥镇压了工人的和平示威（七月流血事件），两个政权并存的局面结束，政权完全落入临时政府手中。和平夺权已无可能，布尔什维克转入地下，确定了武装起义的方针。随后，科尔尼洛夫将军发动叛乱企图建立军事独裁，布尔什维克在平叛中壮大了力量，掌握了彼得格勒和莫斯科苏维埃的领导权。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>彼得格勒的灯火
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    11月6日晚，列宁秘密来到斯莫尔尼宫指挥起义。赤卫队迅速占领了火车站、电话局、银行等战略要点。11月7日晚9点40分，停泊在涅瓦河畔的<strong>阿芙乐尔号巡洋舰</strong>发出了攻打冬宫的信号弹。
+                                </p>
+                                <p>
+                                    起义者冲进冬宫，逮捕了临时政府成员。彼得格勒武装起义取得胜利。第二天，全俄工兵代表苏维埃第二次代表大会召开，通过了《和平法令》和《土地法令》，选举成立了世界上第一个工农政府——人民委员会，列宁当选为人民委员会主席。苏维埃政权正式建立。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">4.</span>战时共产主义与内战
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    新生政权立刻遭遇了国内外敌人的疯狂反扑。国内白军（保皇派、资产阶级等）发动叛乱，英、法、美、日等协约国也进行武装干涉。
+                                </p>
+                                <p>
+                                    为了打赢内战，苏维埃政权实行了<strong>战时共产主义政策</strong>，核心是余粮收集制，国家实行高度集中的经济管理。经过三年（1918-1920）艰苦卓绝的战斗，红军终于击败了白军和外国干涉军，保住了革命果实。但这一政策也导致了严重的经济危机和政治危机。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                《和平法令》与《土地法令》
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                十月革命胜利后的首要措施。《和平法令》宣布退出一战，满足了人民对和平的渴望；《土地法令》废除地主土地所有制，将土地分给农民，满足了农民对土地的渴望。这两大举措为新政权赢得了最广泛的群众支持。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                历史意义
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                对俄国：结束了封建专制和资本主义统治，开启了现代化强国之路。
+                                对世界：是人类历史上第一次取得胜利的社会主义革命，打破了资本主义一统天下的局面，鼓舞了殖民地半殖民地人民的解放斗争（如传播马克思主义到中国）。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 现代化新路径</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                十月革命开创了一种不同于西方资本主义的现代化发展模式——由国家政权主导，通过计划经济实现快速工业化。这种模式在二战后的几十年里曾对许多发展中国家产生巨大吸引力。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 乌托邦的实验</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                它是一场试图彻底改造人类社会、消灭剥削和压迫的伟大实验。虽然苏联最终解体，但它在社会福利、男女平等、劳动者权益等方面留下的遗产，客观上迫使资本主义世界进行了自我改良（如福利国家的出现）。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"列宁","url":"topic_lenin.html"},{"text":"新经济政策","url":"topic_nep.html"},{"text":"阿芙乐尔号","url":"topic_aurora.html"},{"text":"马克思主义","url":"topic_marxism.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "october", "label": "十月革命", "val": 30, "group": "core", "url": "detail_october_rev.html"},
+            {"id": "lenin", "label": "列宁", "val": 25, "group": "person", "url": "topic_lenin.html"},
+            {"id": "bolshevik", "label": "布尔什维克", "val": 20, "group": "org", "url": "topic_bolshevik.html"},
+            {"id": "soviet", "label": "苏维埃", "val": 20, "group": "org", "url": "topic_soviet.html"},
+            {"id": "aurora", "label": "阿芙乐尔号", "val": 15, "group": "object", "url": "topic_aurora.html"},
+            {"id": "nep", "label": "新经济政策", "val": 20, "group": "policy", "url": "topic_nep.html"},
+            {"id": "stalin", "label": "斯大林", "val": 20, "group": "person", "url": "topic_stalin.html"},
+            {"id": "reform", "label": "俄国改革", "val": 15, "group": "event", "url": "topic_russian_reform.html"}
+        ],
+        "edges": [
+            {"source": "lenin", "target": "october", "label": "领导"},
+            {"source": "bolshevik", "target": "october", "label": "发动"},
+            {"source": "october", "target": "soviet", "label": "建立政权"},
+            {"source": "aurora", "target": "october", "label": "信号"},
+            {"source": "october", "target": "nep", "label": "后续政策"},
+            {"source": "stalin", "target": "nep", "label": "终结"},
+            {"source": "reform", "target": "october", "label": "背景"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

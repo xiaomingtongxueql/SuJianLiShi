@@ -1,0 +1,496 @@
+{
+    "topics": [
+        {
+            "id": "topic_shang_tang",
+            "title": "商朝开国之君：商汤 (Shang Tang)",
+            "type": "china",
+            "year": "约公元前1600年",
+            "summary": "商汤，子姓，名履。他推翻了夏桀的暴政，建立了商朝。他是中国历史上第一位'革命'成功的君主，被后世儒家推崇为'圣君'典范。",
+            "content": [
+                {
+                    "title": "网开一面",
+                    "text": "<p>传说汤在狩猎时见人张网四面，便命人去其三面，只留一面，并祈祷说：'想往左的就往左，想往右的就往右，不听话的才到网里来。'这不仅体现了他对自然的仁爱，更象征着他'宽以待民'的政治理念。这种仁德使他赢得了诸侯的归心，为伐夏奠定了政治基础。</p>"
+                },
+                {
+                    "title": "鸣条决战",
+                    "text": "<p>在贤臣伊尹的辅佐下，汤采取了先弱后强、剪除羽翼的战略，先后征服了葛、韦、顾、昆吾等夏的属国。最终在<strong>鸣条之战</strong>中击溃夏桀主力。汤发布《汤誓》，历数夏桀罪行，宣称自己是顺应天意（'予畏上帝，不敢不正'），确立了商朝统治的合法性。</p>"
+                },
+                {
+                    "title": "汤祷桑林",
+                    "text": "<p>商朝建立初年，大旱七年不雨。汤在桑林举行祈雨仪式，愿以身为牺牲，剪发断爪，自责六事（政不节、民失职等）。传说话音未落，大雨倾盆。这一故事强化了商王的'萨满'（巫师）色彩和自我牺牲精神，巩固了神权统治。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "事迹",
+                    "desc": "灭夏建商，定都亳。"
+                },
+                {
+                    "title": "名言",
+                    "desc": "'网开一面'。"
+                }
+            ],
+            "impact": {
+                "reality": "结束了夏朝的动荡统治，开启了商代五百年的基业。",
+                "legacy": "确立了'以德配天'的早期思想雏形，成为后世'仁政'的历史符号。"
+            },
+            "relations": [
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                },
+                {
+                    "text": "鸣条之战",
+                    "url": "topic_jie.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "tang_king",
+                        "label": "商汤",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_shang_tang.html"
+                    },
+                    {
+                        "id": "yiyin",
+                        "label": "伊尹",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_shang_tang.html"
+                    },
+                    {
+                        "id": "net",
+                        "label": "网开一面",
+                        "val": 15,
+                        "group": "event",
+                        "url": "topic_shang_tang.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "tang_king",
+                        "target": "yiyin",
+                        "label": "任用"
+                    },
+                    {
+                        "source": "tang_king",
+                        "target": "net",
+                        "label": "典故"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_oracle_bone",
+            "title": "通神的符号：甲骨文 (Oracle Bone Script)",
+            "type": "china",
+            "year": "主要为商代晚期",
+            "summary": "甲骨文是中国目前已知最早的成系统的文字，主要出土于河南安阳殷墟。它不仅是汉字的源头，更是商代'神权信史'的实证。",
+            "content": [
+                {
+                    "title": "发现与研究",
+                    "text": "<p>1899年，清代国子监祭酒王懿荣在'龙骨'（中药材）上发现刻痕，甲骨文惊现于世。随后经罗振玉、王国维等学者的发掘与研究（'二重证据法'），证实了《史记·殷本纪》的记载真实不虚，将中国信史向前推进了一千多年。目前已发现甲骨约15万片，单字约4500个，已识读约1500个。</p>"
+                },
+                {
+                    "title": "占卜的载体",
+                    "text": "<p>商人'尚鬼'，凡事必卜。甲骨文的内容绝大多数是<strong>卜辞</strong>，包括叙辞（占卜时间人名）、命辞（问什么事）、占辞（看兆象判断吉凶）和验辞（日后应验情况）。内容涉及祭祀、战争、农事、气象、生育乃至牙痛等生活细节，是一部商代的'百科全书'。</p>"
+                },
+                {
+                    "title": "成熟的文字体系",
+                    "text": "<p>甲骨文虽然古老，但绝非原始文字。它已经具备了汉字'六书'（象形、指事、会意、形声、转注、假借）的基本造字方法，特别是形声字的出现（占20%以上），标志着文字已经脱离了纯粹的图画阶段，进入了高度抽象化和系统化的阶段。今天的汉字与甲骨文一脉相承，展现了中华文明惊人的连续性。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "中国最早的成熟文字。"
+                },
+                {
+                    "title": "价值",
+                    "desc": "证实商朝历史，研究商代社会的直接史料。"
+                }
+            ],
+            "impact": {
+                "reality": "维系了商代的神权统治与复杂的行政管理。",
+                "legacy": "汉字的直系祖先；其'六书'法则奠定了汉字发展的基本逻辑。"
+            },
+            "relations": [
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                },
+                {
+                    "text": "殷墟",
+                    "url": "topic_pangeng.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "oracle_script",
+                        "label": "甲骨文",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_oracle_bone.html"
+                    },
+                    {
+                        "id": "divination",
+                        "label": "占卜",
+                        "val": 20,
+                        "group": "activity",
+                        "url": "detail_shang.html"
+                    },
+                    {
+                        "id": "wangyirong",
+                        "label": "王懿荣",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_oracle_bone.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "oracle_script",
+                        "target": "divination",
+                        "label": "用于"
+                    },
+                    {
+                        "source": "wangyirong",
+                        "target": "oracle_script",
+                        "label": "发现"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_simuwu",
+            "title": "青铜帝国的象征：司母戊鼎 (Simuwu Ding)",
+            "type": "china",
+            "year": "商王祖庚或祖甲时期",
+            "summary": "司母戊鼎（又称后母戊鼎）是目前世界上已发现的最重的青铜礼器，重达832.84公斤。它代表了商代青铜铸造工艺的巅峰，是中华文明的瑰宝。",
+            "content": [
+                {
+                    "title": "宏大的铸造工程",
+                    "text": "<p>该鼎采用复合范铸法铸造。为了铸造如此巨大的器物，需要两三百名工匠同时操作，密切配合。熔化近1000公斤的铜液需要巨大的熔炉群。这不仅体现了高超的技术水平，更反映了商代强大的<strong>社会组织能力</strong>和国家汲取资源的能力。</p>"
+                },
+                {
+                    "title": "礼制的载体",
+                    "text": "<p>'鼎'在先秦时期是权力的最高象征（'问鼎中原'）。司母戊鼎腹内壁刻有'司（后）母戊'三字，是商王为了祭祀其母亲'戊'（妇妌）而铸造的宗庙重器。它厚重庄严的造型、狞厉神秘的饕餮纹饰，旨在营造一种令人生畏的宗教仪式感，强化神权与王权的威严。</p>"
+                },
+                {
+                    "title": "更名之争",
+                    "text": "<p>学术界关于其铭文是读'司'还是'后'存有争议。'司'意为祭祀，'后'意为君主或王后。2011年国博将其正式更名为'后母戊鼎'，强调其王后身份。但无论如何称呼，它作为商代文明最高成就的地位无可撼动。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地位",
+                    "desc": "世界上出土最重的青铜器。"
+                },
+                {
+                    "title": "用途",
+                    "desc": "祭祀用的礼器，权力的象征。"
+                }
+            ],
+            "impact": {
+                "reality": "展现了商代青铜铸造的最高水平。",
+                "legacy": "成为中华文明源远流长、博大精深的物质象征。"
+            },
+            "relations": [
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                },
+                {
+                    "text": "青铜器",
+                    "url": "topic_bronze.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "simuwu",
+                        "label": "司母戊鼎",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_simuwu.html"
+                    },
+                    {
+                        "id": "bronze_tech",
+                        "label": "青铜铸造",
+                        "val": 20,
+                        "group": "technology",
+                        "url": "topic_simuwu.html"
+                    },
+                    {
+                        "id": "ritual",
+                        "label": "礼制",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "detail_shang.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "bronze_tech",
+                        "target": "simuwu",
+                        "label": "铸造"
+                    },
+                    {
+                        "source": "simuwu",
+                        "target": "ritual",
+                        "label": "象征"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_fuhao",
+            "title": "巾帼不让须眉：妇好 (Lady Fu Hao)",
+            "type": "china",
+            "year": "商王武丁时期",
+            "summary": "妇好是商王武丁的王后，也是中国历史上有据可查（甲骨文记载）的第一位女性军事统帅和政治家。她的墓葬保存完好，出土文物极大地丰富了我们对商代女性地位的认识。",
+            "content": [
+                {
+                    "title": "战神王后",
+                    "text": "<p>甲骨文中有大量关于妇好带兵征战的卜辞。她曾统帅1.3万人的大军（商代最大规模的军事行动）征伐羌方，也曾配合武丁对巴方进行伏击战。她南征北战，击败了土方、巴以、夷方等二十多个方国，为'武丁中兴'立下了赫赫战功。这表明在商代，女性贵族拥有较高的社会地位和参政权。</p>"
+                },
+                {
+                    "title": "主持祭祀",
+                    "text": "<p>除了军事指挥权，妇好还经常受命主持国家最隆重的祭祀活动，这是沟通人神的关键职能，通常由商王亲自担任。这说明她不仅是武丁的配偶，更是他在神权政治中的重要盟友和代理人。</p>"
+                },
+                {
+                    "title": "妇好墓的发现",
+                    "text": "<p>1976年在殷墟发现的妇好墓，是唯一一座未被盗掘的商代王室墓葬。墓中出土了1928件精美文物，包括沉重的青铜钺（权力的象征）和大量玉器。这些文物不仅证实了甲骨文记载的真实性，也展示了妇好生前极尽荣宠的生活。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "身份",
+                    "desc": "商王武丁的王后，杰出的女将。"
+                },
+                {
+                    "title": "事迹",
+                    "desc": "多次带兵征讨方国，主持祭祀。"
+                }
+            ],
+            "impact": {
+                "reality": "协助武丁扩大了商朝版图，巩固了王权。",
+                "legacy": "打破了古代女性'无仪'的刻板印象，是中国女性参与政治军事的最早典范。"
+            },
+            "relations": [
+                {
+                    "text": "武丁",
+                    "url": "topic_wuding.html"
+                },
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "fuhao_lady",
+                        "label": "妇好",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_fuhao.html"
+                    },
+                    {
+                        "id": "wuding_king",
+                        "label": "武丁",
+                        "val": 25,
+                        "group": "person",
+                        "url": "detail_shang.html"
+                    },
+                    {
+                        "id": "axe",
+                        "label": "铜钺",
+                        "val": 15,
+                        "group": "artifact",
+                        "url": "topic_fuhao.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "wuding_king",
+                        "target": "fuhao_lady",
+                        "label": "王后"
+                    },
+                    {
+                        "source": "fuhao_lady",
+                        "target": "axe",
+                        "label": "持有"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_pangeng",
+            "title": "殷墟的奠基者：盘庚迁殷 (Pan Geng Moves to Yin)",
+            "type": "china",
+            "year": "约公元前1300年",
+            "summary": "商朝中期，王位纷争导致国力衰退，都城屡次迁徙。商王盘庚力排众议，将都城迁至殷（今河南安阳），实现了商朝的中兴，并开创了长达273年的定居时代。",
+            "content": [
+                {
+                    "title": "九世之乱与频繁迁都",
+                    "text": "<p>商朝前期，由于王位继承制度混乱（兄终弟及与父死子继并存），导致了'九世之乱'，诸侯不朝，水患频发。为了摆脱政治危机和自然灾害，商朝都城正如《史记》所载'不常厥邑'，先后五次迁徙。动荡的局势严重削弱了商朝的统治。</p>"
+                },
+                {
+                    "title": "迁殷的决断",
+                    "text": "<p>盘庚即位后，决定迁都于殷。这一决定遭到了旧贵族和民众的强烈反对。盘庚发表了著名的诰词（载于《尚书·盘庚》），恩威并施，阐述迁都的必要性，终于率众渡河迁殷。殷地土地肥沃，交通便利，不再受黄河水患直接威胁，是理想的建都之地。</p>"
+                },
+                {
+                    "title": "伟大的转折",
+                    "text": "<p>盘庚迁殷是商代历史的分水岭。此后商朝国都固定在殷，政局趋于稳定，社会经济得到巨大发展，迎来了后来的'武丁中兴'。殷因此成为商代后期政治、经济、文化的中心，今天的'殷墟'也因这次迁都而得名。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "事件",
+                    "desc": "约前1300年，盘庚迁都到殷。"
+                },
+                {
+                    "title": "意义",
+                    "desc": "结束了动荡，商朝从此有了固定的都城，进入稳定发展期。"
+                }
+            ],
+            "impact": {
+                "reality": "挽救了衰落的商王朝，开启了商代后期的辉煌。",
+                "legacy": "殷墟遗址成为探索中国早期文明最重要的考古宝库。"
+            },
+            "relations": [
+                {
+                    "text": "殷墟",
+                    "url": "topic_oracle_bone.html"
+                },
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "pangeng_move",
+                        "label": "盘庚迁殷",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_pangeng.html"
+                    },
+                    {
+                        "id": "yin_ruins",
+                        "label": "殷",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_oracle_bone.html"
+                    },
+                    {
+                        "id": "chaos",
+                        "label": "九世之乱",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_pangeng.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "chaos",
+                        "target": "pangeng_move",
+                        "label": "原因"
+                    },
+                    {
+                        "source": "pangeng_move",
+                        "target": "yin_ruins",
+                        "label": "定都"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_zhou_king",
+            "title": "亡国之君：商纣王 (King Zhou of Shang)",
+            "type": "china",
+            "year": "约公元前1075-前1046年",
+            "summary": "商纣王（帝辛），商朝末代君主。他既是一位勇武过人的开拓者，也是一位刚愎自用的暴君。他的覆灭标志着中国早期奴隶制国家的典型终结。",
+            "content": [
+                {
+                    "title": "开拓与征服",
+                    "text": "<p>帝辛并非一无是处的昏君。史载他'资辨捷疾，闻见甚敏，材力过人'。在位期间，他致力于向东南方向开拓（'经营东南'），征伐东夷。这一举措虽然消耗了国力，但也客观上促进了中原文化向淮河流域和长江流域的传播，有利于中华文明的融合。</p>"
+                },
+                {
+                    "title": "暴政与众叛亲离",
+                    "text": "<p>然而，长期的战争导致国内空虚，赋税沉重。帝辛为人高傲，拒谏饰非，重用佞臣费仲、恶来，使用酷刑（炮烙）镇压反对者。他囚禁西伯姬昌（周文王），逼走微子，剖心比干，导致王族内部和诸侯方国彻底离心离德。'酒池肉林'的传说虽可能有后世夸大成分，但反应了他生活奢靡、脱离民众的事实。</p>"
+                },
+                {
+                    "title": "牧野之战",
+                    "text": "<p>公元前1046年，周武王趁商军主力在东南未归之际，发起讨伐。双方在牧野决战。商军主力是临时武装的奴隶和战俘，他们'前徒倒戈'，引周军攻入朝歌。帝辛见大势已去，登鹿台自焚而死。商朝灭亡，周朝建立。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "评价",
+                    "desc": "既有开拓之功（征东夷），更有亡国之罪（暴政）。"
+                },
+                {
+                    "title": "结局",
+                    "desc": "牧野之战败亡，自焚于鹿台。"
+                }
+            ],
+            "impact": {
+                "reality": "他的失败直接促成了周代'明德保民'、'敬天保民'政治伦理的产生。",
+                "legacy": "成为了'暴君'的标准画像，警醒历代统治者。"
+            },
+            "relations": [
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                },
+                {
+                    "text": "武王伐纣",
+                    "url": "detail_zhou.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "zhou_wang",
+                        "label": "商纣王",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_zhou_king.html"
+                    },
+                    {
+                        "id": "muye",
+                        "label": "牧野之战",
+                        "val": 25,
+                        "group": "event",
+                        "url": "topic_zhou_king.html"
+                    },
+                    {
+                        "id": "dongyi",
+                        "label": "东夷",
+                        "val": 20,
+                        "group": "people",
+                        "url": "topic_zhou_king.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "zhou_wang",
+                        "target": "dongyi",
+                        "label": "征伐"
+                    },
+                    {
+                        "source": "zhou_wang",
+                        "target": "muye",
+                        "label": "战败"
+                    }
+                ]
+            }
+        }
+    ]
+}

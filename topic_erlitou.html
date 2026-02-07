@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二里头文化：华夏第一都 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        gold: '#B5A642', earth: '#78350f', stone: '#57534e', line: '#E2E8F0',
+                        bronze: '#92400E', jade: '#047857'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        .prose p {
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-gold/20">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-gold transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 人物志</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <!-- 主内容区 -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 头部 Hero -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-gold rounded-sm">
+                        </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        二里头文化：华夏第一都
+                    </h1>
+                </section>
+
+
+
+                <!-- 1. 宫殿与王权 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="castle" class="w-8 h-8 text-gold mr-3"></i>
+                        第一章：最早的紫禁城
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            二里头遗址最引人注目的发现是庞大的<strong>宫殿建筑群</strong>。其中一号宫殿基址面积达1万平方米，四周围绕着回廊，主殿坐北朝南，庭院开阔。这种“建中立极”的布局理念，包括中轴对称、封闭式院落，直接开启了中国古代宫廷建筑的先河，可谓是明清紫禁城的雏形。
+                        </p>
+                        <p>
+                            在宫殿区周围，还发现了中国最早的城市主干道网（井字形道路），明确划分了宫殿区、作坊区和祭祀区，显示出强大的<strong>社会动员能力</strong>和顶层规划意识。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 2. 青铜与礼制 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="wine" class="w-8 h-8 text-bronze mr-3"></i>
+                        第二章：藏礼于器
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            二里头是东亚大陆最早进入青铜时代的文明中心。这里并非偶尔发现零星铜器，而是出土了成套的<strong>青铜礼器</strong>，主要是酒器（如爵、斝）。
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 mb-4">
+                            <li><strong>技术垄断：</strong> 遗址内发现了面积巨大的官营铸铜作坊，说明统治阶层严格控制了青铜原料（铜、锡）的开采和冶炼技术。</li>
+                            <li><strong>礼制的形成：</strong>
+                                青铜器不仅是实用品，更是身份地位的象征。不同等级的贵族墓葬中随葬的青铜器数量有严格区分，这标志着以礼器为核心的等级制度（礼制）已经形成。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 3. 夏商之辨 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="search" class="w-8 h-8 text-stone-500 mr-3"></i>
+                        第三章：它是夏都吗？
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p>
+                            关于二里头是否就是夏朝都城，学术界曾有长期争论。通过碳十四测年，二里头文化的年代（约前1750-前1530）主要落在史籍记载的夏朝编年范围内。
+                        </p>
+                        <p>
+                            虽然二里头尚未发现像殷墟甲骨文那样自证身份的文字系统，但结合地层学证据（二里头文化晚期被二里冈文化/早商文化取代，且存在暴力破坏痕迹），主流观点倾向于认为二里头遗址的主体是<strong>夏晚期王都</strong>，而其末期可能已经进入商代初年。
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="lg:col-span-3 space-y-8">
+                <!-- 知识图谱 -->
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+
+                    <!-- 核心人物与概念 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft mt-6">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="link" class="w-4"></i> 深度阅读
+                        </div>
+                        <div class="space-y-2">
+                            <a href="detail_xia.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group">
+                                <span class="text-sm font-bold text-gray-700 group-hover:text-primary">夏朝概览</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-gray-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 数据脚本 -->
+    <script id="data-graph" type="application/json">
+        {
+            "nodes": [
+                {"id": "erlitou", "label": "二里头", "val": 40, "group": "core", "url": "#"},
+                {"id": "palace", "label": "一号宫殿", "val": 30, "group": "site", "url": "#"},
+                {"id": "bronze", "label": "青铜爵", "val": 25, "group": "artifact", "url": "#"},
+                {"id": "turquoise", "label": "绿松石龙", "val": 25, "group": "artifact", "url": "#"},
+                {"id": "xia", "label": "夏朝", "val": 35, "group": "dynasty", "url": "detail_xia.html"}
+            ],
+            "edges": [
+                {"source": "erlitou", "target": "palace", "label": "发现"},
+                {"source": "erlitou", "target": "bronze", "label": "出土"},
+                {"source": "erlitou", "target": "turquoise", "label": "出土"},
+                {"source": "xia", "target": "erlitou", "label": "考古对应"}
+            ]
+        }
+    </script>
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"夏朝","url":"detail_xia.html"}
+        ]
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+
+        // Graph Engine
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#92400E', nodeColor: '#92400E' });
+            engine.render(graphData);
+        }
+
+        // Keyword Highlighting
+        if (typeof ContentEnhancer !== 'undefined') {
+            ContentEnhancer.KeywordHighlighter.processSelector('.prose', keywords, { color: 'text-bronze', hoverColor: 'hover:text-primary' });
+        }
+    </script>
+</body>
+
+</html>
+
+

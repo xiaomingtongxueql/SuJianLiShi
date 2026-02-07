@@ -1,0 +1,141 @@
+{
+    "id": "detail_uk_rev",
+    "type": "world",
+    "title": "英国革命:君主立宪的开端",
+    "year": "1640年 — 1689年",
+    "desc": "英国资产阶级革命（English Revolution）是人类历史上第一次对绝对君主制的成功挑战。它经过了漫长而曲折的斗争——从内战、独裁、复辟到最后的不流血政变，最终通过法律确立了议会主权，将国王关进了制度的笼子，开创了现代君主立宪制的先河。",
+    "content": [
+        {
+            "title": "议会与国王的较量 (Parliament vs King)",
+            "text": "<p>17世纪初，斯图亚特王朝的詹姆士一世和<strong>查理一世</strong>宣扬'君权神授'，解散议会，擅自征税，激化了与资产阶级和新贵族的矛盾。1640年，议会重新召开，要求限制王权，革命爆发。随后的内战中，<strong>克伦威尔</strong>率领议会军（新模范军）击败王军。1649年，查理一世被送上断头台，英国宣布为共和国。</p>"
+        },
+        {
+            "title": "护国主与复辟 (Lord Protector & Restoration)",
+            "text": "<p>共和国时期，克伦威尔就任'护国主'，实行军事独裁，严厉镇压异己。他死后，政局混乱，斯图亚特王朝（查理二世、詹姆士二世）复辟，并进行疯狂反攻倒算，试图恢复天主教和专制。</p>"
+        },
+        {
+            "title": "光荣革命与权利法案 (Glorious Revolution)",
+            "text": "<p>1688年，议会邀请詹姆士二世的女儿玛丽和女婿威廉回国执政。詹姆士二世仓皇出逃。这场没有流血的政变被称为<strong>'光荣革命'</strong>。1689年，议会通过<strong>《权利法案》</strong>，以法律形式限制国王的权力（如无议会同意不能征税、不能维持常备军），确保议会的立法权。<strong>君主立宪制</strong>（Constitutional Monarchy）在英国逐渐确立。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "光荣革命的意义",
+            "desc": "标志着英国资产阶级革命的结束。它实现了政治权力的平稳过渡，为英国资本主义的迅速发展扫清了障碍。"
+        },
+        {
+            "title": "《权利法案》",
+            "desc": "核心精神是'限制王权，议会至上'。它是英国君主立宪制的法律基石。"
+        },
+        {
+            "title": "制度创新",
+            "desc": "英国率先建立了现代政治制度，即以法治代替人治，为工业革命的发生提供了政治前提。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "克伦威尔",
+            "url": "topic_cromwell.html"
+        },
+        {
+            "text": "光荣革命",
+            "url": "topic_glorious_rev.html"
+        },
+        {
+            "text": "权利法案",
+            "url": "topic_bill_rights.html"
+        },
+        {
+            "text": "君主立宪",
+            "url": "topic_constitutional_monarchy.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "uk_rev",
+                "label": "英国革命",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "parliament",
+                "label": "议会",
+                "val": 25,
+                "group": "org"
+            },
+            {
+                "id": "king",
+                "label": "国王",
+                "val": 20,
+                "group": "person"
+            },
+            {
+                "id": "cromwell",
+                "label": "克伦威尔",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "charles1",
+                "label": "查理一世",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "glorious_rev",
+                "label": "光荣革命",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "bill_rights",
+                "label": "权利法案",
+                "val": 25,
+                "group": "document"
+            },
+            {
+                "id": "constitutional",
+                "label": "君主立宪制",
+                "val": 20,
+                "group": "system"
+            }
+        ],
+        "edges": [
+            {
+                "source": "parliament",
+                "target": "king",
+                "label": "对抗"
+            },
+            {
+                "source": "uk_rev",
+                "target": "charles1",
+                "label": "处死"
+            },
+            {
+                "source": "cromwell",
+                "target": "uk_rev",
+                "label": "独裁"
+            },
+            {
+                "source": "uk_rev",
+                "target": "glorious_rev",
+                "label": "结束"
+            },
+            {
+                "source": "glorious_rev",
+                "target": "bill_rights",
+                "label": "成果"
+            },
+            {
+                "source": "bill_rights",
+                "target": "constitutional",
+                "label": "确立"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "英国今天的政治体制（首相、内阁、议会）仍运行在《权利法案》奠定的基础上。英国王室成为统而不治的国家象征。",
+        "legacy": "开启了欧洲和北美资产阶级革命的时代。洛克、霍布斯等思想家的理论在此期间诞生。"
+    }
+}

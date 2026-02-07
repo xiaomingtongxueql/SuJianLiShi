@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美洲与非洲文明 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .culture-stat {
+            border-right: 1px solid #eef2f6;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .culture-stat:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 中古文明的多元</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元前 15 世纪 - 公元 16 世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        美洲与非洲文明：孤独而灿烂的演化</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        在大航海时代揭开全球史序幕之前，美洲与非洲大陆正经历着完全独立的、震古烁今的进化过程。这里没有被亚欧大陆频繁的技术对流所沾染，却在孤独中开出了令现代人咋舌的智慧之花：既有玛雅人在热带雨林中仰望星空的精密数学，也有印加帝国在安第斯山巅构建的铁血秩序，更有马里帝国在黄金贸易中展现的财富奇迹。它们向世界证明：文明的色彩绝非单一路径，物竞天择下有无数种伟大的活法。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：玛雅与星空——热带雨林里的数学革命 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="stars" class="w-8 h-8 text-blue mr-3"></i> 第一维度：玛雅文明——孤独的星际观察者</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">
+                            在中美洲的热带丛林里，玛雅人（Mayans）建立了一个令人困惑的高度智识文明。他们在缺乏金属工具与轮车的情况下，构建了复杂的<strong>全方位文明系统</strong>。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>极致天文学与历法</strong>：玛雅人观测出的太阳年长度与现代理论差距仅为17.5秒。他们复杂的“长纪历”不仅能预测日食，甚至包含了指向极其遥远未来的宏大史观。
+                            </li>
+                            <li><strong>数学的奇迹——“零”的核心应用</strong>：玛雅人比欧洲人早几个世纪使用了“零”的概念。这种基于20进制的层级计算法，使他们能够处理亿位以上的海量数据，这在古代世界是独一无二的。
+                            </li>
+                            <li><strong>建筑艺术：丛林金字塔</strong>：每一座金字塔不仅是祭祀台，更是一个巨大的“日晷”。通过精准的角度计算，他们实现了在春分和秋分时节，光影在阶梯上形成“羽蛇神下坡”的视觉奇观。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：印加与秩序——安第斯山脊的铁血管理 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="mountain" class="w-8 h-8 text-blue mr-3"></i> 第二维度：印加帝国——山巅上的总体战体制</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">
+                            15世纪的南美，<strong>印加（Inca）</strong>在安第斯山脉构建了当时人口最稠密、管理最严苛的国家。这是一个即便没有文字，也能通过精密行政网掌控千万人的奇迹。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>全国道路网（Capac Ñan）</strong>：总长超过4万公里的皇家道路连接了整个帝国。通过在这条路上的接力奔跑，帝国的政令可以在数日内传达至每一个边疆。
+                            </li>
+                            <li><strong>奇普（Quipu）——绳结里的算法</strong>：虽然没有书面文字，印加人通过五颜六色的绳结、材质与缠绕方式，精准记录了帝国的每一粒粮食储备、每一名壮丁信息。这是一种及其先进的“模拟数据库”。
+                            </li>
+                            <li><strong>阿兹特克文明的补充</strong>：与此同时，在墨西哥谷地，阿兹特克人通过精妙的“水上浮田”供养了规模宏大的城邦泰诺奇蒂特兰。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第三章：盐与黄金——西非帝国的财富史诗 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="gem" class="w-8 h-8 text-blue mr-3"></i> 第三维度：古代非洲——黄金之國的崛起</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">在撒哈拉以南，并非蛮荒之地。<strong>马里帝国</strong>与<strong>大津巴布韦</strong>展现了中世纪非洲的非凡能量。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>马里的奇迹：曼萨·穆萨</strong>：历史上最富有的人之一。他的朝觐之旅中散发的黄金曾导致开罗金价在十年内持续贬值。<strong>廷巴克图</strong>成为了当时世界顶级的学术与跨区域商贸中心。
+                            </li>
+                            <li><strong>石头城大津巴布韦</strong>：南部非洲石头建筑文明的丰碑。它不仅是王权的象征，更是非洲东海岸连接全球航线的财富枢纽。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 美洲三大文明（玛雅、阿兹特克、印加）的共同硬伤？</h4>
+                            <p class="text-gray-600 italic">
+                                缺乏对大型牲畜（如马、牛）的驯化和对轮车的发明，且由于地形的封闭导致各主要农业区未能通过大规模商贸形成联合阵线。这种“技术孤岛”效应，使得它们在面对拥有铁器和病菌优势的欧洲人时，防御机制极度脆弱。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 为什么非洲的廷巴克图在当时如此重要？</h4>
+                            <p class="text-gray-600 italic">
+                                因为它处于“盐”与“黄金”两大战略物资交换的十字路口。黄金北送欧洲和伊斯兰世界，食盐南送热带地区。这种贸易的绝对优势催生了大量的大学和图书馆，使其在14世纪成为了全球学术的顶级坐标之一。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-blue"></i> 孤独的思想实验</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                美洲文明就像是一个在实验室密封舱里进行的“文明演化实验”。它们告诉人类：即便没有轮子和火药，大脑的逻辑深度依然可以推导出星空的奥秘与法律的严整。这种孤独的伟大，是人类智慧最纯粹的证明。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="earth"
+                                    class="w-6 mr-2 text-blue"></i> 地理的墙与桥</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                撒哈拉沙漠曾经是墙，挡住了步兵；后来变成了桥，引入了真主与科学。地理的多变决定了不同文明的性格，而美非文明的兴衰史，本质上就是一部关于如何与极致自然环境相处的壮丽交响乐。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_maya.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">玛雅历法</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_quipu.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">印加奇普</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_mansa_musa.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">曼萨·穆萨</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_aztec.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">阿兹特克</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"玛雅历法","url":"topic_maya.html"},{"text":"印加奇普","url":"topic_quipu.html"},{"text":"曼萨·穆萨","url":"topic_mansa_musa.html"},{"text":"阿兹特克","url":"topic_aztec.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"af_am","label":"非美文明","x":50,"y":50,"type":"core","url":"detail_america_africa.html"},{"id":"maya","label":"玛雅星历","x":20,"y":30,"type":"normal","url":"detail_america_africa.html"},{"id":"inca","label":"印加奇普","x":80,"y":30,"type":"normal","url":"detail_america_africa.html"},{"id":"mali","label":"马里黄金","x":50,"y":80,"type":"sub","url":"detail_america_africa.html"},{"id":"gold","label":"图巴克图","x":85,"y":70,"type":"sub"}],"edges":[{"source":"af_am","target":"maya"},{"source":"af_am","target":"inca"},{"source":"af_am","target":"mali"},{"source":"mali","target":"gold"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

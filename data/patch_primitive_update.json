@@ -1,0 +1,575 @@
+{
+    "details": [
+        {
+            "id": "detail_primitive_world",
+            "type": "world",
+            "title": "人类起源: 直立行走与智慧的曙光",
+            "year": "约300万年前",
+            "desc": "人类的起源是一个漫长的进化过程。直立行走解放了双手，火的使用照亮了黑夜，语言的产生连接了心灵。人类从此告别了蒙昧，迈向了文明。",
+            "content": [
+                {
+                    "title": "从猿到人:关键的飞跃",
+                    "text": "<p>人类起源于非洲的古猿。约320万年前，<strong>南方古猿</strong>（Australopithecus，代表如<strong>'露西'</strong>）已能直立行走，这是人类进化史上具有决定意义的一步。直立行走导致了骨盆变窄，而脑容量的增加又造成了生育困境，这种演化压力迫使人类必须在'早产'状态下出生，并在漫长的童年期依赖社会抚育，从而催生了复杂的社会结构。</p>"
+                },
+                {
+                    "title": "直立人与尼安德特人",
+                    "text": "<p>约180万年前，直立人走出非洲。在欧洲和西亚，演化出了适应寒冷气候的<strong>尼安德特人</strong>。他们拥有强壮的体格和不亚于智人的脑容量，能制造复杂的莫斯特石器，并已有埋葬死者和照顾伤员的习俗。长期以来他们被视为愚笨的野蛮人，但现代研究表明他们具有高度的智慧和复杂的文化。</p>"
+                },
+                {
+                    "title": "智人与认知革命",
+                    "text": "<p>约7万年前，智人经历了一场<strong>'认知革命'</strong>（Cognitive Revolution）。这并非脑容量的剧增，而是神经连接方式的突变。智人获得了独一无二的'虚构语言'能力，能够谈论神灵、国家、传说等不存在的事物。这种能力使陌生人之间的大规模合作成为可能，最终智人凭借这种压倒性的组织优势，迅速扩张至全球，并导致了其他人类物种（如尼安德特人）的灭绝。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "进化里程碑",
+                    "desc": "人类进化遵循'直立行走 -> 制造工具 -> 脑容量增加 -> 认知革命'的顺序，反驳了'大脑袋先行'的旧观点。"
+                },
+                {
+                    "title": "走出非洲",
+                    "desc": "现代智人均起源于非洲，约6-7万年前的一波大规模迁徙使其扩散至全球，取代了世界各地原有的直立人后裔（如尼安德特人、丹尼索瓦人）。"
+                }
+            ],
+            "impact": {
+                "reality": "人类成为了地球生物圈的绝对主宰，但也引发了第六次物种大灭绝。我们至今仍受制于'石器时代的大脑'，在现代社会中面临肥胖、焦虑等进化不匹配问题。",
+                "legacy": "语言、工具使用、社会合作、对火的控制，这些在旧石器时代奠定的基础，至今仍是人类文明大厦的基石。"
+            },
+            "keywords": [
+                {
+                    "text": "露西 (Lucy)",
+                    "url": "topic_lucy.html"
+                },
+                {
+                    "text": "尼安德特人",
+                    "url": "topic_neanderthal.html"
+                },
+                {
+                    "text": "认知革命",
+                    "url": "topic_cognitive_rev.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "human",
+                        "label": "人类起源",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_primitive_world.html"
+                    },
+                    {
+                        "id": "lucy",
+                        "label": "露西",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_lucy.html"
+                    },
+                    {
+                        "id": "neander",
+                        "label": "尼安德特人",
+                        "val": 25,
+                        "group": "species",
+                        "url": "topic_neanderthal.html"
+                    },
+                    {
+                        "id": "cognitive",
+                        "label": "认知革命",
+                        "val": 25,
+                        "group": "event",
+                        "url": "topic_cognitive_rev.html"
+                    },
+                    {
+                        "id": "tool",
+                        "label": "石器工具",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_stone_tools.html"
+                    },
+                    {
+                        "id": "fire",
+                        "label": "火的使用",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_fire.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "lucy",
+                        "target": "human",
+                        "label": "早期代表"
+                    },
+                    {
+                        "source": "neander",
+                        "target": "human",
+                        "label": "及灭绝亲属"
+                    },
+                    {
+                        "source": "human",
+                        "target": "cognitive",
+                        "label": "关键转折"
+                    },
+                    {
+                        "source": "human",
+                        "target": "tool",
+                        "label": "技术特征"
+                    },
+                    {
+                        "source": "human",
+                        "target": "fire",
+                        "label": "生存手段"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_lucy",
+            "title": "露西 (Lucy): 人类进化的里程碑",
+            "type": "world",
+            "summary": "1974年在埃塞俄比亚发现的南方古猿阿法种化石，距今约320万年。证明了直立行走先于脑容量增加，是人类进化史上的关键证据。",
+            "content": [
+                {
+                    "title": "发现：埃塞俄比亚的奇迹",
+                    "text": "<p>1974年11月24日，美国古人类学家唐纳德·约翰逊（Donald Johanson）在埃塞俄比亚哈达尔（Hadar）地区发现了这具保存异常完整的化石（约40%的骨架）。当晚庆祝时，营地正播放披头士乐队的歌曲《Lucy in the Sky with Diamonds》，于是这具化石被昵称为'露西'。在当地语言中，她被称为'Dinkinesh'，意为'你真棒'。</p>"
+                },
+                {
+                    "title": "解剖特征与进化意义",
+                    "text": "<p>露西属于<strong>南方古猿阿法种</strong>。她脑容量小（约400ml，类似黑猩猩），但<strong>骨盆和腿骨结构</strong>证明她已能双足直立行走。这推翻了'大脑袋先行'的假设，证实直立行走是人猿揖别的第一步。她同时保留了长臂和弯曲手指，显示出适应树栖的特征，是完美的'镶嵌进化'样本。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "直立行走的证据",
+                    "desc": "骨盆变宽变短、股骨内倾（膝外翻）是直立行走的解剖学铁证。"
+                },
+                {
+                    "title": "过渡阶段",
+                    "desc": "南方古猿处于猿向人过渡的关键阶段，具备人（直立行走）与猿（小脑容量、树栖能力）的双重特征。"
+                }
+            ],
+            "impact": {
+                "reality": "露西将人类起源的研究视野前推至300万年前，确认了东非作为'人类摇篮'的地位。",
+                "legacy": "她是全球最著名的古人类化石，成为了探索人类起源的文化象征。"
+            },
+            "relations": [
+                {
+                    "text": "人类起源",
+                    "url": "detail_primitive_world.html"
+                },
+                {
+                    "text": "直立行走",
+                    "url": "topic_bipedalism.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "lucy_core",
+                        "label": "露西 (Lucy)",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_lucy.html"
+                    },
+                    {
+                        "id": "johanson",
+                        "label": "唐纳德·约翰逊",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_johanson.html"
+                    },
+                    {
+                        "id": "hadar",
+                        "label": "哈达尔遗址",
+                        "val": 15,
+                        "group": "place",
+                        "url": "topic_hadar.html"
+                    },
+                    {
+                        "id": "afarensis",
+                        "label": "南方古猿",
+                        "val": 25,
+                        "group": "species",
+                        "url": "topic_australopithecus.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "johanson",
+                        "target": "lucy_core",
+                        "label": "发现"
+                    },
+                    {
+                        "source": "lucy_core",
+                        "target": "hadar",
+                        "label": "出土于"
+                    },
+                    {
+                        "source": "lucy_core",
+                        "target": "afarensis",
+                        "label": "属于"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_neanderthal",
+            "title": "尼安德特人: 冰河世纪的智者",
+            "type": "world",
+            "summary": "尼安德特人是现代智人最近的已灭绝亲属，曾长期统治冰河时期的欧亚大陆。他们强壮、适应寒冷，创造了复杂的石器文化和葬礼仪式。",
+            "content": [
+                {
+                    "title": "冰河生存之道",
+                    "text": "<p>尼安德特人拥有矮壮敦实的身材以减少散热，鼻腔宽大以温暖冷空气。他们极其强壮，是顶级的狩猎者，主要捕食猛犸象等大型动物。尽管曾被视为'野蛮人'，其实他们的脑容量（约1500ml）比现代人还大。</p>"
+                },
+                {
+                    "title": "文化与消亡",
+                    "text": "<p>他们创造了<strong>莫斯特石器工业</strong>，已有照顾伤残同伴和埋葬死者的行为，甚至可能创作了最早的洞穴艺术。约4万年前，随着智人的到来和气候剧变，尼安德特人灭绝了，但通过基因交流，他们的DNA部分融入了现代非非洲人的基因组中。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "人属多样性",
+                    "desc": "证明人类进化呈树状分支，曾有多种人类共存。"
+                },
+                {
+                    "title": "基因渗入",
+                    "desc": "现代欧亚人群携带1%-4%的尼安德特人基因。"
+                }
+            ],
+            "impact": {
+                "reality": "尼安德特人的历史纠正了'人类进化是线性进步'的误区，展示了另一种智慧进化的可能性。",
+                "legacy": "他们的基因影响着现代人的免疫系统、凝血功能以及对某些疾病的易感性。"
+            },
+            "relations": [
+                {
+                    "text": "人类起源",
+                    "url": "detail_primitive_world.html"
+                },
+                {
+                    "text": "认知革命",
+                    "url": "topic_cognitive_rev.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "neander_core",
+                        "label": "尼安德特人",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_neanderthal.html"
+                    },
+                    {
+                        "id": "mousterian",
+                        "label": "莫斯特技术",
+                        "val": 20,
+                        "group": "tech",
+                        "url": "topic_mousterian.html"
+                    },
+                    {
+                        "id": "sapiens",
+                        "label": "智人",
+                        "val": 25,
+                        "group": "species",
+                        "url": "topic_sapiens.html"
+                    },
+                    {
+                        "id": "dna",
+                        "label": "基因交流",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_dna.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "neander_core",
+                        "target": "mousterian",
+                        "label": "创造"
+                    },
+                    {
+                        "source": "neander_core",
+                        "target": "sapiens",
+                        "label": "竞争/混血"
+                    },
+                    {
+                        "source": "sapiens",
+                        "target": "dna",
+                        "label": "继承部分"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_cognitive_rev",
+            "title": "认知革命: 虚构故事与秩序的诞生",
+            "type": "world",
+            "summary": "约7万年前，智人语言能力的突变使其能描述'虚构'事物（如神灵、国家）。这种能力促成了大规模社会合作，使智人最终征服全球。",
+            "content": [
+                {
+                    "title": "虚构的力量",
+                    "text": "<p>认知革命的核心不在于能传递'河边有狮子'的信息，而在于能说'狮子是我们部落的守护神'。这种<strong>'虚构语言'</strong>能力构建了互主体性现实（Inter-subjective Reality），让成千上万互不相识的人因为共同相信一个故事（神话、法律、货币）而进行合作。</p>"
+                },
+                {
+                    "title": "文化演化的开启",
+                    "text": "<p>认知革命使人类脱离了缓慢的生物演化，进入<strong>文化演化</strong>的快车道。人类无需等待基因突变就能迅速改变社会结构和行为模式以适应环境。这使智人成为地球上适应力最强、扩散最快的物种。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "虚构语言",
+                    "desc": "能够谈论不存在的事物是人类语言区别于动物沟通的最本质特征。"
+                },
+                {
+                    "title": "社会规模突破",
+                    "desc": "共同的神话/信仰突破了'邓巴数'（约150人）的生物学限制，使建立部落联盟、城邦和帝国成为可能。"
+                }
+            ],
+            "impact": {
+                "reality": "认知革命是智人统治世界的起点，但也导致了其他人类物种和巨型动物的灭绝。",
+                "legacy": "现代社会的法律、公司、人权等概念本质上仍是认知革命产物——共同想象的故事。"
+            },
+            "relations": [
+                {
+                    "text": "人类起源",
+                    "url": "detail_primitive_world.html"
+                },
+                {
+                    "text": "语言起源",
+                    "url": "topic_language.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "cog_rev",
+                        "label": "认知革命",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_cognitive_rev.html"
+                    },
+                    {
+                        "id": "fiction",
+                        "label": "虚构能力",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_fiction.html"
+                    },
+                    {
+                        "id": "coop",
+                        "label": "大规模合作",
+                        "val": 25,
+                        "group": "impact",
+                        "url": "topic_cooperation.html"
+                    },
+                    {
+                        "id": "harari",
+                        "label": "赫拉利",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_harari.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "cog_rev",
+                        "target": "fiction",
+                        "label": "赋能"
+                    },
+                    {
+                        "source": "fiction",
+                        "target": "coop",
+                        "label": "实现"
+                    },
+                    {
+                        "source": "harari",
+                        "target": "cog_rev",
+                        "label": "概念普及"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_fire",
+            "title": "火的使用 (Use of Fire)",
+            "type": "world",
+            "year": "约150万年前",
+            "summary": "火的使用是人类技术史上的第一座里程碑。它不仅提供了温暖和保护，更通过烹饪改变了人类的生理结构，促进了大脑的飞跃式进化。",
+            "content": [
+                {
+                    "title": "从恐惧到驯服",
+                    "text": "<p>早期人类最初只能利用雷电引发的天然火。在北京人遗址（约50万年前），考古学家发现了厚达6米的灰烬层，证明直立人已经能够<strong>保存火种</strong>并长期控制火源。火光驱散了黑夜里的猛兽，将人类的活动时间延长至夜晚，促成了围炉夜话的社交传统。</p>"
+                },
+                {
+                    "title": "烹饪与大脑进化",
+                    "text": "<p>火最重要的贡献是<strong>熟食</strong>（Cooking）。烹饪预消化了食物，破坏了毒素，使蛋白质和淀粉更易吸收。这大大缩短了人类的咀嚼和消化时间，使肠道缩短，节省出的代谢能量被供给给极其耗能的大脑，直接推动了<strong>脑容量的快速扩张</strong>。恩格斯评价道：'摩擦生火第一次使人支配了一种自然力。'</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "生理改造",
+                    "desc": "熟食改善了营养摄入，导致肠道缩短、下颌变小、脑容量增大，深刻改变了人类体质。"
+                },
+                {
+                    "title": "环境征服",
+                    "desc": "火提供了热源，使人类得以走出热带非洲，迁徙并定居于寒冷的欧亚大陆高纬度地区。"
+                }
+            ],
+            "impact": {
+                "reality": "火的使用是人类改造自然的开端，也是后来陶瓷、冶金等高温技术的基础。",
+                "legacy": "家庭围绕'灶台'（Hearth）建立，火至今仍是人类文明中'家'与'温暖'的核心隐喻。"
+            },
+            "relations": [
+                {
+                    "text": "直立人",
+                    "url": "detail_primitive_world.html"
+                },
+                {
+                    "text": "石器工具",
+                    "url": "topic_stone_tools.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "fire_core",
+                        "label": "火的使用",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_fire.html"
+                    },
+                    {
+                        "id": "erectus",
+                        "label": "直立人",
+                        "val": 25,
+                        "group": "species",
+                        "url": "detail_primitive_world.html"
+                    },
+                    {
+                        "id": "cooking",
+                        "label": "烹饪",
+                        "val": 25,
+                        "group": "concept",
+                        "url": "topic_cooking.html"
+                    },
+                    {
+                        "id": "brain",
+                        "label": "大脑进化",
+                        "val": 20,
+                        "group": "impact",
+                        "url": "topic_brain_evolution.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "erectus",
+                        "target": "fire_core",
+                        "label": "掌握"
+                    },
+                    {
+                        "source": "fire_core",
+                        "target": "cooking",
+                        "label": "实现"
+                    },
+                    {
+                        "source": "cooking",
+                        "target": "brain",
+                        "label": "促进"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_stone_tools",
+            "title": "石器工具 (Stone Tools)",
+            "type": "world",
+            "year": "约260万年前",
+            "summary": "石器是人类最早的科技发明。从粗糙的奥杜威砍砸器到精细的莫斯特石叶，石器技术的演进折射出人类认知能力的提升和对环境改造能力的增强。",
+            "content": [
+                {
+                    "title": "奥杜威与阿舍利",
+                    "text": "<p>最早的<strong>奥杜威（Oldowan）</strong>石器（约260万年前）主要是简单的砍砸器，由能人制造，用于敲骨吸髓。随后，直立人发明了<strong>阿舍利（Acheulean）</strong>手斧（约170万年前）。这种泪滴形的手斧两面对称，制作需要复杂的规划和预判能力，被称为'史前瑞士军刀'，在长达一百多万年的时间里是人类的主战装备。</p>"
+                },
+                {
+                    "title": "技术与认知的协同",
+                    "text": "<p>石器的制作不仅是手部技巧，更是大脑体操。打制一件精美的石器需要空间想象力、手眼协调能力和对材料属性的深刻理解。石器技术的每一次迭代（如勒瓦娄哇技法的预制石核），都对应着人类大脑额叶皮层功能的增强和认知能力的飞跃。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "旧石器分期",
+                    "desc": "依据打制技术的复杂程度，旧石器时代分为早（砍砸器/手斧）、中（莫斯特石片）、晚（细石器/骨器）三期。"
+                },
+                {
+                    "title": "制造工具的定义",
+                    "desc": "能否制造和使用工具曾被视为人与动物的界限（尽管现已被修正），它标志着通过体外器官改造自然能力的诞生。"
+                }
+            ],
+            "impact": {
+                "reality": "石器让人类获得了锋利的爪牙，使其能够切割厚皮、肢解猎物、加工木材，从食物链中端跃升至顶端。",
+                "legacy": "石器时代占据了人类历史99%的时间，塑造了我们的身体和思维模式。现代的硅基芯片本质上也是一种极其精密的'石头'。"
+            },
+            "relations": [
+                {
+                    "text": "人类起源",
+                    "url": "detail_primitive_world.html"
+                },
+                {
+                    "text": "火的使用",
+                    "url": "topic_fire.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "stone_core",
+                        "label": "石器工具",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_stone_tools.html"
+                    },
+                    {
+                        "id": "handaxe",
+                        "label": "阿舍利手斧",
+                        "val": 20,
+                        "group": "tech",
+                        "url": "topic_handaxe.html"
+                    },
+                    {
+                        "id": "habilis",
+                        "label": "能人",
+                        "val": 25,
+                        "group": "species",
+                        "url": "topic_habilis.html"
+                    },
+                    {
+                        "id": "cognitive",
+                        "label": "认知能力",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_cognitive.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "habilis",
+                        "target": "stone_core",
+                        "label": "最早制造"
+                    },
+                    {
+                        "source": "stone_core",
+                        "target": "handaxe",
+                        "label": "典型器物"
+                    },
+                    {
+                        "source": "stone_core",
+                        "target": "cognitive",
+                        "label": "促进发展"
+                    }
+                ]
+            }
+        }
+    ]
+}

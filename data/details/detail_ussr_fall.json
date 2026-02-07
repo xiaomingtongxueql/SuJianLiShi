@@ -1,0 +1,150 @@
+{
+    "id": "detail_ussr_fall",
+    "type": "world",
+    "title": "苏联解体:红旗落下",
+    "year": "1991年12月25日",
+    "desc": "1991年12月25日，克里姆林宫上空的镰刀锤子红旗缓缓降下，升起了俄罗斯的三色旗。苏联——这个曾与美国抗衡的超级大国，在存在了69年后轰然倒塌。这标志着冷战的结束，两极格局的瓦解，世界进入了多极化发展的新时代。",
+    "content": [
+        {
+            "title": "积重难返 (Stagnation)",
+            "text": "<p>苏联晚期，高度集中的政治经济体制（斯大林模式）的弊端日益暴露。经济增长停滞，重工业过重，轻工业过轻，人民生活水平下降。既得利益集团（特权阶层）阻碍改革。勃列日涅夫时期的'停滞'为解体埋下了祸根。</p>"
+        },
+        {
+            "title": "戈尔巴乔夫改革 (Perestroika)",
+            "text": "<p>1985年，<strong>戈尔巴乔夫</strong>上台，试图通过<strong>'改革与新思维'</strong>挽救苏联。他提出'加速发展战略'失败后，转向政治体制改革，取消苏共的法定领导地位，实行多党制和总统制。这导致了思想混乱，民族分离主义情绪高涨（如波罗的海三国独立）。</p>"
+        },
+        {
+            "title": "八一九事件与终局 (The Coup & The End)",
+            "text": "<p>1991年8月19日，苏共保守派发动政变，试图阻止签署新联盟条约，但仅维持了3天便宣告失败。这次事件反而加速了苏联的解体。俄罗斯总统<strong>叶利钦</strong>掌握了实权，苏共被解散。12月，俄、乌、白签署《别洛韦日协定》，成立独联体。12月25日，戈尔巴乔夫辞职，苏联正式解体。</p>"
+        },
+        {
+            "title": "休克疗法与阵痛 (Shock Therapy)",
+            "text": "<p>解体后的俄罗斯在美国经济学家萨克斯的建议下，实施激进的<strong>'休克疗法'</strong>（全面私有化、价格放开），试图并在短时间内建立市场经济。结果引发了恶性通货膨胀，GDP腰斩，寡头崛起，大量国有资产流失，人民生活陷入困顿。这是转型期沉痛的代价。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "根本原因",
+            "desc": "斯大林模式（高度集中的政治经济体制）的僵化，阻碍了生产力的发展。"
+        },
+        {
+            "title": "直接原因",
+            "desc": "戈尔巴乔夫改革背离了社会主义方向，导致政治失控和民族分裂。"
+        },
+        {
+            "title": "外部原因",
+            "desc": "西方国家的'和平演变'战略。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "戈尔巴乔夫",
+            "url": "topic_gorbachev.html"
+        },
+        {
+            "text": "叶利钦",
+            "url": "topic_yeltsin.html"
+        },
+        {
+            "text": "八一九事件",
+            "url": "topic_august_coup.html"
+        },
+        {
+            "text": "斯大林模式",
+            "url": "topic_stalin_model.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "ussr_fall",
+                "label": "苏联解体",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "gorbachev",
+                "label": "戈尔巴乔夫",
+                "val": 20,
+                "group": "person"
+            },
+            {
+                "id": "yeltsin",
+                "label": "叶利钦",
+                "val": 20,
+                "group": "person"
+            },
+            {
+                "id": "reforms",
+                "label": "政治改革",
+                "val": 15,
+                "group": "policy"
+            },
+            {
+                "id": "coup",
+                "label": "八一九事件",
+                "val": 15,
+                "group": "event"
+            },
+            {
+                "id": "stagnation",
+                "label": "体制僵化",
+                "val": 15,
+                "group": "cause"
+            },
+            {
+                "id": "cold_war_end",
+                "label": "冷战结束",
+                "val": 25,
+                "group": "impact"
+            },
+            {
+                "id": "unipolar",
+                "label": "一超多强",
+                "val": 20,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "stagnation",
+                "target": "ussr_fall",
+                "label": "根本原因"
+            },
+            {
+                "source": "gorbachev",
+                "target": "reforms",
+                "label": "推行"
+            },
+            {
+                "source": "reforms",
+                "target": "ussr_fall",
+                "label": "导致失控"
+            },
+            {
+                "source": "coup",
+                "target": "ussr_fall",
+                "label": "加速"
+            },
+            {
+                "source": "yeltsin",
+                "target": "coup",
+                "label": "反对"
+            },
+            {
+                "source": "ussr_fall",
+                "target": "cold_war_end",
+                "label": "标志"
+            },
+            {
+                "source": "ussr_fall",
+                "target": "unipolar",
+                "label": "导致"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "普京称苏联解体是'20世纪最大的地缘政治灾难'。俄乌冲突在某种程度上是苏联解体后遗症的爆发。",
+        "legacy": "证明了社会主义改革必须坚持正确方向，不能脱离国情。也标志着20世纪意识形态对抗的主线暂时终结。"
+    }
+}

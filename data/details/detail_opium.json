@@ -1,0 +1,80 @@
+{
+    "id": "detail_opium",
+    "type": "china",
+    "title": "鸦片战争:屈辱的开始",
+    "year": "1840年 — 1842年",
+    "desc": "英国为打开中国市场发动了侵略战争。中国战败，签署《南京条约》，中国开始沦为半殖民地半封建社会。",
+    "content": [
+        {
+            "title": "虎门销烟",
+            "text": "<p>1839年，林则徐在广东<strong>虎门销烟</strong>，显示了中华民族反对外来侵略的意志。借此，英国于1840年发动了鸦片战争。</p>"
+        },
+        {
+            "title": "南京条约",
+            "text": "<p>1842年，清政府被迫签署中国近代史上第一个不平等条约——<strong>《南京条约》</strong>。割让香港岛，赔款2100万银元，开放五口通商，协定关税。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "林则徐",
+            "url": "topic_linzexu.html"
+        },
+        {
+            "text": "南京条约",
+            "url": "topic_nanjing_treaty.html"
+        },
+        {
+            "text": "魏源",
+            "url": "topic_weiyuan.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "opium",
+                "label": "鸦片战争",
+                "val": 30,
+                "group": "core",
+                "url": "detail_opium.html"
+            },
+            {
+                "id": "lin",
+                "label": "林则徐",
+                "val": 25,
+                "group": "person",
+                "url": "topic_linzexu.html"
+            },
+            {
+                "id": "treaty",
+                "label": "南京条约",
+                "val": 25,
+                "group": "event",
+                "url": "topic_nanjing_treaty.html"
+            },
+            {
+                "id": "wei",
+                "label": "魏源",
+                "val": 20,
+                "group": "person",
+                "url": "topic_weiyuan.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "lin",
+                "target": "opium",
+                "label": "导火索"
+            },
+            {
+                "source": "opium",
+                "target": "treaty",
+                "label": "结果"
+            },
+            {
+                "source": "wei",
+                "target": "opium",
+                "label": "反思"
+            }
+        ]
+    }
+}

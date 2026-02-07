@@ -1,0 +1,453 @@
+{
+    "details": [
+        {
+            "id": "detail_greece",
+            "type": "world",
+            "title": "古希腊:西方文明的摇篮",
+            "year": "BC 800 — BC 146",
+            "desc": "古希腊文明不是一个统一的帝国，而是一个由数百个城邦组成的文化共同体。它孕育了民主政治、哲学思辨、奥林匹克精神和古典艺术，奠定了西方文明的精神内核。",
+            "content": [
+                {
+                    "title": "城邦时代:雅典与斯巴达",
+                    "text": "<p>公元前8世纪，希腊城邦（Polis）兴起。<strong>雅典</strong>（Athens）以商业和海军著称，经过梭伦、克里斯提尼改革，在伯里克利时代达到<strong>直接民主</strong>的巅峰。<strong>斯巴达</strong>（Sparta）则是一个尚武的寡头制国家，实行严酷的军事化教育。这两个城邦的竞争与合作主导了希腊历史。</p>"
+                },
+                {
+                    "title": "哲学的突破",
+                    "text": "<p>古希腊最伟大的成就是在思想领域。<strong>苏格拉底</strong>探究伦理与真理，<strong>柏拉图</strong>构建理念论，<strong>亚里士多德</strong>集科学与逻辑之大成。这'希腊三贤'奠定了西方哲学的理性传统。</p>"
+                },
+                {
+                    "title": "希腊化时代",
+                    "text": "<p>亚历山大大帝东征将希腊文化传播到东方，开启了'希腊化时代'。希腊科学（阿基米德、欧几里得）与东方文化融合，产生了辉煌的成果。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "雅典民主",
+                    "url": "topic_athens_democracy.html"
+                },
+                {
+                    "text": "苏格拉底",
+                    "url": "topic_socrates.html"
+                },
+                {
+                    "text": "亚历山大大帝",
+                    "url": "topic_alexander.html"
+                },
+                {
+                    "text": "帕特农神庙",
+                    "url": "topic_parthenon.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "greece",
+                        "label": "古希腊",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_greece.html"
+                    },
+                    {
+                        "id": "athens",
+                        "label": "雅典",
+                        "val": 25,
+                        "group": "city",
+                        "url": "topic_athens_democracy.html"
+                    },
+                    {
+                        "id": "sparta",
+                        "label": "斯巴达",
+                        "val": 25,
+                        "group": "city",
+                        "url": "topic_sparta.html"
+                    },
+                    {
+                        "id": "democracy",
+                        "label": "民主政治",
+                        "val": 20,
+                        "group": "system",
+                        "url": "topic_athens_democracy.html"
+                    },
+                    {
+                        "id": "socrates",
+                        "label": "苏格拉底",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_socrates.html"
+                    },
+                    {
+                        "id": "alexander",
+                        "label": "亚历山大",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_alexander.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "greece",
+                        "target": "athens",
+                        "label": "包含"
+                    },
+                    {
+                        "source": "athens",
+                        "target": "democracy",
+                        "label": "创立"
+                    },
+                    {
+                        "source": "greece",
+                        "target": "socrates",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "alexander",
+                        "target": "greece",
+                        "label": "传播文化"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_rome",
+            "type": "world",
+            "title": "古罗马:从共和到帝国",
+            "year": "BC 753 — AD 476",
+            "desc": "罗马从台伯河畔的一个小村庄，发展成为横跨欧亚非三洲的大帝国。其法律（罗马法）、建筑和行政体系对后世产生了不可估量的影响。",
+            "content": [
+                {
+                    "title": "罗马共和国与法治",
+                    "text": "<p>罗马共和国时期（BC 509-BC 27），国家权力由执政官、元老院和公民大会分享。为了平民与贵族的斗争，颁布了<strong>《十二铜表法》</strong>，标志着罗马成文法的诞生。罗马法强调私有财产神圣不可侵犯，是近代西方主要法律体系（大陆法系）的渊源。</p>"
+                },
+                {
+                    "title": "走向帝国",
+                    "text": "<p>随着版图扩张，共和体制难以维持。<strong>凯撒</strong>（Caesar）奠定了独裁基础，<strong>屋大维</strong>（Augustus）首创'元首制'，罗马进入帝国时代。在'罗马和平'（Pax Romana）时期，帝国经济繁荣，交通发达（'条条大路通罗马'）。</p>"
+                },
+                {
+                    "title": "基督教的兴起",
+                    "text": "<p>1世纪在巴勒斯坦地区产生的基督教，最初受到迫害，但后来成为罗马国教（君士坦丁大帝），并随着帝国的扩张传遍欧洲。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "罗马法",
+                    "url": "topic_roman_law.html"
+                },
+                {
+                    "text": "其撒",
+                    "url": "topic_caesar.html"
+                },
+                {
+                    "text": "屋大维",
+                    "url": "topic_augustus.html"
+                },
+                {
+                    "text": "基督教",
+                    "url": "topic_christianity.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "rome",
+                        "label": "古罗马",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_rome.html"
+                    },
+                    {
+                        "id": "law",
+                        "label": "罗马法",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_roman_law.html"
+                    },
+                    {
+                        "id": "republic",
+                        "label": "共和国",
+                        "val": 20,
+                        "group": "period",
+                        "url": "topic_roman_republic.html"
+                    },
+                    {
+                        "id": "empire",
+                        "label": "帝国",
+                        "val": 20,
+                        "group": "period",
+                        "url": "topic_roman_empire.html"
+                    },
+                    {
+                        "id": "caesar",
+                        "label": "凯撒",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_caesar.html"
+                    },
+                    {
+                        "id": "christianity",
+                        "label": "基督教",
+                        "val": 20,
+                        "group": "religion",
+                        "url": "topic_christianity.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "rome",
+                        "target": "law",
+                        "label": "贡献"
+                    },
+                    {
+                        "source": "republic",
+                        "target": "empire",
+                        "label": "演变"
+                    },
+                    {
+                        "source": "empire",
+                        "target": "christianity",
+                        "label": "国教化"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_athens_democracy",
+            "title": "雅典民主 (Athenian Democracy)",
+            "type": "world",
+            "summary": "古代世界也是人类历史上最早的民主政治实践。以'公民大会'为最高权力机构，具有'人民主权'和'轮番而治'的特点。",
+            "sections": [
+                {
+                    "title": "黄金时代",
+                    "content": "<p>伯里克利执政时期，除十将军外，各级官职向所有公民开放，并以抽签方式产生。国家为担任公职的公民发放津贴，保证了贫民参政的权利。这种直接民主激发了公民的爱国热情和创造力。</p>"
+                },
+                {
+                    "title": "局限性",
+                    "content": "<p>雅典民主仅限于成年男性公民，妇女、奴隶和外邦人被排除在外。此外，直接民主也容易导致'多数人的暴政'（如苏格拉底之死）。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_socrates",
+            "title": "苏格拉底 (Socrates)",
+            "type": "world",
+            "summary": "古希腊哲学的奠基人，西方哲学史上最伟大的人物之一。他没有留下著作，其思想主要通过弟子柏拉图的对话录流传。",
+            "sections": [
+                {
+                    "title": "认识你自己",
+                    "content": "<p>苏格拉底将哲学从对自然的探索转向对社会的思考。他提出'认识你自己'，强调知识即美德。他喜欢在雅典街头通过'精神助产术'（追问法）引导人们思考，最终因得罪保守派而被判死刑，饮鸩从容就义。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sparta",
+            "title": "斯巴达 (Sparta)",
+            "type": "world",
+            "summary": "古希腊城邦双雄之一，以严酷的军事化体制著称。斯巴达人从小接受严格的军事训练，终身服役，以勇敢善战闻名。",
+            "sections": [
+                {
+                    "title": "铁血城邦",
+                    "content": "<p>斯巴达实行寡头政治，少数奴隶主（斯巴达人）统治着大量被征服的希洛人（公有奴隶）。为了维持统治，斯巴达整个国家变成了一座兵营。'斯巴达式的'（Spartan）一词至今仍代指简朴吃苦的生活方式。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_alexander",
+            "title": "亚历山大大帝 (Alexander the Great)",
+            "type": "world",
+            "summary": "马其顿国王，世界历史上最杰出的军事统帅之一。他率军灭亡了波斯帝国，建立了横跨欧亚非的大帝国。",
+            "sections": [
+                {
+                    "title": "希腊化的使者",
+                    "content": "<p>亚历山大的东征虽然伴随着战火，但客观上促进了东西方文化的交流。他所到之处建立了几十座'亚历山大城'，希腊的语言、艺术、科学随着军队传播到东方，开启了'希腊化时代'。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古希腊",
+                    "url": "detail_greece.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_parthenon",
+            "title": "帕特农神庙 (Parthenon)",
+            "type": "world",
+            "summary": "雅典卫城的主体建筑，供奉雅典娜女神。它是古希腊建筑艺术的最高成就，多立克柱式的巅峰之作。",
+            "sections": [
+                {
+                    "title": "黄金比例",
+                    "content": "<p>建于伯里克利时代，由菲迪亚斯监造。其设计运用了视觉矫正技术，外观呈现出完美的比例和谐。它是西方古典建筑的典范，无数后世建筑（如美国最高法院）模仿了它的风格。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "雅典民主",
+                    "url": "topic_athens_democracy.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_roman_law",
+            "title": "罗马法 (Roman Law)",
+            "type": "world",
+            "summary": "罗马法是古罗马国家法律的总称，是古代世界最完备的法律体系。",
+            "sections": [
+                {
+                    "title": "从公民法到万民法",
+                    "content": "<p>罗马法经历了从习惯法到成文法（《十二铜表法》），从适用罗马公民的'公民法'到适用帝国境内所有自由民的'万民法'的演变。《查士丁尼民法大全》标志着罗马法体系的最终完成。它对后世欧美的法律制度产生了深远影响。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_caesar",
+            "title": "凯撒 (Julius Caesar)",
+            "type": "world",
+            "summary": "罗马共和国末期杰出的军事统帅和政治家。他征服了高卢，击败庞培，集大权于一身，实行独裁统治，为罗马帝国的建立奠定了基础。",
+            "sections": [
+                {
+                    "title": "跨越卢比孔河",
+                    "content": "<p>凯撒的名言'Veni, vidi, vici'（我来，我见，我征服）彰显了他的军事才能。他被元老院共和派（布鲁图斯）刺杀，但他的养子屋大维最终完成了帝国的建立。'凯撒'一词后来成为皇帝的代称（如德语Kaiser，俄语Tsar）。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_augustus",
+            "title": "屋大维 (Augustus)",
+            "type": "world",
+            "summary": "罗马帝国的第一位'元首'（皇帝）。他结束了长期的内战，开创了'罗马和平'时期。",
+            "sections": [
+                {
+                    "title": "奥古斯都",
+                    "content": "<p>屋大维保留了共和国的外衣，实际上掌握了最高权力，被元老院授予'奥古斯都'（意为神圣的）尊号。他也是著名的赞助人，把'砖头的罗马变成了大理石的罗马'。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_roman_republic",
+            "title": "罗马共和国 (Roman Republic)",
+            "type": "world",
+            "summary": "公元前509年至前27年的罗马国家体制。其特点是混合政体，即执政官（王权）、元老院（贵族）和公民大会（民主）的制衡。",
+            "sections": [
+                {
+                    "title": "权力制衡",
+                    "content": "<p>共和国时期，两名执政官任期一年，互相否决。保民官有权否决对平民不利的决议。这种复杂的政治设计旨在防止暴政，但也导致了效率低下和后期的内斗。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_roman_empire",
+            "title": "罗马帝国 (Roman Empire)",
+            "type": "world",
+            "summary": "公元前27年屋大维建立元首制后，罗马进入帝国时期。它控制了环地中海的所有地区，将地中海变为内湖。",
+            "sections": [
+                {
+                    "title": "罗马和平",
+                    "content": "<p>在帝国早期（前1-2世纪），政局稳定，经济繁荣，法律通行。罗马军团守卫着边境，发达的道路系统连接着各个行省。直到3世纪危机后，帝国逐渐走向衰落，最终分裂为东西两部。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_christianity",
+            "title": "基督教 (Christianity)",
+            "type": "world",
+            "summary": "公元1世纪产生于罗马帝国统治下的巴勒斯坦地区。创始人是耶稣。后来发展成为世界三大宗教之一。",
+            "sections": [
+                {
+                    "title": "从受迫害到国教",
+                    "content": "<p>基督教宣扬上帝面前人人平等，吸引了大量下层民众。起初被罗马政府视为异端加以迫害（如尼禄时期）。4世纪初，君士坦丁大帝颁布《米兰敕令》承认其合法性。4世纪末，狄奥多西一世将其定为国教，基督教从此成为欧洲文明的基石。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古罗马",
+                    "url": "detail_rome.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_erlitou",
+            "title": "二里头遗址 (Erlitou Ruins)",
+            "type": "china",
+            "summary": "位于河南洛阳，被学界普遍认为是夏朝中晚期的都城遗址。",
+            "sections": [
+                {
+                    "title": "华夏第一都",
+                    "content": "<p>二里头发现了大型宫殿基址、青铜冶炼作坊和精美的绿松石龙形器。这里出土的青铜爵是中国最早的青铜礼器之一，标志着中国青铜时代的开端，证实了夏朝文明的存在。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "夏朝",
+                    "url": "detail_xia.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_oracle",
+            "title": "甲骨文 (Oracle Bone Script)",
+            "type": "china",
+            "summary": "中国商朝主要刻在龟甲或兽骨上的文字，是中国已发现的古代文字中年代最早、体系较为完整的文字。",
+            "sections": [
+                {
+                    "title": "一片甲骨惊天下",
+                    "content": "<p>1899年由王懿荣发现。甲骨文主要用于占卜（祭祀、战争、农事）。它具备了汉字的基本结构，证明我国有文字可考的历史从商朝开始。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "商朝",
+                    "url": "detail_shang.html"
+                }
+            ]
+        }
+    ]
+}

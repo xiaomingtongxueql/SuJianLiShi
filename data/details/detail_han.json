@@ -1,0 +1,120 @@
+{
+    "id": "detail_han",
+    "type": "china",
+    "title": "汉朝:强盛与自信",
+    "year": "BC 202 — AD 220",
+    "desc": "分西汉和东汉。汉朝是中国历史上最强盛的朝代之一，开辟了丝绸之路，确立了儒学正统地位，使得'汉'成为中华民族的代称。",
+    "content": [
+        {
+            "title": "大一统的巩固",
+            "text": "<p>汉武帝雄才大略，政治上颁布'推恩令'削弱诸侯；思想上'罢黜百家，独尊儒术'；军事上北击匈奴。西汉国力达到鼎盛。</p>"
+        },
+        {
+            "title": "史学双璧",
+            "text": "<p>司马迁的《史记》（纪传体通史）与班固的《汉书》（纪传体断代史），不仅是史学巨著，也是文学经典，开创了中国史学的优良传统。</p>"
+        },
+        {
+            "title": "汉文化圈",
+            "text": "<p>汉朝的强盛使得'汉'成为中华民族的代称。汉字、汉学、汉衣冠，构成了中华文明最鲜明的文化符号。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "推恩令",
+            "url": "topic_tuien.html"
+        },
+        {
+            "text": "独尊儒术",
+            "url": "topic_duzunrushu.html"
+        },
+        {
+            "text": "丝绸之路",
+            "url": "topic_silkroad.html"
+        },
+        {
+            "text": "司马迁",
+            "url": "topic_simaqian.html"
+        },
+        {
+            "text": "造纸术",
+            "url": "topic_papermaking.html"
+        },
+        {
+            "text": "张骞",
+            "url": "topic_zhangqian.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "han",
+                "label": "汉朝",
+                "val": 10,
+                "group": "core",
+                "url": "detail_han.html"
+            },
+            {
+                "id": "liubang",
+                "label": "刘邦",
+                "val": 8,
+                "group": "person",
+                "url": "topic_liubang.html"
+            },
+            {
+                "id": "hanwudi",
+                "label": "汉武帝",
+                "val": 9,
+                "group": "person",
+                "url": "topic_hanwudi.html"
+            },
+            {
+                "id": "liuxiu",
+                "label": "刘秀",
+                "val": 8,
+                "group": "person",
+                "url": "topic_guangwudi.html"
+            },
+            {
+                "id": "simaqian",
+                "label": "司马迁",
+                "val": 7,
+                "group": "person",
+                "url": "topic_simaqian.html"
+            },
+            {
+                "id": "zhangqian",
+                "label": "张骞",
+                "val": 7,
+                "group": "person",
+                "url": "topic_zhangqian.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "han",
+                "target": "liubang",
+                "name": "建立"
+            },
+            {
+                "source": "han",
+                "target": "hanwudi",
+                "name": "鼎盛"
+            },
+            {
+                "source": "han",
+                "target": "liuxiu",
+                "name": "中兴"
+            },
+            {
+                "source": "han",
+                "target": "simaqian",
+                "name": "修史"
+            },
+            {
+                "source": "han",
+                "target": "zhangqian",
+                "name": "出使"
+            }
+        ]
+    }
+}

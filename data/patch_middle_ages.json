@@ -1,0 +1,981 @@
+{
+    "details": [
+        {
+            "id": "detail_sui",
+            "type": "china",
+            "title": "隋朝:大一统的重建",
+            "year": "581年 — 618年",
+            "desc": "隋朝结束了魏晋南北朝三百年的分裂局面，开创了科举制，开凿了大运河，为唐朝的盛世奠定了基础。虽二世而亡，但其制度遗产泽被后世。",
+            "content": [
+                {
+                    "title": "开皇之治与制度创新",
+                    "text": "<p>隋文帝杨坚统一全国后，实行厉行节约、轻徭薄赋的政策，出现了'开皇之治'。在制度上，确立了<strong>三省六部制</strong>，分割相权加强皇权；废除九品中正制，创立<strong>科举制</strong>，通过考试选拔官员，打破了门阀世族对仕途的垄断。</p>"
+                },
+                {
+                    "title": "大运河的开凿",
+                    "text": "<p>隋炀帝为了加强南北交通和巩固统治，开凿了以洛阳为中心，北达涿郡（今北京），南至余杭（今杭州）的<strong>大运河</strong>。全长2700多公里，沟通了五大水系，成为古代世界上最长的运河。它对中国南北经济文化的交流起了巨大作用。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "科举制",
+                    "url": "topic_keju.html"
+                },
+                {
+                    "text": "大运河",
+                    "url": "topic_grand_canal.html"
+                },
+                {
+                    "text": "三省六部",
+                    "url": "topic_sansheng.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "sui",
+                        "label": "隋朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_sui.html"
+                    },
+                    {
+                        "id": "keju",
+                        "label": "科举制",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_keju.html"
+                    },
+                    {
+                        "id": "canal",
+                        "label": "大运河",
+                        "val": 25,
+                        "group": "place",
+                        "url": "topic_grand_canal.html"
+                    },
+                    {
+                        "id": "sansheng",
+                        "label": "三省六部",
+                        "val": 20,
+                        "group": "system",
+                        "url": "topic_sansheng.html"
+                    },
+                    {
+                        "id": "yang",
+                        "label": "隋文帝",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_suiwendi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "sui",
+                        "target": "keju",
+                        "label": "创立"
+                    },
+                    {
+                        "source": "sui",
+                        "target": "canal",
+                        "label": "开凿"
+                    },
+                    {
+                        "source": "yang",
+                        "target": "sui",
+                        "label": "建立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_tang",
+            "type": "china",
+            "title": "唐朝:诗歌与盛世",
+            "year": "618年 — 907年",
+            "desc": "中国封建社会的繁荣顶峰。政治清明，经济发达，文化昌盛，对外交流频繁。长安成为当时国际性大都会。",
+            "content": [
+                {
+                    "title": "贞观之治到开元盛世",
+                    "text": "<p>唐太宗吸取隋亡教训，纳谏如流，开创'贞观之治'。武则天是中国唯一女皇，政启开元，治宏贞观。唐玄宗前期，国力达到鼎盛，史称'开元盛世'。后期爆发安史之乱，唐朝由盛转衰。</p>"
+                },
+                {
+                    "title": "开放的社会风气",
+                    "text": "<p>唐朝社会风气开放，女性地位较高。诗歌创作达到高峰，李白（诗仙）、杜甫（诗圣）是其代表。高僧玄奘西行、鉴真东渡，促进了中外文化交流。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "贞观之治",
+                    "url": "topic_zhenguan.html"
+                },
+                {
+                    "text": "武则天",
+                    "url": "topic_wuzetian.html"
+                },
+                {
+                    "text": "开元盛世",
+                    "url": "topic_kaiyuan.html"
+                },
+                {
+                    "text": "安史之乱",
+                    "url": "topic_anshi.html"
+                },
+                {
+                    "text": "李白",
+                    "url": "topic_libai.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "tang",
+                        "label": "唐朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_tang.html"
+                    },
+                    {
+                        "id": "taizong",
+                        "label": "唐太宗",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_zhenguan.html"
+                    },
+                    {
+                        "id": "wu",
+                        "label": "武则天",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_wuzetian.html"
+                    },
+                    {
+                        "id": "xuanzong",
+                        "label": "唐玄宗",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_kaiyuan.html"
+                    },
+                    {
+                        "id": "poetry",
+                        "label": "唐诗",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_tang_poetry.html"
+                    },
+                    {
+                        "id": "anshi",
+                        "label": "安史之乱",
+                        "val": 20,
+                        "group": "event",
+                        "url": "topic_anshi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "tang",
+                        "target": "taizong",
+                        "label": "贞观之治"
+                    },
+                    {
+                        "source": "tang",
+                        "target": "wu",
+                        "label": "唯一女皇"
+                    },
+                    {
+                        "source": "tang",
+                        "target": "xuanzong",
+                        "label": "开元盛世"
+                    },
+                    {
+                        "source": "tang",
+                        "target": "poetry",
+                        "label": "繁荣"
+                    },
+                    {
+                        "source": "xuanzong",
+                        "target": "anshi",
+                        "label": "转衰"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_song",
+            "type": "china",
+            "title": "宋朝:经济重心的南移",
+            "year": "960年 — 1279年",
+            "desc": "分北宋和南宋。虽然军事力量相对较弱，但商品经济极度发达，科技（四大发明中的三项）和文化成就辉煌。",
+            "content": [
+                {
+                    "title": "重文轻武",
+                    "text": "<p>宋太祖赵匡胤通过'杯酒释兵权'确立了重文轻武的国策，有效防止了武将专权，但也导致了军队战斗力下降。王安石变法试图富国强兵，但成效有限。</p>"
+                },
+                {
+                    "title": "商业革命",
+                    "text": "<p>宋代商业突破了时空限制（出现早市、夜市），出现了世界上最早的纸币——<strong>交子</strong>。经济重心南移最终完成（'苏湖熟，天下足'）。市民阶层壮大，宋词、瓦子勾栏兴起。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "交子",
+                    "url": "topic_jiaozi.html"
+                },
+                {
+                    "text": "活字印刷",
+                    "url": "topic_movable_type.html"
+                },
+                {
+                    "text": "王安石变法",
+                    "url": "topic_wanganshi.html"
+                },
+                {
+                    "text": "经济重心南移",
+                    "url": "topic_southward_economy.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "song",
+                        "label": "宋朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_song.html"
+                    },
+                    {
+                        "id": "taizu",
+                        "label": "赵匡胤",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_zhaokuangyin.html"
+                    },
+                    {
+                        "id": "wang",
+                        "label": "王安石",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_wanganshi.html"
+                    },
+                    {
+                        "id": "ci",
+                        "label": "宋词",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_songci.html"
+                    },
+                    {
+                        "id": "compass",
+                        "label": "指南针",
+                        "val": 15,
+                        "group": "tech",
+                        "url": "topic_compass.html"
+                    },
+                    {
+                        "id": "print",
+                        "label": "活字印刷",
+                        "val": 15,
+                        "group": "tech",
+                        "url": "topic_movable_type.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "taizu",
+                        "target": "song",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "wang",
+                        "target": "song",
+                        "label": "变法"
+                    },
+                    {
+                        "source": "song",
+                        "target": "ci",
+                        "label": "成就"
+                    },
+                    {
+                        "source": "song",
+                        "target": "compass",
+                        "label": "应用"
+                    },
+                    {
+                        "source": "song",
+                        "target": "print",
+                        "label": "发明"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_yuan",
+            "type": "china",
+            "title": "元朝:版图最大的帝国",
+            "year": "1271年 — 1368年",
+            "desc": "由蒙古族建立的大一统王朝。它是中国历史上版图最大的朝代，确立了行省制度，促进了东西方交流和民族融合。",
+            "content": [
+                {
+                    "title": "行省制度与边疆管理",
+                    "text": "<p>为了有效统治辽阔的疆域，元朝在中央设中书省，地方设<strong>行中书省</strong>（简称行省或省）。这一制度被后世沿用，是中国省制的开端。此外，设<strong>宣政院</strong>直接管辖西藏，设澎湖巡检司管辖台湾（琉球），标志着这些地区正式纳入中央政府行政管辖。</p>"
+                },
+                {
+                    "title": "民族融合与四等人制",
+                    "text": "<p>元朝时期，边疆各族大量迁入中原，与汉族杂居相处；波斯人、阿拉伯人迁入中国，同汉、蒙畏兀儿等族融合，形成一个新的民族——<strong>回族</strong>。但统治者实行的'四等人制'（蒙古人、色目人、汉人、南人）也制造了深重的民族矛盾。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "行省制度",
+                    "url": "topic_xingsheng.html"
+                },
+                {
+                    "text": "宣政院",
+                    "url": "topic_xuanzhengyuan.html"
+                },
+                {
+                    "text": "回族",
+                    "url": "topic_huizu.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "yuan",
+                        "label": "元朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_yuan.html"
+                    },
+                    {
+                        "id": "xingsheng",
+                        "label": "行省制",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_xingsheng.html"
+                    },
+                    {
+                        "id": "tibet",
+                        "label": "宣政院",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_xuanzhengyuan.html"
+                    },
+                    {
+                        "id": "hui",
+                        "label": "回族",
+                        "val": 20,
+                        "group": "people",
+                        "url": "topic_huizu.html"
+                    },
+                    {
+                        "id": "kublai",
+                        "label": "忽必烈",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_kublai.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "yuan",
+                        "target": "xingsheng",
+                        "label": "创立"
+                    },
+                    {
+                        "source": "yuan",
+                        "target": "tibet",
+                        "label": "管辖西藏"
+                    },
+                    {
+                        "source": "kublai",
+                        "target": "yuan",
+                        "label": "建立"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_ming",
+            "type": "china",
+            "title": "明朝:君主专制的强化",
+            "year": "1368年 — 1644年",
+            "desc": "明朝是最后一个由汉族建立的大一统王朝。君主专制空前强化（废丞相、设厂卫）；对外交流由开放（郑和下西洋）逐渐走向封闭（海禁）。",
+            "content": [
+                {
+                    "title": "皇权的顶峰",
+                    "text": "<p>明太祖朱元璋废除丞相，权分六部；设立锦衣卫特务机构。明成祖这一趋势，设东厂，使君主专制高度强化。八股取士禁锢了思想，阻碍了科技进步。</p>"
+                },
+                {
+                    "title": "外交的双重奏",
+                    "text": "<p>明成祖派遣<strong>郑和七下西洋</strong>，最远到达红海沿岸和非洲东海岸，展示了国力，促进了友好往来。但后来为防范倭寇，实行'海禁'政策，使中国逐渐落后于世界潮流。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "郑和下西洋",
+                    "url": "topic_zheng_he.html"
+                },
+                {
+                    "text": "戚继光",
+                    "url": "topic_qijiguang.html"
+                },
+                {
+                    "text": "本草纲目",
+                    "url": "topic_bencao.html"
+                },
+                {
+                    "text": "八股文",
+                    "url": "topic_bagu.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "ming",
+                        "label": "明朝",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_ming.html"
+                    },
+                    {
+                        "id": "taizu",
+                        "label": "朱元璋",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_hongwu.html"
+                    },
+                    {
+                        "id": "chengzu",
+                        "label": "朱棣",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_yongle.html"
+                    },
+                    {
+                        "id": "zhenghe",
+                        "label": "郑和",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_zheng_he.html"
+                    },
+                    {
+                        "id": "bagu",
+                        "label": "八股取士",
+                        "val": 15,
+                        "group": "system",
+                        "url": "topic_bagu.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "taizu",
+                        "target": "ming",
+                        "label": "建立"
+                    },
+                    {
+                        "source": "ming",
+                        "target": "zhenghe",
+                        "label": "下西洋"
+                    },
+                    {
+                        "source": "ming",
+                        "target": "bagu",
+                        "label": "思想控制"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_keju",
+            "title": "科举制 (Imperial Examination)",
+            "type": "china",
+            "summary": "中国古代通过考试选拔官吏的制度。创立于隋朝，完善于唐朝，废除于清末（1905年），存在了1300多年。",
+            "sections": [
+                {
+                    "title": "朝为田舍郎，暮登天子堂",
+                    "content": "<p>科举制打破了门阀世族对官职的垄断，使有才学的平民子弟有机会参政，扩大了统治基础。它促进了教育的发展和文学的繁荣，也构成了中国古代文官政治的核心。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "隋朝",
+                    "url": "detail_sui.html"
+                },
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_grand_canal",
+            "title": "大运河 (Grand Canal)",
+            "type": "china",
+            "summary": "世界上里程最长、工程最大的古代运河。以洛阳为中心，沟通海河、黄河、淮河、长江、钱塘江五大水系。",
+            "sections": [
+                {
+                    "title": "黄金水道",
+                    "content": "<p>大运河对于南粮北运（漕运）、巩固统一和促进南北经济文化交流具有不可替代的作用。至今部分河段仍在发挥航运作用。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "隋朝",
+                    "url": "detail_sui.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sansheng",
+            "title": "三省六部制",
+            "type": "china",
+            "summary": "隋唐时期确立的中央官制。三省指中书省（决策）、门下省（审议）、尚书省（执行）；六部指吏、户、礼、兵、刑、工。",
+            "sections": [
+                {
+                    "title": "分权与集权",
+                    "content": "<p>三省长官由宰相担任。通过分割相权，既保证了决策的周密性，又加强了皇权。这一制度是中国古代政治制度成熟的标志。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "隋朝",
+                    "url": "detail_sui.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_suiwendi",
+            "title": "隋文帝 (Emperor Wen of Sui)",
+            "type": "china",
+            "summary": "杨坚，隋朝开国皇帝。结束了魏晋南北朝的分裂，励精图治，开创了'开皇之治'。",
+            "sections": [
+                {
+                    "title": "圣人可汗",
+                    "content": "<p>他统一货币度量衡，以法治国，被北方少数民族尊称为'圣人可汗'。西方史学家认为他是中国历史上最伟大的皇帝之一。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "隋朝",
+                    "url": "detail_sui.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_zhenguan",
+            "title": "贞观之治 (Reign of Zhenguan)",
+            "type": "china",
+            "summary": "唐太宗李世民在位期间的清明政治局面。政治上虚心纳谏，经济上休养生息，民族关系上开明融合。",
+            "sections": [
+                {
+                    "title": "镜鉴与纳谏",
+                    "content": "<p>唐太宗以魏征为镜，深知'水能载舟，亦能覆舟'。这一时期国力强盛，社会安定，为后来的盛世奠定了基础。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_wuzetian",
+            "title": "武则天 (Wu Zetian)",
+            "type": "china",
+            "summary": "中国历史上唯一正统的女皇。改唐为周。她打击门阀士族，大力发展科举，重视农业。",
+            "sections": [
+                {
+                    "title": "政启开元，治宏贞观",
+                    "content": "<p>虽然统治手段严酷（酷吏），但她在位期间国力持续上升，上承贞观，下启开元，是杰出的政治家。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_kaiyuan",
+            "title": "开元盛世 (High Tang)",
+            "type": "china",
+            "summary": "唐玄宗统治前期的盛世。政治清明，经济空前繁荣，人口增加，唐朝进入全盛时期。",
+            "sections": [
+                {
+                    "title": "盛世华章",
+                    "content": "<p>杜甫诗云：'忆昔开元全盛日，小邑犹藏万家室。'当时长安城人口过百万，是世界文明的中心。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_anshi",
+            "title": "安史之乱 (An Lushan Rebellion)",
+            "type": "china",
+            "summary": "唐玄宗末年安禄山和史思明发动的叛乱。持续八年，给社会经济造成巨大破坏，是唐朝由盛转衰的转折点。",
+            "sections": [
+                {
+                    "title": "藩镇割据",
+                    "content": "<p>叛乱平定后，中央集权削弱，形成了藩镇割据的局面。北方经济遭到破坏，经济重心进一步南移。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_tang_poetry",
+            "title": "唐诗 (Tang Poetry)",
+            "type": "china",
+            "summary": "中国诗歌发展的黄金时代。留存下来的诗歌有近五万首，名家辈出。",
+            "sections": [
+                {
+                    "title": "诗仙与诗圣",
+                    "content": "<p>李白（诗仙）诗风豪迈飘逸；杜甫（诗圣）诗风沉郁顿挫，其诗被称为'诗史'。白居易的诗通俗易懂。他们共同铸就了中华文化的丰碑。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_libai",
+            "title": "李白 (Li Bai)",
+            "type": "china",
+            "summary": "唐代伟大的浪漫主义诗人，被后人誉为'诗仙'。",
+            "sections": [
+                {
+                    "title": "天生我材必有用",
+                    "content": "<p>李白的诗想象丰富，气势磅礴。'飞流直下三千尺，疑是银河落九天'展现了他非凡的想象力。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "唐朝",
+                    "url": "detail_tang.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_xingsheng",
+            "title": "行省制度",
+            "type": "china",
+            "summary": "元朝创立的地方行政制度。行中书省的设立，是中国省制的开端。",
+            "sections": [
+                {
+                    "title": "中央集权的加强",
+                    "content": "<p>行省拥有较大的权力，但必须服从中央指挥。这一制度便利了中央对辽阔疆域的管辖，特别是在边疆地区。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "元朝",
+                    "url": "detail_yuan.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_xuanzhengyuan",
+            "title": "宣政院 (Bureau of Buddhist and Tibetan Affairs)",
+            "type": "china",
+            "summary": "元朝掌管全国佛教事务和藏族地区军政事务的机构。",
+            "sections": [
+                {
+                    "title": "西藏归属",
+                    "content": "<p>宣政院的设立，标志着西藏正式成为中央政府直接管辖的一个行政区。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "元朝",
+                    "url": "detail_yuan.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_huizu",
+            "title": "回族 (Hui People)",
+            "type": "china",
+            "summary": "元朝时期形成的新民族。主要由波斯人、阿拉伯人与汉、蒙、畏兀儿等族长期杂居融合而成。",
+            "sections": [
+                {
+                    "title": "大杂居，小聚居",
+                    "content": "<p>回族的形成是元朝民族融合的典型例证。他们信仰伊斯兰教，保留了独特的文化习俗。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "元朝",
+                    "url": "detail_yuan.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_kublai",
+            "title": "忽必烈 (Kublai Khan)",
+            "type": "china",
+            "summary": "元世祖，元朝开国皇帝。他定都大都（北京），统一全中国，推行汉法。",
+            "sections": [
+                {
+                    "title": "大一统",
+                    "content": "<p>忽必烈重视农业，修筑道路，拓展了疆域。他也促进了东西方交流（马可·波罗来华）。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "元朝",
+                    "url": "detail_yuan.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_zhaokuangyin",
+            "title": "赵匡胤 (Zhao Kuangyin)",
+            "type": "china",
+            "summary": "宋太祖，北宋开国皇帝。通过陈桥兵变黄袍加身建立了宋朝。",
+            "sections": [
+                {
+                    "title": "杯酒释兵权",
+                    "content": "<p>为了防止藩镇割据重演，他用和平手段解除武将兵权，确立了文人统治的局面。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_wanganshi",
+            "title": "王安石 (Wang Anshi)",
+            "type": "china",
+            "summary": "北宋杰出的政治家、思想家、文学家。唐宋八大家之一。",
+            "sections": [
+                {
+                    "title": "富国强兵",
+                    "content": "<p>为了挽救北宋统治危机，他推行变法（青苗法、募役法等）。虽然最终失败，但其'天变不足畏，祖宗不足法，人言不足恤'的改革精神令人敬佩。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_songci",
+            "title": "宋词 (Song Ci)",
+            "type": "china",
+            "summary": "宋代主要的文学形式。一种长短句，适于歌唱。",
+            "sections": [
+                {
+                    "title": "豪放与婉约",
+                    "content": "<p>苏轼、辛弃疾是豪放派代表，气势豪迈；李清照、柳永是婉约派代表，风格委婉。宋词反映了繁荣的市民生活。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_compass",
+            "title": "指南针 (Compass)",
+            "type": "china",
+            "summary": "四大发明之一。北宋时制成指南针并开始用于航海。",
+            "sections": [
+                {
+                    "title": "航海的眼睛",
+                    "content": "<p>指南针的应用大大促进了世界远洋航海技术的发展。它为郑和下西洋和欧洲人的地理大发现提供了重要条件。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_movable_type",
+            "title": "活字印刷术 (Movable Type)",
+            "type": "china",
+            "summary": "北宋毕昇发明。用胶泥刻字，火烧硬后排版印刷。",
+            "sections": [
+                {
+                    "title": "文明的传播者",
+                    "content": "<p>活字印刷术降低了制书成本，加速了知识的传播。它传到欧洲后，推动了文艺复兴和宗教改革。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_jiaozi",
+            "title": "交子 (Jiaozi)",
+            "type": "china",
+            "summary": "北宋前期四川地区出现的世界上最早的纸币。",
+            "sections": [
+                {
+                    "title": "货币革命",
+                    "content": "<p>交子的出现是商品经济高度发达的产物。它便于携带，促进了商业贸易的发展。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_southward_economy",
+            "title": "经济重心南移 (Economic South)",
+            "type": "china",
+            "summary": "中国古代经济重心从黄河流域向长江流域转移的历史过程。",
+            "sections": [
+                {
+                    "title": "苏湖熟，天下足",
+                    "content": "<p>从唐朝中后期开始，到南宋最后完成。南方农业、手工业、商业全面超过北方。这由北方战乱、南方相对安定及北人南迁带来技术劳动力等多重因素造成。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "宋朝",
+                    "url": "detail_song.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_hongwu",
+            "title": "朱元璋 (Zhu Yuanzhang)",
+            "type": "china",
+            "summary": "明太祖，明朝开国皇帝。出身贫苦，参加红巾军起义，最终推翻元朝。",
+            "sections": [
+                {
+                    "title": "集权之最",
+                    "content": "<p>他废除丞相制度，使六部直接对皇帝负责，极大强化了皇权。他还设立锦衣卫，以严刑峻法治理国家。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_yongle",
+            "title": "朱棣 (Zhu Di)",
+            "type": "china",
+            "summary": "明成祖，明太祖第四子。通过靖难之役夺取皇位。",
+            "sections": [
+                {
+                    "title": "永乐盛世",
+                    "content": "<p>他迁都北京，修建紫禁城。派郑和下西洋，编纂《永乐大典》，设内阁。他在位期间明朝国力强盛。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_zheng_he",
+            "title": "郑和 (Zheng He)",
+            "type": "china",
+            "summary": "明朝伟大的航海家。率领庞大船队七次下西洋，访问了亚非30多个国家和地区。",
+            "sections": [
+                {
+                    "title": "和平使者",
+                    "content": "<p>郑和下西洋早于欧洲航海家半个多世纪，规模之大、时间之长在世界航海史上是空前的。这展示了明朝强大的国力和开放的外交。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_bagu",
+            "title": "八股取士 (Eight-Legged Essay)",
+            "type": "china",
+            "summary": "明清科举考试的一种文体。题目选自四书五经，格式有严格规定，内容不许发挥个人见解。",
+            "sections": [
+                {
+                    "title": "思想桎梏",
+                    "content": "<p>八股文严重束缚了人们的思想，培养了忠实于皇帝的奴仆，扼杀了创造性，阻碍了中国科技和文化的进步。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_qijiguang",
+            "title": "戚继光 (Qi Jiguang)",
+            "type": "china",
+            "summary": "明朝杰出的抗倭民族英雄。",
+            "sections": [
+                {
+                    "title": "封侯非我意，但愿海波平",
+                    "content": "<p>他组建'戚家军'，纪律严明，百战百胜。在东南沿海荡平了倭寇，保障了人民生命财产安全。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_bencao",
+            "title": "本草纲目 (Compendium of Materia Medica)",
+            "type": "china",
+            "summary": "明朝医药学家李时珍编写的药物学巨著。",
+            "sections": [
+                {
+                    "title": "东方医学巨典",
+                    "content": "<p>全书收录药物1892种，附方11000多个。它总结了中国古代药物学成就，被誉为'东方医学巨典'。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "明朝",
+                    "url": "detail_ming.html"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苏维埃:权力的重构 | 溯鉴历史</title>
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F8FAFC', card: '#FFFFFF', primary: '#0F172A',
+                        accent: '#0969DA', secondary: '#1e40af', stone: '#475569', line: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', 'serif'],
+                        sans: ['"Inter"', '"PingFang SC"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #334155;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-accent/10 selection:text-accent">
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="javascript:history.back()"
+                class="flex items-center text-stone-500 hover:text-accent transition-colors group">
+                <i data-lucide="arrow-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 世界史</div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-accent rounded-sm">
+                        SOVIET</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">苏维埃:权力的重构
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-accent pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        苏维埃（Soviet），俄语意为“会议”或“代表会议”。原本只是1905年革命中工人阶级自发创造的罢工协调组织，却在列宁的天才运作下，演变成为无产阶级专政的国家政权形式。它是直接民主的试验场，也是国家权力的金字塔，最终成为了苏联（Union
+                        of Soviet Socialist Republics）这个超级大国的名字。
+                    </p>
+                    
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="layers" class="w-8 h-8 text-accent mr-3"></i>
+                        政权形式的演变
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">1.</span>从罢工委员会到第二政权
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    苏维埃最早诞生于1905年伊万诺沃-沃兹涅先斯克的纺织工人罢工中。那时它还仅仅是一个工人的自治组织。但到了1917年二月革命，这一形式迅速复活并蔓延全国。
+                                </p>
+                                <p>
+                                    工人和士兵选举自己的代表组成<strong>工兵代表苏维埃</strong>，掌握了实际的武装力量和交通命脉（如铁路、邮电）。与此同时，资产阶级成立了临时政府。这种“双重政权”并存的局面不仅尴尬，而且极不稳定。苏维埃在前期主要由孟什维克和社会革命党控制，他们主张支持临时政府，认为苏维埃只是监督机构。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">2.</span>全部政权归苏维埃
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    列宁敏锐地发现了苏维埃作为国家政权形式的潜力。他在《四月提纲》中提出了著名的口号：“<strong>全部政权归苏维埃</strong>”。他认为，议会制民主是资产阶级的游戏，而苏维埃则是比议会制更高级的民主形式——它是巴黎公社的继承者，实行议行合一，直接代表劳动人民的意志。
+                                </p>
+                                <p>
+                                    经过“七月流血事件”的挫折和九月科尔尼洛夫叛乱的平定，布尔什维克在苏维埃中赢得了多数支持。十月革命的胜利，实质上就是将“全部政权归苏维埃”这一口号变成了法律现实。全俄苏维埃第二次代表大会宣布接管国家权力，选举产生了世界上第一个工农政府——人民委员会。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-accent opacity-60">3.</span>制度化与异化
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    建国后，苏维埃体制被写入宪法。从基层村苏维埃到最高苏维埃，构成了一个金字塔式的权力结构。理论上，下级服从上级，代表由选举产生并可随时撤换。
+                                </p>
+                                <p>
+                                    然而，随着内战的爆发和一党制的巩固，苏维埃的实际权力逐渐被党组织所取代（党国体制）。在斯大林时代，最高苏维埃虽然名义上是最高权力机关，但往往沦为“橡皮图章”，负责举手通过党的决议。尽管如此，作为一种政治符号，“苏维埃”始终代表着社会主义制度的合法性来源。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-accent mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                议行合一
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                苏维埃制度的核心特征。不同于西方“三权分立”中立法权与行政权的分割，苏维埃既制定法律，又负责执行法律。代表们必须在选区里亲自工作并执行通过的法律，并对选民负责。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-accent shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-accent mr-2"></span>
+                                双重政权
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                指1917年二月革命后到十月革命前，资产阶级临时政府与工兵代表苏维埃同时并存的特殊局面。这是革命发展过程中的过渡形态，最终随着十月革命而被单一的苏维埃政权取代。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-accent"></i> 基层民主的可能性</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                苏维埃的初衷是极其激进的直接民主——让厨娘也能管理国家。虽然历史的演变复杂曲折，但这种让底层民众直接参与政治管理的尝试，依然是人类政治史上最宝贵的遗产之一。</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-accent"></i> 中国瑞金</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                这一制度深刻影响了中国。1931年，中国共产党在江西瑞金建立了“中华苏维埃共和国”。虽然名称后来发生了变化（如人民代表大会制度），但其政体内在逻辑的渊源依然清晰可见。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords"
+        type="application/json">[{"text":"十月革命","url":"detail_october_rev.html"},{"text":"列宁","url":"topic_lenin.html"},{"text":"布尔什维克","url":"topic_bolshevik.html"}]</script>
+    <script id="data-graph" type="application/json">
+    {
+        "nodes": [
+            {"id": "soviet", "label": "苏维埃", "val": 30, "group": "core", "url": "topic_soviet.html"},
+            {"id": "lenin", "label": "列宁", "val": 25, "group": "person", "url": "topic_lenin.html"},
+            {"id": "october", "label": "十月革命", "val": 25, "group": "event", "url": "detail_october_rev.html"},
+            {"id": "dual_power", "label": "双重政权", "val": 20, "group": "concept", "url": "#"},
+            {"id": "congress", "label": "代表大会", "val": 15, "group": "org", "url": "#"}
+        ],
+        "edges": [
+            {"source": "lenin", "target": "soviet", "label": "全部政权归"},
+            {"source": "october", "target": "soviet", "label": "建立"},
+            {"source": "soviet", "target": "dual_power", "label": "曾并存"},
+            {"source": "soviet", "target": "congress", "label": "最高权力"}
+        ]
+    }
+    </script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-accent rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-gold', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,765 @@
+{
+    "details": [
+        {
+            "id": "detail_primitive",
+            "type": "china",
+            "title": "北京人:远古的火种",
+            "year": "约70万年前",
+            "desc": "北京人（Peking Man）生活在距今约70万至20万年前的周口店龙骨山。他们保留了猿的某些特征，但已能直立行走，制造打制石器，并学会了使用天然火。这是中国境内乃至世界上最重要的直立人遗址之一。",
+            "content": [
+                {
+                    "title": "发现与研究",
+                    "text": "<p>1929年，裴文中发现了第一个北京人头盖骨化石，震惊了世界。这一发现确立了直立人在人类演化史上的地位。尽管化石在二战中神秘失踪，但周口店遗址出土的大量石器、用火遗迹和动物化石，为研究早期人类提供了珍贵资料。</p>"
+                },
+                {
+                    "title": "生活图景",
+                    "text": "<p>北京人过着群居生活，共同狩猎和采集。他们使用<strong>打制石器</strong>（旧石器），如砍砸器、刮削器和尖状器。更重要的是，他们已经学会<strong>使用天然火</strong>来取暖、照明、烧烤食物和驱赶野兽，这是人类适应自然环境的重大进步。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "打制石器",
+                    "url": "topic_stone_tools.html"
+                },
+                {
+                    "text": "用火",
+                    "url": "topic_fire.html"
+                },
+                {
+                    "text": "裴文中",
+                    "url": "topic_pei_wenzhong.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "peking",
+                        "label": "北京人",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_primitive.html"
+                    },
+                    {
+                        "id": "zhou",
+                        "label": "周口店",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_zhoukoudian.html"
+                    },
+                    {
+                        "id": "fire",
+                        "label": "用火",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_fire.html"
+                    },
+                    {
+                        "id": "stone",
+                        "label": "打制石器",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_stone_tools.html"
+                    },
+                    {
+                        "id": "pei",
+                        "label": "裴文中",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_pei_wenzhong.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking",
+                        "target": "zhou",
+                        "label": "生活在"
+                    },
+                    {
+                        "source": "peking",
+                        "target": "fire",
+                        "label": "使用"
+                    },
+                    {
+                        "source": "peking",
+                        "target": "stone",
+                        "label": "制造"
+                    },
+                    {
+                        "source": "pei",
+                        "target": "peking",
+                        "label": "发现头盖骨"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_agrarian",
+            "type": "world",
+            "title": "农业革命:文明的基石",
+            "year": "约1万年前",
+            "desc": "新石器时代，人类从采集狩猎转向定居农业，史称'农业革命'（Agrarian Revolution）。这一转折使人口激增，社会分工出现，为国家和文明的诞生奠定了物质基础。",
+            "content": [
+                {
+                    "title": "从采集到驯化",
+                    "text": "<p>在西亚（两河流域）、东亚（黄河流域）和中美洲等地，人类独立驯化了小麦、水稻、玉米等作物，以及猪、狗、牛、羊等家畜。这种对自然的主动改造，标志着人类从食物采集者变为食物生产者。</p>"
+                },
+                {
+                    "title": "定居与社会复杂化",
+                    "text": "<p>农业要求人类<strong>定居</strong>下来照顾作物。定居村落（如耶利哥城、半坡遗址）出现，房屋、陶器、纺织技术随之发展。剩余粮食的产生，使得部分人脱离农业生产，专门从事手工业、管理或宗教活动，社会分化和私有制由此产生。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "定居生活",
+                    "url": "topic_settlement.html"
+                },
+                {
+                    "text": "陶器",
+                    "url": "topic_pottery.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "agri",
+                        "label": "农业革命",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_agrarian.html"
+                    },
+                    {
+                        "id": "domestication",
+                        "label": "驯化",
+                        "val": 20,
+                        "group": "measure",
+                        "url": "topic_domestication.html"
+                    },
+                    {
+                        "id": "settlement",
+                        "label": "定居",
+                        "val": 20,
+                        "group": "impact",
+                        "url": "topic_settlement.html"
+                    },
+                    {
+                        "id": "surplus",
+                        "label": "剩余产品",
+                        "val": 15,
+                        "group": "process",
+                        "url": "topic_surplus.html"
+                    },
+                    {
+                        "id": "state",
+                        "label": "国家起源",
+                        "val": 15,
+                        "group": "impact",
+                        "url": "topic_state_origin.html"
+                    },
+                    {
+                        "id": "inequality",
+                        "label": "阶级分化",
+                        "val": 15,
+                        "group": "impact",
+                        "url": "topic_inequality.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "agri",
+                        "target": "domestication",
+                        "label": "核心技术"
+                    },
+                    {
+                        "source": "domestication",
+                        "target": "settlement",
+                        "label": "导致"
+                    },
+                    {
+                        "source": "domestication",
+                        "target": "surplus",
+                        "label": "产生"
+                    },
+                    {
+                        "source": "surplus",
+                        "target": "inequality",
+                        "label": "导致"
+                    },
+                    {
+                        "source": "surplus",
+                        "target": "state",
+                        "label": "支撑"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_mesopotamia",
+            "type": "world",
+            "title": "两河流域:文明的曙光",
+            "year": "BC 3500",
+            "desc": "底格里斯河与幼发拉底河孕育了苏美尔文明，创造了世界上最早的城市、文字（楔形文字）和法典（汉谟拉比法典）。",
+            "content": [
+                {
+                    "title": "苏美尔城邦",
+                    "text": "<p>约公元前3500年，苏美尔人在两河流域南部建立了乌鲁克、乌尔等城邦。他们发明了<strong>楔形文字</strong>（Cuneiform），用芦苇杆在泥板上书写，这是世界上最古老的文字系统之一。</p>"
+                },
+                {
+                    "title": "汉谟拉比法典",
+                    "text": "<p>古巴比伦王国时期，汉谟拉比颁布了著名的<strong>《汉谟拉比法典》</strong>。法典刻在黑色玄武岩石柱上，宣扬'君权神授'，规定了以眼还眼、以牙还牙的同态复仇原则，并严格维护奴隶主阶级的利益。这是世界上现存第一部比较完备的成文法典。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "苏美尔人",
+                    "url": "topic_sumerian.html"
+                },
+                {
+                    "text": "楔形文字",
+                    "url": "topic_cuneiform.html"
+                },
+                {
+                    "text": "汉谟拉比法典",
+                    "url": "topic_hammurabi.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "meso",
+                        "label": "两河流域",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_mesopotamia.html"
+                    },
+                    {
+                        "id": "sumer",
+                        "label": "苏美尔",
+                        "val": 25,
+                        "group": "people",
+                        "url": "topic_sumerian.html"
+                    },
+                    {
+                        "id": "cuneiform",
+                        "label": "楔形文字",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_cuneiform.html"
+                    },
+                    {
+                        "id": "hammurabi",
+                        "label": "汉谟拉比",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_hammurabi.html"
+                    },
+                    {
+                        "id": "code",
+                        "label": "法典",
+                        "val": 20,
+                        "group": "law",
+                        "url": "topic_hammurabi.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "meso",
+                        "target": "sumer",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "sumer",
+                        "target": "cuneiform",
+                        "label": "发明"
+                    },
+                    {
+                        "source": "hammurabi",
+                        "target": "code",
+                        "label": "颁布"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_egypt",
+            "type": "world",
+            "title": "古埃及:尼罗河的馈赠",
+            "year": "BC 3100",
+            "desc": "古希腊历史学家希罗多德说：'埃及是尼罗河的赠礼。' 法老建立起强大的中央集权国家，金字塔和木乃伊折射出他们对来世的渴望。",
+            "content": [
+                {
+                    "title": "神权下的法老",
+                    "text": "<p>法老（Pharaoh）被视为神在人间的代表（太阳神之子），掌握军政、宗教大权。<strong>金字塔</strong>（Pyramids）作为法老的陵墓，不仅展示了高超的建筑技术（如胡夫金字塔），更体现了国王无限的权力。狮身人面像则守护着这些永恒的居所。</p>"
+                },
+                {
+                    "title": "象形文字与纸草",
+                    "text": "<p>古埃及人发明了<strong>象形文字</strong>（Hieroglyphs），书写在纸草（Papyrus）上。这种文字长期无人能识，直到1799年罗塞塔石碑的发现，商博良才破译了其奥秘。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "法老",
+                    "url": "topic_pharaoh.html"
+                },
+                {
+                    "text": "金字塔",
+                    "url": "topic_pyramid.html"
+                },
+                {
+                    "text": "象形文字",
+                    "url": "topic_hieroglyph.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "egypt",
+                        "label": "古埃及",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_egypt.html"
+                    },
+                    {
+                        "id": "nile",
+                        "label": "尼罗河",
+                        "val": 25,
+                        "group": "geo",
+                        "url": "topic_nile.html"
+                    },
+                    {
+                        "id": "pharaoh",
+                        "label": "法老",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_pharaoh.html"
+                    },
+                    {
+                        "id": "pyramid",
+                        "label": "金字塔",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_pyramid.html"
+                    },
+                    {
+                        "id": "hiero",
+                        "label": "象形文字",
+                        "val": 20,
+                        "group": "culture",
+                        "url": "topic_hieroglyph.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "nile",
+                        "target": "egypt",
+                        "label": "孕育"
+                    },
+                    {
+                        "source": "pharaoh",
+                        "target": "pyramid",
+                        "label": "修建"
+                    },
+                    {
+                        "source": "egypt",
+                        "target": "hiero",
+                        "label": "发明"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "detail_india",
+            "type": "world",
+            "title": "古印度:种姓与佛陀",
+            "year": "BC 2500",
+            "desc": "古代印度文明发源于印度河和恒河流域。雅利安人入侵后建立了种姓制度，影响至今；乔达摩·悉达多创立佛教，倡导'众生平等'。",
+            "content": [
+                {
+                    "title": "种姓制度",
+                    "text": "<p>雅利安人进入印度后，为了巩固统治，逐渐建立了等级森严的<strong>种姓制度</strong>。分为四个等级：婆罗门（祭司）、刹帝利（武士/国王）、吠舍（平民）、首陀罗（隶农）。此外还有被排除在外的'不可接触者'（贱民）。种姓世代相袭，互不通婚，严重阻碍了社会流动。</p>"
+                },
+                {
+                    "title": "佛教的创立",
+                    "text": "<p>公元前6世纪，乔达摩·悉达多（<strong>释迦牟尼</strong>）创立佛教，反对婆罗门的特权，提出<strong>'众生平等'</strong>。佛教宣扬忍耐顺从，宣称通过修行可达到'涅槃'的境界，因此得到下层民众的支持，也被统治者利用。阿育王时期，佛教向外传播，成为世界性宗教。</p>"
+                }
+            ],
+            "keywords": [
+                {
+                    "text": "种姓制度",
+                    "url": "topic_caste.html"
+                },
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                },
+                {
+                    "text": "释迦牟尼",
+                    "url": "topic_buddha.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "india",
+                        "label": "古印度",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_india.html"
+                    },
+                    {
+                        "id": "caste",
+                        "label": "种姓制度",
+                        "val": 25,
+                        "group": "system",
+                        "url": "topic_caste.html"
+                    },
+                    {
+                        "id": "buddhism",
+                        "label": "佛教",
+                        "val": 25,
+                        "group": "religion",
+                        "url": "topic_buddhism.html"
+                    },
+                    {
+                        "id": "buddha",
+                        "label": "释迦牟尼",
+                        "val": 20,
+                        "group": "person",
+                        "url": "topic_buddha.html"
+                    },
+                    {
+                        "id": "ashoka",
+                        "label": "阿育王",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_ashoka.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "india",
+                        "target": "caste",
+                        "label": "实行"
+                    },
+                    {
+                        "source": "buddha",
+                        "target": "buddhism",
+                        "label": "创立"
+                    },
+                    {
+                        "source": "buddhism",
+                        "target": "caste",
+                        "label": "反对"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_zhoukoudian",
+            "title": "周口店遗址 (Zhoukoudian)",
+            "type": "china",
+            "summary": "位于北京西南周口店龙骨山，是世界上材料最丰富、最系统的直立人遗址。",
+            "sections": [
+                {
+                    "title": "人类之家",
+                    "content": "<p>这里不仅发现了北京人头盖骨，还出土了数以万计的石器和丰富的用火遗迹（灰烬层最厚达6米）。证明了直立人在该地区生活了数十万年。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "detail_primitive.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_domestication",
+            "title": "驯化 (Domestication)",
+            "type": "world",
+            "summary": "人类通过人工选择改变动植物遗传特征的过程。是农业革命的核心。",
+            "sections": [
+                {
+                    "title": "从野草到粮食",
+                    "content": "<p>人类选择了颗粒大、不易脱落的野生谷物进行种植，最终培育出小麦、水稻等农作物。同时，把性格温顺的野兽驯化为家畜，提供了稳定的肉食和劳动力。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_settlement",
+            "title": "定居生活 (Settlement)",
+            "type": "world",
+            "summary": "农业革命后，人类为了照看作物而建立固定的居住地，村落和城市由此诞生。",
+            "sections": [
+                {
+                    "title": "文明的摇篮",
+                    "content": "<p>定居使人口密度增加，促进了技术积累（如陶器、纺织）和社会分工。耶利哥城（Jericho）是世界上最早的定居点之一。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_surplus",
+            "title": "剩余产品 (Surplus)",
+            "type": "world",
+            "summary": "生产力提高后，劳动产品在满足生产者自身需要之外的剩余部分。",
+            "sections": [
+                {
+                    "title": "阶级产生的物质基础",
+                    "content": "<p>剩余产品的出现使一部分人可以脱离直接生产，专门从事管理、军事或宗教活动。这也导致了私有制和剥削的产生，最终催生了国家。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "阶级分化",
+                    "url": "topic_inequality.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_state_origin",
+            "title": "国家起源 (Origin of State)",
+            "type": "world",
+            "summary": "国家是阶级矛盾不可调和的产物。早期国家多以神权支撑王权，称为'早期国家'。",
+            "sections": [
+                {
+                    "title": "从部落到国家",
+                    "content": "<p>随着社会分化加剧，氏族制度瓦解。为了维护统治阶级的利益，军队、监狱、法庭等暴力机构建立起来，国家由此诞生。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "剩余产品",
+                    "url": "topic_surplus.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_nile",
+            "title": "尼罗河 (The Nile)",
+            "type": "world",
+            "summary": "世界上最长的河流，古埃及文明的母亲河。",
+            "sections": [
+                {
+                    "title": "定期的泛滥",
+                    "content": "<p>尼罗河定期泛滥，退水后留下肥沃的淤泥，适宜农业耕作。古埃及人通过观察尼罗河涨落制定了太阳历。'埃及是尼罗河的赠礼'。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_ashoka",
+            "title": "阿育王 (Ashoka)",
+            "type": "world",
+            "summary": "孔雀王朝第三代国王，统一了印度大部分地区。晚年皈依佛教，大大促进了佛教的传播。",
+            "sections": [
+                {
+                    "title": "放下屠刀",
+                    "content": "<p>阿育王早年征战杀伐，后受佛教感化，宣布'以此法战胜法'。他派遣使团向周边国家传播佛教，使其成为世界性宗教。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_pei_wenzhong",
+            "title": "裴文中 (Pei Wenzhong)",
+            "type": "china",
+            "summary": "中国著名古人类学家，1929年在周口店发现第一个北京人头盖骨化石，这一发现为人类进化史提供了确凿的实物证据。",
+            "sections": [
+                {
+                    "title": "惊天发现",
+                    "content": "<p>1929年12月2日下午，裴文中在周口店第1地点发现了一个完整的猿人头盖骨。他兴奋地发出电报：'顷得一头骨，极完整，颇似人。'这一发现轰动了世界学术界，结束了关于直立人是否存在的争论。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "detail_primitive.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_pottery",
+            "title": "陶器 (Pottery)",
+            "type": "world",
+            "summary": "陶器是新石器时代的重要发明。它是人类第一次利用化学变化改变物质性质的产物，极大改善了人类的生活条件。",
+            "sections": [
+                {
+                    "title": "生活巨变",
+                    "content": "<p>陶器的出现使人类能够储藏水和食物，并能蒸煮食物，扩大了食物来源。彩陶（如半坡的人面鱼纹盆）和黑陶（蛋壳陶）也体现了原始艺术的萌芽。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "农业革命",
+                    "url": "detail_agrarian.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_sumerian",
+            "title": "苏美尔人 (Sumerians)",
+            "type": "world",
+            "summary": "两河流域文明的缔造者，创造了最早的城市国家、文字和复杂的灌溉系统。",
+            "sections": [
+                {
+                    "title": "文明先驱",
+                    "content": "<p>苏美尔人发明了60进制（至今用于时间），建造了宏伟的塔庙（Ziggurat），并留下了最早的史诗《吉尔伽美什》。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_cuneiform",
+            "title": "楔形文字 (Cuneiform)",
+            "type": "world",
+            "summary": "世界上最古老的文字之一，由苏美尔人发明，因笔画呈楔形而得名。",
+            "sections": [
+                {
+                    "title": "泥板上的文明",
+                    "content": "<p>书写工具是削尖的芦苇杆，书写材料是湿软的泥板。干燥后坚硬如石，易于保存。《汉谟拉比法典》之前的法律和商业契约均用此文字记录。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "苏美尔人",
+                    "url": "topic_sumerian.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_hammurabi",
+            "title": "汉谟拉比 (Hammurabi)",
+            "type": "world",
+            "summary": "古巴比伦王国第六代国王，以制定《汉谟拉比法典》和统一两河流域而闻名。",
+            "sections": [
+                {
+                    "title": "立法的君主",
+                    "content": "<p>汉谟拉比自称'众神之王'。他通过法典确立了法律的权威，尽管其内容维护奴隶主利益且保留了原始的复仇习俗，但它体现了通过法律治理国家的理念。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "两河流域",
+                    "url": "detail_mesopotamia.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_pharaoh",
+            "title": "法老 (Pharaoh)",
+            "type": "world",
+            "summary": "古埃及国王的尊称，集军政、司法、宗教大权于一身，被视为神在人间的化身。",
+            "sections": [
+                {
+                    "title": "无限的权力",
+                    "content": "<p>法老意为'大房子'。他拥有全国的土地和臣民，其意志即法律。金字塔是法老权力的象征，其规模随国力兴衰而变化。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_pyramid",
+            "title": "金字塔 (Pyramids)",
+            "type": "world",
+            "summary": "古埃及法老的陵墓，世界七大奇迹之一。最大的胡夫金字塔由230万块巨石砌成。",
+            "sections": [
+                {
+                    "title": "永恒的居所",
+                    "content": "<p>古埃及人相信灵魂不灭。金字塔的形状象征着法老死后升天、向太阳神靠拢的阶梯。其精确的方位和结构展示了古埃及数学和工程学的高超水平。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "法老",
+                    "url": "topic_pharaoh.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_hieroglyph",
+            "title": "象形文字 (Hieroglyphs)",
+            "type": "world",
+            "summary": "古埃及创造的一种复杂的表意和表音文字组合，被称为'圣书体'。",
+            "sections": [
+                {
+                    "title": "神秘的符号",
+                    "content": "<p>象形文字常刻在神庙墙壁或墓室中。商博良通过罗塞塔石碑（上有希腊文对照）破译了它，开启了现代埃及学。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古埃及",
+                    "url": "detail_egypt.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_caste",
+            "title": "种姓制度 (Caste System)",
+            "type": "world",
+            "summary": "古代印度严格的社会等级制度，对印度社会产生了深远影响。",
+            "sections": [
+                {
+                    "title": "神造的等级",
+                    "content": "<p>婆罗门教传说原人普鲁沙身体不同部位化生出四个等级。这一制度赋予婆罗门至高无上的地位，并以宗教名义使阶级压迫合法化。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "古印度",
+                    "url": "detail_india.html"
+                }
+            ]
+        },
+        {
+            "id": "topic_buddha",
+            "title": "释迦牟尼 (Sakyamuni)",
+            "type": "world",
+            "summary": "佛教创始人，原名乔达摩·悉达多，古印度迦毗罗卫国王子。",
+            "sections": [
+                {
+                    "title": "觉悟者",
+                    "content": "<p>悉达多痛感人生生老病死之苦，出家修道，最终在菩提树下大彻大悟，被称为'佛陀'（觉悟者）。他主张消除欲望，以此摆脱轮回之苦。</p>"
+                }
+            ],
+            "relations": [
+                {
+                    "text": "佛教",
+                    "url": "topic_buddhism.html"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法国大革命 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1e293b;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F8FAFC;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .revolution-card {
+            border-left: 5px solid #0969DA;
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            margin: 2rem 0;
+        }
+
+        .quote-france {
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 2rem 0;
+            margin: 3rem 0;
+            text-align: center;
+            font-style: italic;
+            color: #64748b;
+            position: relative;
+        }
+
+        .quote-france::before {
+            content: "“";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4rem;
+            color: #e2e8f0;
+            font-family: serif;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-slate-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-slate-900">溯鉴历史 · 近代民主革命</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        1789 年 - 1815 年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6 leading-tight">
+                        法国大革命：自由与平等的铁血礼赞</h1>
+                    <p
+                        class="text-lg leading-relaxed text-slate-600 mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        1789年巴士底狱的坍塌，不仅宣告了一个王朝的覆灭，更通过《人权宣言》将“主权在民”的思想深深植入人类文明的基因。这是世界近代史上最剧烈、最彻底的一场革命。它以前所未有的决绝姿态，试图在旧世界的废墟上建立一个完全基于理性的新社会。拿破仑的铁马金戈虽然最终沉寂在滑铁卢的夕阳中，但他带向整个欧洲的《民法典》，却成了粉碎封建枷锁的最强钝器。这是一场关于权利、法律与现代公民意识的终极洗礼。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：旧制度的黄昏——为什么是法国 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="alert-triangle" class="w-8 h-8 text-blue mr-3"></i> 第一维度：矛盾的爆发点——旧制度下的社会撕裂</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">18世纪末的法国，正处于一场完美风暴的中心。封建等级制度（三级会议）已成为文明进步的死结：</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>极端的阶级对立</strong>：占人口不到2%的教士与贵族（第一、第二等级）占有了绝大部分土地且免税；而占人口98%的第三等级（从大资本家到赤贫农民）承担了国家所有的重负却毫无政治权利。
+                            </li>
+                            <li><strong>启蒙思想的渗透</strong>：伏尔泰、卢梭、孟德斯鸠已经在民众的大脑中植入了“天赋人权”与“分权制衡”的软件。当孟德斯鸠讨论法律的灵魂时，卢梭已经在预言“公意”的不可战胜。
+                            </li>
+                            <li><strong>财政的崩溃</strong>：波旁王朝为了介入美利坚独立战争而欠下的巨额债务，配合连年的歉收，让路易十六试图增税的尝试成为了点火索。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：风暴与法治——从《人权宣言》到罗伯斯庇尔 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="scale" class="w-8 h-8 text-blue mr-3"></i> 第二维度：权力的重构——从巴士底狱到《人权宣言》</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">1789年7月14日，巴黎市民攻占巴士底狱。这不仅是武装起义，更是对王权象征的物理拆除。</p>
+                        <div class="revolution-card">
+                            <h4 class="font-bold text-slate-900 mb-4">人类文明的蓝图：《人权宣言》</h4>
+                            <p class="text-sm mb-4">1789年8月通过的《人权宣言》，用十七个条文重新定义了“人”：</p>
+                            <ul class="space-y-3 text-sm">
+                                <li><span class="font-bold">1. 生而平等</span>：打破了关于高贵血缘的所有幻觉。</li>
+                                <li><span class="font-bold">2. 自由与财产</span>：私有财产不可侵犯，作为公民独立人格的经济基石。</li>
+                                <li><span class="font-bold">3. 法律面前人人平等</span>：确立了现代法治国家的基本信条。</li>
+                            </ul>
+                        </div>
+                        <p class="mb-4">
+                            随后的进程陷入了血腥的动荡。1793年雅各宾派掌权，罗伯斯庇尔推行“恐怖统治”。这证明了在从旧体制跃迁到新秩序的过程中，由于过度的理想主义与剧烈的国内外反扑，自由往往会与其初衷发生激烈的背离。这种暴力迭代，成为了此后所有现代革命研究的必读样本。
+                        </p>
+                    </div>
+                </section>
+
+                <!-- 第三章：拿破仑的跨越——文明的武力输出 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="swords" class="w-8 h-8 text-blue mr-3"></i> 第三维度：拿破仑时代——用大陆军推销的资本主义逻辑</h2>
+                    <div class="prose prose-stone max-w-none text-slate-600 leading-loose">
+                        <p class="mb-4">1799年雾月政变，拿破仑横空出世。他不仅是一个战术天才，更是一个制度工程师。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>《拿破仑法典》（民法典）</strong>：这是大革命果实的法律化。它不仅确立了私有制和契约自由，更成为了后来几乎所有大陆法系国家的母法。拿破仑自己认为这是他一生中比亚历山大还要伟大的成就。
+                            </li>
+                            <li><strong>对外战争的双重性</strong>：早期战争扫荡了欧洲各国的封建残余，不仅解放了农奴，也传播了平等的种子；但后期的侵略性则激起了全欧洲的民族主义反弹。</li>
+                            <li><strong>帝国的余晖</strong>：即便在1815年滑铁卢之后，波旁王朝被迫重返时，由于民众已领略过平等的滋味，封建专制再也无法回到其1789年前那种稳如磐石的常态。
+                            </li>
+                        </ul>
+                        <div class="quote-france">
+                            “我真正的光荣，并非打了四十次胜仗……但我的《民法典》将永垂不朽。” —— 拿破仑
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-slate-100 shadow-soft">
+                    <h2
+                        class="text-3xl font-serif text-slate-900 mb-8 flex items-center border-b border-slate-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 法国大革命与美国独立战争的互动逻辑？</h4>
+                            <p class="text-slate-600 italic">
+                                法国为美利坚提供了军事支援，而美利坚的共和实验则反向验证了启蒙思想的可行性。然而，法国革命由于在旧世界的本土爆发，其阻力更大、过程更血腥，其对封建主义的打击也因此更加彻底，具有“世界革命”的辐射力。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-slate-900">
+                            <h4 class="font-bold text-lg text-slate-900 mb-3">Q: 如何评价罗伯斯庇尔的“恐怖统治”？</h4>
+                            <p class="text-gray-600 italic">
+                                它是革命进入极端化的产物。在应对反法联军和内忧外患的极端环境下，雅各宾派牺牲了程序的正义来换取短期的铁腕稳定性。这警示了后世：缺乏法治约束的绝对正义，往往会演变成另一种暴政。但不可否认，它确实在最危急关头保卫了共和国的萌芽。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-slate-900 mb-6 border-b border-slate-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="zap"
+                                    class="w-6 mr-2 text-blue"></i> 现代公民的破壳</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                大革命最重要的成果不是处死了国王，而是诞生了“公民（Citoyen）”这个概念。一个人不再是某个主君的私产，而是国家主权平等的持份者。这一逻辑是今日所有民主社会的底座。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-slate-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="eye"
+                                    class="w-6 mr-2 text-blue"></i> 永久的余震</h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                从1789到1848再到1871，法国成了欧洲制度实验的培养皿。那些在断头台下凝结出的口号——自由、平等、博爱，至今依然悬挂在法兰西所有市政厅的门楣上，提醒着世界关于理想的代价。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-slate-50 rounded-lg overflow-hidden border border-slate-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-slate-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_rights_man.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">人权宣言</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_napoleon.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">拿破仑法典</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_bastille.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">攻占巴士底狱</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                            <a href="topic_robesspierre.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-slate-600 group-hover:text-slate-900">雅各宾派统治</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-slate-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"人权宣言","url":"topic_rights_man.html"},{"text":"拿破仑","url":"topic_napoleon.html"},{"text":"巴士底狱","url":"topic_bastille.html"},{"text":"雅各宾派","url":"topic_robesspierre.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"fr","label":"法国大革命","x":50,"y":50,"type":"core","url":"detail_france_rev.html"},{"id":"man","label":"人权宣言","x":20,"y":30,"type":"normal","url":"topic_rights_man.html"},{"id":"nap","label":"拿破仑法典","x":80,"y":30,"type":"normal","url":"topic_napoleon.html"},{"id":"bas","label":"巴士底狱","x":50,"y":80,"type":"sub","url":"topic_bastille.html"},{"id":"jac","label":"罗伯斯庇尔","x":85,"y":70,"type":"sub","url":"topic_robesspierre.html"}],"edges":[{"source":"fr","target":"man"},{"source":"fr","target":"nap"},{"source":"fr","target":"bas"},{"source":"fr","target":"jac"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

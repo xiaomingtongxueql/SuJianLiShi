@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次世界大战:旧秩序的崩溃 | 溯鉴历史</title>
+
+    <!-- 样式引擎 -->
+    <script src="libs/tailwind.min.js"></script>
+
+    <!-- 配色配置 (世界史 - 蓝色系) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA',
+                        card: '#FFFFFF',
+                        primary: '#0E101A',
+                        blue: '#0969DA', // World History Primary Blue
+                        earth: '#1e40af', // Deeper Blue for accents
+                        stone: '#57534e',
+                        line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- 图标库 -->
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <!-- 导航栏 -->
+    <nav class="border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">
+                溯鉴历史 · 世界史
+            </div>
+            <div class="flex gap-4">
+                <button class="text-gray-400 hover:text-primary transition-colors"><i data-lucide="share-2"
+                        class="w-5 h-5"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+
+            <!-- 左侧核心内容 (9列) -->
+            <div class="lg:col-span-9 space-y-16">
+
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        1914年 — 1918年</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        第一次世界大战:旧秩序的崩溃
+                    </h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        第一次世界大战（World War
+                        I）是人类历史上首场全球性冲突，标志着欧洲“文明世纪”的终结。这场始于巴尔干半岛的冲突迅速演变为同盟国与协约国两大军事集团的全面对抗，并在工业革命的加持下变成了惨烈的“绞肉机”。战争导致了德意志、奥匈、奥斯曼和俄罗斯四大帝国的瓦解，催生了世界上第一个社会主义国家苏联，并重绘了全球政治版图。尽管凡尔赛体系试图建立新的国际秩序，但更为残酷的种子已然埋下。
+                    </p>
+
+                    <!-- 视频容器 -->
+                    <div
+                        class="w-full aspect-video bg-white border border-gray-200 rounded-xl overflow-hidden relative group mb-8 shadow-soft">
+                        <div style="position: relative; width: 100%; height: 100%;" id="video-container">
+                            <iframe
+                                src="https://player.bilibili.com/player.html?isOutside=true&aid=863212679&bvid=BV1nG4y197NC&cid=976357690&p=1"
+                                scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+                                style="width: 100%; height: 100%;"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 核心叙事 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="globe" class="w-8 h-8 text-blue mr-3"></i>
+                        历史进程
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-blue opacity-60">1.</span>走向深渊：帝国主义与联盟体系
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    19世纪末20世纪初，第二次工业革命推动主要资本主义国家进入<strong>帝国主义阶段</strong>。新兴工业强国德国不满于既有的殖民地瓜分现状，要求获得“阳光下的地盘”，这与老牌殖民帝国英国产生了不可调和的结构性矛盾。为了争夺霸权，欧洲列强分裂为两大对立的军事集团：由德国、奥匈帝国和意大利组成的<strong>同盟国</strong>（Triple
+                                    Alliance），以及由英国、法国和俄罗斯组成的<strong>协约国</strong>（Triple Entente）。
+                                </p>
+                                <p>
+                                    巴尔干半岛因其复杂的民族矛盾和列强的插手，被称为“欧洲火药桶”。1914年6月28日，奥匈帝国皇储斐迪南大公在萨拉热窝视察时，被塞尔维亚民族主义者加夫里洛·普林西普刺杀。这一<strong>萨拉热窝事件</strong>成为了点燃世界大战的导火索。在僵硬的同盟义务捆绑下，欧洲各国在一周内相继宣战，局势迅速失控。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-blue opacity-60">2.</span>全面战争：堑壕与绞肉机
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    战争爆发之初，各方都乐观地预言“叶落之前回家”，但施里芬计划的失败宣告了速决战的破产，西线迅速陷入了漫长而残酷的<strong>堑壕战</strong>。机枪、重炮、铁丝网构成的防御体系使得任何进攻都变成了自杀式的冲锋。为了打破僵局，毒气（1915年伊普雷）、坦克（1916年索姆河）和飞机被大规模投入使用，战争进入了立体化、工业化的屠杀阶段。
+                                </p>
+                                <p>
+                                    1916年是战争最惨烈的一年。德军发动的<strong>凡尔登战役</strong>意在让法国“流尽最后一滴血”，双方在不足15公里的战线上死伤逾70万人，史称“凡尔登绞肉机”。随后的索姆河战役中，英法联军为了牵制德军，付出了更为惨重的代价，首日伤亡即达6万人。整整一代欧洲青年在泥泞的战壕中丧生，这种无意义的屠杀催生了战后“迷惘的一代”。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-blue opacity-60">3.</span>全球卷入与战争转折
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    战争不仅在欧洲进行，还蔓延到非洲、亚洲和太平洋地区。日本借机侵占德国在山东的权益，中国派出劳工支援协约国。1917年是战争的转折点：因德国实行“无限制潜艇战”触犯美国利益，<strong>美国加入协约国参战</strong>，为疲惫不堪的盟军注入了庞大的工业能力和生力军。
+                                </p>
+                                <p>
+                                    与此同时，东线发生剧变。沙皇俄国因战争拖累爆发二月革命，随后列宁领导的<strong>十月革命</strong>建立了苏维埃政权。新生的苏俄为了退出战争，与德国签订《布列斯特-立陶夫斯克条约》，并在1918年初退出大战。尽管德国在东线取胜并试图在西线发动最后攻势，但在美军的增援和国内革命（基尔水兵起义）的打击下，同盟国最终崩溃。1918年11月11日，德国签署停战协定，一战结束。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-4 flex items-center">
+                                <span class="mr-3 text-blue opacity-60">4.</span>凡尔赛-华盛顿体系与脆弱的和平
+                            </h3>
+                            <div class="text-gray-600 leading-loose space-y-4 text-justify">
+                                <p>
+                                    战后的和平安排实质上是战胜国的分赃会议。1919年巴黎和会上，英（劳合·乔治）、法（克列孟梭）、美（威尔逊）三巨头主导签订了对德的<strong>《凡尔赛条约》</strong>。条约极其严苛：德国失去了所有殖民地和13%的欧洲领土，军备受到严格限制，并需支付巨额赔款。这被德国人视为“强加的和平”，激起了强烈的复仇主义情绪，正如福煦元帅所预言：“这不是和平，这是20年的休战。”
+                                </p>
+                                <p>
+                                    随后召开的华盛顿会议则调整了列强在亚太地区的利益冲突，确立了<strong>凡尔赛-华盛顿体系</strong>。作为战后安排的一部分，人类历史上第一个全球性国际政治组织——<strong>国际联盟</strong>（League
+                                    of Nations）成立。虽然它寄托了威尔逊“永久和平”的理想，但因“全体一致”原则的低效和美国拒绝加入，国联最终沦为英法维护霸权的工具，无力制止新的侵略。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点
+                    </h2>
+                    <div class="space-y-4">
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-blue shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-blue mr-2"></span>
+                                战争性质
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                总体上是一场<strong>非正义的帝国主义掠夺战争</strong>。交战双方都是为了争夺世界霸权、殖民地和市场。虽然塞尔维亚是为保卫主权而战，具有正义性质，但这不能改变整个战争的帝国主义性质。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-blue shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-blue mr-2"></span>
+                                欧洲霸权的衰落
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                战争从根本上动摇了欧洲的全球优势地位。英国丧失了海上霸主地位，从债权国变为债务国；法国损失惨重；德、奥、俄帝国垮台。相反，<strong>美国</strong>和<strong>日本</strong>开始崛起，世界经济重心开始向美洲转移。
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-white p-6 rounded-xl border-l-4 border-blue shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-lg mb-2 text-primary flex items-center">
+                                <span class="w-2 h-2 rounded-full bg-blue mr-2"></span>
+                                民族解放运动的高涨
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                战争削弱了宗主国的力量，同时通过战争期间的劳工征募和思想传播，促进了殖民地半殖民地人民的觉醒。战后，亚洲（如中国五四运动、印度非暴力不合作）、非洲和拉美掀起了新的民族独立浪潮。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="cpu"
+                                    class="w-6 mr-2 text-blue"></i> 现代启示</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                科技是一把双刃剑：一战见证了化学武器（毒气）这一反人类发明的应用，促使战后签署《日内瓦议定书》禁止使用生化武器。战争也促进了航空、无线电和医疗技术（整形外科、输血）的飞跃。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="telescope"
+                                    class="w-6 mr-2 text-blue"></i> 关键遗产</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                妇女地位的改变：由于男性大量奔赴前线，女性填补了工业和公共服务的空缺，证明了自身的社会价值。战后，英、美、德等国妇女陆续获得了选举权，女权运动迎来第一次高潮。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右侧边栏 (3列) -->
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+
+                    <!-- 知识图谱 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱
+                        </div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph">
+                            <!-- 图谱将通过JS动态渲染 -->
+                        </div>
+                    </div>
+
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <!-- 核心词列表将通过JS动态渲染 -->
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script id="data-keywords" type="application/json">
+        [
+            {"text":"萨拉热窝事件","url":"topic_sarajevo.html"},
+            {"text":"凡尔登战役","url":"topic_verdun.html"},
+            {"text":"凡尔赛条约","url":"topic_versailles.html"},
+            {"text":"国联","url":"topic_league_nations.html"}
+        ]
+    </script>
+
+    <script id="data-graph" type="application/json">
+        {"nodes":[{"id":"ww1","label":"第一次世界大战","val":35,"group":"core","url":"detail_ww1.html"},{"id":"sarajevo","label":"萨拉热窝事件","val":25,"group":"event","url":"topic_sarajevo.html"},{"id":"allies","label":"协约国","val":20,"group":"org","url":"detail_ww1.html"},{"id":"central","label":"同盟国","val":20,"group":"org","url":"detail_ww1.html"},{"id":"verdun","label":"凡尔登战役","val":20,"group":"event","url":"topic_verdun.html"},{"id":"us_entry","label":"美国参战","val":15,"group":"event","url":"detail_ww1.html"},{"id":"russia_rev","label":"十月革命","val":20,"group":"event","url":"detail_october_rev.html"},{"id":"versailles","label":"凡尔赛条约","val":25,"group":"document","url":"topic_versailles.html"},{"id":"league","label":"国际联盟","val":20,"group":"org","url":"topic_league_nations.html"}],"edges":[{"source":"sarajevo","target":"ww1","label":"导火索"},{"source":"allies","target":"ww1","label":"参战方"},{"source":"central","target":"ww1","label":"参战方"},{"source":"ww1","target":"verdun","label":"战役"},{"source":"ww1","target":"us_entry","label":"转折"},{"source":"ww1","target":"russia_rev","label":"影响"},{"source":"ww1","target":"versailles","label":"战后秩序"},{"source":"versailles","target":"league","label":"产物"}]}
+    </script>
+
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const listContainer = document.getElementById('keywords-list');
+        keywords.forEach(kw => {
+            const el = document.createElement('a');
+            el.href = kw.url;
+            el.className = "flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group";
+            el.innerHTML = `<span class="w-2 h-2 bg-blue rounded-full"></span><span class="text-sm font-bold text-gray-600 group-hover:text-primary">${kw.text}</span><i data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i>`;
+            listContainer.appendChild(el);
+        });
+
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+
+        if (typeof ContentEnhancer !== 'undefined') { ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-earth' }); }
+    </script>
+</body>
+
+</html>
+
+
+

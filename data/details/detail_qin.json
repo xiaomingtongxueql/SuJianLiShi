@@ -1,0 +1,116 @@
+{
+    "id": "detail_qin",
+    "type": "china",
+    "title": "秦朝:大一统的开创",
+    "year": "BC 221 — BC 207",
+    "desc": "中国历史上第一个统一的多民族封建国家。秦始皇建立了皇帝制度，推行郡县制，统一度量衡和文字，奠定了中国两千多年政治制度的基本格局。",
+    "content": [
+        {
+            "title": "千古一帝",
+            "text": "<p>公元前221年，秦王嬴政灭六国，建立秦朝，定都咸阳。他自称'始皇帝'，确立了皇权至高无上的地位。在中央实行三公九卿制，在地方推行<strong>郡县制</strong>，加强中央集权。</p>"
+        },
+        {
+            "title": "统一与暴政",
+            "text": "<p>秦始皇统一了文字（小篆）、货币（圆形方孔钱）和度量衡，修筑了长城和灵渠。但繁重的赋税、兵役和严酷的刑法激起了民愤，最终爆发了中国历史上第一次农民大起义——陈胜吴广起义。</p>"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "郡县制",
+            "url": "topic_junxian.html"
+        },
+        {
+            "text": "小篆",
+            "url": "topic_xiaozhuan.html"
+        },
+        {
+            "text": "焚书坑儒",
+            "url": "topic_fenshu.html"
+        },
+        {
+            "text": "长城",
+            "url": "topic_changcheng.html"
+        },
+        {
+            "text": "商鞅变法",
+            "url": "topic_shangyang.html"
+        },
+        {
+            "text": "陈胜吴广起义",
+            "url": "topic_chenshengguang.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "qin",
+                "label": "秦朝",
+                "val": 10,
+                "group": "core",
+                "url": "detail_qin.html"
+            },
+            {
+                "id": "yingzheng",
+                "label": "秦始皇",
+                "val": 9,
+                "group": "person",
+                "url": "topic_qinshihuang.html"
+            },
+            {
+                "id": "lisi",
+                "label": "李斯",
+                "val": 7,
+                "group": "person",
+                "url": "topic_lisi.html"
+            },
+            {
+                "id": "junxian",
+                "label": "郡县制",
+                "val": 8,
+                "group": "system",
+                "url": "topic_junxian.html"
+            },
+            {
+                "id": "shangyang",
+                "label": "商鞅",
+                "val": 6,
+                "group": "person",
+                "url": "topic_shangyang.html"
+            },
+            {
+                "id": "huhuai",
+                "label": "秦二世",
+                "val": 5,
+                "group": "person",
+                "url": "topic_qinershi.html"
+            }
+        ],
+        "edges": [
+            {
+                "source": "qin",
+                "target": "yingzheng",
+                "name": "建立"
+            },
+            {
+                "source": "yingzheng",
+                "target": "lisi",
+                "name": "任用"
+            },
+            {
+                "source": "qin",
+                "target": "junxian",
+                "name": "制度"
+            },
+            {
+                "source": "shangyang",
+                "target": "qin",
+                "name": "奠基"
+            },
+            {
+                "source": "qin",
+                "target": "huhuai",
+                "name": "灭亡"
+            }
+        ]
+    }
+}

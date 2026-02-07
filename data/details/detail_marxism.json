@@ -1,0 +1,141 @@
+{
+    "id": "detail_marxism",
+    "type": "world",
+    "title": "马克思主义诞生:科学社会主义",
+    "year": "1848年",
+    "desc": "在工业革命创造了巨大财富的同时，也制造了巨大的贫富差距。工人阶级生活在水深火热之中，早期的工人运动（如宪章运动）缺乏科学理论指导。1848年，马克思和恩格斯发表《共产党宣言》，标志着马克思主义的诞生，从此无产阶级斗争有了科学理论的指导，社会主义运动蓬勃发展。",
+    "content": [
+        {
+            "title": "时代的呼唤 (Context)",
+            "text": "<p>19世纪上半叶，资本主义弊端日益暴露，经济危机频发。欧洲三大工人运动（法国里昂起义、英国宪章运动、德意志西里西亚织工起义）表明无产阶级已作为独立政治力量登上历史舞台，迫切需要革命理论。空想社会主义者（欧文、傅立叶）虽然提出了美好设想，但无法实现。</p>"
+        },
+        {
+            "title": "共产党宣言 (The Communist Manifesto)",
+            "text": "<p>1848年2月，<strong>马克思</strong>和<strong>恩格斯</strong>为共产主义者同盟起草的纲领<strong>《共产党宣言》</strong>在伦敦发表。它分析了阶级斗争在社会发展中的作用，揭示了资本主义必然灭亡、社会主义必然胜利的客观规律，号召'全世界无产者，联合起来！'</p>"
+        },
+        {
+            "title": "从理论到实践 (From Theory to Practice)",
+            "text": "<p>马克思主义诞生后，国际工人运动进入新阶段。1864年，<strong>第一国际</strong>成立。1871年，巴黎工人建立了世界上第一个无产阶级政权——<strong>巴黎公社</strong>。虽然公社仅存在了72天，但其实践丰富了马克思主义关于无产阶级专政的学说。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "诞生的标志",
+            "desc": "1848年《共产党宣言》的发表。"
+        },
+        {
+            "title": "巴黎公社的意义",
+            "desc": "无产阶级建立政权的第一次伟大尝试。公社战士在血泊中唱响的《国际歌》传遍全世界。"
+        },
+        {
+            "title": "理论来源",
+            "desc": "德国古典哲学、英国古典政治经济学、英法空想社会主义。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "马克思",
+            "url": "topic_marx.html"
+        },
+        {
+            "text": "恩格斯",
+            "url": "topic_engels.html"
+        },
+        {
+            "text": "巴黎公社",
+            "url": "topic_paris_commune.html"
+        },
+        {
+            "text": "国际歌",
+            "url": "topic_internationale.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "marxism",
+                "label": "马克思主义",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "marx",
+                "label": "马克思",
+                "val": 25,
+                "group": "person"
+            },
+            {
+                "id": "engels",
+                "label": "恩格斯",
+                "val": 25,
+                "group": "person"
+            },
+            {
+                "id": "manifesto",
+                "label": "共产党宣言",
+                "val": 25,
+                "group": "document"
+            },
+            {
+                "id": "first_intl",
+                "label": "第一国际",
+                "val": 20,
+                "group": "org"
+            },
+            {
+                "id": "paris_commune",
+                "label": "巴黎公社",
+                "val": 20,
+                "group": "event"
+            },
+            {
+                "id": "socialism",
+                "label": "社会主义",
+                "val": 20,
+                "group": "concept"
+            },
+            {
+                "id": "worker_movement",
+                "label": "工人运动",
+                "val": 15,
+                "group": "event"
+            }
+        ],
+        "edges": [
+            {
+                "source": "marx",
+                "target": "marxism",
+                "label": "创立"
+            },
+            {
+                "source": "engels",
+                "target": "marxism",
+                "label": "创立"
+            },
+            {
+                "source": "marxism",
+                "target": "manifesto",
+                "label": "诞生标志"
+            },
+            {
+                "source": "marxism",
+                "target": "worker_movement",
+                "label": "指导"
+            },
+            {
+                "source": "marxism",
+                "target": "first_intl",
+                "label": "推动"
+            },
+            {
+                "source": "paris_commune",
+                "target": "marxism",
+                "label": "实践"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "马克思被评为'千年第一思想家'。中国是世界上最大的社会主义国家，马克思主义是立党立国之本。",
+        "legacy": "深刻改变了人类历史进程。福利国家制度的建立在一定程度上也是对工人运动的妥协。"
+    }
+}

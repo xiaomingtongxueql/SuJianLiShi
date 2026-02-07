@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早期殖民掠夺 | 溯鉴历史</title>
+
+    <script src="libs/tailwind.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#F5F7FA', card: '#FFFFFF', primary: '#0E101A',
+                        blue: '#0969DA', earth: '#78350f', stone: '#57534e', line: '#E5E7EB'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif SC"', '"Songti SC"', '"STSong"', 'serif'],
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px rgba(0,0,0,0.03)',
+                        'hover': '0 10px 25px rgba(0,0,0,0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="libs/lucide.min.js"></script>
+    <script src="js/content-enhancer.js"></script>
+    <script src="js/knowledge-graph-engine.js"></script>
+    <style>
+        body {
+            background-color: #F5F7FA;
+            color: #374151;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F7FA;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 4px;
+        }
+
+        #knowledge-graph {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .trade-triangle {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 1.5rem;
+            border: 2px dashed #e2e8f0;
+            position: relative;
+        }
+
+        .node-box {
+            width: 120px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="font-sans min-h-screen selection:bg-blue/20">
+
+    <nav class="border-b border-gray-200 bg-white/90 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-gray-500 hover:text-blue transition-colors group">
+                <i data-lucide="chevron-left" class="mr-1 w-5 h-5 group-hover:-translate-x-1 transition-transform"></i>
+                <span class="font-serif tracking-widest text-sm font-bold">返回时间轴</span>
+            </a>
+            <div class="font-serif font-bold text-lg tracking-[0.2em] text-primary">溯鉴历史 · 走向近代</div>
+            <div class="flex gap-4"><button class="text-gray-400 hover:text-primary transition-colors"><i
+                        data-lucide="share-2" class="w-5 h-5"></i></button></div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+            <div class="lg:col-span-9 space-y-16">
+                <!-- 序章 -->
+                <section>
+                    <div
+                        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-white bg-blue rounded-sm">
+                        公元 16 世纪 - 公元 18 世纪</div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                        早期殖民掠夺：资本原始积累的血腥序曲</h1>
+                    <p
+                        class="text-lg leading-relaxed text-stone mb-8 border-l-4 border-blue pl-6 bg-white py-4 pr-4 rounded-r-lg shadow-soft">
+                        “资本来到世间，从头到脚，每个毛孔都滴着血和肮脏的东西。”马克思的这句评价，是对16至18世纪早期殖民掠夺最深刻的概括。这不仅是一场财富的全球大转移，更是一场残酷的全球阶级大洗牌。从黑人奴隶的绝望哀嚎，到日不落帝国的霸权兴起，这一时期的历史逻辑极其残酷：它用一个世界的沉沦，供养了另一个世界的工业起航。
+                    </p>
+                    
+                </section>
+
+                <!-- 第一章：三角贸易——死亡与金钱的闭环 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="history" class="w-8 h-8 text-blue mr-3"></i> 第一维度：三角贸易——大西洋上的血腥循环</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">为了填补美洲原住民大灭绝后的劳动力黑洞，欧洲人开启了人类历史上最令人发指的商业模式——<strong>“三角贸易”</strong>。</p>
+
+                        <div class="trade-triangle antialiased">
+                            <div class="node-box flex flex-col items-center">
+                                <i data-lucide="map" class="mb-2 text-blue"></i>
+                                <span>出程: 欧洲</span>
+                                <span class="text-[10px] italic text-gray-400">制成品/枪支</span>
+                            </div>
+                            <i data-lucide="arrow-right" class="mt-8 text-gray-200"></i>
+                            <div class="node-box flex flex-col items-center">
+                                <i data-lucide="users" class="mb-2 text-red-600"></i>
+                                <span>中程: 非洲</span>
+                                <span class="text-[10px] italic text-gray-400">黑人奴隶</span>
+                            </div>
+                            <i data-lucide="arrow-right" class="mt-8 text-gray-200"></i>
+                            <div class="node-box flex flex-col items-center">
+                                <i data-lucide="box" class="mb-2 text-green-600"></i>
+                                <span>归程: 美洲</span>
+                                <span class="text-[10px] italic text-gray-400">金银/蔗糖/烟草</span>
+                            </div>
+                        </div>
+
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>中程的惨烈</strong>：黑奴被如同货物般塞进狭窄发臭的船舱，死亡率高达30%。这种对人性的彻底物化，是人类文明史上永久的污点。</li>
+                            <li><strong>资本的原始积累</strong>：贩卖黑奴带来的暴利高达百分之几百，这些钱最终流向了利物浦、伦敦的交易所，成为了促发工业革命的第一桶金。</li>
+                            <li><strong>对非、美洲的毁灭性打击</strong>：非洲丧失了近亿的精壮劳动力，文明进程被强行中断；美洲在沦为原材料基地后，陷入了长达数百年的依附性发展陷阱。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第二章：日不落的霸权——由于海权而产生的秩序 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="shield-check" class="w-8 h-8 text-blue mr-3"></i> 第二维度：争霸之路——从“无敌舰队”到“日不落帝国”
+                    </h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">早期的掠夺不仅是针对土著，更是欧洲列强间的残酷内斗。资本主义的扩张逻辑是：谁控制了海洋，谁就控制了全球财富。</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>1588 - 摧毁无敌舰队</strong>：英国击败西班牙，标志着传统封建扩张模式的衰落与新兴资本主义海权的崛起。</li>
+                            <li><strong>17 世纪 - “海上马车夫”荷兰</strong>：凭借股份公司（东印度公司）和阿姆斯特丹银行，荷兰垄断了17世纪的海洋转口贸易，实践了早期的商业帝国主义。
+                            </li>
+                            <li><strong>18 世纪 -
+                                    英国的全盘胜出</strong>：通过一系列针对荷、法的战争，英国夺取了北美与印度的统治权。自此，一个地理跨度巨大的“日不落帝国”正式成型，为即将到来的工业革命提供了全球市场与原材料。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 第三章：文明的撕裂——掠夺者的黄金与被掠夺者的废墟 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4"><i
+                            data-lucide="scale" class="w-8 h-8 text-blue mr-3"></i> 第三维度：评价的悖论——掠夺与进步的辩证法</h2>
+                    <div class="prose prose-stone max-w-none text-gray-600 leading-loose">
+                        <p class="mb-4">早期殖民掠夺是一个及其复杂的历史过程，它强行缩短了人类社会的进化距离：</p>
+                        <ul class="list-disc pl-6 space-y-4 mb-4">
+                            <li><strong>客观进步性：推动了全球化</strong>：它打破了封闭的区域市场，实现了物种、技术与理念的全球性互换。西欧国家借此完成了向工业文明跨越的资本储备。</li>
+                            <li><strong>文明毁灭性：对他者的剥夺</strong>：这种“文明”是建立在对非、美、亚文明的野蛮摧毁之上的。它造成的全球性贫富差距与民族隔阂，至今仍是世界动荡的根源之一。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 考点解析 -->
+                <section class="bg-white p-5 md:p-10 rounded-2xl border border-gray-100 shadow-soft">
+                    <h2 class="text-3xl font-serif text-primary mb-8 flex items-center border-b border-gray-100 pb-4">
+                        <i data-lucide="book-open" class="w-8 h-8 text-blue mr-3"></i>
+                        核心考点深度解析
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: 如何理解“三角贸易”对英国工业革命的影响？</h4>
+                            <p class="text-gray-600 italic">
+                                这是一种“血液注入”。三角贸易不仅直接带来了高额利润（资本原始积累），更重要的它为英国织造厂提供了廉价的美洲棉花，并开辟了庞大的海外市场。没有这个闭环的支撑，英国的蒸汽机即便发明出来，也可能因缺乏规模效应而无法转化成改变时代的产业力量。
+                            </p>
+                        </div>
+                        <div class="p-6 bg-blue/5 rounded-xl border-l-4 border-blue">
+                            <h4 class="font-bold text-lg text-primary mb-3">Q: “日不落帝国”形成的本质原因？</h4>
+                            <p class="text-gray-600 italic">
+                                不仅在于军事力量，更在于制度优势。英国由于爆发了资产阶级革命，确立了保护私有财产和鼓励商业扩张的制度；而与其竞争的西班牙、法国在相当长时间内仍受困于陈旧的皇权剥削。制度的“软件”差距，最终决定了竞争的胜负。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 历史回响 -->
+                <section>
+                    <h2 class="text-2xl font-serif text-primary mb-6 border-b border-gray-200 pb-4">历史的回响</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="skull"
+                                    class="w-6 mr-2 text-blue"></i> 沉默的代价</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                当我们赞美工业文明的便捷与舒适时，不能忘记这些成就的底座是堆叠在数千万被掠夺者的脊梁之上的。早期殖民史提醒人类：没有道德约束的贪婪，虽然能催生效率，但也会留下永久的文明裂痕。
+                            </p>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-soft border border-gray-50">
+                            <h4 class="font-bold text-xl mb-4 flex items-center"><i data-lucide="flag"
+                                    class="w-6 mr-2 text-blue"></i> 霸权的轮回</h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">
+                                从西班牙的帆船到英国的铁甲舰，霸权的更替从未停止。历史证明：仅仅依靠暴力的掠夺是无法持久的，真正的强盛源于技术持续的创新与制度对人类尊严的适配。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="lg:col-span-3 space-y-8">
+                <div class="sticky top-24">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-6 font-bold">
+                            <i data-lucide="network" class="w-4"></i> 知识图谱</div>
+                        <div class="relative h-64 w-full bg-gray-50 rounded-lg overflow-hidden border border-gray-100"
+                            id="knowledge-graph"></div>
+                    </div>
+                    <!-- 核心词 -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-soft">
+                        <div
+                            class="flex items-center gap-2 text-xs text-gray-400 uppercase tracking-widest mb-4 font-bold">
+                            <i data-lucide="check-circle-2" class="w-4"></i> 课本核心词
+                        </div>
+                        <div id="keywords-list" class="space-y-2">
+                            <a href="topic_triangle_trade.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">三角贸易</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_armada.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">无敌舰队</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_west_india.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">东印度公司</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                            <a href="topic_original_accum.html"
+                                class="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition group"><span
+                                    class="w-2 h-2 bg-blue rounded-full"></span><span
+                                    class="text-sm font-bold text-gray-600 group-hover:text-primary">原始积累</span><i
+                                    data-lucide="arrow-right" class="w-3 h-3 text-gray-300"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script id="data-keywords"
+        type="application/json">[{"text":"三角贸易","url":"topic_triangle_trade.html"},{"text":"无敌舰队","url":"topic_armada.html"},{"text":"东印度公司","url":"topic_west_india.html"},{"text":"原始积累","url":"topic_original_accum.html"}]</script>
+    <script id="data-video" type="application/json">null</script>
+    <script id="data-graph"
+        type="application/json">{"nodes":[{"id":"plun","label":"殖民掠夺","x":50,"y":50,"type":"core","url":"detail_colonial_plunder.html"},{"id":"tri","label":"三角贸易","x":20,"y":30,"type":"normal","url":"topic_triangle_trade.html"},{"id":"east","label":"东印度公司","x":80,"y":30,"type":"normal","url":"topic_west_india.html"},{"id":"arm","label":"无敌舰队","x":50,"y":80,"type":"sub","url":"topic_armada.html"},{"id":"acc","label":"原始积累","x":85,"y":70,"type":"sub","url":"topic_original_accum.html"}],"edges":[{"source":"plun","target":"tri"},{"source":"plun","target":"east"},{"source":"plun","target":"arm"},{"source":"tri","target":"acc"}]}</script>
+    <script>
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        const keywords = JSON.parse(document.getElementById('data-keywords').textContent || '[]');
+        const graphData = JSON.parse(document.getElementById('data-graph').textContent || '{}');
+        if (typeof KnowledgeGraphEngine !== 'undefined') {
+            const engine = new KnowledgeGraphEngine('knowledge-graph', { lineColor: '#0969DA', nodeColor: '#0969DA' });
+            engine.render(graphData);
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initE); else initE();
+        function initE() {
+            if (typeof ContentEnhancer !== 'undefined') ContentEnhancer.KeywordHighlighter.processSelector('.lg\\:col-span-9 p, .lg\\:col-span-9 div, .lg\\:col-span-9 li', keywords, { color: 'text-blue', hoverColor: 'hover:text-blue' });
+        }
+    </script>
+</body>
+
+</html>
+
+

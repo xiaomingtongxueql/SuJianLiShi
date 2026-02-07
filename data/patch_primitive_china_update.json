@@ -1,0 +1,542 @@
+{
+    "details": [
+        {
+            "id": "detail_primitive",
+            "type": "china",
+            "title": "北京人:远古的火种",
+            "year": "约70万-20万年前",
+            "desc": "北京人（Peking Man）生活在距今约70万至20万年前的周口店龙骨山。他们保留了猿的某些特征，但已能直立行走，制造打制石器，并学会了使用天然火。这是中国境内乃至世界上最重要的直立人遗址之一。",
+            "content": [
+                {
+                    "title": "发现与研究",
+                    "text": "<p>1929年，裴文中发现了第一个北京人头盖骨化石，震惊了世界。这一发现确立了直立人在人类演化史上的地位。尽管化石在二战中神秘失踪，但周口店遗址出土的大量石器、用火遗迹和动物化石，为研究早期人类提供了珍贵资料。</p>"
+                },
+                {
+                    "title": "生活图景",
+                    "text": "<p>北京人过着群居生活，共同狩猎和采集。他们使用<strong>打制石器</strong>（旧石器），如砍砸器、刮削器和尖状器。更重要的是，他们已经学会<strong>使用天然火</strong>来取暖、照明、烧烤食物和驱赶野兽，这是人类适应自然环境的重大进步。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "直立人特征",
+                    "desc": "保留了猿的某些特征（如眉骨突出、吻部前伸），但手脚分工明显，能够直立行走。"
+                },
+                {
+                    "title": "用火意义",
+                    "desc": "学会使用和保存天然火是人类进化史上的里程碑，改善了生存条件，促进了体质（大脑）发展。"
+                },
+                {
+                    "title": "社会组织",
+                    "desc": "过着群居生活，处于原始社会早期阶段。"
+                }
+            ],
+            "impact": {
+                "reality": "周口店遗址是世界上内涵最丰富、材料最齐全的直立人遗址之一，为人类起源的研究提供了确凿证据。",
+                "legacy": "北京人的发现极大地提振了中国现代考古学的信心，其文化遗存（如用火）深深烙印在中华文明的早期记忆中。"
+            },
+            "keywords": [
+                {
+                    "text": "裴文中",
+                    "url": "topic_pei_wenzhong.html"
+                },
+                {
+                    "text": "周口店遗址",
+                    "url": "topic_zhoukoudian.html"
+                },
+                {
+                    "text": "天然火",
+                    "url": "topic_fire_china.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "peking_core",
+                        "label": "北京人",
+                        "val": 30,
+                        "group": "core",
+                        "url": "detail_primitive.html"
+                    },
+                    {
+                        "id": "zhou",
+                        "label": "周口店",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_zhoukoudian.html"
+                    },
+                    {
+                        "id": "fire",
+                        "label": "天然火",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_fire_china.html"
+                    },
+                    {
+                        "id": "stone",
+                        "label": "打制石器",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_stone_tools_china.html"
+                    },
+                    {
+                        "id": "pei",
+                        "label": "裴文中",
+                        "val": 15,
+                        "group": "person",
+                        "url": "topic_pei_wenzhong.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking_core",
+                        "target": "zhou",
+                        "label": "生活于"
+                    },
+                    {
+                        "source": "peking_core",
+                        "target": "fire",
+                        "label": "使用"
+                    },
+                    {
+                        "source": "peking_core",
+                        "target": "stone",
+                        "label": "制造"
+                    },
+                    {
+                        "source": "pei",
+                        "target": "peking_core",
+                        "label": "发现 (1929)"
+                    }
+                ]
+            }
+        }
+    ],
+    "topics": [
+        {
+            "id": "topic_peking_man",
+            "title": "北京人 (Peking Man)",
+            "type": "china",
+            "year": "约70万年前",
+            "summary": "1929年发现于周口店龙骨山，生活在距今约70万-20万年前。保留猿类特征，但能直立行走，制造打制石器，使用天然火。",
+            "content": [
+                {
+                    "title": "体质特征",
+                    "text": "<p>北京人的头骨低平，眉骨粗大，颧骨高突，吻部前伸，没有下巴，脑容量平均为1088毫升（介于猿和现代人之间）。虽然头部保留了较多猿的特征，但他们的四肢骨骼已与现代人非常接近，证明其双腿已能支撑身体直立行走，双手已能灵活操作工具。</p>"
+                },
+                {
+                    "title": "艰难的生存",
+                    "text": "<p>周口店地区当时气候温暖湿润，丛林茂密，野兽出没（如剑齿虎、肿骨鹿）。北京人使用简单的砸击技术制造石器，猎取鹿、马等动物，同时也采集朴树籽、核桃等植物果实。他们住在天然洞穴中，在此生活了约50万年，留下了厚达40米的堆积层。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "直立人阶段",
+                    "desc": "北京人属于晚期直立人，是人类进化史上的关键环节。"
+                },
+                {
+                    "title": "旧石器文化",
+                    "desc": "以打制石器为主，技术简单，处于旧石器时代早期。"
+                }
+            ],
+            "impact": {
+                "reality": "解决了一百年来'爪哇人'是猿还是人的争论，确立了直立人在人类进化中的地位。",
+                "legacy": "虽然现代基因研究倾向于支持'非洲起源说'（即北京人可能没有留下直系后代），但他们代表了东亚地区早期人类演化的重要篇章。"
+            },
+            "relations": [
+                {
+                    "text": "裴文中",
+                    "url": "topic_pei_wenzhong.html"
+                },
+                {
+                    "text": "山顶洞人",
+                    "url": "topic_upper_cave_man.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "peking_topic",
+                        "label": "北京人",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_peking_man.html"
+                    },
+                    {
+                        "id": "erectus",
+                        "label": "直立人",
+                        "val": 25,
+                        "group": "species",
+                        "url": "detail_primitive.html"
+                    },
+                    {
+                        "id": "tools",
+                        "label": "旧石器",
+                        "val": 20,
+                        "group": "tech",
+                        "url": "topic_stone_tools_china.html"
+                    },
+                    {
+                        "id": "fire",
+                        "label": "天然火",
+                        "val": 20,
+                        "group": "skill",
+                        "url": "topic_fire_china.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking_topic",
+                        "target": "erectus",
+                        "label": "归属"
+                    },
+                    {
+                        "source": "peking_topic",
+                        "target": "tools",
+                        "label": "使用"
+                    },
+                    {
+                        "source": "peking_topic",
+                        "target": "fire",
+                        "label": "掌握"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_fire_china",
+            "title": "天然火的使用",
+            "type": "china",
+            "year": "旧石器时代",
+            "summary": "北京人遗址中发现了厚达6米的灰烬层，证明了人类早在70万年前就已经学会了使用和管理天然火。这是人类第一次支配自然力。",
+            "content": [
+                {
+                    "title": "灰烬的证据",
+                    "text": "<p>在周口店第1地点，考古学家发现了多层灰烬，最厚处达6米。灰烬层中含有烧过的兽骨、石块和朴树籽。这些灰烬成堆分布，且不仅限于洞口，说明北京人已经能够将火种引入洞内，并长期保存火种不灭。</p>"
+                },
+                {
+                    "title": "火的功能",
+                    "text": "<p>火的使用极大地改善了人类的生存环境：(1) <strong>照明</strong>：驱散黑暗，延长活动时间；(2) <strong>取暖</strong>：帮助人类度过冰期的严寒；(3) <strong>熟食</strong>：烧烤食物使其更易消化，促进脑部发育；(4) <strong>防御</strong>：驱赶剑齿虎等猛兽，保障安全。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "保存火种",
+                    "desc": "北京人使用的是天然火（如雷击火），尚不会人工取火，但能保存火种。"
+                },
+                {
+                    "title": "进化意义",
+                    "desc": "熟食改善了体质，火的使用扩大了活动范围，是人类适应自然的关键一步。"
+                }
+            ],
+            "impact": {
+                "reality": "火的使用让北京人能够在比热带非洲更寒冷的纬度生存，是直立人成功扩散的重要因素。",
+                "legacy": "薪火相传，火从此成为人类文明中最具象征意义的元素之一。"
+            },
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "topic_peking_man.html"
+                },
+                {
+                    "text": "人工取火",
+                    "url": "topic_artificial_fire.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "fire_cn",
+                        "label": "天然火",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_fire_china.html"
+                    },
+                    {
+                        "id": "peking",
+                        "label": "北京人",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_peking_man.html"
+                    },
+                    {
+                        "id": "ash",
+                        "label": "灰烬层",
+                        "val": 20,
+                        "group": "evidence",
+                        "url": "topic_zhoukoudian.html"
+                    },
+                    {
+                        "id": "cooking",
+                        "label": "熟食",
+                        "val": 20,
+                        "group": "concept",
+                        "url": "topic_cooking.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking",
+                        "target": "fire_cn",
+                        "label": "使用"
+                    },
+                    {
+                        "source": "fire_cn",
+                        "target": "ash",
+                        "label": "留下"
+                    },
+                    {
+                        "source": "fire_cn",
+                        "target": "cooking",
+                        "label": "实现"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_stone_tools_china",
+            "title": "打制石器 (Paleolithic Tools)",
+            "type": "china",
+            "year": "旧石器时代",
+            "summary": "北京人使用的石器属于旧石器时代的打制石器，技术简单粗糙，主要包括砍砸器、刮削器和尖状器。",
+            "content": [
+                {
+                    "title": "制作技术",
+                    "text": "<p>北京人主要使用<strong>砸击法</strong>（锤击法）制作石器。他们选择质地坚硬的石块（如石英、燧石），用另一块石头用力敲击，打下锋利的石片。留下的石核或打下的石片经过简单加工，就成了工具。</p>"
+                },
+                {
+                    "title": "类型与用途",
+                    "text": "<p>北京人的石器种类繁多：<br>1. <strong>砍砸器</strong>：体积较大，用于砍伐树木或砸碎骨头。<br>2. <strong>刮削器</strong>：边缘锋利，用于切割兽肉或剥皮。<br>3. <strong>尖状器</strong>：一端尖锐，可能用于挖掘或刺击猎物。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "旧石器特征",
+                    "desc": "打制石器是旧石器时代的主要标志（新石器时代为磨制石器）。"
+                },
+                {
+                    "title": "人猿界限",
+                    "desc": "制造和使用工具是人与动物的本质区别之一。"
+                }
+            ],
+            "impact": {
+                "reality": "石器延伸了人类的肢体能力，弥补了体质上的劣势。",
+                "legacy": "旧石器技术的传承与发展，最终导向了后来磨制石器技术和新石器革命的到来。"
+            },
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "topic_peking_man.html"
+                },
+                {
+                    "text": "磨制石器",
+                    "url": "topic_polished_stone.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "stone_cn",
+                        "label": "打制石器",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_stone_tools_china.html"
+                    },
+                    {
+                        "id": "peking",
+                        "label": "北京人",
+                        "val": 25,
+                        "group": "person",
+                        "url": "topic_peking_man.html"
+                    },
+                    {
+                        "id": "chopper",
+                        "label": "砍砸器",
+                        "val": 15,
+                        "group": "tool",
+                        "url": "topic_tools_type.html"
+                    },
+                    {
+                        "id": "scraper",
+                        "label": "刮削器",
+                        "val": 15,
+                        "group": "tool",
+                        "url": "topic_tools_type.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking",
+                        "target": "stone_cn",
+                        "label": "制造"
+                    },
+                    {
+                        "source": "stone_cn",
+                        "target": "chopper",
+                        "label": "包括"
+                    },
+                    {
+                        "source": "stone_cn",
+                        "target": "scraper",
+                        "label": "包括"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_pei_wenzhong",
+            "title": "裴文中 (Pei Wenzhong)",
+            "type": "china",
+            "year": "1904-1982",
+            "summary": "中国著名古人类学家，1929年在周口店发现了第一个北京人头盖骨化石，这一发现震惊了世界，确立了中国在古人类学研究中的重要地位。",
+            "content": [
+                {
+                    "title": "震惊世界的发现",
+                    "text": "<p>1929年12月2日下午，在周口店第1地点的发掘中，25岁的裴文中在微弱的烛光下发现了一个完整的猿人头盖骨。他兴奋地发出电报：'顷得一头骨，极完整，颇似人。'这一发现结束了关于直立人是否存在的争论，证明了人类进化过程中确实存在'猿人'阶段。</p>"
+                },
+                {
+                    "title": "学术贡献",
+                    "text": "<p>裴文中不仅发现了头盖骨，还确认了北京人的石器文化和用火遗迹，这种综合性的研究方法开创了史前考古的新局面。他一生致力于旧石器时代考古，培养了大批人才，被誉为中国旧石器考古学的奠基人之一。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "主要成就",
+                    "desc": "发现第一个北京人头盖骨（1929年）。"
+                },
+                {
+                    "title": "科学价值",
+                    "desc": "提供了直立人存在的直接化石证据，填补了人类进化史的缺失环节。"
+                }
+            ],
+            "impact": {
+                "reality": "裴文中的发现让周口店成为世界闻名的古人类圣地。",
+                "legacy": "他的严谨治学精神激励了一代又一代中国考古学家。"
+            },
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "topic_peking_man.html"
+                },
+                {
+                    "text": "贾兰坡",
+                    "url": "topic_jia_lanpo.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "pei_core",
+                        "label": "裴文中",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_pei_wenzhong.html"
+                    },
+                    {
+                        "id": "skull",
+                        "label": "头盖骨",
+                        "val": 25,
+                        "group": "discovery",
+                        "url": "topic_peking_man.html"
+                    },
+                    {
+                        "id": "zhou",
+                        "label": "周口店",
+                        "val": 20,
+                        "group": "place",
+                        "url": "topic_zhoukoudian.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "pei_core",
+                        "target": "skull",
+                        "label": "发现"
+                    },
+                    {
+                        "source": "pei_core",
+                        "target": "zhou",
+                        "label": "发掘于"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "topic_zhoukoudian",
+            "title": "周口店遗址 (Zhoukoudian)",
+            "type": "china",
+            "year": "发现于1921年",
+            "summary": "位于北京西南房山区，是世界上材料最丰富、最系统的直立人遗址。1987年被列入世界文化遗产。",
+            "content": [
+                {
+                    "title": "遗址概况",
+                    "text": "<p>周口店龙骨山上分布着多个地点的古人类遗址。其中第1地点（北京人遗址）最为著名，出土了40多个个体的直立人化石、10万多件石器和丰富的用火遗迹。第4地点出土了早期的'新洞人'，山顶的洞穴（第26地点）则出土了晚期的'山顶洞人'。</p>"
+                },
+                {
+                    "title": "世界遗产价值",
+                    "text": "<p>周口店记录了华北地区从几十万年前到几万年前人类演化的连续序列，同时也保留了丰富的古环境信息（如动物群化石）。它是人类共有的一部直立人历史百科全书。</p>"
+                }
+            ],
+            "exam_points": [
+                {
+                    "title": "地理位置",
+                    "desc": "北京西南周口店龙骨山。"
+                },
+                {
+                    "title": "地位",
+                    "desc": "世界同类遗址中内涵最丰富、材料最齐全的直立人遗址。"
+                }
+            ],
+            "impact": {
+                "reality": "周口店的确立证明了东亚也是人类演化的重要舞台。",
+                "legacy": "作为科普基地和爱国主义教育基地，持续向公众传播人类演化知识。"
+            },
+            "relations": [
+                {
+                    "text": "北京人",
+                    "url": "topic_peking_man.html"
+                },
+                {
+                    "text": "山顶洞人",
+                    "url": "topic_upper_cave_man.html"
+                }
+            ],
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "zhou_core",
+                        "label": "周口店",
+                        "val": 30,
+                        "group": "core",
+                        "url": "topic_zhoukoudian.html"
+                    },
+                    {
+                        "id": "peking",
+                        "label": "北京人",
+                        "val": 25,
+                        "group": "occupant",
+                        "url": "topic_peking_man.html"
+                    },
+                    {
+                        "id": "upper",
+                        "label": "山顶洞人",
+                        "val": 25,
+                        "group": "occupant",
+                        "url": "topic_upper_cave_man.html"
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "peking",
+                        "target": "zhou_core",
+                        "label": "生活于"
+                    },
+                    {
+                        "source": "upper",
+                        "target": "zhou_core",
+                        "label": "晚期生活于"
+                    }
+                ]
+            }
+        }
+    ]
+}

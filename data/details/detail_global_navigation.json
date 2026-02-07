@@ -1,0 +1,161 @@
+{
+    "id": "detail_global_navigation",
+    "type": "world",
+    "title": "新航路开辟:世界连为整体",
+    "year": "15世纪末 — 16世纪初",
+    "desc": "新航路开辟（Age of Discovery）是人类历史上地理大发现的时代。欧洲航海家在王室支持下，跨越大西洋和印度洋，寻找通往东方的海上新航路。这一壮举打破了各文明孤立发展的局面，世界开始连为一个整体，全球贸易网络初步形成，同时也开启了欧洲长达数百年的殖民扩张。",
+    "content": [
+        {
+            "title": "动因:黄金与香料的诱惑 (Motivations)",
+            "text": "<p>15世纪，随着商品经济的发展，欧洲人对黄金和东方香料的需求剧增（'寻金热'）。然而，传统的东西方商路被奥斯曼土耳其帝国阻断，商税高昂。《马可·波罗游记》描绘的东方富庶激起了欧洲人探索新航路的热情。同时，传播基督教的热忱和造船、导航技术（指南针、星盘）的进步，使远洋航行成为可能。</p>"
+        },
+        {
+            "title": "四大航海家 (The Navigators)",
+            "text": "<p>葡萄牙和西班牙走在了探索的前列：</p><ul><li><strong>迪亚士</strong>（1487）：沿非洲西海岸南下，发现'好望角'，打开了通往印度洋的大门。</li><li><strong>哥伦布</strong>（1492）：在西班牙女王支持下横渡大西洋，'发现'美洲新大陆（虽误认为是印度）。这不仅改变了美洲的命运，也改变了世界历史。</li><li><strong>达·伽马</strong>（1497）：绕过好望角抵达印度，开通了欧亚海上贸易线，带回了60倍的利润。</li><li><strong>麦哲伦</strong>（1519-1522）：其船队完成了人类历史上第一次环球航行，用实践证明了地圆说。</li></ul>"
+        },
+        {
+            "title": "哥伦布大交换 (Columbian Exchange)",
+            "text": "<p>新旧大陆的接触引发了物种、病菌和文化的<strong>'哥伦布大交换'</strong>。美洲的玉米、马铃薯、烟草传入欧亚，缓解了人口增长带来的粮食压力；欧洲的马、牛、小麦以及天花、麻疹传入美洲。天花等传染病导致美洲原住民（印第安人）人口锐减90%以上，造成了人类史上最大的种族悲剧。</p>"
+        },
+        {
+            "title": "商业革命与价格革命 (Economic Impact)",
+            "text": "<p>新航路开辟引发了<strong>'商业革命'</strong>：贸易中心从地中海转移到大西洋沿岸，股份公司和证券交易所出现。同时，美洲金银大量流入欧洲，导致货币贬值、物价上涨，即<strong>'价格革命'</strong>。这打击了收取定额地租的封建地主，壮大了资产阶级，加速了西欧封建制度的解体。</p>"
+        }
+    ],
+    "exam_points": [
+        {
+            "title": "全球化的开端",
+            "desc": "打破了世界各地相对孤立的状态，各文明开始汇合交融，世界市场雏形初现。"
+        },
+        {
+            "title": "早期殖民扩张",
+            "desc": "葡萄牙和西班牙率先进行殖民掠夺（如建立商站、开采金银）。随后荷兰（'海上马车夫'）、英国（'日不落帝国'）加入，资本主义原始积累充满了血腥。"
+        },
+        {
+            "title": "对中国的影响",
+            "desc": "白银大量流入中国（明朝中后期）；高产作物（玉米、甘薯）传入，促进了人口增长；西方传教士（利玛窦）带来西学（西学东渐）。"
+        }
+    ],
+    "keywords": [
+        {
+            "text": "哥伦布",
+            "url": "topic_columbus.html"
+        },
+        {
+            "text": "麦哲伦",
+            "url": "topic_magellan.html"
+        },
+        {
+            "text": "三角贸易",
+            "url": "topic_triangular_trade.html"
+        },
+        {
+            "text": "东印度公司",
+            "url": "topic_east_india.html"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "discovery",
+                "label": "新航路开辟",
+                "val": 30,
+                "group": "core"
+            },
+            {
+                "id": "portugal",
+                "label": "葡萄牙",
+                "val": 20,
+                "group": "location"
+            },
+            {
+                "id": "spain",
+                "label": "西班牙",
+                "val": 20,
+                "group": "location"
+            },
+            {
+                "id": "columbus",
+                "label": "哥伦布",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "magellan",
+                "label": "麦哲伦",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "da_gama",
+                "label": "达·伽马",
+                "val": 15,
+                "group": "person"
+            },
+            {
+                "id": "exchange",
+                "label": "物种交换",
+                "val": 20,
+                "group": "impact"
+            },
+            {
+                "id": "market",
+                "label": "世界市场",
+                "val": 25,
+                "group": "impact"
+            },
+            {
+                "id": "colonialism",
+                "label": "殖民扩张",
+                "val": 20,
+                "group": "impact"
+            }
+        ],
+        "edges": [
+            {
+                "source": "portugal",
+                "target": "discovery",
+                "label": "主导"
+            },
+            {
+                "source": "spain",
+                "target": "discovery",
+                "label": "主导"
+            },
+            {
+                "source": "columbus",
+                "target": "spain",
+                "label": "资助"
+            },
+            {
+                "source": "columbus",
+                "target": "discovery",
+                "label": "发现美洲"
+            },
+            {
+                "source": "magellan",
+                "target": "discovery",
+                "label": "环球航行"
+            },
+            {
+                "source": "discovery",
+                "target": "exchange",
+                "label": "引发"
+            },
+            {
+                "source": "discovery",
+                "target": "market",
+                "label": "雏形"
+            },
+            {
+                "source": "discovery",
+                "target": "colonialism",
+                "label": "开启"
+            }
+        ]
+    },
+    "impact": {
+        "reality": "今天是高度全球化的时代。我们在超市能买到全球的商品，互联网连接了每一个人，这一进程始于500年前那一艘艘扬帆起航的木船。",
+        "legacy": "英语、西语、葡语成为世界性语言。美洲的人口结构（混血）被永久改变。马铃薯和玉米养活了后来激增的世界人口。"
+    }
+}
