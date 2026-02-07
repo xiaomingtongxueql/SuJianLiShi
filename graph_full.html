@@ -1009,27 +1009,20 @@
 
         }
 
-        // Bootloader with Dynamic Script Injection
+        // Bootloader with Polling Check (Enhanced for Weak Mobile Networks)
+        // Note: data-store.js is loaded via static <script> tag in <head>
         document.addEventListener('DOMContentLoaded', () => {
-
-            function initGraph() {
-                const script = document.createElement('script');
-                script.src = 'js/data-store.js?v=' + Date.now();
-                script.async = true;
-
-                script.onload = () => {
-                    if (typeof window.RAW_DATA !== 'undefined' && window.RAW_DATA.events) {
-                        runGraphLogic();
-                    } else {
-                        handleError(new Error('Data script loaded but RAW_DATA missing'));
-                    }
-                };
-
-                script.onerror = (e) => {
-                    handleError(new Error('Script load failed'));
-                };
-
-                document.body.appendChild(script);
+            function tryInitGraph(retries = 0) {
+                if (typeof window.RAW_DATA !== 'undefined' && window.RAW_DATA.events) {
+                    // Data is ready, run the graph logic
+                    runGraphLogic();
+                } else if (retries < 60) {
+                    // Retry up to 60 times (30 seconds total) for weak mobile networks
+                    setTimeout(() => tryInitGraph(retries + 1), 500);
+                } else {
+                    // Failed to load after 30 seconds
+                    handleError(new Error('Data script timeout after 30 seconds'));
+                }
             }
 
             function handleError(e) {
@@ -1041,7 +1034,7 @@
                         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #ef4444; text-align: center; padding: 20px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px; opacity: 0.8;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
                             <p style="font-size: 18px; margin-bottom: 10px; font-weight:600;">图谱数据加载失败</p>
-                            <p style="font-size: 14px; color: #57534E;">无法获取最新数据 (${e.message})。<br>请检查网络连接或刷新页面重试。</p>
+                            <p style="font-size: 14px; color: #57534E;">数据加载超时（${e.message}）。<br>请检查网络连接或刷新页面重试。</p>
                             <button onclick="location.reload()" style="margin-top: 24px; padding: 10px 24px; border-radius: 999px; background: #1C1917; color: white; border: none; font-weight:500; cursor: pointer; transition: opacity 0.2s;">刷新页面</button>
                         </div>
                     `;
@@ -1051,7 +1044,7 @@
                 if (mask) mask.style.display = 'none';
             }
 
-            initGraph();
+            tryInitGraph();
         });
     </script>
 </body>

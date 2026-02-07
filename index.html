@@ -1046,16 +1046,16 @@
                     });
                 });
 
-                // Initial render with Retry Mechanism (Original Robust Version)
+                // Initial render with Retry Mechanism (Enhanced for Weak Networks)
                 function tryInit(retries = 0) {
                     if (window.RAW_DATA && window.RAW_DATA.events) {
                         render();
-                    } else if (retries < 20) {
-                        // Retry up to 20 times (10 seconds total)
+                    } else if (retries < 60) {
+                        // Retry up to 60 times (30 seconds total) for weak mobile networks
                         setTimeout(() => tryInit(retries + 1), 500);
                     } else {
                         // Failed to load
-                        console.error('Failed to load real data after 10 seconds.');
+                        console.error('Failed to load real data after 30 seconds.');
                         cardsContainer.innerHTML = `
                             <div class="empty-state" style="color: #ef4444;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 16px; opacity: 0.8;">
