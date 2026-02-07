@@ -415,6 +415,8 @@
 
         .event-row.align-center {
             justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         /* Pebble Card - Elongated Capsule */
@@ -1014,7 +1016,7 @@
                         html += `
                         <a href="${link}" 
                            id="event-${event.id}"
-                           class="event-row ${alignClass} block w-full no-underline text-inherit group" 
+                           class="event-row ${alignClass}" 
                            style="animation-delay: ${index * 0.05}s; cursor: ${isClickable ? 'pointer' : 'default'}"
                            onclick="${isClickable ? `saveScrollAndNavigate(event, '${link}')` : 'return false;'}">
                             <div class="pebble-card group-active:scale-95 transition-transform duration-200">
