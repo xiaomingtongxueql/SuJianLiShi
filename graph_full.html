@@ -20,7 +20,2255 @@
     <script src="libs/tailwind.min.js"></script>
     <script src="libs/d3.min.js"></script>
     <script src="libs/lucide.min.js"></script>
-    <script src="js/data-store.js"></script> <!-- Data Source -->
+    <script>
+
+// Historical Data Store
+window.RAW_DATA = {
+    "events": [
+        {
+            "id": "primitive-world",
+            "year": -3000000,
+            "display": "300涓囧勾鍓?,
+            "title": "浜虹被璧锋簮",
+            "enTitle": "Human Origins",
+            "cat": "world",
+            "desc": "浠庡崡鏂瑰彜鐚垮埌鏅轰汉锛屼汉绫诲湪婕暱鐨勮繘鍖栦腑瀛︿細浜嗙洿绔嬭璧颁笌浣跨敤宸ュ叿銆?,
+            "link": "detail_primitive_world.html",
+            "keywords": [
+                {
+                    "text": "闇茶タ",
+                    "url": "topic_lucy.html"
+                },
+                {
+                    "text": "灏煎畨寰风壒浜?,
+                    "url": "topic_neanderthal.html"
+                },
+                {
+                    "text": "璁ょ煡闈╁懡",
+                    "url": "topic_cognitive_rev.html"
+                },
+                {
+                    "text": "鐭冲櫒宸ュ叿",
+                    "url": "topic_stone_tools.html"
+                },
+                {
+                    "text": "鐏殑浣跨敤",
+                    "url": "topic_fire.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "primitive-world"
+        },
+        {
+            "id": "primitive-china",
+            "year": -700000,
+            "display": "70涓囧勾鍓?,
+            "title": "鍖椾含浜?,
+            "enTitle": "Peking Man",
+            "cat": "china",
+            "desc": "鐢熸椿鍦ㄥ懆鍙ｅ簵鐨勭洿绔嬩汉锛屾爣蹇楃潃涓浗澧冨唴杩滃彜浜虹被鐨勫瓨鍦ㄣ€?,
+            "link": "detail_primitive.html",
+            "keywords": [
+                {
+                    "text": "鐩寸珛浜?,
+                    "url": "topic_homo_erectus.html"
+                },
+                {
+                    "text": "鍛ㄥ彛搴?,
+                    "url": "topic_zhoukoudian.html"
+                },
+                {
+                    "text": "瑁存枃涓?,
+                    "url": "topic_pei_wenzhong.html"
+                },
+                {
+                    "text": "鐢ㄧ伀",
+                    "url": "topic_fire_china.html"
+                },
+                {
+                    "text": "鎵撳埗鐭冲櫒",
+                    "url": "topic_stone_tools_china.html"
+                },
+                {
+                    "text": "閾插舰闂ㄩ娇",
+                    "url": "topic_shovel_incisors.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "primitive-china"
+        },
+        {
+            "id": "agrarian-rev",
+            "year": -10000,
+            "display": "1涓囧勾鍓?,
+            "title": "鍐滀笟闈╁懡",
+            "enTitle": "Agrarian Revolution",
+            "cat": "world",
+            "desc": "浜虹被浠庨噰闆嗙嫨鐚庤浆鍚戝畾灞呭啘涓氾紝鏂囨槑璇炵敓鐨勭墿璐ㄥ熀纭€銆?,
+            "link": "detail_agrarian.html",
+            "keywords": [
+                {
+                    "text": "鍓╀綑浜у搧",
+                    "url": "topic_surplus.html"
+                },
+                {
+                    "text": "闃剁骇鍒嗗寲",
+                    "url": "topic_inequality.html"
+                },
+                {
+                    "text": "鍥藉璇炵敓",
+                    "url": "topic_state_origin.html"
+                },
+                {
+                    "text": "浜虹暅鍏辨偅鐥?,
+                    "url": "topic_disease.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "agrarian-rev"
+        },
+        {
+            "id": "mesopotamia",
+            "year": -3500,
+            "display": "BC 3500",
+            "title": "涓ゆ渤娴佸煙",
+            "enTitle": "Mesopotamia",
+            "cat": "world",
+            "desc": "鑻忕編灏斾汉鍦ㄥ簳鏍奸噷鏂渤涓庡辜鍙戞媺搴曟渤涔嬮棿寤虹珛浜嗘渶鏃╃殑鍩庡競鏂囨槑銆?,
+            "link": "detail_mesopotamia.html",
+            "keywords": [
+                {
+                    "text": "鑻忕編灏?,
+                    "url": "topic_sumerians.html"
+                },
+                {
+                    "text": "宸存瘮浼?,
+                    "url": "topic_babylon.html"
+                },
+                {
+                    "text": "妤斿舰鏂囧瓧",
+                    "url": "topic_cuneiform.html"
+                },
+                {
+                    "text": "姹夎盁鎷夋瘮",
+                    "url": "topic_hammurabi.html"
+                },
+                {
+                    "text": "姹夎盁鎷夋瘮娉曞吀",
+                    "url": "topic_hammurabi.html"
+                },
+                {
+                    "text": "搴曟牸閲屾柉娌?,
+                    "url": "topic_tigris.html"
+                },
+                {
+                    "text": "骞煎彂鎷夊簳娌?,
+                    "url": "topic_euphrates.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "mesopotamia"
+        },
+        {
+            "id": "egypt",
+            "year": -3100,
+            "display": "BC 3100",
+            "title": "鍙ゅ焹鍙?,
+            "enTitle": "Ancient Egypt",
+            "cat": "world",
+            "desc": "灏肩綏娌崇晹鐨勬硶鑰佹枃鏄庯紝浠ラ噾瀛楀涓庤薄褰㈡枃瀛楄憲绉般€?,
+            "link": "detail_egypt.html",
+            "keywords": [
+                {
+                    "text": "灏肩綏娌?,
+                    "url": "topic_nile.html"
+                },
+                {
+                    "text": "娉曡€?,
+                    "url": "topic_pharaoh.html"
+                },
+                {
+                    "text": "閲戝瓧濉?,
+                    "url": "topic_pyramid.html"
+                },
+                {
+                    "text": "璞″舰鏂囧瓧",
+                    "url": "topic_hieroglyph.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ancient-egypt"
+        },
+        {
+            "id": "india",
+            "year": -2500,
+            "display": "BC 2500",
+            "title": "鍙ゅ嵃搴?,
+            "enTitle": "Ancient India",
+            "cat": "world",
+            "desc": "浠庡搱鎷夊笗鏂囨槑鍒板悹闄€鏃朵唬锛岀濮撳埗搴︿笌浣涙暀鍙戞簮鍦般€?,
+            "link": "detail_india.html",
+            "keywords": [
+                {
+                    "text": "鍝堟媺甯?,
+                    "url": "topic_harappa.html"
+                },
+                {
+                    "text": "绉嶅鍒跺害",
+                    "url": "topic_caste.html"
+                },
+                {
+                    "text": "浣涙暀",
+                    "url": "topic_buddhism.html"
+                },
+                {
+                    "text": "闃胯偛鐜?,
+                    "url": "topic_ashoka.html"
+                },
+                {
+                    "text": "绗堝鐜嬫湞",
+                    "url": "topic_gupta.html"
+                },
+                {
+                    "text": "鏁板瓧0",
+                    "url": "topic_math_india.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ancient-india"
+        },
+        {
+            "id": "legends",
+            "year": -3000,
+            "display": "浼犺鏃朵唬",
+            "title": "鐐庨粍浼犺",
+            "enTitle": "Age of Legends",
+            "cat": "china",
+            "desc": "鍗庡鏂囨槑鐨勬洐鍏夛紝绂呰鍒朵笌澶х娌绘按鐨勮嫳闆勫彶璇椼€?,
+            "link": "detail_legends.html",
+            "keywords": [
+                {
+                    "text": "鐐庡笣",
+                    "url": "topic_ancestor.html"
+                },
+                {
+                    "text": "榛勫笣",
+                    "url": "topic_ancestor.html"
+                },
+                {
+                    "text": "澶х",
+                    "url": "topic_yu.html"
+                },
+                {
+                    "text": "绂呰鍒?,
+                    "url": "topic_chanrang.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "legends"
+        },
+        {
+            "id": "xia",
+            "year": -2070,
+            "display": "BC 2070",
+            "title": "澶忔湞",
+            "enTitle": "Xia Dynasty",
+            "cat": "china",
+            "desc": "涓浗鍘嗗彶涓婄涓€涓帇鏈濓紝鍥藉褰㈡€佺殑鍒濈幇銆?,
+            "link": "detail_xia.html",
+            "keywords": [
+                {
+                    "text": "浜岄噷澶存枃鍖?,
+                    "url": "topic_erlitou.html"
+                },
+                {
+                    "text": "澶х",
+                    "url": "topic_dayu.html"
+                },
+                {
+                    "text": "澶忓惎",
+                    "url": "#"
+                },
+                {
+                    "text": "涓栬鍒?,
+                    "url": "topic_hereditary.html"
+                },
+                {
+                    "text": "澶忓皬姝?,
+                    "url": "topic_xiaxiaozheng.html"
+                },
+                {
+                    "text": "鍟嗘堡鐏",
+                    "url": "topic_jie.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "xia"
+        },
+        {
+            "id": "shang",
+            "year": -1600,
+            "display": "BC 1600",
+            "title": "鍟嗘湞",
+            "enTitle": "Shang Dynasty",
+            "cat": "china",
+            "desc": "闈掗摐涓庣敳楠ㄦ枃鐨勬椂浠ｏ紝绁炵鑰屽湪鍦恒€?,
+            "link": "detail_shang.html",
+            "keywords": [
+                {
+                    "text": "鐢查鏂?,
+                    "url": "topic_oracle_bone.html"
+                },
+                {
+                    "text": "闈掗摐绀煎櫒",
+                    "url": "topic_simuwu.html"
+                },
+                {
+                    "text": "鐩樺簹杩佹",
+                    "url": "topic_pangeng.html"
+                },
+                {
+                    "text": "姝︿竵涓叴",
+                    "url": "topic_fuhao.html"
+                },
+                {
+                    "text": "鍟嗘堡",
+                    "url": "topic_shang_tang.html"
+                },
+                {
+                    "text": "绾ｇ帇",
+                    "url": "topic_zhou_king.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "shang"
+        },
+        {
+            "id": "zhou",
+            "year": -1046,
+            "display": "BC 1046",
+            "title": "瑗垮懆",
+            "enTitle": "Western Zhou",
+            "cat": "china",
+            "desc": "鍒嗗皝鍒朵笌瀹楁硶鍒剁‘绔嬩簡鍗庡鏂囨槑鐨勭ぞ浼氱粨鏋勩€?,
+            "link": "detail_zhou.html",
+            "keywords": [
+                {
+                    "text": "鍛ㄦ鐜?,
+                    "url": "topic_wuwang.html"
+                },
+                {
+                    "text": "鍛ㄥ叕",
+                    "url": "topic_zhougong.html"
+                },
+                {
+                    "text": "鍒嗗皝鍒?,
+                    "url": "topic_fenfeng.html"
+                },
+                {
+                    "text": "瀹楁硶鍒?,
+                    "url": "topic_zongfa.html"
+                },
+                {
+                    "text": "绀间箰鍒跺害",
+                    "url": "topic_liyue.html"
+                },
+                {
+                    "text": "鐗ч噹涔嬫垬",
+                    "url": "topic_wuwang.html"
+                },
+                {
+                    "text": "瑗垮懆鐏骸",
+                    "url": "topic_fenghuo.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "zhou"
+        },
+        {
+            "id": "greece",
+            "year": -800,
+            "display": "BC 800",
+            "title": "鍙ゅ笇鑵?,
+            "enTitle": "Ancient Greece",
+            "cat": "world",
+            "desc": "姘戜富鏀挎不涓庝汉鏂囩簿绁炵殑鎽囩銆?,
+            "link": "detail_greece.html",
+            "keywords": [
+                {
+                    "text": "闆呭吀",
+                    "url": "topic_athens_democracy.html"
+                },
+                {
+                    "text": "鏂反杈?,
+                    "url": "topic_sparta.html"
+                },
+                {
+                    "text": "姘戜富鏀挎不",
+                    "url": "topic_athens_democracy.html"
+                },
+                {
+                    "text": "鍝插",
+                    "url": "topic_socrates.html"
+                },
+                {
+                    "text": "鑻忔牸鎷夊簳",
+                    "url": "topic_socrates.html"
+                },
+                {
+                    "text": "鏌忔媺鍥?,
+                    "url": "topic_plato.html"
+                },
+                {
+                    "text": "浜氶噷澹寰?,
+                    "url": "topic_aristotle.html"
+                },
+                {
+                    "text": "浜氬巻灞卞ぇ",
+                    "url": "topic_alexander.html"
+                },
+                {
+                    "text": "甯岃厞鍖?,
+                    "url": "topic_alexander.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ancient-greece"
+        },
+        {
+            "id": "warring",
+            "year": -770,
+            "display": "BC 770",
+            "title": "鏄ョ鎴樺浗",
+            "enTitle": "Spring and Autumn & Warring States",
+            "cat": "china",
+            "desc": "澶у姩鑽′笌澶у彉闈╋紝鐧惧浜夐福鐨勬€濇兂榛勯噾鏃朵唬銆?,
+            "link": "detail_warring.html",
+            "keywords": [
+                {
+                    "text": "閾佸櫒鐗涜€?,
+                    "url": "topic_iron_cattle.html"
+                },
+                {
+                    "text": "鍟嗛瀰鍙樻硶",
+                    "url": "topic_shangyang.html"
+                },
+                {
+                    "text": "鐧惧浜夐福",
+                    "url": "topic_baijia.html"
+                },
+                {
+                    "text": "瀛斿瓙",
+                    "url": "topic_confucius.html"
+                },
+                {
+                    "text": "绉﹀浗",
+                    "url": "detail_qin.html"
+                },
+                {
+                    "text": "鎴樺浗涓冮泟",
+                    "url": "topic_seven_states.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "warring-states"
+        },
+        {
+            "id": "qin",
+            "year": -221,
+            "display": "BC 221",
+            "title": "绉︽湞",
+            "enTitle": "Qin Dynasty",
+            "cat": "china",
+            "desc": "涓浗鍘嗗彶涓婄涓€涓粺涓€鐨勫姘戞棌灏佸缓鍥藉銆?,
+            "link": "detail_qin.html",
+            "keywords": [
+                {
+                    "text": "绉﹀鐨?,
+                    "url": "topic_yingzheng.html"
+                },
+                {
+                    "text": "鏉庢柉",
+                    "url": "topic_lisi.html"
+                },
+                {
+                    "text": "閮″幙鍒?,
+                    "url": "topic_junxian.html"
+                },
+                {
+                    "text": "鍟嗛瀰",
+                    "url": "topic_shangyang.html"
+                },
+                {
+                    "text": "绉︿簩涓?,
+                    "url": "topic_chenshengguang.html"
+                }
+            ],
+            "graph": [],
+            "rel": []
+        },
+        {
+            "id": "han",
+            "year": -202,
+            "display": "BC 202",
+            "title": "澶ф眽甯濆浗",
+            "enTitle": "Han Dynasty",
+            "cat": "china",
+            "desc": "涓濈桓涔嬭矾寮€閫氾紝鍎掑鎬濇兂纭珛姝ｇ粺鍦颁綅銆?,
+            "link": "detail_han.html",
+            "keywords": [
+                {
+                    "text": "鍒橀偊",
+                    "url": "topic_liubang.html"
+                },
+                {
+                    "text": "姹夋甯?,
+                    "url": "topic_hanwudi.html"
+                },
+                {
+                    "text": "鍒樼",
+                    "url": "topic_liuxiu.html"
+                },
+                {
+                    "text": "涓濈桓涔嬭矾",
+                    "url": "topic_silkroad.html"
+                },
+                {
+                    "text": "鐙皧鍎掓湳",
+                    "url": "topic_duzunrushu.html"
+                },
+                {
+                    "text": "鎺ㄦ仼浠?,
+                    "url": "topic_tuien.html"
+                },
+                {
+                    "text": "鍙搁┈杩?,
+                    "url": "topic_simaqian.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "rome",
+            "graphId": "silk-road"
+        },
+        {
+            "id": "rome",
+            "year": -27,
+            "display": "BC 27",
+            "title": "鍙ょ綏椹?,
+            "enTitle": "Ancient Rome",
+            "cat": "world",
+            "desc": "浠庡叡鍜屽浗鍒板笣鍥斤紝娉曞緥涓庡啗浜嬬殑鍏歌寖銆?,
+            "link": "detail_rome.html",
+            "keywords": [
+                {
+                    "text": "鍏卞拰鍥?,
+                    "url": "detail_rome.html"
+                },
+                {
+                    "text": "缃楅┈甯濆浗",
+                    "url": "topic_augustus.html"
+                },
+                {
+                    "text": "鎭烘拻",
+                    "url": "topic_caesar.html"
+                },
+                {
+                    "text": "灞嬪ぇ缁?,
+                    "url": "topic_augustus.html"
+                },
+                {
+                    "text": "缃楅┈娉?,
+                    "url": "topic_roman_law.html"
+                },
+                {
+                    "text": "鍗佷簩閾滆〃娉?,
+                    "url": "topic_twelve_tables.html"
+                },
+                {
+                    "text": "姘戞硶澶у叏",
+                    "url": "topic_justinian.html"
+                },
+                {
+                    "text": "鍩虹潱鏁?,
+                    "url": "topic_christianity.html"
+                },
+                {
+                    "text": "瑗跨綏椹伃浜?,
+                    "url": "topic_rome_fall.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "han",
+            "graphId": "roman-empire"
+        },
+        {
+            "id": "three-kingdoms",
+            "year": 220,
+            "display": "AD 220",
+            "title": "涓夊浗",
+            "enTitle": "Three Kingdoms",
+            "cat": "china",
+            "desc": "涓滄眽鏈勾鍒嗕笁鍥斤紝榄忚渶鍚翠笁瓒抽紟绔嬶紝鑻遍泟杈堝嚭鐨勬椂浠ｃ€?,
+            "link": "detail_three_kingdoms.html",
+            "keywords": [
+                {
+                    "text": "榄?鏇?",
+                    "url": "topic_caocao.html"
+                },
+                {
+                    "text": "铚€(鍒?",
+                    "url": "topic_liubei.html"
+                },
+                {
+                    "text": "鍚?瀛?",
+                    "url": "topic_sunquan.html"
+                },
+                {
+                    "text": "鏇规搷",
+                    "url": "topic_caocao.html"
+                },
+                {
+                    "text": "鍒樺",
+                    "url": "topic_liubei.html"
+                },
+                {
+                    "text": "瀛欐潈",
+                    "url": "topic_sunquan.html"
+                },
+                {
+                    "text": "璇歌憶浜?,
+                    "url": "topic_zhuge.html"
+                },
+                {
+                    "text": "鍙搁┈鎳?,
+                    "url": "topic_sima.html"
+                },
+                {
+                    "text": "璧ゅ涔嬫垬",
+                    "url": "topic_chibi.html"
+                },
+                {
+                    "text": "涔濆搧涓鍒?,
+                    "url": "topic_jiupin.html"
+                },
+                {
+                    "text": "瑗挎檵",
+                    "url": "topic_jin.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "three-kingdoms"
+        },
+        {
+            "id": "weijin",
+            "year": 220,
+            "display": "AD 220",
+            "title": "榄忔檵鍗楀寳鏈?,
+            "enTitle": "Wei-Jin Southern-Northern Dynasties",
+            "cat": "china",
+            "desc": "澶у垎瑁傛椂鏈?姘戞棌铻嶅悎涓庢枃鍖栫箒鑽ｅ苟瀛樸€?,
+            "link": "detail_weijin.html",
+            "keywords": [
+                {
+                    "text": "涓夊浗",
+                    "url": "detail_three_kingdoms.html"
+                },
+                {
+                    "text": "鍖楅瓘",
+                    "url": "topic_xiaowendi.html"
+                },
+                {
+                    "text": "瀛濇枃甯?,
+                    "url": "topic_xiaowendi.html"
+                },
+                {
+                    "text": "涔濆搧涓鍒?,
+                    "url": "topic_jiupin.html"
+                },
+                {
+                    "text": "鐜勫",
+                    "url": "topic_zhulin.html"
+                },
+                {
+                    "text": "鐜嬬静涔?,
+                    "url": "topic_wangxizhi.html"
+                },
+                {
+                    "text": "闄舵笂鏄?,
+                    "url": "topic_taoyuanming.html"
+                },
+                {
+                    "text": "浣涙暀",
+                    "url": "topic_buddhism_china.html"
+                },
+                {
+                    "text": "绁栧啿涔?,
+                    "url": "topic_zuchongzhi.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "weijin"
+        },
+        {
+            "id": "medieval-europe",
+            "year": 476,
+            "display": "AD 476",
+            "title": "涓笘绾娲?,
+            "enTitle": "Medieval Europe",
+            "cat": "world",
+            "desc": "瑗跨綏椹伃浜″悗锛屽皝寤哄埗搴︿笌鍩虹潱鏁欎細缁熸不鐨勫崈骞存椂鍏夈€?,
+            "link": "detail_medieval_europe.html",
+            "keywords": [
+                {
+                    "text": "灏佸缓鍒跺害",
+                    "url": "topic_feudalism.html"
+                },
+                {
+                    "text": "鍩虹潱鏁欎細",
+                    "url": "topic_church.html"
+                },
+                {
+                    "text": "鏁欑殗",
+                    "url": "topic_pope.html"
+                },
+                {
+                    "text": "楠戝＋",
+                    "url": "topic_knight.html"
+                },
+                {
+                    "text": "鍐滃ゴ",
+                    "url": "topic_manor.html"
+                },
+                {
+                    "text": "鍗佸瓧鍐涗笢寰?,
+                    "url": "topic_crusades.html"
+                },
+                {
+                    "text": "搴勫洯",
+                    "url": "topic_manor.html"
+                },
+                {
+                    "text": "澶у",
+                    "url": "topic_university.html"
+                },
+                {
+                    "text": "榛戞鐥?,
+                    "url": "topic_black_death.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "medieval-europe"
+        },
+        {
+            "id": "sui",
+            "year": 581,
+            "display": "AD 581",
+            "title": "闅嬫湞",
+            "enTitle": "Sui Dynasty",
+            "cat": "china",
+            "desc": "缁撴潫鍒嗚锛屽紑鍒涚涓句笌澶ц繍娌炽€?,
+            "link": "detail_sui.html",
+            "keywords": [
+                {
+                    "text": "闅嬫枃甯?,
+                    "url": "topic_suiwendi.html"
+                },
+                {
+                    "text": "闅嬬個甯?,
+                    "url": "topic_suiyangdi.html"
+                },
+                {
+                    "text": "绉戜妇鍒?,
+                    "url": "topic_keju.html"
+                },
+                {
+                    "text": "澶ц繍娌?,
+                    "url": "topic_grand_canal.html"
+                },
+                {
+                    "text": "涓夌渷鍏儴",
+                    "url": "topic_sansheng.html"
+                },
+                {
+                    "text": "缁熶竴鍏ㄥ浗",
+                    "url": "topic_suiwendi.html"
+                },
+                {
+                    "text": "璧靛窞妗?,
+                    "url": "topic_zhaozhou_bridge.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "sui"
+        },
+        {
+            "id": "tang",
+            "year": 618,
+            "display": "AD 618",
+            "title": "鐩涘攼",
+            "enTitle": "Tang Dynasty",
+            "cat": "china",
+            "desc": "涓浗灏佸缓绀句細鐨勫穮宄帮紝寮€鏀惧寘瀹圭殑涓囧浗鏉ユ湞銆?,
+            "link": "detail_tang.html",
+            "keywords": [
+                {
+                    "text": "鍞愬お瀹?,
+                    "url": "topic_lishimin.html"
+                },
+                {
+                    "text": "姝﹀垯澶?,
+                    "url": "topic_wuzetian.html"
+                },
+                {
+                    "text": "鍞愮巹瀹?,
+                    "url": "topic_lixuanzong.html"
+                },
+                {
+                    "text": "鏉庣櫧",
+                    "url": "topic_libai.html"
+                },
+                {
+                    "text": "鏉滅敨",
+                    "url": "topic_dufu.html"
+                },
+                {
+                    "text": "涓夌渷鍏儴",
+                    "url": "topic_sansheng.html"
+                },
+                {
+                    "text": "绉戜妇鍒?,
+                    "url": "topic_keju.html"
+                },
+                {
+                    "text": "瀹夊彶涔嬩贡",
+                    "url": "topic_anshi_rebellion.html"
+                },
+                {
+                    "text": "鑺傚害浣?,
+                    "url": "topic_jiedushi.html"
+                },
+                {
+                    "text": "鐜勫瑗胯",
+                    "url": "topic_xuanzang.html"
+                },
+                {
+                    "text": "閬ｅ攼浣?,
+                    "url": "topic_envoys.html"
+                },
+                {
+                    "text": "闀垮畨鍩?,
+                    "url": "topic_chang_an.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "tang"
+        },
+        {
+            "id": "song",
+            "year": 960,
+            "display": "AD 960",
+            "title": "瀹嬫湞",
+            "enTitle": "Song Dynasty",
+            "cat": "china",
+            "desc": "缁忔祹閲嶅績鍗楃Щ锛屽晢涓氫笌绉戞妧鐨勯珮搴︾箒鑽ｃ€?,
+            "link": "detail_song.html",
+            "keywords": [
+                {
+                    "text": "瀹嬪お绁?,
+                    "url": "topic_songtaizu.html"
+                },
+                {
+                    "text": "鐜嬪畨鐭?,
+                    "url": "topic_wanganshi.html"
+                },
+                {
+                    "text": "鑻忚郊",
+                    "url": "topic_sushi.html"
+                },
+                {
+                    "text": "鏈辩喒",
+                    "url": "topic_lixue.html"
+                },
+                {
+                    "text": "宀抽",
+                    "url": "topic_yuefei.html"
+                },
+                {
+                    "text": "涓ぎ闆嗘潈",
+                    "url": "topic_songtaizu.html"
+                },
+                {
+                    "text": "鍟嗕笟闈╁懡",
+                    "url": "topic_commerce.html"
+                },
+                {
+                    "text": "绋嬫湵鐞嗗",
+                    "url": "topic_lixue.html"
+                },
+                {
+                    "text": "涓夊ぇ鍙戞槑",
+                    "url": "topic_tech_song.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "song"
+        },
+        {
+            "id": "yuan",
+            "year": 1271,
+            "display": "AD 1271",
+            "title": "鍏冩湞",
+            "enTitle": "Yuan Dynasty",
+            "cat": "china",
+            "desc": "钂欏彜甯濆浗鐨勭増鍥撅紝琛岀渷鍒跺害鐨勫紑绔€?,
+            "link": "detail_yuan.html",
+            "keywords": [
+                {
+                    "text": "鎴愬悏鎬濇睏",
+                    "url": "topic_genghis.html"
+                },
+                {
+                    "text": "蹇藉繀鐑?,
+                    "url": "topic_kublai.html"
+                },
+                {
+                    "text": "鏂囧ぉ绁?,
+                    "url": "topic_wentianxiang.html"
+                },
+                {
+                    "text": "琛岀渷鍒?,
+                    "url": "topic_xingsheng.html"
+                },
+                {
+                    "text": "瀹ｆ斂闄?,
+                    "url": "topic_xingsheng.html"
+                },
+                {
+                    "text": "婢庢箹宸℃鍙?,
+                    "url": "topic_xingsheng.html"
+                },
+                {
+                    "text": "閮畧鏁?,
+                    "url": "topic_guoshoujing.html"
+                },
+                {
+                    "text": "鍏虫眽鍗?,
+                    "url": "topic_guanhanqing.html"
+                },
+                {
+                    "text": "椹彲路娉㈢綏",
+                    "url": "topic_marcopolo.html"
+                },
+                {
+                    "text": "鍥涚瓑浜哄埗",
+                    "url": "topic_yuan_society.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "yuan"
+        },
+        {
+            "id": "renaissance",
+            "year": 1300,
+            "display": "AD 1300",
+            "title": "鏂囪壓澶嶅叴",
+            "enTitle": "The Renaissance",
+            "cat": "world",
+            "desc": "浜烘€ц閱掔殑鏅ㄦ洣锛屽笇鑵婄綏椹彜鍏告枃鍖栫殑鍐嶇敓銆?,
+            "link": "detail_renaissance.html",
+            "keywords": [
+                {
+                    "text": "鎰忓ぇ鍒?,
+                    "url": "topic_italian_renaissance.html"
+                },
+                {
+                    "text": "浜烘枃涓讳箟",
+                    "url": "topic_humanism.html"
+                },
+                {
+                    "text": "浣嗕竵",
+                    "url": "topic_dante.html"
+                },
+                {
+                    "text": "杈韭疯姮濂?,
+                    "url": "topic_da_vinci.html"
+                },
+                {
+                    "text": "绫冲紑鏈楀熀缃?,
+                    "url": "topic_michelangelo.html"
+                },
+                {
+                    "text": "鎷夋枑灏?,
+                    "url": "topic_raphael.html"
+                },
+                {
+                    "text": "鑾庡＋姣斾簹",
+                    "url": "topic_shakespeare.html"
+                },
+                {
+                    "text": "绉戝闈╁懡",
+                    "url": "topic_scientific_revolution.html"
+                },
+                {
+                    "text": "瀹楁暀鏀归潻",
+                    "url": "topic_reformation.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "renaissance"
+        },
+        {
+            "id": "ming",
+            "year": 1368,
+            "display": "AD 1368",
+            "title": "鏄庢湞",
+            "enTitle": "Ming Dynasty",
+            "cat": "china",
+            "desc": "鍚涗富涓撳埗鍔犲己锛岄儜鍜屼笅瑗挎磱鐨勬捣鏉冪粷鍝嶃€?,
+            "link": "detail_ming.html",
+            "keywords": [
+                {
+                    "text": "鏈卞厓鐠?,
+                    "url": "topic_zhu_yuanzhang.html"
+                },
+                {
+                    "text": "鏄庢垚绁?,
+                    "url": "topic_yongle.html"
+                },
+                {
+                    "text": "閮戝拰",
+                    "url": "topic_zheng_he.html"
+                },
+                {
+                    "text": "鐜嬮槼鏄?,
+                    "url": "topic_wangyangming.html"
+                },
+                {
+                    "text": "鎴氱户鍏?,
+                    "url": "topic_qijiguang.html"
+                },
+                {
+                    "text": "鏉庤嚜鎴?,
+                    "url": "topic_lizicheng.html"
+                },
+                {
+                    "text": "鍐呴榿鍒?,
+                    "url": "topic_neige.html"
+                },
+                {
+                    "text": "蹇冨",
+                    "url": "topic_wangyangming.html"
+                },
+                {
+                    "text": "绉戞妧宸ㄨ憲",
+                    "url": "topic_ming_tech.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ming"
+        },
+        {
+            "id": "new-navigation",
+            "year": 1492,
+            "display": "AD 1492",
+            "title": "鏂拌埅璺紑杈?,
+            "enTitle": "Age of Discovery",
+            "cat": "world",
+            "desc": "鍝ヤ鸡甯冨彂鐜版柊澶ч檰锛屼笘鐣屽紑濮嬭繛涓轰竴涓暣浣撱€?,
+            "link": "detail_global_navigation.html",
+            "keywords": [
+                {
+                    "text": "钁¤悇鐗?,
+                    "url": "topic_portugal_empire.html"
+                },
+                {
+                    "text": "瑗跨彮鐗?,
+                    "url": "topic_spain_empire.html"
+                },
+                {
+                    "text": "鍝ヤ鸡甯?,
+                    "url": "topic_columbus.html"
+                },
+                {
+                    "text": "楹﹀摬浼?,
+                    "url": "topic_magellan.html"
+                },
+                {
+                    "text": "杈韭蜂冀椹?,
+                    "url": "topic_da_gama.html"
+                },
+                {
+                    "text": "鐗╃浜ゆ崲",
+                    "url": "topic_columbian_exchange.html"
+                },
+                {
+                    "text": "涓栫晫甯傚満",
+                    "url": "topic_world_market.html"
+                },
+                {
+                    "text": "娈栨皯鎵╁紶",
+                    "url": "topic_triangular_trade.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "new-navigation"
+        },
+        {
+            "id": "colonial-plunder",
+            "year": 1588,
+            "display": "AD 1588",
+            "title": "鏃╂湡娈栨皯鎺犲ず",
+            "enTitle": "Colonial Plunder",
+            "cat": "world",
+            "desc": "涓夎璐告槗涓庢棩涓嶈惤甯濆浗鐨勫叴璧凤紝璧勬湰鍘熷绉疮鐨勮鑵ュ簭鏇层€?,
+            "link": "detail_colonial_plunder.html",
+            "keywords": [
+                {
+                    "text": "娈栨皯鎺犲ず",
+                    "url": "detail_colonial_plunder.html"
+                },
+                {
+                    "text": "瑗跨彮鐗?,
+                    "url": "topic_spain_empire.html"
+                },
+                {
+                    "text": "鑻卞浗",
+                    "url": "topic_british_empire.html"
+                },
+                {
+                    "text": "涓夎璐告槗",
+                    "url": "topic_triangular_trade.html"
+                },
+                {
+                    "text": "榛戝ゴ璐告槗",
+                    "url": "topic_slave_trade.html"
+                },
+                {
+                    "text": "璧勬湰鍘熷绉疮",
+                    "url": "topic_capital_accumulation.html"
+                },
+                {
+                    "text": "娈栨皯鍦扮伨闅?,
+                    "url": "topic_colonial_disaster.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "colonial-plunder"
+        },
+        {
+            "id": "uk-revolution",
+            "year": 1640,
+            "display": "AD 1640",
+            "title": "鑻卞浗闈╁懡",
+            "enTitle": "English Revolution",
+            "cat": "world",
+            "desc": "鍏夎崳闈╁懡涓庢潈鍒╂硶妗堬紝鍚涗富绔嬪鍒剁殑寮€绔€?,
+            "link": "detail_uk_rev.html",
+            "keywords": [
+                {
+                    "text": "璁細",
+                    "url": "topic_bill_rights.html"
+                },
+                {
+                    "text": "鍥界帇",
+                    "url": "topic_charles1.html"
+                },
+                {
+                    "text": "鍏嬩鸡濞佸皵",
+                    "url": "topic_cromwell.html"
+                },
+                {
+                    "text": "鏌ョ悊涓€涓?,
+                    "url": "topic_charles1.html"
+                },
+                {
+                    "text": "鍏夎崳闈╁懡",
+                    "url": "topic_glorious_rev.html"
+                },
+                {
+                    "text": "鏉冨埄娉曟",
+                    "url": "topic_bill_rights.html"
+                },
+                {
+                    "text": "鍚涗富绔嬪鍒?,
+                    "url": "topic_constitutional_monarchy.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "uk-revolution"
+        },
+        {
+            "id": "qing",
+            "year": 1644,
+            "display": "AD 1644",
+            "title": "娓呮湞",
+            "enTitle": "Qing Dynasty",
+            "cat": "china",
+            "desc": "灏佸缓鐜嬫湞鐨勯粍鏄忥紝缁熶竴澶氭皯鏃忓浗瀹剁殑宸╁浐銆?,
+            "link": "detail_qing.html",
+            "keywords": [
+                {
+                    "text": "搴风啓",
+                    "url": "topic_kangxi.html"
+                },
+                {
+                    "text": "闆嶆",
+                    "url": "topic_yongzheng.html"
+                },
+                {
+                    "text": "涔鹃殕",
+                    "url": "topic_qianlong.html"
+                },
+                {
+                    "text": "鍐涙満澶?,
+                    "url": "topic_junjichu.html"
+                },
+                {
+                    "text": "鐗堝浘濂犲畾",
+                    "url": "topic_qing_territory.html"
+                },
+                {
+                    "text": "闂叧閿佸浗",
+                    "url": "topic_closed_door.html"
+                },
+                {
+                    "text": "绾㈡ゼ姊?,
+                    "url": "topic_hongloumeng.html"
+                },
+                {
+                    "text": "鍙版咕",
+                    "url": "topic_qing_territory.html"
+                },
+                {
+                    "text": "瑗胯棌",
+                    "url": "topic_qing_territory.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "qing"
+        },
+        {
+            "id": "industrial-rev-1",
+            "year": 1765,
+            "display": "AD 1765",
+            "title": "绗竴娆″伐涓氶潻鍛?,
+            "enTitle": "1st Industrial Rev",
+            "cat": "world",
+            "desc": "钂告苯鏈哄紑鍚殑鏈烘鍖栨椂浠ｃ€?,
+            "link": "detail_industrial_rev_1.html",
+            "keywords": [
+                {
+                    "text": "鑻卞浗",
+                    "url": "detail_uk_rev.html"
+                },
+                {
+                    "text": "钂告苯鏈?,
+                    "url": "topic_watt.html"
+                },
+                {
+                    "text": "鐡︾壒",
+                    "url": "topic_watt.html"
+                },
+                {
+                    "text": "鐏溅",
+                    "url": "topic_stephenson.html"
+                },
+                {
+                    "text": "宸ュ巶鍒?,
+                    "url": "topic_factory_system.html"
+                },
+                {
+                    "text": "鍩庡競鍖?,
+                    "url": "topic_urbanization.html"
+                },
+                {
+                    "text": "闃剁骇瀵圭珛",
+                    "url": "topic_urbanization.html"
+                },
+                {
+                    "text": "涓栫晫甯傚満",
+                    "url": "topic_urbanization.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "yangwu",
+            "graphId": "industrial-rev-1"
+        },
+        {
+            "id": "us-independence",
+            "year": 1775,
+            "display": "AD 1775",
+            "title": "缇庡浗鐙珛鎴樹簤",
+            "enTitle": "American Independence",
+            "cat": "world",
+            "desc": "鐙珛瀹ｈ█涓?787瀹硶锛岀幇浠ｈ仈閭﹀埗鐨勮癁鐢熴€?,
+            "link": "detail_us_rev.html",
+            "keywords": [
+                {
+                    "text": "鑻卞浗",
+                    "url": "detail_us_rev.html"
+                },
+                {
+                    "text": "缇庡浗",
+                    "url": "detail_us_rev.html"
+                },
+                {
+                    "text": "鍗庣洓椤?,
+                    "url": "topic_washington.html"
+                },
+                {
+                    "text": "鏉版枑閫?,
+                    "url": "topic_jefferson.html"
+                },
+                {
+                    "text": "鐙珛瀹ｈ█",
+                    "url": "topic_declaration.html"
+                },
+                {
+                    "text": "1787瀹硶",
+                    "url": "topic_constitution_1787.html"
+                },
+                {
+                    "text": "涓夋潈鍒嗙珛",
+                    "url": "topic_separation_powers.html"
+                },
+                {
+                    "text": "鍏卞拰鍒?,
+                    "url": "topic_constitution_1787.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "us-independence"
+        },
+        {
+            "id": "france-revolution",
+            "year": 1789,
+            "display": "AD 1789",
+            "title": "娉曞浗澶ч潻鍛?,
+            "enTitle": "French Revolution",
+            "cat": "world",
+            "desc": "鑷敱骞崇瓑鍗氱埍锛屽交搴曟懅姣佸皝寤轰笓鍒剁殑椋庢毚銆?,
+            "link": "detail_french_rev.html",
+            "keywords": [
+                {
+                    "text": "鏀诲崰宸村＋搴曠嫳",
+                    "url": "topic_bastille.html"
+                },
+                {
+                    "text": "浜烘潈瀹ｈ█",
+                    "url": "topic_rights_of_man.html"
+                },
+                {
+                    "text": "绗竴鍏卞拰鍥?,
+                    "url": "topic_robespierre.html"
+                },
+                {
+                    "text": "鎷跨牬浠?,
+                    "url": "topic_napoleon.html"
+                },
+                {
+                    "text": "绗竴甯濆浗",
+                    "url": "topic_napoleon.html"
+                },
+                {
+                    "text": "鎷跨牬浠戞硶鍏?,
+                    "url": "topic_napoleonic_code.html"
+                },
+                {
+                    "text": "缃椾集鏂簢灏?,
+                    "url": "topic_robespierre.html"
+                },
+                {
+                    "text": "鍚挋鎬濇兂",
+                    "url": "detail_french_rev.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "france-revolution"
+        },
+        {
+            "id": "opium-war",
+            "year": 1840,
+            "display": "AD 1840",
+            "title": "楦︾墖鎴樹簤",
+            "enTitle": "Opium War",
+            "cat": "china",
+            "desc": "涓浗杩戜唬鍙茬殑寮€绔紝鍗婃畺姘戝湴鍗婂皝寤虹ぞ浼氱殑寮€濮嬨€?,
+            "link": "detail_opium.html",
+            "keywords": [
+                {
+                    "text": "璐告槗閫嗗樊",
+                    "url": "detail_opium.html"
+                },
+                {
+                    "text": "楦︾墖璧扮",
+                    "url": "topic_humen.html"
+                },
+                {
+                    "text": "鏋楀垯寰?,
+                    "url": "topic_linzexu.html"
+                },
+                {
+                    "text": "铏庨棬閿€鐑?,
+                    "url": "topic_humen.html"
+                },
+                {
+                    "text": "鑻卞浗杩滃緛鍐?,
+                    "url": "detail_opium.html"
+                },
+                {
+                    "text": "娓呮斂搴?,
+                    "url": "detail_opium.html"
+                },
+                {
+                    "text": "鍗椾含鏉＄害",
+                    "url": "topic_nanjing_treaty.html"
+                },
+                {
+                    "text": "棣欐腐宀?,
+                    "url": "topic_nanjing_treaty.html"
+                },
+                {
+                    "text": "鍗婃畺姘戝湴",
+                    "url": "topic_nanjing_treaty.html"
+                },
+                {
+                    "text": "榄忔簮",
+                    "url": "topic_weiyuan.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "opium-war"
+        },
+        {
+            "id": "marxism",
+            "year": 1848,
+            "display": "AD 1848",
+            "title": "椹厠鎬濅富涔夎癁鐢?,
+            "enTitle": "Birth of Marxism",
+            "cat": "world",
+            "desc": "銆婂叡浜у厷瀹ｈ█銆嬪彂琛紝鏃犱骇闃剁骇鏈変簡绉戝鐞嗚銆?,
+            "link": "detail_marxism.html",
+            "keywords": [
+                {
+                    "text": "椹厠鎬?,
+                    "url": "topic_marx.html"
+                },
+                {
+                    "text": "鎭╂牸鏂?,
+                    "url": "topic_engels.html"
+                },
+                {
+                    "text": "鍏变骇鍏氬瑷€",
+                    "url": "topic_communist_manifesto.html"
+                },
+                {
+                    "text": "绗竴鍥介檯",
+                    "url": "topic_first_international.html"
+                },
+                {
+                    "text": "宸撮粠鍏ぞ",
+                    "url": "topic_paris_commune.html"
+                },
+                {
+                    "text": "绀句細涓讳箟",
+                    "url": "detail_marxism.html"
+                },
+                {
+                    "text": "宸ヤ汉杩愬姩",
+                    "url": "detail_marxism.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "marxism"
+        },
+        {
+            "id": "taiping",
+            "year": 1851,
+            "display": "AD 1851",
+            "title": "澶钩澶╁浗",
+            "enTitle": "Taiping Rebellion",
+            "cat": "china",
+            "desc": "鍐滄皯鎴樹簤鐨勬渶楂樺嘲銆?,
+            "link": "detail_taiping.html",
+            "keywords": [
+                {
+                    "text": "娲鍏?,
+                    "url": "topic_hong_xiuquan.html"
+                },
+                {
+                    "text": "閲戠敯璧蜂箟",
+                    "url": "topic_jintian_uprising.html"
+                },
+                {
+                    "text": "瀹氶兘澶╀含",
+                    "url": "topic_tianjing_capital.html"
+                },
+                {
+                    "text": "澶╂湞鐢颁憨鍒跺害",
+                    "url": "topic_land_system.html"
+                },
+                {
+                    "text": "澶╀含浜嬪彉",
+                    "url": "topic_tianjing_incident.html"
+                },
+                {
+                    "text": "澶╀含闄疯惤",
+                    "url": "topic_tianjing_fall.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "taiping"
+        },
+        {
+            "id": "yangwu",
+            "year": 1861,
+            "display": "AD 1861",
+            "title": "娲嬪姟杩愬姩",
+            "enTitle": "Self-Strengthening Mov",
+            "cat": "china",
+            "desc": "甯堝し闀挎妧浠ヨ嚜寮恒€?,
+            "link": "detail_yangwu.html",
+            "keywords": [
+                {
+                    "text": "鏉庨缚绔?,
+                    "url": "topic_li_hongzhang.html"
+                },
+                {
+                    "text": "鏇惧浗钘?,
+                    "url": "topic_zeng_guofan.html"
+                },
+                {
+                    "text": "涓綋瑗跨敤",
+                    "url": "topic_ti_yong.html"
+                },
+                {
+                    "text": "鍖楁磱姘村笀",
+                    "url": "topic_beiyang_fleet.html"
+                },
+                {
+                    "text": "鐢插崍鎴樹簤",
+                    "url": "topic_jiawu_war.html"
+                },
+                {
+                    "text": "鏄庢不缁存柊",
+                    "url": "topic_meiji.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "industrial-rev-1",
+            "graphId": "yangwu"
+        },
+        {
+            "id": "capitalism-expansion",
+            "year": 1861,
+            "display": "AD 1861",
+            "title": "璧勬湰涓讳箟鎵╁睍",
+            "enTitle": "Capitalist Expansion",
+            "cat": "world",
+            "desc": "淇勫浗鍐滃ゴ鍒舵敼闈┿€佺編鍥藉唴鎴樸€佹棩鏈槑娌荤淮鏂般€?,
+            "link": "detail_capitalism_expansion.html",
+            "keywords": [
+                {
+                    "text": "淇勫浗鏀归潻",
+                    "url": "topic_russian_reform.html"
+                },
+                {
+                    "text": "鍗楀寳鎴樹簤",
+                    "url": "topic_civil_war.html"
+                },
+                {
+                    "text": "鏄庢不缁存柊",
+                    "url": "topic_meiji_restoration.html"
+                },
+                {
+                    "text": "搴熼櫎鍐滃ゴ鍒?,
+                    "url": "topic_serfdom_abolition.html"
+                },
+                {
+                    "text": "搴熼櫎濂撮毝鍒?,
+                    "url": "topic_emancipation.html"
+                },
+                {
+                    "text": "鍏ㄩ潰瑗垮寲",
+                    "url": "topic_westernization.html"
+                },
+                {
+                    "text": "宸ヤ笟鍖?,
+                    "url": "topic_industrialization.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "capitalism-expansion"
+        },
+        {
+            "id": "wuxu_reform",
+            "year": 1898,
+            "display": "AD 1898",
+            "title": "鎴婃垖鍙樻硶",
+            "enTitle": "Hundred Days' Reform",
+            "cat": "china",
+            "desc": "璧勪骇闃剁骇鏀硅壇杩愬姩鐨勫叴璧蜂笌澶辫触銆?,
+            "link": "detail_wuxu.html",
+            "keywords": [
+                {
+                    "text": "搴锋湁涓?,
+                    "url": "topic_kang_youwei.html"
+                },
+                {
+                    "text": "姊佸惎瓒?,
+                    "url": "topic_liang_qichao.html"
+                },
+                {
+                    "text": "璋棧鍚?,
+                    "url": "topic_tan_sitong.html"
+                },
+                {
+                    "text": "鍏溅涓婁功",
+                    "url": "topic_gongche_shangshu.html"
+                },
+                {
+                    "text": "琚佷笘鍑?,
+                    "url": "topic_yuanshikai.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "wuxu_reform"
+        },
+        {
+            "id": "xinhai",
+            "year": 1911,
+            "display": "AD 1911",
+            "title": "杈涗亥闈╁懡",
+            "enTitle": "Xinhai Revolution",
+            "cat": "china",
+            "desc": "鎺ㄧ炕甯濆埗锛屽缓绔嬪叡鍜屻€?,
+            "link": "detail_xinhai.html",
+            "keywords": [
+                {
+                    "text": "瀛欎腑灞?,
+                    "url": "topic_sunzhongshan.html"
+                },
+                {
+                    "text": "琚佷笘鍑?,
+                    "url": "topic_yuanshikai.html"
+                },
+                {
+                    "text": "鍚岀洘浼?,
+                    "url": "topic_tongmenghui.html"
+                },
+                {
+                    "text": "姝︽槍璧蜂箟",
+                    "url": "topic_wuchang_uprising.html"
+                },
+                {
+                    "text": "涓崕姘戝浗",
+                    "url": "topic_roc.html"
+                },
+                {
+                    "text": "娓呭笣閫€浣?,
+                    "url": "topic_qing_abdication.html"
+                },
+                {
+                    "text": "涓存椂绾︽硶",
+                    "url": "topic_provisional_constitution.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "xinhai"
+        },
+        {
+            "id": "new-culture",
+            "year": 1915,
+            "display": "AD 1915",
+            "title": "鏂版枃鍖栬繍鍔?,
+            "enTitle": "New Culture Mov",
+            "cat": "china",
+            "desc": "姘戜富涓庣瀛︾殑鍚挋銆?,
+            "link": "detail_new_culture.html",
+            "keywords": [
+                {
+                    "text": "闄堢嫭绉€",
+                    "url": "topic_chenduxiu.html"
+                },
+                {
+                    "text": "鏉庡ぇ閽?,
+                    "url": "topic_li_dazhao.html"
+                },
+                {
+                    "text": "椴佽繀",
+                    "url": "topic_lu_xun.html"
+                },
+                {
+                    "text": "鑳￠€?,
+                    "url": "topic_hu_shi.html"
+                },
+                {
+                    "text": "鏂伴潚骞?,
+                    "url": "topic_new_youth.html"
+                },
+                {
+                    "text": "姘戜富涓庣瀛?,
+                    "url": "topic_democracy_science.html"
+                },
+                {
+                    "text": "椹厠鎬濅富涔変紶鎾?,
+                    "url": "topic_li_dazhao.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "new-culture"
+        },
+        {
+            "id": "ww1",
+            "year": 1914,
+            "display": "AD 1914",
+            "title": "绗竴娆′笘鐣屽ぇ鎴?,
+            "enTitle": "World War I",
+            "cat": "world",
+            "desc": "鏃хЗ搴忕殑宕╂簝锛屾娲插洓澶у笣鍥借В浣撱€?,
+            "link": "detail_ww1.html",
+            "keywords": [
+                {
+                    "text": "钀ㄦ媺鐑獫浜嬩欢",
+                    "url": "topic_sarajevo.html"
+                },
+                {
+                    "text": "鍗忕害鍥?,
+                    "url": "detail_ww1.html"
+                },
+                {
+                    "text": "鍚岀洘鍥?,
+                    "url": "detail_ww1.html"
+                },
+                {
+                    "text": "鍑″皵鐧绘垬褰?,
+                    "url": "topic_verdun.html"
+                },
+                {
+                    "text": "缇庡浗鍙傛垬",
+                    "url": "detail_ww1.html"
+                },
+                {
+                    "text": "鍗佹湀闈╁懡",
+                    "url": "detail_october_rev.html"
+                },
+                {
+                    "text": "鍑″皵璧涙潯绾?,
+                    "url": "topic_versailles.html"
+                },
+                {
+                    "text": "鍥介檯鑱旂洘",
+                    "url": "topic_league_nations.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ww1"
+        },
+        {
+            "id": "october-rev",
+            "year": 1917,
+            "display": "AD 1917",
+            "title": "鍗佹湀闈╁懡",
+            "enTitle": "October Revolution",
+            "cat": "world",
+            "desc": "浜虹被鍘嗗彶涓婄涓€涓ぞ浼氫富涔夊浗瀹惰癁鐢熴€?,
+            "link": "detail_october_rev.html",
+            "keywords": [
+                {
+                    "text": "鍒楀畞",
+                    "url": "topic_lenin.html"
+                },
+                {
+                    "text": "甯冨皵浠€缁村厠",
+                    "url": "topic_bolshevik.html"
+                },
+                {
+                    "text": "鑻忕淮鍩?,
+                    "url": "topic_soviet.html"
+                },
+                {
+                    "text": "闃胯姍涔愬皵鍙?,
+                    "url": "topic_aurora.html"
+                },
+                {
+                    "text": "鏂扮粡娴庢斂绛?,
+                    "url": "topic_nep.html"
+                },
+                {
+                    "text": "鏂ぇ鏋?,
+                    "url": "topic_stalin.html"
+                },
+                {
+                    "text": "淇勫浗鏀归潻",
+                    "url": "topic_russian_reform.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "may-fourth",
+            "graphId": "october-rev"
+        },
+        {
+            "id": "may-fourth",
+            "year": 1919,
+            "display": "AD 1919",
+            "title": "浜斿洓杩愬姩",
+            "enTitle": "May 4th Movement",
+            "cat": "china",
+            "desc": "鏂版皯涓讳富涔夐潻鍛界殑寮€绔€?,
+            "link": "detail_may_fourth.html",
+            "keywords": [
+                {
+                    "text": "宸撮粠鍜屼細",
+                    "url": "topic_paris_peace.html"
+                },
+                {
+                    "text": "鍖椾含瀛﹁繍",
+                    "url": "topic_student_movement.html"
+                },
+                {
+                    "text": "鍏簲缃㈠伐",
+                    "url": "topic_workers_strike.html"
+                },
+                {
+                    "text": "钄″厓鍩?,
+                    "url": "topic_cai_yuanpei.html"
+                },
+                {
+                    "text": "鏂版皯涓讳富涔?,
+                    "url": "topic_new_democracy.html"
+                },
+                {
+                    "text": "鏂版枃鍖栬繍鍔?,
+                    "url": "detail_new_culture.html"
+                },
+                {
+                    "text": "涓叡鎴愮珛",
+                    "url": "#"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "relatedId": "october-rev",
+            "graphId": "may-fourth"
+        },
+        {
+            "id": "cpc-founding",
+            "year": 1921,
+            "display": "AD 1921",
+            "title": "涓叡鎴愮珛",
+            "enTitle": "Founding of CPC",
+            "cat": "china",
+            "desc": "寮€澶╄緹鍦扮殑澶т簨鍙橈紝涓浗闈╁懡闈㈣矊鐒曠劧涓€鏂般€?,
+            "link": "detail_ccp_founding.html",
+            "keywords": [
+                {
+                    "text": "涓叡涓€澶?,
+                    "url": "topic_first_congress.html"
+                },
+                {
+                    "text": "椹垪涓讳箟",
+                    "url": "topic_marxism_china.html"
+                },
+                {
+                    "text": "绾㈣埞",
+                    "url": "topic_red_boat.html"
+                },
+                {
+                    "text": "闄堢嫭绉€",
+                    "url": "topic_chen_duxiu.html"
+                },
+                {
+                    "text": "鏉庡ぇ閽?,
+                    "url": "topic_li_dazhao.html"
+                },
+                {
+                    "text": "宸ヤ汉杩愬姩",
+                    "url": "topic_worker_movement.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "cpc-founding"
+        },
+        {
+            "id": "northern-expedition",
+            "year": 1924,
+            "display": "AD 1924",
+            "title": "绗竴娆″浗鍏卞悎浣?,
+            "enTitle": "First United Front",
+            "cat": "china",
+            "desc": "鎵撳€掑垪寮猴紝闄ゅ啗闃€銆?,
+            "link": "detail_first_united_front.html",
+            "keywords": [
+                {
+                    "text": "瀛欎腑灞?,
+                    "url": "topic_sun_yat_sen.html"
+                },
+                {
+                    "text": "钂嬩粙鐭?,
+                    "url": "topic_chiang_kai_shek.html"
+                },
+                {
+                    "text": "鍛ㄦ仼鏉?,
+                    "url": "topic_zhou_enlai.html"
+                },
+                {
+                    "text": "闄堢嫭绉€",
+                    "url": "topic_chen_duxiu.html"
+                },
+                {
+                    "text": "椴嶇綏寤?,
+                    "url": "topic_borodin.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "northern-expedition"
+        },
+        {
+            "id": "agrarian-revolution",
+            "year": 1927,
+            "display": "AD 1927",
+            "title": "鍦熷湴闈╁懡鎴樹簤",
+            "enTitle": "Agrarian Revolutionary War",
+            "cat": "china",
+            "desc": "浠ュ啘鏉戝寘鍥村煄甯傦紝姝﹁澶哄彇鏀挎潈銆?,
+            "link": "detail_agrarian_revolution.html",
+            "keywords": [
+                {
+                    "text": "鍦熷湴闈╁懡",
+                    "url": "detail_agrarian_revolution.html"
+                },
+                {
+                    "text": "鍗楁槍璧蜂箟",
+                    "url": "topic_nanchang_uprising.html"
+                },
+                {
+                    "text": "浜曞唸灞?,
+                    "url": "topic_jinggangshan.html"
+                },
+                {
+                    "text": "鏈卞痉",
+                    "url": "topic_zhude.html"
+                },
+                {
+                    "text": "姣涙辰涓?,
+                    "url": "topic_mao_zedong.html"
+                },
+                {
+                    "text": "闀垮緛",
+                    "url": "topic_long_march.html"
+                },
+                {
+                    "text": "閬典箟浼氳",
+                    "url": "topic_zunyi.html"
+                },
+                {
+                    "text": "鎵撳湡璞垎鐢板湴",
+                    "url": "#"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "agrarian-revolution"
+        },
+        {
+            "id": "anti-japanese",
+            "year": 1937,
+            "display": "AD 1937",
+            "title": "鎶楁棩鎴樹簤",
+            "enTitle": "Anti-Japanese War",
+            "cat": "china",
+            "desc": "鍏ㄦ皯鏃忔姉鎴橈紝涓栫晫鍙嶆硶瑗挎柉鎴樹簤鐨勪笢鏂逛富鎴樺満銆?,
+            "link": "detail_anti_japanese.html",
+            "keywords": [
+                {
+                    "text": "涓冧竷浜嬪彉",
+                    "url": "topic_lugouqiao.html"
+                },
+                {
+                    "text": "鍗椾含澶у睜鏉€",
+                    "url": "topic_nanjing_massacre.html"
+                },
+                {
+                    "text": "骞冲瀷鍏冲ぇ鎹?,
+                    "url": "topic_pingxingguan.html"
+                },
+                {
+                    "text": "鍙板効搴勬垬褰?,
+                    "url": "topic_taierzhuang.html"
+                },
+                {
+                    "text": "鐧惧洟澶ф垬",
+                    "url": "topic_hundred_regiments.html"
+                },
+                {
+                    "text": "涓叡涓冨ぇ",
+                    "url": "topic_cpc_seventh.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "anti-japanese"
+        },
+        {
+            "id": "ww2",
+            "year": 1939,
+            "display": "AD 1939",
+            "title": "绗簩娆′笘鐣屽ぇ鎴?,
+            "enTitle": "World War II",
+            "cat": "world",
+            "desc": "浜虹被鍘嗗彶涓婅妯℃渶澶х殑鍏ㄧ悆鎴樹簤銆?,
+            "link": "detail_ww2.html",
+            "keywords": [
+                {
+                    "text": "鐝嶇彔娓?,
+                    "url": "topic_pearl_harbor.html"
+                },
+                {
+                    "text": "鏂ぇ鏋楁牸鍕?,
+                    "url": "topic_stalingrad.html"
+                },
+                {
+                    "text": "璇烘浖搴?,
+                    "url": "topic_normandy.html"
+                },
+                {
+                    "text": "闆呭皵濉?,
+                    "url": "topic_yalta.html"
+                },
+                {
+                    "text": "鏀诲厠鏌忔灄",
+                    "url": "topic_berlin.html"
+                },
+                {
+                    "text": "鍙嶆硶瑗挎柉鍚岀洘",
+                    "url": "topic_yalta.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "ww2"
+        },
+        {
+            "id": "liberation-war",
+            "year": 1946,
+            "display": "AD 1946",
+            "title": "瑙ｆ斁鎴樹簤",
+            "enTitle": "War of Liberation",
+            "cat": "china",
+            "desc": "鍐冲畾涓浗鍓嶉€斿懡杩愮殑鍐虫垬锛屼笁澶ф垬褰瑰瀹氳儨灞€銆?,
+            "link": "detail_liberation_war.html",
+            "keywords": [
+                {
+                    "text": "姣涙辰涓?,
+                    "url": "#"
+                },
+                {
+                    "text": "钂嬩粙鐭?,
+                    "url": "#"
+                },
+                {
+                    "text": "閲嶅簡璋堝垽",
+                    "url": "topic_chongqing.html"
+                },
+                {
+                    "text": "鍦熷湴鏀归潻",
+                    "url": "topic_land_reform.html"
+                },
+                {
+                    "text": "鎸鸿繘澶у埆灞?,
+                    "url": "topic_dabieshan.html"
+                },
+                {
+                    "text": "杈芥矆鎴樺焦",
+                    "url": "topic_liaoshen.html"
+                },
+                {
+                    "text": "娣捣鎴樺焦",
+                    "url": "topic_huaihai.html"
+                },
+                {
+                    "text": "骞虫触鎴樺焦",
+                    "url": "topic_pingjin.html"
+                },
+                {
+                    "text": "娓℃睙鎴樺焦",
+                    "url": "topic_dujiang.html"
+                }
+            ],
+            "graph": [],
+            "rel": []
+        },
+        {
+            "id": "cold-war",
+            "year": 1947,
+            "display": "AD 1947",
+            "title": "鍐锋垬",
+            "enTitle": "Cold War",
+            "cat": "world",
+            "desc": "缇庤嫃涓ゆ瀬瀵瑰硻銆?,
+            "link": "detail_cold_war.html",
+            "keywords": [
+                {
+                    "text": "缇庡浗",
+                    "url": "#"
+                },
+                {
+                    "text": "鑻忚仈",
+                    "url": "#"
+                },
+                {
+                    "text": "椹瓏灏旇鍒?,
+                    "url": "topic_marshall.html"
+                },
+                {
+                    "text": "鏌忔灄澧?,
+                    "url": "topic_berlin_wall.html"
+                },
+                {
+                    "text": "鏈濋矞鎴樹簤",
+                    "url": "topic_korean_war.html"
+                },
+                {
+                    "text": "鍙ゅ反瀵煎脊鍗辨満",
+                    "url": "topic_cuban_missile.html"
+                },
+                {
+                    "text": "閾佸箷婕旇",
+                    "url": "topic_iron_curtain.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "liberation-war"
+        },
+        {
+            "id": "prc-founding",
+            "year": 1949,
+            "display": "AD 1949",
+            "title": "鏂颁腑鍥芥垚绔?,
+            "enTitle": "Founding of PRC",
+            "cat": "china",
+            "desc": "涓浗浜烘皯绔欒捣鏉ヤ簡銆?,
+            "link": "detail_new_china.html",
+            "keywords": [
+                {
+                    "text": "鏀挎不鍗忓晢浼氳",
+                    "url": "topic_cppcc.html"
+                },
+                {
+                    "text": "鍏卞悓绾查",
+                    "url": "topic_common_program.html"
+                },
+                {
+                    "text": "鎶楃編鎻存湞",
+                    "url": "topic_korean_war.html"
+                },
+                {
+                    "text": "鍦熷湴鏀归潻",
+                    "url": "topic_land_reform_1950.html"
+                },
+                {
+                    "text": "涓€浜旇鍒?,
+                    "url": "topic_five_year_plan_1.html"
+                },
+                {
+                    "text": "1954瀹硶",
+                    "url": "topic_constitution_1954.html"
+                },
+                {
+                    "text": "姣涙辰涓?,
+                    "url": "topic_maozedong.html"
+                }
+            ],
+            "graph": [],
+            "rel": []
+        },
+        {
+            "id": "ussr-fall",
+            "year": 1991,
+            "display": "AD 1991",
+            "title": "鑻忚仈瑙ｄ綋",
+            "enTitle": "Fall of USSR",
+            "cat": "world",
+            "desc": "涓ゆ瀬鏍煎眬鐡﹁В锛屽鏋佸寲瓒嬪娍鍔犲己銆?,
+            "link": "detail_ussr_fall.html",
+            "keywords": [
+                {
+                    "text": "鎴堝皵宸翠箶澶?,
+                    "url": "topic_gorbachev.html"
+                },
+                {
+                    "text": "鍙跺埄閽?,
+                    "url": "topic_yeltsin.html"
+                },
+                {
+                    "text": "鍏竴涔濅簨浠?,
+                    "url": "topic_august_coup.html"
+                },
+                {
+                    "text": "鐙仈浣?,
+                    "url": "topic_cis.html"
+                },
+                {
+                    "text": "浼戝厠鐤楁硶",
+                    "url": "topic_shock_therapy.html"
+                },
+                {
+                    "text": "鍐锋垬",
+                    "url": "detail_cold_war.html"
+                }
+            ],
+            "graph": [],
+            "rel": [],
+            "graphId": "prc-founding"
+        }
+    ]
+};
+
+</script>
     <script>
         tailwind.config = {
             theme: {
